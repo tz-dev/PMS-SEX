@@ -94,6 +94,8 @@ PMS-SEX/
 ├── PMS-SEX.pdf
 ├── css/
 │   └── main.css
+├── img/
+│   └── cover.png
 └── examples/
     ├── Example 1 - Desire as Self-Punishment (Minimal Psychology Trigger).md
     ├── Example 1 - Desire as Self-Punishment (Minimal Psychology Trigger).html
@@ -269,3 +271,4 @@ It makes visible what sexual configurations **produce** —
 especially where costs emerge, how drift becomes prepared,
 and why many conflicts arise not from malice,
 but from **structural opacity under time, asymmetry, and repetition**.
+
