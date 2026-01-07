@@ -2733,35 +2733,6 @@ PMS-SEX explains how structures work; MIP explains when critique is legitimate�
 
 ---
 
-## 24. Conclusion
-
-### A. Pre-Flight per Chapter *(Gating Check)*
-
-**(A0) Entry-Condition Check (PMS_1.1 — formal)**
-
-* **Χ secured?** The conclusion keeps a meta-position: it summarizes structural constraints and corridors without fusing with any role perspective and without self-justifying tone.
-* **Reversibility secured?** No person labels appear; claims remain scenic and revisable. Where consequences are named, they are named as structural constraints (Θ), not as identity verdicts.
-* **D secured?** No shaming or humiliation; critique remains criterion-based (Ω/Θ/Χ/□/Ψ/Λ/Α), with dignity-in-practice treated as a formal constraint.
-
-**(A1) Determine the Chapter Object**
-
-Primary operator chain: **Α → Ω → Θ** under the persistent background activity of **Λ** and the regulating necessity of **Χ**, with **□** as the readability condition.
-
-Visible praxis mechanism: how stable practice paths produce predictable consequences and why “harmless” narratives fail when they treat time, costs, and path formation as reversible.
-
-If Φ appears: it appears only as a warning against narrative substitution (reframing), not as a solution: **Φ relocates structure/costs; it does not dissolve ∇/Α/Ω/Θ.**
-
-**(A2) Scope Guard (1–2 sentences)**
-
-Analysis of enactments, roles, and scenes. No diagnosis; risk notes remain praxeological markers. Criteria only; no how-to.
-
-**(A3) Minimal Formula (one line)**
-
-`Δ → ∇ → □ → (Λ) → Α → Ω → Θ → (Χ/Σ/Ψ)`
-Pulling arrows in this chapter: **□ → Α → Ω → Θ**, with **Λ** as persistent modulation and **Χ** as the viability regulator.
-
----
-
 ## 23. Limits and Extensions
 
 *(Explicit non-promises; structural scope discipline)*
@@ -2902,6 +2873,36 @@ Costs accumulate when structural limits are ignored: when interior explanations 
 #### (5) One-line Marker (quote-ready)
 
 PMS-SEX remains valid by stopping where other lenses begin: it explains what configurations do over time, without turning structure into psychology or analysis into advice.
+
+
+---
+
+## 24. Conclusion
+
+### A. Pre-Flight per Chapter *(Gating Check)*
+
+**(A0) Entry-Condition Check (PMS_1.1 — formal)**
+
+* **Χ secured?** The conclusion keeps a meta-position: it summarizes structural constraints and corridors without fusing with any role perspective and without self-justifying tone.
+* **Reversibility secured?** No person labels appear; claims remain scenic and revisable. Where consequences are named, they are named as structural constraints (Θ), not as identity verdicts.
+* **D secured?** No shaming or humiliation; critique remains criterion-based (Ω/Θ/Χ/□/Ψ/Λ/Α), with dignity-in-practice treated as a formal constraint.
+
+**(A1) Determine the Chapter Object**
+
+Primary operator chain: **Α → Ω → Θ** under the persistent background activity of **Λ** and the regulating necessity of **Χ**, with **□** as the readability condition.
+
+Visible praxis mechanism: how stable practice paths produce predictable consequences and why “harmless” narratives fail when they treat time, costs, and path formation as reversible.
+
+If Φ appears: it appears only as a warning against narrative substitution (reframing), not as a solution: **Φ relocates structure/costs; it does not dissolve ∇/Α/Ω/Θ.**
+
+**(A2) Scope Guard (1–2 sentences)**
+
+Analysis of enactments, roles, and scenes. No diagnosis; risk notes remain praxeological markers. Criteria only; no how-to.
+
+**(A3) Minimal Formula (one line)**
+
+`Δ → ∇ → □ → (Λ) → Α → Ω → Θ → (Χ/Σ/Ψ)`
+Pulling arrows in this chapter: **□ → Α → Ω → Θ**, with **Λ** as persistent modulation and **Χ** as the viability regulator.
 
 ---
 
@@ -3482,4 +3483,5 @@ It answers one question only:
 ### D.7 One-Page Map Sentence (Citable)
 
 > PMS-SEX reads sexuality as a trajectory system: once difference is enacted under frames, repetition stabilizes paths, asymmetries distribute costs, time hardens consequences, and only operative distance can interrupt drift before identity binding captures the configuration.
+
 
