@@ -99,16 +99,16 @@ PMS-SEX/
 ├── img/
 │   └── cover.png
 └── examples/
-    ├── Example 1 - Desire as Self-Punishment (Minimal Psychology Trigger).md
-    ├── Example 1 - Desire as Self-Punishment (Minimal Psychology Trigger).html
-    ├── Example 2 - Suspended Binding That Quietly Becomes Possession.md
-    ├── Example 2 - Suspended Binding That Quietly Becomes Possession.html
-    ├── Example 3 - High Intensity + Narrative Safety.md
-    ├── Example 3 - High Intensity + Narrative Safety.html
-    ├── Example 4 - Dignity Collapse without Rule Violation.md
-    ├── Example 4 - Dignity Collapse without Rule Violation.html
-    ├── Example 5 - Pseudo-Symmetry under Real Cost Asymmetry.md
-    └── Example 5 - Pseudo-Symmetry under Real Cost Asymmetry.html
+    ├── Example 1 - Consent That Survives Legally but Fails Structurally.md
+    ├── Example 1 - Consent That Survives Legally but Fails Structurally.html
+    ├── Example 2 - Desire as Self-Punishment (Minimal Psychology Trigger).md
+    ├── Example 2 - Desire as Self-Punishment (Minimal Psychology Trigger).html
+    ├── Example 3 - Suspended Binding That Quietly Becomes Possession.md
+    ├── Example 3 - Suspended Binding That Quietly Becomes Possession.html
+    ├── Example 4 - High Intensity + Narrative Safety.md
+    ├── Example 4 - High Intensity + Narrative Safety.html
+    ├── Example 5 - Dignity Collapse without Rule Violation.md
+    └── Example 5 - Dignity Collapse without Rule Violation.html
 ```
 
 The **canonical source** is `PMS-SEX - From Impulse to Self-Binding - A Praxeological Grammar of Sexuality.md`.
@@ -253,6 +253,7 @@ It makes visible what sexual configurations **produce** —
 especially where costs emerge, how drift becomes prepared,
 and why many conflicts arise not from malice,
 but from **structural opacity under time, asymmetry, and repetition**.
+
 
 
 
