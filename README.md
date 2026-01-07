@@ -6,6 +6,8 @@
 
 Where many approaches to sexuality default to psychology, morality, diagnosis, or advice, **PMS–SEX stays strictly praxeological**: it reconstructs **what sexual configurations produce over time** — especially **cost layouts**, **drift chains**, and **viability corridors** — **without person-typing**, **without moral ranking**, and **without instructional content**.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18171480.svg)](https://doi.org/10.5281/zenodo.18171480)
+
 ---
 
 ## What PMS–SEX Is
@@ -251,6 +253,7 @@ It makes visible what sexual configurations **produce** —
 especially where costs emerge, how drift becomes prepared,
 and why many conflicts arise not from malice,
 but from **structural opacity under time, asymmetry, and repetition**.
+
 
 
 
