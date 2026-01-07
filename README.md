@@ -89,9 +89,9 @@ This repository ships the PMS–SEX paper in three formats (Markdown / HTML / PD
 PMS-SEX/
 ├── README.md
 ├── LICENSE
-├── PMS-SEX.md
-├── PMS-SEX.html
-├── PMS-SEX.pdf
+├── PMS-SEX - From Impulse to Self-Binding - A Praxeological Grammar of Sexuality.md
+├── PMS-SEX - From Impulse to Self-Binding - A Praxeological Grammar of Sexuality.html
+├── PMS-SEX - From Impulse to Self-Binding - A Praxeological Grammar of Sexuality.pdf
 ├── css/
 │   └── main.css
 ├── img/
@@ -109,7 +109,7 @@ PMS-SEX/
     └── Example 5 - Pseudo-Symmetry under Real Cost Asymmetry.html
 ```
 
-The **canonical source** is `PMS-SEX.md`.
+The **canonical source** is `PMS-SEX - From Impulse to Self-Binding - A Praxeological Grammar of Sexuality.md`.
 HTML/PDF are render targets for consistent reading and citation.
 
 ---
@@ -251,6 +251,7 @@ It makes visible what sexual configurations **produce** —
 especially where costs emerge, how drift becomes prepared,
 and why many conflicts arise not from malice,
 but from **structural opacity under time, asymmetry, and repetition**.
+
 
 
 
