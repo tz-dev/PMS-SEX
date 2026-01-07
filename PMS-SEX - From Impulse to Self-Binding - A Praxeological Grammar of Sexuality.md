@@ -1904,8 +1904,6 @@ Suspending self-binding can work locally, but only while the situation itself ca
 
 ## 18. Dysfunctional Expressions and Destructive Dynamics
 
-*(updated, PMS-strict)*
-
 This chapter analyzes enactments, roles, and scenes. It consolidates drift and destruction dynamics as praxeological markers (no diagnosis; no person labels). Criteria only; no how-to.
 
 ### 18.1 Aim of the Chapter
@@ -2057,9 +2055,11 @@ Several orientations are structurally rational as reading criteria:
 * treating Χ availability as decisive is rational because it is the primary drift limiter under intensity and repetition,
 * treating Θ realism as mandatory is rational because exit fictions are structurally unstable under accumulation.
 
-#### (4) Entry Guard (mandatory trace)
+#### (4) Entry Guard (with meaning)
 
-**Entry Guard: Χ ok / Reversibility ok / D ok.**
+* **Χ (Distance):** maintained by keeping interruption, hesitation, and meta-reading practically available even under intensity and repetition; loss of distance is treated as a structural risk marker, not as resistance or bad faith.
+* **Reversibility:** maintained by analyzing drift as configuration-bound and revisable, while explicitly acknowledging that accumulated costs (bodily, temporal, reputational) do not disappear through re-framing.
+* **D (Dignity-in-Practice):** maintained by describing destructive dynamics without attributing intent, pathology, defect, or personal worth, and by treating asymmetry and drift as structural effects rather than moral verdicts.
 
 #### (5) Viability Verdict (Non-Moral)
 
@@ -2243,9 +2243,11 @@ Several orientations are structurally rational as criteria:
 * treating Χ as decisive is rational because it is the primary limiter of escalation and fixation,
 * treating Ψ leak and Φ inflation as early drift markers is rational because they raise stakes while avoiding explicit frame capacity.
 
-#### (4) Entry Guard (mandatory trace)
+#### (4) Entry Guard (with meaning)
 
-**Entry Guard: Χ ok / Reversibility ok / D ok.**
+* **Χ (Distance):** maintained by treating stop-capability and meta-reading as continuous functional requirements of viability, not as emergency measures; loss of practical distance is read as a drift signal, not as lack of commitment.
+* **Reversibility:** maintained by keeping all criteria configuration-bound and revisable, while explicitly acknowledging that accumulated temporal, bodily, and reputational costs are not undone by re-interpretation.
+* **D (Dignity-in-Practice):** maintained by using viability and warning markers as structural criteria only, without attributing fault, deficit, intent, or personal worth, and by treating asymmetry as a regulatory problem rather than a moral one.
 
 #### (5) Viability Verdict (Non-Moral)
 
@@ -2389,23 +2391,38 @@ No conclusions about character, pathology, or worth are permitted.
 
 ---
 
-### 20.7 Chapter Closure — Minimal Psychology as Drift Alarm
+### 20.7 Chapter Closure — Minimal Psychology as Structural Alarm
 
-This chapter positions minimal psychology as an **internal alarm** that activates when drift patterns (Chapter 18) persist despite the availability of viability criteria (Chapter 19). The “why” question is used only to test whether desire itself has become aligned with repetition, accumulation, and frame narrowing. Its function is interruption, not explanation: it marks the point where structure alone no longer self-corrects, but before critique turns outward or evaluative.
+#### (1) Structural Result (Condensation)
 
-**Cost sentence:**
-Costs appear as **continued Θ accumulation, erosion of Χ stop-capability, narrowing of viable frames, and repeated D undercutting**, which intensify precisely because repetition continues despite explicit awareness.
+This chapter establishes minimal psychology as a **boundary mechanism inside PMS-SEX**, not as an explanatory layer. It becomes relevant only when drift dynamics (Chapter 18) and viability criteria (Chapter 19) are already structurally legible, yet repetition continues unchanged. The result is a precise repositioning: minimal psychology does not explain why drift occurs, but marks the point where **structural description alone no longer interrupts reenactment**. Its role is to signal internal correction failure before critique turns outward.
 
-**Viability corridor:**
-*Viability increases where* the alarm restores distance, reopens frame breadth, and re-centers Θ realism without identity interpretation.
-*Drift begins where* the alarm is ignored or converted into self-narrative, allowing Α fixation and Θ damage to continue unchecked.
+#### (2) Cost Distribution (explicit)
 
-**Entry guard:**
-*Χ* is preserved by using the question as a meta-interrupt, not self-fusion.
-*Reversibility* is preserved by keeping all outputs hypothetical and structural.
-*D* is preserved by refusing explanation of persons and limiting the response to protection against further self-undercutting.
+Even without psychological explanation, costs accumulate concretely:
 
-**Quote-ready line:**
+* through **Θ (temporality):** foreseeable harm continues to accrue despite explicit awareness,
+* through **Χ erosion:** stop-capability weakens as repetition normalizes urgency or inevitability,
+* through **□ narrowing:** alternative frames lose accessibility as one script dominates,
+* through **D undercutting:** dignity-in-practice erodes via repeated boundary violations or degradation scripts.
+
+Minimal psychology names these costs without redescribing them as inner deficits.
+
+#### (3) Structural Viability Corridor
+
+**Viability increases where** the alarm restores distance, reopens frame breadth, re-centers Θ realism, and interrupts repetition without converting the situation into identity narrative.
+**Drift begins where** the alarm is ignored, domesticated, or turned into self-interpretation, allowing Α fixation, Θ accumulation, and dignity erosion to continue under the appearance of insight.
+
+The corridor remains praxeological: it distinguishes interruption from continuation, not health from pathology.
+
+#### (4) Entry Guard (with meaning)
+
+* **Χ (Distance):** preserved by using the “why” question strictly as a meta-interrupt to reenactment, not as a fusion with desire or identity.
+* **Reversibility:** preserved by keeping all hypotheses hypothetical and configuration-bound, while explicitly acknowledging that accumulated effects do not reset through reinterpretation.
+* **D (Dignity-in-Practice):** preserved by refusing explanation, typing, or evaluation of persons, and by limiting the alarm to protection against further structural self-undercutting.
+
+#### (5) One-line Marker (quote-ready)
+
 Minimal psychology in PMS-SEX activates when drift persists despite clarity: it does not explain desire, it signals that repetition, accumulation, and frame narrowing are no longer correcting themselves.
 
 ---
@@ -3483,6 +3500,5 @@ It answers one question only:
 ### D.7 One-Page Map Sentence (Citable)
 
 > PMS-SEX reads sexuality as a trajectory system: once difference is enacted under frames, repetition stabilizes paths, asymmetries distribute costs, time hardens consequences, and only operative distance can interrupt drift before identity binding captures the configuration.
-
 
 
