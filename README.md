@@ -254,8 +254,6 @@ especially where costs emerge, how drift becomes prepared,
 and why many conflicts arise not from malice,
 but from **structural opacity under time, asymmetry, and repetition**.
 
+**Dedication Note**
 
-
-
-
-
+PMS-SEX is dedicated to Douglas Adams, who understood that much of what one learns about sex is not what one wanted to know, but what one is nevertheless forced to confront.  
