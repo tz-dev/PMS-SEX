@@ -1,6 +1,6 @@
 # PMS–SEX
 
-**From Impulse to Self-Binding: A Praxeological Grammar of Sexuality (Δ–Ψ)**
+## From Impulse to Self-Binding: A Praxeological Grammar of Sexuality (Δ–Ψ)
 
 **PMS–SEX is a formal application of the [Praxeological Meta-Structure (PMS)](https://github.com/tz-dev/Praxeological-Meta-Structure-Theory)** — a generative operator framework (Δ–Ψ) for modelling praxis, frames, non-events, stabilization, asymmetry, temporality, distance, integration, and self-binding.
 
@@ -271,4 +271,5 @@ It makes visible what sexual configurations **produce** —
 especially where costs emerge, how drift becomes prepared,
 and why many conflicts arise not from malice,
 but from **structural opacity under time, asymmetry, and repetition**.
+
 
