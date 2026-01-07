@@ -6,7 +6,7 @@
 
 Where many approaches to sexuality default to psychology, morality, diagnosis, or advice, **PMS–SEX stays strictly praxeological**: it reconstructs **what sexual configurations produce over time** — especially **cost layouts**, **drift chains**, and **viability corridors** — **without person-typing**, **without moral ranking**, and **without instructional content**.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18171480.svg)](https://doi.org/10.5281/zenodo.18171480)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18171480.svg)](https://doi.org/10.5281/zenodo.18173358)
 
 ---
 
@@ -257,4 +257,5 @@ but from **structural opacity under time, asymmetry, and repetition**.
 **Dedication Note**
 
 PMS-SEX is dedicated to Douglas Adams, who understood that much of what one learns about sex isn't necessarily what one wanted to know, but what one is nevertheless forced to confront.  
+
 
