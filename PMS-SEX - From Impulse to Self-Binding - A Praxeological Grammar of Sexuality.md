@@ -3227,7 +3227,7 @@ The table is **descriptive**, not normative.
 ### C.1 Canonical Operator Table (Δ–Ψ)
 
 | Operator | Name                | Depends on | Minimal praxeological function                                                                               | Typical drift markers (non-exhaustive)                                           |
-| -------: | ------------------- | ---------- | ------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------- |
+| :-------: | ------------------- | ---------- | ------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------- |
 |    **Δ** | Difference          | —          | Creates distinctions that make sexual praxis legible at all (inside/outside, allowed/forbidden, self/other). | Undifferentiated pressure; fusion; illegibility of boundaries.                   |
 |    **∇** | Impulse             | Δ          | Introduces directional pressure that demands handling (activation, pull).                                    | Escalation without framing; compulsive discharge; pressure outruns coordination. |
 |    **□** | Frame               | Δ, ∇       | Constrains impulse into a readable scene grammar (roles, rules, timing, publicity).                          | Ambiguity drift; retroactive rule changes; mono-frame dominance.                 |
@@ -3483,5 +3483,6 @@ It answers one question only:
 ### D.7 One-Page Map Sentence (Citable)
 
 > PMS-SEX reads sexuality as a trajectory system: once difference is enacted under frames, repetition stabilizes paths, asymmetries distribute costs, time hardens consequences, and only operative distance can interrupt drift before identity binding captures the configuration.
+
 
 
