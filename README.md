@@ -195,26 +195,6 @@ It is **not** intended for giving instructions, escalating risk, or prescribing 
 
 ## Links & Resources
 
-* **PMS (canonical framework):**
-  [https://github.com/tz-dev/Praxeological-Meta-Structure-Theory](https://github.com/tz-dev/Praxeological-Meta-Structure-Theory)
-  PMS.yaml (raw):
-  [https://raw.githubusercontent.com/tz-dev/Praxeological-Meta-Structure-Theory/refs/heads/main/model/PMS.yaml](https://raw.githubusercontent.com/tz-dev/Praxeological-Meta-Structure-Theory/refs/heads/main/model/PMS.yaml)
-
-* **MIP (docking / critique lens):**
-  [https://github.com/tz-dev/Maturity-in-Practice](https://github.com/tz-dev/Maturity-in-Practice)
-  MIPractice_case YAML (raw):
-  [https://raw.githubusercontent.com/tz-dev/Maturity-in-Practice/refs/heads/main/MIPractice_case_v2.0_full_with_model_reference.yaml](https://raw.githubusercontent.com/tz-dev/Maturity-in-Practice/refs/heads/main/MIPractice_case_v2.0_full_with_model_reference.yaml)
-
-Related PMS applications (papers):
-
-* [https://github.com/tz-dev/PMS-LOGIC](https://github.com/tz-dev/PMS-LOGIC)
-* [https://github.com/tz-dev/PMS-ANTICIPATION](https://github.com/tz-dev/PMS-ANTICIPATION)
-* [https://github.com/tz-dev/PMS-EDEN](https://github.com/tz-dev/PMS-EDEN)
-
----
-
-## Links & Resources
-
 *PMS-SEX* is situated within a broader **praxeological ecosystem** that connects formal operator theory, applied anthropology, structural ethics, and domain-specific analyses.
 The resources below provide **canonical references, adjacent applications, and tooling** for working with PMS-SEX **without mixing layers**.
 
@@ -271,5 +251,6 @@ It makes visible what sexual configurations **produce** —
 especially where costs emerge, how drift becomes prepared,
 and why many conflicts arise not from malice,
 but from **structural opacity under time, asymmetry, and repetition**.
+
 
 
