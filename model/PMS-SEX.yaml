@@ -1,0 +1,1131 @@
+# =============================================================================
+#  PMS-SEX — PAPER-SPECIFIC APPLICATION PROFILE (OVERLAY)
+#
+#  Repository:
+#    https://github.com/tz-dev/PMS-SEX
+#
+#  File:
+#    PMS-SEX.yaml
+#
+#  Profile Version:
+#    PMS-SEX_1.0
+#
+#  Last Updated:
+#    2026-01-08
+#
+# -----------------------------------------------------------------------------
+#  PURPOSE AND STATUS
+# -----------------------------------------------------------------------------
+#  This document defines a paper-specific APPLICATION PROFILE for the
+#  Praxeological Meta-Structure (PMS). It operationalizes the theoretical
+#  arguments of the accompanying paper
+#
+#    “PMS-SEX — From Impulse to Self-Binding:
+#     A Praxeological Grammar of Sexuality (Δ–Ψ)”
+#
+#  by expressing them in a machine-readable, structurally constrained form.
+#
+#  The profile is an OVERLAY, not a fork or extension of PMS. Its function is to
+#  make the sexuality lens formally legible while remaining strictly subordinate
+#  to the canonical PMS specification.
+#
+# -----------------------------------------------------------------------------
+#  RELATIONSHIP TO PMS (NON-NEGOTIABLE CONSTRAINTS)
+# -----------------------------------------------------------------------------
+#  - This profile DEPENDS on the canonical PMS base specification
+#    (schema_version: PMS_1.1).
+#
+#  - It does NOT redefine, replace, reinterpret, or extend the eleven PMS
+#    meta-axioms (Δ–Ψ).
+#
+#  - It does NOT introduce new operators, meta-axioms, or dependency relations.
+#
+#  - It does NOT modify canonical operator order, dependency hygiene, or
+#    derived axes (A, C, R, E, D).
+#
+#  - All references to operators (Δ–Ψ) retain their meanings exactly as defined
+#    in PMS.yaml.
+#
+#  - Any apparent deviations (e.g. “reduced signatures”, “suspended Ψ”) are
+#    shorthand notations or frame-level descriptions only and MUST NOT be read
+#    as changes to PMS operator logic.
+#
+# -----------------------------------------------------------------------------
+#  SCOPE OF THE OVERLAY
+# -----------------------------------------------------------------------------
+#  This application profile introduces ONLY overlay-level constructs, including:
+#
+#    - reduced operator signatures (shorthand expressions for analysis),
+#    - drift catalogues and drift corridors (configuration markers),
+#    - functional minimum and viability corridors,
+#    - modulators (non-operator weightings; no typing, no causation),
+#    - example-suite schemas (scene-bound, non-instructional),
+#    - amplification overlays (e.g. publicness/media as □ extensions).
+#
+#  These constructs:
+#    - amplify or organize existing PMS operators,
+#    - never replace generativity with explanation,
+#    - never bypass asymmetry (Ω), temporality (Θ), or distance (Χ),
+#    - remain descriptive, non-diagnostic, and non-prescriptive.
+#
+# -----------------------------------------------------------------------------
+#  VALIDITY GATE — PMS ENTRY CONDITION (APPLICATION-ONLY)
+# -----------------------------------------------------------------------------
+#  Any USE of this profile as a PMS APPLICATION presupposes acceptance of the
+#  canonical PMS entry condition:
+#
+#    - Χ (Distance):
+#        a maintained meta-position and stop-capability; no fusion into verdict,
+#        impulse, ideology, or role.
+#
+#    - Reversibility:
+#        all readings are scene-bound, revisable, and configuration-specific;
+#        no global person labels or irreversible interpretive claims.
+#
+#    - D (Dignity-in-Practice):
+#        no shaming, ranking, humiliation, or ontological person evaluation;
+#        critique is restricted to enacted structures and cost handling.
+#
+#  This gate constrains APPLICATION only.
+#  PMS itself may be criticized, rejected, or ignored without satisfying it.
+#
+# -----------------------------------------------------------------------------
+#  SELF-BINDING AND MODEL HYGIENE (CLARIFICATION)
+# -----------------------------------------------------------------------------
+#  In line with PMS.yaml, any application that suspends Distance (Χ),
+#  Dignity-in-Practice (D), or Self-Binding discipline (Ψ) in order to enforce
+#  truth, clarity, authority, or asymmetry is formally INVALID as PMS
+#  application—even if PMS terminology is retained.
+#
+#  This profile therefore treats all PMS-SEX analyses as:
+#    - scene-bound,
+#    - structurally revisable,
+#    - non-psychological,
+#    - non-clinical,
+#    - non-moralizing.
+#
+# -----------------------------------------------------------------------------
+#  CANONICAL OPERATOR SOURCE
+# -----------------------------------------------------------------------------
+#  PMS base specification:
+#    PMS.yaml (schema_version: PMS_1.1)
+#
+#  Canonical source URL:
+#    https://raw.githubusercontent.com/tz-dev/Praxeological-Meta-Structure-Theory/refs/heads/main/model/PMS.yaml
+#
+#  PMS-SEX MUST always be read against this source.
+#
+# =============================================================================
+
+schema_version: "PMS-SEX_1.0"
+schema_meta:
+  model_name: "PMS–SEX Application Profile"
+  model_short: "PMS-SEX"
+  status: "production"
+  last_updated: "2026-01-08"
+  authors:
+    - name: "T. Zöller"
+      role: "originator"
+    - name: "ChatGPT (GPT-5.2 Thinking)"
+      role: "formalization_assistant"
+  depends_on:
+    model_name: "Praxeological Meta-Structure"
+    model_short: "PMS"
+    schema_version: "PMS_1.1"
+  description: >
+    APPLICATION PROFILE for PMS that specifies the structural lens of PMS-SEX
+    using the canonical operator grammar (Δ–Ψ), without redefining operators
+    or altering dependencies. Provides reduced signatures, modulators (non-operator
+    weightings), drift markers, viability corridors, and example-suite scaffolding.
+  repo:
+    name: "PMS-SEX"
+    url: "https://github.com/tz-dev/PMS-SEX"
+  source_paper:
+    title: "PMS-SEX — From Impulse to Self-Binding: A Praxeological Grammar of Sexuality (Δ–Ψ)"
+    file: "PMS-SEX - From Impulse to Self-Binding - A Praxeological Grammar of Sexuality.md"
+
+validity_gate:
+  note: >
+    This gate constrains PMS-application only (not critique or rejection).
+  requires:
+    - id: "Χ"
+      name: "Distance"
+      meaning: "meta-position / stop-capability; no fusion into verdict"
+    - id: "reversibility"
+      meaning: "scene-bound, revisable readings; no global person labels"
+    - id: "D"
+      name: "Dignity-in-practice"
+      meaning: "no shaming/ranking; structure-only critique of configurations"
+
+operator_reference:
+  source: "PMS.yaml"
+  schema_version: "PMS_1.1"
+  fixed_set: ["Δ", "∇", "□", "Λ", "Α", "Ω", "Θ", "Φ", "Χ", "Σ", "Ψ"]
+  dependency_hygiene_note: >
+    Any use of Χ in reduced signatures is shorthand only; in PMS, Χ depends on
+    Φ, Θ, and □. Reduced signatures do not negate prerequisites.
+
+references:
+  - label: "PMS (GitHub)"
+    url: "https://github.com/tz-dev/Praxeological-Meta-Structure-Theory"
+  - label: "PMS.yaml (raw)"
+    url: "https://raw.githubusercontent.com/tz-dev/Praxeological-Meta-Structure-Theory/refs/heads/main/model/PMS.yaml"
+  - label: "MIP (GitHub)"
+    url: "https://github.com/tz-dev/Maturity-in-Practice"
+  - label: "MIP.yaml (raw)"
+    url: "https://raw.githubusercontent.com/tz-dev/Maturity-in-Practice/refs/heads/main/MIPractice_case_v2.0_full_with_model_reference.yaml"
+
+# -----------------------------------------------------------------------------
+# Overlays (non-operators; amplification only)
+# -----------------------------------------------------------------------------
+overlays:
+  P:
+    name: "Publicness / media overlay (□ extension)"
+    is_operator: false
+    amplifies: ["Ω", "Θ", "Α", "Λ"]
+    note: >
+      Amplification-only overlay; introduces no new operators. Treat as □-level
+      visibility/publicity extension per PMS-SEX (public/private role grammar,
+      reputational stakes, documentation, audience effects). No operator redefinition.
+
+# -----------------------------------------------------------------------------
+# Reduced signatures (paper-specific; reduced shorthand only)
+# -----------------------------------------------------------------------------
+reduced_signatures:
+
+  SEX_linear_spine:
+    label: "Linear operator spine (canonical flow; Appendix D map)"
+    reduced: true
+    raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ"
+    operators: ["Δ","∇","□","Λ","Α","Ω","Θ","Φ","Χ","Σ","Ψ"]
+    note: "Orientation map; not an explanatory proof chain."
+
+  MF_1_2:
+    label: "1.2 Minimal Formula (Operatorial)"
+    reduced: true
+    raw: "* **Δ → ∇ → □** (early effective: **□ → Λ → Α**)"
+    operators: ["Δ","∇","□","Λ","Α"]
+
+  MF_3_2:
+    label: "3.2 Minimal Formula (Operatorial)"
+    reduced: true
+    raw: "**Δ → ∇ → □ → (Λ) → Α**"
+    operators: ["Δ","∇","□","Λ","Α"]
+
+  MF_4_2:
+    label: "4.2 Minimal Formula (Operatorial)"
+    reduced: true
+    raw: "**Δ → ∇ → □ → Λ → Α → Ω → Θ**"
+    operators: ["Δ","∇","□","Λ","Α","Ω","Θ"]
+
+  MF_5_2:
+    label: "5.2 Minimal Formula (Operatorial)"
+    reduced: true
+    raw: "**Δ → ∇ → □ → Λ → Α → Ω → Θ**"
+    operators: ["Δ","∇","□","Λ","Α","Ω","Θ"]
+
+  MF_6_2:
+    label: "6.2 Minimal Formula (Operatorial)"
+    reduced: true
+    raw: "**(□ → Λ → Α) → Ω → Θ → (Χ/Σ/Ψ)**"
+    operators: ["□","Λ","Α","Ω","Θ","Χ","Σ","Ψ"]
+
+  MF_7_2:
+    label: "7.2 Minimal Formula (Operatorial)"
+    reduced: true
+    raw: "**Δ → ∇ → □ → Λ → (Α) → (Ω/Θ)**"
+    operators: ["Δ","∇","□","Λ","Α","Ω","Θ"]
+
+  MF_8_2:
+    label: "8.2 Minimal Formula (Operatorial)"
+    reduced: true
+    raw: "**Δ → ∇ → □ → Λ → Α → (Ω → Θ)**"
+    operators: ["Δ","∇","□","Λ","Α","Ω","Θ"]
+
+  MF_9_2:
+    label: "9.2 Minimal Formula (Operatorial)"
+    reduced: true
+    raw: "**Δ → ∇ → □₁ → (Λ) → Α → Ω/Θ → Φ → □₂**"
+    operators: ["Δ","∇","□","Λ","Α","Ω","Θ","Φ"]
+
+  MF_10_2:
+    label: "10.2 Minimal Formula (Operatorial)"
+    reduced: true
+    raw: "**Δ → ∇ → □ → (Λ) → Α → Ω → Θ → Φ → Χ**"
+    operators: ["Δ","∇","□","Λ","Α","Ω","Θ","Φ","Χ"]
+
+  MF_11_2:
+    label: "11.2 Minimal Formula (Operatorial)"
+    reduced: true
+    raw: "**Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ**"
+    operators: ["Δ","∇","□","Λ","Α","Ω","Θ","Φ","Χ","Σ"]
+
+  MF_12_2:
+    label: "12.2 Minimal Formula (Operatorial)"
+    reduced: true
+    raw: "**Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ**"
+    operators: ["Δ","∇","□","Λ","Α","Ω","Θ","Φ","Χ","Σ","Ψ"]
+
+  MF_14_3:
+    label: "14.3 Minimal Formula (Operatorial)"
+    reduced: true
+    raw: "**Δ → ∇ → □ → (Λ) → Α → Ω → Θ → (Φ/Χ/Σ/Ψ)**"
+    operators: ["Δ","∇","□","Λ","Α","Ω","Θ","Φ","Χ","Σ","Ψ"]
+
+  MF_15_2:
+    label: "15.2 Minimal Formula (Operatorial)"
+    reduced: true
+    raw: "**Δ → ∇ → □ → Λ → Α → Ω → Θ → (Φ/Χ/Σ/Ψ)**"
+    operators: ["Δ","∇","□","Λ","Α","Ω","Θ","Φ","Χ","Σ","Ψ"]
+
+  MF_16_2:
+    label: "16.2 Minimal Formula (Operatorial)"
+    reduced: true
+    raw: "**Δ → ∇ → □ → (Λ) → Α → Ω → Θ → (Φ/Χ/Σ/Ψ)**"
+    operators: ["Δ","∇","□","Λ","Α","Ω","Θ","Φ","Χ","Σ","Ψ"]
+
+  MF_17_2:
+    label: "17.2 Minimal Formula (Operatorial)"
+    reduced: true
+    raw: "**Δ → ∇ → □ → (Λ) → Α → Ω → Θ → (Φ) → Χ → (Σ) → (Ψ suspended)**"
+    operators: ["Δ","∇","□","Λ","Α","Ω","Θ","Φ","Χ","Σ","Ψ"]
+
+  MF_18_2:
+    label: "18.2 Minimal Formula (Operatorial)"
+    reduced: true
+    raw: "**Δ → ∇ → □ → (Λ) → Α → Ω → Θ → (Φ) → Χ → (Σ/Ψ)**"
+    operators: ["Δ","∇","□","Λ","Α","Ω","Θ","Φ","Χ","Σ","Ψ"]
+
+  MF_19_2:
+    label: "19.2 Minimal Formula (Operatorial)"
+    reduced: true
+    raw: "**Δ → ∇ → □ → (Λ) → Α → Ω → Θ → (Φ/Χ/Σ/Ψ)**"
+    operators: ["Δ","∇","□","Λ","Α","Ω","Θ","Φ","Χ","Σ","Ψ"]
+
+  D_min_formula_ch21_3:
+    label: "21.3 Minimal Formula of D (PMS-SEX; PMS-compliant expression)"
+    reduced: true
+    raw: "D = explicit Ω + operative Χ + no covert Ψ demand under Θ"
+    operators: ["Ω","Χ","Ψ","Θ"]
+    note: >
+      Overlay enactment constraint; canonical derived axis D remains ["Ψ","Χ","Ω"]. 
+      Θ appears here only as an application-relevant condition (trajectory realism), 
+      not as part of the canonical D formula.
+
+# -----------------------------------------------------------------------------
+# Drift catalogue (core PMS-SEX drift markers + corridors)
+# -----------------------------------------------------------------------------
+drift_catalogue:
+  core_dysfunction_markers_ch18_3:
+    note: >
+      Reading rule: Each marker is a configuration statement (“in this configuration…”),
+      not a label. Markers describe predictable structural consequences of operator
+      constellations; they are scene-bound, revisable, and non-diagnostic.
+
+    "(1) Covert self-binding demand (Ψ leak)": |
+      In this configuration, meaning and identity-relevant stakes enter a frame that is
+      narrated as limited or non-binding.
+
+      Typical indicators:
+        - implicit expectations (“this must mean…”)
+        - jealousy as rule-substitute or possession logic inside a play frame
+        - meaning claims without explicit frame legibility
+
+      Structural result:
+        - Ψ (binding / attribution) becomes operative although suspension is asserted;
+          attribution is silently demanded while the frame cannot carry binding explicitly.
+
+    "(2) Asymmetry escalation (Ω escalation)": |
+      In this configuration, asymmetry increases while remaining unacknowledged inside the frame.
+
+      Typical indicators:
+        - boundary testing (pushing against stop markers)
+        - access pressure (time, body, availability)
+        - power shifts without explicit rule updates
+
+      Structural result:
+        - Ω (asymmetry) is not managed; within the frame, Ω becomes a steering variable:
+          access and cost gradients begin to govern expectation, pressure, and what
+          counts as “normal.”
+
+    "(3) Pseudo-symmetry": |
+      In this configuration, equality rhetoric functions as a lid on cost description.
+
+      Typical indicators:
+        - “we both want it” or “it’s equal” as a stabilizing narrative
+        - while real exposure and cost asymmetry persists through temporality,
+          body remainder, or publicity overlays
+
+      Structural result:
+        - conflict becomes non-negotiable because Ω (asymmetry) must not be named
+          inside □ (frame); denial becomes the rule, so repair cannot be carried
+          as explicit coordination.
+
+    "(4) Non-event escalation (Λ as steering)": |
+      In this configuration, absence becomes an active steering mechanism.
+
+      Typical indicators:
+        - withdrawal used as leverage
+        - devaluation through non-occurrence (“not worth it” as a structural message)
+        - silence or indeterminacy functioning as an instrument of control
+
+      Structural result:
+        - Λ (non-event) shapes practice more than enactment; legibility pressure rises,
+          and coordination shifts into interpretation and guessing rather than
+          explicit frame work.
+
+    "(5) Attractor fixation (Α compulsivity)": |
+      In this configuration, stabilization flips into fixation.
+
+      Typical indicators:
+        - practice becomes non-substitutable (“only this works”)
+        - repetition replaces choice (the script runs the scene)
+        - frame breadth shrinks as a side effect (the frame becomes readable only
+          through the script)
+
+      Structural result:
+        - Α (attractor) binds more strongly than intention; alternatives lose legibility
+          and the configuration narrows into a single-path logic.
+
+    "(6) Loss of distance (Χ loss)": |
+      In this configuration, the meta-layer collapses.
+
+      Typical indicators:
+        - stopping becomes practically unavailable in the moment
+        - critique or hesitation is read as betrayal or attack
+        - humor, de-escalation, and “outside view” disappear
+
+      Structural result:
+        - self-correction fails. Without Χ (distance), drift cannot be intercepted early,
+          so other operators must carry tension through escalation, withdrawal,
+          or narrative repair.
+
+    "(7) Temporal overload (Θ accumulation)": |
+      In this configuration, costs accumulate faster than the frame can carry.
+
+      Typical indicators:
+        - costs are ignored or externalized (short-term relief, long-term expense)
+        - exit fictions persist (“you can stop anytime”)
+        - collapse becomes abrupt (body, reputation, bonding, or rule crash)
+
+      Structural result:
+        - exit collapse replaces orderly ending: Θ (temporality) does not rewind,
+          and Α (attractor) holds the configuration in place too long for low-cost
+          exit to remain plausible.
+
+  highlighted_drift_corridors_appendix_D4: |
+    (from PMS-SEX Appendix D.4)
+
+  operator_table_drift_markers_appendix_C:
+    note: "Typical drift markers per operator (Appendix C table)."
+    rows:
+      - operator: "Δ"
+        drift_markers: "Undifferentiated pressure; fusion; illegibility of boundaries."
+      - operator: "∇"
+        drift_markers: "Escalation without framing; compulsive discharge; pressure outruns coordination."
+      - operator: "□"
+        drift_markers: "Ambiguity drift; retroactive rule changes; mono-frame dominance."
+      - operator: "Λ"
+        drift_markers: "Chronic withholding; silence as leverage; interpretive overload."
+      - operator: "Α"
+        drift_markers: "Script lock-in; compulsion; repetition replaces choice."
+      - operator: "Ω"
+        drift_markers: "Cost shifting; exposure gradients denied; power as steering variable."
+      - operator: "Θ"
+        drift_markers: "Exit fiction; irreversibility denied; accumulation unaccounted."
+      - operator: "Φ"
+        drift_markers: "Narrative substitution; cost relocation without stabilization; perpetual reframing."
+      - operator: "Χ"
+        drift_markers: "Stop-capability erosion; fusion into impulse/script; brittle control."
+      - operator: "Σ"
+        drift_markers: "Compensatory stability; contradictions offloaded; forced simplification."
+      - operator: "Ψ"
+        drift_markers: "Covert meaning demand; identity capture; binding claims without frame support."
+
+# -----------------------------------------------------------------------------
+# Viability (functional minimum + warnings + corridor overlay)
+# -----------------------------------------------------------------------------
+viability:
+  functional_minimum_conditions_ch19_3: |
+    Functional minimum conditions describe when a configuration remains
+    structurally governable under Ω/Θ/Λ, without systematic dignity violation
+    and without relying on exit fictions. These are criteria only, not instructions.
+
+    (1) Explicit Ω recognition:
+      - cost, risk, access, and exposure gradients are not denied,
+      - equality rhetoric is not used as a substitute for management.
+      Minimal form: Ω (asymmetry) is nameable and regulable within the frame.
+
+    (2) Θ awareness:
+      - temporality is carried as structure (frequency, repetition, after-effects,
+        repair windows),
+      - “just this once” narratives do not override visible accumulation.
+      Minimal form: consequences are treated as real (exit realism).
+
+    (3) Stable Χ capacity (stop + meta competence):
+      - stop-capability is practically available, not merely asserted,
+      - distance can be activated before escalation becomes irreversible.
+      Minimal form: Χ (distance) is operative, not ornamental.
+
+    (4) No Ψ substitution (no covert binding substitute):
+      - sexual practice does not substitute for integration, self-worth,
+        identity proof, or relationship clarification,
+      - meaning demands do not cross frame boundaries covertly.
+      Minimal form: no Ψ leak as the default carrier of stakes.
+
+    (5) Λ tolerance without escalation:
+      - non-events (pause, fatigue, unavailability, cancellation) are tolerable,
+      - Λ is not recoded into control, punishment, or devaluation.
+      Minimal form: Λ (non-event) can exist without becoming steering or coercion.
+
+  warning_signals_ch19_4: |
+    Warning signals indicate increased drift potential toward coercion,
+    harm, or destructive dynamics. They are configuration markers only and
+    do not label persons.
+
+    (1) Φ narrative inflation:
+      - repeated re-framing (“actually it is…”) becomes necessary to cover
+        costs or asymmetry,
+      - recontextualization replaces clarification and cost naming.
+      Structural note: Φ substitutes for Σ (integration).
+
+    (2) Narrowing of □ alternatives (mono-frame):
+      - only one frame “works,”
+      - alternatives are devalued or rendered impossible.
+      Structural note: Α (attractor) monopolizes □ (frame).
+
+    (3) Ω moralization instead of regulation:
+      - asymmetry is negotiated via guilt or entitlement,
+      - moral claims (“if you loved me, you would…”) become steering devices.
+      Structural note: Ω is handled ideologically, increasing pseudo-symmetry risk.
+
+    (4) Persistence despite clear self-harm:
+      - repetition continues despite visible bodily, reputational, or bonding costs,
+      - exit is imagined but not executed (exit fiction persists).
+      Structural note: Α (attractor) + Θ (accumulation) overrun Χ (distance).
+
+    (5) Externalization of Θ costs:
+      - consequences are offloaded (bodily, reputational, emotional, social),
+      - short-term relief stabilizes the configuration at the other’s expense.
+      Structural note: Θ costs are shifted asymmetrically through Ω (layout).
+
+  minimal_viability_corridor_appendix_D5: |
+    Minimal viability corridor (overlay expression):
+
+      □ explicit
+      + Ω nameable
+      + Θ realistic
+      + Χ operative
+      (+ Σ reachable)
+      = structurally governable configuration
+
+    This corridor expresses structural sufficiency only.
+    It makes no moral claims and defines no normality threshold.
+    It marks when configurations remain governable rather than drift-prepared.
+
+# -----------------------------------------------------------------------------
+# Modulators (non-operator weightings; "types without typing")
+# -----------------------------------------------------------------------------
+modulators:
+  basic_rule_ch14_2: |
+    Modulators are praxeological, not psychological.
+
+    They operate through frames (□), repetition, and cost layouts rather than
+    through motive narratives. They are changeable because frames and handling
+    can change, and they are not arbitrary because path dependence remains active
+    once scripts have stabilized and costs have accumulated.
+
+    A modulator is therefore best read as a weighting that makes a particular
+    operator chain pull faster or more persistently in this kind of configuration,
+    without typing persons or explaining inner causes.
+
+  minimal_formula_ch14_3: |
+    Minimal operatorial background for modulators:
+
+      Δ → ∇ → □ → (Λ) → Α → Ω → Θ → (Φ/Χ/Σ/Ψ)
+
+    Modulators do not add new operators. They weight the likelihood and dominance
+    of existing operators—especially □, Λ, Α, Ω, Θ, Φ, Χ, Σ, and Ψ—by shaping
+    scene conditions, repetition, and cost layouts.
+
+  central_modulators_ch14_4:
+    "14.4.1 □₀ Early framing (Frame grounding)": |
+      Early frame grounding weights how later frames can be set and maintained.
+
+      Key dimensions:
+        - speakability vs unspeakability,
+        - order vs chaos in scene grammar,
+        - boundary clarity vs boundary ambiguity.
+
+      Structural effect:
+        - strong □₀ increases the likelihood that later frames remain explicit
+          and stable under pressure;
+        - weak □₀ increases the likelihood of implicit, shifting, or retroactively
+          rewritten frames, raising drift potential through ambiguity rather than
+          through intent.
+
+    "14.4.2 Ω₀ Asymmetry calibration": |
+      This modulator weights how asymmetry is noticed, named, and regulated.
+
+      Key dimensions:
+        - proximity–distance as lived coordination patterns,
+        - control vs exposure in role distribution,
+        - availability and choice power inside the frame.
+
+      Structural effect:
+        - calibrated Ω₀ supports regulation of gradients inside □;
+        - blurred Ω₀ increases pseudo-symmetry narratives until Θ accumulation
+          forces visibility of costs.
+
+    "14.4.3 Λ density (Non-event load)": |
+      Λ density weights how often non-occurrence becomes structurally active.
+
+      Key dimensions:
+        - frequency of withdrawal, rejection, or indeterminacy,
+        - chronic mismatch between expectation and enactment.
+
+      Structural effect:
+        - higher Λ density raises interpretive pressure inside the frame and
+          increases reliance on substitute scripts and stabilization pressure,
+          without implying motive or intent.
+
+    "14.4.4 Θ stability (Temporal continuity vs fragmentation)": |
+      Θ stability weights how sequences connect over time.
+
+      Key dimensions:
+        - continuity vs fragmentation,
+        - repeatability vs volatility,
+        - sustained commitments vs discontinuous episodes.
+
+      Structural effect:
+        - stable Θ makes path dependence and cumulative costs legible early;
+        - fragmented Θ increases volatility and can obscure exit realism by
+          narratively resetting meaning while material accumulation persists.
+
+    "14.4.5 Φ habituation (Recontextualization tendency)": |
+      Φ habituation weights how often tension is handled by re-framing.
+
+      Key dimensions:
+        - reinterpretation as tension reduction,
+        - narrative repair as default stabilization,
+        - frequent switching of “what this was really about.”
+
+      Structural effect:
+        - high Φ habituation can locally stabilize by reducing conflict,
+          but increases the risk of Φ as pseudo-resolution when Α scripts,
+          Ω gradients, and Θ accumulation remain unchanged;
+        - without operative Χ and reachable Σ, compensation drift becomes likely.
+
+    "14.4.6 Χ mode (Distance style)": |
+      Χ mode weights what distance does in practice.
+
+      Key dimensions:
+        - distance as protection,
+        - distance as control,
+        - distance as devaluation,
+        - distance as meta-capacity (humor, interruptibility, self-observation).
+
+      Structural effect:
+        - Χ as meta-capacity supports regulation and repair;
+        - Χ collapsed into control or devaluation produces brittle stability,
+          with pressure shifting into escalation or compensatory scripts.
+
+    "14.4.7 Optional: media / publicity modulators (Frame extension)": |
+      Media and publicity modulators function as □ frame extensions, not causes.
+
+      Key dimensions:
+        - visibility and documentation,
+        - comparison pressure and reputational stakes,
+        - stigma vs normalization regimes.
+
+      Structural effect:
+        - increased publicness hardens Θ costs and can amplify Ω gradients,
+          making exit, reinterpretation, and repair more expensive;
+        - these effects are read as frame overlays, not inner-state explanations.
+
+  interplay_ch14_5: |
+    Modulators operate in combination, not isolation. Drift and viability arise
+    from interacting weightings because operators pull in chains.
+
+    Typical configuration patterns:
+      - Λ-dense + Χ-weak + Θ-fragmented:
+        increased likelihood of brittle stabilization; pressure rises,
+        stop-capability fails in practice, and scripts consolidate as compensation.
+      - Ω₀ blurred + □ unstable:
+        increased likelihood of pseudo-symmetry; costs distribute unevenly while
+        the frame remains narratively “equal,” until Θ forces conflict visibility.
+      - Φ-high + Σ-weak:
+        increased likelihood of narrative inflation; re-framing substitutes for
+        synthesis, contradictions remain unresolved and return as drift pressure.
+
+    These patterns are legibility shortcuts, not predictions about persons.
+
+  demarcation_ch14_6: |
+    Modulator ≠ character.
+    Modulator ≠ blame.
+    Modulator ≠ diagnosis.
+
+    Modulators describe conditions under which configurations stabilize, drift,
+    or remain governable. They do not assign value to persons and do not claim
+    inner causes. Their purpose is methodological: to explain recurring outcomes
+    without determinism or typing.
+
+# -----------------------------------------------------------------------------
+# One-line markers (quote-ready) — chapter closures
+# -----------------------------------------------------------------------------
+chapter_one_line_markers:
+  note: "Quote-ready one-line markers from each chapter closure."
+  markers:
+    "0": >
+      PMS-SEX renders sexuality structurally legible by analyzing scenes, frames,
+      cost layouts, and drift—without collapsing into person-judgment, diagnosis,
+      or moral evaluation.
+
+    "1": >
+      Sexuality is not optional enactment but recurring praxis pressure: what matters
+      is how a configuration carries ∇ under □ across Λ and Θ.
+
+    "2": >
+      Drive does not disappear when it is suppressed; it reappears later as absence,
+      habit, and accumulated cost.
+
+    "3": >
+      What makes a sexual situation consequential is not what was meant, but how the
+      situation was framed—and when framing is unclear, costs do not vanish, they drift.
+
+    "4": >
+      Asymmetry is not a moral charge but a cost layout: if uneven exposure is not
+      handled in the situation, it resurfaces later as conflict and accumulated consequence.
+
+    "5": >
+      Time does not pause sexuality: postponement redistributes costs, repetition stabilizes
+      patterns, and consequences grow even when nothing seems to happen.
+
+    "6": >
+      Leaving changes what comes next, not what already counts: exits redirect trajectories,
+      but time keeps the bill.
+
+    "7": >
+      When a situation carries expectations, silence is not neutral: absence does work,
+      shifts burdens, and shapes what comes next.
+
+    "8": >
+      What repeats becomes easier, what is easier becomes default, and what becomes default
+      quietly shapes who carries the costs.
+
+    "9": >
+      Redirection does not remove pressure; it moves it, changing who carries the costs and
+      where they show up.
+
+    "10": >
+      Distance does not end pressure; it makes stopping possible before pressure turns into a path.
+
+    "11": >
+      Integration is the ability to hold conflicting demands together; when it is unavailable,
+      stability is usually bought by pushing the conflict somewhere else.
+
+    "12": >
+      Sexuality starts to cost when scenes stop being local and begin to count across time.
+
+    "13": >
+      No matter how the story is told, the body keeps the record.
+
+    "14": >
+      What keeps happening is often less about who someone is than about how the situation is weighted.
+
+    "15": >
+      Deviance is not who someone is, but what a situation becomes when one way of handling keeps working
+      and nothing interrupts it.
+
+    "16": >
+      Intensity does not create the danger; unmatched intensity does.
+
+    "17": >
+      Suspending self-binding can work locally, but only while the situation itself carries
+      the weight that identity usually does.
+
+    "18": >
+      Dysfunctional dynamics are rarely sudden: they are structurally prepared when Ψ leaks,
+      Ω becomes a steering variable, Χ collapses, Α fixates, and Θ accumulation breaks the exit fiction.
+
+    "19": >
+      Functional practice is defined by governability, not normality: Ω nameable, Θ real, Χ operative,
+      Ψ not substituted, Λ tolerable; drift begins where Φ replaces Σ, □ narrows, Ω moralizes,
+      persistence outruns Χ, and Θ costs are externalized.
+
+    "20": >
+      Minimal psychology in PMS-SEX activates when drift persists despite clarity: it does not explain
+      desire, it signals that repetition, accumulation, and frame narrowing are no longer correcting
+      themselves.
+
+    "21": >
+      Dignity in sexual practice is not about who someone is, but about how asymmetry is carried: when
+      stopping works, meaning stays bounded, and consequences are acknowledged, critique is possible
+      without humiliation.
+
+    "22": >
+      PMS-SEX explains how structures work; MIP explains when critique is legitimate—docking the two adds
+      clarity without turning analysis into moral judgment.
+
+    "23": >
+      PMS-SEX remains valid by stopping where other lenses begin: it explains what configurations do over
+      time, without turning structure into psychology or analysis into advice.
+
+    "24": >
+      There is no consequence-free sex: time, repetition, and asymmetry make trajectories real, so viability
+      depends on explicit frames, operable distance, and honest cost accounting.
+
+# -----------------------------------------------------------------------------
+# Structural tools: Operator Table & Structural Map
+# -----------------------------------------------------------------------------
+structural_tools:
+
+  operator_table:
+    note: >
+      Canonical Δ–Ψ operator table as used in PMS-SEX.
+      Descriptive only; supports internal consistency checks during analysis.
+      No normative or diagnostic function.
+
+    rows:
+      - operator: "Δ"
+        name: "Difference"
+        depends_on: []
+        minimal_function: >
+          Creates distinctions that render sexual praxis legible
+          (inside/outside, allowed/forbidden, self/other).
+        typical_drift_markers:
+          - undifferentiated pressure
+          - fusion
+          - illegibility of boundaries
+
+      - operator: "∇"
+        name: "Impulse"
+        depends_on: ["Δ"]
+        minimal_function: >
+          Introduces directional activation pressure that demands handling.
+        typical_drift_markers:
+          - escalation without framing
+          - compulsive discharge
+          - pressure outruns coordination
+
+      - operator: "□"
+        name: "Frame"
+        depends_on: ["Δ", "∇"]
+        minimal_function: >
+          Constrains impulse into a readable scene grammar
+          (roles, rules, timing, publicity).
+        typical_drift_markers:
+          - ambiguity drift
+          - retroactive rule changes
+          - mono-frame dominance
+
+      - operator: "Λ"
+        name: "Non-Event"
+        depends_on: ["□"]
+        minimal_function: >
+          Makes absence, delay, or withdrawal structurally active under expectation.
+        typical_drift_markers:
+          - silence as leverage
+          - withdrawal as punishment
+          - interpretive overload
+
+      - operator: "Α"
+        name: "Attractor"
+        depends_on: ["Δ", "∇", "□", "Λ"]
+        minimal_function: >
+          Stabilizes recurrent scripts under repetition; produces path dependence.
+        typical_drift_markers:
+          - script monopolization
+          - loss of alternatives
+          - repetition replaces choice
+
+      - operator: "Ω"
+        name: "Asymmetry"
+        depends_on: ["Α"]
+        minimal_function: >
+          Produces gradients of access, exposure, obligation, and cost-bearing.
+        typical_drift_markers:
+          - pseudo-symmetry
+          - covert cost shifting
+          - asymmetry used as steering variable
+
+      - operator: "Θ"
+        name: "Temporality"
+        depends_on: ["Α", "Ω"]
+        minimal_function: >
+          Extends configurations into trajectories:
+          accumulation, irreversibility, exit realism.
+        typical_drift_markers:
+          - exit fiction
+          - delayed collapse
+          - persistence despite visible harm
+
+      - operator: "Φ"
+        name: "Recontextualization"
+        depends_on: ["Θ", "Ω", "□"]
+        minimal_function: >
+          Embeds an existing structure into a new frame
+          without dissolving accumulated costs.
+        typical_drift_markers:
+          - narrative substitution
+          - repeated “it’s different now”
+          - cost denial
+
+      - operator: "Χ"
+        name: "Distance"
+        depends_on: ["Φ", "Θ", "□"]
+        minimal_function: >
+          Enables stop-capability and meta-position
+          within ongoing praxis.
+        typical_drift_markers:
+          - stopping punished
+          - critique read as betrayal
+          - escalation lock-in
+
+      - operator: "Σ"
+        name: "Integration"
+        depends_on: ["Χ", "Φ"]
+        minimal_function: >
+          Coordinates contradictions without coercion
+          or compensatory simplification.
+        typical_drift_markers:
+          - fragmentation
+          - substitution by Α / Φ / Ω / Λ
+          - split coherence
+
+      - operator: "Ψ"
+        name: "Self-Binding"
+        depends_on: ["Σ", "Θ", "Χ"]
+        minimal_function: >
+          Binds trajectories into identity-relevant commitments over time.
+        typical_drift_markers:
+          - Ψ leak
+          - covert binding inside suspended frames
+          - identity capture
+
+  structural_map:
+    note: >
+      Compressed one-page orientation map for PMS-SEX.
+      Orientation only; not explanatory or instructional.
+
+    canonical_spine: |
+      Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ
+
+    key_zones:
+      activation_and_legibility:
+        operators: ["Δ", "∇", "□"]
+        failure_mode: "pressure without legibility → escalation or fusion"
+
+      absence_and_stabilization:
+        operators: ["Λ", "Α"]
+        insight: "absence is not neutral; repetition produces path dependence"
+
+      cost_axis_core:
+        operators: ["Ω", "Θ"]
+        insight: >
+          Once Α exists, Ω and Θ are unavoidable.
+          Interpretation may rewind; Θ does not.
+
+      narrative_handling:
+        operators: ["Φ"]
+        bifurcation:
+          regulated: "Φ + Χ operative"
+          drift_prone: "Φ without Χ"
+
+      regulation_gate:
+        operator: "Χ"
+        insight: >
+          Loss of distance is the strongest drift predictor in PMS-SEX.
+
+      identity_binding_zone:
+        operator: "Ψ"
+        warning: >
+          Ψ leak indicates binding pressure inside frames
+          that cannot carry identity relevance.
+
+    highlighted_drift_corridor: |
+      Λ density
+       → Α monopolization
+       → Ω as steering
+       → Θ accumulation
+       → Χ collapse
+       → late Ψ capture
+
+    minimal_viability_corridor: |
+      □ explicit
+      + Ω nameable
+      + Θ realistic
+      + Χ operative
+      (+ Σ reachable)
+      = structurally governable configuration
+
+analysis_checklist:
+  note: >
+    Scene-bound structural checklist for PMS-SEX application. Criteria only;
+    non-instructional, non-diagnostic. Use with validity_gate (Χ + reversibility + D).
+
+  steps:
+    - id: "S1"
+      title: "Scene boundary"
+      checks:
+        - "Define the scene (□): what is inside/outside, what is claimable/nameable?"
+        - "Confirm reversibility: all readings are configuration-bound, revisable."
+
+    - id: "S2"
+      title: "Reduced operator signature"
+      checks:
+        - "Select the closest reduced_signatures entry (if any)."
+        - "If Χ appears, remember dependency hygiene: Χ presupposes Φ, Θ, □ (shorthand only)."
+
+    - id: "S3"
+      title: "Cost axis scan (Ω ↔ Θ)"
+      checks:
+        - "Identify Ω gradients (access/exposure/obligation/cost-bearing)."
+        - "Identify Θ trajectory (accumulation/irreversibility/exit realism)."
+
+    - id: "S4"
+      title: "Distance and correction capacity"
+      checks:
+        - "Is Χ practically operative (stop-capability, meta-position), not merely asserted?"
+        - "Is Σ reachable (coordination of contradictions) without coercive simplification?"
+
+    - id: "S5"
+      title: "Drift marker scan"
+      checks:
+        - "Check drift_catalogue.core_dysfunction_markers_ch18_3 for matching configuration markers."
+        - "If Ψ leak is suspected, verify whether binding/meaning has entered a frame narrated as non-binding."
+
+    - id: "S6"
+      title: "Viability minimums"
+      checks:
+        - "Apply viability.functional_minimum_conditions_ch19_3 (Ω nameable, Θ realistic, Χ operative, no Ψ substitution, Λ tolerable)."
+        - "Apply viability.warning_signals_ch19_4 as tipping markers."
+
+    - id: "S7"
+      title: "Escalation guard"
+      checks:
+        - "If drift persists despite structural clarity, minimal_psychology_adapter may activate (alarm only; no explanations)."
+        - "Maintain D: no shaming, no ranking, no person-labels; structure-only critique."
+
+# -----------------------------------------------------------------------------
+# Minimal psychology adapter (Ch. 20) — self-check structure
+# -----------------------------------------------------------------------------
+minimal_psychology_adapter:
+  note: >
+    Restricted use; outputs warning hypothesis only; no explanations.
+    Structural alarm only; non-diagnostic, non-interpretive, scene-bound.
+
+  purpose_and_boundary_ch20_1: |
+    Minimal psychology is introduced as a self-check adapter for situations where
+    drift markers (Chapter 18) and viability failures (Chapter 19) are already
+    structurally legible, yet repetition continues unchanged.
+
+    It is not explanatory. It functions as a last-internal alarm before critique
+    or system-level evaluation becomes relevant.
+
+    Boundaries are strict:
+      - no diagnosis,
+      - no motive theory,
+      - no person typing,
+      - no moral evaluation.
+
+    All outputs remain scene-bound, reversible, and dignity-preserving.
+
+  activation_conditions_ch20_2: |
+    This adapter activates only when all of the following hold:
+
+      - drift markers from Chapter 18 are present,
+      - minimal viability conditions from Chapter 19 are no longer restoring correction,
+      - the configuration is still carried voluntarily and repeatedly.
+
+    Typical activation contexts:
+      - Ψ leak has been named, but repetition continues,
+      - Ω costs are legible, but still accepted,
+      - Θ damage is foreseeable, but stop-capability keeps failing,
+      - Χ exists formally, but is not enacted in time.
+
+    At this point, structural description remains correct but is no longer
+    sufficient to interrupt the path.
+
+  guiding_question_ch20_3: |
+    Permitted guiding question (restricted use):
+
+      “Why do I really desire X?”
+
+    Constraints:
+      - hypothetical, not confessional,
+      - targets pattern continuity, not inner truth,
+      - used to test whether desire itself has become a drift carrier.
+
+    The question is invalid if it produces identity stories, trauma narratives,
+    or justification loops. Its only legitimate function is to re-route attention
+    back to structure.
+
+  permitted_warning_hypothesis_ch20_4: |
+    Under sustained drift, one limited hypothesis becomes admissible:
+
+      In this configuration, desire may be functioning as a self-undercutting
+      mechanism rather than as play, exploration, or negotiated intensity.
+
+    This hypothesis does not explain desire. It flags the possibility that desire
+    is aligned with drift maintenance. It is never confirmed psychologically;
+    it is only structurally tested.
+
+  test_criteria_ch20_5: |
+    Minimal psychology engages only through observable enactment patterns already
+    described elsewhere.
+
+    (1) Repeated D undercutting:
+      - enactments repeatedly undermine dignity-in-practice,
+      - degradation scripts appear without play-reversibility,
+      - boundary violations recur despite explicit recognition.
+
+    (2) Θ damage despite knowledge:
+      - foreseeable harm is acknowledged,
+      - repetition continues unchanged,
+      - accumulation accelerates while stop-capability weakens.
+
+    (3) Progressive frame narrowing (□ → mono-frame):
+      - alternatives lose attractiveness or feasibility,
+      - avoidance and substitution become unavailable,
+      - one script dominates despite rising costs.
+
+  output_format_ch20_6: |
+    Output is invariant and minimal. No explanation is permitted.
+
+    Allowed alarm statements:
+      - “In this configuration, drift persistence is present.”
+      - “Structural self-correction is failing internally.”
+      - “Distance (Χ), frame clarity (□), and Θ realism require reactivation.”
+
+    No conclusions about character, pathology, intent, or worth are allowed.
+
+  structural_closure_ch20_7: |
+    Minimal psychology functions as a boundary mechanism inside PMS-SEX.
+    It marks the point where structural description alone no longer interrupts
+    reenactment, without converting the situation into psychological explanation.
+
+    Viability increases where the alarm restores distance, reopens frame breadth,
+    re-centers Θ realism, and interrupts repetition without identity narrative.
+    Drift increases where the alarm is ignored or turned into self-interpretation,
+    allowing Α fixation, Θ accumulation, and dignity erosion to continue.
+
+    One-line marker:
+      Minimal psychology in PMS-SEX activates when drift persists despite clarity:
+      it does not explain desire, it signals that repetition, accumulation, and
+      frame narrowing are no longer correcting themselves.
+
+# -----------------------------------------------------------------------------
+# Example suite schema (repo vignettes; non-instructional)
+# -----------------------------------------------------------------------------
+example_suite_schema:
+  note: >
+    Examples are scene-bound operator-readable vignettes; non-instructional.
+  required_blocks:
+    - "Minimal vignette (scene-bound)"
+    - "Why this is repo-useful (structural focus)"
+    - "Operator mapping (reduced signature)"
+    - "Operator costs / cost layout (Ω under Θ; include consequence interfaces)"
+    - "Typical drift markers (max 2–3; non-moral)"
+    - "Validity gate reminder (Χ + reversibility + D)"
+    - "Readable structural closure (2–5 sentences; non-instructional)"
