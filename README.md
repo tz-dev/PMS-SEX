@@ -21,7 +21,7 @@ In this sense, PMS–SEX should be read as:
 * **formally consistent with the PMS operator grammar**, and
 * **focused on structural legibility rather than moral or psychological evaluation**.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18171480.svg)](https://doi.org/10.5281/zenodo.18173358)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18185502.svg)](https://doi.org/10.5281/zenodo.18185502)
 
 ---
 
@@ -396,4 +396,5 @@ but from **structural opacity under time, asymmetry, and repetition**.
 **Dedication Note**
 
 PMS-SEX is dedicated to Douglas Adams, who understood that much of what one learns about sex isn't necessarily what one wanted to know, but what one is nevertheless forced to find out.
+
 
