@@ -1,0 +1,688 @@
+schema_version: "PMS-SEX-EXAMPLE_1.1"
+
+case_meta:
+  case_id: "PMS-SEX_CASE_01"
+  title: "Consent That Remains Procedurally Valid but Fails Structurally"
+  short_label: "Formal Consent vs. Drift under Accumulating Costs"
+  status: "example_case"
+  profile_dependency:
+    model_name: "PMS–SEX Application Profile"
+    schema_version: "PMS-SEX_1.1"
+  base_dependency:
+    model_name: "Praxeological Meta-Structure"
+    schema_version: "PMS_1.3"
+  paper_refs:
+    - "Ch. 0.2"
+    - "Ch. 0.4"
+    - "Ch. 3"
+    - "Ch. 4"
+    - "Ch. 5"
+    - "Ch. 6"
+    - "Ch. 8"
+    - "Ch. 10"
+    - "Ch. 12"
+    - "Ch. 18"
+    - "Ch. 19"
+    - "Ch. 21"
+    - "Appendix C"
+    - "Appendix D"
+  scope: >
+    Structural mapping only. This case does not diagnose persons, infer motives,
+    rank identities, evaluate legal validity, or prescribe action. It reconstructs
+    a configuration in which a formally consent-based frame remains intact while
+    cost distribution, temporality, and distance-capacity drift structurally.
+  non_goals:
+    - "no legal evaluation"
+    - "no clinical interpretation"
+    - "no person diagnosis"
+    - "no moral ranking"
+    - "no claim that consent is irrelevant"
+    - "no claim that explicit rules are harmful"
+    - "no procedural or sexual instruction"
+    - "no risk-optimization guidance"
+
+validity_gate:
+  applies: true
+  requires:
+    - id: "Χ"
+      name: "Distance"
+      condition: >
+        The reading must preserve meta-position and stop-capability. It must not
+        fuse into accusation, urgency, enforcement, or person-level attribution.
+    - id: "reversibility"
+      condition: >
+        All claims remain scene-bound, configuration-specific, and revisable.
+        No global person labels or irreversible interpretive claims are permitted.
+    - id: "D"
+      name: "Dignity-in-Practice"
+      condition: >
+        The analysis may critique enacted structures and cost handling only. It
+        must not shame, humiliate, rank, diagnose, or ontologically evaluate any
+        person or group.
+
+pms_v13_conformity:
+  canonical_operator_spine: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ"
+  no_new_operators: true
+  no_operator_redefinition: true
+  no_dependency_rewrite: true
+  no_derived_axis_rewrite: true
+  dependency_hygiene_note: >
+    The case foregrounds □, Α, Ω, Θ, Χ, and Ψ because these operators are most
+    salient in the vignette. This does not bypass Δ, ∇, Λ, Φ, or Σ, and does not
+    create an alternative dependency graph. Any use of Χ presupposes Φ, Θ, and □;
+    any use of Ψ presupposes Σ, Θ, and Χ.
+
+example_suite_schema_alignment:
+  required_blocks:
+    - "Minimal vignette"
+    - "Why this is repo-useful"
+    - "Operator mapping"
+    - "Inner / outer / public layer distinction"
+    - "Operator costs / cost layout"
+    - "Typical drift markers"
+    - "Viability minimums or warning signals"
+    - "Path-cost guard"
+    - "Validity gate reminder"
+    - "Readable structural closure"
+  conforms: true
+
+minimal_vignette:
+  scene_id: "CASE_01_FORMAL_CONSENT_ACCUMULATING_COST"
+  scene_type: "repeated consent-based sexual frame under accumulating asymmetric costs"
+  abstraction_level: "generic_non_identifying"
+  description: >
+    A repeated sexual configuration is organized through an explicit
+    consent-based frame. The frame includes articulated rules, declared
+    reversibility, and formal stop-options. No single rupture event occurs.
+    Over time, however, one role experiences the configuration increasingly as
+    cumulative: recovery, emotional processing, bodily after-effects, and refusal
+    burden accumulate. The other role experiences the configuration more
+    episodically, with lower downstream handling. The formal consent frame remains
+    legible, but the cost layout becomes increasingly asymmetrical under time.
+  roles:
+    R1:
+      description: >
+        Role with higher initiation frequency and lower downstream exposure after
+        enactment.
+      person_status: "role_only_not_person_type"
+    R2:
+      description: >
+        Role with lower initiation frequency and higher recovery, processing,
+        after-cost, and refusal-handling burden.
+      person_status: "role_only_not_person_type"
+  frame_anchor:
+    operator: "□"
+    description: >
+      Explicit consent-based frame with declared rules, articulated stop-options,
+      and the statement that participation remains reversible.
+  temporality:
+    operator: "Θ"
+    description: >
+      Repeated encounters across time. The case is defined by cumulative effects,
+      not by one isolated violation or rupture.
+  trigger:
+    delta:
+      operator: "Δ"
+      description: >
+        Difference emerges between formal consent clarity and lived cost
+        distribution.
+    impulse:
+      operator: "∇"
+      description: >
+        Pressure rises to maintain continuity and intensity without reopening the
+        frame’s assumptions.
+  lambda_candidates:
+    operator: "Λ"
+    expected_but_missing_or_underused:
+      - "pauses that remain non-steering"
+      - "explicit renegotiation after repeated accumulation"
+      - "non-occurrence that does not become guilt, devaluation, or interpretive pressure"
+      - "hesitation treated as structurally meaningful rather than as disruption"
+  observed_realizations:
+    - "consent is reaffirmed verbally and procedurally"
+    - "declared reversibility remains present"
+    - "the phrase 'you can always say no' becomes a catch-all stabilizer"
+    - "practical stop-capability becomes less frequently activated"
+    - "cost distribution remains under-articulated because no formal rule has been broken"
+
+why_repo_useful:
+  structural_focus: >
+    This example shows why PMS-SEX separates formal frame validity from
+    structural governability. It demonstrates that a scene can remain formally
+    consent-based while still drifting under Α repetition, Ω cost asymmetry, Θ
+    accumulation, and Χ erosion.
+  demonstrates:
+    - "consent as frame condition does not erase temporality"
+    - "formal reversibility does not guarantee practical Χ availability"
+    - "no single violation is required for drift to become structurally legible"
+    - "Ω may emerge through after-costs, recovery burden, and exit friction"
+    - "Ψ relevance may leak into a frame narrated as local or non-binding"
+  avoids:
+    - "reducing the case to coercion"
+    - "collapsing consent into pathology"
+    - "treating either role as morally defective"
+    - "using structural cost language as person-ranking"
+
+operator_mapping:
+  canonical_spine:
+    raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ"
+    note: >
+      The full PMS v1.3 spine remains the reference path. The case foregrounds a
+      local drift cluster but does not alter the canonical sequence.
+  closest_reduced_signatures:
+    - id: "MF_4_2"
+      label: "Asymmetry"
+      raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ"
+      relevance: >
+        The case becomes legible once repeated framed practice stabilizes into
+        an attractor and generates unequal cost-bearing under time.
+    - id: "MF_5_2"
+      label: "Temporality"
+      raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ"
+      relevance: >
+        Repetition turns local permission into trajectory. Accumulation matters
+        even when each local scene remains formally consent-based.
+    - id: "MF_6_2"
+      label: "Exit Realism"
+      raw: "(□ → Λ → Α) → Ω → Θ → (Χ/Σ/Ψ)"
+      relevance: >
+        The declared ability to stop is not identical to practical exit realism
+        after repetition, cost accumulation, and role expectation have stabilized.
+    - id: "MF_10_2"
+      label: "Distance"
+      raw: "Δ → ∇ → □ → (Λ) → Α → Ω → Θ → Φ → Χ"
+      relevance: >
+        The critical drift point is not the absence of formal stop-options, but
+        the rising cost of activating Χ in practice.
+    - id: "MF_19_2"
+      label: "Functional Conditions and Warning Signals"
+      raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ; dominant interaction: Ω → Θ"
+      relevance: >
+        Functional governability depends on Ω nameability, Θ realism, Χ
+        operation, Λ tolerance, and Ψ handling.
+  operator_roles:
+    Δ:
+      function_in_case: >
+        Marks the discrepancy between consent clarity and cost distribution.
+      drift_risk: "difference becomes unnameable because the formal frame appears sufficient"
+    ∇:
+      function_in_case: >
+        Maintains directional pressure toward continuation, intensity, and frame
+        preservation.
+      drift_risk: "urgency becomes self-justifying because no rule violation is visible"
+    □:
+      function_in_case: >
+        Provides explicit consent grammar, rules, declared stop-options, and
+        formal reversibility.
+      drift_risk: "frame becomes static; consent labels replace frame re-analysis"
+    Λ:
+      function_in_case: >
+        Names missed or underused pauses, cancellations, hesitation, slowing, and
+        renegotiation opportunities.
+      drift_risk: "non-events become costly to activate and may be read as disruption"
+    Α:
+      function_in_case: >
+        Repetition stabilizes the practice as the default coordination route.
+      drift_risk: "continuation becomes easier than interruption"
+    Ω:
+      function_in_case: >
+        Cost gradients emerge across recovery, exposure, emotional processing,
+        refusal burden, and definitional power.
+      drift_risk: "asymmetry remains unnamed because procedural consent is intact"
+    Θ:
+      function_in_case: >
+        Converts repeated local consent into cumulative trajectory with residues,
+        after-effects, and reduced exit realism.
+      drift_risk: "later re-description cannot rewind accumulation"
+    Φ:
+      function_in_case: >
+        Recontextualization may appear as narrative minimization: 'nothing bad is
+        happening,' 'the rules are clear,' or 'this is still consensual.'
+      drift_risk: "Φ substitutes for Σ if it covers cost rather than integrating it"
+    Χ:
+      function_in_case: >
+        Stop-capability and meta-position exist formally but become increasingly
+        expensive to enact.
+      drift_risk: "Χ becomes ornamental rather than operative"
+    Σ:
+      function_in_case: >
+        Integration would require holding consent clarity and cost asymmetry
+        together without collapsing one into the other.
+      drift_risk: "contradiction is simplified: either the frame is fine, or the scene must be treated as violation"
+    Ψ:
+      function_in_case: >
+        Continuity begins to matter for self-attribution, loyalty, relational
+        meaning, or identity-relevant stakes despite local/non-binding framing.
+      drift_risk: "Ψ leak: binding relevance enters covertly"
+
+inner_outer_public_layer_distinction:
+  internal_framing:
+    description: >
+      Internally, the scene is framed as consensual, rule-governed, reversible,
+      and procedurally clear.
+    guard: >
+      This internal framing may be real and significant, but it does not settle
+      the full outer structural form once asymmetry and accumulation become
+      active.
+  outer_legibility:
+    description: >
+      Externally or structurally, the scene becomes readable as a repeated frame
+      in which cost-bearing diverges between roles despite formal consent.
+    guard: >
+      Naming this outer legibility does not deny consent, assign blame, diagnose
+      either role, or convert the scene into moral verdict.
+  publicness_overlay:
+    status: "possible_but_not_required"
+    description: >
+      Shared narratives, records, reputational exposure, or documentation may
+      harden Θ costs if present. Publicness is not the origin of the case but can
+      amplify after-costs.
+    pms_layer: "□ extension"
+    primarily_intensifies: ["Ω", "Θ"]
+    guard: >
+      Publicness must neither be treated as the whole source of consequence nor
+      ignored where it sediments cost.
+  temporal_carryover:
+    description: >
+      Repetition causes local events to count beyond themselves. Even where each
+      scene is locally consent-based, the trajectory may become harder to exit
+      or revise.
+    guard: "Θ does not rewind through later reassurance."
+
+operator_costs_and_cost_layout:
+  cost_layout_formula: "Ω under Θ"
+  summary: >
+    The main structural cost lies in unequal downstream handling under repeated
+    enactment. Consent secures permission at the scene level, but does not by
+    itself distribute recovery, exposure, refusal burden, or cumulative cost.
+  cost_channels:
+    bodily:
+      description: >
+        Fatigue, recovery latency, saturation effects, and embodied after-costs.
+      operator_interface: ["Θ", "Ω"]
+      body_remainder: true
+    temporal:
+      description: >
+        Continuation becomes normalized; interruption becomes more expensive
+        even though it remains formally allowed.
+      operator_interface: ["Α", "Θ", "Χ"]
+    relational:
+      description: >
+        Refusal, slowing, or pause may become interpretively loaded because the
+        prior frame appears consensual and stable.
+      operator_interface: ["□", "Λ", "Ω", "Ψ"]
+    interpretive:
+      description: >
+        One role may carry the burden of explaining why a formally correct frame
+        is nevertheless becoming costly.
+      operator_interface: ["Ω", "Φ", "Χ"]
+    public_or_documentary:
+      description: >
+        Where shared memory, records, images, logs, or third-party knowledge
+        exist, publicness may harden cost after the scene.
+      operator_interface: ["□", "Ω", "Θ"]
+      publicness_as_overlay: true
+  asymmetry_pattern:
+    R1:
+      typical_position: "episodic enactment; lower downstream handling"
+    R2:
+      typical_position: "cumulative enactment; higher recovery, explanation, and refusal burden"
+    structural_note: >
+      This is a role-asymmetry description, not a claim about character,
+      intention, guilt, or worth.
+  system_effect: >
+    Formal consent begins to mask cost distribution because the frame can appear
+    structurally settled while Ω and Θ continue to accumulate.
+
+drift_trace:
+  compressed_formula: "□ explicit → Α repetition → Ω cost gradient → Θ accumulation → Χ erosion → Ψ leak"
+  full_formula_reference: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ"
+  dynamic_reading: >
+    The frame starts as explicit and procedurally clear. Repetition stabilizes
+    the practice into an attractor. Asymmetry emerges through unequal after-costs
+    and recovery burdens. Time accumulates residues that cannot be reset by
+    renewed consent language alone. Distance becomes harder to activate because
+    no obvious violation has occurred. Eventually, continued participation may
+    begin to carry identity-relevant or relational meaning despite local
+    non-binding framing.
+  transitions:
+    - from: "□"
+      to: "Α"
+      description: >
+        Explicit consent frame becomes a repeated coordination route.
+      risk: "frame stability turns into default continuation"
+    - from: "Α"
+      to: "Ω"
+      description: >
+        Repetition reveals unequal recovery, exposure, refusal, and repair
+        burdens.
+      risk: "cost gradient remains unnamed because the practice is formally consensual"
+    - from: "Ω"
+      to: "Θ"
+      description: >
+        Unequal burdens accumulate over time.
+      risk: "exit becomes more expensive without becoming forbidden"
+    - from: "Θ"
+      to: "Φ"
+      description: >
+        Narrative reassurance may attempt to reset the scene: 'nothing bad is
+        happening because consent remains explicit.'
+      risk: "recontextualization replaces integration"
+    - from: "Φ"
+      to: "Χ"
+      description: >
+        Distance must become operative to re-read the frame and cost layout.
+      risk: "Χ is formally available but practically discouraged"
+    - from: "Χ"
+      to: "Σ"
+      description: >
+        Integration would hold both truths: consent may be valid, and the
+        configuration may still be structurally costly.
+      risk: "without Σ, the contradiction is displaced"
+    - from: "Σ"
+      to: "Ψ"
+      description: >
+        If not handled, continuity begins to carry identity-relevant or
+        relationship-relevant stakes.
+      risk: "Ψ leak into a frame narrated as local, procedural, or non-binding"
+
+typical_drift_markers:
+  max_markers_for_case_use: 3
+  selected:
+    - id: "pseudo_symmetry"
+      source: "drift_catalogue.core_dysfunction_markers_ch18_3"
+      marker: "Pseudo-symmetry"
+      case_expression: >
+        'We both consented' or 'the rules are the same for both' functions as a
+        lid on unequal after-costs.
+      guard: >
+        This does not deny consent. It states that consent-language does not by
+        itself settle cost distribution.
+    - id: "temporal_overload"
+      source: "drift_catalogue.core_dysfunction_markers_ch18_3"
+      marker: "Temporal overload / Θ accumulation"
+      case_expression: >
+        Repetition creates accumulated costs faster than the frame can update
+        itself.
+      guard: >
+        The problem is trajectory-load, not a hidden defect in either role.
+    - id: "chi_loss"
+      source: "drift_catalogue.core_dysfunction_markers_ch18_3"
+      marker: "Loss of distance / Χ erosion"
+      case_expression: >
+        Stopping or pausing remains formally available but becomes practically
+        costly to activate.
+      guard: >
+        This is a structural stop-capability issue, not a claim of coercion by
+        itself.
+  optional_additional_markers:
+    - id: "psi_leak"
+      marker: "Covert self-binding demand"
+      case_expression: >
+        Continued participation begins to imply loyalty, identity relevance,
+        relationship proof, or self-worth despite formal non-binding language.
+    - id: "outer_form_denial"
+      marker: "Outer-form denial"
+      case_expression: >
+        The internal label 'consensual' is used to end structural analysis of
+        enacted cost layout.
+
+viability_assessment:
+  functional_minimums_source: "PMS-SEX Ch. 19.3"
+  conditions:
+    explicit_omega_recognition:
+      status: "weakened"
+      reason: >
+        Cost, recovery, refusal burden, and exposure gradients are present but
+        remain under-articulated because the formal consent frame appears
+        sufficient.
+      viability_requirement: "Ω must be nameable beyond procedural consent."
+    theta_awareness:
+      status: "weakened"
+      reason: >
+        Repetition and after-effects accumulate, but the frame treats each event
+        as locally resettable.
+      viability_requirement: "Θ must be treated as real; renewed consent does not rewind accumulated cost."
+    stable_chi_capacity:
+      status: "eroding"
+      reason: >
+        Stop-capability exists formally but becomes socially or emotionally
+        expensive to activate.
+      viability_requirement: "Χ must be practically available, not merely declared."
+    no_psi_substitution:
+      status: "at_risk"
+      reason: >
+        Continuity may begin to carry relational or identity-relevant meaning
+        without explicit frame support.
+      viability_requirement: "No covert Ψ demand should become the default carrier of stakes."
+    lambda_tolerance_without_escalation:
+      status: "weakened"
+      reason: >
+        Pauses, hesitation, or slowing may become interpretively loaded because
+        the frame expects continued participation.
+      viability_requirement: "Λ must remain tolerable without becoming steering, punishment, or devaluation."
+    internal_framing_accountable_to_outer_form:
+      status: "required"
+      reason: >
+        The internal consent frame is real but cannot erase outer cost
+        distribution under asymmetry and temporality.
+      viability_requirement: "Consent-language must not block structural cost-layout analysis."
+    publicness_handled_as_overlay:
+      status: "context_dependent"
+      reason: >
+        Documentation, shared narratives, or reputational traces may intensify
+        cost if present, but are not required for the primary drift.
+      viability_requirement: "Publicness must be tracked as overlay where relevant."
+  minimal_viability_corridor:
+    raw: |
+      □ explicit
+      + Ω nameable
+      + Θ realistic
+      + Χ operative
+      + Λ tolerable
+      + Ψ handled
+      (+ Σ reachable)
+      = structurally governable configuration
+    case_reading: >
+      The configuration becomes less governable where □ remains explicit but Ω
+      is unnamed, Θ is reset rhetorically, Χ is hard to use, Λ becomes costly,
+      and Ψ begins to leak.
+
+warning_signals:
+  source: "PMS-SEX Ch. 19.4"
+  present_or_relevant:
+    - id: "phi_narrative_inflation"
+      status: "possible"
+      expression: >
+        Repeated reassurance that the frame is consensual replaces cost naming
+        and integration.
+      structural_note: "Φ may substitute for Σ."
+    - id: "mono_frame"
+      status: "possible"
+      expression: >
+        The established consent frame becomes the only acceptable reading of the
+        scene.
+      structural_note: "Α may monopolize □."
+    - id: "theta_cost_externalization"
+      status: "relevant"
+      expression: >
+        Recovery, explanation, refusal, or after-costs concentrate in one role.
+      structural_note: "Θ costs shift asymmetrically through Ω."
+    - id: "outer_form_denial"
+      status: "relevant"
+      expression: >
+        Internal consent naming blocks analysis of enacted asymmetry and
+        temporal accumulation.
+      structural_note: "Χ weakens because the configuration cannot re-read itself."
+
+dignity_in_practice_stress_test:
+  source: "PMS-SEX Ch. 21"
+  canonical_pms_D_formula: ["Ψ", "Χ", "Ω"]
+  pms_sex_application_formula: "explicit Ω + operative Χ + no covert Ψ demand under Θ, with outer-form readability preserved"
+  risk_point: >
+    Dignity-in-Practice is not necessarily undermined by formal coercion or rule
+    violation. It may be stressed by procedural insulation: 'you agreed' begins
+    to shield the frame from re-reading lived impact.
+  possible_failure_mode:
+    label: "D-in-Practice stress without formal-consent failure"
+    description: >
+      Restraint exists formally, but enacted coordination fails to account for
+      accumulating load, unequal recovery, and decreasing practical stop-capacity.
+  structural_indicators:
+    - "formal stop-options exist but are rarely activated"
+    - "cost distribution is harder to name than consent status"
+    - "Χ is treated as unnecessary, hypersensitive, or disruptive"
+    - "the frame protects procedural clarity more than recoverability"
+    - "Ψ relevance begins to leak into continued participation"
+  guardrail: >
+    This stress test does not rank persons, deny consent, or assert bad faith.
+    It asks whether D is preserved in enactment under Ω and Θ.
+
+rational_response_envelope:
+  status: "structural_reasonableness_not_prescription"
+  description: >
+    The following responses are structurally intelligible within the
+    configuration. They are not endorsed, prescribed, or morally ranked.
+  possible_responses:
+    - response: "continued participation despite rising costs"
+      structural_reason: >
+        Refusal may appear disproportionate because the explicit frame remains
+        formally correct.
+      operators: ["□", "Α", "Ω", "Θ"]
+    - response: "hesitation to activate Χ"
+      structural_reason: >
+        Stop-capability exists, but using it may appear to destabilize a frame in
+        which 'nothing wrong' has happened.
+      operators: ["Χ", "□", "Θ"]
+    - response: "narrative minimization"
+      structural_reason: >
+        Recontextualization reduces tension locally by preserving the
+        explicit-consent equilibrium.
+      operators: ["Φ", "Σ"]
+    - response: "increased interpretive burden"
+      structural_reason: >
+        One role must explain why a valid consent frame has nevertheless become
+        costly.
+      operators: ["Ω", "Θ", "Χ"]
+
+path_cost_guard:
+  applies: true
+  allowed_language:
+    - "path-cost"
+    - "stabilization burden"
+    - "Θ accumulation"
+    - "Χ/Σ/Ψ work required for governability"
+    - "cost-layout drift"
+  case_use: >
+    This case may describe rising stabilization burden: more framing, distance,
+    integration, and self-binding discipline are required to keep the
+    configuration governable over time.
+  forbidden_conversions:
+    - "path-cost means lower dignity"
+    - "higher stabilization burden means moral disorder"
+    - "repetition means pathology"
+    - "asymmetrical cost means bad person"
+    - "formal consent failure is implied"
+    - "sexual identity or orientation is being classified"
+  final_guard: >
+    Path-cost language remains configuration-language only. If converted into
+    person-language, diagnosis, rank, humiliation, or orientation taxonomy, the
+    analysis leaves PMS-SEX.
+
+reader_guards:
+  does_not_claim:
+    - "that consent is insufficient or unimportant"
+    - "that explicit rules cause harm"
+    - "that either role acted deceptively"
+    - "that either role acted in bad faith"
+    - "that consent implies obligation"
+    - "that formal consent has failed"
+    - "that structural cost equals coercion"
+    - "that the configuration diagnoses anyone"
+  does_claim:
+    - "that consent does not neutralize Θ accumulation"
+    - "that explicit frames can still drift if Ω remains unnamed"
+    - "that formal reversibility is not identical to operative Χ"
+    - "that structural cost can emerge without rule violation"
+    - "that viability requires cost realism beyond permission"
+    - "that D-in-Practice concerns enacted handling under asymmetry, not person worth"
+
+analysis_checklist_application:
+  S1_scene_boundary:
+    result: >
+      Scene is bounded as repeated explicit consent-based encounters under
+      cumulative cost divergence.
+  S2_canonical_dependency_check:
+    result: >
+      PMS v1.3 spine preserved. Reduced signatures are used as shorthand only.
+  S3_reduced_signature:
+    selected:
+      - "MF_4_2"
+      - "MF_5_2"
+      - "MF_6_2"
+      - "MF_10_2"
+      - "MF_19_2"
+  S4_inner_outer_public_scan:
+    result: >
+      Internal frame: consensual and rule-governed. Outer legibility:
+      asymmetric cost accumulation. Publicness: possible overlay, not required.
+  S5_cost_axis_scan:
+    result: >
+      Ω appears through recovery, exposure, refusal, and repair burden. Θ appears
+      through repetition, after-effects, and exit realism.
+  S6_distance_and_correction_capacity:
+    result: >
+      Χ is formally present but practically eroding. Σ would require integrating
+      consent clarity with cost asymmetry.
+  S7_drift_marker_scan:
+    result: >
+      Pseudo-symmetry, temporal overload, Χ loss, and possible Ψ leak are
+      structurally relevant.
+  S8_viability_minimums:
+    result: >
+      Viability is weakened where Ω is unnamed, Θ is minimized, Χ is hard to
+      activate, Λ is not tolerated, and Ψ is not explicitly handled.
+  S9_path_cost_guard:
+    result: >
+      Path-cost is used only as configuration-language.
+  S10_escalation_guard:
+    result: >
+      No motive explanation, diagnosis, humiliation, or person-label is allowed.
+
+readable_structural_closure:
+  short_closure: >
+    Consent secures permission. Viability requires cost realism.
+  full_closure: >
+    In this configuration, the consent frame does not collapse. It remains
+    explicit, procedurally legible, and locally valid as a frame. The structural
+    problem appears elsewhere: repetition stabilizes the practice into an
+    attractor, asymmetry distributes downstream costs unevenly, and temporality
+    turns local participation into cumulative trajectory.
+
+    Once explicit consent becomes the sole stabilizer, Θ and Ω begin to do the
+    coordinating work. What remains formally consensual can still become
+    structurally costly where recovery, refusal, exposure, and interpretive
+    burden accumulate unevenly. The issue is not that consent fails, but that it
+    overperforms: it absorbs pressure that would need to be redistributed into
+    frame re-reading, distance activation, cost naming, or integration.
+
+    The drift is therefore not produced by malice, defective agency, or hidden
+    pathology. It is the predictable result of treating a valid consent frame as
+    sufficient while Θ continues to accumulate, Ω remains under-articulated, and
+    Χ becomes harder to enact in practice.
+
+final_case_guard:
+  text: >
+    This case remains PMS-SEX-valid only as configuration analysis. It may name
+    cost, drift, outer legibility, and D-in-Practice stress, but it must not
+    convert those claims into person-ranking, diagnosis, orientation taxonomy,
+    legal judgment, or humiliating critique.
+  compressed_rules:
+    - "no consent erasure"
+    - "no person diagnosis"
+    - "no moral ranking"
+    - "no legal conclusion"
+    - "no path-cost as person-worth"
+    - "no outer-form erasure by consent labels"
+    - "no publicness reduction"
+    - "no prescription"

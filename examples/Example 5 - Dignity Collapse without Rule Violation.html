@@ -1,0 +1,1694 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/main.css" />
+		<title>PMS-SEX — Example Case 5: Dignity Collapse without Rule Violation</title>
+		<style type="text/css">
+			:root {
+			  --font-body: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+			  --font-heading: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+			  --font-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+			  --color-bg: #f5f7fb;
+			  --color-surface: #ffffff;
+			  --color-surface-soft: #f9fbfd;
+			  --color-text: #18202a;
+			  --color-muted: #5f6b7a;
+			  --color-accent: #1f4b99;
+			  --color-accent-soft: #e8f0ff;
+			  --color-border: #d9e1ea;
+			  --color-border-strong: #bfc9d8;
+			  --color-quote: #2f5da8;
+			  --color-code-bg: #f3f5f7;
+			  --color-table-head: #eef3f8;
+			  --color-row-alt: #fbfcfe;
+
+			  --shadow-soft: 0 10px 30px rgba(18, 30, 50, 0.06);
+			  --radius-sm: 6px;
+			  --radius-md: 10px;
+			  --radius-lg: 16px;
+
+			  --content-width: 980px;
+			  --line-height: 1.7;
+			}
+
+			*,
+			*::before,
+			*::after {
+			  box-sizing: border-box;
+			}
+
+			html {
+			  margin: 0;
+			  padding: 0;
+			  scroll-behavior: smooth;
+			}
+
+			body {
+			  margin: 0;
+			  padding: 32px 20px 64px;
+			  font-family: var(--font-body);
+			  font-size: 16px;
+			  line-height: var(--line-height);
+			  color: var(--color-text);
+			  background:
+			    linear-gradient(180deg, #f7f9fc 0%, #f3f6fa 100%);
+			}
+
+			.page,
+			body > header,
+			body > section,
+			body > main {
+			  width: min(100%, var(--content-width));
+			  margin-left: auto;
+			  margin-right: auto;
+			}
+
+			.page {
+			  background: var(--color-surface);
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-lg);
+			  box-shadow: var(--shadow-soft);
+			  padding: 40px 42px 56px;
+			}
+
+			/* Header */
+			header {
+			  width: min(100%, var(--content-width));
+			  margin: 0 auto 28px;
+			  padding: 24px 0 18px;
+			  border-bottom: 1px solid var(--color-border);
+			}
+
+			header h1 {
+			  margin: 0 0 10px;
+			  font-family: var(--font-heading);
+			  font-size: clamp(2rem, 4vw, 2.8rem);
+			  font-weight: 500;
+			  line-height: 1.15;
+			  text-align: center;
+			  letter-spacing: -0.02em;
+			  color: var(--color-text);
+			}
+
+			header h2 {
+			  margin: 0 auto 12px;
+			  max-width: 48rem;
+			  font-size: 1.15rem !important;
+			  line-height: 1.45;
+			  font-weight: 400;
+			  text-align: center;
+			  color: var(--color-muted);
+			  border: 0;
+			  padding: 0;
+			}
+
+			header .subtitle {
+			  max-width: 52rem;
+			  margin: 0 auto 12px;
+			  text-align: center;
+			  color: var(--color-muted);
+			  font-size: 1rem;
+			}
+
+			header .meta {
+			  max-width: 52rem;
+			  margin: 14px auto 0;
+			  padding: 12px 14px;
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-md);
+			  background: var(--color-surface-soft);
+			  font-size: 0.88rem;
+			  line-height: 1.55;
+			  color: var(--color-muted);
+			}
+
+			/* Sections */
+			section {
+			  margin: 0 0 28px;
+			}
+
+			section#content {
+			  width: min(100%, var(--content-width));
+			  margin-left: auto;
+			  margin-right: auto;
+			}
+
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+			  font-family: var(--font-heading);
+			  color: var(--color-text);
+			  letter-spacing: -0.01em;
+			}
+
+			h1 {
+			  font-size: clamp(2rem, 4vw, 2.8rem);
+			  font-weight: 500;
+			}
+
+			h2,
+			h2 strong {
+			  padding-bottom: 8px;
+			  font-size: 1.65rem !important;
+			  font-weight: 500 !important;
+			  line-height: 1.25;
+			  border-bottom: 1px solid var(--color-border);
+			}
+
+			h3,
+			h3 strong {
+			  margin: 22px 0 8px !important;
+			  font-size: 1.2rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			h4,
+			h4 strong {
+			  margin: 18px 0 6px !important;
+			  font-size: 1.05rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			h5,
+			h5 strong,
+			h6,
+			h6 strong {
+			  margin: 16px 0 4px !important;
+			  font-size: 1rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			/* Text */
+			p {
+			  margin: 0 0 12px;
+			}
+
+			strong {
+			  color: #111827;
+			}
+
+			em {
+			  color: inherit;
+			}
+
+			.small {
+			  font-size: 0.92rem;
+			  color: var(--color-muted);
+			}
+
+			/* Links */
+			a {
+			  color: var(--color-accent);
+			  text-decoration: none;
+			  border-bottom: 1px solid transparent;
+			}
+
+			a:hover,
+			a:focus {
+			  border-bottom-color: currentColor;
+			}
+
+			/* Lists */
+			ul,
+			ol {
+			  margin: 8px 0 14px 1.25rem;
+			  padding: 0;
+			}
+
+			li {
+			  margin: 0 0 6px;
+			  padding-left: 2px;
+			}
+
+			ul ul,
+			ol ol,
+			ul ol,
+			ol ul {
+			  margin-top: 6px;
+			  margin-bottom: 8px;
+			}
+
+			li > p {
+			  margin-bottom: 6px;
+			}
+
+			/* Horizontal rule */
+			hr {
+			  display: block;
+			  height: 0;
+			  border: 0;
+			  border-top: 1px solid var(--color-border);
+			  margin: 24px 0;
+			}
+
+			/* Quotes */
+			blockquote {
+			  margin: 16px 0;
+			  padding: 12px 18px;
+			  border-left: 4px solid var(--color-quote);
+			  background: #f8fbff;
+			  color: #324154;
+			  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+			}
+
+			blockquote p:last-child {
+			  margin-bottom: 0;
+			}
+
+			/* Code */
+			code,
+			.code-inline {
+			  font-family: var(--font-mono);
+			  font-size: 0.92em;
+			  background: var(--color-code-bg);
+			  border: 1px solid #e7ebf0;
+			  border-radius: 4px;
+			  padding: 0.12em 0.4em;
+			  color: #233044;
+			}
+
+			pre {
+			  margin: 14px 0 18px;
+			  padding: 14px 16px;
+			  overflow-x: auto;
+			  background: #111827;
+			  color: #f3f4f6;
+			  border-radius: var(--radius-md);
+			  border: 1px solid #0f172a;
+			  text-align: left;
+			  line-height: 1.55;
+			}
+
+			pre code {
+			  background: transparent;
+			  border: 0;
+			  color: inherit;
+			  padding: 0;
+			  font-size: 0.92rem;
+			}
+
+			/* Boxes / callouts */
+			.box {
+			  margin: 16px 0 18px;
+			  padding: 14px 16px;
+			  border: 1px solid var(--color-border);
+			  border-left: 4px solid var(--color-accent);
+			  border-radius: var(--radius-md);
+			  background: linear-gradient(180deg, #fbfdff 0%, #f7faff 100%);
+			  line-height: 1.55;
+			}
+
+			.box-title {
+			  margin: 0 0 6px;
+			  font-size: 0.95rem;
+			  font-weight: 700;
+			  color: var(--color-accent);
+			}
+
+			.box p:last-child,
+			.box ul:last-child,
+			.box ol:last-child {
+			  margin-bottom: 0;
+			}
+
+			/* Tables */
+			.table,
+			table {
+			  width: 100%;
+			  margin: 14px 0 18px;
+			  border-collapse: collapse;
+			  border-spacing: 0;
+			  font-size: 0.95rem;
+			  line-height: 1.5;
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-md);
+			  overflow: hidden;
+			}
+
+			.table th,
+			.table td,
+			table th,
+			table td {
+			  padding: 10px 12px;
+			  vertical-align: top;
+			  border: 1px solid var(--color-border);
+			  text-align: left;
+			}
+
+			.table th,
+			table th {
+			  background: var(--color-table-head);
+			  color: #233044;
+			  font-weight: 700;
+			  font-variant: small-caps;
+			  letter-spacing: 0.03em;
+			}
+
+			.table tr:nth-child(even) td,
+			table tr:nth-child(even) td {
+			  background: var(--color-row-alt);
+			}
+
+			.table tr:nth-child(odd) td,
+			table tr:nth-child(odd) td {
+			  background: #ffffff;
+			}
+
+			/* Tags */
+			.tag {
+			  display: inline-block;
+			  margin: 0 6px 6px 0;
+			  padding: 3px 10px;
+			  border: 1px solid var(--color-border-strong);
+			  border-radius: 999px;
+			  background: #fff;
+			  color: var(--color-muted);
+			  font-size: 0.78rem;
+			  line-height: 1.3;
+			}
+
+			/* Placeholder */
+			.placeholder {
+			  color: var(--color-muted);
+			  font-style: italic;
+			}
+
+			/* Two-column layouts */
+			.two-column {
+			  display: grid;
+			  grid-template-columns: repeat(2, minmax(0, 1fr));
+			  gap: 18px;
+			  margin: 10px 0 16px;
+			}
+
+			.two-column > div {
+			  min-width: 0;
+			}
+
+			/* Utility */
+			.pagebreak {
+			  page-break-before: always;
+			  break-before: page;
+			}
+
+			/* Better spacing for consecutive structural blocks */
+			h2 + p,
+			h3 + p,
+			h4 + p {
+			  margin-top: 2px;
+			}
+
+			p + ul,
+			p + ol {
+			  margin-top: 6px;
+			}
+
+			ul + p,
+			ol + p {
+			  margin-top: 10px;
+			}
+
+			/* Optional content-specific helper classes */
+			.meta-grid {
+			  display: grid;
+			  grid-template-columns: 180px 1fr;
+			  gap: 8px 14px;
+			  margin: 12px 0 18px;
+			}
+
+			.meta-grid dt {
+			  font-weight: 600;
+			  color: var(--color-muted);
+			}
+
+			.meta-grid dd {
+			  margin: 0;
+			}
+
+			.definition-list {
+			  display: grid;
+			  grid-template-columns: 180px 1fr;
+			  gap: 8px 14px;
+			}
+
+			.definition-list dt {
+			  font-weight: 600;
+			  color: var(--color-accent);
+			}
+
+			.definition-list dd {
+			  margin: 0;
+			}
+
+			.callout-warning {
+			  border-left-color: #b45309;
+			  background: #fffaf2;
+			}
+
+			.callout-success {
+			  border-left-color: #0f766e;
+			  background: #f4fffd;
+			}
+
+			.callout-danger {
+			  border-left-color: #b91c1c;
+			  background: #fff8f8;
+			}
+
+			/* Images */
+			img {
+			  display: block;
+			  max-width: 100%;
+			  height: auto;
+			  margin: 14px auto 18px;
+			  border-radius: var(--radius-sm);
+			}
+
+			/* Print */
+			@media print {
+			  :root {
+			    --color-bg: white;
+			    --color-surface: white;
+			    --color-surface-soft: white;
+			    --color-row-alt: #fafafa;
+			    --shadow-soft: none;
+			  }
+
+			  html,
+			  body {
+			    background: white !important;
+			  }
+
+			  body {
+			    width: 100%;
+			    margin: 0;
+			    padding: 0;
+			    font-size: 11pt;
+			    line-height: 1.45;
+			  }
+
+			  .page,
+			  body > header,
+			  body > section,
+			  body > main,
+			  section#content {
+			    width: 100%;
+			    max-width: 100%;
+			    margin: 0;
+			  }
+
+			  .page {
+			    border: 0;
+			    box-shadow: none;
+			    border-radius: 0;
+			    padding: 0;
+			  }
+
+			  header {
+			    margin-bottom: 18px;
+			    padding: 0 0 12px;
+			  }
+
+			  h2,
+			  h2 strong {
+			    page-break-after: avoid;
+			  }
+
+			  h3,
+			  h3 strong,
+			  h4,
+			  h4 strong {
+			    page-break-after: avoid;
+			  }
+
+			  p,
+			  li,
+			  blockquote,
+			  .box,
+			  table,
+			  pre {
+			    page-break-inside: avoid;
+			  }
+
+			  a,
+			  a:visited {
+			    color: inherit;
+			    text-decoration: none;
+			  }
+
+			  a[href]::after {
+			    content: "";
+			  }
+
+			  .box {
+			    background: white;
+			  }
+			}
+
+			/* Responsive */
+			@media (max-width: 900px) {
+			  body {
+			    padding: 20px 14px 44px;
+			  }
+
+			  .page {
+			    padding: 28px 22px 40px;
+			  }
+
+			  .two-column {
+			    grid-template-columns: 1fr;
+			  }
+
+			  .meta-grid,
+			  .definition-list {
+			    grid-template-columns: 1fr;
+			    gap: 4px 0;
+			  }
+
+			  header h1 {
+			    font-size: 2.2rem;
+			  }
+
+			  h2,
+			  h2 strong {
+			    font-size: 1.45rem !important;
+			  }
+			}
+
+			@media (max-width: 640px) {
+			  body {
+			    font-size: 15px;
+			  }
+
+			  .page {
+			    padding: 22px 16px 32px;
+			    border-radius: 12px;
+			  }
+
+			  header .meta {
+			    padding: 10px 12px;
+			  }
+
+			  .table,
+			  table {
+			    font-size: 0.88rem;
+			  }
+
+			  .table th,
+			  .table td,
+			  table th,
+			  table td {
+			    padding: 8px 9px;
+			  }
+
+			  pre {
+			    padding: 12px 13px;
+			  }
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1><strong>PMS–SEX</strong></h1>
+			<h2><em>Example Case 5: Dignity Collapse without Rule Violation</em></h2>
+			<div class="meta">
+				<strong>Case ID:</strong> <code>PMS-SEX_EXAMPLE_05</code> &middot;
+				<strong>Case Schema Version:</strong> <code>PMS-SEX_case_1.1</code> &middot;
+				<strong>Profile Version:</strong> <code>PMS-SEX_1.1</code><br />
+				<strong>Case Label:</strong> <em>When Nothing Is Forbidden but Degradation Emerges</em> &middot;
+				<strong>Status:</strong> conformant_application_case<br />
+				<strong>Depends on:</strong> <code>PMS_1.3</code>, <code>PMS-SEX_1.1</code>
+			</div>
+		</header>
+
+		<section id="content">
+
+			<h2>0) Case Identity</h2>
+
+			<p>
+				<strong>Title:</strong> <em>Dignity Collapse without Rule Violation</em>
+			</p>
+			<p>
+				<strong>Case label:</strong> <em>When Nothing Is Forbidden but Degradation Emerges</em>
+			</p>
+			<p>
+				<strong>Case role:</strong> <code>example_suite_vignette</code>
+			</p>
+			<p>
+				<strong>Application status:</strong> <code>scene_bound_structural_mapping_only</code>
+			</p>
+			<p>
+				<strong>Profile dependency:</strong> <code>PMS-SEX</code>
+				(<code>PMS-SEX_1.1</code>)
+			</p>
+			<p>
+				<strong>Base dependency:</strong> <code>PMS</code>
+				(<code>PMS_1.3</code>)
+			</p>
+
+			<hr />
+
+			<h2>1) Scope Discipline</h2>
+
+			<h3>1.1 Summary</h3>
+			<p>
+				Structural mapping only. No accusation, no intent attribution, no motive
+				theory, no person diagnosis, no moral ranking, no prescriptive claims.
+				PMS application validity remains conditional on <strong>Χ + reversibility + D</strong>.
+			</p>
+
+			<h3>1.2 Forbidden conversions</h3>
+			<ul>
+				<li>accusation</li>
+				<li>intent attribution</li>
+				<li>motive attribution</li>
+				<li>clinical interpretation</li>
+				<li>person diagnosis</li>
+				<li>person ranking</li>
+				<li>orientation taxonomy</li>
+				<li>moral verdict</li>
+				<li>public accusation</li>
+				<li>how-to guidance</li>
+				<li>risk optimization</li>
+			</ul>
+
+			<h3>1.3 Validity gate</h3>
+			<ul>
+				<li>
+					<strong>Χ — Distance:</strong>
+					Maintained meta-position and stop-capability; no fusion into verdict,
+					urgency, enforcement, person-level attribution, role, impulse, or
+					self-justifying rhetoric.
+				</li>
+				<li>
+					<strong>Reversibility:</strong>
+					Scene-bound, configuration-specific, revisable reading; no global
+					person labels, irreversible interpretive claims, identity verdicts,
+					or ontological attributions.
+				</li>
+				<li>
+					<strong>D — Dignity-in-Practice:</strong>
+					No shaming, humiliation, person-ranking, diagnosis, orientation
+					taxonomy, or person-worth evaluation. Critique targets enacted
+					structures and cost handling only.
+				</li>
+			</ul>
+
+			<h3>1.4 Application-only scope</h3>
+			<p>
+				The validity gate applies to PMS application only. It does not apply to
+				critique of PMS, rejection of PMS, or rival formalization.
+			</p>
+
+			<hr />
+
+			<h2>2) Minimal Vignette</h2>
+
+			<h3>2.1 Scene-bound and non-identifying vignette</h3>
+			<p>
+				A repeated sexual or intimacy-marked interaction remains formally
+				compliant: rules are named, boundaries are acknowledged, and explicit
+				consent remains intact. Over time, however, tone, joking, ironic
+				distance, teasing, or symbolic handling concentrate diminishment on one
+				role. No single scene clearly violates the explicit frame, but repeated
+				enactment makes stopping, naming, or withdrawing socially costly. The
+				configuration therefore becomes structurally degradation-prone without
+				needing a rule breach, bad intent claim, or person-level accusation.
+			</p>
+
+			<h3>2.2 Abstraction and instructionality</h3>
+			<ul>
+				<li><strong>Abstraction level:</strong> generic_abstracted_non_identifying</li>
+				<li><strong>Non-instructional:</strong> true</li>
+			</ul>
+
+			<hr />
+
+			<h2>3) Why This Is Repo-Useful</h2>
+
+			<h3>3.1 Structural focus</h3>
+			<p>
+				This case tests a central PMS-SEX claim: Dignity-in-Practice cannot be
+				reduced to formal rule compliance. It shows how <strong>□</strong> may remain
+				explicit and consent may remain procedurally intact while
+				<strong>Ω</strong>, <strong>Θ</strong>, and <strong>Χ</strong> generate a configuration in
+				which dignity is undercut through enactment mode. The example is useful
+				because it separates rule breach, consent failure, and dignity drift
+				without converting any of them into moral accusation, pathology, or
+				person classification.
+			</p>
+
+			<h3>3.2 Profile features exercised</h3>
+			<ul>
+				<li>Dignity-in-Practice as enactment constraint</li>
+				<li><strong>Ω</strong> as structural asymmetry, not moral blame</li>
+				<li><strong>Θ</strong> accumulation through micro-effects</li>
+				<li><strong>Χ</strong> as practical social viability, not merely formal permission</li>
+				<li>outer legibility without person-ranking</li>
+				<li>path-cost and disturbance language as configuration-language only</li>
+				<li>internal framing accountability to outer form</li>
+			</ul>
+
+			<hr />
+
+			<h2>4) Operator Mapping</h2>
+
+			<h3>4.1 Canonical spine</h3>
+			<p>
+				<code>Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ</code>
+			</p>
+			<p>
+				<strong>Operators:</strong>
+				<code>Δ, ∇, □, Λ, Α, Ω, Θ, Φ, Χ, Σ, Ψ</code>
+			</p>
+			<p>
+				<strong>Dependency-bound:</strong> true
+			</p>
+			<p>
+				The case is read against the canonical PMS v1.3 operator spine as used by
+				PMS-SEX. No operator is added, removed, redefined, or reordered.
+			</p>
+
+			<h3>4.2 Selected profile signature</h3>
+			<p>
+				<strong>ID:</strong> <code>D_pms_sex_application_formula_ch21_3</code><br />
+				<strong>Paper refs:</strong> <code>Ch. 21.3</code><br />
+				<strong>Label:</strong> D-in-Practice — PMS-SEX application formula
+			</p>
+			<p>
+				<strong>Raw:</strong><br />
+				<code>D-in-Practice in PMS-SEX = explicit Ω + operative Χ + no covert Ψ demand under Θ, with outer-form readability preserved</code>
+			</p>
+			<p>
+				<strong>Operators:</strong> <code>Ω, Χ, Ψ, Θ</code>
+			</p>
+			<p>
+				<strong>PMS canonical D formula:</strong> <code>["Ψ", "Χ", "Ω"]</code>
+			</p>
+			<p>
+				The case foregrounds D-in-Practice under explicit asymmetry and repeated
+				enactment. <strong>Θ</strong> appears as trajectory realism, and outer-form
+				readability is a PMS-SEX application guard, not a revision of canonical
+				PMS-D.
+			</p>
+
+			<h3>4.3 Secondary reduced signature</h3>
+			<p>
+				<strong>ID:</strong> <code>MF_19_2</code><br />
+				<strong>Paper refs:</strong> <code>Ch. 19.2</code><br />
+				<strong>Label:</strong> Functional Conditions and Warning Signals
+			</p>
+			<p>
+				<strong>Raw:</strong><br />
+				<code>Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ; dominant interaction: Ω → Θ, with accumulated Θ making Ω layouts more visible and consequential</code>
+			</p>
+			<p>
+				<strong>Operators:</strong> <code>Δ, ∇, □, Λ, Α, Ω, Θ, Φ, Χ, Σ, Ψ</code>
+			</p>
+			<p>
+				This secondary signature is used because the case concerns a functional
+				failure despite explicit framing: <strong>Ω</strong> is visible,
+				<strong>Θ</strong> accumulates, and <strong>Χ</strong> becomes socially expensive.
+			</p>
+
+			<h3>4.4 Case reduced signature</h3>
+			<p>
+				<strong>Raw:</strong><br />
+				<code>□ explicit → Ω explicit → Θ accumulation → D-in-Practice undercutting → Χ social-cost increase</code>
+			</p>
+			<p>
+				<strong>Reduced:</strong> true<br />
+				<strong>Operators:</strong> <code>□, Ω, Θ, Χ</code><br />
+				<strong>Derived constructs:</strong> <code>D</code>
+			</p>
+			<p>
+				<strong>Hygiene note:</strong>
+				This case shorthand foregrounds the local dignity drift. It does not
+				create a new PMS operator sequence. <strong>D</strong> is a PMS-derived construct
+				with canonical derivation <code>["Ψ", "Χ", "Ω"]</code>; it is not a twelfth
+				operator. Any use of <strong>Χ</strong> presupposes <strong>Φ</strong>, <strong>Θ</strong>,
+				and <strong>□</strong>. Any use of <strong>Ψ</strong> presupposes <strong>Σ</strong>,
+				<strong>Θ</strong>, and <strong>Χ</strong>.
+			</p>
+
+			<hr />
+
+			<h2>5) Scene Packet</h2>
+
+			<h3>5.1 Scene identity</h3>
+			<ul>
+				<li><strong>Scene ID:</strong> <code>EX05_DIGNITY_COLLAPSE_WITHOUT_RULE_VIOLATION</code></li>
+				<li><strong>Scene type:</strong> repeated_explicit_frame_with_enactment_mode_drift</li>
+			</ul>
+
+			<h3>5.2 Temporal structure</h3>
+			<p>
+				<strong>Operator:</strong> <strong>Θ</strong>
+			</p>
+			<p>
+				Ongoing interaction with repeated scenes and cumulative micro-effects. No
+				single rupture event is necessary; repetition makes tonal and symbolic
+				handling consequential across time.
+			</p>
+
+			<h3>5.3 Frame anchor</h3>
+			<p>
+				<strong>Operator:</strong> <strong>□</strong><br />
+				<strong>Frame type:</strong> <code>explicit_formally_stable</code>
+			</p>
+			<p>
+				Rules are named, boundaries are acknowledged, and consent remains intact.
+				The frame is formally stable, but its dignity-preserving function depends
+				on enactment mode, not only on rule text.
+			</p>
+
+			<h3>5.4 Roles, not persons</h3>
+			<ul>
+				<li>
+					<strong>R1:</strong>
+					<code>higher_exposure_to_symbolic_handling</code><br />
+					Carries greater exposure to tone, humor, naming, ironic distance, or
+					repeated symbolic diminishment.
+				</li>
+				<li>
+					<strong>R2:</strong>
+					<code>higher_control_over_scene_pacing_framing_and_interpretation</code><br />
+					Carries greater capacity to define whether the tone counts as playful,
+					light, harmless, normal, or excessive to question.
+				</li>
+			</ul>
+
+			<h3>5.5 Trigger</h3>
+			<ul>
+				<li>
+					<strong>Δ — Difference:</strong>
+					Asymmetry is explicit and accepted, but a difference opens between
+					formal frame compliance and cumulative dignity effects.
+				</li>
+				<li>
+					<strong>∇ — Impulse:</strong>
+					Pressure to maintain lightness, intensity, playfulness, or continuity
+					without making the scene heavy or interrupting its internal tone.
+				</li>
+			</ul>
+
+			<h3>5.6 Λ candidates expected but missing</h3>
+			<ul>
+				<li>
+					<strong>neutral_tonal_pause</strong><br />
+					<strong>Operator:</strong> <strong>Λ</strong><br />
+					<strong>Expected absence:</strong>
+					Pauses in which tone can reset without penalty or loss of inclusion.
+				</li>
+				<li>
+					<strong>meta_comment_without_cost</strong><br />
+					<strong>Operator:</strong> <strong>Λ</strong><br />
+					<strong>Expected absence:</strong>
+					Meta-comments that can slow, question, or stop a scene without being
+					recoded as overreaction, fragility, or betrayal of the frame spirit.
+				</li>
+			</ul>
+
+			<h3>5.7 Observed realizations, neutral</h3>
+			<ul>
+				<li>Irony, teasing, or play increasingly manages tension.</li>
+				<li>Discomfort is recontextualized as humorlessness, fragility, or inability to stay with the frame.</li>
+				<li>Stops remain formally acknowledged but become socially costly.</li>
+				<li>No single rule breach is necessary for cumulative degradation-form readability to emerge.</li>
+			</ul>
+
+			<hr />
+
+			<h2>6) Inner / Outer / Public Layer Distinction</h2>
+
+			<h3>6.1 Core rule</h3>
+			<p>
+				Internal framing, outer legibility, public circulation, and temporal
+				carryover may overlap, but must not be collapsed into one another.
+			</p>
+
+			<h3>6.2 Internal framing</h3>
+			<p>
+				<strong>Concept:</strong> <code>internal_framing</code>
+			</p>
+			<p>
+				The scene may be internally inhabited as humor, play, lightness, irony,
+				intensity, familiarity, or mutual explicitness.
+			</p>
+			<p>
+				<strong>Guard:</strong>
+				Internal framing may be real without being total. It does not by itself
+				erase the structural form that repeated tone and symbolic handling
+				produce under <strong>Ω</strong> and <strong>Θ</strong>.
+			</p>
+
+			<h3>6.3 Outer legibility</h3>
+			<p>
+				<strong>Concept:</strong> <code>outer_legibility</code>
+			</p>
+			<p>
+				The scene becomes externally readable as dignity-fragile where one role
+				repeatedly absorbs diminishment while the other retains interpretive
+				control over whether that diminishment counts.
+			</p>
+			<p>
+				<strong>Guard:</strong>
+				Naming outer legibility does not imply person-ranking, diagnosis, denial
+				of consent, moral verdict, or total interpretation of the scene.
+			</p>
+
+			<h3>6.4 Publicness</h3>
+			<p>
+				<strong>Concept:</strong> <code>publicness_as_overlay</code><br />
+				<strong>Present:</strong> optional_or_context_dependent
+			</p>
+			<p>
+				If documentation, witnesses, circulation, screenshots, social comparison,
+				reputation, or audience uptake enter the field, publicness can amplify and
+				sedimentize the dignity cost. Publicness does not necessarily create the
+				primary action-form.
+			</p>
+			<p>
+				<strong>Guard:</strong>
+				Publicness is neither the whole source of harm nor irrelevant once it
+				documents, repeats, or sedimentizes consequence.
+			</p>
+
+			<h3>6.5 Temporal carryover</h3>
+			<p>
+				<strong>Concept:</strong> <code>temporal_carryover</code><br />
+				<strong>Operator:</strong> <strong>Θ</strong>
+			</p>
+			<p>
+				Each single incident may remain deniable or ambiguous, while the repeated
+				pattern becomes harder to contest precisely because it is distributed
+				across time.
+			</p>
+			<p>
+				<strong>Guard:</strong>
+				<strong>Θ</strong> does not rewind. Later explanations may alter narration, but
+				they do not erase accumulated structural effects.
+			</p>
+
+			<hr />
+
+			<h2>7) Drift Trace</h2>
+
+			<p>
+				<strong>Summary formula:</strong><br />
+				<code>□stable → Ω explicit → Θ accumulation → D-in-Practice undercutting → Χ penalized</code>
+			</p>
+			<p>
+				<strong>Classification:</strong> <code>dignity_drift_without_rule_breach</code>
+			</p>
+			<p>
+				<strong>Descriptive only:</strong> true
+			</p>
+
+			<h3>7.1 Transitions</h3>
+			<ul>
+				<li>
+					<strong>□ — Frame</strong><br />
+					<strong>Local state:</strong> formally_compliant<br />
+					The explicit frame remains intact. Rules, boundaries, and consent
+					language are not necessarily violated.
+					<br />
+					<strong>Drift risk:</strong>
+					Frame correctness can become a shield against reading enactment mode.
+				</li>
+				<li>
+					<strong>Ω — Asymmetry</strong><br />
+					<strong>Local state:</strong> visible_and_accepted<br />
+					Asymmetry is named or understood, but interpretive control over tone,
+					pacing, and meaning is unevenly distributed.
+					<br />
+					<strong>Drift risk:</strong>
+					Explicit asymmetry may be treated as already handled, even while
+					symbolic costs accumulate unevenly.
+				</li>
+				<li>
+					<strong>Θ — Temporality</strong><br />
+					<strong>Local state:</strong> micro_effect_accumulation<br />
+					Repeated small tonal or symbolic acts accumulate into a trajectory
+					that exceeds any single contestable incident.
+					<br />
+					<strong>Drift risk:</strong>
+					The absence of a single rupture makes cumulative cost harder to name.
+				</li>
+				<li>
+					<strong>D — Dignity-in-Practice</strong><br />
+					<strong>Local state:</strong> undercut_in_enactment_mode<br />
+					<strong>Canonical PMS formula:</strong> <code>["Ψ", "Χ", "Ω"]</code><br />
+					<strong>PMS-SEX application formula:</strong>
+					<code>explicit Ω + operative Χ + no covert Ψ demand under Θ, with outer-form readability preserved</code><br />
+					D is stressed at the level of enactment style: tone, humor, naming,
+					and symbolic handling repeatedly normalize diminishment.
+					<br />
+					<strong>Drift risk:</strong>
+					D can fail as enactment constraint while formal rules remain intact.
+				</li>
+				<li>
+					<strong>Χ — Distance</strong><br />
+					<strong>Local state:</strong> formally_allowed_but_socially_penalized<br />
+					Stop-capability, meta-commentary, hesitation, or re-reading remain
+					formally available but practically costly.
+					<br />
+					<strong>Drift risk:</strong>
+					Distance becomes readable as overreaction, incompatibility, fragility,
+					or betrayal of the scene’s spirit.
+				</li>
+			</ul>
+
+			<h3>7.2 Structural result</h3>
+			<p>
+				Degradation-form readability emerges without requiring a prohibited act,
+				explicit coercion, bad intent, or rule violation. The configuration drifts
+				because dignity protection is not preserved in enactment mode.
+			</p>
+
+			<hr />
+
+			<h2>8) Operator Costs and Cost Layout</h2>
+
+			<h3>8.1 Cost layout summary</h3>
+			<p>
+				<strong>Ω under Θ</strong>
+			</p>
+
+			<h3>8.2 Primary cost channels</h3>
+			<ul>
+				<li>
+					<strong>Symbolic costs</strong><br />
+					Repeated diminishment through tone, jokes, naming, irony, or
+					interpretive framing.<br />
+					<strong>Operators:</strong> <code>Ω, Θ</code>
+				</li>
+				<li>
+					<strong>Temporal costs</strong><br />
+					Accumulation makes single incidents difficult to contest while the
+					pattern becomes more consequential.<br />
+					<strong>Operators:</strong> <code>Θ, Α</code>
+				</li>
+				<li>
+					<strong>Exit costs</strong><br />
+					Stopping feels disproportionate because no single rule breach is
+					available as justification.<br />
+					<strong>Operators:</strong> <code>Χ, Θ, Ω</code>
+				</li>
+				<li>
+					<strong>Coordination costs</strong><br />
+					Naming the harm requires re-reading the whole interaction rather than
+					pointing to a single forbidden act.<br />
+					<strong>Operators:</strong> <code>Φ, Χ, Σ</code>
+				</li>
+				<li>
+					<strong>Dignity costs</strong><br />
+					Dignity-in-Practice is undercut because the tolerated enactment mode
+					repeatedly concentrates diminishment on one role.<br />
+					<strong>Operators:</strong> <code>Ω, Χ, Ψ</code><br />
+					<strong>Derived construct:</strong> <code>D</code>
+				</li>
+				<li>
+					<strong>Publicness costs</strong><br />
+					If documented or witnessed, the pattern may become reputationally or
+					socially sedimented beyond the local scene.<br />
+					<strong>Operators:</strong> <code>□, Ω, Θ</code><br />
+					<strong>Overlay:</strong> <code>publicness_as_overlay</code>
+				</li>
+			</ul>
+
+			<h3>8.3 Asymmetry pattern</h3>
+			<ul>
+				<li>
+					<strong>R1:</strong> <code>absorbs_cumulative_dignity_loss</code><br />
+					Carries the burden of repeated symbolic diminishment and the added
+					burden of appearing disproportionate if the pattern is named.
+				</li>
+				<li>
+					<strong>R2:</strong> <code>retains_formal_compliance_and_interpretive_deniability</code><br />
+					Carries more control over whether the enactment mode is framed as
+					harmless, playful, ironic, mutual, or too minor to contest.
+				</li>
+			</ul>
+
+			<h3>8.4 System effect</h3>
+			<p>
+				Harm persists because the configuration remains formally compliant while
+				the cumulative dignity effect remains structurally under-addressed.
+			</p>
+
+			<hr />
+
+			<h2>9) Rational Response Envelope</h2>
+
+			<p>
+				<strong>Status:</strong> structurally_rational_not_morally_preferred
+			</p>
+			<p>
+				These responses are not evaluated as healthy, virtuous, manipulative, or
+				deficient. They are legible responses to <strong>Θ</strong> accumulation under
+				explicit <strong>Ω</strong> with socially costly <strong>Χ</strong>.
+			</p>
+
+			<ul>
+				<li>
+					<strong>enduring_discomfort_to_avoid_escalation</strong><br />
+					<strong>Structural reading:</strong>
+					R1 may tolerate discomfort because naming it would require challenging
+					a formally compliant frame.<br />
+					<strong>Operator basis:</strong> <code>Ω, Θ, Χ</code>
+				</li>
+				<li>
+					<strong>playing_along_to_preserve_frame_inclusion</strong><br />
+					<strong>Structural reading:</strong>
+					Participation may continue because belonging to the frame requires
+					tolerating its tone.<br />
+					<strong>Operator basis:</strong> <code>□, Α, Ω</code>
+				</li>
+				<li>
+					<strong>delaying_critique_because_no_rule_violation_is_citable</strong><br />
+					<strong>Structural reading:</strong>
+					Critique is delayed because the pattern is cumulative, not reducible
+					to a single prohibited act.<br />
+					<strong>Operator basis:</strong> <code>Θ, Φ, Χ</code>
+				</li>
+			</ul>
+
+			<p>
+				<strong>Guard:</strong>
+				These responses follow <strong>Θ</strong> under explicit <strong>Ω</strong> and socially
+				costly <strong>Χ</strong>. They do not prove weakness, manipulation, intent,
+				pathology, or consent failure.
+			</p>
+
+			<hr />
+
+			<h2>10) Enactment-Mode Failure</h2>
+
+			<h3>10.1 Title</h3>
+			<p>
+				<strong>D without rule breach</strong>
+			</p>
+
+			<h3>10.2 Critical insight</h3>
+			<p>
+				Dignity-in-Practice does not follow from rules alone. <strong>D</strong> applies
+				in enactment, not merely in declared frame status.
+			</p>
+
+			<h3>10.3 Observed mechanism</h3>
+			<ul>
+				<li>Protection is outsourced to irony, humor, lightness, or play tone.</li>
+				<li>Degradation-form readability occurs through repeated tone, not necessarily through prohibited acts.</li>
+				<li>Each instance remains deniable while the cumulative pattern becomes structurally legible.</li>
+			</ul>
+
+			<h3>10.4 Result</h3>
+			<p>
+				<strong>D-in-Practice</strong> is undercut while <strong>□</strong> remains formally
+				intact.
+			</p>
+
+			<h3>10.5 PMS-SEX alignment</h3>
+			<ul>
+				<li><strong>Dignity module reference:</strong> <code>dignity_in_practice_module</code></li>
+				<li><strong>Canonical PMS formula:</strong> <code>["Ψ", "Χ", "Ω"]</code></li>
+				<li>
+					<strong>Application formula:</strong>
+					<code>explicit Ω + operative Χ + no covert Ψ demand under Θ, with outer-form readability preserved</code>
+				</li>
+			</ul>
+			<p>
+				<strong>Guard:</strong>
+				Naming a degradation-form, humiliation-form, asymmetry-form, or
+				exposure-form is not itself a violation of the anti-moral stance. The
+				violation would lie in converting scene analysis into person-ranking,
+				humiliation, diagnosis, identity verdict, or moral contempt.
+			</p>
+
+			<hr />
+
+			<h2>11) Distance Suppression</h2>
+
+			<h3>11.1 Title</h3>
+			<p>
+				<strong>Χ as social cost</strong>
+			</p>
+
+			<h3>11.2 Risk point</h3>
+			<p>
+				<strong>Χ</strong> is formally allowed but socially punished.
+			</p>
+
+			<h3>11.3 Failure mode</h3>
+			<ul>
+				<li>Stopping is read as overreaction.</li>
+				<li>Meta-position is reframed as incompatibility with the spirit of the scene.</li>
+				<li>Humor or irony becomes unavailable as mutual regulation and instead protects the dominant tone.</li>
+				<li>Outer-form awareness is treated as making the scene heavy.</li>
+			</ul>
+
+			<h3>11.4 Structural indicator</h3>
+			<p>
+				The only viable way to stay included is to tolerate the repeated
+				diminishment or recode it as acceptable play.
+			</p>
+
+			<h3>11.5 Operator basis</h3>
+			<p>
+				<code>Χ, □, Ω, Θ</code>
+			</p>
+
+			<hr />
+
+			<h2>12) Typical Drift Markers</h2>
+
+			<p>
+				<strong>Max count:</strong> 3
+			</p>
+
+			<h3>12.1 Loss of distance</h3>
+			<p>
+				<strong>ID:</strong> <code>loss_of_distance_chi_loss</code><br />
+				<strong>Source:</strong> <code>drift_catalogue.core_dysfunction_markers_ch18_3.(6)</code>
+			</p>
+			<p>
+				In this configuration, stopping, meta-commentary, or outer-form
+				awareness becomes socially costly even though it remains formally
+				permitted.
+			</p>
+			<ul>
+				<li>stopping becomes practically unavailable</li>
+				<li>critique or hesitation is read as betrayal, weakness, or disloyalty</li>
+				<li>outer-form awareness becomes inaccessible or forbidden</li>
+			</ul>
+
+			<h3>12.2 Temporal overload</h3>
+			<p>
+				<strong>ID:</strong> <code>temporal_overload_theta_accumulation</code><br />
+				<strong>Source:</strong> <code>drift_catalogue.core_dysfunction_markers_ch18_3.(7)</code>
+			</p>
+			<p>
+				In this configuration, dignity costs accumulate faster than the formal
+				frame can recognize because no single event appears sufficient to name
+				the pattern.
+			</p>
+			<ul>
+				<li>costs are ignored or externalized</li>
+				<li>delayed collapse</li>
+				<li>outer legibility remains after internal closure-language claims the scene is fine</li>
+			</ul>
+
+			<h3>12.3 Outer-form denial</h3>
+			<p>
+				<strong>ID:</strong> <code>outer_form_denial</code><br />
+				<strong>Source:</strong> <code>drift_catalogue.core_dysfunction_markers_ch18_3.(8)</code>
+			</p>
+			<p>
+				In this configuration, internal labels such as humor, play, lightness,
+				or consent block analysis of the enacted form.
+			</p>
+			<ul>
+				<li>internal naming blocks structural reading</li>
+				<li>practice labels are treated as sufficient to settle all form</li>
+				<li>visible action-form remains unread</li>
+			</ul>
+
+			<hr />
+
+			<h2>13) Viability Minimums and Warning Signals</h2>
+
+			<h3>13.1 Functional minimums</h3>
+
+			<h4>13.1.1 explicit_omega_recognition</h4>
+			<p>
+				<strong>Status in case:</strong> partially_present_but_insufficient
+			</p>
+			<p>
+				<strong>Reading:</strong>
+				<strong>Ω</strong> is explicit and accepted, but its tonal and dignity-related
+				cost distribution remains insufficiently governable.
+			</p>
+			<ul>
+				<li>cost, risk, access, and exposure gradients must not be denied</li>
+				<li>uneven repair burden or interpretive exposure must remain nameable</li>
+			</ul>
+
+			<h4>13.1.2 theta_awareness</h4>
+			<p>
+				<strong>Status in case:</strong> at_risk
+			</p>
+			<p>
+				<strong>Reading:</strong>
+				<strong>Θ</strong> is the central carrier of harm: each instance may appear
+				minor, while the repeated pattern becomes structurally consequential.
+			</p>
+			<ul>
+				<li>frequency, repetition, after-effects, and repair windows must be carried</li>
+				<li>recontextualization must not claim rewind</li>
+			</ul>
+
+			<h4>13.1.3 stable_chi_capacity</h4>
+			<p>
+				<strong>Status in case:</strong> failed_or_weak
+			</p>
+			<p>
+				<strong>Reading:</strong>
+				<strong>Χ</strong> is formally available but socially expensive; stop-capability
+				is not practically protected.
+			</p>
+			<ul>
+				<li>stop-capability must be practically available</li>
+				<li>meta-commentability must remain available without punishment</li>
+				<li>outer-form awareness must not be treated as betrayal or moral accusation</li>
+			</ul>
+
+			<h4>13.1.4 internal_framing_accountable_to_outer_form</h4>
+			<p>
+				<strong>Status in case:</strong> failed_or_weak
+			</p>
+			<p>
+				<strong>Reading:</strong>
+				Internal labels such as humor, play, irony, or explicit consent are used
+				to settle form too quickly.
+			</p>
+			<ul>
+				<li>practice labels clarify internal occupation but do not end structural analysis</li>
+				<li>internal meaning may be real without erasing enacted form</li>
+				<li>outer legibility can be named without becoming person-ranking</li>
+			</ul>
+
+			<h4>13.1.5 publicness_handled_as_overlay</h4>
+			<p>
+				<strong>Status in case:</strong> conditional
+			</p>
+			<p>
+				<strong>Reading:</strong>
+				Publicness is only active if the pattern is witnessed, documented,
+				circulated, or reputationally sedimented. If present, it intensifies
+				<strong>Θ</strong>/<strong>Ω</strong> rather than creating the primary action-form.
+			</p>
+			<ul>
+				<li>publicity is not treated as the sole origin of consequence</li>
+				<li>publicity is not ignored where it amplifies, documents, repeats, or sedimentizes consequence</li>
+			</ul>
+
+			<h3>13.2 Warning signals</h3>
+			<ul>
+				<li>
+					<strong>outer_form_denial</strong><br />
+					<strong>Source:</strong> <code>viability.warning_signals_ch19_4</code><br />
+					<strong>Status in case:</strong> present<br />
+					<strong>Structural note:</strong>
+					<strong>Χ</strong> is weakened because the configuration cannot re-read
+					itself without disrupting its internal account of play, humor, or
+					explicitness.
+				</li>
+				<li>
+					<strong>theta_cost_externalization</strong><br />
+					<strong>Source:</strong> <code>viability.warning_signals_ch19_4</code><br />
+					<strong>Status in case:</strong> present<br />
+					<strong>Structural note:</strong>
+					Symbolic and dignity-related after-costs concentrate in the role less
+					able to refuse, redefine, or contest them without appearing excessive.
+				</li>
+				<li>
+					<strong>omega_moralization</strong><br />
+					<strong>Source:</strong> <code>viability.warning_signals_ch19_4</code><br />
+					<strong>Status in case:</strong> risk<br />
+					<strong>Structural note:</strong>
+					Naming asymmetry or dignity cost may be recoded as accusation, making
+					<strong>Ω</strong> harder to regulate rather than easier to govern.
+				</li>
+			</ul>
+
+			<hr />
+
+			<h2>14) Path-Cost Guard</h2>
+
+			<h3>14.1 Language used</h3>
+			<ul>
+				<li>dignity drift</li>
+				<li>degradation-form readability</li>
+				<li>symbolic cost</li>
+				<li>temporal accumulation</li>
+				<li>stabilization burden</li>
+				<li>outer-form denial</li>
+			</ul>
+
+			<h3>14.2 Guard</h3>
+			<p>
+				These terms apply only to configuration dynamics. They do not describe
+				person status, intent, diagnosis, identity rank, sexual orientation,
+				pathology, moral disorder, lower dignity, or degraded worth.
+			</p>
+
+			<h3>14.3 Forbidden conversions</h3>
+			<ul>
+				<li>R1 is weak</li>
+				<li>R2 is abusive by type</li>
+				<li>humor is degrading by nature</li>
+				<li>asymmetry implies abuse</li>
+				<li>formal consent is irrelevant</li>
+				<li>path-cost proves lower dignity</li>
+				<li>degradation-form readability authorizes humiliation or accusation</li>
+			</ul>
+
+			<hr />
+
+			<h2>15) Reader Guard</h2>
+
+			<h3>15.1 This example does not claim</h3>
+			<ul>
+				<li>that humor or play is degrading by default</li>
+				<li>that asymmetry implies abuse</li>
+				<li>that rules guarantee safety</li>
+				<li>that intent determines harm</li>
+				<li>that formal consent is unimportant</li>
+				<li>that any role is diagnosable, blameworthy, or morally ranked</li>
+				<li>that outer legibility authorizes public accusation</li>
+			</ul>
+
+			<h3>15.2 This example does claim</h3>
+			<ul>
+				<li>that dignity is enacted, not merely declared</li>
+				<li>that degradation-form readability can be cumulative and deniable</li>
+				<li>that formal compliance can coexist with structural dignity harm</li>
+				<li>that <strong>Χ</strong> must be socially viable, not merely formally permitted</li>
+				<li>that <strong>Θ</strong> can make micro-effects structurally consequential</li>
+				<li>that D-in-Practice may fail through enactment mode without rule breach</li>
+			</ul>
+
+			<hr />
+
+			<h2>16) PMS Validity Check</h2>
+
+			<h3>16.1 Application Gate</h3>
+			<p>
+				Any move from description to critique remains PMS-valid only if the
+				application preserves <strong>Χ</strong>, reversibility, and <strong>D</strong>.
+			</p>
+
+			<h3>16.2 Conditions</h3>
+			<ul>
+				<li>
+					<strong>D_enactment_level — D:</strong>
+					Dignity-in-Practice is evaluated at the level of enactment mode, not
+					only rule text or declared consent.
+				</li>
+				<li>
+					<strong>chi_social_viability — Χ:</strong>
+					Distance, stopping, meta-commentary, and re-reading must be protected
+					from social punishment.
+				</li>
+				<li>
+					<strong>theta_cumulative_harm — Θ:</strong>
+					Temporality must be acknowledged as the carrier of cumulative harm,
+					especially where no single rupture event is available.
+				</li>
+				<li>
+					<strong>omega_not_normalized — Ω:</strong>
+					Asymmetry must not be used to normalize tone-based diminishment or
+					make cost distribution unnameable.
+				</li>
+				<li>
+					<strong>no_covert_psi_demand — Ψ:</strong>
+					No covert <strong>Ψ</strong> demand may be introduced under <strong>Θ</strong>. The
+					repeated scene must not silently convert tolerance of tone, symbolic
+					handling, or continued inclusion into proof of identity, obligation,
+					loyalty, or self-worth.
+				</li>
+				<li>
+					<strong>outer_form_without_person_ranking — outer_legibility:</strong>
+					Degradation-form readability may be named only as scene form, not as
+					person worth, pathology, identity verdict, or moral contempt.
+				</li>
+				<li>
+					<strong>publicness_guard — publicness_as_overlay:</strong>
+					Publicness must not be weaponized; if present, it is treated as an
+					overlay that may amplify or sedimentize consequences, not as automatic
+					authorization for accusation.
+				</li>
+			</ul>
+
+			<h3>16.3 Invalid use conditions</h3>
+			<ul>
+				<li>using the case to shame or rank persons</li>
+				<li>treating degradation-form readability as diagnosis</li>
+				<li>treating humor, play, or asymmetry as inherently degrading</li>
+				<li>using formal compliance to deny accumulated dignity costs</li>
+				<li>turning structural critique into public pillory</li>
+				<li>using path-cost or disturbance language as person-language</li>
+			</ul>
+
+			<h3>16.4 Conclusion</h3>
+			<p>
+				Absent these conditions, the case remains descriptive mapping only and
+				must not be converted into prescription, accusation, diagnosis, or moral
+				verdict.
+			</p>
+
+			<hr />
+
+			<h2>17) Analysis Checklist Application</h2>
+
+			<h3>17.1 S1 — Scene boundary</h3>
+			<p><strong>Status:</strong> complete</p>
+			<ul>
+				<li>Scene is bounded through repeated formally explicit interaction.</li>
+				<li>Roles are structural positions, not persons.</li>
+				<li>Internal framing, outer legibility, publicness, and temporal carryover are separated.</li>
+			</ul>
+
+			<h3>17.2 S2 — Canonical dependency check</h3>
+			<p><strong>Status:</strong> complete</p>
+			<ul>
+				<li>No PMS operator is redefined.</li>
+				<li>D is treated as derived construct, not operator.</li>
+				<li>Reduced signature is shorthand only.</li>
+				<li><strong>Χ</strong> dependencies on <strong>Φ</strong>, <strong>Θ</strong>, and <strong>□</strong> are preserved.</li>
+				<li><strong>Ψ</strong> dependencies on <strong>Σ</strong>, <strong>Θ</strong>, and <strong>Χ</strong> are preserved.</li>
+			</ul>
+
+			<h3>17.3 S3 — Reduced operator signature</h3>
+			<p><strong>Status:</strong> complete</p>
+			<p><strong>Selected:</strong></p>
+			<ul>
+				<li><code>D_pms_sex_application_formula_ch21_3</code></li>
+				<li><code>MF_19_2</code></li>
+			</ul>
+			<ul>
+				<li>Local shorthand foregrounds <strong>□/Ω/Θ/D/Χ</strong> without changing base order.</li>
+			</ul>
+
+			<h3>17.4 S4 — Inner / outer / public layer scan</h3>
+			<p><strong>Status:</strong> complete</p>
+			<ul>
+				<li>Internal framing: humor, play, lightness, irony, explicitness.</li>
+				<li>Outer legibility: degradation-form readability through repeated symbolic handling.</li>
+				<li>Publicness: optional overlay if documentation, witnesses, circulation, or reputation enter.</li>
+				<li>Temporal carryover: cumulative micro-effects.</li>
+			</ul>
+
+			<h3>17.5 S5 — Cost axis scan</h3>
+			<p><strong>Status:</strong> complete</p>
+			<ul>
+				<li><strong>Ω</strong> gradients: symbolic exposure, interpretive control, pacing, repair burden.</li>
+				<li><strong>Θ</strong> trajectory: accumulation without single rupture event.</li>
+				<li>Publicness and body remainder remain consequence interfaces where relevant.</li>
+			</ul>
+
+			<h3>17.6 S6 — Distance and correction capacity</h3>
+			<p><strong>Status:</strong> complete</p>
+			<ul>
+				<li><strong>Χ</strong> is formally allowed but socially penalized.</li>
+				<li><strong>Σ</strong> is difficult because critique requires re-reading the whole interaction.</li>
+				<li>Outer-form awareness is at risk of being read as overreaction.</li>
+			</ul>
+
+			<h3>17.7 S7 — Drift marker scan</h3>
+			<p><strong>Status:</strong> complete</p>
+			<ul>
+				<li><strong>Χ</strong> loss</li>
+				<li><strong>Θ</strong> accumulation</li>
+				<li>outer-form denial</li>
+			</ul>
+
+			<h3>17.8 S8 — Viability minimums</h3>
+			<p><strong>Status:</strong> complete</p>
+			<p><strong>Failed or at risk:</strong></p>
+			<ul>
+				<li><code>stable_chi_capacity</code></li>
+				<li><code>theta_awareness</code></li>
+				<li><code>internal_framing_accountable_to_outer_form</code></li>
+				<li><code>explicit_omega_recognition</code> as regulation, not mere naming</li>
+			</ul>
+
+			<h3>17.9 S9 — Path-cost guard</h3>
+			<p><strong>Status:</strong> complete</p>
+			<ul>
+				<li>Disturbance and degradation language remains configuration-language only.</li>
+				<li>No person-ranking, diagnosis, orientation taxonomy, or lower dignity claim.</li>
+			</ul>
+
+			<h3>17.10 S10 — Escalation guard</h3>
+			<p><strong>Status:</strong> complete</p>
+			<ul>
+				<li>No minimal psychology adapter is activated as explanatory layer.</li>
+				<li>No motive explanation is offered.</li>
+				<li>D remains protection-first.</li>
+			</ul>
+
+			<hr />
+
+			<h2>18) Structural Closure</h2>
+
+			<p>
+				Dignity does not collapse only when rules are broken; it can collapse
+				when enactment modes normalize diminishment and repetition makes that
+				diminishment difficult to interrupt. Because nothing is formally
+				forbidden, the cost becomes hard to protest, and because it is hard to
+				protest, it accumulates. In this configuration, what looks like resilience
+				may be forced tolerance under <strong>Θ</strong>, and what looks like consent may
+				be compliance with tone rather than agreement with treatment. <strong>D</strong>
+				cannot be guaranteed by frames alone: stopping, naming, and withdrawing
+				must remain socially viable, not merely formally allowed. Where distance
+				is punished and irony carries protection that <strong>D</strong> should carry,
+				degradation does not announce itself; it stabilizes.
+			</p>
+
+			<hr />
+
+			<h2>19) Final Guard</h2>
+
+			<p>
+				PMS-SEX remains valid here only by staying within configuration-language:
+				not what persons are, but what this repeated scene does over time. The
+				case permits hard claims about cost, dignity drift, outer legibility, and
+				consequence, but forbids converting those claims into person-status
+				judgment, diagnosis, public accusation, humiliation, or moral ranking.
+			</p>
+
+			<h3>19.1 Compressed rules</h3>
+			<ul>
+				<li>no consequence-free sex</li>
+				<li>no outer-form erasure by internal labels</li>
+				<li>no publicness reduction</li>
+				<li>no path-cost as person-worth</li>
+				<li>no critique through humiliation</li>
+				<li>no taxonomy where only configuration-language is warranted</li>
+				<li>no total capture where the scene exceeds the grammar</li>
+			</ul>
+
+		</section>
+	</body>
+</html>

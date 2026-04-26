@@ -1,0 +1,721 @@
+case:
+  id: "PMS-SEX_EXAMPLE_05"
+  schema_version: "PMS-SEX_case_1.1"
+  profile_dependency:
+    model: "PMS-SEX"
+    schema_version: "PMS-SEX_1.1"
+    base_model: "PMS"
+    base_schema_version: "PMS_1.3"
+    conformity_status: "conformant_application_case"
+    case_role: "example_suite_vignette"
+    application_status: "scene_bound_structural_mapping_only"
+
+  title: "Dignity Collapse without Rule Violation"
+  case_label: "When Nothing Is Forbidden but Degradation Emerges"
+
+  scope_discipline:
+    summary: >
+      Structural mapping only. No accusation, no intent attribution, no motive
+      theory, no person diagnosis, no moral ranking, no prescriptive claims.
+      PMS application validity remains conditional on Χ + reversibility + D.
+    forbidden_conversions:
+      - "accusation"
+      - "intent attribution"
+      - "motive attribution"
+      - "clinical interpretation"
+      - "person diagnosis"
+      - "person ranking"
+      - "orientation taxonomy"
+      - "moral verdict"
+      - "public accusation"
+      - "how-to guidance"
+      - "risk optimization"
+    validity_gate:
+      required:
+        - id: "Χ"
+          name: "Distance"
+          requirement: >
+            Maintained meta-position and stop-capability; no fusion into verdict,
+            urgency, enforcement, person-level attribution, role, impulse, or
+            self-justifying rhetoric.
+        - id: "reversibility"
+          requirement: >
+            Scene-bound, configuration-specific, revisable reading; no global
+            person labels, irreversible interpretive claims, identity verdicts,
+            or ontological attributions.
+        - id: "D"
+          name: "Dignity-in-Practice"
+          requirement: >
+            No shaming, humiliation, person-ranking, diagnosis, orientation
+            taxonomy, or person-worth evaluation. Critique targets enacted
+            structures and cost handling only.
+      applies_to: "application_only"
+      does_not_apply_to:
+        - "critique_of_PMS"
+        - "rejection_of_PMS"
+        - "rival_formalization"
+
+  minimal_vignette:
+    scene_bound_and_non_identifying: >
+      A repeated sexual or intimacy-marked interaction remains formally compliant:
+      rules are named, boundaries are acknowledged, and explicit consent remains
+      intact. Over time, however, tone, joking, ironic distance, teasing, or
+      symbolic handling concentrate diminishment on one role. No single scene
+      clearly violates the explicit frame, but repeated enactment makes stopping,
+      naming, or withdrawing socially costly. The configuration therefore
+      becomes structurally degradation-prone without needing a rule breach,
+      bad intent claim, or person-level accusation.
+    abstraction_level: "generic_abstracted_non_identifying"
+    non_instructional: true
+
+  why_repo_useful:
+    structural_focus: >
+      This case tests a central PMS-SEX claim: Dignity-in-Practice cannot be
+      reduced to formal rule compliance. It shows how □ may remain explicit and
+      consent may remain procedurally intact while Ω, Θ, and Χ generate a
+      configuration in which dignity is undercut through enactment mode. The
+      example is useful because it separates rule breach, consent failure, and
+      dignity drift without converting any of them into moral accusation,
+      pathology, or person classification.
+    profile_features_exercised:
+      - "Dignity-in-Practice as enactment constraint"
+      - "Ω as structural asymmetry, not moral blame"
+      - "Θ accumulation through micro-effects"
+      - "Χ as practical social viability, not merely formal permission"
+      - "outer legibility without person-ranking"
+      - "path-cost and disturbance language as configuration-language only"
+      - "internal framing accountability to outer form"
+
+  operator_mapping:
+    canonical_spine:
+      raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ"
+      operators: ["Δ", "∇", "□", "Λ", "Α", "Ω", "Θ", "Φ", "Χ", "Σ", "Ψ"]
+      dependency_bound: true
+      note: >
+        The case is read against the canonical PMS v1.3 operator spine as used
+        by PMS-SEX. No operator is added, removed, redefined, or reordered.
+
+    selected_profile_signature:
+      id: "D_pms_sex_application_formula_ch21_3"
+      paper_refs: ["Ch. 21.3"]
+      label: "D-in-Practice — PMS-SEX application formula"
+      raw: "D-in-Practice in PMS-SEX = explicit Ω + operative Χ + no covert Ψ demand under Θ, with outer-form readability preserved"
+      operators: ["Ω", "Χ", "Ψ", "Θ"]
+      pms_canonical_D_formula: ["Ψ", "Χ", "Ω"]
+      note: >
+        The case foregrounds D-in-Practice under explicit asymmetry and repeated
+        enactment. Θ appears as trajectory realism, and outer-form readability
+        is a PMS-SEX application guard, not a revision of canonical PMS-D.
+
+    secondary_reduced_signature:
+      id: "MF_19_2"
+      paper_refs: ["Ch. 19.2"]
+      label: "Functional Conditions and Warning Signals"
+      raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ; dominant interaction: Ω → Θ, with accumulated Θ making Ω layouts more visible and consequential"
+      operators: ["Δ", "∇", "□", "Λ", "Α", "Ω", "Θ", "Φ", "Χ", "Σ", "Ψ"]
+      note: >
+        This secondary signature is used because the case concerns a functional
+        failure despite explicit framing: Ω is visible, Θ accumulates, and Χ
+        becomes socially expensive.
+
+    case_reduced_signature:
+      raw: "□ explicit → Ω explicit → Θ accumulation → D-in-Practice undercutting → Χ social-cost increase"
+      reduced: true
+      operators: ["□", "Ω", "Θ", "Χ"]
+      derived_constructs: ["D"]
+      hygiene_note: >
+        This case shorthand foregrounds the local dignity drift. It does not
+        create a new PMS operator sequence. D is a PMS-derived construct with
+        canonical derivation ["Ψ", "Χ", "Ω"]; it is not a twelfth operator.
+        Any use of Χ presupposes Φ, Θ, and □. Any use of Ψ presupposes Σ, Θ,
+        and Χ.
+
+  scene_packet:
+    scene_id: "EX05_DIGNITY_COLLAPSE_WITHOUT_RULE_VIOLATION"
+    scene_type: "repeated_explicit_frame_with_enactment_mode_drift"
+    temporal_structure:
+      operator: "Θ"
+      description: >
+        Ongoing interaction with repeated scenes and cumulative micro-effects.
+        No single rupture event is necessary; repetition makes tonal and symbolic
+        handling consequential across time.
+    frame_anchor:
+      operator: "□"
+      frame_type: "explicit_formally_stable"
+      description: >
+        Rules are named, boundaries are acknowledged, and consent remains intact.
+        The frame is formally stable, but its dignity-preserving function depends
+        on enactment mode, not only on rule text.
+    roles_not_persons:
+      R1:
+        structural_position: "higher_exposure_to_symbolic_handling"
+        description: >
+          Carries greater exposure to tone, humor, naming, ironic distance, or
+          repeated symbolic diminishment.
+      R2:
+        structural_position: "higher_control_over_scene_pacing_framing_and_interpretation"
+        description: >
+          Carries greater capacity to define whether the tone counts as playful,
+          light, harmless, normal, or excessive to question.
+    trigger:
+      delta:
+        operator: "Δ"
+        description: >
+          Asymmetry is explicit and accepted, but a difference opens between
+          formal frame compliance and cumulative dignity effects.
+      impulse:
+        operator: "∇"
+        description: >
+          Pressure to maintain lightness, intensity, playfulness, or continuity
+          without making the scene heavy or interrupting its internal tone.
+    lambda_candidates_expected_but_missing:
+      - id: "neutral_tonal_pause"
+        operator: "Λ"
+        expected_absence: >
+          Pauses in which tone can reset without penalty or loss of inclusion.
+      - id: "meta_comment_without_cost"
+        operator: "Λ"
+        expected_absence: >
+          Meta-comments that can slow, question, or stop a scene without being
+          recoded as overreaction, fragility, or betrayal of the frame spirit.
+    observed_realizations_neutral:
+      - "Irony, teasing, or play increasingly manages tension."
+      - "Discomfort is recontextualized as humorlessness, fragility, or inability to stay with the frame."
+      - "Stops remain formally acknowledged but become socially costly."
+      - "No single rule breach is necessary for cumulative degradation-form readability to emerge."
+
+  inner_outer_public_layer_distinction:
+    core_rule: >
+      Internal framing, outer legibility, public circulation, and temporal
+      carryover may overlap, but must not be collapsed into one another.
+
+    internal_framing:
+      concept: "internal_framing"
+      description: >
+        The scene may be internally inhabited as humor, play, lightness, irony,
+        intensity, familiarity, or mutual explicitness.
+      guard: >
+        Internal framing may be real without being total. It does not by itself
+        erase the structural form that repeated tone and symbolic handling
+        produce under Ω and Θ.
+
+    outer_legibility:
+      concept: "outer_legibility"
+      description: >
+        The scene becomes externally readable as dignity-fragile where one role
+        repeatedly absorbs diminishment while the other retains interpretive
+        control over whether that diminishment counts.
+      guard: >
+        Naming outer legibility does not imply person-ranking, diagnosis,
+        denial of consent, moral verdict, or total interpretation of the scene.
+
+    publicness:
+      concept: "publicness_as_overlay"
+      present: "optional_or_context_dependent"
+      description: >
+        If documentation, witnesses, circulation, screenshots, social comparison,
+        reputation, or audience uptake enter the field, publicness can amplify
+        and sedimentize the dignity cost. Publicness does not necessarily create
+        the primary action-form.
+      guard: >
+        Publicness is neither the whole source of harm nor irrelevant once it
+        documents, repeats, or sedimentizes consequence.
+
+    temporal_carryover:
+      concept: "temporal_carryover"
+      operator: "Θ"
+      description: >
+        Each single incident may remain deniable or ambiguous, while the repeated
+        pattern becomes harder to contest precisely because it is distributed
+        across time.
+      guard: >
+        Θ does not rewind. Later explanations may alter narration, but they do
+        not erase accumulated structural effects.
+
+  drift_trace:
+    summary_formula: "□stable → Ω explicit → Θ accumulation → D-in-Practice undercutting → Χ penalized"
+    classification: "dignity_drift_without_rule_breach"
+    descriptive_only: true
+
+    transitions:
+      - operator: "□"
+        name: "Frame"
+        local_state: "formally_compliant"
+        description: >
+          The explicit frame remains intact. Rules, boundaries, and consent
+          language are not necessarily violated.
+        drift_risk: >
+          Frame correctness can become a shield against reading enactment mode.
+
+      - operator: "Ω"
+        name: "Asymmetry"
+        local_state: "visible_and_accepted"
+        description: >
+          Asymmetry is named or understood, but interpretive control over tone,
+          pacing, and meaning is unevenly distributed.
+        drift_risk: >
+          Explicit asymmetry may be treated as already handled, even while
+          symbolic costs accumulate unevenly.
+
+      - operator: "Θ"
+        name: "Temporality"
+        local_state: "micro_effect_accumulation"
+        description: >
+          Repeated small tonal or symbolic acts accumulate into a trajectory
+          that exceeds any single contestable incident.
+        drift_risk: >
+          The absence of a single rupture makes cumulative cost harder to name.
+
+      - derived_construct: "D"
+        name: "Dignity-in-Practice"
+        local_state: "undercut_in_enactment_mode"
+        canonical_pms_formula: ["Ψ", "Χ", "Ω"]
+        pms_sex_application_formula: "explicit Ω + operative Χ + no covert Ψ demand under Θ, with outer-form readability preserved"
+        description: >
+          D is stressed at the level of enactment style: tone, humor, naming,
+          and symbolic handling repeatedly normalize diminishment.
+        drift_risk: >
+          D can fail as enactment constraint while formal rules remain intact.
+
+      - operator: "Χ"
+        name: "Distance"
+        local_state: "formally_allowed_but_socially_penalized"
+        description: >
+          Stop-capability, meta-commentary, hesitation, or re-reading remain
+          formally available but practically costly.
+        drift_risk: >
+          Distance becomes readable as overreaction, incompatibility, fragility,
+          or betrayal of the scene’s spirit.
+
+    structural_result: >
+      Degradation-form readability emerges without requiring a prohibited act,
+      explicit coercion, bad intent, or rule violation. The configuration drifts
+      because dignity protection is not preserved in enactment mode.
+
+  operator_costs_and_cost_layout:
+    cost_layout_summary: "Ω under Θ"
+    primary_cost_channels:
+      symbolic_costs:
+        description: >
+          Repeated diminishment through tone, jokes, naming, irony, or
+          interpretive framing.
+        operators: ["Ω", "Θ"]
+      temporal_costs:
+        description: >
+          Accumulation makes single incidents difficult to contest while the
+          pattern becomes more consequential.
+        operators: ["Θ", "Α"]
+      exit_costs:
+        description: >
+          Stopping feels disproportionate because no single rule breach is
+          available as justification.
+        operators: ["Χ", "Θ", "Ω"]
+      coordination_costs:
+        description: >
+          Naming the harm requires re-reading the whole interaction rather than
+          pointing to a single forbidden act.
+        operators: ["Φ", "Χ", "Σ"]
+      dignity_costs:
+        description: >
+          Dignity-in-Practice is undercut because the tolerated enactment mode
+          repeatedly concentrates diminishment on one role.
+        operators: ["Ω", "Χ", "Ψ"]
+        derived_construct: "D"
+      publicness_costs:
+        description: >
+          If documented or witnessed, the pattern may become reputationally or
+          socially sedimented beyond the local scene.
+        operators: ["□", "Ω", "Θ"]
+        overlay: "publicness_as_overlay"
+
+    asymmetry_pattern:
+      R1:
+        cost_position: "absorbs_cumulative_dignity_loss"
+        description: >
+          Carries the burden of repeated symbolic diminishment and the added
+          burden of appearing disproportionate if the pattern is named.
+      R2:
+        cost_position: "retains_formal_compliance_and_interpretive_deniability"
+        description: >
+          Carries more control over whether the enactment mode is framed as
+          harmless, playful, ironic, mutual, or too minor to contest.
+      system_effect: >
+        Harm persists because the configuration remains formally compliant while
+        the cumulative dignity effect remains structurally under-addressed.
+
+  rational_response_envelope:
+    status: "structurally_rational_not_morally_preferred"
+    note: >
+      These responses are not evaluated as healthy, virtuous, manipulative, or
+      deficient. They are legible responses to Θ accumulation under explicit Ω
+      with socially costly Χ.
+
+    responses:
+      - response: "enduring_discomfort_to_avoid_escalation"
+        structural_reading: >
+          R1 may tolerate discomfort because naming it would require challenging
+          a formally compliant frame.
+        operator_basis: ["Ω", "Θ", "Χ"]
+
+      - response: "playing_along_to_preserve_frame_inclusion"
+        structural_reading: >
+          Participation may continue because belonging to the frame requires
+          tolerating its tone.
+        operator_basis: ["□", "Α", "Ω"]
+
+      - response: "delaying_critique_because_no_rule_violation_is_citable"
+        structural_reading: >
+          Critique is delayed because the pattern is cumulative, not reducible
+          to a single prohibited act.
+        operator_basis: ["Θ", "Φ", "Χ"]
+
+    guard: >
+      These responses follow Θ under explicit Ω and socially costly Χ. They do
+      not prove weakness, manipulation, intent, pathology, or consent failure.
+
+  enactment_mode_failure:
+    title: "D without rule breach"
+    critical_insight: >
+      Dignity-in-Practice does not follow from rules alone. D applies in
+      enactment, not merely in declared frame status.
+    observed_mechanism:
+      - "Protection is outsourced to irony, humor, lightness, or play tone."
+      - "Degradation-form readability occurs through repeated tone, not necessarily through prohibited acts."
+      - "Each instance remains deniable while the cumulative pattern becomes structurally legible."
+    result: >
+      D-in-Practice is undercut while □ remains formally intact.
+    pms_sex_alignment:
+      dignity_module_reference: "dignity_in_practice_module"
+      canonical_pms_formula: ["Ψ", "Χ", "Ω"]
+      application_formula: "explicit Ω + operative Χ + no covert Ψ demand under Θ, with outer-form readability preserved"
+      guard: >
+        Naming a degradation-form, humiliation-form, asymmetry-form, or
+        exposure-form is not itself a violation of the anti-moral stance. The
+        violation would lie in converting scene analysis into person-ranking,
+        humiliation, diagnosis, identity verdict, or moral contempt.
+
+  distance_suppression:
+    title: "Χ as social cost"
+    risk_point: >
+      Χ is formally allowed but socially punished.
+    failure_mode:
+      - "Stopping is read as overreaction."
+      - "Meta-position is reframed as incompatibility with the spirit of the scene."
+      - "Humor or irony becomes unavailable as mutual regulation and instead protects the dominant tone."
+      - "Outer-form awareness is treated as making the scene heavy."
+    structural_indicator: >
+      The only viable way to stay included is to tolerate the repeated
+      diminishment or recode it as acceptable play.
+    operator_basis: ["Χ", "□", "Ω", "Θ"]
+
+  typical_drift_markers:
+    max_count: 3
+    markers:
+      - id: "loss_of_distance_chi_loss"
+        label: "Loss of distance"
+        source: "drift_catalogue.core_dysfunction_markers_ch18_3.(6)"
+        configuration_statement: >
+          In this configuration, stopping, meta-commentary, or outer-form
+          awareness becomes socially costly even though it remains formally
+          permitted.
+        indicators:
+          - "stopping becomes practically unavailable"
+          - "critique or hesitation is read as betrayal, weakness, or disloyalty"
+          - "outer-form awareness becomes inaccessible or forbidden"
+
+      - id: "temporal_overload_theta_accumulation"
+        label: "Temporal overload"
+        source: "drift_catalogue.core_dysfunction_markers_ch18_3.(7)"
+        configuration_statement: >
+          In this configuration, dignity costs accumulate faster than the formal
+          frame can recognize because no single event appears sufficient to name
+          the pattern.
+        indicators:
+          - "costs are ignored or externalized"
+          - "delayed collapse"
+          - "outer legibility remains after internal closure-language claims the scene is fine"
+
+      - id: "outer_form_denial"
+        label: "Outer-form denial"
+        source: "drift_catalogue.core_dysfunction_markers_ch18_3.(8)"
+        configuration_statement: >
+          In this configuration, internal labels such as humor, play, lightness,
+          or consent block analysis of the enacted form.
+        indicators:
+          - "internal naming blocks structural reading"
+          - "practice labels are treated as sufficient to settle all form"
+          - "visible action-form remains unread"
+
+  viability_minimums_and_warning_signals:
+    functional_minimums:
+      - id: "explicit_omega_recognition"
+        status_in_case: "partially_present_but_insufficient"
+        reading: >
+          Ω is explicit and accepted, but its tonal and dignity-related cost
+          distribution remains insufficiently governable.
+        check_alignment:
+          - "cost, risk, access, and exposure gradients must not be denied"
+          - "uneven repair burden or interpretive exposure must remain nameable"
+
+      - id: "theta_awareness"
+        status_in_case: "at_risk"
+        reading: >
+          Θ is the central carrier of harm: each instance may appear minor, while
+          the repeated pattern becomes structurally consequential.
+        check_alignment:
+          - "frequency, repetition, after-effects, and repair windows must be carried"
+          - "recontextualization must not claim rewind"
+
+      - id: "stable_chi_capacity"
+        status_in_case: "failed_or_weak"
+        reading: >
+          Χ is formally available but socially expensive; stop-capability is not
+          practically protected.
+        check_alignment:
+          - "stop-capability must be practically available"
+          - "meta-commentability must remain available without punishment"
+          - "outer-form awareness must not be treated as betrayal or moral accusation"
+
+      - id: "internal_framing_accountable_to_outer_form"
+        status_in_case: "failed_or_weak"
+        reading: >
+          Internal labels such as humor, play, irony, or explicit consent are
+          used to settle form too quickly.
+        check_alignment:
+          - "practice labels clarify internal occupation but do not end structural analysis"
+          - "internal meaning may be real without erasing enacted form"
+          - "outer legibility can be named without becoming person-ranking"
+
+      - id: "publicness_handled_as_overlay"
+        status_in_case: "conditional"
+        reading: >
+          Publicness is only active if the pattern is witnessed, documented,
+          circulated, or reputationally sedimented. If present, it intensifies
+          Θ/Ω rather than creating the primary action-form.
+        check_alignment:
+          - "publicity is not treated as the sole origin of consequence"
+          - "publicity is not ignored where it amplifies, documents, repeats, or sedimentizes consequence"
+
+    warning_signals:
+      - id: "outer_form_denial"
+        source: "viability.warning_signals_ch19_4"
+        status_in_case: "present"
+        structural_note: >
+          Χ is weakened because the configuration cannot re-read itself without
+          disrupting its internal account of play, humor, or explicitness.
+
+      - id: "theta_cost_externalization"
+        source: "viability.warning_signals_ch19_4"
+        status_in_case: "present"
+        structural_note: >
+          Symbolic and dignity-related after-costs concentrate in the role less
+          able to refuse, redefine, or contest them without appearing excessive.
+
+      - id: "omega_moralization"
+        source: "viability.warning_signals_ch19_4"
+        status_in_case: "risk"
+        structural_note: >
+          Naming asymmetry or dignity cost may be recoded as accusation, making
+          Ω harder to regulate rather than easier to govern.
+
+  path_cost_guard:
+    language_used:
+      - "dignity drift"
+      - "degradation-form readability"
+      - "symbolic cost"
+      - "temporal accumulation"
+      - "stabilization burden"
+      - "outer-form denial"
+    guard: >
+      These terms apply only to configuration dynamics. They do not describe
+      person status, intent, diagnosis, identity rank, sexual orientation,
+      pathology, moral disorder, lower dignity, or degraded worth.
+    forbidden_conversions:
+      - "R1 is weak"
+      - "R2 is abusive by type"
+      - "humor is degrading by nature"
+      - "asymmetry implies abuse"
+      - "formal consent is irrelevant"
+      - "path-cost proves lower dignity"
+      - "degradation-form readability authorizes humiliation or accusation"
+
+  reader_guard:
+    does_not_claim:
+      - "that humor or play is degrading by default"
+      - "that asymmetry implies abuse"
+      - "that rules guarantee safety"
+      - "that intent determines harm"
+      - "that formal consent is unimportant"
+      - "that any role is diagnosable, blameworthy, or morally ranked"
+      - "that outer legibility authorizes public accusation"
+    does_claim:
+      - "that dignity is enacted, not merely declared"
+      - "that degradation-form readability can be cumulative and deniable"
+      - "that formal compliance can coexist with structural dignity harm"
+      - "that Χ must be socially viable, not merely formally permitted"
+      - "that Θ can make micro-effects structurally consequential"
+      - "that D-in-Practice may fail through enactment mode without rule breach"
+
+  pms_validity_check:
+    title: "Application Gate"
+    description: >
+      Any move from description to critique remains PMS-valid only if the
+      application preserves Χ, reversibility, and D.
+
+    conditions:
+      - id: "D_enactment_level"
+        operator_or_construct: "D"
+        requirement: >
+          Dignity-in-Practice is evaluated at the level of enactment mode, not
+          only rule text or declared consent.
+      - id: "chi_social_viability"
+        operator_or_construct: "Χ"
+        requirement: >
+          Distance, stopping, meta-commentary, and re-reading must be protected
+          from social punishment.
+      - id: "theta_cumulative_harm"
+        operator_or_construct: "Θ"
+        requirement: >
+          Temporality must be acknowledged as the carrier of cumulative harm,
+          especially where no single rupture event is available.
+      - id: "omega_not_normalized"
+        operator_or_construct: "Ω"
+        requirement: >
+          Asymmetry must not be used to normalize tone-based diminishment or
+          make cost distribution unnameable.
+      - id: "no_covert_psi_demand"
+        operator_or_construct: "Ψ"
+        requirement: >
+          No covert Ψ demand may be introduced under Θ. The repeated scene must
+          not silently convert tolerance of tone, symbolic handling, or continued
+          inclusion into proof of identity, obligation, loyalty, or self-worth.
+      - id: "outer_form_without_person_ranking"
+        concept: "outer_legibility"
+        requirement: >
+          Degradation-form readability may be named only as scene form, not as
+          person worth, pathology, identity verdict, or moral contempt.
+      - id: "publicness_guard"
+        concept: "publicness_as_overlay"
+        requirement: >
+          Publicness must not be weaponized; if present, it is treated as an
+          overlay that may amplify or sedimentize consequences, not as automatic
+          authorization for accusation.
+
+    invalid_use_conditions:
+      - "using the case to shame or rank persons"
+      - "treating degradation-form readability as diagnosis"
+      - "treating humor, play, or asymmetry as inherently degrading"
+      - "using formal compliance to deny accumulated dignity costs"
+      - "turning structural critique into public pillory"
+      - "using path-cost or disturbance language as person-language"
+
+    conclusion: >
+      Absent these conditions, the case remains descriptive mapping only and
+      must not be converted into prescription, accusation, diagnosis, or moral
+      verdict.
+
+  analysis_checklist_application:
+    S1_scene_boundary:
+      status: "complete"
+      notes:
+        - "Scene is bounded through repeated formally explicit interaction."
+        - "Roles are structural positions, not persons."
+        - "Internal framing, outer legibility, publicness, and temporal carryover are separated."
+
+    S2_canonical_dependency_check:
+      status: "complete"
+      notes:
+        - "No PMS operator is redefined."
+        - "D is treated as derived construct, not operator."
+        - "Reduced signature is shorthand only."
+        - "Χ dependencies on Φ, Θ, and □ are preserved."
+        - "Ψ dependencies on Σ, Θ, and Χ are preserved."
+
+    S3_reduced_operator_signature:
+      status: "complete"
+      selected:
+        - "D_pms_sex_application_formula_ch21_3"
+        - "MF_19_2"
+      notes:
+        - "Local shorthand foregrounds □/Ω/Θ/D/Χ without changing base order."
+
+    S4_inner_outer_public_layer_scan:
+      status: "complete"
+      notes:
+        - "Internal framing: humor, play, lightness, irony, explicitness."
+        - "Outer legibility: degradation-form readability through repeated symbolic handling."
+        - "Publicness: optional overlay if documentation, witnesses, circulation, or reputation enter."
+        - "Temporal carryover: cumulative micro-effects."
+
+    S5_cost_axis_scan:
+      status: "complete"
+      notes:
+        - "Ω gradients: symbolic exposure, interpretive control, pacing, repair burden."
+        - "Θ trajectory: accumulation without single rupture event."
+        - "Publicness and body remainder remain consequence interfaces where relevant."
+
+    S6_distance_and_correction_capacity:
+      status: "complete"
+      notes:
+        - "Χ is formally allowed but socially penalized."
+        - "Σ is difficult because critique requires re-reading the whole interaction."
+        - "Outer-form awareness is at risk of being read as overreaction."
+
+    S7_drift_marker_scan:
+      status: "complete"
+      markers:
+        - "Χ loss"
+        - "Θ accumulation"
+        - "outer-form denial"
+
+    S8_viability_minimums:
+      status: "complete"
+      failed_or_at_risk:
+        - "stable_chi_capacity"
+        - "theta_awareness"
+        - "internal_framing_accountable_to_outer_form"
+        - "explicit_omega_recognition as regulation, not mere naming"
+
+    S9_path_cost_guard:
+      status: "complete"
+      notes:
+        - "Disturbance and degradation language remains configuration-language only."
+        - "No person-ranking, diagnosis, orientation taxonomy, or lower dignity claim."
+
+    S10_escalation_guard:
+      status: "complete"
+      notes:
+        - "No minimal psychology adapter is activated as explanatory layer."
+        - "No motive explanation is offered."
+        - "D remains protection-first."
+
+  structural_closure:
+    non_normative: true
+    text: >
+      Dignity does not collapse only when rules are broken; it can collapse when
+      enactment modes normalize diminishment and repetition makes that
+      diminishment difficult to interrupt. Because nothing is formally forbidden,
+      the cost becomes hard to protest, and because it is hard to protest, it
+      accumulates. In this configuration, what looks like resilience may be
+      forced tolerance under Θ, and what looks like consent may be compliance
+      with tone rather than agreement with treatment. D cannot be guaranteed by
+      frames alone: stopping, naming, and withdrawing must remain socially viable,
+      not merely formally allowed. Where distance is punished and irony carries
+      protection that D should carry, degradation does not announce itself; it
+      stabilizes.
+
+  final_guard:
+    text: >
+      PMS-SEX remains valid here only by staying within configuration-language:
+      not what persons are, but what this repeated scene does over time. The case
+      permits hard claims about cost, dignity drift, outer legibility, and
+      consequence, but forbids converting those claims into person-status
+      judgment, diagnosis, public accusation, humiliation, or moral ranking.
+    compressed_rules:
+      - "no consequence-free sex"
+      - "no outer-form erasure by internal labels"
+      - "no publicness reduction"
+      - "no path-cost as person-worth"
+      - "no critique through humiliation"
+      - "no taxonomy where only configuration-language is warranted"
+      - "no total capture where the scene exceeds the grammar"

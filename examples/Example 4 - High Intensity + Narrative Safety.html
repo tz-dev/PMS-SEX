@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/main.css" />
+		<title>PMS-SEX — Example Case 4: High Intensity + Narrative Safety</title>
+		<style type="text/css">
+			:root {
+			  --font-body: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+			  --font-heading: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+			  --font-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+			  --color-bg: #f5f7fb;
+			  --color-surface: #ffffff;
+			  --color-surface-soft: #f9fbfd;
+			  --color-text: #18202a;
+			  --color-muted: #5f6b7a;
+			  --color-accent: #1f4b99;
+			  --color-accent-soft: #e8f0ff;
+			  --color-border: #d9e1ea;
+			  --color-border-strong: #bfc9d8;
+			  --color-quote: #2f5da8;
+			  --color-code-bg: #f3f5f7;
+			  --color-table-head: #eef3f8;
+			  --color-row-alt: #fbfcfe;
+
+			  --shadow-soft: 0 10px 30px rgba(18, 30, 50, 0.06);
+			  --radius-sm: 6px;
+			  --radius-md: 10px;
+			  --radius-lg: 16px;
+
+			  --content-width: 980px;
+			  --line-height: 1.7;
+			}
+
+			*,
+			*::before,
+			*::after {
+			  box-sizing: border-box;
+			}
+
+			html {
+			  margin: 0;
+			  padding: 0;
+			  scroll-behavior: smooth;
+			}
+
+			body {
+			  margin: 0;
+			  padding: 32px 20px 64px;
+			  font-family: var(--font-body);
+			  font-size: 16px;
+			  line-height: var(--line-height);
+			  color: var(--color-text);
+			  background:
+			    linear-gradient(180deg, #f7f9fc 0%, #f3f6fa 100%);
+			}
+
+			.page,
+			body > header,
+			body > section,
+			body > main {
+			  width: min(100%, var(--content-width));
+			  margin-left: auto;
+			  margin-right: auto;
+			}
+
+			.page {
+			  background: var(--color-surface);
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-lg);
+			  box-shadow: var(--shadow-soft);
+			  padding: 40px 42px 56px;
+			}
+
+			/* Header */
+			header {
+			  width: min(100%, var(--content-width));
+			  margin: 0 auto 28px;
+			  padding: 24px 0 18px;
+			  border-bottom: 1px solid var(--color-border);
+			}
+
+			header h1 {
+			  margin: 0 0 10px;
+			  font-family: var(--font-heading);
+			  font-size: clamp(2rem, 4vw, 2.8rem);
+			  font-weight: 500;
+			  line-height: 1.15;
+			  text-align: center;
+			  letter-spacing: -0.02em;
+			  color: var(--color-text);
+			}
+
+			header h2 {
+			  margin: 0 auto 12px;
+			  max-width: 48rem;
+			  font-size: 1.15rem !important;
+			  line-height: 1.45;
+			  font-weight: 400;
+			  text-align: center;
+			  color: var(--color-muted);
+			  border: 0;
+			  padding: 0;
+			}
+
+			header .subtitle {
+			  max-width: 52rem;
+			  margin: 0 auto 12px;
+			  text-align: center;
+			  color: var(--color-muted);
+			  font-size: 1rem;
+			}
+
+			header .meta {
+			  max-width: 52rem;
+			  margin: 14px auto 0;
+			  padding: 12px 14px;
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-md);
+			  background: var(--color-surface-soft);
+			  font-size: 0.88rem;
+			  line-height: 1.55;
+			  color: var(--color-muted);
+			}
+
+			/* Sections */
+			section {
+			  margin: 0 0 28px;
+			}
+
+			section#content {
+			  width: min(100%, var(--content-width));
+			  margin-left: auto;
+			  margin-right: auto;
+			}
+
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+			  font-family: var(--font-heading);
+			  color: var(--color-text);
+			  letter-spacing: -0.01em;
+			}
+
+			h1 {
+			  font-size: clamp(2rem, 4vw, 2.8rem);
+			  font-weight: 500;
+			}
+
+			h2,
+			h2 strong {
+			  padding-bottom: 8px;
+			  font-size: 1.65rem !important;
+			  font-weight: 500 !important;
+			  line-height: 1.25;
+			  border-bottom: 1px solid var(--color-border);
+			}
+
+			h3,
+			h3 strong {
+			  margin: 22px 0 8px !important;
+			  font-size: 1.2rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			h4,
+			h4 strong {
+			  margin: 18px 0 6px !important;
+			  font-size: 1.05rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			h5,
+			h5 strong,
+			h6,
+			h6 strong {
+			  margin: 16px 0 4px !important;
+			  font-size: 1rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			/* Text */
+			p {
+			  margin: 0 0 12px;
+			}
+
+			strong {
+			  color: #111827;
+			}
+
+			em {
+			  color: inherit;
+			}
+
+			.small {
+			  font-size: 0.92rem;
+			  color: var(--color-muted);
+			}
+
+			/* Links */
+			a {
+			  color: var(--color-accent);
+			  text-decoration: none;
+			  border-bottom: 1px solid transparent;
+			}
+
+			a:hover,
+			a:focus {
+			  border-bottom-color: currentColor;
+			}
+
+			/* Lists */
+			ul,
+			ol {
+			  margin: 8px 0 14px 1.25rem;
+			  padding: 0;
+			}
+
+			li {
+			  margin: 0 0 6px;
+			  padding-left: 2px;
+			}
+
+			ul ul,
+			ol ol,
+			ul ol,
+			ol ul {
+			  margin-top: 6px;
+			  margin-bottom: 8px;
+			}
+
+			li > p {
+			  margin-bottom: 6px;
+			}
+
+			/* Horizontal rule */
+			hr {
+			  display: block;
+			  height: 0;
+			  border: 0;
+			  border-top: 1px solid var(--color-border);
+			  margin: 24px 0;
+			}
+
+			/* Quotes */
+			blockquote {
+			  margin: 16px 0;
+			  padding: 12px 18px;
+			  border-left: 4px solid var(--color-quote);
+			  background: #f8fbff;
+			  color: #324154;
+			  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+			}
+
+			blockquote p:last-child {
+			  margin-bottom: 0;
+			}
+
+			/* Code */
+			code,
+			.code-inline {
+			  font-family: var(--font-mono);
+			  font-size: 0.92em;
+			  background: var(--color-code-bg);
+			  border: 1px solid #e7ebf0;
+			  border-radius: 4px;
+			  padding: 0.12em 0.4em;
+			  color: #233044;
+			}
+
+			pre {
+			  margin: 14px 0 18px;
+			  padding: 14px 16px;
+			  overflow-x: auto;
+			  background: #111827;
+			  color: #f3f4f6;
+			  border-radius: var(--radius-md);
+			  border: 1px solid #0f172a;
+			  text-align: left;
+			  line-height: 1.55;
+			}
+
+			pre code {
+			  background: transparent;
+			  border: 0;
+			  color: inherit;
+			  padding: 0;
+			  font-size: 0.92rem;
+			}
+
+			/* Boxes / callouts */
+			.box {
+			  margin: 16px 0 18px;
+			  padding: 14px 16px;
+			  border: 1px solid var(--color-border);
+			  border-left: 4px solid var(--color-accent);
+			  border-radius: var(--radius-md);
+			  background: linear-gradient(180deg, #fbfdff 0%, #f7faff 100%);
+			  line-height: 1.55;
+			}
+
+			.box-title {
+			  margin: 0 0 6px;
+			  font-size: 0.95rem;
+			  font-weight: 700;
+			  color: var(--color-accent);
+			}
+
+			.box p:last-child,
+			.box ul:last-child,
+			.box ol:last-child {
+			  margin-bottom: 0;
+			}
+
+			/* Tables */
+			.table,
+			table {
+			  width: 100%;
+			  margin: 14px 0 18px;
+			  border-collapse: collapse;
+			  border-spacing: 0;
+			  font-size: 0.95rem;
+			  line-height: 1.5;
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-md);
+			  overflow: hidden;
+			}
+
+			.table th,
+			.table td,
+			table th,
+			table td {
+			  padding: 10px 12px;
+			  vertical-align: top;
+			  border: 1px solid var(--color-border);
+			  text-align: left;
+			}
+
+			.table th,
+			table th {
+			  background: var(--color-table-head);
+			  color: #233044;
+			  font-weight: 700;
+			  font-variant: small-caps;
+			  letter-spacing: 0.03em;
+			}
+
+			.table tr:nth-child(even) td,
+			table tr:nth-child(even) td {
+			  background: var(--color-row-alt);
+			}
+
+			.table tr:nth-child(odd) td,
+			table tr:nth-child(odd) td {
+			  background: #ffffff;
+			}
+
+			/* Tags */
+			.tag {
+			  display: inline-block;
+			  margin: 0 6px 6px 0;
+			  padding: 3px 10px;
+			  border: 1px solid var(--color-border-strong);
+			  border-radius: 999px;
+			  background: #fff;
+			  color: var(--color-muted);
+			  font-size: 0.78rem;
+			  line-height: 1.3;
+			}
+
+			/* Placeholder */
+			.placeholder {
+			  color: var(--color-muted);
+			  font-style: italic;
+			}
+
+			/* Two-column layouts */
+			.two-column {
+			  display: grid;
+			  grid-template-columns: repeat(2, minmax(0, 1fr));
+			  gap: 18px;
+			  margin: 10px 0 16px;
+			}
+
+			.two-column > div {
+			  min-width: 0;
+			}
+
+			/* Utility */
+			.pagebreak {
+			  page-break-before: always;
+			  break-before: page;
+			}
+
+			/* Better spacing for consecutive structural blocks */
+			h2 + p,
+			h3 + p,
+			h4 + p {
+			  margin-top: 2px;
+			}
+
+			p + ul,
+			p + ol {
+			  margin-top: 6px;
+			}
+
+			ul + p,
+			ol + p {
+			  margin-top: 10px;
+			}
+
+			/* Optional content-specific helper classes */
+			.meta-grid {
+			  display: grid;
+			  grid-template-columns: 180px 1fr;
+			  gap: 8px 14px;
+			  margin: 12px 0 18px;
+			}
+
+			.meta-grid dt {
+			  font-weight: 600;
+			  color: var(--color-muted);
+			}
+
+			.meta-grid dd {
+			  margin: 0;
+			}
+
+			.definition-list {
+			  display: grid;
+			  grid-template-columns: 180px 1fr;
+			  gap: 8px 14px;
+			}
+
+			.definition-list dt {
+			  font-weight: 600;
+			  color: var(--color-accent);
+			}
+
+			.definition-list dd {
+			  margin: 0;
+			}
+
+			.callout-warning {
+			  border-left-color: #b45309;
+			  background: #fffaf2;
+			}
+
+			.callout-success {
+			  border-left-color: #0f766e;
+			  background: #f4fffd;
+			}
+
+			.callout-danger {
+			  border-left-color: #b91c1c;
+			  background: #fff8f8;
+			}
+
+			/* Images */
+			img {
+			  display: block;
+			  max-width: 100%;
+			  height: auto;
+			  margin: 14px auto 18px;
+			  border-radius: var(--radius-sm);
+			}
+
+			/* Print */
+			@media print {
+			  :root {
+			    --color-bg: white;
+			    --color-surface: white;
+			    --color-surface-soft: white;
+			    --color-row-alt: #fafafa;
+			    --shadow-soft: none;
+			  }
+
+			  html,
+			  body {
+			    background: white !important;
+			  }
+
+			  body {
+			    width: 100%;
+			    margin: 0;
+			    padding: 0;
+			    font-size: 11pt;
+			    line-height: 1.45;
+			  }
+
+			  .page,
+			  body > header,
+			  body > section,
+			  body > main,
+			  section#content {
+			    width: 100%;
+			    max-width: 100%;
+			    margin: 0;
+			  }
+
+			  .page {
+			    border: 0;
+			    box-shadow: none;
+			    border-radius: 0;
+			    padding: 0;
+			  }
+
+			  header {
+			    margin-bottom: 18px;
+			    padding: 0 0 12px;
+			  }
+
+			  h2,
+			  h2 strong {
+			    page-break-after: avoid;
+			  }
+
+			  h3,
+			  h3 strong,
+			  h4,
+			  h4 strong {
+			    page-break-after: avoid;
+			  }
+
+			  p,
+			  li,
+			  blockquote,
+			  .box,
+			  table,
+			  pre {
+			    page-break-inside: avoid;
+			  }
+
+			  a,
+			  a:visited {
+			    color: inherit;
+			    text-decoration: none;
+			  }
+
+			  a[href]::after {
+			    content: "";
+			  }
+
+			  .box {
+			    background: white;
+			  }
+			}
+
+			/* Responsive */
+			@media (max-width: 900px) {
+			  body {
+			    padding: 20px 14px 44px;
+			  }
+
+			  .page {
+			    padding: 28px 22px 40px;
+			  }
+
+			  .two-column {
+			    grid-template-columns: 1fr;
+			  }
+
+			  .meta-grid,
+			  .definition-list {
+			    grid-template-columns: 1fr;
+			    gap: 4px 0;
+			  }
+
+			  header h1 {
+			    font-size: 2.2rem;
+			  }
+
+			  h2,
+			  h2 strong {
+			    font-size: 1.45rem !important;
+			  }
+			}
+
+			@media (max-width: 640px) {
+			  body {
+			    font-size: 15px;
+			  }
+
+			  .page {
+			    padding: 22px 16px 32px;
+			    border-radius: 12px;
+			  }
+
+			  header .meta {
+			    padding: 10px 12px;
+			  }
+
+			  .table,
+			  table {
+			    font-size: 0.88rem;
+			  }
+
+			  .table th,
+			  .table td,
+			  table th,
+			  table td {
+			    padding: 8px 9px;
+			  }
+
+			  pre {
+			    padding: 12px 13px;
+			  }
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1><strong>PMS–SEX</strong></h1>
+			<h2><em>Example Case 4: High Intensity + Narrative Safety</em></h2>
+			<div class="meta">
+				<strong>Case ID:</strong> <code>PMS-SEX-EXAMPLE-04</code> &middot;
+				<strong>Case Schema Version:</strong> <code>PMS-SEX-CASE_1.1</code> &middot;
+				<strong>Profile Version:</strong> <code>PMS-SEX_1.1</code><br />
+				<strong>Short Label:</strong> <em>Intensity That Outruns Its Own Frame</em> &middot;
+				<strong>Status:</strong> application_overlay_case<br />
+				<strong>Depends on:</strong> <code>PMS_1.3</code>, <code>PMS-SEX_1.1</code>
+			</div>
+		</header>
+
+		<section id="content">
+
+			<h2>0) Case Identity</h2>
+
+			<p>
+				<strong>Case label:</strong> <em>High Intensity + Narrative Safety</em>
+			</p>
+			<p>
+				<strong>Case short:</strong> <em>Intensity That Outruns Its Own Frame</em>
+			</p>
+			<p>
+				<strong>Profile dependency:</strong> <code>PMS-SEX</code>
+				(<code>PMS-SEX_1.1</code>)
+			</p>
+			<p>
+				<strong>Base dependency:</strong> <code>PMS</code>
+				(<code>PMS_1.3</code>)
+			</p>
+			<p>
+				<strong>Conformity status:</strong> <code>application_overlay_case</code>
+			</p>
+
+			<hr />
+
+			<h2>1) Scope Discipline</h2>
+
+			<p>
+				<strong>Status:</strong> structural_mapping_only
+			</p>
+
+			<h3>1.1 Claims</h3>
+			<ul>
+				<li>scene-bound</li>
+				<li>configuration-specific</li>
+				<li>revisable</li>
+				<li>non-diagnostic</li>
+				<li>non-prescriptive</li>
+				<li>non-moralizing</li>
+				<li>non-instructional</li>
+			</ul>
+
+			<h3>1.2 Forbids</h3>
+			<ul>
+				<li>intent diagnosis</li>
+				<li>motive attribution</li>
+				<li>person ranking</li>
+				<li>orientation taxonomy</li>
+				<li>clinical interpretation</li>
+				<li>moral verdict</li>
+				<li>procedural sexual instruction</li>
+				<li>risk optimization</li>
+			</ul>
+
+			<h3>1.3 Validity gate</h3>
+			<p>
+				<strong>Requires:</strong> <strong>Χ</strong>, reversibility, <strong>D</strong>
+			</p>
+			<p>
+				Any use of this case as PMS-SEX application presupposes maintained
+				Distance (<strong>Χ</strong>), reversibility, and Dignity-in-Practice
+				(<strong>D</strong>). Without these, the case remains descriptive only.
+			</p>
+
+			<hr />
+
+			<h2>2) Minimal Vignette</h2>
+
+			<h3>2.1 Title</h3>
+			<p>
+				<strong>Narratively Safe Intensity with Weak Operational Containment</strong>
+			</p>
+
+			<h3>2.2 Vignette</h3>
+			<p>
+				A repeated high-intensity sexual configuration develops over a
+				short-to-medium timeframe. The scene is narrated as safe because
+				communication is frequent, transparent, and mutually reassuring. Under
+				high activation, however, the frame remains verbally stable while
+				practical stop-capability, pacing, recovery realism, and after-cost
+				tracking weaken. Costs appear sudden only after repetition, asymmetry,
+				and temporality have already compressed.
+			</p>
+
+			<h3>2.3 Scene boundaries</h3>
+			<ul>
+				<li><strong>Scene unit:</strong> repeated high-activation sexual configuration</li>
+				<li><strong>Timeframe:</strong> short-to-medium timeframe with rapid escalation</li>
+				<li><strong>Frame anchor:</strong> narratively stable communicative frame</li>
+				<li>
+					<strong>Frame description:</strong>
+					The configuration is internally described as communicative,
+					transparent, and mutually understood. This frame remains narratively
+					intact, but its practical regulatory capacity weakens under peak
+					activation.
+				</li>
+			</ul>
+
+			<h3>2.4 Roles, not persons</h3>
+			<ul>
+				<li>
+					<strong>R1:</strong>
+					Role with higher exposure to bodily, reputational, or binding-related
+					after-costs.
+					<ul>
+						<li>higher downstream exposure</li>
+						<li>higher recovery burden</li>
+						<li>greater sensitivity to accumulated costs</li>
+					</ul>
+				</li>
+				<li>
+					<strong>R2:</strong>
+					Role with higher tolerance for escalation and faster recovery from
+					overload.
+					<ul>
+						<li>higher escalation tolerance</li>
+						<li>lower recovery burden</li>
+						<li>greater continuity capacity under intensity</li>
+					</ul>
+				</li>
+			</ul>
+
+			<h3>2.5 Trigger</h3>
+			<ul>
+				<li>
+					<strong>Δ — Difference:</strong>
+					High salience of mutual desire, exceptional intensity, and the
+					difference between narrated safety and actual containment capacity
+					becomes visible.
+				</li>
+				<li>
+					<strong>∇ — Impulse:</strong>
+					Strong activation pressure demands immediate enactment and continuity
+					rather than paced coordination, delay, or structural re-checking.
+				</li>
+			</ul>
+
+			<h3>2.6 Λ candidates expected but missing</h3>
+			<ul>
+				<li>
+					<strong>neutral_deescalating_pause</strong><br />
+					<strong>Operator:</strong> <strong>Λ</strong><br />
+					<strong>Expected form:</strong>
+					Pauses that actually de-escalate rather than merely postpone
+					escalation.<br />
+					<strong>Missing form:</strong>
+					Pauses become difficult to hold because interruption appears to weaken
+					the exceptional intensity of the frame.
+				</li>
+				<li>
+					<strong>neutral_delay</strong><br />
+					<strong>Operator:</strong> <strong>Λ</strong><br />
+					<strong>Expected form:</strong>
+					Silence, delay, or slower pacing can be tolerated without becoming
+					alarming.<br />
+					<strong>Missing form:</strong>
+					Delay is read as loss of mood, loss of intensity, or possible weakening
+					of the shared narrative.
+				</li>
+			</ul>
+
+			<h3>2.7 Observed realizations, neutral</h3>
+			<ul>
+				<li>Frequent reassurance talk replaces structural checks.</li>
+				<li>De-escalation is framed as breaking the mood.</li>
+				<li>Post-hoc explanation substitutes for pre-hoc regulation.</li>
+				<li>Stop-capability exists in principle but is rarely activated under peak pressure.</li>
+				<li>The communicative frame remains narratively stable while recovery and exposure gradients sharpen.</li>
+			</ul>
+
+			<hr />
+
+			<h2>3) Repo Usefulness</h2>
+
+			<h3>3.1 Structural focus</h3>
+			<p>
+				This case is repo-useful because it isolates a configuration in which
+				intensity does not become risky by moral defect, bad intent, or lack of
+				communication, but through intensity-structure mismatch. It shows how
+				<strong>∇</strong>, <strong>Α</strong>, <strong>Ω</strong>, <strong>Θ</strong>,
+				<strong>Φ</strong>, and <strong>Χ</strong> interact when a frame remains narratively
+				coherent but operationally weak under load.
+			</p>
+
+			<h3>3.2 Profile links — reduced signatures</h3>
+			<ul>
+				<li>
+					<strong>MF_16_2 — 16.2 Minimal Formula — High-Risk / Extreme Practices</strong><br />
+					<code>Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ; pulling arrows: ∇ → □ → Ω → Θ</code>
+				</li>
+				<li>
+					<strong>MF_19_2 — 19.2 Minimal Formula — Functional Conditions and Warning Signals</strong><br />
+					<code>Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ; dominant interaction: Ω → Θ, with accumulated Θ making Ω layouts more visible and consequential</code>
+				</li>
+			</ul>
+
+			<h3>3.3 Relevant profile blocks</h3>
+			<ul>
+				<li><code>overlay_concepts.publicness_as_overlay</code></li>
+				<li><code>overlay_concepts.path_cost_language</code></li>
+				<li><code>drift_catalogue.core_dysfunction_markers_ch18_3</code></li>
+				<li><code>viability.functional_minimum_conditions_ch19_3</code></li>
+				<li><code>viability.warning_signals_ch19_4</code></li>
+				<li><code>dignity_in_practice_module</code></li>
+				<li><code>analysis_checklist</code></li>
+				<li><code>example_suite_schema</code></li>
+			</ul>
+
+			<hr />
+
+			<h2>4) Operator Mapping</h2>
+
+			<h3>4.1 Canonical spine</h3>
+			<p>
+				<code>Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ</code>
+			</p>
+			<p>
+				This case foregrounds <strong>∇</strong> escalation, <strong>Α</strong> acceleration,
+				<strong>Ω</strong> sharpening, <strong>Θ</strong> compression,
+				<strong>Φ</strong> narrative substitution, and <strong>Χ</strong> erosion. The
+				foregrounding is shorthand only and does not alter PMS v1.3 order or
+				dependencies.
+			</p>
+
+			<h3>4.2 Case reduced signature</h3>
+			<p>
+				<strong>Selected profile signature:</strong> <code>MF_16_2</code>
+			</p>
+			<p>
+				<strong>Raw:</strong><br />
+				<code>Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ; pulling arrows: ∇ → □ → Ω → Θ</code>
+			</p>
+			<p>
+				<strong>Local foregrounding:</strong><br />
+				<code>∇↑ → Α↑ → Ω↑ → Θ↑ with □ held narratively constant and Χ operationally weak</code>
+			</p>
+			<p>
+				<strong>Reduced:</strong> true
+			</p>
+			<p>
+				<strong>Operators:</strong>
+				<code>Δ, ∇, □, Λ, Α, Ω, Θ, Φ, Χ, Σ, Ψ</code>
+			</p>
+			<p>
+				<strong>Hygiene note:</strong>
+				The reduced trace highlights the local drift mechanics of intensity. It
+				uses the PMS-SEX <code>MF_16_2</code> shorthand and presupposes the canonical
+				PMS v1.3 spine. It does not create a new dependency graph. Any use of
+				<strong>Χ</strong> presupposes <strong>Φ</strong>, <strong>Θ</strong>, and <strong>□</strong>.
+				Any use of <strong>Ψ</strong> presupposes <strong>Σ</strong>, <strong>Θ</strong>, and
+				<strong>Χ</strong>.
+			</p>
+
+			<h3>4.3 Operator roles</h3>
+			<ul>
+				<li>
+					<strong>Δ — Difference:</strong>
+					Marks the difference between narrated mutual safety and practical
+					containment under intensity.
+				</li>
+				<li>
+					<strong>∇ — Impulse:</strong>
+					Drives rapid activation and immediate continuity pressure.
+				</li>
+				<li>
+					<strong>□ — Frame:</strong>
+					Provides the communicative grammar of the scene: transparency,
+					reassurance, mutual narration, and shared understanding.
+					<br />
+					<strong>Drift risk:</strong>
+					The frame remains narratively stable while losing regulatory power
+					under peak activation.
+				</li>
+				<li>
+					<strong>Λ — Non-Event:</strong>
+					Pauses, delay, silence, or slowing become structurally significant
+					because they are expected to regulate intensity but fail to remain
+					neutral.
+				</li>
+				<li>
+					<strong>Α — Attractor:</strong>
+					Intensity-driven repetition stabilizes quickly into a preferred route.
+				</li>
+				<li>
+					<strong>Ω — Asymmetry:</strong>
+					Recovery capacity, exposure, and after-cost handling diverge between
+					roles.
+				</li>
+				<li>
+					<strong>Θ — Temporality:</strong>
+					Costs accumulate rapidly and compress exit windows under repeated high
+					activation.
+				</li>
+				<li>
+					<strong>Φ — Recontextualization:</strong>
+					Post-hoc narration, reassurance, and explanation reframe costs after
+					they occur.
+					<br />
+					<strong>Drift risk:</strong>
+					<strong>Φ</strong> substitutes for regulation when “we talked it through”
+					replaces pacing, interruption, and cost accounting.
+				</li>
+				<li>
+					<strong>Χ — Distance:</strong>
+					Enables stopping, slowing, meta-commentary, humor, and de-escalation
+					under pressure.
+					<br />
+					<strong>Drift risk:</strong>
+					<strong>Χ</strong> becomes symbolic rather than operative when interruption is
+					treated as betrayal of mood, intensity, or intimacy.
+				</li>
+				<li>
+					<strong>Σ — Integration:</strong>
+					Would be required to integrate intensity, asymmetry, recovery limits,
+					exposure, and frame claims without denial or compensation.
+				</li>
+				<li>
+					<strong>Ψ — Self-Binding:</strong>
+					May become relevant if repeated intensity starts to carry identity,
+					commitment, or self-worth stakes beyond the local frame.
+					<br />
+					<strong>Guard:</strong>
+					Any <strong>Ψ</strong> relevance must remain explicit, self-bound, and
+					non-coercive. No covert <strong>Ψ</strong> demand may be imposed on another role.
+				</li>
+			</ul>
+
+			<hr />
+
+			<h2>5) Inner / Outer / Public Layer Distinction</h2>
+
+			<h3>5.1 Core rule</h3>
+			<p>
+				Internal framing, outer legibility, public circulation, and temporal
+				carryover may overlap, but must not be collapsed into one another.
+			</p>
+
+			<h3>5.2 Internal framing</h3>
+			<p>
+				The scene is inhabited as communicative, transparent, mutually intense,
+				emotionally vivid, and narratively safe.
+			</p>
+			<p>
+				<strong>Guard:</strong>
+				Internal communicative meaning may be real without settling the outer
+				structure of escalation, asymmetry, or accumulated after-costs.
+			</p>
+
+			<h3>5.3 Outer legibility</h3>
+			<p>
+				Externally, the configuration is readable as high activation under a
+				frame that narrates safety more reliably than it operationalizes
+				interruption, recovery, and cost tracking.
+			</p>
+			<p>
+				<strong>Guard:</strong>
+				Naming this outer legibility does not imply recklessness, blame,
+				diagnosis, or bad faith.
+			</p>
+
+			<h3>5.4 Publicness overlay</h3>
+			<p>
+				Publicness may enter through documentation, witnesses, shared narratives,
+				reputational traces, or circulation of the scene’s meaning beyond the
+				original frame.
+			</p>
+			<ul>
+				<li><strong>Status:</strong> overlay</li>
+				<li><strong>PMS layer:</strong> <code>□ extension</code></li>
+				<li><strong>Intensifies:</strong> <code>Ω, Θ</code></li>
+			</ul>
+			<p>
+				<strong>Guard:</strong>
+				Publicness does not necessarily generate the primary action-form, but it
+				may harden exposure, sedimentize consequence, and increase exit cost.
+			</p>
+
+			<h3>5.5 Temporal carryover</h3>
+			<p>
+				Even when the scene is later explained, clarified, or mutually narrated
+				as safe, accumulated bodily, reputational, emotional, or binding-related
+				residues remain <strong>Θ</strong>-relevant.
+			</p>
+			<p>
+				<strong>Guard:</strong> <strong>Θ</strong> does not rewind.
+			</p>
+
+			<hr />
+
+			<h2>6) Operator Costs and Cost Layout</h2>
+
+			<h3>6.1 Cost layout summary</h3>
+			<p>
+				The core cost layout is <strong>Ω under compressed Θ</strong>: one role carries
+				higher after-costs and recovery burden while the frame continues to present
+				the configuration as mutually transparent and communicatively safe.
+			</p>
+
+			<h3>6.2 Primary cost channels</h3>
+			<ul>
+				<li>
+					<strong>Bodily costs</strong><br />
+					<strong>Operators:</strong> <code>Ω, Θ</code><br />
+					Recovery limits are reached earlier than acknowledged. The configuration
+					may remain narratively safe while bodily after-costs accumulate.
+					<br />
+					<strong>Body remainder guard:</strong>
+					Bodily consequence is treated as a material interface of configuration
+					cost, not as person-ranking, biological taxonomy, or diagnosis.
+				</li>
+				<li>
+					<strong>Temporal costs</strong><br />
+					<strong>Operators:</strong> <code>Α, Θ, Χ</code><br />
+					Repetition under high activation shrinks exit windows rapidly. The
+					longer the scene continues without operational slowing, the more
+					expensive interruption becomes.
+				</li>
+				<li>
+					<strong>Exposure costs</strong><br />
+					<strong>Operators:</strong> <code>Ω, Θ</code><br />
+					Documentation, witnesses, shared memory, reputational traces, or
+					circulation may persist beyond the local frame.
+					<br />
+					<strong>Publicness guard:</strong>
+					Exposure effects are treated as <strong>Θ</strong>/<strong>Ω</strong> intensifiers,
+					not as the sole origin of consequence.
+				</li>
+				<li>
+					<strong>Coordination costs</strong><br />
+					<strong>Operators:</strong> <code>□, Φ, Χ, Σ</code><br />
+					Repair effort increases non-linearly when communicative narration must
+					account for costs that prior regulation failed to contain.
+				</li>
+				<li>
+					<strong>Binding-related costs</strong><br />
+					<strong>Operators:</strong> <code>Θ, Ψ</code><br />
+					Repeated exceptional intensity may begin to carry identity-relevant or
+					commitment-like stakes, even if the immediate frame initially appears
+					local.
+					<br />
+					<strong>Ψ guard:</strong>
+					Binding relevance must not be smuggled into a limited frame as a proof
+					demand or covert obligation.
+				</li>
+			</ul>
+
+			<h3>6.3 Asymmetry pattern</h3>
+			<ul>
+				<li>
+					<strong>R1 cost position:</strong>
+					<ul>
+						<li>higher after-cost absorption</li>
+						<li>greater recovery burden</li>
+						<li>higher exposure to bodily, reputational, or binding-related residues</li>
+						<li>greater dependence on timely <strong>Χ</strong> activation</li>
+					</ul>
+				</li>
+				<li>
+					<strong>R2 cost position:</strong>
+					<ul>
+						<li>higher tolerance for escalation</li>
+						<li>faster recovery from overload</li>
+						<li>lower downstream exposure</li>
+						<li>greater continuity capacity under intensity</li>
+					</ul>
+				</li>
+			</ul>
+
+			<h3>6.4 Structural result</h3>
+			<p>
+				The same intensity is not structurally identical across roles. What is
+				enrichment for one role may become accumulated after-cost handling for
+				another.
+			</p>
+
+			<h3>6.5 System effect</h3>
+			<p>
+				Costs appear sudden because high intensity compresses accumulation. The
+				collapse is not necessarily produced by conflict, malice, or deception;
+				it can emerge when <strong>Θ</strong> catches up with a frame that never slowed
+				enactment.
+			</p>
+
+			<hr />
+
+			<h2>7) Typical Drift Markers</h2>
+
+			<p>
+				<strong>Max count note:</strong> Primary markers only; non-exhaustive and
+				non-diagnostic.
+			</p>
+
+			<h3>7.1 Φ narrative inflation</h3>
+			<p>
+				<strong>ID:</strong> <code>phi_narrative_inflation</code><br />
+				<strong>Source profile:</strong> <code>viability.warning_signals_ch19_4</code><br />
+				<strong>Structural note:</strong> <strong>Φ</strong> substitutes for <strong>Σ</strong>
+				(integration).
+			</p>
+			<ul>
+				<li>Reassurance repeatedly covers costs or asymmetry.</li>
+				<li>Clarification and cost naming are replaced by re-description.</li>
+				<li>The communicative story remains stable while <strong>Α</strong>/<strong>Ω</strong>/<strong>Θ</strong> continue unchanged.</li>
+			</ul>
+			<p>
+				<strong>Case reading:</strong>
+				“We talked it through” begins to stand in for operational containment.
+			</p>
+
+			<h3>7.2 Persistence despite clear structural undercutting</h3>
+			<p>
+				<strong>ID:</strong> <code>persistence_despite_structural_undercutting</code><br />
+				<strong>Source profile:</strong> <code>viability.warning_signals_ch19_4</code><br />
+				<strong>Structural note:</strong> <strong>Α + Θ</strong> overrun <strong>Χ</strong>.
+			</p>
+			<ul>
+				<li>Repetition continues despite visible after-costs.</li>
+				<li>Overload is recognized but not structurally interrupted.</li>
+				<li>Insight does not alter the operator chain.</li>
+			</ul>
+			<p>
+				<strong>Case reading:</strong>
+				The configuration continues because intensity remains coherent at the
+				level of narration, even where regulation is failing.
+			</p>
+
+			<h3>7.3 Χ erosion under intensity</h3>
+			<p>
+				<strong>ID:</strong> <code>chi_loss_under_activation</code><br />
+				<strong>Source profile:</strong> <code>drift_catalogue.core_dysfunction_markers_ch18_3.(6)</code><br />
+				<strong>Structural note:</strong> The meta-layer collapses under peak activation.
+			</p>
+			<ul>
+				<li>Stopping feels like betrayal of intensity or intimacy.</li>
+				<li>Meta-commentary is postponed until later.</li>
+				<li>The only acceptable responses to overload are reassurance or continuation.</li>
+			</ul>
+			<p>
+				<strong>Case reading:</strong>
+				<strong>Χ</strong> exists in principle but is not practically available at the
+				moment when it would need to regulate the configuration.
+			</p>
+
+			<hr />
+
+			<h2>8) Viability Minimums and Warning Signals</h2>
+
+			<h3>8.1 Functional minimums</h3>
+
+			<h4>8.1.1 Explicit Ω recognition</h4>
+			<p>
+				<strong>Status:</strong> stressed<br />
+				<strong>Minimal form:</strong> <strong>Ω</strong> (asymmetry) must be nameable and
+				regulable within the frame.
+			</p>
+			<ul>
+				<li>Recovery differences must be nameable as structural asymmetry.</li>
+				<li>Exposure differences must not be dissolved into mutual-intensity rhetoric.</li>
+				<li>After-cost concentration must remain discussable without accusation.</li>
+			</ul>
+
+			<h4>8.1.2 Θ awareness</h4>
+			<p>
+				<strong>Status:</strong> stressed<br />
+				<strong>Minimal form:</strong> Consequences are treated as real: exit realism.
+			</p>
+			<ul>
+				<li>Rapid repetition must be treated as cumulative, not episodic.</li>
+				<li>Post-hoc explanation must not claim rewind.</li>
+				<li>Exit windows must be read as shrinking under compressed <strong>Θ</strong>.</li>
+			</ul>
+
+			<h4>8.1.3 Stable Χ capacity</h4>
+			<p>
+				<strong>Status:</strong> primary_failure_risk<br />
+				<strong>Minimal form:</strong> <strong>Χ</strong> (distance) is operative, not ornamental.
+			</p>
+			<ul>
+				<li>Stop-capability must remain practical under peak activation.</li>
+				<li>De-escalation must not be treated as betrayal.</li>
+				<li>Meta-commentary must be available before overload hardens.</li>
+			</ul>
+
+			<h4>8.1.4 No Ψ substitution</h4>
+			<p>
+				<strong>Status:</strong> monitor<br />
+				<strong>Minimal form:</strong> No <strong>Ψ</strong> leak as the default carrier of stakes.
+			</p>
+			<ul>
+				<li>Intensity must not become identity proof.</li>
+				<li>Local scenes must not silently become commitment tests.</li>
+				<li>Exceptional intensity must not be converted into proof of worth.</li>
+			</ul>
+
+			<h4>8.1.5 Λ tolerance without escalation</h4>
+			<p>
+				<strong>Status:</strong> stressed<br />
+				<strong>Minimal form:</strong> <strong>Λ</strong> (non-event) can exist without becoming
+				steering or coercion.
+			</p>
+			<ul>
+				<li>Pauses must remain tolerable.</li>
+				<li>Silence or delay must not automatically signal rejection.</li>
+				<li>Non-occurrence must not become an alarm that forces continuation.</li>
+			</ul>
+
+			<h4>8.1.6 Internal framing accountable to outer form</h4>
+			<p>
+				<strong>Status:</strong> required<br />
+				<strong>Minimal form:</strong> Internal framing does not erase outer structural form.
+			</p>
+			<ul>
+				<li>Communication and transparency clarify internal occupation but do not settle outer form.</li>
+				<li>Internal safety narration must not block cost-layout analysis.</li>
+				<li>Outer legibility can be named without person-ranking.</li>
+			</ul>
+
+			<h4>8.1.7 Publicness handled as overlay</h4>
+			<p>
+				<strong>Status:</strong> conditional<br />
+				<strong>Minimal form:</strong>
+				Publicness modifies readability and consequence without being confused
+				with their necessary origin.
+			</p>
+			<ul>
+				<li>Documentation or reputational traces must be tracked if present.</li>
+				<li>Publicity must not be treated as the sole source of harm.</li>
+				<li>Publicity must not be ignored if it hardens costs.</li>
+			</ul>
+
+			<h3>8.2 Warning signals</h3>
+			<ul>
+				<li>
+					<strong>Φ narrative inflation</strong><br />
+					<strong>Present when:</strong>
+					Reassurance, explanation, or transparency language repeatedly replaces
+					pacing, stopping, and cost accounting.
+				</li>
+				<li>
+					<strong>Θ cost externalization</strong><br />
+					<strong>Present when:</strong>
+					Bodily, reputational, emotional, or binding-related consequences
+					concentrate in one role while short-term intensity stabilizes the
+					configuration.
+				</li>
+				<li>
+					<strong>Outer-form denial</strong><br />
+					<strong>Present when:</strong>
+					The communicative self-description of the scene blocks recognition
+					that the enacted form is high-intensity repetition under uneven
+					recovery and exposure.
+				</li>
+				<li>
+					<strong>Persistence despite structural undercutting</strong><br />
+					<strong>Present when:</strong>
+					Repetition continues after overload is recognized, because intensity
+					remains easier than interruption.
+				</li>
+			</ul>
+
+			<h3>8.3 Minimal viability corridor</h3>
+			<p>
+				<code>
+					□ explicit<br />
+					+ Ω nameable<br />
+					+ Θ realistic<br />
+					+ Χ operative<br />
+					+ Λ tolerable<br />
+					+ Ψ handled<br />
+					(+ Σ reachable)<br />
+					= structurally governable configuration
+				</code>
+			</p>
+
+			<h4>8.3.1 Case translation</h4>
+			<ul>
+				<li>The communicative frame must be explicit and tested under peak conditions.</li>
+				<li>Recovery and exposure gradients must be nameable.</li>
+				<li>Compressed accumulation must be treated as real.</li>
+				<li>Stopping and slowing must work under intensity, not only in calm narration.</li>
+				<li>Pauses must remain tolerable without becoming threat signals.</li>
+				<li>Intensity must not smuggle in covert binding demands.</li>
+				<li>Contradictions between desire, cost, recovery, and exposure must be integrable without narrative substitution.</li>
+			</ul>
+
+			<hr />
+
+			<h2>9) Rational Response Envelope</h2>
+
+			<p>
+				<strong>Status:</strong> structural_reasonableness_not_prescription
+			</p>
+			<p>
+				These responses are structurally understandable within the configuration.
+				They are not endorsed, prescribed, ranked, or treated as evidence of
+				motive or character.
+			</p>
+
+			<ul>
+				<li>
+					<strong>Doubling down on communication instead of slowing enactment.</strong><br />
+					<strong>Operator reading:</strong>
+					The frame privileges <strong>Φ</strong> and <strong>□</strong> narration when
+					<strong>Χ</strong> regulation would be structurally required.
+				</li>
+				<li>
+					<strong>Interpreting discomfort as temporary overload rather than drift signal.</strong><br />
+					<strong>Operator reading:</strong>
+					<strong>Θ</strong> accumulation is minimized because the internal frame remains
+					narratively coherent.
+				</li>
+				<li>
+					<strong>Avoiding stops because they feel disproportionate to intent.</strong><br />
+					<strong>Operator reading:</strong>
+					<strong>Χ</strong> activation becomes costly under high <strong>∇</strong> and fast
+					<strong>Α</strong> consolidation.
+				</li>
+				<li>
+					<strong>Treating post-hoc explanation as equivalent to containment.</strong><br />
+					<strong>Operator reading:</strong>
+					<strong>Φ</strong> substitutes for operational regulation and delays <strong>Σ</strong>.
+				</li>
+			</ul>
+
+			<hr />
+
+			<h2>10) Narrative Substitution Mechanism</h2>
+
+			<h3>10.1 Title</h3>
+			<p>
+				<strong>Φ as Failed Regulator</strong>
+			</p>
+
+			<h3>10.2 Critical insight</h3>
+			<p>
+				Narrative safety does not scale automatically with intensity.
+			</p>
+
+			<h3>10.3 Observed substitution</h3>
+			<p>
+				<strong>Operator:</strong> <strong>Φ</strong>
+			</p>
+			<p>
+				Reframing, reassurance, and explanation are used to re-stabilize the
+				scene after costs appear.
+			</p>
+			<p>
+				<strong>Substitution formula:</strong><br />
+				<code>Φ after-cost narration carries regulatory burden that would require operative Χ + □ under ∇ pressure</code>
+			</p>
+
+			<h3>10.4 Effect</h3>
+			<p>
+				The frame explains costs after they occur instead of limiting them before
+				they accumulate. This creates a gap between communicative confidence and
+				structural governability.
+			</p>
+
+			<h3>10.5 Guard</h3>
+			<p>
+				This is not a critique of communication. It only marks the point where
+				communication is asked to do operator-work that requires distance,
+				temporality realism, asymmetry accounting, and integration.
+			</p>
+
+			<hr />
+
+			<h2>11) Distance Erosion</h2>
+
+			<h3>11.1 Title</h3>
+			<p>
+				<strong>Χ under Pressure</strong>
+			</p>
+
+			<h3>11.2 Risk point</h3>
+			<p>
+				Distance exists in principle but collapses in practice under peak
+				activation.
+			</p>
+
+			<h3>11.3 Failure mode</h3>
+			<ul>
+				<li>Stopping feels like betrayal of intensity or intimacy.</li>
+				<li>Meta-position is postponed until later.</li>
+				<li>De-escalation is read as breaking the mood rather than regulating the configuration.</li>
+				<li>Reassurance becomes the only accepted response to overload.</li>
+			</ul>
+
+			<h3>11.4 Structural indicator</h3>
+			<p>
+				The only acceptable responses to overload are reassurance or continuation,
+				not interruption, slowing, re-reading, humor, or pause.
+			</p>
+
+			<h3>11.5 Χ guard</h3>
+			<p>
+				<strong>Χ</strong> is not purity, superiority, or rejection. In this case it is
+				the application-side capacity to keep high activation from becoming an
+				irreversible path.
+			</p>
+
+			<hr />
+
+			<h2>12) Dignity-in-Practice Stress Test</h2>
+
+			<p>
+				<strong>PMS status:</strong> derived_construct_from_PMS
+			</p>
+			<p>
+				<strong>Canonical PMS formula:</strong> <code>["Ψ", "Χ", "Ω"]</code>
+			</p>
+			<p>
+				<strong>PMS-SEX application formula:</strong><br />
+				<code>explicit Ω + operative Χ + no covert Ψ demand under Θ, with outer-form readability preserved</code>
+			</p>
+
+			<h3>12.1 Risk point</h3>
+			<p>
+				Dignity-in-Practice is stressed where pressure-through-overload replaces
+				practical restraint, even if the scene is communicatively narrated as
+				safe.
+			</p>
+
+			<h3>12.2 Failure mode</h3>
+			<ul>
+				<li><strong>Ω</strong> gradients remain under-described because mutual intensity dominates the frame.</li>
+				<li><strong>Χ</strong> is present symbolically but not operational under load.</li>
+				<li><strong>Θ</strong> costs are explained after they accumulate rather than regulated before they harden.</li>
+				<li>Outer-form readability is blocked by the internal claim that communication was sufficient.</li>
+			</ul>
+
+			<h3>12.3 Structural indicator</h3>
+			<p>
+				The frame protects the narrative of transparency more reliably than it
+				protects recoverability, interruption, and non-degradation under intensity.
+			</p>
+
+			<h3>12.4 Guardrail</h3>
+			<p>
+				Naming a D-in-Practice stress point does not rank persons, diagnose
+				motives, deny consent, or moralize intensity. It identifies where enacted
+				restraint under asymmetry is structurally under pressure.
+			</p>
+
+			<hr />
+
+			<h2>13) Path-Cost Guard</h2>
+
+			<h3>13.1 Path-cost terms used</h3>
+			<ul>
+				<li>stabilization burden</li>
+				<li>compressed accumulation</li>
+				<li>drift multiplier</li>
+				<li>irreversible trajectory</li>
+				<li>operator-work</li>
+			</ul>
+
+			<h3>13.2 Admissibility</h3>
+			<p>
+				These terms apply only to configuration dynamics. They describe the extra
+				operator-work required to keep a high-intensity scene coherent, reversible,
+				non-coercive, and dignity-preserving under recurrence and temporality.
+			</p>
+
+			<h3>13.3 Forbidden conversions</h3>
+			<ul>
+				<li>No path-cost as person-worth.</li>
+				<li>No intensity as moral disorder.</li>
+				<li>No recovery asymmetry as person ranking.</li>
+				<li>No disturbance-language as diagnosis.</li>
+				<li>No humiliation or degradation of persons.</li>
+				<li>No orientation taxonomy.</li>
+			</ul>
+
+			<hr />
+
+			<h2>14) Reader Guard</h2>
+
+			<h3>14.1 This example does not claim</h3>
+			<ul>
+				<li>that intensity is reckless</li>
+				<li>that communication is irrelevant</li>
+				<li>that harm requires bad intent</li>
+				<li>that escalation is a moral failure</li>
+				<li>that high intensity is pathological</li>
+				<li>that one role is morally superior or inferior</li>
+			</ul>
+
+			<h3>14.2 This example does claim</h3>
+			<ul>
+				<li>that intensity can multiply small frame errors</li>
+				<li>that narration cannot replace regulation</li>
+				<li>that costs can compress and appear sudden without conflict or malice</li>
+				<li>that <strong>Ω</strong> and <strong>Θ</strong> remain active even when <strong>□</strong> is communicatively stable</li>
+				<li>that <strong>Χ</strong> must be operative under pressure, not merely available in principle</li>
+			</ul>
+
+			<hr />
+
+			<h2>15) Validity Check</h2>
+
+			<h3>15.1 Application gate</h3>
+			<p>
+				<strong>Status:</strong> conditional
+			</p>
+
+			<h3>15.2 PMS-valid only if</h3>
+			<ul>
+				<li>
+					<strong>chi_operational_under_pressure — Χ:</strong>
+					Distance is treated as operational under pressure, not symbolic.
+				</li>
+				<li>
+					<strong>frame_tested_at_peak — □:</strong>
+					The frame is tested against peak conditions, not only calm narration.
+				</li>
+				<li>
+					<strong>omega_tracked — Ω:</strong>
+					Asymmetry is tracked across recovery, exposure, access, repair, and
+					after-costs.
+				</li>
+				<li>
+					<strong>theta_acceleration_acknowledged — Θ:</strong>
+					Temporality is acknowledged as accelerating under intensity.
+				</li>
+				<li>
+					<strong>dignity_constrains_overload_pressure — D:</strong>
+					Dignity-in-Practice constrains pressure-through-overload and prevents
+					degradation, shaming, or person-ranking.
+				</li>
+				<li>
+					<strong>psi_not_smuggled — Ψ:</strong>
+					Intensity is not converted into covert binding, identity proof, or
+					self-worth demand.
+				</li>
+			</ul>
+
+			<h3>15.3 Otherwise</h3>
+			<p>
+				Without these conditions, the case may describe the configuration but
+				must not prescribe, rank, diagnose, or authorize
+				critique-through-humiliation.
+			</p>
+
+			<hr />
+
+			<h2>16) Structural Closure</h2>
+
+			<p>
+				High intensity does not create drift by itself. It reveals whether a frame
+				can actually carry what it narrates. When activation is extreme,
+				repetition accelerates, asymmetries sharpen, and time compresses. If
+				regulation remains rhetorical while enactment accelerates, costs do not
+				rise gradually; they jump. What looks like a sudden collapse is often
+				<strong>Θ</strong> catching up with a frame that never slowed the scene.
+			</p>
+
+			<h3>16.1 Citable sentence</h3>
+			<p>
+				Intensity is a drift multiplier when it converts small coordination gaps
+				into irreversible trajectories faster than Distance (<strong>Χ</strong>) can regulate them.
+			</p>
+
+			<h3>16.2 Final guard</h3>
+			<p>
+				No person diagnosis. No moral ranking. No path-cost as person-worth. No
+				critique through humiliation. Only configuration-language: what this
+				scene produces over time under frame, impulse, repetition, asymmetry,
+				temporality, recontextualization, and limited stop-capability.
+			</p>
+
+		</section>
+	</body>
+</html>

@@ -1,940 +1,2235 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>PMS-SEX – Model Specification</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      :root {
-        --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        --font-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-        --color-text: #111;
-        --color-muted: #555;
-        --color-accent: #333;
-        --color-border: #ddd;
-        --color-bg: #fafafa;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      html, body {
-        margin: 0;
-        padding: 0;
-      }
-
-      body {
-        font-family: var(--font-body);
-        color: var(--color-text);
-        background: white;
-        line-height: 1.5;
-        font-size: 14px;
-      }
-
-      blockquote {
-        margin: 0 0 16px;
-        padding: 0 1em;
-        color: #57606a;
-        border-left: 0.25em solid #d0d7de;
-      }
-
-      .page {
-        max-width: 900px;
-        margin: 0 auto;
-        padding: 32px 24px 64px;
-        background: white;
-      }
-
-      header {
-        border-bottom: 1px solid var(--color-border);
-        margin-bottom: 24px;
-        padding-bottom: 16px;
-      }
-
-      header h1 {
-        font-size: 1.9rem;
-        margin: 0 0 8px;
-        letter-spacing: 0.02em;
-      }
-
-      header .subtitle {
-        font-size: 0.95rem;
-        color: var(--color-muted);
-        margin-bottom: 8px;
-      }
-
-      header .meta {
-        font-size: 0.8rem;
-        color: var(--color-muted);
-      }
-
-      h2 {
-        margin-top: 15px;
-        margin-bottom: 4px;
-        font-size: 1.15rem;
-        border-bottom: 1px solid var(--color-border);
-        padding-bottom: 4px;
-      }
-
-      h3 {
-        margin-top: 18px;
-        margin-bottom: 4px;
-        font-size: 1rem;
-        color: var(--color-accent);
-      }
-
-      p {
-        margin: 4px 0 8px;
-      }
-
-      ul {
-        margin: 4px 0 10px 1.2rem;
-        padding: 0;
-        line-height: 1.1em;
-      }
-
-      li {
-        margin-bottom: 3px;
-      }
-
-      .code-inline {
-        font-family: var(--font-mono);
-        font-size: 0.9em;
-        background: #f5f5f5;
-        padding: 1px 4px;
-        border-radius: 3px;
-      }
-
-      .box {
-        border: 1px solid var(--color-border);
-        border-radius: 4px;
-        padding: 8px 10px;
-        background: #fcfcfc;
-        margin: 8px 0 12px;
-        line-height: 1.05em;
-      }
-
-      .box-title {
-        font-weight: 600;
-        font-size: 0.9rem;
-        margin-bottom: 4px;
-      }
-
-      .small {
-        font-size: 0.85rem;
-        color: var(--color-muted);
-      }
-
-      .two-column {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 16px;
-      }
-
-      .two-column > div {
-        flex: 1 1 260px;
-        min-width: 0;
-      }
-
-      .table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 8px 0 12px;
-        font-size: 0.77rem;
-        line-height: 1.2em;
-      }
-
-      .table th,
-      .table td {
-        border: 1px solid var(--color-border);
-        padding: 4px 6px;
-        vertical-align: top;
-      }
-
-      .table th {
-        background: #f5f5f5;
-        font-weight: 600;
-      }
-
-      .tag {
-        display: inline-block;
-        border-radius: 999px;
-        border: 1px solid var(--color-border);
-        padding: 1px 8px;
-        font-size: 0.75rem;
-        margin-right: 4px;
-        margin-bottom: 3px;
-      }
-
-      .placeholder {
-        font-style: italic;
-        color: var(--color-muted);
-      }
-
-      .pagebreak{
-        page-break-before:always
-      }
-
-      @media print {
-        body {
-          background: white;
-        }
-        .page {
-          box-shadow: none;
-          padding: 24px 18px;
-        }
-        a[href]:after {
-          content: "";
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="page">
-      <header>
-        <h1>PMS-SEX – Model Specification</h1>
-        <div class="subtitle">
-          A PMS-conform application profile (overlay) for sexuality: structural legibility of scenes, frames, drift, viability,
-          and the Δ–Ψ operator chain without person-typing, diagnosis, or how-to guidance.
-        </div>
-        <div class="meta">
-          Version: <span class="code-inline">PMS-SEX_1.0</span> &middot;
-          Spec basis: <span class="code-inline">PMS-SEX.yaml</span><br />
-          Author: T. Zöller &middot; Formalisation assistance: ChatGPT (GPT-5.2 Thinking)<br />
-          Language: EN &middot; Status: Model spec (aligned with <span class="code-inline">schema_meta.status = "draft"</span>)<br />
-          Depends on: <span class="code-inline">PMS.yaml</span> (<span class="code-inline">schema_version = "PMS_1.1"</span>)<br />
-          Repo: <span class="code-inline">https://github.com/tz-dev/PMS-SEX</span>
-        </div>
-      </header>
-
-      <!-- 1. Purpose & scope -->
-      <section id="purpose-scope">
-        <h2>1. Purpose and scope of this specification</h2>
-
-        <p>
-          This document specifies the <em>PMS-SEX</em> layer in a concise, technical form.
-          It is based on the YAML profile <span class="code-inline">PMS-SEX.yaml</span>
-          (with <span class="code-inline">schema_version = "PMS-SEX_1.0"</span>)
-          and renders its structure, constraints, and semantics explicit for human readers
-          and computational systems.
-        </p>
-
-        <p>
-          PMS-SEX is an <strong>application profile</strong> (overlay) of the
-          Praxeological Meta-Structure (PMS; Δ–Ψ). It does <strong>not</strong> redefine PMS
-          operators, dependencies, layers, or derived axes. Instead, it formalizes a
-          <strong>sexuality lens</strong> as an operator-conform way of reading enacted sexual
-          praxis: how frames (□), non-events (Λ), attractors (Α), asymmetries (Ω), and
-          temporality (Θ) generate predictable drift and cost trajectories—while distance (Χ),
-          integration (Σ), and self-binding (Ψ) act as regulation and coherence limiters.
-        </p>
-
-        <p>The specification covers, in particular:</p>
-        <ul>
-          <li>the <strong>schema_meta</strong> block (identity, status, authorship, dependency on PMS_1.1);</li>
-          <li>the <strong>validity gate</strong> enforcing Χ (Distance), reversibility, and D (dignity-in-practice);</li>
-          <li><strong>operator reference</strong> (fixed operator set Δ–Ψ; dependency hygiene);</li>
-          <li><strong>overlays</strong> (non-operators; amplification only, e.g. publicness/media as □ extension);</li>
-          <li><strong>reduced signatures</strong> (paper shorthand; not proofs; no dependency changes);</li>
-          <li><strong>drift catalogue</strong> (core dysfunction markers + operator-linked drift markers);</li>
-          <li><strong>viability criteria</strong> (functional minimum conditions + warning signals + corridor);</li>
-          <li><strong>modulators</strong> (non-operator weightings; “types without typing”);</li>
-          <li><strong>minimal psychology adapter</strong> (Chapter 20 alarm; non-explanatory);</li>
-          <li><strong>structural tools</strong> (operator table + structural map) and <strong>example-suite schema</strong>.</li>
-        </ul>
-
-        <div class="box">
-          <div class="box-title">
-            <span>Core idea</span> <span class="pill">overlay discipline</span>
-          </div>
-          <p class="small">
-            PMS-SEX treats sexuality as enacted configuration under time: no “consequence-free” regulation.
-            The overlay’s job is to keep the analysis structural (Δ–Ψ), scene-bound, and dignity-preserving,
-            while providing reusable drift/viability scaffolding for the paper and repo.
-          </p>
-        </div>
-      </section>
-
-      <div class="pagebreak"></div>
-
-      <!-- 2. High-level YAML structure -->
-      <section id="structure">
-        <h2>2. High-level structure of the YAML model</h2>
-
-        <h3>2.1 Top-level keys</h3>
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Key</th>
-              <th>Description</th>
-              <th>Role in the model</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><span class="code-inline">schema_version</span></td>
-              <td>Version identifier (<span class="code-inline">"PMS-SEX_1.0"</span>).</td>
-              <td>Compatibility and citation</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">schema_meta</span></td>
-              <td>Model identity, authors, status, dependency on PMS_1.1, repo references.</td>
-              <td>Meta-information / inheritance statement</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">validity_gate</span></td>
-              <td>Entry conditions for PMS-application: Χ, reversibility, D.</td>
-              <td>Application firewall</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">operator_reference</span></td>
-              <td>Fixed operator set Δ–Ψ and dependency hygiene note.</td>
-              <td>Non-redefinition guarantee</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">references</span></td>
-              <td>PMS base repo + raw PMS.yaml; optional external model refs (e.g. MIP).</td>
-              <td>Traceability</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">overlays</span></td>
-              <td>Non-operators that amplify operators (e.g. publicness/media overlay as □ extension).</td>
-              <td>Amplification without adding operators</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">reduced_signatures</span></td>
-              <td>Paper-specific shorthand signatures (minimal formulas by chapter).</td>
-              <td>Reusable thresholds / orientation maps</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">drift_catalogue</span></td>
-              <td>Core dysfunction markers (Ch. 18), corridors, operator-linked drift markers.</td>
-              <td>Predictable drift and warning semantics</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">viability</span></td>
-              <td>Functional minimum conditions (Ch. 19), warning signals, corridor overlay.</td>
-              <td>Non-normative governability lens</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">modulators</span></td>
-              <td>Non-operator weightings (“types without typing”).</td>
-              <td>Path likelihood parameters without person-typing</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">minimal_psychology_adapter</span></td>
-              <td>Ch. 20 alarm structure: restricted use, no explanation output.</td>
-              <td>Last-internal self-check before critique layers</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">structural_tools</span></td>
-              <td>Operator table + structural map.</td>
-              <td>Consistency checks and orientation</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">analysis_checklist</span></td>
-              <td>Scene-bound structural checklist for applying PMS-SEX.</td>
-              <td>Repo-use protocol scaffold (criterial, non-instructional)</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">example_suite_schema</span></td>
-              <td>Vignette schema blocks (scene-bound; non-instructional).</td>
-              <td>Example library format</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div class="box">
-          <div class="box-title">
-            <span>Conceptual separation</span> <span class="pill">PMS vs PMS-SEX</span>
-          </div>
-          <p class="small">
-            PMS defines the operator grammar (Δ–Ψ) and derived axes. PMS-SEX defines how that grammar
-            is used to read sexual practice structurally (frames, drift, cost, viability) without importing
-            motives, diagnoses, or normative “how-to” prescriptions.
-          </p>
-        </div>
-      </section>
-
-      <div class="pagebreak"></div>
-
-      <!-- 3. Validity gate -->
-      <section id="validity">
-        <h2>3. Validity gate and scope constraints</h2>
-
-        <h3>3.1 Application gate (PMS entry condition)</h3>
-        <ul>
-          <li><strong>Χ (Distance):</strong> maintain meta-position and stop-capability; no fusion into verdict, impulse, or role.</li>
-          <li><strong>Reversibility:</strong> all readings remain scene-bound, revisable, configuration-specific.</li>
-          <li><strong>D (Dignity-in-practice):</strong> no shaming/ranking; critique targets enacted structures and cost handling only.</li>
-        </ul>
-
-        <h3>3.2 Explicit non-goals (overlay discipline)</h3>
-        <ul>
-          <li>no clinical, therapeutic, or forensic use;</li>
-          <li>no personality typing or motive theory;</li>
-          <li>no “how-to” guidance, optimization, or risk-management manual;</li>
-          <li>no moral ranking of persons; no ontological dignity judgments;</li>
-          <li>no claim of consequence-free sex: Θ, Α, and Λ remain operative under time.</li>
-        </ul>
-
-        <div class="box">
-          <div class="box-title">
-            <span>Key firewall</span> <span class="pill">formal validity</span>
-          </div>
-          <p class="small">
-            If the overlay is used to justify coercion, shame, person-ranking, or irreversible interpretive claims,
-            it has already violated PMS application validity (Χ + reversibility + D).
-          </p>
-        </div>
-      </section>
-
-      <div class="pagebreak"></div>
-
-      <!-- 4. PMS-SEX as structural configuration -->
-      <section id="sex-core">
-        <h2>4. PMS-SEX as a structural configuration (operator spine & zones)</h2>
-
-        <h3>4.1 Canonical spine (orientation)</h3>
-        <div class="box small">
-          <span class="code-inline">Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ</span>
-        </div>
-
-        <h3>4.2 Key zones (compressed map)</h3>
-        <div class="grid">
-          <div class="box">
-            <div class="box-title">Activation & legibility</div>
-            <p class="small">
-              <span class="code-inline">Δ, ∇, □</span> define what counts as “sexual praxis” in-scene:
-              distinctions, pressure, and frame grammar. Failure mode: pressure without legibility → escalation/fusion.
-            </p>
-          </div>
-          <div class="box">
-            <div class="box-title">Absence & stabilization</div>
-            <p class="small">
-              <span class="code-inline">Λ, Α</span> formalize that “nothing happening” is still structured and that repetition
-              creates path dependence: what repeats becomes easier, then default.
-            </p>
-          </div>
-          <div class="box">
-            <div class="box-title">Cost axis core</div>
-            <p class="small">
-              <span class="code-inline">Ω ↔ Θ</span> becomes unavoidable once patterns stabilize:
-              gradients (access/exposure/cost-bearing) + trajectories (accumulation/irreversibility/exit realism).
-            </p>
-          </div>
-          <div class="box">
-            <div class="box-title">Regulation & coherence</div>
-            <p class="small">
-              <span class="code-inline">Φ, Χ, Σ, Ψ</span> handle re-framing, stop-capability, synthesis, and binding.
-              Drift accelerates when Φ substitutes for Σ and Χ erodes under intensity.
-            </p>
-          </div>
-        </div>
-
-        <div class="box">
-          <div class="box-title">Non-promissory stance</div>
-          <p class="small">
-            PMS-SEX is descriptive and criterial: it explains why configurations hold or tip (drift/viability),
-            not how to enact practice safely or optimally.
-          </p>
-        </div>
-      </section>
-
-      <div class="pagebreak"></div>
-
-      <!-- 5. Overlays (non-operators) -->
-      <section id="overlays">
-        <h2>5. Overlays (non-operators; amplification only)</h2>
-
-        <p>
-          Overlays do not add operators. They function as frame-level extensions or amplifiers that change
-          the likelihood and cost profile of operator dynamics while remaining subordinate to Δ–Ψ.
-        </p>
-
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Overlay</th>
-              <th>Meaning</th>
-              <th>Amplifies</th>
-              <th>Constraint</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>P</strong></td>
-              <td>Publicness / media overlay as <span class="code-inline">□</span> extension (visibility, documentation, reputational load).</td>
-              <td><span class="code-inline">Ω, Θ, Α, Λ</span></td>
-              <td>Amplification-only; no new operator; treat as frame overlay.</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div class="box">
-          <div class="box-title">Interpretive note</div>
-          <p class="small">
-            Publicness typically hardens Θ costs (irreversibility) and can amplify Ω gradients (exit/repair cost distribution),
-            but those effects remain operator-readable, not motive-based.
-          </p>
-        </div>
-      </section>
-
-      <div class="pagebreak"></div>
-
-      <!-- 6. Reduced signatures -->
-      <section id="reduced-signatures">
-        <h2>6. Reduced signatures (paper shorthand; not proofs)</h2>
-
-        <p>
-          Reduced signatures are chapter-level orientation and retrieval keys. They are not explanatory proof chains and
-          do not change PMS dependencies. Where a reduced signature contains <span class="code-inline">Χ</span>, the
-          dependency hygiene applies (<span class="code-inline">Χ</span> presupposes <span class="code-inline">Φ, Θ, □</span>).
-        </p>
-
-        <details open>
-          <summary>6.1 Canonical linear spine</summary>
-          <p class="small">
-            <span class="code-inline">Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ</span>
-            <br />Orientation map; not an explanatory proof chain.
-          </p>
-        </details>
-
-        <details>
-          <summary>6.2 Examples: selected paper minimal formulas</summary>
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Label</th>
-                <th>Signature (raw)</th>
-                <th>Operators</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Ch. 10 (Distance)</td>
-                <td><span class="code-inline">Δ → ∇ → □ → (Λ) → Α → Ω → Θ → Φ → Χ</span></td>
-                <td><span class="code-inline">Δ, ∇, □, Λ, Α, Ω, Θ, Φ, Χ</span></td>
-              </tr>
-              <tr>
-                <td>Ch. 11 (Integration)</td>
-                <td><span class="code-inline">Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ</span></td>
-                <td><span class="code-inline">… + Σ</span></td>
-              </tr>
-              <tr>
-                <td>Ch. 12 (Self-binding)</td>
-                <td><span class="code-inline">Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ</span></td>
-                <td><span class="code-inline">… + Ψ</span></td>
-              </tr>
-              <tr>
-                <td>Ch. 16 (High intensity)</td>
-                <td><span class="code-inline">Δ → ∇ → □ → (Λ) → Α → Ω → Θ → (Φ/Χ/Σ/Ψ)</span></td>
-                <td><span class="code-inline">Δ–Θ plus higher-operator set</span></td>
-              </tr>
-              <tr>
-                <td>Ch. 17 (Suspended Ψ)</td>
-                <td><span class="code-inline">Δ → ∇ → □ → (Λ) → Α → Ω → Θ → (Φ) → Χ → (Σ) → (Ψ suspended)</span></td>
-                <td><span class="code-inline">Δ–Σ, Ψ as suspension point (overlay)</span></td>
-              </tr>
-              <tr>
-                <td>Ch. 21 (D in explicit frame)</td>
-                <td><span class="code-inline">D = explicit Ω + operative Χ + no covert Ψ demand under Θ</span></td>
-                <td><span class="code-inline">Ω, Χ, Ψ, Θ</span> (overlay expression; PMS D remains <span class="code-inline">Ψ ∘ Χ ∘ Ω</span>)</td>
-              </tr>
-            </tbody>
-          </table>
-        </details>
-
-        <div class="box">
-          <div class="box-title">Shorthand disclaimer</div>
-          <p class="small">
-            Reduced signatures compress analysis. They must never be used to negate prerequisites, reorder operators, or
-            claim “direct access” to higher operators without their PMS dependencies.
-          </p>
-        </div>
-      </section>
-
-      <div class="pagebreak"></div>
-
-      <!-- 7. Drift catalogue -->
-      <section id="drift">
-        <h2>7. Drift catalogue (core markers & operator-linked drift)</h2>
-
-        <p>
-          Drift markers are configuration statements (“in this configuration…”), not person labels. The catalogue consolidates
-          predictable consequences of operator constellations under repetition and time.
-        </p>
-
-        <h3>7.1 Core dysfunction markers (Chapter 18)</h3>
-
-        <details open>
-          <summary>(1) Covert self-binding demand (<span class="kbd">Ψ leak</span>)</summary>
-          <p class="small">
-            Meaning and identity-relevant stakes enter a frame narrated as limited/non-binding.
-            Structural result: binding/attribution becomes operative without explicit frame capacity.
-          </p>
-        </details>
-
-        <details>
-          <summary>(2) Asymmetry escalation (<span class="kbd">Ω escalation</span>)</summary>
-          <p class="small">
-            Gradients increase (access/exposure/obligation) while remaining unacknowledged; Ω becomes a steering variable.
-          </p>
-        </details>
-
-        <details>
-          <summary>(3) Pseudo-symmetry</summary>
-          <p class="small">
-            Equality rhetoric blocks cost naming inside □; conflict becomes non-negotiable because Ω must not be named.
-          </p>
-        </details>
-
-        <details>
-          <summary>(4) Non-event escalation (<span class="kbd">Λ as steering</span>)</summary>
-          <p class="small">
-            Withdrawal/silence/indeterminacy functions as leverage; coordination shifts into guessing rather than frame work.
-          </p>
-        </details>
-
-        <details>
-          <summary>(5) Attractor fixation (<span class="kbd">Α compulsivity</span>)</summary>
-          <p class="small">
-            Stabilization flips into non-substitutability; repetition replaces choice; □ narrows around the script.
-          </p>
-        </details>
-
-        <details>
-          <summary>(6) Loss of distance (<span class="kbd">Χ loss</span>)</summary>
-          <p class="small">
-            Stop-capability and meta-commentability collapse; self-correction fails; drift cannot be intercepted early.
-          </p>
-        </details>
-
-        <details>
-          <summary>(7) Temporal overload (<span class="kbd">Θ accumulation</span>)</summary>
-          <p class="small">
-            Costs accumulate faster than the frame can carry; exit fictions persist; collapse replaces orderly ending.
-          </p>
-        </details>
-
-        <h3>7.2 Operator-linked drift markers (Appendix C style table)</h3>
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Operator</th>
-              <th>Typical drift markers (non-moral)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td align="center"><span class="code-inline">Δ</span></td><td align="left">Fusion; illegibility of boundaries; undifferentiated pressure.</td></tr>
-            <tr><td align="center"><span class="code-inline">∇</span></td><td align="left">Escalation without framing; compulsive discharge; pressure outruns coordination.</td></tr>
-            <tr><td align="center"><span class="code-inline">□</span></td><td align="left">Ambiguity drift; retroactive rule changes; mono-frame dominance.</td></tr>
-            <tr><td align="center"><span class="code-inline">Λ</span></td><td align="left">Chronic withholding; silence as leverage; interpretive overload.</td></tr>
-            <tr><td align="center"><span class="code-inline">Α</span></td><td align="left">Script lock-in; repetition replaces choice; loss of alternatives.</td></tr>
-            <tr><td align="center"><span class="code-inline">Ω</span></td><td align="left">Cost shifting; exposure gradients denied; power as steering variable.</td></tr>
-            <tr><td align="center"><span class="code-inline">Θ</span></td><td align="left">Exit fiction; irreversibility denied; accumulation unaccounted.</td></tr>
-            <tr><td align="center"><span class="code-inline">Φ</span></td><td align="left">Narrative substitution; perpetual reframing; cost relocation without stabilization.</td></tr>
-            <tr><td align="center"><span class="code-inline">Χ</span></td><td align="left">Stop-capability erosion; brittle control; critique read as betrayal.</td></tr>
-            <tr><td align="center"><span class="code-inline">Σ</span></td><td align="left">Contradictions offloaded; forced simplification; substitution by Α/Φ/Ω/Λ.</td></tr>
-            <tr><td align="center"><span class="code-inline">Ψ</span></td><td align="left">Covert meaning demand; identity capture; binding claims without frame support.</td></tr>
-          </tbody>
-        </table>
-
-        <div class="box">
-          <div class="box-title">Typical drift chain (compressed)</div>
-          <p class="small">
-            <span class="code-inline">Ψ leak → Ω escalation → Χ loss → Α fixation → Θ overload → exit collapse</span>
-          </p>
-        </div>
-      </section>
-
-      <div class="pagebreak"></div>
-
-      <!-- 8. Viability -->
-      <section id="viability">
-        <h2>8. Viability criteria (functional minimum + warning signals)</h2>
-
-        <p>
-          “Functional” means: governable under <span class="code-inline">Ω/Θ/Λ</span>, without systematic dignity violation
-          and without exit fictions. These are criteria only (non-instructional, non-diagnostic).
-        </p>
-
-        <h3>8.1 Functional minimum conditions (Chapter 19)</h3>
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Condition</th>
-              <th>Minimal form</th>
-              <th>Structural intent</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>(1) Ω recognition</strong></td>
-              <td>Ω is nameable & regulable within □.</td>
-              <td>Costs/gradients are not denied via pseudo-symmetry.</td>
-            </tr>
-            <tr>
-              <td><strong>(2) Θ awareness</strong></td>
-              <td>Consequences treated as real (exit realism).</td>
-              <td>Accumulation is carried as structure, not reset talk.</td>
-            </tr>
-            <tr>
-              <td><strong>(3) Χ operative</strong></td>
-              <td>Stop + meta-position works in practice.</td>
-              <td>Early interruption prevents escalation/late collapse.</td>
-            </tr>
-            <tr>
-              <td><strong>(4) No Ψ substitution</strong></td>
-              <td>No covert binding demand inside the frame.</td>
-              <td>Sex is not used as identity proof / relationship clarification.</td>
-            </tr>
-            <tr>
-              <td><strong>(5) Λ tolerance</strong></td>
-              <td>Non-events are tolerable without steering.</td>
-              <td>Absence isn’t weaponized as leverage or devaluation.</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>8.2 Warning signals (tipping markers)</h3>
-        <ul>
-          <li><strong>Φ narrative inflation:</strong> “actually it is…” replaces clarification and cost naming (Φ substitutes for Σ).</li>
-          <li><strong>□ narrowing / mono-frame:</strong> only one frame “works” (Α monopolizes □).</li>
-          <li><strong>Ω moralization:</strong> guilt/entitlement becomes steering device; costs become unnameable.</li>
-          <li><strong>Persistence despite harm:</strong> Α + Θ overrun Χ; exit fiction persists.</li>
-          <li><strong>Θ cost externalization:</strong> burdens offloaded asymmetrically through Ω layout.</li>
-        </ul>
-
-        <div class="box">
-          <div class="box-title">Minimal viability corridor (overlay)</div>
-          <p class="small">
-            <strong>□ explicit + Ω nameable + Θ realistic + Χ operative (+ Σ reachable) = structurally governable configuration</strong>
-          </p>
-        </div>
-      </section>
-
-      <div class="pagebreak"></div>
-
-      <!-- 9. Modulators -->
-      <section id="modulators">
-        <h2>9. Modulators (“types without typing”; non-operator weightings)</h2>
-
-        <p>
-          Modulators are praxeological parameters that weight path likelihoods by shaping frame legibility, repetition,
-          non-event load, asymmetry governance, and temporal continuity. They are not person-traits and do not provide
-          inner-cause explanations.
-        </p>
-
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Modulator</th>
-              <th>Weights</th>
-              <th>Typical structural effect</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>□₀ Early framing</strong></td>
-              <td>Speakability / boundary clarity / scene grammar order</td>
-              <td>Weak □₀ → implicit shifting frames → drift via ambiguity.</td>
-            </tr>
-            <tr>
-              <td><strong>Ω₀ Asymmetry calibration</strong></td>
-              <td>Naming/regulating gradients</td>
-              <td>Blurred Ω₀ → pseudo-symmetry until Θ forces cost visibility.</td>
-            </tr>
-            <tr>
-              <td><strong>Λ density</strong></td>
-              <td>Non-event load under expectation</td>
-              <td>High Λ → interpretive pressure → substitutes stabilize (Α/Φ/Ω).</td>
-            </tr>
-            <tr>
-              <td><strong>Θ stability</strong></td>
-              <td>Continuity vs fragmentation</td>
-              <td>Fragmented Θ → volatility + narrative resets while accumulation persists.</td>
-            </tr>
-            <tr>
-              <td><strong>Φ habituation</strong></td>
-              <td>Reframing frequency</td>
-              <td>High Φ without Χ/Σ → pseudo-resolution; contradictions return as drift.</td>
-            </tr>
-            <tr>
-              <td><strong>Χ mode</strong></td>
-              <td>Distance style (meta-capacity vs control/devaluation)</td>
-              <td>Χ as control/devaluation → brittle stability → discharge/escalation.</td>
-            </tr>
-            <tr>
-              <td><strong>Publicness/media (□ overlay)</strong></td>
-              <td>Visibility/documentation/reputation</td>
-              <td>Hardens Θ and amplifies Ω gradients; makes repair/exit costlier.</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div class="box">
-          <div class="box-title">Interplay rule</div>
-          <p class="small">
-            Modulators combine: e.g. <span class="code-inline">Λ-dense + Χ-weak + Θ-fragmented</span> increases likelihood of brittle stabilization;
-            <span class="code-inline">Φ-high + Σ-weak</span> increases narrative inflation risk.
-          </p>
-        </div>
-      </section>
-
-      <div class="pagebreak"></div>
-
-      <!-- 10. Minimal psychology adapter -->
-      <section id="minimal-psychology">
-        <h2>10. Minimal psychology adapter (Chapter 20; structural alarm)</h2>
-
-        <p>
-          Minimal psychology is a strictly bounded self-check adapter. It activates only when drift markers are present and
-          viability correction fails internally, yet repetition continues unchanged. It is not explanatory and outputs only an alarm.
-        </p>
-
-        <h3>10.1 Activation condition (all must hold)</h3>
-        <ul>
-          <li>Drift markers from Ch. 18 are present;</li>
-          <li>Viability minimums from Ch. 19 are not restoring correction;</li>
-          <li>The configuration continues voluntarily and repeatedly.</li>
-        </ul>
-
-        <h3>10.2 Permitted guiding probe (restricted use)</h3>
-        <div class="box">
-          <div class="box-title">Guiding question</div>
-          <p class="small"><span class="code-inline">“Why do I really desire X?”</span> — hypothetical probe to test whether desire functions as drift carrier (no identity story, no justification loop).</p>
-        </div>
-
-        <h3>10.3 Output format (invariant; no explanation)</h3>
-        <ul>
-          <li>“In this configuration, drift persistence is present.”</li>
-          <li>“Structural self-correction is failing internally.”</li>
-          <li>“Distance (Χ), frame clarity (□), and Θ realism require reactivation.”</li>
-        </ul>
-
-        <div class="box">
-          <div class="box-title">Boundary</div>
-          <p class="small">
-            No conclusions about character, pathology, intent, or worth are permitted. The adapter is an alarm, not an interpretation.
-          </p>
-        </div>
-      </section>
-
-      <div class="pagebreak"></div>
-
-      <!-- 11. Structural tools -->
-      <section id="tools">
-        <h2>11. Structural tools (operator table & map)</h2>
-
-        <h3>11.1 Operator table (Δ–Ψ; PMS meanings preserved)</h3>
-        <p class="small">
-          The operator table in the YAML repeats canonical dependencies and provides overlay-level “typical drift markers”
-          for consistency checks during analysis (descriptive only).
-        </p>
-
-        <h3>11.2 Structural map (one-page orientation)</h3>
-        <div class="box small">
-          <div><strong>Canonical spine:</strong> <span class="code-inline">Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ</span></div>
-          <div class="hr"></div>
-          <div><strong>Highlighted drift corridor:</strong> <span class="code-inline">Λ density → Α monopolization → Ω as steering → Θ accumulation → Χ collapse → late Ψ capture</span></div>
-          <div class="hr"></div>
-          <div><strong>Minimal viability corridor:</strong> <span class="code-inline">□ explicit + Ω nameable + Θ realistic + Χ operative (+ Σ reachable)</span></div>
-        </div>
-
-        <div class="box">
-          <div class="box-title">Use note</div>
-          <p class="small">
-            These tools do not add meaning beyond PMS; they compactly render PMS-SEX reading discipline for repo and paper use.
-          </p>
-        </div>
-      </section>
-
-      <div class="pagebreak"></div>
-
-      <!-- 12. Analysis checklist & example suite -->
-      <section id="protocol">
-        <h2>12. Application protocol scaffolding (checklist & example suite)</h2>
-
-        <h3>12.1 Scene-bound analysis checklist (criterial)</h3>
-        <ol>
-          <li><strong>Scene boundary (□):</strong> define inside/outside; enforce reversibility (no global labels).</li>
-          <li><strong>Reduced signature:</strong> select closest shorthand; keep dependency hygiene.</li>
-          <li><strong>Cost axis scan (Ω ↔ Θ):</strong> identify gradients and trajectories (exit realism).</li>
-          <li><strong>Correction capacity:</strong> is Χ operative? is Σ reachable without coercion?</li>
-          <li><strong>Drift scan:</strong> match Ch. 18 markers (esp. Ψ leak, Χ loss, Θ overload).</li>
-          <li><strong>Viability scan:</strong> apply Ch. 19 minimums + tipping markers.</li>
-          <li><strong>Escalation guard:</strong> if drift persists despite clarity → minimal psychology alarm (no explanation); maintain D.</li>
-        </ol>
-
-        <h3>12.2 Example suite schema (repo vignettes; non-instructional)</h3>
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Required block</th>
-              <th>Purpose</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>Minimal vignette (scene-bound)</td><td>Concrete configuration snapshot without person-typing.</td></tr>
-            <tr><td>Why this is repo-useful</td><td>What structural distinction it demonstrates.</td></tr>
-            <tr><td>Operator mapping (reduced signature)</td><td>Compact operator trace for retrieval.</td></tr>
-            <tr><td>Costs / layout (Ω under Θ)</td><td>Who bears what, how it accumulates, interfaces (body/publicness).</td></tr>
-            <tr><td>Drift markers (max 2–3)</td><td>Non-moral warning pointers.</td></tr>
-            <tr><td>Validity gate reminder</td><td>Χ + reversibility + D.</td></tr>
-            <tr><td>Structural closure (2–5 sentences)</td><td>Readable summary without advice or prescriptions.</td></tr>
-          </tbody>
-        </table>
-
-        <div class="box">
-          <div class="box-title">Non-instruction constraint</div>
-          <p class="small">
-            Examples are structural demonstrations, not guides. They must not become optimization, step-by-step safety procedures,
-            or therapy/diagnosis surrogates.
-          </p>
-        </div>
-      </section>
-
-      <div class="pagebreak"></div>
-
-      <!-- 13. Implementation & citation -->
-      <section id="implementation">
-        <h2>13. Implementation notes and citation</h2>
-
-        <p>
-          The authoritative specification is <span class="code-inline">PMS-SEX.yaml</span>,
-          intended to be loaded after <span class="code-inline">PMS.yaml</span> (PMS_1.1).
-        </p>
-
-        <div class="box small">
-          <span class="code-inline">PMS.yaml</span> → <span class="code-inline">PMS-SEX.yaml</span>
-        </div>
-
-        <p class="small">
-          <strong>Technical reference:</strong><br />
-          <em>PMS-SEX.yaml – PMS-SEX Application Profile (Overlay) Specification</em>
-        </p>
-
-        <p class="small">
-          <strong>Base dependency:</strong><br />
-          <em>PMS.yaml – Praxeological Meta-Structure (PMS_1.1)</em>
-        </p>
-
-        <p>
-          <strong>License:</strong><br />
-          Governed by the license declared in the distribution repository.
-        </p>
-
-        <div class="box">
-          <div class="box-title">Final guard sentence</div>
-          <p class="small">
-            PMS-SEX replaces neither decisions, nor responsibility, nor tragedy.
-            It makes visible where costs emerge, when they tip, and why many conflicts arise
-            not from malice but from structural opacity.
-          </p>
-        </div>
-      </section>
-    </div>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<title>PMS-SEX – Model Specification</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	    <style>
+	      :root {
+	        --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+	        --font-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	        --color-text: #111;
+	        --color-muted: #555;
+	        --color-accent: #333;
+	        --color-border: #ddd;
+	        --color-bg: #fafafa;
+	      }
+
+	      * {
+	        box-sizing: border-box;
+	      }
+
+	      html, body {
+	        margin: 0;
+	        padding: 0;
+	      }
+
+	      body {
+	        font-family: var(--font-body);
+	        color: var(--color-text);
+	        background: white;
+	        line-height: 1.5;
+	        font-size: 14px;
+	      }
+
+	      blockquote {
+	        margin: 0 0 16px;
+	        padding: 0 1em;
+	        color: #57606a;
+	        border-left: 0.25em solid #d0d7de;
+	      }
+
+	      .page {
+	        max-width: 900px;
+	        margin: 0 auto;
+	        padding: 32px 24px 64px;
+	        background: white;
+	      }
+
+	      header {
+	        border-bottom: 1px solid var(--color-border);
+	        margin-bottom: 24px;
+	        padding-bottom: 16px;
+	      }
+
+	      header h1 {
+	        font-size: 1.9rem;
+	        margin: 0 0 8px;
+	        letter-spacing: 0.02em;
+	      }
+
+	      header .subtitle {
+	        font-size: 0.95rem;
+	        color: var(--color-muted);
+	        margin-bottom: 8px;
+	      }
+
+	      header .meta {
+	        font-size: 0.8rem;
+	        color: var(--color-muted);
+	      }
+
+	      h2 {
+	        margin-top: 15px;
+	        margin-bottom: 4px;
+	        font-size: 1.15rem;
+	        border-bottom: 1px solid var(--color-border);
+	        padding-bottom: 4px;
+	      }
+
+	      h3 {
+	        margin-top: 18px;
+	        margin-bottom: 4px;
+	        font-size: 1rem;
+	        color: var(--color-accent);
+	      }
+
+	      p {
+	        margin: 4px 0 8px;
+	      }
+
+	      ul {
+	        margin: 4px 0 10px 1.2rem;
+	        padding: 0;
+	        line-height: 1.1em;
+	      }
+
+	      li {
+	        margin-bottom: 3px;
+	      }
+
+	      .code-inline {
+	        font-family: var(--font-mono);
+	        font-size: 0.9em;
+	        background: #f5f5f5;
+	        padding: 1px 4px;
+	        border-radius: 3px;
+	      }
+
+	      .box {
+	        border: 1px solid var(--color-border);
+	        border-radius: 4px;
+	        padding: 8px 10px;
+	        background: #fcfcfc;
+	        margin: 8px 0 12px;
+	        line-height: 1.05em;
+	      }
+
+	      .box-title {
+	        font-weight: 600;
+	        font-size: 0.9rem;
+	        margin-bottom: 4px;
+	      }
+
+	      .small {
+	        font-size: 0.85rem;
+	        color: var(--color-muted);
+	      }
+
+	      .two-column {
+	        display: flex;
+	        flex-wrap: wrap;
+	        gap: 16px;
+	      }
+
+	      .two-column > div {
+	        flex: 1 1 260px;
+	        min-width: 0;
+	      }
+
+	      .table {
+	        width: 100%;
+	        border-collapse: collapse;
+	        margin: 8px 0 12px;
+	        font-size: 0.77rem;
+	        line-height: 1.2em;
+	      }
+
+	      .table th,
+	      .table td {
+	        border: 1px solid var(--color-border);
+	        padding: 4px 6px;
+	        vertical-align: top;
+	      }
+
+	      .table th {
+	        background: #f5f5f5;
+	        font-weight: 600;
+	      }
+
+	      .tag {
+	        display: inline-block;
+	        border-radius: 999px;
+	        border: 1px solid var(--color-border);
+	        padding: 1px 8px;
+	        font-size: 0.75rem;
+	        margin-right: 4px;
+	        margin-bottom: 3px;
+	      }
+
+	      .placeholder {
+	        font-style: italic;
+	        color: var(--color-muted);
+	      }
+
+	      .pagebreak{
+	        page-break-before:always
+	      }
+
+	      @media print {
+	        body {
+	          background: white;
+	        }
+	        .page {
+	          box-shadow: none;
+	          padding: 24px 18px;
+	        }
+	        a[href]:after {
+	          content: "";
+	        }
+	      }
+	    </style>
+	</head>
+	<body>
+		<div class="page">
+			<header>
+				<h1>PMS-SEX – Model Specification</h1>
+				<div class="subtitle">
+					A PMS-conform application profile (overlay) for sexuality: structural legibility of
+					scenes, frames, drift, viability, dignity-in-practice, and the Δ–Ψ operator chain
+					without person-typing, diagnosis, moral ranking, or how-to guidance.
+				</div>
+				<div class="meta">
+					Version: <span class="code-inline">PMS-SEX_1.1</span> &middot;
+					Spec basis: <span class="code-inline">PMS-SEX.yaml</span><br />
+					Last updated: <span class="code-inline">2026-04-26</span> &middot;
+					Language: EN &middot;
+					Status: <span class="code-inline">application_overlay</span><br />
+					Author: T. Zöller &middot;
+					Formalisation assistance: ChatGPT
+					(<span class="code-inline">GPT-5.5 Thinking</span>)<br />
+					Depends on:
+					<span class="code-inline">PMS.yaml</span>
+					(<span class="code-inline">schema_version = "PMS_1.3"</span>)<br />
+					Repo:
+					<span class="code-inline">https://github.com/tz-dev/PMS-SEX</span>
+				</div>
+			</header>
+
+			<!-- 1. Purpose & status -->
+			<section id="purpose-status">
+				<h2>1. Purpose and status of this specification</h2>
+
+				<p>
+					This document specifies the <em>PMS-SEX</em> application profile in a concise,
+					technical, human-readable form. It is based on
+					<span class="code-inline">PMS-SEX.yaml</span>
+					(<span class="code-inline">schema_version = "PMS-SEX_1.1"</span>) and renders
+					its identity, constraints, overlay concepts, drift markers, viability criteria,
+					and application discipline explicit for repo, paper, and computational use.
+				</p>
+
+				<p>
+					PMS-SEX is a <strong>paper-specific application profile</strong> of the
+					Praxeological Meta-Structure (PMS). It operationalizes the structural lens of
+					the accompanying paper:
+				</p>
+
+				<div class="box">
+					<div class="box-title">
+						<span>Source paper</span>
+						<span class="pill">updated paper reference</span>
+					</div>
+					<p class="small">
+						<em>PMS-SEX — From Impulse to Self-Binding: A Praxeological Grammar of
+						Sexuality (Δ–Ψ)</em>
+					</p>
+				</div>
+
+				<p>
+					The profile is an <strong>overlay</strong>, not a fork, replacement, or extension
+					of PMS. Its function is to make the sexuality lens formally legible while
+					remaining strictly subordinate to the canonical PMS repository reference
+					specification.
+				</p>
+
+				<p>
+					PMS-SEX does not redefine PMS operators, dependencies, derived axes, or
+					meta-axioms. It uses the canonical operator grammar
+					<span class="code-inline">Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ</span>
+					to read sexual praxis as enacted configuration under frame, non-event,
+					attractor formation, asymmetry, temporality, recontextualization, distance,
+					integration, and self-binding, with publicness and documentation treated only as
+					application-level <strong>□ extensions</strong>, never as new operators.
+				</p>
+
+				<div class="box">
+					<div class="box-title">
+						<span>Core idea</span>
+						<span class="pill">overlay discipline</span>
+					</div>
+					<p class="small">
+						PMS-SEX remains valid by staying within what it can responsibly say:
+						not what persons are, but what configurations do over time. It permits
+						hard claims about cost, drift, outer legibility, and consequence without
+						converting those claims into person-status judgments.
+					</p>
+				</div>
+			</section>
+
+			<div class="pagebreak"></div>
+
+			<!-- 2. Relationship to PMS -->
+			<section id="relationship-to-pms">
+				<h2>2. Relationship to PMS: non-negotiable constraints</h2>
+
+				<h3>2.1 Dependency statement</h3>
+				<p>
+					PMS-SEX depends on the canonical PMS base specification:
+					<span class="code-inline">PMS.yaml</span>
+					(<span class="code-inline">schema_version = "PMS_1.3"</span>).
+				</p>
+
+				<h3>2.2 Conformity constraints</h3>
+				<ul>
+					<li>
+						PMS-SEX does <strong>not</strong> redefine, replace, reinterpret, or extend
+						the eleven PMS meta-axioms.
+					</li>
+					<li>
+						PMS-SEX does <strong>not</strong> introduce new operators, meta-axioms, or
+						dependency relations.
+					</li>
+					<li>
+						PMS-SEX does <strong>not</strong> modify canonical operator order,
+						dependency hygiene, or derived axes
+						<span class="code-inline">A, C, R, E, D</span>.
+					</li>
+					<li>
+						All references to <span class="code-inline">Δ–Ψ</span> retain their meanings
+						exactly as defined in <span class="code-inline">PMS.yaml</span>.
+					</li>
+					<li>
+						Apparent deviations such as reduced signatures, publicness overlay,
+						outer legibility, path-cost, or suspended Ψ attribution are shorthand
+						or frame-level descriptions only.
+					</li>
+				</ul>
+
+				<h3>2.3 Conformity record</h3>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Field</th>
+							<th>Value</th>
+							<th>Meaning</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><span class="code-inline">status</span></td>
+							<td><span class="code-inline">conformant_overlay</span></td>
+							<td>PMS-SEX is an application overlay, not a PMS fork.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">base_schema_version</span></td>
+							<td><span class="code-inline">PMS_1.3</span></td>
+							<td>Canonical PMS base version.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">canonical_operator_spine</span></td>
+							<td><span class="code-inline">Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ</span></td>
+							<td>Reference path used throughout PMS-SEX.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">no_new_meta_axioms</span></td>
+							<td><span class="code-inline">true</span></td>
+							<td>No additional PMS-level axioms are introduced.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">no_operator_redefinition</span></td>
+							<td><span class="code-inline">true</span></td>
+							<td>Operators retain canonical PMS meanings.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">no_dependency_rewrite</span></td>
+							<td><span class="code-inline">true</span></td>
+							<td>No alternative operator graph is created.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">no_derived_axis_rewrite</span></td>
+							<td><span class="code-inline">true</span></td>
+							<td>Derived PMS axes remain unchanged.</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="box">
+					<div class="box-title">
+						<span>Dependency hygiene</span>
+						<span class="pill">PMS_1.3 preserved</span>
+					</div>
+					<p class="small">
+						Reduced formulas are reading aids. They are not alternative dependency graphs.
+						Any use of <span class="code-inline">Χ</span> presupposes
+						<span class="code-inline">Φ, Θ, □</span>. Any use of
+						<span class="code-inline">Ψ</span> presupposes
+						<span class="code-inline">Σ, Θ, Χ</span>.
+					</p>
+				</div>
+			</section>
+
+			<div class="pagebreak"></div>
+
+			<!-- 3. Top-level YAML structure -->
+			<section id="yaml-structure">
+				<h2>3. High-level structure of the YAML model</h2>
+
+				<h3>3.1 Top-level keys</h3>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Key</th>
+							<th>Description</th>
+							<th>Role in the profile</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><span class="code-inline">schema_version</span></td>
+							<td>Version identifier: <span class="code-inline">PMS-SEX_1.1</span>.</td>
+							<td>Compatibility, citation, and file identity.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">schema_meta</span></td>
+							<td>Model identity, authorship, repo, source paper, dependency on PMS.</td>
+							<td>Profile identity and inheritance statement.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">pms_v13_conformity</span></td>
+							<td>Formal conformity block against PMS_1.3.</td>
+							<td>Non-redefinition guarantee.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">validity_gate</span></td>
+							<td>Application entry condition: Χ + reversibility + D.</td>
+							<td>Application firewall.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">operator_reference</span></td>
+							<td>Fixed operator set, canonical order, dependencies, hygiene note.</td>
+							<td>Δ–Ψ reference spine.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">references</span></td>
+							<td>PMS, PMS.yaml raw, MIP, MIP.yaml raw.</td>
+							<td>Traceability and docking reference.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">overlay_concepts</span></td>
+							<td>Internal framing, outer legibility, publicness, path-cost, body remainder.</td>
+							<td>Application-level concepts, not operators.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">reduced_signatures</span></td>
+							<td>Chapter-specific shorthand signatures and formulas.</td>
+							<td>Paper and repo orientation keys.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">layer_separation</span></td>
+							<td>Internal / outer / public / temporal layer guards.</td>
+							<td>Misreading prevention.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">disturbance_and_path_cost_guard</span></td>
+							<td>Allowed and forbidden use of path-cost / disturbance language.</td>
+							<td>Anti-person-ranking guard.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">drift_catalogue</span></td>
+							<td>Core dysfunction markers and dynamic drift chains.</td>
+							<td>Configuration-level drift semantics.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">viability</span></td>
+							<td>Functional minimums, warning signals, viability corridor.</td>
+							<td>Non-normative governability criteria.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">modulators</span></td>
+							<td>Non-operator weightings: □₀, Ω₀, Λ density, Θ stability, Φ habituation, Χ mode, publicness.</td>
+							<td>Path likelihood without person typing.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">minimal_psychology_adapter</span></td>
+							<td>Ch. 20 structural self-check alarm.</td>
+							<td>Restricted alarm, not explanation.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">dignity_in_practice_module</span></td>
+							<td>PMS-derived D construct and PMS-SEX application formula.</td>
+							<td>Dignity constraint under Ω/Χ/Ψ/Θ.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">mip_docking_interface</span></td>
+							<td>Optional interface to MIP critique context.</td>
+							<td>Context shift, not merger.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">limits_and_extensions</span></td>
+							<td>Structural limits, exclusions, openness to remainder.</td>
+							<td>Scope discipline.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">glossary_concepts</span></td>
+							<td>Appendix B terms.</td>
+							<td>Terminological consistency.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">chapter_one_line_markers</span></td>
+							<td>Quote-ready chapter closure markers.</td>
+							<td>Paper-linked retrieval and citation support.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">structural_tools</span></td>
+							<td>Operator table and one-page structural map.</td>
+							<td>Analysis consistency tools.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">analysis_checklist</span></td>
+							<td>S1–S10 scene-bound checklist.</td>
+							<td>Application protocol scaffold.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">example_suite_schema</span></td>
+							<td>Required blocks and forbidden uses for examples.</td>
+							<td>Repo vignette schema.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">final_profile_guard</span></td>
+							<td>Final constraint and compressed rules.</td>
+							<td>Profile-level closure.</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="box">
+					<div class="box-title">
+						<span>Conceptual separation</span>
+						<span class="pill">PMS vs PMS-SEX</span>
+					</div>
+					<p class="small">
+						PMS defines the operator grammar. PMS-SEX defines how that grammar is used
+						to read sexual practice structurally: frames, asymmetries, non-events,
+						repetition, trajectories, outer legibility, publicness, drift, and viability.
+					</p>
+				</div>
+			</section>
+
+			<div class="pagebreak"></div>
+
+			<!-- 4. Validity gate -->
+			<section id="validity-gate">
+				<h2>4. Validity gate and application firewall</h2>
+
+				<p>
+					The validity gate constrains PMS application only. PMS itself may be
+					criticized, rejected, revised, or ignored without satisfying this gate.
+					Any use of PMS-SEX <em>as PMS application</em> presupposes:
+				</p>
+
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Requirement</th>
+							<th>Meaning</th>
+							<th>Invalid conversion prevented</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><strong>Χ — Distance</strong></td>
+							<td>
+								Maintained meta-position and stop-capability; no fusion into verdict,
+								urgency, enforcement, person-level attribution, role, impulse, or
+								self-justifying rhetoric.
+							</td>
+							<td>Using PMS-SEX as enforcement, accusation, urgency, or role-fusion.</td>
+						</tr>
+						<tr>
+							<td><strong>Reversibility</strong></td>
+							<td>
+								Scene-bound, configuration-specific, revisable readings; no global person
+								labels, irreversible claims, identity verdicts, or ontological attributions.
+							</td>
+							<td>Turning a structural reading into a fixed person-label.</td>
+						</tr>
+						<tr>
+							<td><strong>D — Dignity-in-Practice</strong></td>
+							<td>
+								No shaming, humiliation, person-ranking, diagnosis, orientation taxonomy,
+								or person-worth evaluation; critique targets enacted structures and cost
+								handling only.
+							</td>
+							<td>Converting cost, asymmetry, or drift into degraded personhood.</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h3>4.1 Self-binding and model hygiene</h3>
+				<p>
+					In line with PMS v1.3, any application that suspends
+					<strong>Distance (Χ)</strong>, <strong>Self-Binding discipline (Ψ)</strong>, or
+					<strong>Dignity-in-Practice (D)</strong> in order to enforce truth, clarity,
+					authority, resolution, urgency, action, or asymmetry is formally invalid
+					as PMS application, even if PMS terminology is retained.
+				</p>
+
+				<h3>4.2 PMS-SEX analysis status</h3>
+				<ul>
+					<li>scene-bound</li>
+					<li>structurally revisable</li>
+					<li>non-psychological</li>
+					<li>non-clinical</li>
+					<li>non-diagnostic</li>
+					<li>non-prescriptive</li>
+					<li>non-moralizing</li>
+					<li>dignity-preserving</li>
+				</ul>
+
+				<div class="box">
+					<div class="box-title">
+						<span>Key firewall</span>
+						<span class="pill">Χ + reversibility + D</span>
+					</div>
+					<p class="small">
+						If the overlay is used to shame, rank, diagnose, humiliate, force action,
+						or produce irreversible person-level interpretation, it has already left
+						PMS-SEX application validity.
+					</p>
+				</div>
+			</section>
+
+			<div class="pagebreak"></div>
+
+			<!-- 5. Operator reference -->
+			<section id="operator-reference">
+				<h2>5. Operator reference and dependency hygiene</h2>
+
+				<h3>5.1 Fixed operator set</h3>
+				<p>
+					PMS-SEX uses exactly the canonical PMS operator set:
+				</p>
+
+				<div class="box small">
+					<span class="code-inline">Δ, ∇, □, Λ, Α, Ω, Θ, Φ, Χ, Σ, Ψ</span>
+				</div>
+
+				<h3>5.2 Canonical order</h3>
+				<div class="box small">
+					<span class="code-inline">Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ</span>
+				</div>
+
+				<h3>5.3 Dependency table</h3>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Operator</th>
+							<th>Depends on</th>
+							<th>PMS-SEX use note</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr><td><strong>Δ</strong></td><td><span class="code-inline">[]</span></td><td>Difference makes scene distinctions legible.</td></tr>
+						<tr><td><strong>∇</strong></td><td><span class="code-inline">["Δ"]</span></td><td>Impulse introduces directional pressure.</td></tr>
+						<tr><td><strong>□</strong></td><td><span class="code-inline">["Δ", "∇"]</span></td><td>Frame constrains impulse into scene grammar.</td></tr>
+						<tr><td><strong>Λ</strong></td><td><span class="code-inline">["□"]</span></td><td>Non-events become structurally active under expectation.</td></tr>
+						<tr><td><strong>Α</strong></td><td><span class="code-inline">["Δ", "∇", "□", "Λ"]</span></td><td>Attractors stabilize repeated scripts.</td></tr>
+						<tr><td><strong>Ω</strong></td><td><span class="code-inline">["Α"]</span></td><td>Asymmetry distributes access, exposure, exit, and cost.</td></tr>
+						<tr><td><strong>Θ</strong></td><td><span class="code-inline">["Ω", "Α"]</span></td><td>Temporality makes accumulation and exit realism visible.</td></tr>
+						<tr><td><strong>Φ</strong></td><td><span class="code-inline">["Θ", "Ω", "□"]</span></td><td>Recontextualization changes framing without rewinding costs.</td></tr>
+						<tr><td><strong>Χ</strong></td><td><span class="code-inline">["Φ", "Θ", "□"]</span></td><td>Distance enables stop-capability and meta-position.</td></tr>
+						<tr><td><strong>Σ</strong></td><td><span class="code-inline">["Χ", "Φ"]</span></td><td>Integration holds contradictions without coercive simplification.</td></tr>
+						<tr><td><strong>Ψ</strong></td><td><span class="code-inline">["Σ", "Θ", "Χ"]</span></td><td>Self-binding binds integrated trajectories over time.</td></tr>
+					</tbody>
+				</table>
+
+				<div class="box">
+					<div class="box-title">
+						<span>Dependency hygiene note</span>
+						<span class="pill">no shortcutting</span>
+					</div>
+					<p class="small">
+						Reduced signatures may foreground a cluster such as
+						<span class="code-inline">Ω → Θ</span> or
+						<span class="code-inline">Λ → Α → Ω → Θ</span>. Such foregrounding does
+						not suspend, bypass, or reorder PMS dependencies.
+					</p>
+				</div>
+			</section>
+
+			<div class="pagebreak"></div>
+
+			<!-- 6. Overlay concepts -->
+			<section id="overlay-concepts">
+				<h2>6. Overlay concepts: non-operators, application-level only</h2>
+
+				<p>
+					PMS-SEX introduces overlay concepts that organize or amplify PMS operators.
+					They do not replace PMS generativity, do not create new operators, and do
+					not authorize person-typing.
+				</p>
+
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Overlay concept</th>
+							<th>Definition</th>
+							<th>Guard</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><strong>Internal Framing</strong></td>
+							<td>
+								How a scene is inhabited, narrated, or lived from within the
+								configuration: as play, service, devotion, experimentation, intimacy,
+								kink, discipline, restraint, authenticity, or otherwise.
+							</td>
+							<td>
+								Internal framing may shape experience but does not by itself determine
+								or erase outer structural form.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Outer Legibility</strong></td>
+							<td>
+								The structurally readable action-form a scene presents under visible
+								asymmetry, exposure, markedness, repetition, and consequence.
+							</td>
+							<td>
+								Naming outer legibility does not imply person-ranking, diagnosis,
+								moral verdict, denial of consent, or total interpretation.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Pre-Reflective Scene Readability</strong></td>
+							<td>
+								Early or immediate scene-legibility of certain marked configurations
+								before elaborate internal translation or justificatory narration.
+							</td>
+							<td>
+								Structural readability claim only; not psychology thesis, innocence theory,
+								or license for person-ranking.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Publicness as Overlay</strong></td>
+							<td>
+								Frame-extension that distributes, amplifies, documents, repeats, or
+								sedimentizes readability and consequences without necessarily generating
+								the primary scene form.
+							</td>
+							<td>
+								Publicness is neither always the origin nor automatically irrelevant.
+								It modifies the consequence field.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Path-Cost / Stabilization Burden</strong></td>
+							<td>
+								Configuration-level language for operator-work required to keep a
+								configuration coherent, reversible, non-coercive, and dignity-preserving
+								under recurrence and temporality.
+							</td>
+							<td>
+								Path-cost does not classify persons, diagnose identities, rank
+								orientations, lower dignity, or authorize moral pathology.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Body as Non-Operator Remainder</strong></td>
+							<td>
+								The body is treated as material remainder or consequence interface that
+								forces visibility, irreversibility, and cost recognition without becoming
+								a new PMS operator.
+							</td>
+							<td>
+								Body remainder is not a person-ranking device and not a biological
+								taxonomy.
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="box">
+					<div class="box-title">
+						<span>Publicness overlay</span>
+						<span class="pill">□ extension</span>
+					</div>
+					<p class="small">
+						Publicness primarily intensifies <span class="code-inline">Ω</span> and
+						<span class="code-inline">Θ</span>, and interacts with
+						<span class="code-inline">□, Α, Λ</span>. It remains an overlay, not an origin
+						claim and not a new operator.
+					</p>
+				</div>
+			</section>
+
+			<div class="pagebreak"></div>
+
+			<!-- 7. Layer separation -->
+			<section id="layer-separation">
+				<h2>7. Layer separation and misreading guards</h2>
+
+				<p>
+					Internal framing, outer legibility, public circulation, and temporal
+					carryover may overlap, but must not be collapsed into one another.
+				</p>
+
+				<h3>7.1 Layer model</h3>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Layer</th>
+							<th>Question</th>
+							<th>Misreading prevented</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><strong>Internal framing</strong></td>
+							<td>How is the scene inhabited or named from within?</td>
+							<td>Assuming internal meaning is false or irrelevant.</td>
+						</tr>
+						<tr>
+							<td><strong>Outer legibility</strong></td>
+							<td>What action-form is structurally readable under asymmetry, exposure, repetition, and time?</td>
+							<td>Letting internal labels erase enacted form.</td>
+						</tr>
+						<tr>
+							<td><strong>Publicness</strong></td>
+							<td>Does visibility, documentation, circulation, reputation, or audience uptake modify consequences?</td>
+							<td>Treating publicity as either the whole problem or as irrelevant.</td>
+						</tr>
+						<tr>
+							<td><strong>Temporal carryover</strong></td>
+							<td>How does the scene continue across Θ?</td>
+							<td>Claiming that later narration rewinds accumulation.</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h3>7.2 Guard list</h3>
+				<ul>
+					<li>Understanding internal meaning does not erase external form.</li>
+					<li>Naming outer legibility does not imply person-ranking, diagnosis, or moral verdict.</li>
+					<li>Publicity may amplify, distribute, or sedimentize readability without necessarily creating it.</li>
+					<li>Practice labels do not by themselves settle outer structural form.</li>
+					<li>Pre-reflective readability does not settle meaning, worth, blame, or consent.</li>
+					<li>Outer legibility does not authorize public accusation by itself.</li>
+					<li>Publicness is an overlay, not the necessary origin of consequence.</li>
+					<li>Internal framing may be real without being total.</li>
+				</ul>
+
+				<div class="box">
+					<div class="box-title">
+						<span>Layer discipline</span>
+						<span class="pill">non-collapse rule</span>
+					</div>
+					<p class="small">
+						A scene may be internally framed one way, externally readable another way,
+						publicly circulated in a third way, and temporally carried in a fourth way.
+						PMS-SEX does not collapse these layers.
+					</p>
+				</div>
+			</section>
+
+			<div class="pagebreak"></div>
+
+			<!-- 8. Disturbance and path-cost -->
+			<section id="path-cost">
+				<h2>8. Disturbance and path-cost guard</h2>
+
+				<p>
+					PMS-SEX allows disturbance and path-cost language only as
+					configuration-language. It is inadmissible when converted into
+					person-language, diagnosis, humiliation, or ranking.
+				</p>
+
+				<h3>8.1 Allowed language</h3>
+				<ul>
+					<li>configuration-level entropy</li>
+					<li>path-cost</li>
+					<li>stabilization burden</li>
+					<li>attractor pressure</li>
+					<li>Θ-accumulation</li>
+					<li>Χ/Σ/Ψ-work required for governability</li>
+					<li>neutral disturbance as perturbation-language</li>
+				</ul>
+
+				<h3>8.2 Forbidden conversions</h3>
+				<ul>
+					<li>person-level pathology</li>
+					<li>sexual-orientation taxonomy</li>
+					<li>identity ranking</li>
+					<li>clinical diagnosis</li>
+					<li>moral pathology</li>
+					<li>humiliation or degradation of persons</li>
+					<li>using entropy-language to override D</li>
+				</ul>
+
+				<div class="box">
+					<div class="box-title">
+						<span>Final path-cost guard</span>
+						<span class="pill">configuration only</span>
+					</div>
+					<p class="small">
+						Disturbance-language is admissible only as configuration-language.
+						The moment it becomes person-language, diagnosis, rank, orientation
+						taxonomy, or humiliation, it leaves PMS-SEX.
+					</p>
+				</div>
+			</section>
+
+			<div class="pagebreak"></div>
+
+			<!-- 9. Reduced signatures -->
+			<section id="reduced-signatures">
+				<h2>9. Reduced signatures: paper-specific shorthand only</h2>
+
+				<p>
+					Reduced signatures are chapter-specific reading aids. They foreground local
+					operator clusters but do not alter PMS v1.3 order, dependencies, or
+					operator meanings.
+				</p>
+
+				<h3>9.1 Signature index</h3>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Label</th>
+							<th>Raw signature</th>
+							<th>Use</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><span class="code-inline">SEX_linear_spine</span></td>
+							<td>Linear operator spine / canonical PMS v1.3 flow</td>
+							<td><span class="code-inline">Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ</span></td>
+							<td>Canonical orientation.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">MF_1_2</span></td>
+							<td>Sexuality as Recurring Praxis Pressure</td>
+							<td><span class="code-inline">Δ → ∇ → □; early effective: □ → Λ → Α</span></td>
+							<td>Early pressure and frame formation.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">MF_3_2</span></td>
+							<td>Frame</td>
+							<td><span class="code-inline">Δ → ∇ → □ → (Λ) → Α</span></td>
+							<td>Frame as scene grammar.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">MF_4_2</span></td>
+							<td>Asymmetry</td>
+							<td><span class="code-inline">Δ → ∇ → □ → Λ → Α → Ω → Θ</span></td>
+							<td>Cost gradients under pattern formation.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">MF_5_2</span></td>
+							<td>Temporality</td>
+							<td><span class="code-inline">Δ → ∇ → □ → Λ → Α → Ω → Θ</span></td>
+							<td>Accumulation and irreversibility.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">MF_6_2</span></td>
+							<td>Exit Realism</td>
+							<td><span class="code-inline">(□ → Λ → Α) → Ω → Θ → (Χ/Σ/Ψ)</span></td>
+							<td>Transversal exit-realism cluster.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">MF_7_2</span></td>
+							<td>Non-Event</td>
+							<td><span class="code-inline">Δ → ∇ → □ → Λ → (Α) → (Ω/Θ)</span></td>
+							<td>Absence as active structure.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">MF_8_2</span></td>
+							<td>Pattern Formation</td>
+							<td><span class="code-inline">Δ → ∇ → □ → Λ → Α → (Ω → Θ)</span></td>
+							<td>Attractor and cost-axis emergence.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">MF_9_2</span></td>
+							<td>Recontextualization</td>
+							<td><span class="code-inline">Δ → ∇ → □₁ → (Λ) → Α → Ω/Θ → Φ → □₂</span></td>
+							<td>Re-embedding under Φ.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">MF_10_2</span></td>
+							<td>Distance</td>
+							<td><span class="code-inline">Δ → ∇ → □ → (Λ) → Α → Ω → Θ → Φ → Χ</span></td>
+							<td>Stop-capability and meta-position.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">MF_11_2</span></td>
+							<td>Integration</td>
+							<td><span class="code-inline">Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ</span></td>
+							<td>Contradiction handling.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">MF_12_2</span></td>
+							<td>Self-Binding</td>
+							<td><span class="code-inline">Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ</span></td>
+							<td>Trajectory binding.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">MF_14_3</span></td>
+							<td>Modulators</td>
+							<td><span class="code-inline">Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ</span></td>
+							<td>Full operatorial background for weightings.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">MF_15_2</span></td>
+							<td>Deviance as Consequence Structure</td>
+							<td><span class="code-inline">Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ; pulling arrows: Λ → Α → Ω → Θ</span></td>
+							<td>Configuration-level deviation, not person deviance.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">MF_16_2</span></td>
+							<td>High-Risk / Extreme Practices</td>
+							<td><span class="code-inline">Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ; pulling arrows: ∇ → □ → Ω → Θ</span></td>
+							<td>Intensity under Χ limiter.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">MF_17_2</span></td>
+							<td>Suspended Self-Binding Boundary Configuration</td>
+							<td><span class="code-inline">Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ</span></td>
+							<td>Ψ as deliberately suspended attribution condition.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">MF_18_2</span></td>
+							<td>Dysfunctional Expressions and Destructive Dynamics</td>
+							<td><span class="code-inline">Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ; pulling arrows: Λ → Α → Ω → Θ</span></td>
+							<td>Drift and destructive dynamics.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">MF_19_2</span></td>
+							<td>Functional Conditions and Warning Signals</td>
+							<td><span class="code-inline">Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ; dominant interaction: Ω → Θ, with accumulated Θ making Ω layouts more visible and consequential</span></td>
+							<td>Viability and warnings.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">D_pms_sex_application_formula_ch21_3</span></td>
+							<td>D-in-Practice application formula</td>
+							<td><span class="code-inline">D = explicit Ω + operative Χ + no covert Ψ demand under Θ, with outer-form readability preserved</span></td>
+							<td>Application-side D compliance; PMS-D remains Ψ/Χ/Ω-derived.</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="box">
+					<div class="box-title">
+						<span>Suspended Ψ clarification</span>
+						<span class="pill">Ch. 17</span>
+					</div>
+					<p class="small">
+						Suspended self-binding means <span class="code-inline">Ψ</span> is present
+						as a deliberately suspended attribution condition. It is not absent,
+						replaced, removed, or transformed into a new operator.
+					</p>
+				</div>
+			</section>
+
+			<div class="pagebreak"></div>
+
+			<!-- 10. Drift catalogue -->
+			<section id="drift-catalogue">
+				<h2>10. Drift catalogue: core dysfunction markers and corridors</h2>
+
+				<p>
+					Each marker is a configuration statement: “in this configuration…”.
+					Markers describe predictable structural consequences of operator
+					constellations. They are scene-bound, revisable, and non-diagnostic.
+				</p>
+
+				<h3>10.1 Core dysfunction markers</h3>
+
+				<details open>
+					<summary>(1) Covert self-binding demand (<span class="kbd">Ψ leak</span>)</summary>
+					<p class="small">
+						Meaning and identity-relevant stakes enter a frame narrated as limited,
+						suspended, local, or non-binding. Typical indicators include implicit
+						expectations, possession logic inside a play frame, meaning claims without
+						explicit frame legibility, and local enactments treated as identity proofs.
+						Structural result: <strong>Ψ</strong> becomes operative although suspension is
+						asserted.
+					</p>
+				</details>
+
+				<details>
+					<summary>(2) Asymmetry escalation (<span class="kbd">Ω escalation</span>)</summary>
+					<p class="small">
+						Asymmetry increases while remaining unacknowledged inside the frame.
+						Typical indicators include boundary testing, access pressure, power shifts
+						without explicit rule updates, uneven refusal or exit capacity, and exposure
+						gradients treated as mutual.
+					</p>
+				</details>
+
+				<details>
+					<summary>(3) Pseudo-symmetry</summary>
+					<p class="small">
+						Equality rhetoric functions as a lid on cost description. Consent or
+						mutuality language blocks analysis of unequal exposure, after-costs,
+						body remainder, outer legibility, temporality, or publicness overlays.
+					</p>
+				</details>
+
+				<details>
+					<summary>(4) Non-event escalation (<span class="kbd">Λ as steering</span>)</summary>
+					<p class="small">
+						Absence becomes an active steering mechanism. Withdrawal, silence,
+						indeterminacy, chronic “maybe,” or unmarked withholding shape practice more
+						than enactment.
+					</p>
+				</details>
+
+				<details>
+					<summary>(5) Attractor fixation (<span class="kbd">Α compulsivity</span>)</summary>
+					<p class="small">
+						Stabilization flips into fixation. Practice becomes non-substitutable,
+						repetition replaces choice, alternatives lose practical attractiveness, and
+						practice labels protect the route from re-reading.
+					</p>
+				</details>
+
+				<details>
+					<summary>(6) Loss of distance (<span class="kbd">Χ loss</span>)</summary>
+					<p class="small">
+						The meta-layer collapses. Stopping becomes practically unavailable,
+						hesitation is read as betrayal, de-escalation disappears, and outer-form
+						awareness becomes inaccessible.
+					</p>
+				</details>
+
+				<details>
+					<summary>(7) Temporal overload (<span class="kbd">Θ accumulation</span>)</summary>
+					<p class="small">
+						Costs accumulate faster than the frame can carry. Exit fictions persist,
+						collapse becomes abrupt, and outer legibility remains after internal closure
+						language claims the scene is over.
+					</p>
+				</details>
+
+				<details>
+					<summary>(8) Outer-form denial</summary>
+					<p class="small">
+						Internal framing or later recontextualization blocks analysis of enacted
+						form. “It was play,” “service,” “authenticity,” “devotion,” or “consent” is
+						used to end structural reading.
+					</p>
+				</details>
+
+				<h3>10.2 Dynamic chains</h3>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Chain</th>
+							<th>Raw</th>
+							<th>Reading</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><strong>Primary chain</strong></td>
+							<td><span class="code-inline">Ψ leak → Ω escalation → Χ loss → Α fixation → Θ overload → exit collapse</span></td>
+							<td>
+								Once meaning and attribution become covert, Ω becomes a steering
+								variable. If Χ is not operational, the script hardens through Α and
+								temporal costs accumulate until the exit fiction breaks.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Secondary chain</strong></td>
+							<td><span class="code-inline">internal-label capture → outer-form denial → publicness confusion → delayed cost recognition</span></td>
+							<td>
+								Practice labels settle the internal story while enacted form remains
+								structurally readable. Public reaction is treated either as the whole
+								problem or as irrelevant.
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<div class="pagebreak"></div>
+
+			<!-- 11. Viability -->
+			<section id="viability">
+				<h2>11. Viability: functional minimums, warnings, and corridor</h2>
+
+				<p>
+					Functional minimum conditions describe when a configuration remains
+					structurally governable under <strong>Ω/Θ/Λ</strong>, without systematic
+					D violation, without exit fictions, and without using internal labels to
+					erase enacted form. Criteria only; no how-to.
+				</p>
+
+				<h3>11.1 Functional minimum conditions</h3>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Label</th>
+							<th>Minimal form</th>
+							<th>Core checks</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><span class="code-inline">explicit_omega_recognition</span></td>
+							<td>Explicit Ω recognition</td>
+							<td><strong>Ω</strong> must be nameable and regulable within the frame.</td>
+							<td>Cost, risk, access, exposure, exit, repair, and reputational gradients are not denied.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">theta_awareness</span></td>
+							<td>Θ awareness</td>
+							<td>Consequences are treated as real: exit realism.</td>
+							<td>Frequency, repetition, after-effects, and repair windows are carried; recontextualization does not claim rewind.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">stable_chi_capacity</span></td>
+							<td>Stable Χ capacity</td>
+							<td><strong>Χ</strong> is operative, not ornamental.</td>
+							<td>Stop-capability, distance, meta-commentability, and outer-form awareness remain practically available.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">no_psi_substitution</span></td>
+							<td>No Ψ substitution</td>
+							<td>No <strong>Ψ</strong> leak as default carrier of stakes.</td>
+							<td>Sexual practice does not substitute for integration, self-worth, identity proof, or relationship clarification.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">lambda_tolerance_without_escalation</span></td>
+							<td>Λ tolerance without escalation</td>
+							<td><strong>Λ</strong> can exist without steering or coercion.</td>
+							<td>Pause, fatigue, unavailability, cancellation, and hesitation remain tolerable.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">internal_framing_accountable_to_outer_form</span></td>
+							<td>Internal framing accountable to outer form</td>
+							<td>Internal framing does not erase outer structural form.</td>
+							<td>Practice labels clarify internal occupation but do not end structural analysis.</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">publicness_handled_as_overlay</span></td>
+							<td>Publicness handled as overlay</td>
+							<td>Publicness modifies readability and consequence without being confused with origin.</td>
+							<td>Publicity is neither sole source of harm nor ignored where it amplifies or sediments consequence.</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h3>11.2 Warning signals</h3>
+				<ul>
+					<li>
+						<strong>Φ narrative inflation:</strong>
+						reframing repeatedly covers costs or asymmetry; clarification and cost naming
+						are replaced by re-description.
+					</li>
+					<li>
+						<strong>Narrowing of □ alternatives:</strong>
+						Α monopolizes □; only one frame works; alternatives are devalued or rendered impossible.
+					</li>
+					<li>
+						<strong>Ω moralization instead of regulation:</strong>
+						asymmetry is handled through guilt, entitlement, or accusation rather than regulation.
+					</li>
+					<li>
+						<strong>Persistence despite structural undercutting:</strong>
+						Α + Θ overrun Χ; repetition continues despite recognized costs.
+					</li>
+					<li>
+						<strong>Θ cost externalization:</strong>
+						bodily, reputational, emotional, social, exposure-related, or binding-related
+						consequences are offloaded.
+					</li>
+					<li>
+						<strong>Outer-form denial:</strong>
+						internal naming blocks structural reading; visible action-form remains unread.
+					</li>
+					<li>
+						<strong>Publicness confusion:</strong>
+						publicness is misread as origin or as nothing rather than overlay.
+					</li>
+				</ul>
+				<div class="pagebreak"></div>
+				<h3>11.3 Minimal viability corridor</h3>
+				<div class="box small">
+					<pre>□ explicit
++ Ω nameable
++ Θ realistic
++ Χ operative
++ Λ tolerable
++ Ψ handled
+(+ Σ reachable)
+= structurally governable configuration</pre>
+				</div>
+
+				<p class="small">
+					This corridor expresses structural governability only. It makes no moral
+					claim, defines no normality threshold, and does not prescribe action.
+				</p>
+			</section>
+
+			<div class="pagebreak"></div>
+
+			<!-- 12. Modulators -->
+			<section id="modulators">
+				<h2>12. Modulators: non-operator weightings, “types without typing”</h2>
+
+				<p>
+					Modulators are praxeological, not psychological. They operate through
+					frames, repetition, and cost layouts rather than through motive narratives.
+					They weight likelihood and dominance of existing operators in scene
+					configurations without typing persons or explaining inner causes.
+				</p>
+
+				<h3>12.1 Minimal operatorial background</h3>
+				<div class="box small">
+					<span class="code-inline">Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ</span>
+				</div>
+
+				<h3>12.2 Central modulators</h3>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Modulator</th>
+							<th>Key dimensions</th>
+							<th>Structural effect</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><strong>□₀ Early framing</strong></td>
+							<td>Speakability, order, boundary clarity, internal naming vs outer-form accountability.</td>
+							<td>Strong □₀ supports later frame stability; weak □₀ increases ambiguity and retroactive rewriting.</td>
+						</tr>
+						<tr>
+							<td><strong>Ω₀ Asymmetry calibration</strong></td>
+							<td>Proximity/distance, control/exposure, choice power, capacity to name cost gradients.</td>
+							<td>Calibrated Ω₀ supports regulation; blurred Ω₀ increases pseudo-symmetry until Θ forces visibility.</td>
+						</tr>
+						<tr>
+							<td><strong>Λ density</strong></td>
+							<td>Withdrawal, rejection, hesitation, cancellation, indeterminacy, chronic mismatch.</td>
+							<td>Higher Λ density raises interpretive pressure and substitute-script formation.</td>
+						</tr>
+						<tr>
+							<td><strong>Θ stability</strong></td>
+							<td>Continuity vs fragmentation, repeatability vs volatility, commitments vs discontinuous episodes.</td>
+							<td>Stable Θ makes path dependence legible; fragmented Θ obscures exit realism through narrative resets.</td>
+						</tr>
+						<tr>
+							<td><strong>Φ habituation</strong></td>
+							<td>Reinterpretation as tension reduction, narrative repair, frequent switching of what the scene “really was”.</td>
+							<td>High Φ can stabilize locally but risks pseudo-resolution when Α/Ω/Θ remain unchanged.</td>
+						</tr>
+						<tr>
+							<td><strong>Χ mode</strong></td>
+							<td>Distance as protection, control, devaluation, meta-capacity; outer-form awareness availability.</td>
+							<td>Χ as meta-capacity supports repair; Χ as control or devaluation produces brittle stability.</td>
+						</tr>
+						<tr>
+							<td><strong>Publicness / media modulators</strong></td>
+							<td>Visibility, documentation, comparison pressure, reputation, circulation, sedimentation.</td>
+							<td>Increased publicness can harden Θ costs and amplify Ω gradients.</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h3>12.3 Interplay patterns</h3>
+				<ul>
+					<li>
+						<strong>Λ-dense + Χ-weak + Θ-fragmented:</strong>
+						brittle stabilization; pressure rises, stop-capability fails, and scripts consolidate as compensation.
+					</li>
+					<li>
+						<strong>Ω₀ blurred + □ unstable:</strong>
+						pseudo-symmetry; costs distribute unevenly while the frame remains narratively equal.
+					</li>
+					<li>
+						<strong>Φ-high + Σ-weak:</strong>
+						narrative inflation; re-framing substitutes for synthesis.
+					</li>
+					<li>
+						<strong>Internal-label capture + publicness confusion:</strong>
+						internal description blocks outer-form analysis while publicity is treated either as the whole problem or as irrelevant.
+					</li>
+				</ul>
+
+				<div class="box">
+					<div class="box-title">
+						<span>Demarcation</span>
+						<span class="pill">no person typing</span>
+					</div>
+					<p class="small">
+						Modulator ≠ character. Modulator ≠ blame. Modulator ≠ diagnosis.
+						Modulator ≠ sexual identity. Modulator ≠ orientation taxonomy.
+					</p>
+				</div>
+			</section>
+
+			<div class="pagebreak"></div>
+
+			<!-- 13. Minimal psychology -->
+			<section id="minimal-psychology">
+				<h2>13. Minimal psychology adapter: structural self-check only</h2>
+
+				<p>
+					“Minimal psychology” is a name for a structural self-check adapter,
+					not a psychological explanatory layer. It activates where Ch. 18 drift
+					markers and Ch. 19 viability failures are already structurally legible,
+					yet repetition continues unchanged because structural description alone
+					no longer interrupts the path.
+				</p>
+
+				<h3>13.1 Boundaries</h3>
+				<ul>
+					<li>no diagnosis</li>
+					<li>no motive theory</li>
+					<li>no person typing</li>
+					<li>no identity ranking</li>
+					<li>no moral evaluation</li>
+					<li>no therapeutic method</li>
+					<li>no conversion into clinical taxonomy</li>
+				</ul>
+
+				<h3>13.2 Activation conditions</h3>
+				<p>The adapter activates only when all of the following hold:</p>
+				<ul>
+					<li>drift markers from Chapter 18 are present;</li>
+					<li>minimal viability conditions from Chapter 19 are no longer restoring correction;</li>
+					<li>the configuration is still carried voluntarily and repeatedly.</li>
+				</ul>
+
+				<h3>13.3 Primary structural question</h3>
+				<div class="box">
+					<div class="box-title">
+						<span>Permitted question</span>
+						<span class="pill">structural only</span>
+					</div>
+					<p class="small">
+						“What structural role is this desire playing in this configuration?”
+					</p>
+				</div>
+
+				<p>
+					The colloquial form “Why do I really desire X?” is admissible only if
+					immediately translated back into the structural question above.
+				</p>
+
+				<h3>13.4 Permitted warning hypothesis</h3>
+				<p>
+					Under sustained drift, one limited hypothesis becomes admissible:
+				</p>
+				<div class="box small">
+					In this configuration, desire-language may be functioning as a
+					drift-maintaining mechanism rather than as play, exploration, negotiated
+					intensity, or bounded practice.
+				</div>
+
+				<p>
+					This hypothesis does not explain desire. It is never confirmed
+					psychologically; it is only structurally tested against enacted patterns.
+				</p>
+
+				<h3>13.5 Test criteria</h3>
+				<ul>
+					<li><strong>Repeated D-in-Practice failure:</strong> enactments repeatedly undermine D as an enactment constraint.</li>
+					<li><strong>Θ damage despite knowledge:</strong> foreseeable harm is explicitly acknowledged, but repetition continues unchanged.</li>
+					<li><strong>Progressive frame narrowing:</strong> alternatives lose attractiveness or feasibility.</li>
+					<li><strong>Desire used against Χ:</strong> desire is invoked to bypass stopping, hesitation, or meta-commentary.</li>
+					<li><strong>Publicness displacement:</strong> public reaction is treated as the whole problem while the enacted configuration remains unread.</li>
+				</ul>
+
+				<h3>13.6 Allowed output format</h3>
+				<ul>
+				    <li>“In this configuration, drift persistence is present.”</li>
+				    <li>“The configuration is no longer correcting itself structurally.”</li>
+				    <li>“Distance (Χ), frame clarity (□), and Θ realism require reactivation.”</li>
+				    <li>“Internal framing is no longer sufficient to settle the enacted structure.”</li>
+				    <li>“Outer legibility and cost distribution require re-reading without person-ranking.”</li>
+				</ul>
+
+				<div class="box">
+					<div class="box-title">
+						<span>Output boundary</span>
+						<span class="pill">alarm only</span>
+					</div>
+					<p class="small">
+						No conclusions about character, pathology, motive, identity,
+						orientation, or worth are permitted.
+					</p>
+				</div>
+			</section>
+
+			<div class="pagebreak"></div>
+
+			<!-- 14. Dignity -->
+			<section id="dignity">
+				<h2>14. Dignity-in-Practice module</h2>
+
+				<p>
+					Dignity-in-Practice is a PMS-derived construct. PMS-SEX adds
+					application-side D-compliance conditions but does not revise PMS-D.
+				</p>
+
+				<h3>14.1 Canonical and application formulas</h3>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Formula</th>
+							<th>Expression</th>
+							<th>Status</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><strong>Canonical PMS-D</strong></td>
+							<td><span class="code-inline">["Ψ", "Χ", "Ω"]</span></td>
+							<td>PMS-derived construct, unchanged by PMS-SEX.</td>
+						</tr>
+						<tr>
+							<td><strong>PMS-SEX application formula</strong></td>
+							<td>
+								<span class="code-inline">explicit Ω + operative Χ + no covert Ψ demand under Θ, with outer-form readability preserved</span>
+							</td>
+							<td>Application-side D-compliance guard for sexual praxis.</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h3>14.2 Principle</h3>
+				<p>
+					D applies in enactment, not as status. PMS-SEX has no entitlement to
+					the person: no authority over motives, worth, identity, biography,
+					orientation, or what someone “really is.” PMS-SEX has only entitlement
+					to D in enactment: restraint, respect, and non-degradation within the
+					accepted frame.
+				</p>
+
+				<h3>14.3 Outer-form guard</h3>
+				<p>
+					Naming an externally readable humiliation-form, degradation-form,
+					asymmetry-form, or exposure-form is not itself a violation of the
+					anti-moral stance. The violation would lie in converting scene analysis
+					into person-ranking, humiliation, diagnosis, identity verdict, or moral
+					contempt.
+				</p>
+
+				<h3>14.4 Critique language</h3>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Not justified when</th>
+							<th>Structurally legible when</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>frame respect is maintained</td>
+							<td>Ψ leak appears</td>
+						</tr>
+						<tr>
+							<td>no D-in-Practice failure occurs</td>
+							<td>Ω escalation appears</td>
+						</tr>
+						<tr>
+							<td>no Ω escalation occurs</td>
+							<td>pseudo-symmetry makes costs unnameable</td>
+						</tr>
+						<tr>
+							<td>no Ψ leak occurs</td>
+							<td>Θ consequences are ignored or externalized</td>
+						</tr>
+						<tr>
+							<td>outer-form naming remains non-punitive</td>
+							<td>outer-form denial blocks scene readability</td>
+						</tr>
+						<tr>
+							<td>publicness is not weaponized</td>
+							<td>publicness is weaponized or denied</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="box">
+					<div class="box-title">
+						<span>D guardrail</span>
+						<span class="pill">protection-first</span>
+					</div>
+					<p class="small">
+						Any use of D for shaming, public pillory, identity labeling,
+						orientation ranking, diagnosis, or person degradation is a misuse
+						pattern and becomes critique-relevant itself.
+					</p>
+				</div>
+			</section>
+
+			<div class="pagebreak"></div>
+
+			<!-- 15. MIP docking -->
+			<section id="mip-docking">
+				<h2>15. MIP docking interface</h2>
+
+				<p>
+					The MIP docking interface is optional and evaluative. PMS-SEX explains how
+					sexual practice works structurally. MIP explains when critique is legitimate
+					in system and publicity contexts. Docking is a context shift, not a merger.
+				</p>
+
+				<h3>15.1 No back-projection</h3>
+				<ul>
+					<li>MIP must not import moral psychology into PMS-SEX’s descriptive layer.</li>
+					<li>PMS-SEX must not smuggle evaluation as neutral description.</li>
+					<li>Outer structural legibility at the PMS-SEX layer does not by itself authorize public critique.</li>
+					<li>Higher path-cost or disturbance does not by itself establish immaturity, blame, pathology, or moral failure.</li>
+				</ul>
+
+				<h3>15.2 Docking axes</h3>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Axis</th>
+							<th>Name</th>
+							<th>Meaning in docking context</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr><td><strong>A</strong></td><td>Awareness</td><td>Structural awareness, not psychological insight.</td></tr>
+						<tr><td><strong>C</strong></td><td>Coherence</td><td>Stability over time under Θ + Λ + □.</td></tr>
+						<tr><td><strong>R</strong></td><td>Responsibility</td><td>Self-binding and consequence handling under Ω + Θ.</td></tr>
+						<tr><td><strong>P</strong></td><td>Power</td><td>Real agency, alternatives, and choice capacity.</td></tr>
+					</tbody>
+				</table>
+
+				<p>
+					<strong>Axis guard:</strong> A/C/R/P here are MIP docking axes for evaluative
+					critique. They do not modify PMS-derived axes
+					<span class="code-inline">A, C, R, E, D</span>, introduce a new PMS primitive,
+					or replace PMS operator derivation.
+				</p>
+
+				<h3>15.3 IA box</h3>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Code</th>
+							<th>Name</th>
+							<th>Question</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr><td><strong>T</strong></td><td>Transparent</td><td>Was the asymmetry legible?</td></tr>
+						<tr><td><strong>J</strong></td><td>Justified</td><td>Was it grounded in a protected good or legitimate constraint?</td></tr>
+						<tr><td><strong>TB</strong></td><td>Time-bound</td><td>Was it limited and reviewable?</td></tr>
+						<tr><td><strong>R</strong></td><td>Reversible</td><td>Were correction and exit pathways structurally available?</td></tr>
+					</tbody>
+				</table>
+
+				<div class="box">
+					<div class="box-title">
+						<span>Docking guard</span>
+						<span class="pill">no moral back-projection</span>
+					</div>
+					<p class="small">
+						PMS-SEX outer-form naming does not automatically license public accusation.
+						MIP critique does not retroactively convert PMS-SEX structural descriptions
+						into moral verdicts.
+					</p>
+				</div>
+			</section>
+
+			<div class="pagebreak"></div>
+
+			<!-- 16. Limits -->
+			<section id="limits">
+				<h2>16. Limits and scope discipline</h2>
+
+				<h3>16.1 PMS-SEX models</h3>
+				<ul>
+					<li>scenes and enactments</li>
+					<li>frames and frame stability</li>
+					<li>asymmetries and cost layouts</li>
+					<li>repetition, trajectories, and irreversibility</li>
+					<li>non-events, absence, and expectation fields</li>
+					<li>outer legibility and publicness overlays</li>
+					<li>drift, stabilization, and exit conditions</li>
+				</ul>
+
+				<h3>16.2 PMS-SEX does not model</h3>
+				<ul>
+					<li>persons</li>
+					<li>personality, disposition, or character</li>
+					<li>inner motives, drives, or experiential qualities</li>
+					<li>developmental histories or causal psychologies</li>
+					<li>sexual identity, orientation, or worth</li>
+					<li>individual responsibility beyond structural attribution</li>
+				</ul>
+
+				<h3>16.3 Configuration scope</h3>
+				<p>
+					PMS-SEX does not claim isomorphism across all sexual configurations.
+					Configurations shaped by different public, institutional, identity, or
+					community-legibility conditions may exhibit different
+					<strong>Ω</strong>, <strong>□</strong>, <strong>Λ</strong>, <strong>Θ</strong>, and
+					<strong>Ψ</strong> profiles.
+				</p>
+
+				<h3>16.4 Psychology scope</h3>
+				<p>
+					Psychology is subordinated, not denied. It may refine a reading only after
+					structural reconstruction via Δ–Ψ, cost layout, outer legibility, and
+					publicness overlays have already been reconstructed.
+				</p>
+
+				<h3>16.5 Forbidden psychology uses</h3>
+				<ul>
+					<li>bypassing Ω accounting</li>
+					<li>dissolving Θ irreversibility</li>
+					<li>personalizing what remains structurally induced</li>
+					<li>erasing outer form with inner narrative</li>
+					<li>converting drift into diagnosis</li>
+					<li>converting path-cost into identity rank</li>
+					<li>short-circuiting Χ and reversibility</li>
+				</ul>
+
+				<h3>16.6 Explicit exclusions</h3>
+				<ul>
+					<li>no how-to guidance</li>
+					<li>no risk-management manual</li>
+					<li>no therapeutic, clinical, medical, or forensic authority</li>
+					<li>no optimization logic for desire, bonding, or satisfaction</li>
+					<li>no taxonomy of sexual identities or orientations</li>
+					<li>no diagnosis of persons, groups, practices, or communities</li>
+					<li>no moral ranking from statistical default, lower entropy, or stronger canalization</li>
+				</ul>
+
+				<div class="box">
+					<div class="box-title">
+						<span>Non-capture openness</span>
+						<span class="pill">limits preserved</span>
+					</div>
+					<p class="small">
+						Translation into PMS terms does not prove exhaustive capture, and refusal
+						of PMS terms does not automatically indicate denial, immaturity, or drift.
+					</p>
+				</div>
+			</section>
+
+			<div class="pagebreak"></div>
+
+			<!-- 17. Glossary -->
+			<section id="glossary">
+				<h2>17. Appendix glossary concepts</h2>
+
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Concept</th>
+							<th>Definition</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr><td><strong>Scene</strong></td><td>A bounded enactment unit rendered legible by a frame (□) and carried through time (Θ).</td></tr>
+						<tr><td><strong>Configuration</strong></td><td>A concrete arrangement of operators as enacted; not a person, trait, identity, or diagnosis.</td></tr>
+						<tr><td><strong>Drift</strong></td><td>Predictable movement toward instability or harm when costs accumulate faster than regulation capacity.</td></tr>
+						<tr><td><strong>Viability</strong></td><td>Structural capacity of a configuration to remain governable under Ω, Θ, and Λ without systematic D violation or exit fiction.</td></tr>
+						<tr><td><strong>Cost layout</strong></td><td>Patterned distribution of burdens, risks, exposure, and consequences across roles and time: Ω under Θ.</td></tr>
+						<tr><td><strong>Exit realism</strong></td><td>Whether stopping, leaving, or undoing remains practically available under accumulated costs.</td></tr>
+						<tr><td><strong>Pseudo-symmetry</strong></td><td>Frame rhetoric that denies real asymmetry, rendering costs unnameable and conflict non-negotiable.</td></tr>
+						<tr><td><strong>Narrative substitution</strong></td><td>Use of recontextualization (Φ) to claim resolution while structural costs and scripts remain unchanged.</td></tr>
+						<tr><td><strong>Frame narrowing</strong></td><td>Loss of alternative viable scenes; one script becomes non-substitutable through Α monopolization.</td></tr>
+						<tr><td><strong>Drift marker</strong></td><td>A structural signal indicating elevated risk of destructive dynamics.</td></tr>
+						<tr><td><strong>Outer legibility</strong></td><td>The structurally readable action-form a scene presents under visible asymmetry, exposure, markedness, repetition, and consequence.</td></tr>
+						<tr><td><strong>Internal framing</strong></td><td>How a scene is inhabited, narrated, or lived from within the configuration.</td></tr>
+						<tr><td><strong>Pre-reflective readability</strong></td><td>Early or immediate scene-legibility of marked configurations prior to elaborate internal translation or justificatory narration.</td></tr>
+						<tr><td><strong>Publicness as overlay</strong></td><td>Publicness as frame-extension that distributes, amplifies, documents, repeats, or sedimentizes readability and consequences.</td></tr>
+						<tr><td><strong>Humiliation-form / exposure-form</strong></td><td>Structurally readable action-form characterized by marked asymmetry, exposure concentration, degradation-nearness, or visible vulnerability. Scene form, not person worth.</td></tr>
+						<tr><td><strong>Entropic path structure</strong></td><td>A configuration’s stabilization difficulty under frame, attractor formation, asymmetry, temporality, distance, integration, and self-binding.</td></tr>
+						<tr><td><strong>Neutral disturbance</strong></td><td>Structural term for deviation, perturbation, instability, or added stabilization burden; no moral failure or lower dignity.</td></tr>
+						<tr><td><strong>Path-cost</strong></td><td>Operator-work required for a configuration to remain coherent, reversible, non-coercive, and dignity-preserving over time.</td></tr>
+						<tr><td><strong>Stabilization burden</strong></td><td>Amount of framing, distance, integration, self-binding discipline, or cost accounting required to prevent narrowing, cost externalization, or collapse.</td></tr>
+						<tr><td><strong>Configuration-level deviation</strong></td><td>Structural divergence from a lower-cost or more strongly stabilized path. Applies to scene organization, not persons or identities.</td></tr>
+					</tbody>
+				</table>
+			</section>
+
+			<div class="pagebreak"></div>
+
+			<!-- 18. Chapter markers -->
+			<section id="chapter-markers">
+				<h2>18. Quote-ready chapter markers</h2>
+
+				<p>
+					The following markers compactly express chapter closures or final guards.
+					They are retrieval and citation aids, not independent axioms.
+				</p>
+
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Ch.</th>
+							<th>Marker</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr><td>1</td><td>Sexuality is not optional enactment but recurring praxis pressure: what matters is how a configuration carries ∇ under □ across Λ and Θ.</td></tr>
+						<tr><td>2</td><td>Drive does not disappear when it is suppressed; it reappears later as absence, habit, and accumulated cost.</td></tr>
+						<tr><td>3</td><td>What makes a sexual situation consequential is not what was meant, but how the situation was framed—and when framing is unclear, costs do not vanish, they drift.</td></tr>
+						<tr><td>4</td><td>Asymmetry is not a moral charge but a cost layout: if uneven exposure is not handled in the situation, it resurfaces later as conflict and accumulated consequence.</td></tr>
+						<tr><td>5</td><td>Time does not pause sexuality: postponement redistributes costs, repetition stabilizes patterns, and consequences grow even when nothing seems to happen.</td></tr>
+						<tr><td>6</td><td>Leaving changes what comes next, not what already counts: exits redirect trajectories, but time keeps the bill.</td></tr>
+						<tr><td>7</td><td>When a situation carries expectations, silence is not neutral: absence does work, shifts burdens, and shapes what comes next.</td></tr>
+						<tr><td>8</td><td>What repeats becomes easier, what is easier becomes default, and what becomes default quietly shapes who carries the costs.</td></tr>
+						<tr><td>9</td><td>Redirection does not remove pressure; it moves it, changing who carries the costs and where they show up.</td></tr>
+						<tr><td>10</td><td>Distance does not end pressure; it makes stopping possible before pressure turns into a path.</td></tr>
+						<tr><td>11</td><td>Integration is the ability to hold conflicting demands together; when it is unavailable, stability is usually bought by pushing the conflict somewhere else.</td></tr>
+						<tr><td>12</td><td>Sexuality starts to cost when scenes stop being local and begin to count across time.</td></tr>
+						<tr><td>13</td><td>No matter how the story is told, the body keeps the record.</td></tr>
+						<tr><td>14</td><td>What keeps happening is often less about who someone is than about how the situation is weighted.</td></tr>
+						<tr><td>15</td><td>Deviance is not who someone is, but what a situation becomes when one way of handling keeps working and nothing interrupts it.</td></tr>
+						<tr><td>16</td><td>Intensity does not create the danger; unmatched intensity does.</td></tr>
+						<tr><td>17</td><td>Suspending self-binding can work locally, but only while the situation itself carries the weight that identity usually does.</td></tr>
+						<tr><td>18</td><td>Dysfunctional dynamics are rarely sudden: they are structurally prepared when Ψ leaks, Ω becomes a steering variable, Χ collapses, Α fixates, and Θ accumulation breaks the exit fiction.</td></tr>
+						<tr><td>19</td><td>Functional practice is defined by governability, not normality: Ω nameable, Θ real, Χ operative, Ψ not substituted, Λ tolerable, inner framing accountable to outer form, and publicness kept in proportion.</td></tr>
+						<tr><td>20</td><td>Minimal psychology in PMS-SEX activates when drift persists despite clarity: it does not explain desire, it signals that repetition, accumulation, and frame narrowing are no longer correcting themselves.</td></tr>
+						<tr><td>21</td><td>Dignity in sexual practice is not about who someone is, but about how asymmetry is carried: when stopping works, meaning stays bounded, and consequences are acknowledged, critique is possible without humiliation.</td></tr>
+						<tr><td>22</td><td>PMS-SEX explains how structures work; MIP explains when critique is legitimate—docking the two adds clarity without turning analysis into moral judgment.</td></tr>
+						<tr><td>23</td><td>PMS-SEX remains valid by stopping where other lenses begin: it explains what configurations do over time, without turning structure into psychology, taxonomy, moral rank, or advice.</td></tr>
+					</tbody>
+				</table>
+
+				<div class="box">
+					<div class="box-title">
+						<span>Final guard marker</span>
+						<span class="pill">Ch. 24</span>
+					</div>
+					<p class="small">
+						PMS-SEX replaces neither decisions, nor responsibility, nor tragedy.
+						It makes visible where costs emerge, when they tip, and why many conflicts
+						arise not from malice but from structural opacity. Internal framing does
+						not erase outer form; outer legibility does not authorize person-ranking.
+						Publicity may intensify what a scene becomes, but does not necessarily
+						create what the scene already presents. Disturbance, entropy, deviation,
+						and path-cost language name structural stabilization burden, not human
+						worth, identity rank, orientation status, or clinical disorder.
+					</p>
+				</div>
+			</section>
+
+			<div class="pagebreak"></div>
+
+			<!-- 19. Structural tools -->
+			<section id="structural-tools">
+				<h2>19. Structural tools: operator table and structural map</h2>
+
+				<h3>19.1 Operator table</h3>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Operator</th>
+							<th>Name</th>
+							<th>Minimal function in PMS-SEX</th>
+							<th>Typical drift markers</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><strong>Δ</strong></td>
+							<td>Difference</td>
+							<td>Creates distinctions: inside/outside, allowed/forbidden, self/other, private/public, local/binding-relevant.</td>
+							<td>Undifferentiated pressure; fusion; illegibility of boundaries.</td>
+						</tr>
+						<tr>
+							<td><strong>∇</strong></td>
+							<td>Impulse</td>
+							<td>Introduces directional pressure demanding handling.</td>
+							<td>Escalation without framing; pressure outruns coordination; urgency becomes self-justifying.</td>
+						</tr>
+						<tr>
+							<td><strong>□</strong></td>
+							<td>Frame</td>
+							<td>Constrains impulse into scene grammar: roles, rules, permissions, timing, publicity overlays.</td>
+							<td>Ambiguity drift; retroactive rule changes; practice labels replacing frame analysis; mono-frame dominance.</td>
+						</tr>
+						<tr>
+							<td><strong>Λ</strong></td>
+							<td>Non-Event</td>
+							<td>Makes absence, delay, silence, hesitation, cancellation, and withdrawal structurally active.</td>
+							<td>Silence as leverage; withdrawal as punishment; chronic maybe/later; interpretive overload.</td>
+						</tr>
+						<tr>
+							<td><strong>Α</strong></td>
+							<td>Attractor</td>
+							<td>Stabilizes recurrent scripts and lower-friction repeatability.</td>
+							<td>Script monopolization; loss of alternatives; repetition replaces choice.</td>
+						</tr>
+						<tr>
+							<td><strong>Ω</strong></td>
+							<td>Asymmetry</td>
+							<td>Produces gradients of access, exposure, obligation, definitional control, exit margin, repair burden, and cost-bearing.</td>
+							<td>Pseudo-symmetry; covert cost shifting; exposure concentration; power as steering variable.</td>
+						</tr>
+						<tr>
+							<td><strong>Θ</strong></td>
+							<td>Temporality</td>
+							<td>Extends configurations into trajectories: accumulation, irreversibility, memory, documentation, body persistence, exit realism.</td>
+							<td>Exit fiction; delayed collapse; persistence despite visible costs; public sedimentation.</td>
+						</tr>
+						<tr>
+							<td><strong>Φ</strong></td>
+							<td>Recontextualization</td>
+							<td>Relocates an existing structure into a new frame without dissolving already active costs.</td>
+							<td>Narrative substitution; reset claims; cost denial; inner re-description used to erase outer form.</td>
+						</tr>
+						<tr>
+							<td><strong>Χ</strong></td>
+							<td>Distance</td>
+							<td>Enables stop-capability, meta-position, pause, refusal, humor, re-reading, de-escalation, non-fusion.</td>
+							<td>Stop punished; critique read as betrayal; outer-form awareness forbidden; escalation lock-in.</td>
+						</tr>
+						<tr>
+							<td><strong>Σ</strong></td>
+							<td>Integration</td>
+							<td>Synthesizes contradictions without compensation, denial, splitting, or coercive simplification.</td>
+							<td>Fragmentation; Φ substitutes for Σ; Α/Ω/Λ compensate for unresolved contradiction.</td>
+						</tr>
+						<tr>
+							<td><strong>Ψ</strong></td>
+							<td>Self-Binding</td>
+							<td>Binds integrated trajectories into identity-relevant commitments over time.</td>
+							<td>Ψ leak; possession or self-worth claims smuggled into limited frames; identity capture.</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h3>19.2 Structural map</h3>
+				<div class="box small">
+					<div>
+						<strong>Canonical spine:</strong>
+						<span class="code-inline">Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ</span>
+					</div>
+					<div class="hr"></div>
+					<div>
+						<strong>Activation and legibility:</strong>
+						<span class="code-inline">Δ, ∇, □</span> —
+						difference and impulse become readable only through frame grammar.
+					</div>
+					<div class="hr"></div>
+					<div>
+						<strong>Absence and stabilization:</strong>
+						<span class="code-inline">Λ, Α</span> —
+						absence is not neutral; repetition is not free.
+					</div>
+					<div class="hr"></div>
+					<div>
+						<strong>Cost axis core:</strong>
+						<span class="code-inline">Ω, Θ</span> —
+						once Α exists, Ω and Θ become consequence-effective.
+					</div>
+					<div class="hr"></div>
+					<div>
+						<strong>Narrative handling:</strong>
+						<span class="code-inline">Φ</span> —
+						regulated when paired with operative Χ; drift-prone without Χ.
+					</div>
+					<div class="hr"></div>
+					<div>
+						<strong>Regulation gate:</strong>
+						<span class="code-inline">Χ</span> —
+						Χ loss is the strongest drift predictor in PMS-SEX.
+					</div>
+					<div class="hr"></div>
+					<div>
+						<strong>Coherence handling:</strong>
+						<span class="code-inline">Σ</span> —
+						if Σ fails, substitutes take over: Α repetition, Φ inflation, Ω control, or Λ withdrawal.
+					</div>
+					<div class="hr"></div>
+					<div>
+						<strong>Identity binding zone:</strong>
+						<span class="code-inline">Ψ</span> —
+						Ψ leak indicates binding pressure inside frames that cannot carry identity relevance.
+					</div>
+				</div>
+				<div class="pagebreak"></div>
+				<h3>19.3 Highlighted drift corridors</h3>
+				<div class="box small">
+					<pre>Primary:
+Ψ leak
+ → Ω escalation
+ → Χ loss
+ → Α fixation
+ → Θ overload
+ → exit collapse
+
+Compressed Appendix D:
+Λ density
+ → Α monopolization
+ → Ω as steering
+ → Θ accumulation
+ → Χ collapse
+ → late Ψ capture
+
+Secondary:
+internal-label capture
+ → outer-form denial
+ → publicness confusion
+ → delayed cost recognition</pre>
+				</div>
+			</section>
+
+			<div class="pagebreak"></div>
+
+			<!-- 20. Analysis checklist -->
+			<section id="analysis-checklist">
+				<h2>20. Analysis checklist: scene-bound application protocol</h2>
+
+				<p>
+					The analysis checklist is criterial, non-instructional, and non-diagnostic.
+					It must be used with the validity gate: <strong>Χ + reversibility + D</strong>.
+				</p>
+
+				<ol>
+					<li>
+						<strong>S1 — Scene boundary:</strong>
+						Define the scene through <strong>□</strong>: inside/outside, timing, role
+						grammar, permitted/not permitted, local/binding-relevant. Confirm that all
+						readings remain configuration-bound and revisable.
+					</li>
+					<li>
+						<strong>S2 — Canonical dependency check:</strong>
+						Confirm the reading does not alter the PMS v1.3 spine. If using a reduced
+						signature, treat it as shorthand only.
+					</li>
+					<li>
+						<strong>S3 — Reduced operator signature:</strong>
+						Select the closest reduced_signatures entry and record chapter reference.
+						Do not infer a new dependency relation from a shorthand cluster.
+					</li>
+					<li>
+						<strong>S4 — Inner / outer / public layer scan:</strong>
+						Identify internal framing, outer legibility, publicness, and temporal
+						carryover. Do not let any one layer erase the others.
+					</li>
+					<li>
+						<strong>S5 — Cost axis scan:</strong>
+						Identify <strong>Ω</strong> gradients and <strong>Θ</strong> trajectory:
+						accumulation, irreversibility, repetition, sedimentation, exit realism.
+					</li>
+					<li>
+						<strong>S6 — Distance and correction capacity:</strong>
+						Test whether <strong>Χ</strong> is practically operative and whether
+						<strong>Σ</strong> is reachable without coercive simplification or narrative
+						compensation.
+					</li>
+					<li>
+						<strong>S7 — Drift marker scan:</strong>
+						Check Ch. 18.3 markers and Ch. 18.4 chains. If <strong>Ψ</strong> leak is
+						suspected, verify whether binding entered a limited/local/non-binding frame.
+					</li>
+					<li>
+						<strong>S8 — Viability minimums:</strong>
+						Apply Ch. 19.3 functional minimums and Ch. 19.4 warning signals. Use the
+						Appendix D corridor as compressed orientation only.
+					</li>
+					<li>
+						<strong>S9 — Path-cost guard:</strong>
+						If using disturbance, entropy, path-cost, or stabilization-burden language,
+						confirm that it applies only to configuration dynamics.
+					</li>
+					<li>
+						<strong>S10 — Escalation guard:</strong>
+						If drift persists despite structural clarity, the Ch. 20 structural
+						self-check adapter may activate. It outputs alarm only; no motive
+						explanation or diagnosis.
+					</li>
+				</ol>
+			</section>
+
+			<div class="pagebreak"></div>
+
+			<!-- 21. Example suite schema -->
+			<section id="example-suite">
+				<h2>21. Example suite schema</h2>
+
+				<p>
+					Examples are scene-bound operator-readable vignettes. They are
+					non-instructional, generic, abstracted, and non-identifying.
+				</p>
+
+				<h3>21.1 Required blocks</h3>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Required block</th>
+							<th>Purpose</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr><td>Minimal vignette</td><td>Scene-bound and non-identifying configuration snapshot.</td></tr>
+						<tr><td>Why this is repo-useful</td><td>Structural focus only.</td></tr>
+						<tr><td>Operator mapping</td><td>Canonical spine and reduced signature if applicable.</td></tr>
+						<tr><td>Inner / outer / public layer distinction</td><td>Layer separation and misreading prevention.</td></tr>
+						<tr><td>Operator costs / cost layout</td><td>Ω under Θ; include body and publicness interfaces where relevant.</td></tr>
+						<tr><td>Typical drift markers</td><td>Max 2–3; non-moral, non-diagnostic.</td></tr>
+						<tr><td>Viability minimums or warning signals</td><td>Apply Ch. 19 criteria if relevant.</td></tr>
+						<tr><td>Path-cost guard</td><td>Required if disturbance or entropy language appears.</td></tr>
+						<tr><td>Validity gate reminder</td><td>Χ + reversibility + D.</td></tr>
+						<tr><td>Readable structural closure</td><td>2–5 sentences; non-instructional.</td></tr>
+					</tbody>
+				</table>
+
+				<h3>21.2 Forbidden in examples</h3>
+				<ul>
+					<li>how-to guidance</li>
+					<li>procedural sexual instruction</li>
+					<li>risk optimization</li>
+					<li>identifiable case narratives</li>
+					<li>clinical interpretation</li>
+					<li>motive attribution</li>
+					<li>person ranking</li>
+					<li>orientation taxonomy</li>
+					<li>moral verdicts</li>
+				</ul>
+
+				<div class="box">
+					<div class="box-title">
+						<span>Example discipline</span>
+						<span class="pill">repo vignettes</span>
+					</div>
+					<p class="small">
+						Examples demonstrate structural distinctions. They are not guides,
+						prescriptions, safety procedures, therapeutic interpretations, or moral
+						evaluations.
+					</p>
+				</div>
+			</section>
+
+			<div class="pagebreak"></div>
+
+			<!-- 22. Implementation -->
+			<section id="implementation">
+				<h2>22. Implementation notes and references</h2>
+
+				<h3>22.1 Authoritative loading order</h3>
+				<p>
+					The authoritative profile file is
+					<span class="code-inline">PMS-SEX.yaml</span>. It must be read after and
+					against the canonical PMS base specification:
+				</p>
+
+				<div class="box small">
+					<span class="code-inline">PMS.yaml (PMS_1.3)</span>
+					→
+					<span class="code-inline">PMS-SEX.yaml (PMS-SEX_1.1)</span>
+				</div>
+
+				<h3>22.2 Canonical source URL</h3>
+				<p class="small">
+					<span class="code-inline">https://raw.githubusercontent.com/tz-dev/Praxeological-Meta-Structure-Theory/refs/heads/main/model/PMS.yaml</span>
+				</p>
+
+				<h3>22.3 Repository references</h3>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Label</th>
+							<th>URL</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>PMS-SEX</td>
+							<td><span class="code-inline">https://github.com/tz-dev/PMS-SEX</span></td>
+						</tr>
+						<tr>
+							<td>PMS</td>
+							<td><span class="code-inline">https://github.com/tz-dev/Praxeological-Meta-Structure-Theory</span></td>
+						</tr>
+						<tr>
+							<td>PMS.yaml raw</td>
+							<td><span class="code-inline">https://raw.githubusercontent.com/tz-dev/Praxeological-Meta-Structure-Theory/refs/heads/main/model/PMS.yaml</span></td>
+						</tr>
+						<tr>
+							<td>MIP</td>
+							<td><span class="code-inline">https://github.com/tz-dev/Maturity-in-Practice</span></td>
+						</tr>
+						<tr>
+							<td>MIP.yaml raw</td>
+							<td><span class="code-inline">https://raw.githubusercontent.com/tz-dev/Maturity-in-Practice/refs/heads/main/MIPractice_case_v2.0_full_with_model_reference.yaml</span></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h3>22.4 Citation form</h3>
+				<p class="small">
+					<strong>Technical reference:</strong><br />
+					<em>PMS-SEX.yaml — PMS-SEX Application Profile (Overlay), schema_version PMS-SEX_1.1.</em>
+				</p>
+
+				<p class="small">
+					<strong>Base dependency:</strong><br />
+					<em>PMS.yaml — Praxeological Meta-Structure, schema_version PMS_1.3.</em>
+				</p>
+			</section>
+
+			<div class="pagebreak"></div>
+
+			<!-- 23. Final profile guard -->
+			<section id="final-profile-guard">
+				<h2>23. Final profile guard</h2>
+
+				<p>
+					PMS-SEX remains valid by staying within what it can responsibly say:
+					not what persons are, but what configurations do over time. It reads
+					sexual praxis as enacted configuration under frame, asymmetry, non-event,
+					repetition, temporality, distance, integration, and self-binding. It
+					permits hard claims about cost, drift, outer legibility, and consequence
+					without converting those claims into person-status judgments.
+				</p>
+
+				<h3>23.1 Compressed rules</h3>
+				<ul>
+					<li>no consequence-free sex</li>
+					<li>no desire exempt from structural conditions</li>
+					<li>no outer-form erasure by internal labels</li>
+					<li>no publicness reduction</li>
+					<li>no path-cost as person-worth</li>
+					<li>no critique through humiliation</li>
+					<li>no taxonomy where only configuration-language is warranted</li>
+					<li>no total capture where the scene exceeds the grammar</li>
+				</ul>
+
+				<div class="box">
+					<div class="box-title">
+						<span>Closing sentence</span>
+						<span class="pill">profile boundary</span>
+					</div>
+					<p class="small">
+						PMS-SEX remains valid by staying within what it can responsibly say:
+						not what persons are, but what configurations do over time.
+					</p>
+				</div>
+			</section>
+		</div>
+	</body>
 </html>

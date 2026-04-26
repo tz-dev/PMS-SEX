@@ -1,0 +1,619 @@
+case:
+  schema_version: "PMS-SEX-CASE_1.1"
+  case_id: "PMS-SEX-EXAMPLE-04"
+  case_label: "High Intensity + Narrative Safety"
+  case_short: "Intensity That Outruns Its Own Frame"
+  profile_dependency:
+    model: "PMS-SEX"
+    schema_version: "PMS-SEX_1.1"
+    base_model: "PMS"
+    base_schema_version: "PMS_1.3"
+    conformity_status: "application_overlay_case"
+  scope_discipline:
+    status: "structural_mapping_only"
+    claims:
+      - "scene-bound"
+      - "configuration-specific"
+      - "revisable"
+      - "non-diagnostic"
+      - "non-prescriptive"
+      - "non-moralizing"
+      - "non-instructional"
+    forbids:
+      - "intent diagnosis"
+      - "motive attribution"
+      - "person ranking"
+      - "orientation taxonomy"
+      - "clinical interpretation"
+      - "moral verdict"
+      - "procedural sexual instruction"
+      - "risk optimization"
+    validity_gate:
+      requires: ["Χ", "reversibility", "D"]
+      note: >
+        Any use of this case as PMS-SEX application presupposes maintained
+        Distance (Χ), reversibility, and Dignity-in-Practice (D). Without these,
+        the case remains descriptive only.
+
+  minimal_vignette:
+    title: "Narratively Safe Intensity with Weak Operational Containment"
+    vignette: >
+      A repeated high-intensity sexual configuration develops over a short-to-medium
+      timeframe. The scene is narrated as safe because communication is frequent,
+      transparent, and mutually reassuring. Under high activation, however, the
+      frame remains verbally stable while practical stop-capability, pacing,
+      recovery realism, and after-cost tracking weaken. Costs appear sudden only
+      after repetition, asymmetry, and temporality have already compressed.
+
+    scene_boundaries:
+      scene_unit: "repeated high-activation sexual configuration"
+      timeframe: "short-to-medium timeframe with rapid escalation"
+      frame_anchor: "narratively stable communicative frame"
+      frame_description: >
+        The configuration is internally described as communicative, transparent,
+        and mutually understood. This frame remains narratively intact, but its
+        practical regulatory capacity weakens under peak activation.
+      roles_not_persons:
+        R1:
+          description: >
+            Role with higher exposure to bodily, reputational, or binding-related
+            after-costs.
+          structural_position:
+            - "higher downstream exposure"
+            - "higher recovery burden"
+            - "greater sensitivity to accumulated costs"
+        R2:
+          description: >
+            Role with higher tolerance for escalation and faster recovery from
+            overload.
+          structural_position:
+            - "higher escalation tolerance"
+            - "lower recovery burden"
+            - "greater continuity capacity under intensity"
+
+    trigger:
+      delta:
+        operator: "Δ"
+        description: >
+          High salience of mutual desire, exceptional intensity, and the difference
+          between narrated safety and actual containment capacity becomes visible.
+      impulse:
+        operator: "∇"
+        description: >
+          Strong activation pressure demands immediate enactment and continuity
+          rather than paced coordination, delay, or structural re-checking.
+
+    lambda_candidates_expected_but_missing:
+      - id: "neutral_deescalating_pause"
+        operator: "Λ"
+        expected_form: >
+          Pauses that actually de-escalate rather than merely postpone escalation.
+        missing_form: >
+          Pauses become difficult to hold because interruption appears to weaken
+          the exceptional intensity of the frame.
+      - id: "neutral_delay"
+        operator: "Λ"
+        expected_form: >
+          Silence, delay, or slower pacing can be tolerated without becoming
+          alarming.
+        missing_form: >
+          Delay is read as loss of mood, loss of intensity, or possible weakening
+          of the shared narrative.
+
+    observed_realizations_neutral:
+      - "Frequent reassurance talk replaces structural checks."
+      - "De-escalation is framed as breaking the mood."
+      - "Post-hoc explanation substitutes for pre-hoc regulation."
+      - "Stop-capability exists in principle but is rarely activated under peak pressure."
+      - "The communicative frame remains narratively stable while recovery and exposure gradients sharpen."
+
+  repo_usefulness:
+    structural_focus: >
+      This case is repo-useful because it isolates a configuration in which
+      intensity does not become risky by moral defect, bad intent, or lack of
+      communication, but through intensity-structure mismatch. It shows how ∇,
+      Α, Ω, Θ, Φ, and Χ interact when a frame remains narratively coherent but
+      operationally weak under load.
+    profile_links:
+      reduced_signatures:
+        - id: "MF_16_2"
+          label: "16.2 Minimal Formula — High-Risk / Extreme Practices"
+          raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ; pulling arrows: ∇ → □ → Ω → Θ"
+        - id: "MF_19_2"
+          label: "19.2 Minimal Formula — Functional Conditions and Warning Signals"
+          raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ; dominant interaction: Ω → Θ, with accumulated Θ making Ω layouts more visible and consequential"
+      relevant_profile_blocks:
+        - "overlay_concepts.publicness_as_overlay"
+        - "overlay_concepts.path_cost_language"
+        - "drift_catalogue.core_dysfunction_markers_ch18_3"
+        - "viability.functional_minimum_conditions_ch19_3"
+        - "viability.warning_signals_ch19_4"
+        - "dignity_in_practice_module"
+        - "analysis_checklist"
+        - "example_suite_schema"
+
+  operator_mapping:
+    canonical_spine:
+      raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ"
+      dependency_note: >
+        This case foregrounds ∇ escalation, Α acceleration, Ω sharpening, Θ
+        compression, Φ narrative substitution, and Χ erosion. The foregrounding
+        is shorthand only and does not alter PMS v1.3 order or dependencies.
+    case_reduced_signature:
+      selected_profile_signature: "MF_16_2"
+      raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ; pulling arrows: ∇ → □ → Ω → Θ"
+      local_foregrounding: "∇↑ → Α↑ → Ω↑ → Θ↑ with □ held narratively constant and Χ operationally weak"
+      reduced: true
+      operators: ["Δ", "∇", "□", "Λ", "Α", "Ω", "Θ", "Φ", "Χ", "Σ", "Ψ"]
+      hygiene_note: >
+        The reduced trace highlights the local drift mechanics of intensity.
+        It uses the PMS-SEX MF_16_2 shorthand and presupposes the canonical
+        PMS v1.3 spine. It does not create a new dependency graph. Any use of Χ
+        presupposes Φ, Θ, and □. Any use of Ψ presupposes Σ, Θ, and Χ.
+
+    operator_roles:
+      delta:
+        operator: "Δ"
+        function_in_case: >
+          Marks the difference between narrated mutual safety and practical
+          containment under intensity.
+      impulse:
+        operator: "∇"
+        function_in_case: >
+          Drives rapid activation and immediate continuity pressure.
+      frame:
+        operator: "□"
+        function_in_case: >
+          Provides the communicative grammar of the scene: transparency,
+          reassurance, mutual narration, and shared understanding.
+        drift_risk: >
+          The frame remains narratively stable while losing regulatory power
+          under peak activation.
+      non_event:
+        operator: "Λ"
+        function_in_case: >
+          Pauses, delay, silence, or slowing become structurally significant
+          because they are expected to regulate intensity but fail to remain
+          neutral.
+      attractor:
+        operator: "Α"
+        function_in_case: >
+          Intensity-driven repetition stabilizes quickly into a preferred route.
+      asymmetry:
+        operator: "Ω"
+        function_in_case: >
+          Recovery capacity, exposure, and after-cost handling diverge between
+          roles.
+      temporality:
+        operator: "Θ"
+        function_in_case: >
+          Costs accumulate rapidly and compress exit windows under repeated
+          high activation.
+      recontextualization:
+        operator: "Φ"
+        function_in_case: >
+          Post-hoc narration, reassurance, and explanation reframe costs after
+          they occur.
+        drift_risk: >
+          Φ substitutes for regulation when “we talked it through” replaces
+          pacing, interruption, and cost accounting.
+      distance:
+        operator: "Χ"
+        function_in_case: >
+          Enables stopping, slowing, meta-commentary, humor, and de-escalation
+          under pressure.
+        drift_risk: >
+          Χ becomes symbolic rather than operative when interruption is treated
+          as betrayal of mood, intensity, or intimacy.
+      integration:
+        operator: "Σ"
+        function_in_case: >
+          Would be required to integrate intensity, asymmetry, recovery limits,
+          exposure, and frame claims without denial or compensation.
+      self_binding:
+        operator: "Ψ"
+        function_in_case: >
+          May become relevant if repeated intensity starts to carry identity,
+          commitment, or self-worth stakes beyond the local frame.
+        guard: >
+          Any Ψ relevance must remain explicit, self-bound, and non-coercive.
+          No covert Ψ demand may be imposed on another role.
+
+  inner_outer_public_layer_distinction:
+    core_rule: >
+      Internal framing, outer legibility, public circulation, and temporal
+      carryover may overlap, but must not be collapsed into one another.
+    internal_framing:
+      description: >
+        The scene is inhabited as communicative, transparent, mutually intense,
+        emotionally vivid, and narratively safe.
+      guard: >
+        Internal communicative meaning may be real without settling the outer
+        structure of escalation, asymmetry, or accumulated after-costs.
+    outer_legibility:
+      description: >
+        Externally, the configuration is readable as high activation under a
+        frame that narrates safety more reliably than it operationalizes
+        interruption, recovery, and cost tracking.
+      guard: >
+        Naming this outer legibility does not imply recklessness, blame,
+        diagnosis, or bad faith.
+    publicness_overlay:
+      description: >
+        Publicness may enter through documentation, witnesses, shared narratives,
+        reputational traces, or circulation of the scene’s meaning beyond the
+        original frame.
+      status: "overlay"
+      pms_layer: "□ extension"
+      intensifies: ["Ω", "Θ"]
+      guard: >
+        Publicness does not necessarily generate the primary action-form, but it
+        may harden exposure, sedimentize consequence, and increase exit cost.
+    temporal_carryover:
+      description: >
+        Even when the scene is later explained, clarified, or mutually narrated
+        as safe, accumulated bodily, reputational, emotional, or binding-related
+        residues remain Θ-relevant.
+      guard: "Θ does not rewind."
+
+  operator_costs_and_cost_layout:
+    cost_layout_summary: >
+      The core cost layout is Ω under compressed Θ: one role carries higher
+      after-costs and recovery burden while the frame continues to present the
+      configuration as mutually transparent and communicatively safe.
+    primary_cost_channels:
+      bodily:
+        operators: ["Ω", "Θ"]
+        description: >
+          Recovery limits are reached earlier than acknowledged. The configuration
+          may remain narratively safe while bodily after-costs accumulate.
+        body_remainder_guard: >
+          Bodily consequence is treated as a material interface of configuration
+          cost, not as person-ranking, biological taxonomy, or diagnosis.
+      temporal:
+        operators: ["Α", "Θ", "Χ"]
+        description: >
+          Repetition under high activation shrinks exit windows rapidly. The
+          longer the scene continues without operational slowing, the more
+          expensive interruption becomes.
+      exposure:
+        operators: ["Ω", "Θ"]
+        description: >
+          Documentation, witnesses, shared memory, reputational traces, or
+          circulation may persist beyond the local frame.
+        publicness_guard: >
+          Exposure effects are treated as Θ/Ω intensifiers, not as the sole
+          origin of consequence.
+      coordination:
+        operators: ["□", "Φ", "Χ", "Σ"]
+        description: >
+          Repair effort increases non-linearly when communicative narration must
+          account for costs that prior regulation failed to contain.
+      binding_related:
+        operators: ["Θ", "Ψ"]
+        description: >
+          Repeated exceptional intensity may begin to carry identity-relevant or
+          commitment-like stakes, even if the immediate frame initially appears
+          local.
+        psi_guard: >
+          Binding relevance must not be smuggled into a limited frame as a proof
+          demand or covert obligation.
+
+    asymmetry_pattern:
+      R1:
+        cost_position:
+          - "higher after-cost absorption"
+          - "greater recovery burden"
+          - "higher exposure to bodily, reputational, or binding-related residues"
+          - "greater dependence on timely Χ activation"
+      R2:
+        cost_position:
+          - "higher tolerance for escalation"
+          - "faster recovery from overload"
+          - "lower downstream exposure"
+          - "greater continuity capacity under intensity"
+      structural_result: >
+        The same intensity is not structurally identical across roles. What is
+        enrichment for one role may become accumulated after-cost handling for
+        another.
+
+    system_effect: >
+      Costs appear sudden because high intensity compresses accumulation. The
+      collapse is not necessarily produced by conflict, malice, or deception;
+      it can emerge when Θ catches up with a frame that never slowed enactment.
+
+  typical_drift_markers:
+    max_count_note: "Primary markers only; non-exhaustive and non-diagnostic."
+    markers:
+      - id: "phi_narrative_inflation"
+        label: "Φ narrative inflation"
+        source_profile: "viability.warning_signals_ch19_4"
+        structural_note: "Φ substitutes for Σ(integration)."
+        indicators:
+          - "Reassurance repeatedly covers costs or asymmetry."
+          - "Clarification and cost naming are replaced by re-description."
+          - "The communicative story remains stable while Α/Ω/Θ continue unchanged."
+        case_reading: >
+          “We talked it through” begins to stand in for operational containment.
+      - id: "persistence_despite_structural_undercutting"
+        label: "Persistence despite clear structural undercutting"
+        source_profile: "viability.warning_signals_ch19_4"
+        structural_note: "Α + Θ overrun Χ."
+        indicators:
+          - "Repetition continues despite visible after-costs."
+          - "Overload is recognized but not structurally interrupted."
+          - "Insight does not alter the operator chain."
+        case_reading: >
+          The configuration continues because intensity remains coherent at the
+          level of narration, even where regulation is failing.
+      - id: "chi_loss_under_activation"
+        label: "Χ erosion under intensity"
+        source_profile: "drift_catalogue.core_dysfunction_markers_ch18_3.(6)"
+        structural_note: "The meta-layer collapses under peak activation."
+        indicators:
+          - "Stopping feels like betrayal of intensity or intimacy."
+          - "Meta-commentary is postponed until later."
+          - "The only acceptable responses to overload are reassurance or continuation."
+        case_reading: >
+          Χ exists in principle but is not practically available at the moment
+          when it would need to regulate the configuration.
+
+  viability_minimums_and_warning_signals:
+    functional_minimums:
+      explicit_omega_recognition:
+        status: "stressed"
+        minimal_form: "Ω(asymmetry) must be nameable and regulable within the frame."
+        case_check:
+          - "Recovery differences must be nameable as structural asymmetry."
+          - "Exposure differences must not be dissolved into mutual-intensity rhetoric."
+          - "After-cost concentration must remain discussable without accusation."
+      theta_awareness:
+        status: "stressed"
+        minimal_form: "Consequences are treated as real: exit realism."
+        case_check:
+          - "Rapid repetition must be treated as cumulative, not episodic."
+          - "Post-hoc explanation must not claim rewind."
+          - "Exit windows must be read as shrinking under compressed Θ."
+      stable_chi_capacity:
+        status: "primary_failure_risk"
+        minimal_form: "Χ(distance) is operative, not ornamental."
+        case_check:
+          - "Stop-capability must remain practical under peak activation."
+          - "De-escalation must not be treated as betrayal."
+          - "Meta-commentary must be available before overload hardens."
+      no_psi_substitution:
+        status: "monitor"
+        minimal_form: "No Ψ leak as the default carrier of stakes."
+        case_check:
+          - "Intensity must not become identity proof."
+          - "Local scenes must not silently become commitment tests."
+          - "Exceptional intensity must not be converted into proof of worth."
+      lambda_tolerance_without_escalation:
+        status: "stressed"
+        minimal_form: "Λ(non-event) can exist without becoming steering or coercion."
+        case_check:
+          - "Pauses must remain tolerable."
+          - "Silence or delay must not automatically signal rejection."
+          - "Non-occurrence must not become an alarm that forces continuation."
+      internal_framing_accountable_to_outer_form:
+        status: "required"
+        minimal_form: "Internal framing does not erase outer structural form."
+        case_check:
+          - "Communication and transparency clarify internal occupation but do not settle outer form."
+          - "Internal safety narration must not block cost-layout analysis."
+          - "Outer legibility can be named without person-ranking."
+      publicness_handled_as_overlay:
+        status: "conditional"
+        minimal_form: >
+          Publicness modifies readability and consequence without being confused
+          with their necessary origin.
+        case_check:
+          - "Documentation or reputational traces must be tracked if present."
+          - "Publicity must not be treated as the sole source of harm."
+          - "Publicity must not be ignored if it hardens costs."
+
+    warning_signals:
+      - id: "phi_narrative_inflation"
+        present_when: >
+          Reassurance, explanation, or transparency language repeatedly replaces
+          pacing, stopping, and cost accounting.
+      - id: "theta_cost_externalization"
+        present_when: >
+          Bodily, reputational, emotional, or binding-related consequences
+          concentrate in one role while short-term intensity stabilizes the
+          configuration.
+      - id: "outer_form_denial"
+        present_when: >
+          The communicative self-description of the scene blocks recognition
+          that the enacted form is high-intensity repetition under uneven
+          recovery and exposure.
+      - id: "persistence_despite_structural_undercutting"
+        present_when: >
+          Repetition continues after overload is recognized, because intensity
+          remains easier than interruption.
+
+    minimal_viability_corridor:
+      raw: |
+        □ explicit
+        + Ω nameable
+        + Θ realistic
+        + Χ operative
+        + Λ tolerable
+        + Ψ handled
+        (+ Σ reachable)
+        = structurally governable configuration
+      case_translation:
+        - "The communicative frame must be explicit and tested under peak conditions."
+        - "Recovery and exposure gradients must be nameable."
+        - "Compressed accumulation must be treated as real."
+        - "Stopping and slowing must work under intensity, not only in calm narration."
+        - "Pauses must remain tolerable without becoming threat signals."
+        - "Intensity must not smuggle in covert binding demands."
+        - "Contradictions between desire, cost, recovery, and exposure must be integrable without narrative substitution."
+
+  rational_response_envelope:
+    status: "structural_reasonableness_not_prescription"
+    note: >
+      These responses are structurally understandable within the configuration.
+      They are not endorsed, prescribed, ranked, or treated as evidence of motive
+      or character.
+    responses:
+      - response: "Doubling down on communication instead of slowing enactment."
+        operator_reading: >
+          The frame privileges Φ and □ narration when Χ regulation would be
+          structurally required.
+      - response: "Interpreting discomfort as temporary overload rather than drift signal."
+        operator_reading: >
+          Θ accumulation is minimized because the internal frame remains
+          narratively coherent.
+      - response: "Avoiding stops because they feel disproportionate to intent."
+        operator_reading: >
+          Χ activation becomes costly under high ∇ and fast Α consolidation.
+      - response: "Treating post-hoc explanation as equivalent to containment."
+        operator_reading: >
+          Φ substitutes for operational regulation and delays Σ.
+
+  narrative_substitution_mechanism:
+    title: "Φ as Failed Regulator"
+    critical_insight: "Narrative safety does not scale automatically with intensity."
+    observed_substitution:
+      operator: "Φ"
+      description: >
+        Reframing, reassurance, and explanation are used to re-stabilize the
+        scene after costs appear.
+      substitution_formula: "Φ after-cost narration carries regulatory burden that would require operative Χ + □ under ∇ pressure"
+    effect: >
+      The frame explains costs after they occur instead of limiting them before
+      they accumulate. This creates a gap between communicative confidence and
+      structural governability.
+    guard: >
+      This is not a critique of communication. It only marks the point where
+      communication is asked to do operator-work that requires distance,
+      temporality realism, asymmetry accounting, and integration.
+
+  distance_erosion:
+    title: "Χ under Pressure"
+    risk_point: >
+      Distance exists in principle but collapses in practice under peak activation.
+    failure_mode:
+      - "Stopping feels like betrayal of intensity or intimacy."
+      - "Meta-position is postponed until later."
+      - "De-escalation is read as breaking the mood rather than regulating the configuration."
+      - "Reassurance becomes the only accepted response to overload."
+    structural_indicator: >
+      The only acceptable responses to overload are reassurance or continuation,
+      not interruption, slowing, re-reading, humor, or pause.
+    chi_guard: >
+      Χ is not purity, superiority, or rejection. In this case it is the
+      application-side capacity to keep high activation from becoming an
+      irreversible path.
+
+  dignity_in_practice_stress_test:
+    pms_status: "derived_construct_from_PMS"
+    canonical_pms_formula: ["Ψ", "Χ", "Ω"]
+    pms_sex_application_formula: >
+      explicit Ω + operative Χ + no covert Ψ demand under Θ, with outer-form
+      readability preserved
+    risk_point: >
+      Dignity-in-Practice is stressed where pressure-through-overload replaces
+      practical restraint, even if the scene is communicatively narrated as safe.
+    failure_mode:
+      - "Ω gradients remain under-described because mutual intensity dominates the frame."
+      - "Χ is present symbolically but not operational under load."
+      - "Θ costs are explained after they accumulate rather than regulated before they harden."
+      - "Outer-form readability is blocked by the internal claim that communication was sufficient."
+    structural_indicator: >
+      The frame protects the narrative of transparency more reliably than it
+      protects recoverability, interruption, and non-degradation under intensity.
+    guardrail: >
+      Naming a D-in-Practice stress point does not rank persons, diagnose
+      motives, deny consent, or moralize intensity. It identifies where enacted
+      restraint under asymmetry is structurally under pressure.
+
+  path_cost_guard:
+    path_cost_terms_used:
+      - "stabilization burden"
+      - "compressed accumulation"
+      - "drift multiplier"
+      - "irreversible trajectory"
+      - "operator-work"
+    admissibility: >
+      These terms apply only to configuration dynamics. They describe the extra
+      operator-work required to keep a high-intensity scene coherent,
+      reversible, non-coercive, and dignity-preserving under recurrence and
+      temporality.
+    forbidden_conversions:
+      - "No path-cost as person-worth."
+      - "No intensity as moral disorder."
+      - "No recovery asymmetry as person ranking."
+      - "No disturbance-language as diagnosis."
+      - "No humiliation or degradation of persons."
+      - "No orientation taxonomy."
+
+  reader_guard:
+    misinterpretation_prevention:
+      does_not_claim:
+        - "that intensity is reckless"
+        - "that communication is irrelevant"
+        - "that harm requires bad intent"
+        - "that escalation is a moral failure"
+        - "that high intensity is pathological"
+        - "that one role is morally superior or inferior"
+      does_claim:
+        - "that intensity can multiply small frame errors"
+        - "that narration cannot replace regulation"
+        - "that costs can compress and appear sudden without conflict or malice"
+        - "that Ω and Θ remain active even when □ is communicatively stable"
+        - "that Χ must be operative under pressure, not merely available in principle"
+
+  validity_check:
+    application_gate:
+      status: "conditional"
+      pms_valid_only_if:
+        - id: "chi_operational_under_pressure"
+          operator: "Χ"
+          requirement: >
+            Distance is treated as operational under pressure, not symbolic.
+        - id: "frame_tested_at_peak"
+          operator: "□"
+          requirement: >
+            The frame is tested against peak conditions, not only calm narration.
+        - id: "omega_tracked"
+          operator: "Ω"
+          requirement: >
+            Asymmetry is tracked across recovery, exposure, access, repair, and
+            after-costs.
+        - id: "theta_acceleration_acknowledged"
+          operator: "Θ"
+          requirement: >
+            Temporality is acknowledged as accelerating under intensity.
+        - id: "dignity_constrains_overload_pressure"
+          operator: "D"
+          requirement: >
+            Dignity-in-Practice constrains pressure-through-overload and prevents
+            degradation, shaming, or person-ranking.
+        - id: "psi_not_smuggled"
+          operator: "Ψ"
+          requirement: >
+            Intensity is not converted into covert binding, identity proof, or
+            self-worth demand.
+      otherwise: >
+        Without these conditions, the case may describe the configuration but
+        must not prescribe, rank, diagnose, or authorize critique-through-humiliation.
+
+  structural_closure:
+    closure: >
+      High intensity does not create drift by itself. It reveals whether a frame
+      can actually carry what it narrates. When activation is extreme, repetition
+      accelerates, asymmetries sharpen, and time compresses. If regulation
+      remains rhetorical while enactment accelerates, costs do not rise
+      gradually; they jump. What looks like a sudden collapse is often Θ
+      catching up with a frame that never slowed the scene.
+    citable_sentence: >
+      Intensity is a drift multiplier when it converts small coordination gaps
+      into irreversible trajectories faster than Distance (Χ) can regulate them.
+    final_guard: >
+      No person diagnosis. No moral ranking. No path-cost as person-worth. No
+      critique through humiliation. Only configuration-language: what this
+      scene produces over time under frame, impulse, repetition, asymmetry,
+      temporality, recontextualization, and limited stop-capability.

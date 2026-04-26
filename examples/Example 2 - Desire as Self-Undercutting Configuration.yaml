@@ -1,0 +1,599 @@
+case:
+  schema_version: "PMS-SEX_CASE_1.1"
+  case_id: "PMS-SEX_EXAMPLE_02"
+  title: "Desire as Self-Undercutting Configuration — Minimal Psychology Trigger"
+  short_label: "Repetition Despite Known Θ Damage"
+  legacy_label: "Desire as Self-Punishment"
+  profile_reference:
+    model: "PMS-SEX"
+    schema_version: "PMS-SEX_1.1"
+    depends_on:
+      model: "PMS"
+      schema_version: "PMS_1.3"
+  status: "example_vignette"
+  last_updated: "2026-04-26"
+
+  scope_discipline:
+    structural_mapping_only: true
+    non_diagnostic: true
+    non_clinical: true
+    non_prescriptive: true
+    non_moralizing: true
+    no_motive_attribution: true
+    no_person_ranking: true
+    no_orientation_taxonomy: true
+    no_how_to_guidance: true
+    validity_gate_required:
+      - "Χ"
+      - "reversibility"
+      - "D"
+    note: >
+      This case maps a configuration, not a person. Minimal psychology is used
+      only as a PMS-SEX structural self-check signal under Ch. 20 conditions.
+      It does not explain desire, diagnose motives, classify identity, or assign
+      moral worth.
+
+  paper_refs:
+    primary:
+      - "Ch. 18.3: Dysfunction markers"
+      - "Ch. 19.3: Functional minimum conditions"
+      - "Ch. 19.4: Warning signals"
+      - "Ch. 20: Minimal Psychology as Structural Self-Check Adapter"
+      - "Ch. 21: Dignity-in-Practice module"
+      - "Appendix D.4: Highlighted drift corridors"
+      - "Appendix D.5: Minimal viability corridor"
+      - "Appendix D.8: Path-cost / disturbance guard"
+    secondary:
+      - "Ch. 0.9: Validity gate"
+      - "Ch. 14: Modulators"
+      - "Ch. 15: Deviance as consequence structure"
+      - "Ch. 23: Limits and scope discipline"
+      - "Ch. 24.3–24.4: Final guard"
+
+  repo_usefulness:
+    why_this_case_is_useful: >
+      This vignette demonstrates the narrow PMS-SEX condition under which
+      minimal psychology may activate: drift persists despite structural
+      clarity, known Θ damage, D-in-Practice undercutting, Χ decline, and frame
+      narrowing. The case is useful because it distinguishes structural warning
+      from psychological explanation.
+    structural_focus:
+      - "Α fixation under repeated enactment"
+      - "Ω cost concentration"
+      - "Θ damage accumulation"
+      - "Χ erosion despite explicit knowledge"
+      - "□ narrowing toward mono-frame"
+      - "Ψ functional capture without identity verdict"
+      - "minimal psychology as self-check alarm only"
+
+  scene_packet:
+    minimal_vignette: >
+      A repeated sexual configuration continues over time even after one role
+      explicitly recognizes that the practice produces cumulative depletion,
+      after-cost, or dignity-relevant undercutting. The frame was initially
+      plural, with several viable ways to coordinate desire, but gradually
+      narrows around one dominant route. Stopping, pausing, or choosing
+      alternatives remains formally possible, yet becomes practically harder
+      than repetition.
+    scene_id:
+      temporality_Θ: >
+        Longitudinal repetition of the same configuration with visible cumulative
+        after-costs. No single rupture event is required; the pattern becomes
+        consequential through recurrence.
+      frame_anchor_□: >
+        Initially plural frame: several viable practices, desire grammars, or
+        coordination modes are available. Over time, the frame narrows toward a
+        mono-frame in which one practice becomes the only practically legible
+        route.
+      roles_not_persons:
+        R1:
+          description: >
+            Primary carrier of bodily, emotional, reputational, dignity-relevant,
+            or binding-related after-costs.
+          structural_position: "higher downstream exposure under Θ"
+        R2:
+          description: >
+            Structurally adjacent role with lower downstream accumulation or
+            less exposure to the after-costs produced by repetition.
+          structural_position: "lower downstream exposure under Θ"
+    trigger:
+      Δ_difference: >
+        Salient difference between knowing that the configuration produces
+        harm/depletion and continuing to repeat the same enactment.
+      ∇_impulse: >
+        Persistent desire pressure toward the same route despite acknowledged
+        Θ damage.
+    lambda_candidates_expected_but_missing:
+      - "pauses that remain neutral and non-punitive"
+      - "withdrawal that reopens alternatives rather than intensifying pressure"
+      - "non-occurrence that does not become self-devaluation, punishment, or proof of failure"
+      - "hesitation that functions as Χ activation rather than as escalation trigger"
+    observed_realizations_neutral:
+      - "explicit acknowledgment that the pattern is damaging or depleting"
+      - "continued repetition without durable frame change"
+      - "shrinking set of alternative practices or exits"
+      - "rising practical cost of stopping despite formal availability"
+      - "desire-language increasingly used to settle what the frame can be"
+
+  operator_mapping:
+    canonical_spine:
+      raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ"
+      note: >
+        Canonical PMS v1.3 spine retained. The case foregrounds Α/Ω/Θ/Χ/□/Ψ
+        interactions but does not alter operator order or dependencies.
+    closest_reduced_signatures:
+      - id: "MF_18_2"
+        label: "18.2 Minimal Formula — Dysfunctional Expressions and Destructive Dynamics"
+        raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ; pulling arrows: Λ → Α → Ω → Θ"
+        reason: >
+          The case tracks destructive drift under repetition, cost concentration,
+          Θ accumulation, and Χ erosion.
+      - id: "MF_19_2"
+        label: "19.2 Minimal Formula — Functional Conditions and Warning Signals"
+        raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ; dominant interaction: Ω → Θ"
+        reason: >
+          The case tests viability failure under Ω nameability, Θ realism, Χ
+          operability, Ψ handling, and Λ tolerance.
+      - id: "MF_14_3"
+        label: "14.3 Minimal Formula — Modulators"
+        raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ"
+        reason: >
+          The case can be read through modulators such as Λ density, Θ stability,
+          Φ habituation, and Χ mode.
+      - id: "MF_12_2"
+        label: "12.2 Minimal Formula — Self-Binding"
+        raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ"
+        reason: >
+          Ψ becomes functionally relevant when the repeated route starts to carry
+          self-attribution, even if explicit identity-binding is denied.
+    dependency_hygiene:
+      - "Χ presupposes Φ, Θ, and □."
+      - "Σ presupposes Χ and Φ."
+      - "Ψ presupposes Σ, Θ, and Χ."
+      - "Mono-frame language does not redefine □; it names narrowing of available frame alternatives."
+      - "Functional Ψ capture does not create a new operator and does not authorize identity verdicts."
+
+  drift_trace:
+    raw: "□ plural → Α fixation → Ω cost concentration → Θ damage accumulation → Χ erosion → □ mono-frame → Ψ functional capture"
+    formal_translation: >
+      A plural frame narrows as one route becomes attractor-stabilized. Costs
+      concentrate asymmetrically and accumulate temporally. Distance weakens,
+      alternatives lose legibility, and the route begins to carry
+      self-attribution without explicit self-binding being responsibly handled.
+    transitions:
+      - operator: "□"
+        label: "Frame pluralization to narrowing"
+        reading: >
+          The initial frame allows several desire or coordination grammars.
+          Repetition gradually narrows what counts as available, real, or
+          recognizable.
+      - operator: "Α"
+        label: "Attractor fixation"
+        reading: >
+          The same practice becomes the default handling route for desire
+          pressure. Repetition replaces choice without requiring bad faith.
+      - operator: "Ω"
+        label: "Cost concentration"
+        reading: >
+          After-costs concentrate on one role through exposure, recovery burden,
+          degradation-nearness, reputational vulnerability, or binding residue.
+      - operator: "Θ"
+        label: "Damage accumulation"
+        reading: >
+          Known harm becomes trajectory rather than local episode. Later
+          reframing does not rewind accumulated cost.
+      - operator: "Χ"
+        label: "Distance erosion"
+        reading: >
+          Stopping, hesitation, or re-reading becomes practically harder than
+          continuing. Distance is experienced as destabilizing rather than
+          protective.
+      - operator: "□"
+        label: "Mono-frame dominance"
+        reading: >
+          Alternatives lose practical attractiveness or recognizability. The
+          configuration becomes readable through one dominant script.
+      - operator: "Ψ"
+        label: "Functional capture"
+        reading: >
+          Self-binding is not necessarily explicit, but the repeated route
+          begins to matter for self-attribution: what one does, deserves, can
+          get, or can imagine. This remains a configuration claim, not a person
+          claim.
+
+  inner_outer_public_layer_distinction:
+    internal_framing:
+      description: >
+        Internally, the repeated practice may be narrated as desire, relief,
+        authenticity, inevitability, intensity, familiarity, or the only route
+        that feels real.
+      guard: >
+        Internal framing may be real but does not settle the configuration’s
+        outer form or cost distribution.
+    outer_legibility:
+      description: >
+        Externally, the configuration is readable as repeated enactment despite
+        known Θ damage, narrowing alternatives, weakened stop-capability, and
+        concentrated after-costs.
+      guard: >
+        Naming this outer legibility does not diagnose the person, condemn the
+        desire, or rank the practice.
+    publicness_overlay:
+      description: >
+        Publicness is not required for the drift to exist. If documentation,
+        disclosure, reputation, audience uptake, or social comparison enters the
+        configuration, it may intensify Ω/Θ costs.
+      pms_layer: "□ extension"
+      primarily_intensifies: ["Ω", "Θ"]
+      interacts_with: ["□", "Α", "Λ"]
+      guard: >
+        Publicness is neither treated as the sole origin of harm nor ignored
+        where it hardens consequence.
+    temporal_carryover:
+      description: >
+        Each repetition carries residues forward: bodily memory, recovery
+        latency, self-attribution, reduced exit realism, and narrowed frame
+        breadth.
+      guard: >
+        Interpretation may change; Θ does not rewind.
+
+  cost_layout:
+    principle: "Ω under Θ"
+    primary_cost_channels:
+      bodily:
+        description: >
+          Exhaustion, somatic stress, dissociation-like withdrawal, saturation,
+          or delayed recovery may function as body remainder.
+        guard: >
+          Body remainder is a consequence interface, not a biological taxonomy
+          or person-ranking device.
+      temporal:
+        description: >
+          Each repetition increases path dependence, reduces low-cost exit, and
+          makes alternatives less practicable.
+      dignity_in_practice:
+        description: >
+          Repeated enactments may undercut D-in-Practice when degradation-near,
+          self-devaluing, or humiliation-form scripts recur without
+          play-reversibility, containment, or recovery.
+        guard: >
+          This does not mean the person has lower dignity. It means the
+          configuration may fail to preserve D as an enactment constraint.
+      frame:
+        description: >
+          Alternative desire grammars lose legibility. The frame contracts until
+          one route dominates what can be recognized as desire.
+      relational_or_role_based:
+        description: >
+          R1 carries more after-cost, while R2 remains adjacent but less exposed
+          to downstream accumulation.
+      publicness_optional:
+        description: >
+          Documentation, reputation, or disclosure may sedimentize costs if
+          publicness enters the field.
+    asymmetry_pattern:
+      description: >
+        One role absorbs accumulating harm while the configuration remains
+        locally stabilized because short-term relief or pressure reduction
+        outweighs visible long-term cost.
+      not_a_moral_claim: true
+    system_effect: >
+      Desire pressure is handled through repetition rather than through frame
+      reopening, distance activation, or viable diversification. The attractor
+      becomes a regulator that the frame can no longer easily interrupt.
+
+  rational_response_envelope:
+    note: >
+      These responses are structurally intelligible within the configuration.
+      They are not called healthy, virtuous, pathological, chosen freely, or
+      morally preferred.
+    responses:
+      - response: "continuing the practice because it reliably resolves immediate pressure"
+        operator_reading: "Α stabilizes local relief despite Θ accumulation."
+      - response: "avoiding Χ because stopping intensifies discomfort, emptiness, shame, or destabilization"
+        operator_reading: "Χ becomes practically costly; distance is no longer easily protective."
+      - response: "interpreting alternatives as unreal, unavailable, or not really me"
+        operator_reading: "□ narrows under Α fixation and Ψ functional capture."
+      - response: "treating known harm as insufficient reason to stop"
+        operator_reading: "Θ damage has become part of the trajectory rather than a corrective signal."
+    closure: >
+      These responses follow Α + Ω under Θ. They do not imply lack of
+      intelligence, agency, morality, or worth.
+
+  drift_markers:
+    selected_core_markers:
+      - id: "attractor_fixation"
+        source: "Ch. 18.3(5)"
+        label: "Α compulsivity / attractor fixation"
+        configuration_statement: >
+          In this configuration, stabilization flips into fixation; the route
+          becomes non-substitutable and repetition replaces choice.
+        typical_indicators:
+          - "practice becomes non-substitutable"
+          - "alternatives lose practical attractiveness"
+          - "the script runs the scene"
+      - id: "temporal_overload"
+        source: "Ch. 18.3(7)"
+        label: "Θ accumulation / temporal overload"
+        configuration_statement: >
+          In this configuration, costs accumulate faster than the frame can
+          carry, and exit fiction replaces exit realism.
+        typical_indicators:
+          - "known costs continue accumulating"
+          - "exit is imagined but not enacted"
+          - "collapse becomes delayed rather than sudden"
+      - id: "loss_of_distance"
+        source: "Ch. 18.3(6)"
+        label: "Χ loss"
+        configuration_statement: >
+          In this configuration, the meta-layer collapses; stopping and
+          re-reading become practically unavailable or unbearable.
+        typical_indicators:
+          - "stopping becomes practically unavailable"
+          - "hesitation is read as betrayal of authenticity"
+          - "outer-form awareness becomes inaccessible"
+    optional_secondary_marker:
+      id: "outer_form_denial"
+      source: "Ch. 18.3(8)"
+      label: "Outer-form denial"
+      configuration_statement: >
+        Internal desire-language may block analysis of the enacted form, making
+        the configuration unable to read itself structurally.
+      typical_indicators:
+        - "I want this, therefore it is structurally settled"
+        - "practice labels or desire claims block cost-layout analysis"
+        - "known damage is folded back into the script"
+    drift_corridors:
+      primary:
+        source: "Appendix D.4"
+        raw: "Ψ leak → Ω escalation → Χ loss → Α fixation → Θ overload → exit collapse"
+        case_reading: >
+          The case does not require explicit coercion. Drift intensifies when
+          self-attribution enters covertly, distance weakens, repetition fixes,
+          and accumulated cost can no longer be exited cheaply.
+      non_event_attractor:
+        source: "Appendix D.4"
+        raw: "Λ density → Α monopolization → Ω as steering → Θ accumulation → Χ collapse → late Ψ capture"
+        case_reading: >
+          Pauses, withdrawals, or non-occurrences fail to remain neutral. They
+          either become unavailable or increase pressure, allowing the attractor
+          to monopolize the frame.
+
+  viability_assessment:
+    source: "Ch. 19.3 and Appendix D.5"
+    minimal_viability_corridor:
+      raw: |
+        □ explicit
+        + Ω nameable
+        + Θ realistic
+        + Χ operative
+        + Λ tolerable
+        + Ψ handled
+        (+ Σ reachable)
+        = structurally governable configuration
+    conditions:
+      explicit_omega_recognition:
+        status: "failing_or_fragile"
+        reading: >
+          Cost concentration is known but not sufficiently regulable. Ω may be
+          acknowledged as harm yet not converted into frame adjustment.
+      theta_awareness:
+        status: "known_but_not_corrective"
+        reading: >
+          Θ damage is visible and even named, but accumulation continues without
+          durable interruption.
+      stable_chi_capacity:
+        status: "failing"
+        reading: >
+          Χ exists as concept but not as operative stop-capability. Distance is
+          experienced as destabilizing or unavailable.
+      no_psi_substitution:
+        status: "failing_or_at_risk"
+        reading: >
+          The practice may begin to carry self-worth, identity proof,
+          self-punishment, or deservedness claims without explicit and
+          reversible handling.
+      lambda_tolerance_without_escalation:
+        status: "failing_or_unstable"
+        reading: >
+          Pauses, cancellations, or absence do not reliably reopen the frame;
+          they may intensify discomfort or return pressure to the same route.
+      internal_framing_accountable_to_outer_form:
+        status: "fragile"
+        reading: >
+          Desire-language may be used to block reading of accumulated after-cost
+          and outer-form degradation-nearness.
+      publicness_handled_as_overlay:
+        status: "context_dependent"
+        reading: >
+          Publicness is not central unless documentation, reputation, or
+          circulation enters. If it does, it must be treated as Ω/Θ
+          intensification, not origin.
+    conclusion: >
+      The configuration is drift-prepared because Θ damage is known but not
+      corrective, Χ is weak, Ψ is at risk of covert capture, and the frame
+      narrows around an attractor.
+
+  warning_signals:
+    source: "Ch. 19.4"
+    signals:
+      - id: "mono_frame"
+        label: "Narrowing of □ alternatives"
+        structural_note: "Α monopolizes □."
+        indicators:
+          - "only one frame works"
+          - "alternatives become unattractive or unreal"
+          - "the route becomes recognizable as the only desire form"
+      - id: "persistence_despite_structural_undercutting"
+        label: "Persistence despite clear structural undercutting"
+        structural_note: "Α + Θ overrun Χ."
+        indicators:
+          - "repetition continues despite recognized harm"
+          - "exit is imagined but not executed"
+          - "insight does not alter the operator chain"
+      - id: "theta_cost_externalization"
+        label: "Externalization or concentration of Θ costs"
+        structural_note: "Θ costs concentrate through Ω layout."
+        indicators:
+          - "after-costs remain concentrated on R1"
+          - "short-term relief stabilizes long-term damage"
+          - "costs harden before the frame updates"
+      - id: "outer_form_denial"
+        label: "Outer-form denial"
+        structural_note: "Χ weakens because the configuration cannot re-read itself."
+        indicators:
+          - "internal desire-language blocks structural reading"
+          - "visible action-form remains unread"
+          - "known harm is reabsorbed as part of the route"
+
+  minimal_psychology_trigger:
+    source: "Ch. 20"
+    activation_status: "trigger_conditions_met_in_vignette"
+    activation_basis:
+      - "drift markers from Ch. 18 are present"
+      - "minimal viability conditions from Ch. 19 are no longer restoring correction"
+      - "the configuration is carried voluntarily and repeatedly"
+      - "known Θ damage continues without durable interruption"
+      - "D-in-Practice is repeatedly undercut in enactment"
+      - "□ narrows toward a mono-frame"
+      - "Χ exists formally but is not enacted in time"
+    permitted_structural_question:
+      preferred_form: "What structural role is this desire playing in this configuration?"
+      colloquial_form_allowed_only_if_translated: "Why do I really desire X?"
+      constraints:
+        - "hypothetical, not confessional"
+        - "targets pattern continuity, not inner truth"
+        - "tests whether desire-language functions as a drift carrier"
+        - "returns attention to enacted form, cost layout, Χ, and Θ"
+        - "may not become identity story, trauma explanation, or motive verdict"
+    permitted_warning_hypothesis:
+      text: >
+        In this configuration, desire-language may be functioning as a
+        drift-maintaining or self-undercutting handling mode rather than as play,
+        exploration, negotiated intensity, or bounded practice.
+      strict_limits:
+        - "not an explanation of desire"
+        - "not a claim about inner motive"
+        - "not a diagnosis"
+        - "not a person-type"
+        - "not an identity verdict"
+        - "not a moral judgement"
+    allowed_alarm_outputs:
+      - "In this configuration, drift persistence is present."
+      - "The configuration is no longer correcting itself structurally."
+      - "Distance (Χ), frame clarity (□), and Θ realism require reactivation."
+      - "Internal framing is no longer sufficient to settle the enacted structure."
+      - "Outer legibility and cost distribution require re-reading without person-ranking."
+
+  dignity_in_practice_stress_test:
+    source: "Ch. 21"
+    canonical_pms_D_formula: ["Ψ", "Χ", "Ω"]
+    pms_sex_application_formula: "explicit Ω + operative Χ + no covert Ψ demand under Θ, with outer-form readability preserved"
+    risk_point: >
+      Degradation-near or self-devaluing scripts repeat without sufficient
+      reversibility, containment, recovery, or distance activation.
+    failure_mode: >
+      D is undercut not through external coercion alone, but through repeated
+      self-directed enactment under a narrowing frame. The configuration can
+      fail D-in-Practice even while desire remains internally real.
+    structural_indicator: >
+      “I know this harms me” no longer activates stopping or frame revision; it
+      becomes part of the script.
+    D_guard:
+      - "D applies in enactment, not as status."
+      - "This does not lower dignity or worth."
+      - "The case critiques configuration handling, not the person."
+      - "D must not be used for shaming, humiliation, diagnosis, or identity ranking."
+
+  path_cost_and_disturbance_guard:
+    source: "Appendix D.8"
+    allowed_language:
+      - "configuration-level path-cost"
+      - "stabilization burden"
+      - "Α fixation"
+      - "Θ accumulation"
+      - "Χ loss"
+      - "failed or overloaded Σ"
+      - "Ψ leak or functional capture"
+    case_application: >
+      This configuration has rising path-cost because the frame must carry
+      repetition, known damage, narrowing alternatives, self-attribution risk,
+      and weakening distance without sufficient integration.
+    forbidden_conversions:
+      - "person-level pathology"
+      - "sexual identity taxonomy"
+      - "orientation ranking"
+      - "clinical diagnosis"
+      - "moral disorder"
+      - "lower dignity"
+      - "degraded worth"
+      - "humiliation as critique"
+    final_guard: >
+      Path-cost language is valid only as configuration-language. If converted
+      into person-language, diagnosis, rank, taxonomy, or humiliation, the use
+      leaves PMS-SEX.
+
+  reader_guard:
+    this_example_does_not_claim:
+      - "that desire is pathological"
+      - "that repetition implies illness, masochism, defect, or identity type"
+      - "that suffering proves authenticity"
+      - "that anyone is responsible for wanting harm"
+      - "that self-punishment is an inner motive explanation"
+      - "that the case authorizes intervention, therapy, legal judgment, or public accusation"
+    this_example_does_claim:
+      - "that repetition under known harm is a drift marker"
+      - "that desire can become structurally overburdened by regulation, relief, and self-relation"
+      - "that Α fixation can make continuation easier than interruption"
+      - "that Θ damage can accumulate even when harm is explicitly known"
+      - "that minimal psychology is justified only as a structural self-check alarm under Ch. 20 conditions"
+      - "that D-in-Practice can be undercut by configuration dynamics without assigning lower dignity or blame"
+
+  pms_validity_check:
+    application_gate:
+      Χ_distance:
+        required: true
+        condition: >
+          Distance must be re-activated as protective meta-capacity, not as
+          punishment, superiority, or moral verdict.
+      reversibility:
+        required: true
+        condition: >
+          All readings remain scene-bound and revisable; no global person label,
+          motive claim, diagnosis, or identity verdict may be inferred.
+      D_dignity_in_practice:
+        required: true
+        condition: >
+          D constrains enactment and critique. No shaming, humiliation,
+          person-ranking, or ontological evaluation is permitted.
+    additional_case_conditions:
+      - "□ alternatives must remain legible as structural possibilities."
+      - "Θ damage must be treated as non-negotiable accumulation, not narratively reset."
+      - "Ψ must remain self-referential and may not become an imposed identity verdict."
+      - "Minimal psychology must output alarm only, not explanation."
+    invalid_uses:
+      - "using the case to diagnose a person"
+      - "using desire-language to prove pathology"
+      - "using D to shame or humiliate"
+      - "using path-cost to rank identities or practices"
+      - "using PMS-SEX language to enforce truth, clarity, urgency, or action while suspending Χ, reversibility, or D"
+    validity_conclusion: >
+      Without Χ, reversibility, and D, the case remains descriptive mapping only
+      and cannot be used as a PMS-valid application.
+
+  structural_closure:
+    non_normative_summary: >
+      When desire repeatedly overrides known harm, repetition rather than
+      preference becomes the coordinating force. What initially appears as
+      wanting can become a handling script for pressure, in which alternatives
+      lose legibility and stopping becomes more costly than continuation.
+    minimal_psychology_closure: >
+      The permitted question is not why the desire exists, but what structural
+      role it is playing now. Minimal psychology does not explain; it flags that
+      distance has eroded, D-in-Practice is being undercut in enactment, and
+      time is converting damage into trajectory.
+    final_marker: >
+      This is not pathology. It is drift under accumulation. Desire is not
+      condemned; it is recognized as structurally overburdened—carrying
+      regulation, relief, and self-relation at once. That overload, not the
+      desire itself, is what makes the configuration unstable.

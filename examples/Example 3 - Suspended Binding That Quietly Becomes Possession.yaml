@@ -1,0 +1,584 @@
+case_profile:
+  schema_version: "PMS-SEX_1.1"
+  case_schema_role: "example_suite_case_profile"
+  case_id: "PMS-SEX_EXAMPLE_03"
+  title: "Suspended Binding That Quietly Becomes Possession"
+  short_label: "Ψ Suspension with Covert Capture"
+  profile_dependency:
+    model_name: "PMS–SEX Application Profile"
+    model_short: "PMS-SEX"
+    schema_version: "PMS-SEX_1.1"
+    depends_on:
+      model_name: "Praxeological Meta-Structure"
+      model_short: "PMS"
+      schema_version: "PMS_1.3"
+
+  status:
+    case_type: "example_suite_vignette"
+    role: "repo_vignette"
+    function: "scene_bound_operator_reading"
+    instructionality: "non_instructional"
+    diagnostic_status: "non_diagnostic"
+    prescriptive_status: "non_prescriptive"
+    moral_status: "non_moralizing"
+    person_classification: false
+
+  scope_discipline:
+    summary: >
+      Structural mapping only. No diagnosis, no intent attribution, no motive
+      explanation, no moral ranking, no identity verdict, no orientation
+      taxonomy, and no prescription. PMS application validity remains conditional
+      on Χ + reversibility + D.
+    validity_gate:
+      requires:
+        - "Χ: maintained meta-position and stop-capability"
+        - "reversibility: scene-bound, revisable, configuration-specific reading"
+        - "D: Dignity-in-Practice; no shaming, ranking, humiliation, diagnosis, or person-worth evaluation"
+    application_only_note: >
+      This case may be used as PMS-SEX application only if the validity gate is
+      preserved. It may be criticized, rejected, revised, or ignored without
+      satisfying that gate.
+
+  minimal_vignette:
+    scene_bound: true
+    non_identifying: true
+    text: >
+      A repeated sexual configuration is framed as ongoing but explicitly
+      non-binding: no exclusivity, no future claim, and no identity docking.
+      Over time, absence, delay, or signs of parallel involvement begin to carry
+      more weight than the frame officially acknowledges. Availability and
+      prioritization become implicitly expected while the frame continues to
+      describe itself as limited, open, and non-possessive.
+
+  why_repo_useful:
+    structural_focus: >
+      This case is useful because it isolates a PMS-SEX boundary configuration:
+      Ψ is formally suspended, but trajectory, non-events, attractor formation,
+      and asymmetry make binding functionally operative. It shows how possession
+      logic can emerge structurally without requiring bad intent, deception, or
+      a moralized account of desire.
+    demonstrates:
+      - "suspended Ψ as attribution condition, not operator removal"
+      - "Λ becoming steering under a non-binding frame"
+      - "Α narrowing alternatives through repetition"
+      - "Ω distributing continuity control unevenly"
+      - "Θ solidifying expectations into trajectory"
+      - "Χ erosion under easy-frame rhetoric"
+      - "Ψ leak without explicit declaration"
+
+  operator_mapping:
+    canonical_spine:
+      raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ"
+      operators: ["Δ", "∇", "□", "Λ", "Α", "Ω", "Θ", "Φ", "Χ", "Σ", "Ψ"]
+      note: >
+        The canonical PMS v1.3 spine is preserved. The case foregrounds a local
+        drift corridor but does not change operator order, dependencies, or
+        meanings.
+
+    selected_reduced_signature:
+      source: "PMS-SEX reduced_signatures.MF_17_2"
+      label: "17.2 Minimal Formula — Suspended Self-Binding Boundary Configuration"
+      raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ"
+      operators: ["Δ", "∇", "□", "Λ", "Α", "Ω", "Θ", "Φ", "Χ", "Σ", "Ψ"]
+      reduced: true
+      note: >
+        Ψ is present as a deliberately suspended attribution condition. It is
+        not absent, replaced, or removed from the PMS chain. Covert capture is
+        read as Ψ leak inside a frame that cannot explicitly carry binding.
+
+    foregrounded_drift_trace:
+      raw: "□ suspension → Λ steering → Α path hardening → Ω exclusivity gradient → Θ trajectory solidification → Ψ leak"
+      dependency_hygiene_note: >
+        This drift trace is a domain-specific reading path. It presupposes the
+        canonical Δ–Ψ chain and must not be read as an alternative dependency
+        graph. Any use of Ψ presupposes Σ, Θ, and Χ; where Χ is eroded, the case
+        marks a drift condition rather than a coherent replacement of Ψ
+        dependency.
+
+  scene_packet:
+    scene_id:
+      temporality:
+        operator: "Θ"
+        description: >
+          Repeated sexual practice over time, framed as ongoing but explicitly
+          non-binding.
+      frame_anchor:
+        operator: "□"
+        description: >
+          Declared limited frame: no exclusivity, no future claims, no identity
+          docking, and no formal commitment expectations.
+      roles_not_persons:
+        R1:
+          structural_position: >
+            Higher exposure to access loss, replacement risk, uncertainty, and
+            interpretive burden around absence or alternative involvement.
+        R2:
+          structural_position: >
+            Higher control over continuity, timing, inclusion, and definitional
+            framing of whether the configuration counts as binding.
+
+    trigger:
+      difference:
+        operator: "Δ"
+        description: >
+          Desire for continuity without commitment becomes salient: the frame
+          distinguishes local access from binding-relevant expectation.
+      impulse:
+        operator: "∇"
+        description: >
+          Pressure arises to maintain access and continuity while preserving the
+          formal claim that the configuration remains non-binding.
+
+    lambda_candidates_expected_but_missing:
+      - "neutral tolerance of absence, delay, or parallel involvement"
+      - "explicit re-framing when expectations change"
+      - "pauses that do not become devaluation signals"
+      - "non-events that remain tolerable rather than steering behavior"
+
+    observed_realizations_neutral:
+      - "increasing sensitivity to silence, postponement, or delayed response"
+      - "implicit expectations around availability and prioritization"
+      - "discomfort when alternatives appear despite non-binding language"
+      - "use of limited-frame language to keep the configuration formally light"
+      - "difficulty raising clarification without appearing to violate the frame"
+
+  inner_outer_public_layer_distinction:
+    internal_framing:
+      description: >
+        The scene may be internally framed as open, easy, non-binding,
+        pressure-free, exploratory, local, or resistant to relationship
+        definition.
+      guard: >
+        Internal framing may be real and sincere, but it does not by itself
+        settle the outer structural form once repetition, absence, asymmetry,
+        and temporal reliance become operative.
+
+    outer_legibility:
+      description: >
+        The scene becomes externally readable as a continuity-dependent
+        configuration in which access, timing, replacement risk, and implicit
+        prioritization matter structurally.
+      guard: >
+        Naming this outer legibility does not imply deception, blame,
+        possessiveness as character, denial of consent, or a moral verdict.
+
+    publicness_overlay:
+      present: "optional_or_context_dependent"
+      description: >
+        Publicness may enter through visibility of alternatives, social
+        comparison, shared narratives, documentation, or reputational uptake.
+        Where present, it amplifies or sedimentizes consequences without
+        necessarily creating the primary action-form.
+      guard: >
+        Publicness is neither the whole source of the drift nor irrelevant where
+        it modifies exposure, replacement anxiety, documentation, or reputation.
+
+    temporal_carryover:
+      description: >
+        Even when each encounter is framed as local, repeated coordination
+        creates trajectory. Θ makes accumulated expectation relevant even where
+        official language denies binding.
+
+    layer_guard:
+      - "Internal framing does not erase outer form."
+      - "Outer legibility does not authorize person-ranking."
+      - "Publicness may amplify consequence without necessarily generating it."
+      - "Temporal carryover cannot be reset by frame rhetoric alone."
+
+  operator_costs_and_cost_layout:
+    cost_layout_summary: >
+      Costs concentrate around access, non-events, replacement risk, and
+      unacknowledged trajectory. The frame remains officially non-binding while
+      the configuration increasingly behaves as if continuity matters.
+
+    omega_under_theta:
+      operator_pair: ["Ω", "Θ"]
+      description: >
+        Ω appears as uneven control over continuity, timing, inclusion, and
+        definitional authority. Θ turns repeated reliance into accumulated
+        expectation, making interruption or alternative involvement costly before
+        binding becomes discussable.
+
+    primary_cost_channels:
+      access_costs:
+        description: >
+          Alternatives become restricted or emotionally expensive without
+          explicit exclusivity being declared.
+        operators: ["Ω", "Θ", "Ψ"]
+      temporal_costs:
+        description: >
+          Exit difficulty rises as repeated expectations sediment into a
+          trajectory.
+        operators: ["Α", "Θ"]
+      dignity_in_practice_costs:
+        description: >
+          Ambiguity and subtle pressure begin to replace explicit coordination;
+          D is stressed when restraint is displaced by frame rhetoric.
+        operators: ["Ω", "Χ", "Ψ"]
+      frame_costs:
+        description: >
+          Clarification becomes costly because raising the issue appears to
+          violate the “easy,” limited, or non-binding frame.
+        operators: ["□", "Χ", "Φ"]
+      lambda_costs:
+        description: >
+          Absence, delay, silence, or parallel involvement become steering
+          signals rather than tolerable non-events.
+        operators: ["Λ", "Α", "Ω"]
+      publicness_or_documentation_costs:
+        description: >
+          Where visibility, documentation, or social comparison is present, it
+          can harden replacement risk and sediment perceived status differences.
+        operators: ["□", "Ω", "Θ"]
+
+    asymmetry_pattern:
+      R1: >
+        Carries uncertainty, replacement anxiety, and pressure to monitor
+        availability while lacking an acknowledged claim to continuity.
+      R2: >
+        Carries more control over timing, inclusion, and frame definition while
+        retaining the ability to deny obligation through the limited frame.
+      system_effect: >
+        Possession logic emerges while responsibility remains disclaimed. The
+        configuration produces binding effects without a binding declaration.
+
+  drift_markers:
+    max_primary_markers: 3
+    selected:
+      - id: "covert_self_binding_demand_psi_leak"
+        source: "drift_catalogue.core_dysfunction_markers_ch18_3.(1)"
+        label: "Covert self-binding demand / Ψ leak"
+        configuration_statement: >
+          In this configuration, binding pressure enters a frame narrated as
+          limited, suspended, local, or non-binding.
+        indicators:
+          - "implicit expectations around availability or priority"
+          - "local enactments treated as continuity proofs"
+          - "non-binding language used after binding effects are already active"
+        structural_result: >
+          Ψ becomes operative although suspension is asserted; attribution is
+          silently demanded while the frame cannot carry binding explicitly.
+
+      - id: "non_event_escalation_lambda_as_steering"
+        source: "drift_catalogue.core_dysfunction_markers_ch18_3.(4)"
+        label: "Non-event escalation / Λ as steering"
+        configuration_statement: >
+          In this configuration, absence becomes an active steering mechanism.
+        indicators:
+          - "silence or postponement signals devaluation"
+          - "parallel involvement changes behavior despite formal openness"
+          - "chronic interpretive guessing replaces explicit frame work"
+        structural_result: >
+          Λ shapes the configuration more than enactment; coordination shifts
+          into monitoring, guessing, or withdrawal signaling.
+
+      - id: "loss_of_distance_chi_loss"
+        source: "drift_catalogue.core_dysfunction_markers_ch18_3.(6)"
+        label: "Loss of distance / Χ loss"
+        configuration_statement: >
+          In this configuration, the meta-layer becomes costly or socially
+          delegitimized.
+        indicators:
+          - "clarification is treated as making it heavy"
+          - "distance is reframed as insecurity, avoidance, or frame breach"
+          - "outer-form awareness becomes difficult to name"
+        structural_result: >
+          Self-correction weakens. Without Χ, drift cannot be intercepted early.
+
+    related_warning_signals:
+      - id: "outer_form_denial"
+        source: "viability.warning_signals_ch19_4.outer_form_denial"
+        relevance: >
+          Non-binding language may be used to block structural reading of
+          enacted continuity, access dependence, and expectation formation.
+      - id: "publicness_confusion"
+        source: "viability.warning_signals_ch19_4.publicness_confusion"
+        relevance: >
+          Where alternatives become visible, publicness may be blamed as the
+          whole problem or ignored as consequence amplifier.
+      - id: "theta_cost_externalization"
+        source: "viability.warning_signals_ch19_4.theta_cost_externalization"
+        relevance: >
+          The costs of uncertainty, replacement risk, and delayed clarification
+          may concentrate in the role less able to define the frame.
+
+  binding_leak_mechanism:
+    title: "Ψ without declaration"
+    terminology_guard: >
+      Possession-language in this case names a configuration effect: covert
+      binding pressure, access expectation, and continuity capture under denied
+      Ψ. It does not name a person, motive, pathology, identity, or moral defect.
+    critical_insight: >
+      Ψ does not require explicit agreement to become structurally relevant. It
+      can become functionally active through trajectory, asymmetry, narrowed
+      alternatives, and accumulated expectation.
+    pathway:
+      - step: "No explicit binding claim is made."
+        operators: ["□", "Ψ"]
+      - step: "Expectations stabilize through repetition."
+        operators: ["Α", "Θ"]
+      - step: "Non-events begin to regulate behavior."
+        operators: ["Λ", "Ω"]
+      - step: "Exit or clarification becomes costly before binding is discussable."
+        operators: ["Θ", "Χ", "Ψ"]
+    result: >
+      Ψ functions as if present while remaining officially denied. This is read
+      as Ψ leak, not as a new operator and not as proof of bad intent.
+
+  distance_degradation:
+    operator: "Χ"
+    risk_point: >
+      Distance is reframed as avoidance, insecurity, drama, neediness, or breach
+      of the easy non-binding frame.
+    failure_mode:
+      - "meta-position becomes socially costly"
+      - "stopping or questioning continuity is treated as disproportionate"
+      - "the phrase 'we said it is not binding' blocks clarification rather than preserving freedom"
+    structural_indicator: >
+      The frame uses suspension language to prevent re-reading of the
+      configuration it has generated.
+    dependency_note: >
+      Χ depends on Φ, Θ, and □. Where Χ is eroded, the configuration loses
+      capacity to recontextualize the frame in light of accumulated trajectory.
+
+  rational_response_envelope:
+    status: "structural_reasonableness_only"
+    note: >
+      The following responses are structurally intelligible within the
+      configuration. They are not presented as virtuous, manipulative, healthy,
+      pathological, or morally preferred.
+    responses:
+      - response: "increased monitoring of availability and attention"
+        structural_basis: "Λ has become meaning-bearing under Ω and Θ."
+      - response: "withdrawal signaling when access feels threatened"
+        structural_basis: "Non-events steer because explicit renegotiation is unavailable or costly."
+      - response: "resistance to distance framed as 'do not make it heavy'"
+        structural_basis: "Χ is experienced as destabilizing the limited frame."
+      - response: "continued denial that binding exists"
+        structural_basis: "□ suspension remains the official frame while Ψ effects accumulate."
+    guard: >
+      These responses follow Ω under Θ and Λ steering. They must not be
+      converted into hidden possessiveness, defect, diagnosis, or motive claim.
+
+  viability_minimums:
+    source: "PMS-SEX viability.functional_minimum_conditions_ch19_3"
+    assessment: "viability_stressed"
+    checks:
+      explicit_omega_recognition:
+        status: "weak_or_missing"
+        reason: >
+          Continuity control, replacement risk, and uneven definitional capacity
+          are present but not fully nameable within the limited frame.
+      theta_awareness:
+        status: "insufficient"
+        reason: >
+          Repetition is treated as locally non-binding even as trajectory
+          accumulates expectation and exit cost.
+      stable_chi_capacity:
+        status: "eroding"
+        reason: >
+          Clarification, pause, or meta-commentary becomes socially expensive
+          because it appears to violate the easy-frame rhetoric.
+      no_psi_substitution:
+        status: "failing"
+        reason: >
+          Ψ is officially suspended but functionally active as expectation,
+          access claim, or continuity proof.
+      lambda_tolerance_without_escalation:
+        status: "failing"
+        reason: >
+          Absence, silence, delay, or parallel involvement no longer remain
+          neutral; they become steering variables.
+      internal_framing_accountable_to_outer_form:
+        status: "stressed"
+        reason: >
+          The internal claim of non-binding risks erasing the outer form of
+          repeated reliance, asymmetry, and expectation.
+      publicness_handled_as_overlay:
+        status: "context_dependent"
+        reason: >
+          Publicness is not necessary for the drift, but where visibility or
+          documentation appears, it may intensify Ω/Θ costs.
+
+    minimal_viability_corridor:
+      raw: |
+        □ explicit
+        + Ω nameable
+        + Θ realistic
+        + Χ operative
+        + Λ tolerable
+        + Ψ handled
+        (+ Σ reachable)
+        = structurally governable configuration
+      case_reading: >
+        The corridor is not yet reliably satisfied because Λ is steering, Ψ is
+        leaking, Ω is under-articulated, Θ is underestimated, and Χ is socially
+        costly.
+
+  dignity_in_practice_stress_test:
+    source: "PMS-SEX dignity_in_practice_module"
+    canonical_pms_formula: ["Ψ", "Χ", "Ω"]
+    pms_sex_application_formula: >
+      explicit Ω + operative Χ + no covert Ψ demand under Θ, with outer-form
+      readability preserved
+    risk_point: >
+      D is stressed when ambiguity and limited-frame rhetoric permit pressure
+      without explicit coordination.
+    failure_mode:
+      - "covert Ψ demand enters a frame that denies binding"
+      - "Ω remains unnamed while continuity control becomes uneven"
+      - "Χ is delegitimized as overreaction or insecurity"
+      - "outer-form readability is blocked by internal frame language"
+    structural_indicator: >
+      The configuration protects the non-binding label more than it protects
+      recoverability, clarity, and non-degrading coordination under asymmetry.
+    guardrail: >
+      D remains protection-first. This case does not authorize shaming, public
+      pillory, identity labeling, orientation ranking, diagnosis, or person
+      degradation.
+
+  path_cost_guard:
+    terms_used:
+      - "drift"
+      - "path hardening"
+      - "trajectory solidification"
+      - "stabilization burden"
+      - "Ψ leak"
+      - "Λ steering"
+    configuration_language_only: true
+    forbidden_conversions:
+      - "person-level pathology"
+      - "possessive personality label"
+      - "sexual-orientation taxonomy"
+      - "identity ranking"
+      - "clinical diagnosis"
+      - "moral pathology"
+      - "humiliation or degradation of persons"
+    guard: >
+      Path-cost and drift language applies only to configuration dynamics. The
+      moment it becomes person-language, diagnosis, rank, orientation taxonomy,
+      or humiliation, it leaves PMS-SEX.
+
+  reader_guard:
+    misinterpretations_prevented:
+      does_not_claim:
+        - "that non-binding frames are deceptive"
+        - "that exclusivity is inevitable"
+        - "that possession requires bad intent"
+        - "that feelings imply obligation"
+        - "that jealousy, uncertainty, or discomfort define a person"
+        - "that open or limited frames are structurally invalid as such"
+      does_claim:
+        - "that binding can arise structurally"
+        - "that denial of Ψ increases drift risk when trajectory accumulates"
+        - "that possession logic can emerge before anyone can name it"
+        - "that non-events can become steering variables under expectation"
+        - "that a frame may generate structures it does not explicitly carry"
+
+  pms_validity_check:
+    application_gate:
+      status: "required_for_any_use_beyond_description"
+      valid_only_if:
+        - "Χ remains or becomes re-legitimized as protective meta-position and stop-capability"
+        - "□ is readable against actual trajectory rather than only declared suspension"
+        - "Ω is made nameable as access, exposure, continuity, and definitional gradient"
+        - "Θ is treated as binding-relevant reality rather than narratively resettable"
+        - "D prevents pressure through ambiguity, humiliation, or person-ranking"
+        - "Ψ remains structurally described, not converted into identity verdict or enforced claim"
+      invalid_if:
+        - "the analysis is used to shame or rank persons"
+        - "the case is converted into diagnosis or motive attribution"
+        - "the reading becomes irreversible or global"
+        - "outer legibility is used to authorize public accusation by itself"
+        - "suspended Ψ is treated as absent from the PMS chain"
+    descriptive_only_clause: >
+      Absent the validity gate, critique may describe the configuration but must
+      not prescribe, accuse, diagnose, or convert the reading into a person-level
+      claim.
+
+  analysis_checklist_application:
+    S1_scene_boundary:
+      status: "satisfied"
+      note: >
+        The scene is bounded by a declared limited frame, repeated encounters,
+        and binding-relevant expectation formation.
+    S2_canonical_dependency_check:
+      status: "satisfied"
+      note: >
+        The canonical PMS v1.3 operator spine is preserved; the drift trace is
+        shorthand only.
+    S3_reduced_operator_signature:
+      status: "satisfied"
+      selected: "MF_17_2 Suspended Self-Binding Boundary Configuration"
+    S4_inner_outer_public_layer_scan:
+      status: "satisfied"
+      note: >
+        Internal non-binding framing, outer continuity-dependence, possible
+        public visibility, and temporal carryover are separated.
+    S5_cost_axis_scan:
+      status: "satisfied"
+      note: >
+        Ω gradients and Θ accumulation are identified through access,
+        replacement risk, continuity control, and exit cost.
+    S6_distance_and_correction_capacity:
+      status: "stressed"
+      note: >
+        Χ is present as required capacity but becomes socially costly under
+        limited-frame rhetoric.
+    S7_drift_marker_scan:
+      status: "satisfied"
+      markers:
+        - "Ψ leak"
+        - "Λ as steering"
+        - "Χ loss"
+    S8_viability_minimums:
+      status: "stressed"
+      note: >
+        Viability is weakened by unhandled Ψ, Λ intolerance, undernamed Ω, and
+        eroding Χ.
+    S9_path_cost_guard:
+      status: "satisfied"
+      note: >
+        Drift and path-cost remain configuration-language only.
+    S10_escalation_guard:
+      status: "satisfied"
+      note: >
+        No motive explanation, diagnosis, or person-label is introduced.
+
+  structural_closure:
+    non_normative: true
+    text: >
+      When binding is suspended but continuity persists, structure can bind
+      where language refuses to. Repetition stabilizes expectation, asymmetry
+      channels control, and time turns informal reliance into fact. Possession
+      does not begin here as a declared claim; it begins as a trajectory that
+      cannot be interrupted without cost. By the time conflict appears, binding
+      may already be structurally operative, not by agreement, but by accumulated
+      coordination under denied Ψ. This is not the betrayal of a frame. It is
+      the configuration effect that appears when frames do not carry the
+      structures they generate. Suspended binding does not become unstable
+      because persons want more; it becomes unstable when distance is
+      delegitimized while time keeps running.
+
+  compressed_case_sentence:
+    citable: >
+      In PMS-SEX terms, suspended binding becomes drift-prone when a limited
+      frame keeps denying Ψ while Λ steers, Α hardens, Ω distributes continuity
+      control unevenly, Θ solidifies expectation, and Χ becomes too costly to
+      activate.
+
+  final_case_guard:
+    text: >
+      This case remains valid only as configuration-language: not what persons
+      are, but what this configuration does over time. It permits hard claims
+      about cost, drift, outer legibility, and consequence without converting
+      those claims into person-status judgments.
+    compressed_rules:
+      - "no person diagnosis"
+      - "no intent attribution"
+      - "no moral ranking"
+      - "no orientation taxonomy"
+      - "no outer-form erasure by internal non-binding labels"
+      - "no public accusation from outer legibility alone"
+      - "no path-cost as person-worth"
+      - "no suspended Ψ as operator removal"

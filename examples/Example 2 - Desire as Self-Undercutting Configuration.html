@@ -1,0 +1,1574 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/main.css" />
+		<title>PMS-SEX — Example Case 2: Desire as Self-Undercutting Configuration</title>
+		<style type="text/css">
+			:root {
+			  --font-body: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+			  --font-heading: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+			  --font-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+			  --color-bg: #f5f7fb;
+			  --color-surface: #ffffff;
+			  --color-surface-soft: #f9fbfd;
+			  --color-text: #18202a;
+			  --color-muted: #5f6b7a;
+			  --color-accent: #1f4b99;
+			  --color-accent-soft: #e8f0ff;
+			  --color-border: #d9e1ea;
+			  --color-border-strong: #bfc9d8;
+			  --color-quote: #2f5da8;
+			  --color-code-bg: #f3f5f7;
+			  --color-table-head: #eef3f8;
+			  --color-row-alt: #fbfcfe;
+
+			  --shadow-soft: 0 10px 30px rgba(18, 30, 50, 0.06);
+			  --radius-sm: 6px;
+			  --radius-md: 10px;
+			  --radius-lg: 16px;
+
+			  --content-width: 980px;
+			  --line-height: 1.7;
+			}
+
+			*,
+			*::before,
+			*::after {
+			  box-sizing: border-box;
+			}
+
+			html {
+			  margin: 0;
+			  padding: 0;
+			  scroll-behavior: smooth;
+			}
+
+			body {
+			  margin: 0;
+			  padding: 32px 20px 64px;
+			  font-family: var(--font-body);
+			  font-size: 16px;
+			  line-height: var(--line-height);
+			  color: var(--color-text);
+			  background:
+			    linear-gradient(180deg, #f7f9fc 0%, #f3f6fa 100%);
+			}
+
+			.page,
+			body > header,
+			body > section,
+			body > main {
+			  width: min(100%, var(--content-width));
+			  margin-left: auto;
+			  margin-right: auto;
+			}
+
+			.page {
+			  background: var(--color-surface);
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-lg);
+			  box-shadow: var(--shadow-soft);
+			  padding: 40px 42px 56px;
+			}
+
+			/* Header */
+			header {
+			  width: min(100%, var(--content-width));
+			  margin: 0 auto 28px;
+			  padding: 24px 0 18px;
+			  border-bottom: 1px solid var(--color-border);
+			}
+
+			header h1 {
+			  margin: 0 0 10px;
+			  font-family: var(--font-heading);
+			  font-size: clamp(2rem, 4vw, 2.8rem);
+			  font-weight: 500;
+			  line-height: 1.15;
+			  text-align: center;
+			  letter-spacing: -0.02em;
+			  color: var(--color-text);
+			}
+
+			header h2 {
+			  margin: 0 auto 12px;
+			  max-width: 48rem;
+			  font-size: 1.15rem !important;
+			  line-height: 1.45;
+			  font-weight: 400;
+			  text-align: center;
+			  color: var(--color-muted);
+			  border: 0;
+			  padding: 0;
+			}
+
+			header .subtitle {
+			  max-width: 52rem;
+			  margin: 0 auto 12px;
+			  text-align: center;
+			  color: var(--color-muted);
+			  font-size: 1rem;
+			}
+
+			header .meta {
+			  max-width: 52rem;
+			  margin: 14px auto 0;
+			  padding: 12px 14px;
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-md);
+			  background: var(--color-surface-soft);
+			  font-size: 0.88rem;
+			  line-height: 1.55;
+			  color: var(--color-muted);
+			}
+
+			/* Sections */
+			section {
+			  margin: 0 0 28px;
+			}
+
+			section#content {
+			  width: min(100%, var(--content-width));
+			  margin-left: auto;
+			  margin-right: auto;
+			}
+
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+			  font-family: var(--font-heading);
+			  color: var(--color-text);
+			  letter-spacing: -0.01em;
+			}
+
+			h1 {
+			  font-size: clamp(2rem, 4vw, 2.8rem);
+			  font-weight: 500;
+			}
+
+			h2,
+			h2 strong {
+			  padding-bottom: 8px;
+			  font-size: 1.65rem !important;
+			  font-weight: 500 !important;
+			  line-height: 1.25;
+			  border-bottom: 1px solid var(--color-border);
+			}
+
+			h3,
+			h3 strong {
+			  margin: 22px 0 8px !important;
+			  font-size: 1.2rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			h4,
+			h4 strong {
+			  margin: 18px 0 6px !important;
+			  font-size: 1.05rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			h5,
+			h5 strong,
+			h6,
+			h6 strong {
+			  margin: 16px 0 4px !important;
+			  font-size: 1rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			/* Text */
+			p {
+			  margin: 0 0 12px;
+			}
+
+			strong {
+			  color: #111827;
+			}
+
+			em {
+			  color: inherit;
+			}
+
+			.small {
+			  font-size: 0.92rem;
+			  color: var(--color-muted);
+			}
+
+			/* Links */
+			a {
+			  color: var(--color-accent);
+			  text-decoration: none;
+			  border-bottom: 1px solid transparent;
+			}
+
+			a:hover,
+			a:focus {
+			  border-bottom-color: currentColor;
+			}
+
+			/* Lists */
+			ul,
+			ol {
+			  margin: 8px 0 14px 1.25rem;
+			  padding: 0;
+			}
+
+			li {
+			  margin: 0 0 6px;
+			  padding-left: 2px;
+			}
+
+			ul ul,
+			ol ol,
+			ul ol,
+			ol ul {
+			  margin-top: 6px;
+			  margin-bottom: 8px;
+			}
+
+			li > p {
+			  margin-bottom: 6px;
+			}
+
+			/* Horizontal rule */
+			hr {
+			  display: block;
+			  height: 0;
+			  border: 0;
+			  border-top: 1px solid var(--color-border);
+			  margin: 24px 0;
+			}
+
+			/* Quotes */
+			blockquote {
+			  margin: 16px 0;
+			  padding: 12px 18px;
+			  border-left: 4px solid var(--color-quote);
+			  background: #f8fbff;
+			  color: #324154;
+			  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+			}
+
+			blockquote p:last-child {
+			  margin-bottom: 0;
+			}
+
+			/* Code */
+			code,
+			.code-inline {
+			  font-family: var(--font-mono);
+			  font-size: 0.92em;
+			  background: var(--color-code-bg);
+			  border: 1px solid #e7ebf0;
+			  border-radius: 4px;
+			  padding: 0.12em 0.4em;
+			  color: #233044;
+			}
+
+			pre {
+			  margin: 14px 0 18px;
+			  padding: 14px 16px;
+			  overflow-x: auto;
+			  background: #111827;
+			  color: #f3f4f6;
+			  border-radius: var(--radius-md);
+			  border: 1px solid #0f172a;
+			  text-align: left;
+			  line-height: 1.55;
+			}
+
+			pre code {
+			  background: transparent;
+			  border: 0;
+			  color: inherit;
+			  padding: 0;
+			  font-size: 0.92rem;
+			}
+
+			/* Boxes / callouts */
+			.box {
+			  margin: 16px 0 18px;
+			  padding: 14px 16px;
+			  border: 1px solid var(--color-border);
+			  border-left: 4px solid var(--color-accent);
+			  border-radius: var(--radius-md);
+			  background: linear-gradient(180deg, #fbfdff 0%, #f7faff 100%);
+			  line-height: 1.55;
+			}
+
+			.box-title {
+			  margin: 0 0 6px;
+			  font-size: 0.95rem;
+			  font-weight: 700;
+			  color: var(--color-accent);
+			}
+
+			.box p:last-child,
+			.box ul:last-child,
+			.box ol:last-child {
+			  margin-bottom: 0;
+			}
+
+			/* Tables */
+			.table,
+			table {
+			  width: 100%;
+			  margin: 14px 0 18px;
+			  border-collapse: collapse;
+			  border-spacing: 0;
+			  font-size: 0.95rem;
+			  line-height: 1.5;
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-md);
+			  overflow: hidden;
+			}
+
+			.table th,
+			.table td,
+			table th,
+			table td {
+			  padding: 10px 12px;
+			  vertical-align: top;
+			  border: 1px solid var(--color-border);
+			  text-align: left;
+			}
+
+			.table th,
+			table th {
+			  background: var(--color-table-head);
+			  color: #233044;
+			  font-weight: 700;
+			  font-variant: small-caps;
+			  letter-spacing: 0.03em;
+			}
+
+			.table tr:nth-child(even) td,
+			table tr:nth-child(even) td {
+			  background: var(--color-row-alt);
+			}
+
+			.table tr:nth-child(odd) td,
+			table tr:nth-child(odd) td {
+			  background: #ffffff;
+			}
+
+			/* Tags */
+			.tag {
+			  display: inline-block;
+			  margin: 0 6px 6px 0;
+			  padding: 3px 10px;
+			  border: 1px solid var(--color-border-strong);
+			  border-radius: 999px;
+			  background: #fff;
+			  color: var(--color-muted);
+			  font-size: 0.78rem;
+			  line-height: 1.3;
+			}
+
+			/* Placeholder */
+			.placeholder {
+			  color: var(--color-muted);
+			  font-style: italic;
+			}
+
+			/* Two-column layouts */
+			.two-column {
+			  display: grid;
+			  grid-template-columns: repeat(2, minmax(0, 1fr));
+			  gap: 18px;
+			  margin: 10px 0 16px;
+			}
+
+			.two-column > div {
+			  min-width: 0;
+			}
+
+			/* Utility */
+			.pagebreak {
+			  page-break-before: always;
+			  break-before: page;
+			}
+
+			/* Better spacing for consecutive structural blocks */
+			h2 + p,
+			h3 + p,
+			h4 + p {
+			  margin-top: 2px;
+			}
+
+			p + ul,
+			p + ol {
+			  margin-top: 6px;
+			}
+
+			ul + p,
+			ol + p {
+			  margin-top: 10px;
+			}
+
+			/* Optional content-specific helper classes */
+			.meta-grid {
+			  display: grid;
+			  grid-template-columns: 180px 1fr;
+			  gap: 8px 14px;
+			  margin: 12px 0 18px;
+			}
+
+			.meta-grid dt {
+			  font-weight: 600;
+			  color: var(--color-muted);
+			}
+
+			.meta-grid dd {
+			  margin: 0;
+			}
+
+			.definition-list {
+			  display: grid;
+			  grid-template-columns: 180px 1fr;
+			  gap: 8px 14px;
+			}
+
+			.definition-list dt {
+			  font-weight: 600;
+			  color: var(--color-accent);
+			}
+
+			.definition-list dd {
+			  margin: 0;
+			}
+
+			.callout-warning {
+			  border-left-color: #b45309;
+			  background: #fffaf2;
+			}
+
+			.callout-success {
+			  border-left-color: #0f766e;
+			  background: #f4fffd;
+			}
+
+			.callout-danger {
+			  border-left-color: #b91c1c;
+			  background: #fff8f8;
+			}
+
+			/* Images */
+			img {
+			  display: block;
+			  max-width: 100%;
+			  height: auto;
+			  margin: 14px auto 18px;
+			  border-radius: var(--radius-sm);
+			}
+
+			/* Print */
+			@media print {
+			  :root {
+			    --color-bg: white;
+			    --color-surface: white;
+			    --color-surface-soft: white;
+			    --color-row-alt: #fafafa;
+			    --shadow-soft: none;
+			  }
+
+			  html,
+			  body {
+			    background: white !important;
+			  }
+
+			  body {
+			    width: 100%;
+			    margin: 0;
+			    padding: 0;
+			    font-size: 11pt;
+			    line-height: 1.45;
+			  }
+
+			  .page,
+			  body > header,
+			  body > section,
+			  body > main,
+			  section#content {
+			    width: 100%;
+			    max-width: 100%;
+			    margin: 0;
+			  }
+
+			  .page {
+			    border: 0;
+			    box-shadow: none;
+			    border-radius: 0;
+			    padding: 0;
+			  }
+
+			  header {
+			    margin-bottom: 18px;
+			    padding: 0 0 12px;
+			  }
+
+			  h2,
+			  h2 strong {
+			    page-break-after: avoid;
+			  }
+
+			  h3,
+			  h3 strong,
+			  h4,
+			  h4 strong {
+			    page-break-after: avoid;
+			  }
+
+			  p,
+			  li,
+			  blockquote,
+			  .box,
+			  table,
+			  pre {
+			    page-break-inside: avoid;
+			  }
+
+			  a,
+			  a:visited {
+			    color: inherit;
+			    text-decoration: none;
+			  }
+
+			  a[href]::after {
+			    content: "";
+			  }
+
+			  .box {
+			    background: white;
+			  }
+			}
+
+			/* Responsive */
+			@media (max-width: 900px) {
+			  body {
+			    padding: 20px 14px 44px;
+			  }
+
+			  .page {
+			    padding: 28px 22px 40px;
+			  }
+
+			  .two-column {
+			    grid-template-columns: 1fr;
+			  }
+
+			  .meta-grid,
+			  .definition-list {
+			    grid-template-columns: 1fr;
+			    gap: 4px 0;
+			  }
+
+			  header h1 {
+			    font-size: 2.2rem;
+			  }
+
+			  h2,
+			  h2 strong {
+			    font-size: 1.45rem !important;
+			  }
+			}
+
+			@media (max-width: 640px) {
+			  body {
+			    font-size: 15px;
+			  }
+
+			  .page {
+			    padding: 22px 16px 32px;
+			    border-radius: 12px;
+			  }
+
+			  header .meta {
+			    padding: 10px 12px;
+			  }
+
+			  .table,
+			  table {
+			    font-size: 0.88rem;
+			  }
+
+			  .table th,
+			  .table td,
+			  table th,
+			  table td {
+			    padding: 8px 9px;
+			  }
+
+			  pre {
+			    padding: 12px 13px;
+			  }
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1><strong>PMS–SEX</strong></h1>
+			<h2><em>Example Case 2: Desire as Self-Undercutting Configuration — Minimal Psychology Trigger</em></h2>
+			<div class="meta">
+				<strong>Case ID:</strong> <code>PMS-SEX_EXAMPLE_02</code> &middot;
+				<strong>Case Version:</strong> <code>PMS-SEX_CASE_1.1</code> &middot;
+				<strong>Schema Version:</strong> <code>PMS-SEX_CASE_1.1</code><br />
+				<strong>Status:</strong> example_vignette &middot;
+				<strong>Last Updated:</strong> 2026-04-26<br />
+				<strong>Depends on:</strong> <code>PMS_1.3</code>, <code>PMS-SEX_1.1</code>
+			</div>
+		</header>
+
+		<section id="content">
+
+			<h2>0) Case Identity</h2>
+
+			<p>
+				<strong>Title:</strong> <em>Desire as Self-Undercutting Configuration — Minimal Psychology Trigger</em>
+			</p>
+			<p>
+				<strong>Short label:</strong> <em>Repetition Despite Known Θ Damage</em>
+			</p>
+			<p>
+				<strong>Legacy label:</strong> <em>Desire as Self-Punishment</em>
+			</p>
+			<p>
+				<strong>Profile reference:</strong> <code>PMS-SEX</code> (<code>PMS-SEX_1.1</code>)
+			</p>
+			<p>
+				<strong>Base dependency:</strong> <code>PMS</code> (<code>PMS_1.3</code>)
+			</p>
+
+			<hr />
+
+			<h2>1) Scope Discipline</h2>
+
+			<ul>
+				<li><strong>Structural mapping only:</strong> true</li>
+				<li><strong>Non-diagnostic:</strong> true</li>
+				<li><strong>Non-clinical:</strong> true</li>
+				<li><strong>Non-prescriptive:</strong> true</li>
+				<li><strong>Non-moralizing:</strong> true</li>
+				<li><strong>No motive attribution:</strong> true</li>
+				<li><strong>No person ranking:</strong> true</li>
+				<li><strong>No orientation taxonomy:</strong> true</li>
+				<li><strong>No how-to guidance:</strong> true</li>
+			</ul>
+
+			<h3>1.1 Validity gate required</h3>
+			<ul>
+				<li><strong>Χ</strong></li>
+				<li>reversibility</li>
+				<li><strong>D</strong></li>
+			</ul>
+
+			<h3>1.2 Note</h3>
+			<p>
+				This case maps a configuration, not a person. Minimal psychology is used
+				only as a PMS-SEX structural self-check signal under Ch. 20 conditions.
+				It does not explain desire, diagnose motives, classify identity, or assign
+				moral worth.
+			</p>
+
+			<hr />
+
+			<h2>2) Paper References</h2>
+
+			<h3>2.1 Primary references</h3>
+			<ul>
+				<li>Ch. 18.3: Dysfunction markers</li>
+				<li>Ch. 19.3: Functional minimum conditions</li>
+				<li>Ch. 19.4: Warning signals</li>
+				<li>Ch. 20: Minimal Psychology as Structural Self-Check Adapter</li>
+				<li>Ch. 21: Dignity-in-Practice module</li>
+				<li>Appendix D.4: Highlighted drift corridors</li>
+				<li>Appendix D.5: Minimal viability corridor</li>
+				<li>Appendix D.8: Path-cost / disturbance guard</li>
+			</ul>
+
+			<h3>2.2 Secondary references</h3>
+			<ul>
+				<li>Ch. 0.9: Validity gate</li>
+				<li>Ch. 14: Modulators</li>
+				<li>Ch. 15: Deviance as consequence structure</li>
+				<li>Ch. 23: Limits and scope discipline</li>
+				<li>Ch. 24.3–24.4: Final guard</li>
+			</ul>
+
+			<hr />
+
+			<h2>3) Repository Usefulness</h2>
+
+			<h3>3.1 Why this case is useful</h3>
+			<p>
+				This vignette demonstrates the narrow PMS-SEX condition under which
+				minimal psychology may activate: drift persists despite structural
+				clarity, known <strong>Θ</strong> damage, D-in-Practice undercutting,
+				<strong>Χ</strong> decline, and frame narrowing. The case is useful because it
+				distinguishes structural warning from psychological explanation.
+			</p>
+
+			<h3>3.2 Structural focus</h3>
+			<ul>
+				<li><strong>Α</strong> fixation under repeated enactment</li>
+				<li><strong>Ω</strong> cost concentration</li>
+				<li><strong>Θ</strong> damage accumulation</li>
+				<li><strong>Χ</strong> erosion despite explicit knowledge</li>
+				<li><strong>□</strong> narrowing toward mono-frame</li>
+				<li><strong>Ψ</strong> functional capture without identity verdict</li>
+				<li>minimal psychology as self-check alarm only</li>
+			</ul>
+
+			<hr />
+
+			<h2>4) Scene Packet</h2>
+
+			<h3>4.1 Minimal vignette</h3>
+			<p>
+				A repeated sexual configuration continues over time even after one role
+				explicitly recognizes that the practice produces cumulative depletion,
+				after-cost, or dignity-relevant undercutting. The frame was initially
+				plural, with several viable ways to coordinate desire, but gradually
+				narrows around one dominant route. Stopping, pausing, or choosing
+				alternatives remains formally possible, yet becomes practically harder
+				than repetition.
+			</p>
+
+			<h3>4.2 Scene ID</h3>
+
+			<h4>4.2.1 Temporality — <strong>Θ</strong></h4>
+			<p>
+				Longitudinal repetition of the same configuration with visible cumulative
+				after-costs. No single rupture event is required; the pattern becomes
+				consequential through recurrence.
+			</p>
+
+			<h4>4.2.2 Frame anchor — <strong>□</strong></h4>
+			<p>
+				Initially plural frame: several viable practices, desire grammars, or
+				coordination modes are available. Over time, the frame narrows toward a
+				mono-frame in which one practice becomes the only practically legible
+				route.
+			</p>
+
+			<h4>4.2.3 Roles, not persons</h4>
+			<ul>
+				<li>
+					<strong>R1:</strong>
+					Primary carrier of bodily, emotional, reputational, dignity-relevant,
+					or binding-related after-costs.
+					<br />
+					<strong>Structural position:</strong> higher downstream exposure under <strong>Θ</strong>
+				</li>
+				<li>
+					<strong>R2:</strong>
+					Structurally adjacent role with lower downstream accumulation or less
+					exposure to the after-costs produced by repetition.
+					<br />
+					<strong>Structural position:</strong> lower downstream exposure under <strong>Θ</strong>
+				</li>
+			</ul>
+
+			<h3>4.3 Trigger</h3>
+			<ul>
+				<li>
+					<strong>Δ — Difference:</strong>
+					Salient difference between knowing that the configuration produces
+					harm/depletion and continuing to repeat the same enactment.
+				</li>
+				<li>
+					<strong>∇ — Impulse:</strong>
+					Persistent desire pressure toward the same route despite acknowledged
+					<strong>Θ</strong> damage.
+				</li>
+			</ul>
+
+			<h3>4.4 Λ candidates expected but missing</h3>
+			<ul>
+				<li>pauses that remain neutral and non-punitive</li>
+				<li>withdrawal that reopens alternatives rather than intensifying pressure</li>
+				<li>non-occurrence that does not become self-devaluation, punishment, or proof of failure</li>
+				<li>hesitation that functions as <strong>Χ</strong> activation rather than as escalation trigger</li>
+			</ul>
+
+			<h3>4.5 Observed realizations, neutral</h3>
+			<ul>
+				<li>explicit acknowledgment that the pattern is damaging or depleting</li>
+				<li>continued repetition without durable frame change</li>
+				<li>shrinking set of alternative practices or exits</li>
+				<li>rising practical cost of stopping despite formal availability</li>
+				<li>desire-language increasingly used to settle what the frame can be</li>
+			</ul>
+
+			<hr />
+
+			<h2>5) Operator Mapping</h2>
+
+			<h3>5.1 Canonical spine</h3>
+			<p>
+				<code>Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ</code>
+			</p>
+			<p>
+				Canonical PMS v1.3 spine retained. The case foregrounds
+				<strong>Α</strong>/<strong>Ω</strong>/<strong>Θ</strong>/<strong>Χ</strong>/<strong>□</strong>/<strong>Ψ</strong>
+				interactions but does not alter operator order or dependencies.
+			</p>
+
+			<h3>5.2 Closest reduced signatures</h3>
+			<ul>
+				<li>
+					<strong>MF_18_2 — Dysfunctional Expressions and Destructive Dynamics</strong><br />
+					<code>Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ; pulling arrows: Λ → Α → Ω → Θ</code><br />
+					<strong>Reason:</strong> The case tracks destructive drift under repetition,
+					cost concentration, <strong>Θ</strong> accumulation, and <strong>Χ</strong> erosion.
+				</li>
+				<li>
+					<strong>MF_19_2 — Functional Conditions and Warning Signals</strong><br />
+					<code>Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ; dominant interaction: Ω → Θ</code><br />
+					<strong>Reason:</strong> The case tests viability failure under
+					<strong>Ω</strong> nameability, <strong>Θ</strong> realism,
+					<strong>Χ</strong> operability, <strong>Ψ</strong> handling, and
+					<strong>Λ</strong> tolerance.
+				</li>
+				<li>
+					<strong>MF_14_3 — Modulators</strong><br />
+					<code>Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ</code><br />
+					<strong>Reason:</strong> The case can be read through modulators such as
+					<strong>Λ</strong> density, <strong>Θ</strong> stability,
+					<strong>Φ</strong> habituation, and <strong>Χ</strong> mode.
+				</li>
+				<li>
+					<strong>MF_12_2 — Self-Binding</strong><br />
+					<code>Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ</code><br />
+					<strong>Reason:</strong> <strong>Ψ</strong> becomes functionally relevant when the
+					repeated route starts to carry self-attribution, even if explicit
+					identity-binding is denied.
+				</li>
+			</ul>
+
+			<h3>5.3 Dependency hygiene</h3>
+			<ul>
+				<li><strong>Χ</strong> presupposes <strong>Φ</strong>, <strong>Θ</strong>, and <strong>□</strong>.</li>
+				<li><strong>Σ</strong> presupposes <strong>Χ</strong> and <strong>Φ</strong>.</li>
+				<li><strong>Ψ</strong> presupposes <strong>Σ</strong>, <strong>Θ</strong>, and <strong>Χ</strong>.</li>
+				<li>Mono-frame language does not redefine <strong>□</strong>; it names narrowing of available frame alternatives.</li>
+				<li>Functional <strong>Ψ</strong> capture does not create a new operator and does not authorize identity verdicts.</li>
+			</ul>
+
+			<hr />
+
+			<h2>6) Drift Trace</h2>
+
+			<p>
+				<strong>Raw trace:</strong><br />
+				<code>□ plural → Α fixation → Ω cost concentration → Θ damage accumulation → Χ erosion → □ mono-frame → Ψ functional capture</code>
+			</p>
+
+			<h3>6.1 Formal translation</h3>
+			<p>
+				A plural frame narrows as one route becomes attractor-stabilized. Costs
+				concentrate asymmetrically and accumulate temporally. Distance weakens,
+				alternatives lose legibility, and the route begins to carry
+				self-attribution without explicit self-binding being responsibly handled.
+			</p>
+
+			<h3>6.2 Transitions</h3>
+			<ul>
+				<li>
+					<strong>□ — Frame pluralization to narrowing:</strong>
+					The initial frame allows several desire or coordination grammars.
+					Repetition gradually narrows what counts as available, real, or
+					recognizable.
+				</li>
+				<li>
+					<strong>Α — Attractor fixation:</strong>
+					The same practice becomes the default handling route for desire
+					pressure. Repetition replaces choice without requiring bad faith.
+				</li>
+				<li>
+					<strong>Ω — Cost concentration:</strong>
+					After-costs concentrate on one role through exposure, recovery burden,
+					degradation-nearness, reputational vulnerability, or binding residue.
+				</li>
+				<li>
+					<strong>Θ — Damage accumulation:</strong>
+					Known harm becomes trajectory rather than local episode. Later
+					reframing does not rewind accumulated cost.
+				</li>
+				<li>
+					<strong>Χ — Distance erosion:</strong>
+					Stopping, hesitation, or re-reading becomes practically harder than
+					continuing. Distance is experienced as destabilizing rather than
+					protective.
+				</li>
+				<li>
+					<strong>□ — Mono-frame dominance:</strong>
+					Alternatives lose practical attractiveness or recognizability. The
+					configuration becomes readable through one dominant script.
+				</li>
+				<li>
+					<strong>Ψ — Functional capture:</strong>
+					Self-binding is not necessarily explicit, but the repeated route
+					begins to matter for self-attribution: what one does, deserves, can
+					get, or can imagine. This remains a configuration claim, not a person
+					claim.
+				</li>
+			</ul>
+
+			<hr />
+
+			<h2>7) Inner / Outer / Public Layer Distinction</h2>
+
+			<h3>7.1 Internal framing</h3>
+			<p>
+				Internally, the repeated practice may be narrated as desire, relief,
+				authenticity, inevitability, intensity, familiarity, or the only route
+				that feels real.
+			</p>
+			<p>
+				<strong>Guard:</strong> Internal framing may be real but does not settle the
+				configuration’s outer form or cost distribution.
+			</p>
+
+			<h3>7.2 Outer legibility</h3>
+			<p>
+				Externally, the configuration is readable as repeated enactment despite
+				known <strong>Θ</strong> damage, narrowing alternatives, weakened stop-capability,
+				and concentrated after-costs.
+			</p>
+			<p>
+				<strong>Guard:</strong> Naming this outer legibility does not diagnose the person,
+				condemn the desire, or rank the practice.
+			</p>
+
+			<h3>7.3 Publicness overlay</h3>
+			<p>
+				Publicness is not required for the drift to exist. If documentation,
+				disclosure, reputation, audience uptake, or social comparison enters the
+				configuration, it may intensify <strong>Ω</strong>/<strong>Θ</strong> costs.
+			</p>
+			<p>
+				<strong>PMS layer:</strong> <code>□ extension</code><br />
+				<strong>Primarily intensifies:</strong> <strong>Ω</strong>, <strong>Θ</strong><br />
+				<strong>Interacts with:</strong> <strong>□</strong>, <strong>Α</strong>, <strong>Λ</strong>
+			</p>
+			<p>
+				<strong>Guard:</strong> Publicness is neither treated as the sole origin of harm
+				nor ignored where it hardens consequence.
+			</p>
+
+			<h3>7.4 Temporal carryover</h3>
+			<p>
+				Each repetition carries residues forward: bodily memory, recovery latency,
+				self-attribution, reduced exit realism, and narrowed frame breadth.
+			</p>
+			<p>
+				<strong>Guard:</strong> Interpretation may change; <strong>Θ</strong> does not rewind.
+			</p>
+
+			<hr />
+
+			<h2>8) Cost Layout</h2>
+
+			<p>
+				<strong>Principle:</strong> <code>Ω under Θ</code>
+			</p>
+
+			<h3>8.1 Primary cost channels</h3>
+			<ul>
+				<li>
+					<strong>Bodily:</strong>
+					Exhaustion, somatic stress, dissociation-like withdrawal, saturation,
+					or delayed recovery may function as body remainder.
+					<br />
+					<strong>Guard:</strong> Body remainder is a consequence interface, not a
+					biological taxonomy or person-ranking device.
+				</li>
+				<li>
+					<strong>Temporal:</strong>
+					Each repetition increases path dependence, reduces low-cost exit, and
+					makes alternatives less practicable.
+				</li>
+				<li>
+					<strong>Dignity-in-practice:</strong>
+					Repeated enactments may undercut D-in-Practice when degradation-near,
+					self-devaluing, or humiliation-form scripts recur without
+					play-reversibility, containment, or recovery.
+					<br />
+					<strong>Guard:</strong> This does not mean the person has lower dignity. It
+					means the configuration may fail to preserve <strong>D</strong> as an enactment
+					constraint.
+				</li>
+				<li>
+					<strong>Frame:</strong>
+					Alternative desire grammars lose legibility. The frame contracts until
+					one route dominates what can be recognized as desire.
+				</li>
+				<li>
+					<strong>Relational or role-based:</strong>
+					<strong>R1</strong> carries more after-cost, while <strong>R2</strong> remains adjacent
+					but less exposed to downstream accumulation.
+				</li>
+				<li>
+					<strong>Publicness optional:</strong>
+					Documentation, reputation, or disclosure may sedimentize costs if
+					publicness enters the field.
+				</li>
+			</ul>
+
+			<h3>8.2 Asymmetry pattern</h3>
+			<p>
+				One role absorbs accumulating harm while the configuration remains
+				locally stabilized because short-term relief or pressure reduction
+				outweighs visible long-term cost.
+			</p>
+			<p>
+				<strong>Not a moral claim:</strong> true
+			</p>
+
+			<h3>8.3 System effect</h3>
+			<p>
+				Desire pressure is handled through repetition rather than through frame
+				reopening, distance activation, or viable diversification. The attractor
+				becomes a regulator that the frame can no longer easily interrupt.
+			</p>
+
+			<hr />
+
+			<h2>9) Rational Response Envelope</h2>
+
+			<h3>9.1 Note</h3>
+			<p>
+				These responses are structurally intelligible within the configuration.
+				They are not called healthy, virtuous, pathological, chosen freely, or
+				morally preferred.
+			</p>
+
+			<h3>9.2 Responses</h3>
+			<ul>
+				<li>
+					<strong>Continuing the practice because it reliably resolves immediate pressure</strong><br />
+					<strong>Operator reading:</strong> <strong>Α</strong> stabilizes local relief despite
+					<strong>Θ</strong> accumulation.
+				</li>
+				<li>
+					<strong>Avoiding Χ because stopping intensifies discomfort, emptiness, shame, or destabilization</strong><br />
+					<strong>Operator reading:</strong> <strong>Χ</strong> becomes practically costly;
+					distance is no longer easily protective.
+				</li>
+				<li>
+					<strong>Interpreting alternatives as unreal, unavailable, or not really me</strong><br />
+					<strong>Operator reading:</strong> <strong>□</strong> narrows under
+					<strong>Α</strong> fixation and <strong>Ψ</strong> functional capture.
+				</li>
+				<li>
+					<strong>Treating known harm as insufficient reason to stop</strong><br />
+					<strong>Operator reading:</strong> <strong>Θ</strong> damage has become part of
+					the trajectory rather than a corrective signal.
+				</li>
+			</ul>
+
+			<h3>9.3 Closure</h3>
+			<p>
+				These responses follow <strong>Α + Ω under Θ</strong>. They do not imply lack of
+				intelligence, agency, morality, or worth.
+			</p>
+
+			<hr />
+
+			<h2>10) Drift Markers</h2>
+
+			<h3>10.1 Selected core markers</h3>
+			<ul>
+				<li>
+					<strong>Α compulsivity / attractor fixation</strong><br />
+					<strong>ID:</strong> <code>attractor_fixation</code><br />
+					<strong>Source:</strong> Ch. 18.3(5)<br />
+					<strong>Configuration statement:</strong> In this configuration, stabilization
+					flips into fixation; the route becomes non-substitutable and repetition
+					replaces choice.
+					<br />
+					<strong>Typical indicators:</strong>
+					<ul>
+						<li>practice becomes non-substitutable</li>
+						<li>alternatives lose practical attractiveness</li>
+						<li>the script runs the scene</li>
+					</ul>
+				</li>
+				<li>
+					<strong>Θ accumulation / temporal overload</strong><br />
+					<strong>ID:</strong> <code>temporal_overload</code><br />
+					<strong>Source:</strong> Ch. 18.3(7)<br />
+					<strong>Configuration statement:</strong> In this configuration, costs
+					accumulate faster than the frame can carry, and exit fiction replaces
+					exit realism.
+					<br />
+					<strong>Typical indicators:</strong>
+					<ul>
+						<li>known costs continue accumulating</li>
+						<li>exit is imagined but not enacted</li>
+						<li>collapse becomes delayed rather than sudden</li>
+					</ul>
+				</li>
+				<li>
+					<strong>Χ loss</strong><br />
+					<strong>ID:</strong> <code>loss_of_distance</code><br />
+					<strong>Source:</strong> Ch. 18.3(6)<br />
+					<strong>Configuration statement:</strong> In this configuration, the
+					meta-layer collapses; stopping and re-reading become practically
+					unavailable or unbearable.
+					<br />
+					<strong>Typical indicators:</strong>
+					<ul>
+						<li>stopping becomes practically unavailable</li>
+						<li>hesitation is read as betrayal of authenticity</li>
+						<li>outer-form awareness becomes inaccessible</li>
+					</ul>
+				</li>
+			</ul>
+
+			<h3>10.2 Optional secondary marker</h3>
+			<p>
+				<strong>Outer-form denial</strong><br />
+				<strong>ID:</strong> <code>outer_form_denial</code><br />
+				<strong>Source:</strong> Ch. 18.3(8)
+			</p>
+			<p>
+				<strong>Configuration statement:</strong> Internal desire-language may block
+				analysis of the enacted form, making the configuration unable to read
+				itself structurally.
+			</p>
+			<p>
+				<strong>Typical indicators:</strong>
+			</p>
+			<ul>
+				<li>“I want this, therefore it is structurally settled”</li>
+				<li>practice labels or desire claims block cost-layout analysis</li>
+				<li>known damage is folded back into the script</li>
+			</ul>
+
+			<h3>10.3 Drift corridors</h3>
+			<ul>
+				<li>
+					<strong>Primary corridor</strong><br />
+					<strong>Source:</strong> Appendix D.4<br />
+					<code>Ψ leak → Ω escalation → Χ loss → Α fixation → Θ overload → exit collapse</code><br />
+					<strong>Case reading:</strong> The case does not require explicit coercion.
+					Drift intensifies when self-attribution enters covertly, distance
+					weakens, repetition fixes, and accumulated cost can no longer be exited
+					cheaply.
+				</li>
+				<li>
+					<strong>Non-event / attractor corridor</strong><br />
+					<strong>Source:</strong> Appendix D.4<br />
+					<code>Λ density → Α monopolization → Ω as steering → Θ accumulation → Χ collapse → late Ψ capture</code><br />
+					<strong>Case reading:</strong> Pauses, withdrawals, or non-occurrences fail
+					to remain neutral. They either become unavailable or increase pressure,
+					allowing the attractor to monopolize the frame.
+				</li>
+			</ul>
+
+			<hr />
+
+			<h2>11) Viability Assessment</h2>
+
+			<p>
+				<strong>Source:</strong> Ch. 19.3 and Appendix D.5
+			</p>
+
+			<h3>11.1 Minimal viability corridor</h3>
+			<p>
+				<code>
+					□ explicit<br />
+					+ Ω nameable<br />
+					+ Θ realistic<br />
+					+ Χ operative<br />
+					+ Λ tolerable<br />
+					+ Ψ handled<br />
+					(+ Σ reachable)<br />
+					= structurally governable configuration
+				</code>
+			</p>
+
+			<h3>11.2 Conditions</h3>
+			<ul>
+				<li>
+					<strong>Explicit Ω recognition</strong><br />
+					<strong>Status:</strong> failing_or_fragile<br />
+					<strong>Reading:</strong> Cost concentration is known but not sufficiently
+					regulable. <strong>Ω</strong> may be acknowledged as harm yet not converted
+					into frame adjustment.
+				</li>
+				<li>
+					<strong>Θ awareness</strong><br />
+					<strong>Status:</strong> known_but_not_corrective<br />
+					<strong>Reading:</strong> <strong>Θ</strong> damage is visible and even named, but
+					accumulation continues without durable interruption.
+				</li>
+				<li>
+					<strong>Stable Χ capacity</strong><br />
+					<strong>Status:</strong> failing<br />
+					<strong>Reading:</strong> <strong>Χ</strong> exists as concept but not as operative
+					stop-capability. Distance is experienced as destabilizing or unavailable.
+				</li>
+				<li>
+					<strong>No Ψ substitution</strong><br />
+					<strong>Status:</strong> failing_or_at_risk<br />
+					<strong>Reading:</strong> The practice may begin to carry self-worth,
+					identity proof, self-punishment, or deservedness claims without
+					explicit and reversible handling.
+				</li>
+				<li>
+					<strong>Λ tolerance without escalation</strong><br />
+					<strong>Status:</strong> failing_or_unstable<br />
+					<strong>Reading:</strong> Pauses, cancellations, or absence do not reliably
+					reopen the frame; they may intensify discomfort or return pressure to
+					the same route.
+				</li>
+				<li>
+					<strong>Internal framing accountable to outer form</strong><br />
+					<strong>Status:</strong> fragile<br />
+					<strong>Reading:</strong> Desire-language may be used to block reading of
+					accumulated after-cost and outer-form degradation-nearness.
+				</li>
+				<li>
+					<strong>Publicness handled as overlay</strong><br />
+					<strong>Status:</strong> context_dependent<br />
+					<strong>Reading:</strong> Publicness is not central unless documentation,
+					reputation, or circulation enters. If it does, it must be treated as
+					<strong>Ω</strong>/<strong>Θ</strong> intensification, not origin.
+				</li>
+			</ul>
+
+			<h3>11.3 Conclusion</h3>
+			<p>
+				The configuration is drift-prepared because <strong>Θ</strong> damage is known
+				but not corrective, <strong>Χ</strong> is weak, <strong>Ψ</strong> is at risk of
+				covert capture, and the frame narrows around an attractor.
+			</p>
+
+			<hr />
+
+			<h2>12) Warning Signals</h2>
+
+			<p>
+				<strong>Source:</strong> Ch. 19.4
+			</p>
+
+			<ul>
+				<li>
+					<strong>Narrowing of □ alternatives</strong><br />
+					<strong>ID:</strong> <code>mono_frame</code><br />
+					<strong>Structural note:</strong> <strong>Α</strong> monopolizes <strong>□</strong>.<br />
+					<strong>Indicators:</strong>
+					<ul>
+						<li>only one frame works</li>
+						<li>alternatives become unattractive or unreal</li>
+						<li>the route becomes recognizable as the only desire form</li>
+					</ul>
+				</li>
+				<li>
+					<strong>Persistence despite clear structural undercutting</strong><br />
+					<strong>ID:</strong> <code>persistence_despite_structural_undercutting</code><br />
+					<strong>Structural note:</strong> <strong>Α + Θ</strong> overrun <strong>Χ</strong>.<br />
+					<strong>Indicators:</strong>
+					<ul>
+						<li>repetition continues despite recognized harm</li>
+						<li>exit is imagined but not executed</li>
+						<li>insight does not alter the operator chain</li>
+					</ul>
+				</li>
+				<li>
+					<strong>Externalization or concentration of Θ costs</strong><br />
+					<strong>ID:</strong> <code>theta_cost_externalization</code><br />
+					<strong>Structural note:</strong> <strong>Θ</strong> costs concentrate through
+					<strong>Ω</strong> layout.<br />
+					<strong>Indicators:</strong>
+					<ul>
+						<li>after-costs remain concentrated on R1</li>
+						<li>short-term relief stabilizes long-term damage</li>
+						<li>costs harden before the frame updates</li>
+					</ul>
+				</li>
+				<li>
+					<strong>Outer-form denial</strong><br />
+					<strong>ID:</strong> <code>outer_form_denial</code><br />
+					<strong>Structural note:</strong> <strong>Χ</strong> weakens because the configuration cannot re-read itself.<br />
+					<strong>Indicators:</strong>
+					<ul>
+						<li>internal desire-language blocks structural reading</li>
+						<li>visible action-form remains unread</li>
+						<li>known harm is reabsorbed as part of the route</li>
+					</ul>
+				</li>
+			</ul>
+
+			<hr />
+
+			<h2>13) Minimal Psychology Trigger</h2>
+
+			<p>
+				<strong>Source:</strong> Ch. 20
+			</p>
+			<p>
+				<strong>Activation status:</strong> trigger_conditions_met_in_vignette
+			</p>
+
+			<h3>13.1 Activation basis</h3>
+			<ul>
+				<li>drift markers from Ch. 18 are present</li>
+				<li>minimal viability conditions from Ch. 19 are no longer restoring correction</li>
+				<li>the configuration is carried voluntarily and repeatedly</li>
+				<li>known <strong>Θ</strong> damage continues without durable interruption</li>
+				<li>D-in-Practice is repeatedly undercut in enactment</li>
+				<li><strong>□</strong> narrows toward a mono-frame</li>
+				<li><strong>Χ</strong> exists formally but is not enacted in time</li>
+			</ul>
+
+			<h3>13.2 Permitted structural question</h3>
+			<p>
+				<strong>Preferred form:</strong><br />
+				<code>What structural role is this desire playing in this configuration?</code>
+			</p>
+			<p>
+				<strong>Colloquial form allowed only if translated:</strong><br />
+				<code>Why do I really desire X?</code>
+			</p>
+
+			<h3>13.3 Constraints</h3>
+			<ul>
+				<li>hypothetical, not confessional</li>
+				<li>targets pattern continuity, not inner truth</li>
+				<li>tests whether desire-language functions as a drift carrier</li>
+				<li>returns attention to enacted form, cost layout, <strong>Χ</strong>, and <strong>Θ</strong></li>
+				<li>may not become identity story, trauma explanation, or motive verdict</li>
+			</ul>
+
+			<h3>13.4 Permitted warning hypothesis</h3>
+			<p>
+				In this configuration, desire-language may be functioning as a
+				drift-maintaining or self-undercutting handling mode rather than as play,
+				exploration, negotiated intensity, or bounded practice.
+			</p>
+
+			<h3>13.5 Strict limits</h3>
+			<ul>
+				<li>not an explanation of desire</li>
+				<li>not a claim about inner motive</li>
+				<li>not a diagnosis</li>
+				<li>not a person-type</li>
+				<li>not an identity verdict</li>
+				<li>not a moral judgement</li>
+			</ul>
+
+			<h3>13.6 Allowed alarm outputs</h3>
+			<ul>
+				<li>“In this configuration, drift persistence is present.”</li>
+				<li>“The configuration is no longer correcting itself structurally.”</li>
+				<li>“Distance (Χ), frame clarity (□), and Θ realism require reactivation.”</li>
+				<li>“Internal framing is no longer sufficient to settle the enacted structure.”</li>
+				<li>“Outer legibility and cost distribution require re-reading without person-ranking.”</li>
+			</ul>
+
+			<hr />
+
+			<h2>14) Dignity-in-Practice Stress Test</h2>
+
+			<p>
+				<strong>Source:</strong> Ch. 21
+			</p>
+			<p>
+				<strong>Canonical PMS D formula:</strong> <code>["Ψ", "Χ", "Ω"]</code>
+			</p>
+			<p>
+				<strong>PMS-SEX application formula:</strong><br />
+				<code>explicit Ω + operative Χ + no covert Ψ demand under Θ, with outer-form readability preserved</code>
+			</p>
+
+			<h3>14.1 Risk point</h3>
+			<p>
+				Degradation-near or self-devaluing scripts repeat without sufficient
+				reversibility, containment, recovery, or distance activation.
+			</p>
+
+			<h3>14.2 Failure mode</h3>
+			<p>
+				D is undercut not through external coercion alone, but through repeated
+				self-directed enactment under a narrowing frame. The configuration can
+				fail D-in-Practice even while desire remains internally real.
+			</p>
+
+			<h3>14.3 Structural indicator</h3>
+			<p>
+				“I know this harms me” no longer activates stopping or frame revision; it
+				becomes part of the script.
+			</p>
+
+			<h3>14.4 D guard</h3>
+			<ul>
+				<li>D applies in enactment, not as status.</li>
+				<li>This does not lower dignity or worth.</li>
+				<li>The case critiques configuration handling, not the person.</li>
+				<li>D must not be used for shaming, humiliation, diagnosis, or identity ranking.</li>
+			</ul>
+
+			<hr />
+
+			<h2>15) Path-Cost and Disturbance Guard</h2>
+
+			<p>
+				<strong>Source:</strong> Appendix D.8
+			</p>
+
+			<h3>15.1 Allowed language</h3>
+			<ul>
+				<li>configuration-level path-cost</li>
+				<li>stabilization burden</li>
+				<li><strong>Α</strong> fixation</li>
+				<li><strong>Θ</strong> accumulation</li>
+				<li><strong>Χ</strong> loss</li>
+				<li>failed or overloaded <strong>Σ</strong></li>
+				<li><strong>Ψ</strong> leak or functional capture</li>
+			</ul>
+
+			<h3>15.2 Case application</h3>
+			<p>
+				This configuration has rising path-cost because the frame must carry
+				repetition, known damage, narrowing alternatives, self-attribution risk,
+				and weakening distance without sufficient integration.
+			</p>
+
+			<h3>15.3 Forbidden conversions</h3>
+			<ul>
+				<li>person-level pathology</li>
+				<li>sexual identity taxonomy</li>
+				<li>orientation ranking</li>
+				<li>clinical diagnosis</li>
+				<li>moral disorder</li>
+				<li>lower dignity</li>
+				<li>degraded worth</li>
+				<li>humiliation as critique</li>
+			</ul>
+
+			<h3>15.4 Final guard</h3>
+			<p>
+				Path-cost language is valid only as configuration-language. If converted
+				into person-language, diagnosis, rank, taxonomy, or humiliation, the use
+				leaves PMS-SEX.
+			</p>
+
+			<hr />
+
+			<h2>16) Reader Guard</h2>
+
+			<h3>16.1 This example does not claim</h3>
+			<ul>
+				<li>that desire is pathological</li>
+				<li>that repetition implies illness, masochism, defect, or identity type</li>
+				<li>that suffering proves authenticity</li>
+				<li>that anyone is responsible for wanting harm</li>
+				<li>that self-punishment is an inner motive explanation</li>
+				<li>that the case authorizes intervention, therapy, legal judgment, or public accusation</li>
+			</ul>
+
+			<h3>16.2 This example does claim</h3>
+			<ul>
+				<li>that repetition under known harm is a drift marker</li>
+				<li>that desire can become structurally overburdened by regulation, relief, and self-relation</li>
+				<li>that <strong>Α</strong> fixation can make continuation easier than interruption</li>
+				<li>that <strong>Θ</strong> damage can accumulate even when harm is explicitly known</li>
+				<li>that minimal psychology is justified only as a structural self-check alarm under Ch. 20 conditions</li>
+				<li>that D-in-Practice can be undercut by configuration dynamics without assigning lower dignity or blame</li>
+			</ul>
+
+			<hr />
+
+			<h2>17) PMS Validity Check</h2>
+
+			<h3>17.1 Application gate</h3>
+			<ul>
+				<li>
+					<strong>Χ — Distance:</strong>
+					<strong>Required:</strong> true<br />
+					Distance must be re-activated as protective meta-capacity, not as
+					punishment, superiority, or moral verdict.
+				</li>
+				<li>
+					<strong>Reversibility:</strong>
+					<strong>Required:</strong> true<br />
+					All readings remain scene-bound and revisable; no global person label,
+					motive claim, diagnosis, or identity verdict may be inferred.
+				</li>
+				<li>
+					<strong>D — Dignity-in-Practice:</strong>
+					<strong>Required:</strong> true<br />
+					D constrains enactment and critique. No shaming, humiliation,
+					person-ranking, or ontological evaluation is permitted.
+				</li>
+			</ul>
+
+			<h3>17.2 Additional case conditions</h3>
+			<ul>
+				<li><strong>□</strong> alternatives must remain legible as structural possibilities.</li>
+				<li><strong>Θ</strong> damage must be treated as non-negotiable accumulation, not narratively reset.</li>
+				<li><strong>Ψ</strong> must remain self-referential and may not become an imposed identity verdict.</li>
+				<li>Minimal psychology must output alarm only, not explanation.</li>
+			</ul>
+
+			<h3>17.3 Invalid uses</h3>
+			<ul>
+				<li>using the case to diagnose a person</li>
+				<li>using desire-language to prove pathology</li>
+				<li>using D to shame or humiliate</li>
+				<li>using path-cost to rank identities or practices</li>
+				<li>using PMS-SEX language to enforce truth, clarity, urgency, or action while suspending <strong>Χ</strong>, reversibility, or D</li>
+			</ul>
+
+			<h3>17.4 Validity conclusion</h3>
+			<p>
+				Without <strong>Χ</strong>, reversibility, and D, the case remains descriptive
+				mapping only and cannot be used as a PMS-valid application.
+			</p>
+
+			<hr />
+
+			<h2>18) Structural Closure</h2>
+
+			<h3>18.1 Non-normative summary</h3>
+			<p>
+				When desire repeatedly overrides known harm, repetition rather than
+				preference becomes the coordinating force. What initially appears as
+				wanting can become a handling script for pressure, in which alternatives
+				lose legibility and stopping becomes more costly than continuation.
+			</p>
+
+			<h3>18.2 Minimal psychology closure</h3>
+			<p>
+				The permitted question is not why the desire exists, but what structural
+				role it is playing now. Minimal psychology does not explain; it flags that
+				distance has eroded, D-in-Practice is being undercut in enactment, and
+				time is converting damage into trajectory.
+			</p>
+
+			<h3>18.3 Final marker</h3>
+			<p>
+				This is not pathology. It is drift under accumulation. Desire is not
+				condemned; it is recognized as structurally overburdened—carrying
+				regulation, relief, and self-relation at once. That overload, not the
+				desire itself, is what makes the configuration unstable.
+			</p>
+
+		</section>
+	</body>
+</html>

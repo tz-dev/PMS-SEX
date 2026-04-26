@@ -1,0 +1,1673 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/main.css" />
+		<title>PMS-SEX — Example Case 1: Consent That Remains Procedurally Valid but Fails Structurally</title>
+		<style type="text/css">
+			:root {
+			  --font-body: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+			  --font-heading: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+			  --font-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+			  --color-bg: #f5f7fb;
+			  --color-surface: #ffffff;
+			  --color-surface-soft: #f9fbfd;
+			  --color-text: #18202a;
+			  --color-muted: #5f6b7a;
+			  --color-accent: #1f4b99;
+			  --color-accent-soft: #e8f0ff;
+			  --color-border: #d9e1ea;
+			  --color-border-strong: #bfc9d8;
+			  --color-quote: #2f5da8;
+			  --color-code-bg: #f3f5f7;
+			  --color-table-head: #eef3f8;
+			  --color-row-alt: #fbfcfe;
+
+			  --shadow-soft: 0 10px 30px rgba(18, 30, 50, 0.06);
+			  --radius-sm: 6px;
+			  --radius-md: 10px;
+			  --radius-lg: 16px;
+
+			  --content-width: 980px;
+			  --line-height: 1.7;
+			}
+
+			*,
+			*::before,
+			*::after {
+			  box-sizing: border-box;
+			}
+
+			html {
+			  margin: 0;
+			  padding: 0;
+			  scroll-behavior: smooth;
+			}
+
+			body {
+			  margin: 0;
+			  padding: 32px 20px 64px;
+			  font-family: var(--font-body);
+			  font-size: 16px;
+			  line-height: var(--line-height);
+			  color: var(--color-text);
+			  background:
+			    linear-gradient(180deg, #f7f9fc 0%, #f3f6fa 100%);
+			}
+
+			.page,
+			body > header,
+			body > section,
+			body > main {
+			  width: min(100%, var(--content-width));
+			  margin-left: auto;
+			  margin-right: auto;
+			}
+
+			.page {
+			  background: var(--color-surface);
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-lg);
+			  box-shadow: var(--shadow-soft);
+			  padding: 40px 42px 56px;
+			}
+
+			/* Header */
+			header {
+			  width: min(100%, var(--content-width));
+			  margin: 0 auto 28px;
+			  padding: 24px 0 18px;
+			  border-bottom: 1px solid var(--color-border);
+			}
+
+			header h1 {
+			  margin: 0 0 10px;
+			  font-family: var(--font-heading);
+			  font-size: clamp(2rem, 4vw, 2.8rem);
+			  font-weight: 500;
+			  line-height: 1.15;
+			  text-align: center;
+			  letter-spacing: -0.02em;
+			  color: var(--color-text);
+			}
+
+			header h2 {
+			  margin: 0 auto 12px;
+			  max-width: 48rem;
+			  font-size: 1.15rem !important;
+			  line-height: 1.45;
+			  font-weight: 400;
+			  text-align: center;
+			  color: var(--color-muted);
+			  border: 0;
+			  padding: 0;
+			}
+
+			header .subtitle {
+			  max-width: 52rem;
+			  margin: 0 auto 12px;
+			  text-align: center;
+			  color: var(--color-muted);
+			  font-size: 1rem;
+			}
+
+			header .meta {
+			  max-width: 52rem;
+			  margin: 14px auto 0;
+			  padding: 12px 14px;
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-md);
+			  background: var(--color-surface-soft);
+			  font-size: 0.88rem;
+			  line-height: 1.55;
+			  color: var(--color-muted);
+			}
+
+			/* Sections */
+			section {
+			  margin: 0 0 28px;
+			}
+
+			section#content {
+			  width: min(100%, var(--content-width));
+			  margin-left: auto;
+			  margin-right: auto;
+			}
+
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+			  font-family: var(--font-heading);
+			  color: var(--color-text);
+			  letter-spacing: -0.01em;
+			}
+
+			h1 {
+			  font-size: clamp(2rem, 4vw, 2.8rem);
+			  font-weight: 500;
+			}
+
+			h2,
+			h2 strong {
+			  padding-bottom: 8px;
+			  font-size: 1.65rem !important;
+			  font-weight: 500 !important;
+			  line-height: 1.25;
+			  border-bottom: 1px solid var(--color-border);
+			}
+
+			h3,
+			h3 strong {
+			  margin: 22px 0 8px !important;
+			  font-size: 1.2rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			h4,
+			h4 strong {
+			  margin: 18px 0 6px !important;
+			  font-size: 1.05rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			h5,
+			h5 strong,
+			h6,
+			h6 strong {
+			  margin: 16px 0 4px !important;
+			  font-size: 1rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			/* Text */
+			p {
+			  margin: 0 0 12px;
+			}
+
+			strong {
+			  color: #111827;
+			}
+
+			em {
+			  color: inherit;
+			}
+
+			.small {
+			  font-size: 0.92rem;
+			  color: var(--color-muted);
+			}
+
+			/* Links */
+			a {
+			  color: var(--color-accent);
+			  text-decoration: none;
+			  border-bottom: 1px solid transparent;
+			}
+
+			a:hover,
+			a:focus {
+			  border-bottom-color: currentColor;
+			}
+
+			/* Lists */
+			ul,
+			ol {
+			  margin: 8px 0 14px 1.25rem;
+			  padding: 0;
+			}
+
+			li {
+			  margin: 0 0 6px;
+			  padding-left: 2px;
+			}
+
+			ul ul,
+			ol ol,
+			ul ol,
+			ol ul {
+			  margin-top: 6px;
+			  margin-bottom: 8px;
+			}
+
+			li > p {
+			  margin-bottom: 6px;
+			}
+
+			/* Horizontal rule */
+			hr {
+			  display: block;
+			  height: 0;
+			  border: 0;
+			  border-top: 1px solid var(--color-border);
+			  margin: 24px 0;
+			}
+
+			/* Quotes */
+			blockquote {
+			  margin: 16px 0;
+			  padding: 12px 18px;
+			  border-left: 4px solid var(--color-quote);
+			  background: #f8fbff;
+			  color: #324154;
+			  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+			}
+
+			blockquote p:last-child {
+			  margin-bottom: 0;
+			}
+
+			/* Code */
+			code,
+			.code-inline {
+			  font-family: var(--font-mono);
+			  font-size: 0.92em;
+			  background: var(--color-code-bg);
+			  border: 1px solid #e7ebf0;
+			  border-radius: 4px;
+			  padding: 0.12em 0.4em;
+			  color: #233044;
+			}
+
+			pre {
+			  margin: 14px 0 18px;
+			  padding: 14px 16px;
+			  overflow-x: auto;
+			  background: #111827;
+			  color: #f3f4f6;
+			  border-radius: var(--radius-md);
+			  border: 1px solid #0f172a;
+			  text-align: left;
+			  line-height: 1.55;
+			}
+
+			pre code {
+			  background: transparent;
+			  border: 0;
+			  color: inherit;
+			  padding: 0;
+			  font-size: 0.92rem;
+			}
+
+			/* Boxes / callouts */
+			.box {
+			  margin: 16px 0 18px;
+			  padding: 14px 16px;
+			  border: 1px solid var(--color-border);
+			  border-left: 4px solid var(--color-accent);
+			  border-radius: var(--radius-md);
+			  background: linear-gradient(180deg, #fbfdff 0%, #f7faff 100%);
+			  line-height: 1.55;
+			}
+
+			.box-title {
+			  margin: 0 0 6px;
+			  font-size: 0.95rem;
+			  font-weight: 700;
+			  color: var(--color-accent);
+			}
+
+			.box p:last-child,
+			.box ul:last-child,
+			.box ol:last-child {
+			  margin-bottom: 0;
+			}
+
+			/* Tables */
+			.table,
+			table {
+			  width: 100%;
+			  margin: 14px 0 18px;
+			  border-collapse: collapse;
+			  border-spacing: 0;
+			  font-size: 0.95rem;
+			  line-height: 1.5;
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-md);
+			  overflow: hidden;
+			}
+
+			.table th,
+			.table td,
+			table th,
+			table td {
+			  padding: 10px 12px;
+			  vertical-align: top;
+			  border: 1px solid var(--color-border);
+			  text-align: left;
+			}
+
+			.table th,
+			table th {
+			  background: var(--color-table-head);
+			  color: #233044;
+			  font-weight: 700;
+			  font-variant: small-caps;
+			  letter-spacing: 0.03em;
+			}
+
+			.table tr:nth-child(even) td,
+			table tr:nth-child(even) td {
+			  background: var(--color-row-alt);
+			}
+
+			.table tr:nth-child(odd) td,
+			table tr:nth-child(odd) td {
+			  background: #ffffff;
+			}
+
+			/* Tags */
+			.tag {
+			  display: inline-block;
+			  margin: 0 6px 6px 0;
+			  padding: 3px 10px;
+			  border: 1px solid var(--color-border-strong);
+			  border-radius: 999px;
+			  background: #fff;
+			  color: var(--color-muted);
+			  font-size: 0.78rem;
+			  line-height: 1.3;
+			}
+
+			/* Placeholder */
+			.placeholder {
+			  color: var(--color-muted);
+			  font-style: italic;
+			}
+
+			/* Two-column layouts */
+			.two-column {
+			  display: grid;
+			  grid-template-columns: repeat(2, minmax(0, 1fr));
+			  gap: 18px;
+			  margin: 10px 0 16px;
+			}
+
+			.two-column > div {
+			  min-width: 0;
+			}
+
+			/* Utility */
+			.pagebreak {
+			  page-break-before: always;
+			  break-before: page;
+			}
+
+			/* Better spacing for consecutive structural blocks */
+			h2 + p,
+			h3 + p,
+			h4 + p {
+			  margin-top: 2px;
+			}
+
+			p + ul,
+			p + ol {
+			  margin-top: 6px;
+			}
+
+			ul + p,
+			ol + p {
+			  margin-top: 10px;
+			}
+
+			/* Optional content-specific helper classes */
+			.meta-grid {
+			  display: grid;
+			  grid-template-columns: 180px 1fr;
+			  gap: 8px 14px;
+			  margin: 12px 0 18px;
+			}
+
+			.meta-grid dt {
+			  font-weight: 600;
+			  color: var(--color-muted);
+			}
+
+			.meta-grid dd {
+			  margin: 0;
+			}
+
+			.definition-list {
+			  display: grid;
+			  grid-template-columns: 180px 1fr;
+			  gap: 8px 14px;
+			}
+
+			.definition-list dt {
+			  font-weight: 600;
+			  color: var(--color-accent);
+			}
+
+			.definition-list dd {
+			  margin: 0;
+			}
+
+			.callout-warning {
+			  border-left-color: #b45309;
+			  background: #fffaf2;
+			}
+
+			.callout-success {
+			  border-left-color: #0f766e;
+			  background: #f4fffd;
+			}
+
+			.callout-danger {
+			  border-left-color: #b91c1c;
+			  background: #fff8f8;
+			}
+
+			/* Images */
+			img {
+			  display: block;
+			  max-width: 100%;
+			  height: auto;
+			  margin: 14px auto 18px;
+			  border-radius: var(--radius-sm);
+			}
+
+			/* Print */
+			@media print {
+			  :root {
+			    --color-bg: white;
+			    --color-surface: white;
+			    --color-surface-soft: white;
+			    --color-row-alt: #fafafa;
+			    --shadow-soft: none;
+			  }
+
+			  html,
+			  body {
+			    background: white !important;
+			  }
+
+			  body {
+			    width: 100%;
+			    margin: 0;
+			    padding: 0;
+			    font-size: 11pt;
+			    line-height: 1.45;
+			  }
+
+			  .page,
+			  body > header,
+			  body > section,
+			  body > main,
+			  section#content {
+			    width: 100%;
+			    max-width: 100%;
+			    margin: 0;
+			  }
+
+			  .page {
+			    border: 0;
+			    box-shadow: none;
+			    border-radius: 0;
+			    padding: 0;
+			  }
+
+			  header {
+			    margin-bottom: 18px;
+			    padding: 0 0 12px;
+			  }
+
+			  h2,
+			  h2 strong {
+			    page-break-after: avoid;
+			  }
+
+			  h3,
+			  h3 strong,
+			  h4,
+			  h4 strong {
+			    page-break-after: avoid;
+			  }
+
+			  p,
+			  li,
+			  blockquote,
+			  .box,
+			  table,
+			  pre {
+			    page-break-inside: avoid;
+			  }
+
+			  a,
+			  a:visited {
+			    color: inherit;
+			    text-decoration: none;
+			  }
+
+			  a[href]::after {
+			    content: "";
+			  }
+
+			  .box {
+			    background: white;
+			  }
+			}
+
+			/* Responsive */
+			@media (max-width: 900px) {
+			  body {
+			    padding: 20px 14px 44px;
+			  }
+
+			  .page {
+			    padding: 28px 22px 40px;
+			  }
+
+			  .two-column {
+			    grid-template-columns: 1fr;
+			  }
+
+			  .meta-grid,
+			  .definition-list {
+			    grid-template-columns: 1fr;
+			    gap: 4px 0;
+			  }
+
+			  header h1 {
+			    font-size: 2.2rem;
+			  }
+
+			  h2,
+			  h2 strong {
+			    font-size: 1.45rem !important;
+			  }
+			}
+
+			@media (max-width: 640px) {
+			  body {
+			    font-size: 15px;
+			  }
+
+			  .page {
+			    padding: 22px 16px 32px;
+			    border-radius: 12px;
+			  }
+
+			  header .meta {
+			    padding: 10px 12px;
+			  }
+
+			  .table,
+			  table {
+			    font-size: 0.88rem;
+			  }
+
+			  .table th,
+			  .table td,
+			  table th,
+			  table td {
+			    padding: 8px 9px;
+			  }
+
+			  pre {
+			    padding: 12px 13px;
+			  }
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1><strong>PMS–SEX</strong></h1>
+			<h2><em>Example Case 1: Consent That Remains Procedurally Valid but Fails Structurally</em></h2>
+			<div class="meta">
+				<strong>Case ID:</strong> <code>PMS-SEX_CASE_01</code> &middot;
+				<strong>Case Version:</strong> <code>PMS-SEX-EXAMPLE_1.1</code> &middot;
+				<strong>Schema Version:</strong> <code>PMS-SEX-EXAMPLE_1.1</code><br />
+				<strong>Status:</strong> example_case &middot;
+				<strong>Use:</strong> scene-bound structural vignette; non-instructional; non-diagnostic<br />
+				<strong>Depends on:</strong> <code>PMS_1.3</code>, <code>PMS-SEX_1.1</code>
+			</div>
+		</header>
+
+		<section id="content">
+
+			<h2>0) Case Identity</h2>
+
+			<p>
+				<strong>Title:</strong> <em>Consent That Remains Procedurally Valid but Fails Structurally</em>
+			</p>
+			<p>
+				<strong>Short label:</strong> <em>Formal Consent vs. Drift under Accumulating Costs</em>
+			</p>
+			<p>
+				<strong>Aligned with:</strong> <code>PMS-SEX.yaml</code> (<code>PMS-SEX_1.1</code>) and
+				<code>PMS.yaml</code> (<code>PMS_1.3</code>)
+			</p>
+			<p>
+				<strong>Profile dependency:</strong> PMS–SEX Application Profile
+				(<code>PMS-SEX_1.1</code>)
+			</p>
+			<p>
+				<strong>Base dependency:</strong> Praxeological Meta-Structure
+				(<code>PMS_1.3</code>)
+			</p>
+
+			<h3>0.1 Paper references</h3>
+			<ul>
+				<li>Ch. 0.2</li>
+				<li>Ch. 0.4</li>
+				<li>Ch. 3</li>
+				<li>Ch. 4</li>
+				<li>Ch. 5</li>
+				<li>Ch. 6</li>
+				<li>Ch. 8</li>
+				<li>Ch. 10</li>
+				<li>Ch. 12</li>
+				<li>Ch. 18</li>
+				<li>Ch. 19</li>
+				<li>Ch. 21</li>
+				<li>Appendix C</li>
+				<li>Appendix D</li>
+			</ul>
+
+			<h3>0.2 Scope</h3>
+			<p>
+				Structural mapping only. This case does not diagnose persons, infer
+				motives, rank identities, evaluate legal validity, or prescribe action.
+				It reconstructs a configuration in which a formally consent-based frame
+				remains intact while cost distribution, temporality, and distance-capacity
+				drift structurally.
+			</p>
+
+			<h3>0.3 Non-goals</h3>
+			<ul>
+				<li>no legal evaluation</li>
+				<li>no clinical interpretation</li>
+				<li>no person diagnosis</li>
+				<li>no moral ranking</li>
+				<li>no claim that consent is irrelevant</li>
+				<li>no claim that explicit rules are harmful</li>
+				<li>no procedural or sexual instruction</li>
+				<li>no risk-optimization guidance</li>
+			</ul>
+
+			<hr />
+
+			<h2>1) Validity Gate</h2>
+
+			<p>
+				<strong>Applies:</strong> true
+			</p>
+
+			<h3>1.1 PMS entry condition</h3>
+			<ul>
+				<li>
+					<strong>Χ (Distance):</strong>
+					The reading must preserve meta-position and stop-capability. It must not
+					fuse into accusation, urgency, enforcement, or person-level attribution.
+				</li>
+				<li>
+					<strong>Reversibility:</strong>
+					All claims remain scene-bound, configuration-specific, and revisable.
+					No global person labels or irreversible interpretive claims are permitted.
+				</li>
+				<li>
+					<strong>D (Dignity-in-Practice):</strong>
+					The analysis may critique enacted structures and cost handling only. It
+					must not shame, humiliate, rank, diagnose, or ontologically evaluate any
+					person or group.
+				</li>
+			</ul>
+
+			<hr />
+
+			<h2>2) PMS v1.3 Conformity</h2>
+
+			<p>
+				<strong>Canonical operator spine:</strong><br />
+				<code>Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ</code>
+			</p>
+
+			<ul>
+				<li><strong>No new operators:</strong> true</li>
+				<li><strong>No operator redefinition:</strong> true</li>
+				<li><strong>No dependency rewrite:</strong> true</li>
+				<li><strong>No derived axis rewrite:</strong> true</li>
+			</ul>
+
+			<h3>2.1 Dependency hygiene note</h3>
+			<p>
+				The case foregrounds <strong>□</strong>, <strong>Α</strong>, <strong>Ω</strong>,
+				<strong>Θ</strong>, <strong>Χ</strong>, and <strong>Ψ</strong> because these
+				operators are most salient in the vignette. This does not bypass
+				<strong>Δ</strong>, <strong>∇</strong>, <strong>Λ</strong>, <strong>Φ</strong>,
+				or <strong>Σ</strong>, and does not create an alternative dependency graph.
+				Any use of <strong>Χ</strong> presupposes <strong>Φ</strong>, <strong>Θ</strong>,
+				and <strong>□</strong>; any use of <strong>Ψ</strong> presupposes
+				<strong>Σ</strong>, <strong>Θ</strong>, and <strong>Χ</strong>.
+			</p>
+
+			<hr />
+
+			<h2>3) Example Suite Schema Alignment</h2>
+
+			<p>
+				<strong>Conforms:</strong> true
+			</p>
+
+			<h3>3.1 Required blocks</h3>
+			<ul>
+				<li>Minimal vignette</li>
+				<li>Why this is repo-useful</li>
+				<li>Operator mapping</li>
+				<li>Inner / outer / public layer distinction</li>
+				<li>Operator costs / cost layout</li>
+				<li>Typical drift markers</li>
+				<li>Viability minimums or warning signals</li>
+				<li>Path-cost guard</li>
+				<li>Validity gate reminder</li>
+				<li>Readable structural closure</li>
+			</ul>
+
+			<hr />
+
+			<h2>4) Minimal Vignette</h2>
+
+			<p>
+				<strong>Scene ID:</strong> <code>CASE_01_FORMAL_CONSENT_ACCUMULATING_COST</code>
+			</p>
+			<p>
+				<strong>Scene type:</strong> repeated consent-based sexual frame under accumulating asymmetric costs
+			</p>
+			<p>
+				<strong>Abstraction level:</strong> generic_non_identifying
+			</p>
+
+			<h3>4.1 Description</h3>
+			<p>
+				A repeated sexual configuration is organized through an explicit
+				consent-based frame. The frame includes articulated rules, declared
+				reversibility, and formal stop-options. No single rupture event occurs.
+				Over time, however, one role experiences the configuration increasingly
+				as cumulative: recovery, emotional processing, bodily after-effects, and
+				refusal burden accumulate. The other role experiences the configuration
+				more episodically, with lower downstream handling. The formal consent
+				frame remains legible, but the cost layout becomes increasingly
+				asymmetrical under time.
+			</p>
+
+			<h3>4.2 Roles</h3>
+			<ul>
+				<li>
+					<strong>R1:</strong>
+					Role with higher initiation frequency and lower downstream exposure after
+					enactment.
+					<br />
+					<strong>Person status:</strong> role_only_not_person_type
+				</li>
+				<li>
+					<strong>R2:</strong>
+					Role with lower initiation frequency and higher recovery, processing,
+					after-cost, and refusal-handling burden.
+					<br />
+					<strong>Person status:</strong> role_only_not_person_type
+				</li>
+			</ul>
+
+			<h3>4.3 Frame anchor</h3>
+			<p>
+				<strong>Operator:</strong> <strong>□</strong>
+			</p>
+			<p>
+				Explicit consent-based frame with declared rules, articulated stop-options,
+				and the statement that participation remains reversible.
+			</p>
+
+			<h3>4.4 Temporality</h3>
+			<p>
+				<strong>Operator:</strong> <strong>Θ</strong>
+			</p>
+			<p>
+				Repeated encounters across time. The case is defined by cumulative effects,
+				not by one isolated violation or rupture.
+			</p>
+
+			<h3>4.5 Trigger</h3>
+			<ul>
+				<li>
+					<strong>Δ (Difference):</strong>
+					Difference emerges between formal consent clarity and lived cost
+					distribution.
+				</li>
+				<li>
+					<strong>∇ (Impulse):</strong>
+					Pressure rises to maintain continuity and intensity without reopening the
+					frame’s assumptions.
+				</li>
+			</ul>
+
+			<h3>4.6 Λ candidates</h3>
+			<p>
+				<strong>Operator:</strong> <strong>Λ</strong>
+			</p>
+			<p>
+				<strong>Expected but missing or underused:</strong>
+			</p>
+			<ul>
+				<li>pauses that remain non-steering</li>
+				<li>explicit renegotiation after repeated accumulation</li>
+				<li>non-occurrence that does not become guilt, devaluation, or interpretive pressure</li>
+				<li>hesitation treated as structurally meaningful rather than as disruption</li>
+			</ul>
+
+			<h3>4.7 Observed realizations</h3>
+			<ul>
+				<li>consent is reaffirmed verbally and procedurally</li>
+				<li>declared reversibility remains present</li>
+				<li>the phrase “you can always say no” becomes a catch-all stabilizer</li>
+				<li>practical stop-capability becomes less frequently activated</li>
+				<li>cost distribution remains under-articulated because no formal rule has been broken</li>
+			</ul>
+
+			<hr />
+
+			<h2>5) Why This Is Repo-Useful</h2>
+
+			<h3>5.1 Structural focus</h3>
+			<p>
+				This example shows why PMS-SEX separates formal frame validity from
+				structural governability. It demonstrates that a scene can remain formally
+				consent-based while still drifting under <strong>Α</strong> repetition,
+				<strong>Ω</strong> cost asymmetry, <strong>Θ</strong> accumulation, and
+				<strong>Χ</strong> erosion.
+			</p>
+
+			<h3>5.2 Demonstrates</h3>
+			<ul>
+				<li>consent as frame condition does not erase temporality</li>
+				<li>formal reversibility does not guarantee practical <strong>Χ</strong> availability</li>
+				<li>no single violation is required for drift to become structurally legible</li>
+				<li><strong>Ω</strong> may emerge through after-costs, recovery burden, and exit friction</li>
+				<li><strong>Ψ</strong> relevance may leak into a frame narrated as local or non-binding</li>
+			</ul>
+
+			<h3>5.3 Avoids</h3>
+			<ul>
+				<li>reducing the case to coercion</li>
+				<li>collapsing consent into pathology</li>
+				<li>treating either role as morally defective</li>
+				<li>using structural cost language as person-ranking</li>
+			</ul>
+
+			<hr />
+
+			<h2>6) Operator Mapping</h2>
+
+			<h3>6.1 Canonical spine</h3>
+			<p>
+				<code>Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ</code>
+			</p>
+			<p>
+				The full PMS v1.3 spine remains the reference path. The case foregrounds
+				a local drift cluster but does not alter the canonical sequence.
+			</p>
+
+			<h3>6.2 Closest reduced signatures</h3>
+			<ul>
+				<li>
+					<strong>MF_4_2 — Asymmetry</strong><br />
+					<code>Δ → ∇ → □ → Λ → Α → Ω → Θ</code><br />
+					The case becomes legible once repeated framed practice stabilizes into
+					an attractor and generates unequal cost-bearing under time.
+				</li>
+				<li>
+					<strong>MF_5_2 — Temporality</strong><br />
+					<code>Δ → ∇ → □ → Λ → Α → Ω → Θ</code><br />
+					Repetition turns local permission into trajectory. Accumulation matters
+					even when each local scene remains formally consent-based.
+				</li>
+				<li>
+					<strong>MF_6_2 — Exit Realism</strong><br />
+					<code>(□ → Λ → Α) → Ω → Θ → (Χ/Σ/Ψ)</code><br />
+					The declared ability to stop is not identical to practical exit realism
+					after repetition, cost accumulation, and role expectation have stabilized.
+				</li>
+				<li>
+					<strong>MF_10_2 — Distance</strong><br />
+					<code>Δ → ∇ → □ → (Λ) → Α → Ω → Θ → Φ → Χ</code><br />
+					The critical drift point is not the absence of formal stop-options, but
+					the rising cost of activating <strong>Χ</strong> in practice.
+				</li>
+				<li>
+					<strong>MF_19_2 — Functional Conditions and Warning Signals</strong><br />
+					<code>Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ; dominant interaction: Ω → Θ</code><br />
+					Functional governability depends on <strong>Ω</strong> nameability,
+					<strong>Θ</strong> realism, <strong>Χ</strong> operation,
+					<strong>Λ</strong> tolerance, and <strong>Ψ</strong> handling.
+				</li>
+			</ul>
+
+			<h3>6.3 Operator roles</h3>
+			<ul>
+				<li>
+					<strong>Δ (Difference):</strong>
+					Marks the discrepancy between consent clarity and cost distribution.
+					<br />
+					<strong>Drift risk:</strong> difference becomes unnameable because the formal frame appears sufficient.
+				</li>
+				<li>
+					<strong>∇ (Impulse):</strong>
+					Maintains directional pressure toward continuation, intensity, and frame
+					preservation.
+					<br />
+					<strong>Drift risk:</strong> urgency becomes self-justifying because no rule violation is visible.
+				</li>
+				<li>
+					<strong>□ (Frame):</strong>
+					Provides explicit consent grammar, rules, declared stop-options, and
+					formal reversibility.
+					<br />
+					<strong>Drift risk:</strong> frame becomes static; consent labels replace frame re-analysis.
+				</li>
+				<li>
+					<strong>Λ (Non-Event):</strong>
+					Names missed or underused pauses, cancellations, hesitation, slowing, and
+					renegotiation opportunities.
+					<br />
+					<strong>Drift risk:</strong> non-events become costly to activate and may be read as disruption.
+				</li>
+				<li>
+					<strong>Α (Attractor):</strong>
+					Repetition stabilizes the practice as the default coordination route.
+					<br />
+					<strong>Drift risk:</strong> continuation becomes easier than interruption.
+				</li>
+				<li>
+					<strong>Ω (Asymmetry):</strong>
+					Cost gradients emerge across recovery, exposure, emotional processing,
+					refusal burden, and definitional power.
+					<br />
+					<strong>Drift risk:</strong> asymmetry remains unnamed because procedural consent is intact.
+				</li>
+				<li>
+					<strong>Θ (Temporality):</strong>
+					Converts repeated local consent into cumulative trajectory with residues,
+					after-effects, and reduced exit realism.
+					<br />
+					<strong>Drift risk:</strong> later re-description cannot rewind accumulation.
+				</li>
+				<li>
+					<strong>Φ (Recontextualization):</strong>
+					Recontextualization may appear as narrative minimization: “nothing bad is
+					happening,” “the rules are clear,” or “this is still consensual.”
+					<br />
+					<strong>Drift risk:</strong> <strong>Φ</strong> substitutes for <strong>Σ</strong> if it covers cost rather than integrating it.
+				</li>
+				<li>
+					<strong>Χ (Distance):</strong>
+					Stop-capability and meta-position exist formally but become increasingly
+					expensive to enact.
+					<br />
+					<strong>Drift risk:</strong> <strong>Χ</strong> becomes ornamental rather than operative.
+				</li>
+				<li>
+					<strong>Σ (Integration):</strong>
+					Integration would require holding consent clarity and cost asymmetry
+					together without collapsing one into the other.
+					<br />
+					<strong>Drift risk:</strong> contradiction is simplified: either the frame is fine, or the scene must be treated as violation.
+				</li>
+				<li>
+					<strong>Ψ (Self-Binding):</strong>
+					Continuity begins to matter for self-attribution, loyalty, relational
+					meaning, or identity-relevant stakes despite local/non-binding framing.
+					<br />
+					<strong>Drift risk:</strong> <strong>Ψ</strong> leak: binding relevance enters covertly.
+				</li>
+			</ul>
+
+			<hr />
+
+			<h2>7) Inner / Outer / Public Layer Distinction</h2>
+
+			<h3>7.1 Internal framing</h3>
+			<p>
+				Internally, the scene is framed as consensual, rule-governed, reversible,
+				and procedurally clear.
+			</p>
+			<p>
+				<strong>Guard:</strong> This internal framing may be real and significant, but it
+				does not settle the full outer structural form once asymmetry and
+				accumulation become active.
+			</p>
+
+			<h3>7.2 Outer legibility</h3>
+			<p>
+				Externally or structurally, the scene becomes readable as a repeated frame
+				in which cost-bearing diverges between roles despite formal consent.
+			</p>
+			<p>
+				<strong>Guard:</strong> Naming this outer legibility does not deny consent, assign
+				blame, diagnose either role, or convert the scene into moral verdict.
+			</p>
+
+			<h3>7.3 Publicness overlay</h3>
+			<p>
+				<strong>Status:</strong> possible_but_not_required
+			</p>
+			<p>
+				Shared narratives, records, reputational exposure, or documentation may
+				harden <strong>Θ</strong> costs if present. Publicness is not the origin of
+				the case but can amplify after-costs.
+			</p>
+			<p>
+				<strong>PMS layer:</strong> <code>□ extension</code><br />
+				<strong>Primarily intensifies:</strong> <strong>Ω</strong>, <strong>Θ</strong>
+			</p>
+			<p>
+				<strong>Guard:</strong> Publicness must neither be treated as the whole source of
+				consequence nor ignored where it sediments cost.
+			</p>
+
+			<h3>7.4 Temporal carryover</h3>
+			<p>
+				Repetition causes local events to count beyond themselves. Even where each
+				scene is locally consent-based, the trajectory may become harder to exit
+				or revise.
+			</p>
+			<p>
+				<strong>Guard:</strong> <strong>Θ</strong> does not rewind through later reassurance.
+			</p>
+
+			<hr />
+
+			<h2>8) Operator Costs and Cost Layout</h2>
+
+			<p>
+				<strong>Cost layout formula:</strong> <code>Ω under Θ</code>
+			</p>
+
+			<h3>8.1 Summary</h3>
+			<p>
+				The main structural cost lies in unequal downstream handling under repeated
+				enactment. Consent secures permission at the scene level, but does not by
+				itself distribute recovery, exposure, refusal burden, or cumulative cost.
+			</p>
+
+			<h3>8.2 Cost channels</h3>
+			<ul>
+				<li>
+					<strong>Bodily:</strong>
+					Fatigue, recovery latency, saturation effects, and embodied after-costs.
+					<br />
+					<strong>Operator interface:</strong> <code>Θ, Ω</code><br />
+					<strong>Body remainder:</strong> true
+				</li>
+				<li>
+					<strong>Temporal:</strong>
+					Continuation becomes normalized; interruption becomes more expensive
+					even though it remains formally allowed.
+					<br />
+					<strong>Operator interface:</strong> <code>Α, Θ, Χ</code>
+				</li>
+				<li>
+					<strong>Relational:</strong>
+					Refusal, slowing, or pause may become interpretively loaded because the
+					prior frame appears consensual and stable.
+					<br />
+					<strong>Operator interface:</strong> <code>□, Λ, Ω, Ψ</code>
+				</li>
+				<li>
+					<strong>Interpretive:</strong>
+					One role may carry the burden of explaining why a formally correct frame
+					is nevertheless becoming costly.
+					<br />
+					<strong>Operator interface:</strong> <code>Ω, Φ, Χ</code>
+				</li>
+				<li>
+					<strong>Public or documentary:</strong>
+					Where shared memory, records, images, logs, or third-party knowledge
+					exist, publicness may harden cost after the scene.
+					<br />
+					<strong>Operator interface:</strong> <code>□, Ω, Θ</code><br />
+					<strong>Publicness as overlay:</strong> true
+				</li>
+			</ul>
+
+			<h3>8.3 Asymmetry pattern</h3>
+			<ul>
+				<li>
+					<strong>R1:</strong> episodic enactment; lower downstream handling
+				</li>
+				<li>
+					<strong>R2:</strong> cumulative enactment; higher recovery, explanation, and refusal burden
+				</li>
+			</ul>
+			<p>
+				<strong>Structural note:</strong> This is a role-asymmetry description, not a
+				claim about character, intention, guilt, or worth.
+			</p>
+
+			<h3>8.4 System effect</h3>
+			<p>
+				Formal consent begins to mask cost distribution because the frame can
+				appear structurally settled while <strong>Ω</strong> and <strong>Θ</strong>
+				continue to accumulate.
+			</p>
+
+			<hr />
+
+			<h2>9) Drift Trace</h2>
+
+			<p>
+				<strong>Compressed formula:</strong><br />
+				<code>□ explicit → Α repetition → Ω cost gradient → Θ accumulation → Χ erosion → Ψ leak</code>
+			</p>
+			<p>
+				<strong>Full formula reference:</strong><br />
+				<code>Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ</code>
+			</p>
+
+			<h3>9.1 Dynamic reading</h3>
+			<p>
+				The frame starts as explicit and procedurally clear. Repetition stabilizes
+				the practice into an attractor. Asymmetry emerges through unequal
+				after-costs and recovery burdens. Time accumulates residues that cannot
+				be reset by renewed consent language alone. Distance becomes harder to
+				activate because no obvious violation has occurred. Eventually, continued
+				participation may begin to carry identity-relevant or relational meaning
+				despite local non-binding framing.
+			</p>
+
+			<h3>9.2 Transitions</h3>
+			<ul>
+				<li>
+					<strong>□ → Α:</strong>
+					Explicit consent frame becomes a repeated coordination route.
+					<br />
+					<strong>Risk:</strong> frame stability turns into default continuation.
+				</li>
+				<li>
+					<strong>Α → Ω:</strong>
+					Repetition reveals unequal recovery, exposure, refusal, and repair
+					burdens.
+					<br />
+					<strong>Risk:</strong> cost gradient remains unnamed because the practice is formally consensual.
+				</li>
+				<li>
+					<strong>Ω → Θ:</strong>
+					Unequal burdens accumulate over time.
+					<br />
+					<strong>Risk:</strong> exit becomes more expensive without becoming forbidden.
+				</li>
+				<li>
+					<strong>Θ → Φ:</strong>
+					Narrative reassurance may attempt to reset the scene: “nothing bad is
+					happening because consent remains explicit.”
+					<br />
+					<strong>Risk:</strong> recontextualization replaces integration.
+				</li>
+				<li>
+					<strong>Φ → Χ:</strong>
+					Distance must become operative to re-read the frame and cost layout.
+					<br />
+					<strong>Risk:</strong> <strong>Χ</strong> is formally available but practically discouraged.
+				</li>
+				<li>
+					<strong>Χ → Σ:</strong>
+					Integration would hold both truths: consent may be valid, and the
+					configuration may still be structurally costly.
+					<br />
+					<strong>Risk:</strong> without <strong>Σ</strong>, the contradiction is displaced.
+				</li>
+				<li>
+					<strong>Σ → Ψ:</strong>
+					If not handled, continuity begins to carry identity-relevant or
+					relationship-relevant stakes.
+					<br />
+					<strong>Risk:</strong> <strong>Ψ</strong> leak into a frame narrated as local, procedural, or non-binding.
+				</li>
+			</ul>
+
+			<hr />
+
+			<h2>10) Typical Drift Markers</h2>
+
+			<p>
+				<strong>Maximum markers for case use:</strong> 3
+			</p>
+
+			<h3>10.1 Selected markers</h3>
+			<ul>
+				<li>
+					<strong>Pseudo-symmetry</strong><br />
+					<strong>Source:</strong> <code>drift_catalogue.core_dysfunction_markers_ch18_3</code><br />
+					<strong>Case expression:</strong> “We both consented” or “the rules are the
+					same for both” functions as a lid on unequal after-costs.<br />
+					<strong>Guard:</strong> This does not deny consent. It states that
+					consent-language does not by itself settle cost distribution.
+				</li>
+				<li>
+					<strong>Temporal overload / Θ accumulation</strong><br />
+					<strong>Source:</strong> <code>drift_catalogue.core_dysfunction_markers_ch18_3</code><br />
+					<strong>Case expression:</strong> Repetition creates accumulated costs faster
+					than the frame can update itself.<br />
+					<strong>Guard:</strong> The problem is trajectory-load, not a hidden defect in
+					either role.
+				</li>
+				<li>
+					<strong>Loss of distance / Χ erosion</strong><br />
+					<strong>Source:</strong> <code>drift_catalogue.core_dysfunction_markers_ch18_3</code><br />
+					<strong>Case expression:</strong> Stopping or pausing remains formally available
+					but becomes practically costly to activate.<br />
+					<strong>Guard:</strong> This is a structural stop-capability issue, not a claim
+					of coercion by itself.
+				</li>
+			</ul>
+
+			<h3>10.2 Optional additional markers</h3>
+			<ul>
+				<li>
+					<strong>Covert self-binding demand:</strong>
+					Continued participation begins to imply loyalty, identity relevance,
+					relationship proof, or self-worth despite formal non-binding language.
+				</li>
+				<li>
+					<strong>Outer-form denial:</strong>
+					The internal label “consensual” is used to end structural analysis of
+					enacted cost layout.
+				</li>
+			</ul>
+
+			<hr />
+
+			<h2>11) Viability Assessment</h2>
+
+			<p>
+				<strong>Functional minimums source:</strong> PMS-SEX Ch. 19.3
+			</p>
+
+			<h3>11.1 Conditions</h3>
+			<ul>
+				<li>
+					<strong>Explicit Ω recognition</strong><br />
+					<strong>Status:</strong> weakened<br />
+					<strong>Reason:</strong> Cost, recovery, refusal burden, and exposure gradients
+					are present but remain under-articulated because the formal consent frame
+					appears sufficient.<br />
+					<strong>Viability requirement:</strong> <strong>Ω</strong> must be nameable beyond procedural consent.
+				</li>
+				<li>
+					<strong>Θ awareness</strong><br />
+					<strong>Status:</strong> weakened<br />
+					<strong>Reason:</strong> Repetition and after-effects accumulate, but the frame
+					treats each event as locally resettable.<br />
+					<strong>Viability requirement:</strong> <strong>Θ</strong> must be treated as real; renewed consent does not rewind accumulated cost.
+				</li>
+				<li>
+					<strong>Stable Χ capacity</strong><br />
+					<strong>Status:</strong> eroding<br />
+					<strong>Reason:</strong> Stop-capability exists formally but becomes socially or
+					emotionally expensive to activate.<br />
+					<strong>Viability requirement:</strong> <strong>Χ</strong> must be practically available, not merely declared.
+				</li>
+				<li>
+					<strong>No Ψ substitution</strong><br />
+					<strong>Status:</strong> at_risk<br />
+					<strong>Reason:</strong> Continuity may begin to carry relational or
+					identity-relevant meaning without explicit frame support.<br />
+					<strong>Viability requirement:</strong> No covert <strong>Ψ</strong> demand should become the default carrier of stakes.
+				</li>
+				<li>
+					<strong>Λ tolerance without escalation</strong><br />
+					<strong>Status:</strong> weakened<br />
+					<strong>Reason:</strong> Pauses, hesitation, or slowing may become interpretively
+					loaded because the frame expects continued participation.<br />
+					<strong>Viability requirement:</strong> <strong>Λ</strong> must remain tolerable without becoming steering, punishment, or devaluation.
+				</li>
+				<li>
+					<strong>Internal framing accountable to outer form</strong><br />
+					<strong>Status:</strong> required<br />
+					<strong>Reason:</strong> The internal consent frame is real but cannot erase outer
+					cost distribution under asymmetry and temporality.<br />
+					<strong>Viability requirement:</strong> Consent-language must not block structural cost-layout analysis.
+				</li>
+				<li>
+					<strong>Publicness handled as overlay</strong><br />
+					<strong>Status:</strong> context_dependent<br />
+					<strong>Reason:</strong> Documentation, shared narratives, or reputational traces
+					may intensify cost if present, but are not required for the primary drift.<br />
+					<strong>Viability requirement:</strong> Publicness must be tracked as overlay where relevant.
+				</li>
+			</ul>
+
+			<h3>11.2 Minimal viability corridor</h3>
+			<p>
+				<code>
+					□ explicit<br />
+					+ Ω nameable<br />
+					+ Θ realistic<br />
+					+ Χ operative<br />
+					+ Λ tolerable<br />
+					+ Ψ handled<br />
+					(+ Σ reachable)<br />
+					= structurally governable configuration
+				</code>
+			</p>
+			<p>
+				<strong>Case reading:</strong> The configuration becomes less governable where
+				<strong>□</strong> remains explicit but <strong>Ω</strong> is unnamed,
+				<strong>Θ</strong> is reset rhetorically, <strong>Χ</strong> is hard to use,
+				<strong>Λ</strong> becomes costly, and <strong>Ψ</strong> begins to leak.
+			</p>
+
+			<hr />
+
+			<h2>12) Warning Signals</h2>
+
+			<p>
+				<strong>Source:</strong> PMS-SEX Ch. 19.4
+			</p>
+
+			<ul>
+				<li>
+					<strong>Φ narrative inflation</strong><br />
+					<strong>Status:</strong> possible<br />
+					<strong>Expression:</strong> Repeated reassurance that the frame is consensual
+					replaces cost naming and integration.<br />
+					<strong>Structural note:</strong> <strong>Φ</strong> may substitute for <strong>Σ</strong>.
+				</li>
+				<li>
+					<strong>Mono-frame</strong><br />
+					<strong>Status:</strong> possible<br />
+					<strong>Expression:</strong> The established consent frame becomes the only
+					acceptable reading of the scene.<br />
+					<strong>Structural note:</strong> <strong>Α</strong> may monopolize <strong>□</strong>.
+				</li>
+				<li>
+					<strong>Θ cost externalization</strong><br />
+					<strong>Status:</strong> relevant<br />
+					<strong>Expression:</strong> Recovery, explanation, refusal, or after-costs
+					concentrate in one role.<br />
+					<strong>Structural note:</strong> <strong>Θ</strong> costs shift asymmetrically through <strong>Ω</strong>.
+				</li>
+				<li>
+					<strong>Outer-form denial</strong><br />
+					<strong>Status:</strong> relevant<br />
+					<strong>Expression:</strong> Internal consent naming blocks analysis of enacted
+					asymmetry and temporal accumulation.<br />
+					<strong>Structural note:</strong> <strong>Χ</strong> weakens because the configuration cannot re-read itself.
+				</li>
+			</ul>
+
+			<hr />
+
+			<h2>13) Dignity-in-Practice Stress Test</h2>
+
+			<p>
+				<strong>Source:</strong> PMS-SEX Ch. 21
+			</p>
+			<p>
+				<strong>Canonical PMS D formula:</strong> <code>["Ψ", "Χ", "Ω"]</code>
+			</p>
+			<p>
+				<strong>PMS-SEX application formula:</strong><br />
+				<code>explicit Ω + operative Χ + no covert Ψ demand under Θ, with outer-form readability preserved</code>
+			</p>
+
+			<h3>13.1 Risk point</h3>
+			<p>
+				Dignity-in-Practice is not necessarily undermined by formal coercion or
+				rule violation. It may be stressed by procedural insulation: “you agreed”
+				begins to shield the frame from re-reading lived impact.
+			</p>
+
+			<h3>13.2 Possible failure mode</h3>
+			<p>
+				<strong>Label:</strong> D-in-Practice stress without formal-consent failure
+			</p>
+			<p>
+				Restraint exists formally, but enacted coordination fails to account for
+				accumulating load, unequal recovery, and decreasing practical stop-capacity.
+			</p>
+
+			<h3>13.3 Structural indicators</h3>
+			<ul>
+				<li>formal stop-options exist but are rarely activated</li>
+				<li>cost distribution is harder to name than consent status</li>
+				<li><strong>Χ</strong> is treated as unnecessary, hypersensitive, or disruptive</li>
+				<li>the frame protects procedural clarity more than recoverability</li>
+				<li><strong>Ψ</strong> relevance begins to leak into continued participation</li>
+			</ul>
+
+			<h3>13.4 Guardrail</h3>
+			<p>
+				This stress test does not rank persons, deny consent, or assert bad faith.
+				It asks whether <strong>D</strong> is preserved in enactment under <strong>Ω</strong>
+				and <strong>Θ</strong>.
+			</p>
+
+			<hr />
+
+			<h2>14) Rational Response Envelope</h2>
+
+			<p>
+				<strong>Status:</strong> structural_reasonableness_not_prescription
+			</p>
+
+			<h3>14.1 Description</h3>
+			<p>
+				The following responses are structurally intelligible within the
+				configuration. They are not endorsed, prescribed, or morally ranked.
+			</p>
+
+			<h3>14.2 Possible responses</h3>
+			<ul>
+				<li>
+					<strong>Continued participation despite rising costs</strong><br />
+					<strong>Structural reason:</strong> Refusal may appear disproportionate because
+					the explicit frame remains formally correct.<br />
+					<strong>Operators:</strong> <code>□, Α, Ω, Θ</code>
+				</li>
+				<li>
+					<strong>Hesitation to activate Χ</strong><br />
+					<strong>Structural reason:</strong> Stop-capability exists, but using it may
+					appear to destabilize a frame in which “nothing wrong” has happened.<br />
+					<strong>Operators:</strong> <code>Χ, □, Θ</code>
+				</li>
+				<li>
+					<strong>Narrative minimization</strong><br />
+					<strong>Structural reason:</strong> Recontextualization reduces tension locally by
+					preserving the explicit-consent equilibrium.<br />
+					<strong>Operators:</strong> <code>Φ, Σ</code>
+				</li>
+				<li>
+					<strong>Increased interpretive burden</strong><br />
+					<strong>Structural reason:</strong> One role must explain why a valid consent frame
+					has nevertheless become costly.<br />
+					<strong>Operators:</strong> <code>Ω, Θ, Χ</code>
+				</li>
+			</ul>
+
+			<hr />
+
+			<h2>15) Path-Cost Guard</h2>
+
+			<p>
+				<strong>Applies:</strong> true
+			</p>
+
+			<h3>15.1 Allowed language</h3>
+			<ul>
+				<li>path-cost</li>
+				<li>stabilization burden</li>
+				<li>Θ accumulation</li>
+				<li>Χ/Σ/Ψ work required for governability</li>
+				<li>cost-layout drift</li>
+			</ul>
+
+			<h3>15.2 Case use</h3>
+			<p>
+				This case may describe rising stabilization burden: more framing, distance,
+				integration, and self-binding discipline are required to keep the
+				configuration governable over time.
+			</p>
+
+			<h3>15.3 Forbidden conversions</h3>
+			<ul>
+				<li>path-cost means lower dignity</li>
+				<li>higher stabilization burden means moral disorder</li>
+				<li>repetition means pathology</li>
+				<li>asymmetrical cost means bad person</li>
+				<li>formal consent failure is implied</li>
+				<li>sexual identity or orientation is being classified</li>
+			</ul>
+
+			<h3>15.4 Final guard</h3>
+			<p>
+				Path-cost language remains configuration-language only. If converted into
+				person-language, diagnosis, rank, humiliation, or orientation taxonomy, the
+				analysis leaves PMS-SEX.
+			</p>
+
+			<hr />
+
+			<h2>16) Reader Guards</h2>
+
+			<h3>16.1 This example does not claim</h3>
+			<ul>
+				<li>that consent is insufficient or unimportant</li>
+				<li>that explicit rules cause harm</li>
+				<li>that either role acted deceptively</li>
+				<li>that either role acted in bad faith</li>
+				<li>that consent implies obligation</li>
+				<li>that formal consent has failed</li>
+				<li>that structural cost equals coercion</li>
+				<li>that the configuration diagnoses anyone</li>
+			</ul>
+
+			<h3>16.2 This example does claim</h3>
+			<ul>
+				<li>that consent does not neutralize <strong>Θ</strong> accumulation</li>
+				<li>that explicit frames can still drift if <strong>Ω</strong> remains unnamed</li>
+				<li>that formal reversibility is not identical to operative <strong>Χ</strong></li>
+				<li>that structural cost can emerge without rule violation</li>
+				<li>that viability requires cost realism beyond permission</li>
+				<li>that D-in-Practice concerns enacted handling under asymmetry, not person worth</li>
+			</ul>
+
+			<hr />
+
+			<h2>17) Analysis Checklist Application</h2>
+
+			<ul>
+				<li>
+					<strong>S1 — Scene boundary:</strong>
+					Scene is bounded as repeated explicit consent-based encounters under
+					cumulative cost divergence.
+				</li>
+				<li>
+					<strong>S2 — Canonical dependency check:</strong>
+					PMS v1.3 spine preserved. Reduced signatures are used as shorthand only.
+				</li>
+				<li>
+					<strong>S3 — Reduced signature:</strong>
+					<code>MF_4_2</code>, <code>MF_5_2</code>, <code>MF_6_2</code>,
+					<code>MF_10_2</code>, <code>MF_19_2</code>
+				</li>
+				<li>
+					<strong>S4 — Inner / outer / public scan:</strong>
+					Internal frame: consensual and rule-governed. Outer legibility:
+					asymmetric cost accumulation. Publicness: possible overlay, not required.
+				</li>
+				<li>
+					<strong>S5 — Cost axis scan:</strong>
+					<strong>Ω</strong> appears through recovery, exposure, refusal, and repair
+					burden. <strong>Θ</strong> appears through repetition, after-effects, and exit realism.
+				</li>
+				<li>
+					<strong>S6 — Distance and correction capacity:</strong>
+					<strong>Χ</strong> is formally present but practically eroding.
+					<strong>Σ</strong> would require integrating consent clarity with cost asymmetry.
+				</li>
+				<li>
+					<strong>S7 — Drift marker scan:</strong>
+					Pseudo-symmetry, temporal overload, <strong>Χ</strong> loss, and possible
+					<strong>Ψ</strong> leak are structurally relevant.
+				</li>
+				<li>
+					<strong>S8 — Viability minimums:</strong>
+					Viability is weakened where <strong>Ω</strong> is unnamed,
+					<strong>Θ</strong> is minimized, <strong>Χ</strong> is hard to activate,
+					<strong>Λ</strong> is not tolerated, and <strong>Ψ</strong> is not explicitly handled.
+				</li>
+				<li>
+					<strong>S9 — Path-cost guard:</strong>
+					Path-cost is used only as configuration-language.
+				</li>
+				<li>
+					<strong>S10 — Escalation guard:</strong>
+					No motive explanation, diagnosis, humiliation, or person-label is allowed.
+				</li>
+			</ul>
+
+			<hr />
+
+			<h2>18) Readable Structural Closure</h2>
+
+			<h3>18.1 Short closure</h3>
+			<p>
+				Consent secures permission. Viability requires cost realism.
+			</p>
+
+			<h3>18.2 Full closure</h3>
+			<p>
+				In this configuration, the consent frame does not collapse. It remains
+				explicit, procedurally legible, and locally valid as a frame. The structural
+				problem appears elsewhere: repetition stabilizes the practice into an
+				attractor, asymmetry distributes downstream costs unevenly, and temporality
+				turns local participation into cumulative trajectory.
+			</p>
+			<p>
+				Once explicit consent becomes the sole stabilizer, <strong>Θ</strong> and
+				<strong>Ω</strong> begin to do the coordinating work. What remains formally
+				consensual can still become structurally costly where recovery, refusal,
+				exposure, and interpretive burden accumulate unevenly. The issue is not
+				that consent fails, but that it overperforms: it absorbs pressure that
+				would need to be redistributed into frame re-reading, distance activation,
+				cost naming, or integration.
+			</p>
+			<p>
+				The drift is therefore not produced by malice, defective agency, or hidden
+				pathology. It is the predictable result of treating a valid consent frame
+				as sufficient while <strong>Θ</strong> continues to accumulate, <strong>Ω</strong>
+				remains under-articulated, and <strong>Χ</strong> becomes harder to enact in practice.
+			</p>
+
+			<hr />
+
+			<h2>19) Final Case Guard</h2>
+
+			<p>
+				This case remains PMS-SEX-valid only as configuration analysis. It may name
+				cost, drift, outer legibility, and D-in-Practice stress, but it must not
+				convert those claims into person-ranking, diagnosis, orientation taxonomy,
+				legal judgment, or humiliating critique.
+			</p>
+
+			<h3>19.1 Compressed rules</h3>
+			<ul>
+				<li>no consent erasure</li>
+				<li>no person diagnosis</li>
+				<li>no moral ranking</li>
+				<li>no legal conclusion</li>
+				<li>no path-cost as person-worth</li>
+				<li>no outer-form erasure by consent labels</li>
+				<li>no publicness reduction</li>
+				<li>no prescription</li>
+			</ul>
+
+		</section>
+	</body>
+</html>

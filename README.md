@@ -1,27 +1,10 @@
 # PMS–SEX
 
-## From Impulse to Self-Binding: A Praxeological Grammar of Sexuality (Δ–Ψ)
+**From Impulse to Self-Binding: A Praxeological Grammar of Sexuality (Δ–Ψ)**
 
-**PMS–SEX is a formal application of the [Praxeological Meta-Structure (PMS)](https://github.com/tz-dev/Praxeological-Meta-Structure-Theory)** — a generative operator framework (Δ–Ψ) for modelling praxis, frames, non-events, stabilization, asymmetry, temporality, distance, integration, and self-binding.
+**PMS–SEX is a formal application profile of the [Praxeological Meta-Structure (PMS)](https://github.com/tz-dev/Praxeological-Meta-Structure-Theory)** — a generative operator framework (Δ–Ψ) for modelling praxis, frames, non-events, stabilization, asymmetry, temporality, distance, integration, and self-binding.
 
-Where many approaches to sexuality default to psychology, morality, diagnosis, or advice, **PMS–SEX stays strictly praxeological**: it reconstructs **what sexual configurations produce over time** — especially **cost layouts**, **drift chains**, and **viability corridors** — **without person-typing**, **without moral ranking**, and **without instructional content**.
-
-Building explicitly on PMS as its structural foundation, this project does **not modify or extend the PMS operator set**, but uses it **strictly as specified** to show:
-
-* how **absence / withdrawal / non-occurrence (Λ)** can become structurally active under expectation,
-* how repetition stabilizes scripts into **attractors (Α)** and narrows alternatives,
-* how **asymmetry (Ω)** redistributes exposure, obligation, and repair load even under “consensual” narratives,
-* how **temporality (Θ)** makes consequences durable and exit realism non-negotiable,
-* why **distance (Χ)** is the decisive limiter (stop-capability as a viability condition),
-* and how **self-binding (Ψ)** can leak into frames that narrate themselves as non-binding.
-
-In this sense, PMS–SEX should be read as:
-
-* **conceptually dependent on PMS**,
-* **formally consistent with the PMS operator grammar**, and
-* **focused on structural legibility rather than moral or psychological evaluation**.
-
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18185502.svg)](https://doi.org/10.5281/zenodo.18185502)
+Where many approaches to sexuality default to psychology, morality, diagnosis, taxonomy, or advice, **PMS–SEX stays strictly praxeological**: it reconstructs **what sexual configurations produce over time** — especially **cost layouts**, **drift chains**, **outer legibility**, and **viability corridors** — without person-typing, moral ranking, clinical interpretation, or instructional content.
 
 ---
 
@@ -29,14 +12,12 @@ In this sense, PMS–SEX should be read as:
 
 PMS–SEX is:
 
-* a **praxeological grammar of sexuality** (not a sex ethics)
-* a **PMS_1.1–conform application profile** of the operator set (Δ–Ψ)
-* a **scene grammar** for explicit sexual practice (enactments, roles, frames)
-* a **consequence model** for how repetition stabilizes (Α), costs distribute (Ω), and time makes effects durable (Θ)
-* a framework that treats **non-events (Λ)** as structurally active (withdrawal, silence, delay, non-occurrence)
-* a **viability-and-drift lens**: when configurations stay governable, and when drift becomes likely
-* a way to talk about “risk” **without** moralizing or psychologizing:
-  * risk notes are **praxeological markers** (criteria only), not advice or prescriptions
+* a **scene grammar** for explicit sexual practice: enactments, roles, frames, and non-events
+* a **consequence model** for how repetition stabilizes (Α), how costs distribute (Ω), and how time makes effects durable (Θ)
+* a framework that treats **absence / withdrawal / non-occurrence (Λ)** as structurally active under expectation
+* a **viability-and-drift lens**: when configurations remain governable, and when drift becomes likely
+* a way to discuss “risk” as **praxeological structure**, not as moral verdict or psychological diagnosis
+* an overlay that distinguishes **internal framing**, **outer legibility**, **publicness**, and **temporal carryover** without collapsing them
 
 **Guiding formula:**
 
@@ -50,14 +31,14 @@ PMS–SEX is:
 
 PMS–SEX is not:
 
-* a therapy framework or clinical model (no diagnosis, no treatment logic)
+* a therapy framework or clinical model
 * a moral doctrine, purity narrative, or normative sex ethics
-* a typology of people, desires, or “kinds of sexuality”
-* a how-to manual (no optimization, no procedures, no escalation guidance)
-* a tool for sanctioning, humiliation, or person-worth judgments
+* a typology of people, desires, orientations, or “kinds of sexuality”
+* a how-to manual, optimization method, or risk-management procedure
+* a tool for sanctioning, humiliation, public accusation, or person-worth judgments
 
 PMS–SEX evaluates **configurations**, not persons.  
-Critique targets **structures and trajectories**, not identities.
+Critique targets **structures, trajectories, and cost handling**, not identities.
 
 ---
 
@@ -65,231 +46,194 @@ Critique targets **structures and trajectories**, not identities.
 
 PMS–SEX argues that sexual practice becomes structurally readable because:
 
-* **Λ (non-event)** is active: absence and withdrawal can steer under expectation.
+* **Λ (non-event)** is active: absence, withdrawal, hesitation, and delay can steer under expectation.
 * **Α (attractor)** stabilizes: repetition consolidates scripts and narrows options.
-* **Ω (asymmetry)** distributes costs: access, exposure, obligation, and repair load rarely remain symmetric.
+* **Ω (asymmetry)** distributes costs: access, exposure, obligation, exit margin, and repair load rarely remain symmetric.
 * **Θ (temporality)** accumulates: consequences persist and reshape exit realism over time.
-* **Χ (distance)** is the decisive limiter: without practical stop-capability, drift becomes hard to intercept.
-* **Ψ (self-binding)** is a threshold: binding makes events and non-events biography-relevant and cost-bearing in a different way.
+* **Φ (recontextualization)** can reframe a scene, but does not rewind accumulated structure.
+* **Χ (distance)** is the decisive limiter: without practical stop-capability and meta-position, drift becomes hard to intercept.
+* **Σ (integration)** is required where contradictory demands must be held without denial or coercive simplification.
+* **Ψ (self-binding)** is a threshold: local events and non-events can become biography-relevant, binding-relevant, or identity-relevant under time.
 
-> Sexuality does not “cost” because it is immoral —  
-> it costs because it happens under time, bodies, frames, asymmetry, and repetition.
+> Sexuality does not “cost” because it is immoral.  
+> It costs because it happens under bodies, frames, asymmetry, repetition, and time.
 
 ---
 
 ## Relation to PMS
 
-PMS–SEX is built directly on the **canonical PMS operator grammar (Δ–Ψ)** as defined in
-[`PMS.yaml`](https://raw.githubusercontent.com/tz-dev/Praxeological-Meta-Structure-Theory/refs/heads/main/model/PMS.yaml)
-(schema_version: `PMS_1.1`).
+PMS–SEX is built directly on the canonical PMS operator grammar (Δ–Ψ), as defined in [`PMS.yaml`](https://raw.githubusercontent.com/tz-dev/Praxeological-Meta-Structure-Theory/refs/heads/main/model/PMS.yaml).
 
-* No new operators are introduced
-* No operator is redefined
-* Operator order and dependencies are respected
-* All claims are derived as **configuration consequences** under the PMS spine
+Current dependency:
 
----
+```text
+PMS.yaml      schema_version: PMS_1.3
+PMS-SEX.yaml  schema_version: PMS-SEX_1.1
+````
 
-## Safety & Formal Guardrails (Mandatory)
+PMS–SEX:
 
-PMS–SEX is valid as a PMS application only under the standard entry condition:
+* introduces no new PMS operators
+* redefines no operators
+* rewrites no dependencies
+* modifies no derived PMS axes
+* treats reduced signatures as shorthand only
+* treats publicness, outer legibility, body remainder, and path-cost as overlay concepts, not operators
 
-* **Χ (distance) preserved:** analysis maintains meta-position and stop-capability; no fusion with role perspectives.
-* **Reversibility preserved:** claims remain scene-bound and revisable; no person labels.
-* **D (dignity-in-practice) preserved:** critique avoids shaming; humiliation is never justified as “analysis.”
+Canonical spine:
 
-> If you cannot keep **Χ + reversibility + D**, you cannot claim PMS-valid application.
-
----
-
-## What You Can Do With PMS.yaml + PMS-SEX.yaml (That PMS Alone Does Not Provide)
-
-PMS.yaml gives you the **canonical operator system** (Δ–Ψ), dependency hygiene, derived structures (incl. D), and the PMS entry condition.
-
-PMS-SEX.yaml adds a **domain-specific application profile** for *sexual praxis* that makes several things **explicitly reusable / recordable / comparable** across cases and analysts:
-
-### 1) Reduced signatures (paper checkpoints, operator-readable)
-
-PMS–SEX defines paper-specific **reduced signatures** (chapter minimal formulas) as stable reference points, e.g.:
-
-* a canonical orientation spine: **Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ**
-* chapter-level operator spines (e.g. Ch. 10: … → Φ → Χ; Ch. 12: … → Σ → Ψ)
-* an explicit **D-in-frame overlay expression** (Ch. 21):
-  * **D = explicit Ω + operative Χ + no covert Ψ demand under Θ**  
-    (overlay description; PMS D remains **Ψ ∘ Χ ∘ Ω**)
-
-With PMS alone you can derive these; with PMS–SEX you can **reuse them as named structural shorthands** across cases and tooling.
-
-### 2) Drift catalogue (predictable dysfunction markers under load)
-
-PMS–SEX formalizes a **drift catalogue** (core markers + operator-linked drift markers), including:
-
-* **Ψ leak** (covert binding / meaning demand),
-* **Ω escalation** (asymmetry becomes steering),
-* **pseudo-symmetry** (cost naming blocked),
-* **Λ as steering** (withdrawal/silence as leverage),
-* **Α fixation** (script monopolization),
-* **Χ loss** (stop-capability collapse),
-* **Θ overload** (exit fiction breaks; costs accumulate irreversibly).
-
-This lets you record *where drift is structurally prepared* without moral verdicts or motive claims.
-
-### 3) Viability corridor (governability, not normality)
-
-PMS–SEX defines viability as **structural governability** under time and asymmetry, not as “healthy sexuality”:
-
-* **Ω nameable**
-* **Θ realistic**
-* **Χ operative**
-* **Ψ not substituted / not leaking**
-* **Λ tolerable (non-event integrity)**
-
-It also provides tipping markers (e.g. **Φ inflation** substituting for **Σ**, **□ narrowing** into mono-frame).
-
-### 4) Modulators (operator weightings, not person-typing)
-
-PMS–SEX includes **modulators** (“types without typing”): praxeological weightings that explain recurring outcomes
-without diagnosing people, e.g. frame-grounding (□₀), asymmetry calibration (Ω₀), non-event load (Λ density),
-temporal fragmentation (Θ stability), reframe-habituation (Φ), and distance styles (Χ mode).
-
-### 5) Minimal psychology adapter (alarm without explanation)
-
-When drift persists despite structural clarity (Ch. 18/19 already legible), PMS–SEX introduces a **strictly bounded**
-adapter (Ch. 20) that outputs only a structural alarm (no diagnosis, no motive theory, no narratives).
-
-### 6) Optional docking to MIP (critique without shaming)
-
-PMS–SEX optionally docks to **Maturity in Practice (MIP)** (Ch. 22) to translate structural descriptions into
-**legitimate critique language** in system/publicity contexts—without mixing layers or importing moral psychology.
-
-In short:
-
-> PMS is the operator grammar.  
-> PMS–SEX is the sexuality profile: reduced signatures + drift + viability + modulators + example schema (all guardrailed).
+```text
+Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ
+```
 
 ---
 
-## PMS–SEX YAML (Addon Specification) + Model Spec (Human-Readable)
+## Method Guards
 
-This repository includes **PMS-SEX.yaml** as a machine-readable application profile.
+PMS–SEX is valid as a PMS application only under the standard gate:
 
-Additionally, **three new files** are shipped under `model/` following the same conventions as other PMS application repos:
+* **Χ — Distance preserved:** analysis maintains meta-position and stop-capability; no fusion into urgency, accusation, enforcement, or role-perspective.
+* **Reversibility preserved:** claims remain scene-bound, revisable, and configuration-specific; no global person labels.
+* **D — Dignity-in-Practice preserved:** critique avoids shaming, humiliation, diagnosis, orientation taxonomy, and person-ranking.
 
-* `model/PMS-SEX.yaml` — canonical addon/profile (machine-readable)
-* `model/Model Specification.html` — human-readable model spec (technical rendering of the YAML)
-* `model/Model Specification.pdf` — print-stable model spec
+Two central guard sentences:
 
-If you are reading PMS–SEX for the first time, the intended reading order is:
+> **Internal framing does not erase outer form.**
+> **Naming outer legibility does not rank persons.**
 
-1. PMS base grammar (`PMS.yaml`)
-2. `model/PMS-SEX.yaml` (profile: reduced signatures + drift + viability + modulators)
-3. Paper text (“From Impulse to Self-Binding”)
-4. Example Suite (stress tests)
+PMS–SEX may describe **path-cost**, **stabilization burden**, **disturbance**, or **configuration-level deviation**, but only as structural language. These terms do not diagnose persons, rank identities, lower dignity, or imply moral pathology.
+
+---
+
+## Inner / Outer / Public Layer Discipline
+
+PMS–SEX distinguishes four layers that may overlap but must not be collapsed:
+
+| Layer                  | Question                                                                                          |
+| ---------------------- | ------------------------------------------------------------------------------------------------- |
+| **Internal framing**   | How is the scene inhabited, narrated, or lived from within?                                       |
+| **Outer legibility**   | What action-form is structurally readable under asymmetry, exposure, repetition, and consequence? |
+| **Publicness**         | Does visibility, documentation, reputation, or circulation amplify consequences?                  |
+| **Temporal carryover** | How does the scene continue across Θ?                                                             |
+
+Publicness is treated as a **□ extension**: it may distribute, amplify, document, repeat, or sedimentize consequences, but it does not necessarily generate the primary action-form.
 
 ---
 
 ## Repository Layout
 
-This repository ships the PMS–SEX paper in three formats (Markdown / HTML / PDF), plus shared assets (CSS),
-a model specification bundle, and five fully worked examples (each as `.md` and `.html`).
+This repository ships the PMS–SEX paper, model profile, model specification, shared CSS, and worked examples.
 
 ```text
 PMS-SEX/
 ├── README.md
 ├── LICENSE
-├── PMS-SEX - From Impulse to Self-Binding - A Praxeological Grammar of Sexuality.md
-├── PMS-SEX - From Impulse to Self-Binding - A Praxeological Grammar of Sexuality.html
-├── PMS-SEX - From Impulse to Self-Binding - A Praxeological Grammar of Sexuality.pdf
+├── PMS-SEX.md
+├── PMS-SEX.html
+├── PMS-SEX.pdf
 ├── css/
 │   └── main.css
-├── img/
-│   └── cover.png
-├── model/
-│   ├── PMS-SEX.yaml
-│   ├── Model Specification.html
-│   └── Model Specification.pdf
 └── examples/
-    ├── Example 1 - Consent That Survives Legally but Fails Structurally.md
-    ├── Example 1 - Consent That Survives Legally but Fails Structurally.html
-    ├── Example 2 - Desire as Self-Punishment (Minimal Psychology Trigger).md
-    ├── Example 2 - Desire as Self-Punishment (Minimal Psychology Trigger).html
-    ├── Example 3 - Suspended Binding That Quietly Becomes Possession.md
-    ├── Example 3 - Suspended Binding That Quietly Becomes Possession.html
-    ├── Example 4 - High Intensity + Narrative Safety.md
-    ├── Example 4 - High Intensity + Narrative Safety.html
-    ├── Example 5 - Dignity Collapse without Rule Violation.md
-    └── Example 5 - Dignity Collapse without Rule Violation.html
-````
+    ├── Example 1 - Desire as Self-Punishment (Minimal Psychology Trigger).yaml
+    ├── Example 1 - Desire as Self-Punishment (Minimal Psychology Trigger).html
+    ├── Example 2 - Suspended Binding That Quietly Becomes Possession.yaml
+    ├── Example 2 - Suspended Binding That Quietly Becomes Possession.html
+    ├── Example 3 - High Intensity + Narrative Safety.yaml
+    ├── Example 3 - High Intensity + Narrative Safety.html
+    ├── Example 4 - Dignity Collapse without Rule Violation.yaml
+    ├── Example 4 - Dignity Collapse without Rule Violation.html
+    ├── Example 5 - Pseudo-Symmetry under Real Cost Asymmetry.yaml
+    └── Example 5 - Pseudo-Symmetry under Real Cost Asymmetry.html
+```
 
-The **canonical paper source** is the Markdown file.
-HTML/PDF are render targets for consistent reading and citation.
+The canonical paper source is `PMS-SEX.md`.
+The canonical model source is `PMS-SEX.yaml`.
+HTML and PDF are render targets for reading and citation.
 
 ---
 
-## Example Suite (Structural Stress Tests)
+## Example Suite
 
-The `examples/` directory contains five uniform, PMS–SEX-conform worked cases.
-They are written as **test vectors** for the paper’s central claims:
+The `examples/` directory contains uniform PMS–SEX-conform worked cases.
+They are **structural stress tests**, not guides, advice, or case diagnoses.
 
-* drift preparation is typically structural, not sudden (**Λ→Α→Ω→Θ**)
-* viability depends on legibility, cost realism, and stop-capability (**□/Ω/Θ/Χ**)
-* binding can arise without explicit agreement (**Ψ leak under Λ/Ω/Θ**)
-* dignity is a mode constraint, not a rule outcome (**D under explicit frames**)
+The examples test:
 
-**Included cases:**
+* drift preparation under Λ→Α→Ω→Θ
+* formal consent versus structural cost distribution
+* Ψ leak under suspended or limited frames
+* Χ erosion under repetition, intensity, or narrative stability
+* Dignity-in-Practice as an enactment constraint
+* publicness, body remainder, and path-cost as guarded overlays
 
-1. **Consent That Survives Legally but Fails Structurally**
-   *Formal compliance persists while Ω/Θ costs and D erosion become visible.*
+Included cases:
 
-2. **Desire as Self-Punishment (Minimal Psychology Trigger)**
-   *Repetition continues despite known Θ damage and D undercutting; alarm activates.*
+1. **Consent That Remains Procedurally Valid but Fails Structurally**
+   *Formal consent remains intact while Ω, Θ, and Χ drift.*
+
+2. **Desire as Self-Undercutting Configuration**
+   *Repetition continues despite known Θ damage and D-in-Practice stress.*
 
 3. **Suspended Binding That Quietly Becomes Possession**
-   *Ψ suspension fails via Λ steering, Ω escalation, and Θ accumulation.*
+   *Ψ suspension fails through Λ steering, Ω gradients, and Θ solidification.*
 
 4. **High Intensity + Narrative Safety**
-   *Intensity outruns frame capacity; Φ substitutes for real regulation.*
+   *Narrative safety remains stable while operational containment weakens.*
 
 5. **Dignity Collapse without Rule Violation**
-   *Nothing “forbidden,” yet degradation emerges through enactment mode under asymmetry.*
+   *Nothing is formally forbidden, yet degradation-form readability emerges through repeated enactment mode.*
 
 ---
 
 ## Structural Contributions
 
-### 1. Sexuality as a consequence system
+### 1. Sexuality as Consequence System
 
 PMS–SEX reconstructs sexuality as praxis that produces:
 
-* scripts (**Α**),
-* cost gradients (**Ω**),
-* trajectory effects (**Θ**),
-* and meaning pressure / binding thresholds (**Ψ**).
+* scripts and attractors (Α)
+* cost gradients (Ω)
+* trajectory effects (Θ)
+* recontextualization pressure (Φ)
+* distance or stop-capability stress (Χ)
+* binding relevance (Ψ)
 
-### 2. Non-event seriousness (Λ)
+### 2. Non-Event Seriousness
 
-Withdrawal, silence, delay, and absence are treated as structurally active under expectation — not as “nothing happened.”
+Withdrawal, silence, delay, hesitation, and absence are treated as structurally active under expectation — not as “nothing happened.”
 
-### 3. Viability without moralizing
+### 3. Viability Without Moralizing
 
-Functional practice is defined by **governability**, not “normality”:
+Functional practice is defined by **governability**, not normality:
 
-* Ω nameable, Θ realistic, Χ operative, Ψ handled, Λ tolerable.
+```text
+□ explicit
++ Ω nameable
++ Θ realistic
++ Χ operative
++ Λ tolerable
++ Ψ handled
+(+ Σ reachable)
+= structurally governable configuration
+```
 
-### 4. Boundary chapters that prevent totalization
+### 4. Outer Legibility Without Person-Ranking
 
-The model explicitly blocks common misreadings:
+PMS–SEX can name externally readable action-forms — such as asymmetry-form, exposure-form, humiliation-form, or degradation-form — without converting that analysis into moral verdict, identity judgment, diagnosis, or person-worth claim.
 
-* PMS–SEX models **configurations**, not persons.
-* psychology is subordinated and optional; it must not replace operator logic.
-* “deviance” is readable as stabilized consequence structure, not defect.
-* the body remains a non-operator remainder (no reduction to narrative).
+### 5. Path-Cost Without Pathology
 
-### 5. Optional docking to MIP (critique without shaming)
+PMS–SEX may describe higher stabilization burden, disturbance, or path-cost only at the level of configuration dynamics.
 
-Where regime/publicity critique is needed, PMS–SEX docks to **MIP** (Chapter 22) without mixing layers:
+> Disturbance names structural stabilization burden, not human worth.
 
-* PMS maps structure; MIP structures legitimate critique.
+### 6. Optional Docking to MIP
+
+Where public critique or system-level evaluation is required, PMS–SEX may dock to **MIP** without merging layers:
+
+* PMS–SEX maps structure.
+* MIP evaluates critique legitimacy.
+* Outer legibility alone does not automatically authorize public accusation.
 
 ---
 
@@ -298,40 +242,46 @@ Where regime/publicity critique is needed, PMS–SEX docks to **MIP** (Chapter 2
 PMS–SEX is intended for:
 
 * structural theorists analysing sexuality without diagnosis or moral ranking
-* discourse contexts where critique must be **hard** but **non-degrading**
-* analysts modelling drift, cost distribution, and exit realism under time
-* readers seeking a vocabulary for “what is happening structurally” in explicit sexual frames
+* discourse contexts where critique must be hard but non-degrading
+* modelling drift, cost distribution, exit realism, and viability under time
+* analysing explicit frames without reducing them to intent, identity, or pathology
+* maintaining consequence realism without prescriptive or instructional content
 
-It is **not** intended for giving instructions, escalating risk, or prescribing sexual practices.
-
-Any application must respect the **PMS entry condition**:
-**Χ (distance) + reversibility + D (dignity-in-practice)**.
+It is not intended for giving instructions, escalating risk, optimizing sexual practice, diagnosing persons, or ranking identities.
 
 ---
 
-PMS–AXIOM is part of a broader **praxeological ecosystem** spanning formal operator theory, applied anthropology, governance analysis, and executable specifications.
+## Links & Resources
 
-| Category        | Resource | Description |
-| --------------- | -------- | ----------- |
-| Model website   | [PMS Theory Site](https://pms-theory.netlify.app) | Canonical PMS theory reference |
-| Book websites   | [Maturity in Practice (EN)](https://maturity-in-practice.netlify.app) | *Maturity in Practice* — English edition (praxeological anthropology) |
-|                 | [Reife im Vollzug (DE)](https://reife-im-vollzug.netlify.app) | *Reife im Vollzug* — Deutsche Ausgabe |
-|                 | [PMS Stack](https://pms-stack.netlify.app) | PMS-STACK reference architecture |
-| Amazon          | [Maturity in Practice (EN)](https://www.amazon.com/dp/B0G4XBKNNR) | *Maturity in Practice: A Praxeological Anthropology* — English edition |
-|                 | [Reife im Vollzug (DE)](https://www.amazon.de/dp/B0G4SPBDQD) | *Reife im Vollzug: Eine praxeologische Anthropologie* — Deutsche Ausgabe |
-|                 | [PMS-STACK](https://www.amazon.com/dp/B0G6G7V38P) | *PMS-STACK — A Praxeological Operating System Architecture* |
-| GitHub (papers) | [PMS Theory / Repo](https://github.com/tz-dev/Praxeological-Meta-Structure-Theory) | Canonical PMS grammar, theory & YAML definitions |
-|                 | [Maturity-in-Practice](https://github.com/tz-dev/Maturity-in-Practice) | Book sources & applied praxeological anthropology |
-|                 | [PMS-QC](https://github.com/tz-dev/PMS-QC) | PMS-QC — Praxeological Meta-Structure for Quantum Computing |
-|                 | [PMS-LOGIC](https://github.com/tz-dev/PMS-LOGIC) | PMS-LOGIC — Structural Responsibility, Logical Limits, and Post-Moral Effects |
-|                 | [PMS-ANTICIPATION](https://github.com/tz-dev/PMS-ANTICIPATION) | PMS-ANTICIPATION — Structural Conditions, Risks, and Viability of Anticipatory Praxis |
-|                 | [PMS-CRITIQUE](https://github.com/tz-dev/PMS-CRITIQUE) | PMS-CRITIQUE — From Irritation to Correction: A Praxeological Grammar of Critique |
-|                 | [PMS-EDEN](https://github.com/tz-dev/PMS-EDEN) | PMS-EDEN — Structural Drift from Praxis to Comparison and Reciprocity Loss |
-|                 | [PMS-SEX](https://github.com/tz-dev/PMS-SEX) | PMS-SEX — From Impulse to Self-Binding: A Praxeological Grammar of Sexuality |
-|                 | [PMS-CONFLICT](https://github.com/tz-dev/PMS-CONFLICT) | PMS-CONFLICT — Conflict as Stabilized Incompatibility: Cost, Binding, and Tragic Non-Integration |
-|                 | **[PMS-AXIOM](https://github.com/tz-dev/PMS-AXIOM)** | PMS-AXIOM — Cartography of Classical Closure-Demands Across the PMS Stack |
-| Custom GPTs     | [PMS Model Assistant](https://chatgpt.com/g/g-69358a2a4980819183da6a97893389cf-pms-model-assistant) | Interactive PMS.yaml exploration & validation |
-|                 | [Maturity in Action](https://chat.openai.com/g/g-693460d3def48191ad08647301645a2e-maturity-in-action-a-praxeological-anthropology) | Applied praxeological anthropology assistant |
+*PMS-SEX* is situated within a broader **praxeological ecosystem** that connects formal operator theory, applied anthropology, structural ethics, and domain-specific analyses.
+The resources below provide **canonical references, adjacent applications, and tooling** for working with PMS-SEX **without mixing layers**.
+
+| Category        | Resource                                                                                                                                                                                                                     | Description                                                                           |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| Model website   | [https://pms-theory.netlify.app](https://pms-theory.netlify.app)                                                                                                                                                             | Canonical PMS theory reference                                                        |
+| Book websites   | [https://maturity-in-practice.netlify.app](https://maturity-in-practice.netlify.app)                                                                                                                                         | *Maturity in Practice* — English edition (praxeological anthropology)                 |
+|                 | [https://reife-im-vollzug.netlify.app](https://reife-im-vollzug.netlify.app)                                                                                                                                                 | *Reife im Vollzug* — Deutsche Ausgabe                                                 |
+|                 | [https://pms-stack.netlify.app](https://pms-stack.netlify.app)                                                                                                                                                               | PMS-STACK reference architecture                                                      |
+| Amazon          | [https://www.amazon.com/dp/B0G4XBKNNR](https://www.amazon.com/dp/B0G4XBKNNR)                                                                                                                                                 | *Maturity in Practice: A Praxeological Anthropology* — English edition                |
+|                 | [https://www.amazon.de/dp/B0G4SPBDQD](https://www.amazon.de/dp/B0G4SPBDQD)                                                                                                                                                   | *Reife im Vollzug: Eine praxeologische Anthropologie* — Deutsche Ausgabe              |
+|                 | [https://www.amazon.com/dp/B0G6G7V38P](https://www.amazon.com/dp/B0G6G7V38P)                                                                                                                                                 | *PMS-STACK — A Praxeological Operating System Architecture*                           |
+| GitHub (papers) | [https://github.com/tz-dev/Praxeological-Meta-Structure-Theory](https://github.com/tz-dev/Praxeological-Meta-Structure-Theory)                                                                                               | Canonical PMS grammar, theory & YAML definitions                                      |
+|                 | [https://github.com/tz-dev/Maturity-in-Practice](https://github.com/tz-dev/Maturity-in-Practice)                                                                                                                             | Book sources & applied praxeological anthropology                                     |
+|                 | [https://github.com/tz-dev/PMS-QC](https://github.com/tz-dev/PMS-QC)                                                                                                                                                         | PMS-QC — Praxeological Meta-Structure for Quantum Computing                           |
+|                 | [https://github.com/tz-dev/PMS-LOGIC](https://github.com/tz-dev/PMS-LOGIC)                                                                                                                                                   | PMS-LOGIC — Structural Responsibility, Logical Limits, and Post-Moral Effects         |
+|                 | [https://github.com/tz-dev/PMS-ANTICIPATION](https://github.com/tz-dev/PMS-ANTICIPATION)                                                                                                                                     | PMS-ANTICIPATION — Structural Conditions, Risks, and Viability of Anticipatory Praxis |
+|                 | [https://github.com/tz-dev/PMS-EDEN](https://github.com/tz-dev/PMS-EDEN)                                                                                                                                                     | PMS-EDEN — Structural Drift from Praxis to Comparison and Reciprocity Loss            |
+|                 | **[https://github.com/tz-dev/PMS-SEX](https://github.com/tz-dev/PMS-SEX)**                                                                                                                                                   | **PMS-SEX — From Impulse to Self-Binding: A Praxeological Grammar of Sexuality**      |
+| Custom GPTs     | [https://chatgpt.com/g/g-69358a2a4980819183da6a97893389cf-pms-model-assistant](https://chatgpt.com/g/g-69358a2a4980819183da6a97893389cf-pms-model-assistant)                                                                 | Interactive PMS.yaml exploration & validation                                         |
+|                 | [https://chat.openai.com/g/g-693460d3def48191ad08647301645a2e-maturity-in-action-a-praxeological-anthropology](https://chat.openai.com/g/g-693460d3def48191ad08647301645a2e-maturity-in-action-a-praxeological-anthropology) | Applied praxeological anthropology assistant                                          |
+
+Raw model references:
+
+* PMS.yaml:
+  [https://raw.githubusercontent.com/tz-dev/Praxeological-Meta-Structure-Theory/refs/heads/main/model/PMS.yaml](https://raw.githubusercontent.com/tz-dev/Praxeological-Meta-Structure-Theory/refs/heads/main/model/PMS.yaml)
+
+* MIP YAML:
+  [https://raw.githubusercontent.com/tz-dev/Maturity-in-Practice/refs/heads/main/MIPractice_case_v2.0_full_with_model_reference.yaml](https://raw.githubusercontent.com/tz-dev/Maturity-in-Practice/refs/heads/main/MIPractice_case_v2.0_full_with_model_reference.yaml)
 
 ---
 
@@ -342,36 +292,12 @@ When referencing PMS–SEX, please cite both PMS–SEX and PMS:
 **PMS–SEX**
 
 > T. Zöller (2026): *PMS–SEX — From Impulse to Self-Binding: A Praxeological Grammar of Sexuality (Δ–Ψ).*
+> `PMS-SEX.yaml`, schema_version `PMS-SEX_1.1`.
 
 **PMS Framework**
 
 > T. Zöller (2025): *Towards a Praxeological Meta-Structure Theory.*
-> *PMS.yaml — Axiomatic Operator Schema (PMS_1.1).*
-
----
-
-## 🤝 Contributing
-
-Contributions, critiques, and structural questions are welcome.
-Please open an issue or submit a pull request.
-
-### Contribution scope (structural only)
-
-Contributions are especially welcome for:
-
-* additional example packets that follow the schema and guardrails,
-* clarifications to drift catalogue signatures (operator-readable, non-moral),
-* improvements to viability corridor notes and dependency hygiene documentation,
-* documentation improvements that strengthen reversibility and dignity-in-practice,
-* tooling adapters that consume PMS.yaml + PMS-SEX.yaml without reimplementing operators.
-
-Contributions are out of scope if they:
-
-* introduce new operators,
-* redefine PMS operator dependencies,
-* add person-typing, motive attribution, or diagnostic language,
-* turn drift labels into enforcement or sanction mechanisms,
-* add instructional content (how-to, optimization, escalation guidance).
+> `PMS.yaml`, schema_version `PMS_1.3`.
 
 ---
 
@@ -387,16 +313,9 @@ Unless otherwise stated, all documentation in this repository is licensed under:
 
 PMS–SEX does not tell you what sex *should* be.
 
-It makes visible what sexual configurations **produce** —
-especially where costs emerge, how drift becomes prepared,
-and why many conflicts arise not from malice,
-but from **structural opacity under time, asymmetry, and repetition**.
+It makes visible what sexual configurations **produce** — especially where costs emerge, how drift becomes prepared, how inner framing and outer form can diverge, and why many conflicts arise not from malice but from structural opacity under time, asymmetry, non-event, and repetition.
 
-**Dedication Note**
+PMS–SEX remains valid by staying within configuration-language:
 
-PMS-SEX is dedicated to Douglas Adams, who understood that much of what one learns about sex isn't necessarily what one wanted to know, but what one is nevertheless forced to find out.
-
-
-
-
-
+> not what persons are,
+> but what configurations do over time.
