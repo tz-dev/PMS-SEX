@@ -930,53 +930,52 @@ non-instructional stance
 
 ## 22. Links and Resources
 
-### Core Theory and Model
+### PMS Core Theory and Model
+
+| Category        | Resource                                                                                 | Description                                            |
+| --------------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| Project website | [PMS Theory Site](https://pms-theory.netlify.app)                                        | Canonical PMS theory reference                         |
+| GitHub repo     | [PMS Theory / Repository](https://github.com/tz-dev/Praxeological-Meta-Structure-Theory) | PMS grammar, theory texts, YAML/JSON model definitions |
+| DOI             | [PMS Theory DOI](https://doi.org/10.5281/zenodo.17075154)                                | Archived reference version of the PMS base theory      |
+
+### PMS Domain Lenses and Overlays
+
+| Category    | Resource                                                       | Description                                                        |
+| ----------- | -------------------------------------------------------------- | ------------------------------------------------------------------ |
+| GitHub repo | [PMS-ANTICIPATION](https://github.com/tz-dev/PMS-ANTICIPATION) | Anticipatory praxis under uncertainty                              |
+| GitHub repo | [PMS-CRITIQUE](https://github.com/tz-dev/PMS-CRITIQUE)         | Critique as interruption, recontextualization, and correction      |
+| GitHub repo | [PMS-CONFLICT](https://github.com/tz-dev/PMS-CONFLICT)         | Conflict as stabilized incompatibility                             |
+| GitHub repo | [PMS-EDEN](https://github.com/tz-dev/PMS-EDEN)                 | Drift from praxis to comparison, pseudo-symmetry, reciprocity loss |
+| GitHub repo | [PMS-LOGIC](https://github.com/tz-dev/PMS-LOGIC)               | Structural responsibility, logical limits, post-moral effects      |
+| GitHub repo | [PMS-SEX](https://github.com/tz-dev/PMS-SEX)                   | Sexuality as framed impulse, asymmetry, time, exit, and binding    |
+| GitHub repo | [PMS-QC](https://github.com/tz-dev/PMS-QC)                     | PMS structural layer for quantum computing                         |
+
+### PMS Downstream Applications and Architectures
+
+| Category    | Resource                                                             | Description                                                                                                                                                                                                                                                                                                             |
+| ----------- | -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| GitHub repo | [PMS-AXIOM](https://github.com/tz-dev/PMS-AXIOM)                     | Cartography of classical closure-demands across the PMS stack                                                                                                                                                                                                                                                           |
+| GitHub repo | [PMS-STACK](https://github.com/tz-dev/PMS-STACK)                     | Implementation-layer PMS architecture specification for abstract machine, virtual CPU, OS, runtime, language, security, networking, distributed systems, tooling, simulation, verification, boot, and cluster profiles ([book website](https://pms-stack.netlify.app) / [amazon](https://www.amazon.com/dp/B0G6G7V38P)) |
+| GitHub repo | [PMS-RUST](https://github.com/tz-dev/PMS-RUST)                       | Executable PMS-STACK Evidence Spine: Rust kernel, REPL, validation, JSONL, vFS, AI bridge                                                                                                                                                                                                                               |
+| GitHub repo | [PMS-EMERGENCE MODEL](https://github.com/tz-dev/PMS-EMERGENCE_MODEL) | Claim-disciplined developmental architecture for trace-backed emergence                                                                                                                                                                                                                                                 |
+| GitHub repo | [PMS — UNDER LOAD](https://github.com/tz-dev/PMS---UNDER-LOAD)       | Structural self-critique of PMS under calibration, coverage, stack drift, publicness, and self-application                                                                                                                                                                                                              |
+
+### MIP: Adjacent Praxeological Ecosystem
 
 | Category | Resource | Description |
 |---|---|---|
-| Project website | [PMS Theory Site](https://pms-theory.netlify.app) | Canonical PMS theory reference |
-| GitHub repo | [PMS Theory / Repository](https://github.com/tz-dev/Praxeological-Meta-Structure-Theory) | PMS grammar, theory texts, YAML/JSON model definitions |
-| DOI | [PMS Theory DOI](https://doi.org/10.5281/zenodo.17075154) | Archived reference version of the PMS base theory |
-
-### Domain Lenses and Overlays
-
-| Category | Resource | Description |
-|---|---|---|
-| GitHub repo | [PMS-ANTICIPATION](https://github.com/tz-dev/PMS-ANTICIPATION) | Anticipatory praxis under uncertainty |
-| GitHub repo | [PMS-CRITIQUE](https://github.com/tz-dev/PMS-CRITIQUE) | Critique as interruption, recontextualization, and correction |
-| GitHub repo | [PMS-CONFLICT](https://github.com/tz-dev/PMS-CONFLICT) | Conflict as stabilized incompatibility |
-| GitHub repo | [PMS-EDEN](https://github.com/tz-dev/PMS-EDEN) | Drift from praxis to comparison, pseudo-symmetry, reciprocity loss |
-| GitHub repo | [PMS-LOGIC](https://github.com/tz-dev/PMS-LOGIC) | Structural responsibility, logical limits, post-moral effects |
-| GitHub repo | [PMS-SEX](https://github.com/tz-dev/PMS-SEX) | Sexuality as framed impulse, asymmetry, time, exit, and binding |
-| GitHub repo | [PMS-QC](https://github.com/tz-dev/PMS-QC) | PMS structural layer for quantum computing |
-
-### Downstream Applications and Architectures
-
-| Category | Resource | Description |
-|---|---|---|
-| Project website | [PMS-STACK](https://pms-stack.netlify.app) | PMS-STACK reference architecture |
-| Book on Amazon | [PMS-STACK on Amazon](https://www.amazon.com/dp/B0G6G7V38P) | Published book: *PMS-STACK — A Praxeological Operating System Architecture* |
-| GitHub repo | [PMS-AXIOM](https://github.com/tz-dev/PMS-AXIOM) | Cartography of classical closure-demands across the PMS stack |
-| GitHub repo | [PMS-RUST](https://github.com/tz-dev/PMS-RUST) | Executable PMS-STACK Evidence Spine: Rust kernel, REPL, validation, JSONL, vFS, AI bridge |
-| GitHub repo | [PMS-EMERGENCE MODEL](https://github.com/tz-dev/PMS-EMERGENCE_MODEL) | Claim-disciplined developmental architecture for trace-backed emergence |
-| GitHub repo | [PMS — UNDER LOAD](https://github.com/tz-dev/PMS---UNDER-LOAD) | Structural self-critique of PMS under calibration, coverage, stack drift, publicness, and self-application |
-
-### Adjacent Praxeological Ecosystem
-
-| Category | Resource | Description |
-|---|---|---|
-| Book website | [Maturity in Practice (EN)](https://maturity-in-practice.netlify.app) | English edition: *Maturity in Practice — A Praxeological Anthropology* |
-| Book website | [Reife im Vollzug (DE)](https://reife-im-vollzug.netlify.app) | German edition: *Reife im Vollzug — Eine praxeologische Anthropologie* |
-| GitHub repo | [Maturity-in-Practice Repository](https://github.com/tz-dev/Maturity-in-Practice) | Book sources and applied praxeological anthropology materials |
-| Book on Amazon | [Maturity in Practice on Amazon](https://www.amazon.com/dp/B0G4XBKNNR) | Published book — English edition |
-| Book on Amazon | [Reife im Vollzug on Amazon](https://www.amazon.de/dp/B0G4SPBDQD) | Published book — German edition |
+| GitHub repo | [Maturity-in-Practice Repository](https://github.com/tz-dev/Maturity-in-Practice) | Maturity in Practice model + attack surface hardening addon ([book website EN](https://maturity-in-practice.netlify.app) / [book website DE](https://reife-im-vollzug.netlify.app) / [amazon EN](https://www.amazon.com/dp/B0G4XBKNNR) / [amazon DE](https://www.amazon.de/dp/B0G4SPBDQD)) |
+| Book website | [Maturity in Practice (EN)](https://maturity-in-practice.netlify.app) | English book website for *Maturity in Practice – A Praxeological Anthropology* |
+| Book website | [Reife im Vollzug (DE)](https://reife-im-vollzug.netlify.app) | German book website for *Reife im Vollzug – Eine praxeologische Anthropologie* |
+| Book on Amazon | [Maturity in Practice on Amazon](https://www.amazon.com/dp/B0G4XBKNNR) | Published English edition |
+| Book on Amazon | [Reife im Vollzug on Amazon](https://www.amazon.de/dp/B0G4SPBDQD) | Published German edition |
 
 ### Interactive Assistants
 
-| Category | Resource | Description |
-|---|---|---|
-| GPT assistant | [PMS Model Assistant](https://chatgpt.com/g/g-69358a2a4980819183da6a97893389cf-pms-model-assistant) | Interactive PMS.yaml exploration and validation |
-| GPT assistant | [Maturity in Action](https://chat.openai.com/g/g-693460d3def48191ad08647301645a2e-maturity-in-action-a-praxeological-anthropology) | Applied praxeological anthropology assistant |
+| Category      | Resource                                                                                                                           | Description                                     |
+| ------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| GPT assistant | [PMS Model Assistant](https://chatgpt.com/g/g-69358a2a4980819183da6a97893389cf-pms-model-assistant)                                | Interactive PMS.yaml exploration and validation |
+| GPT assistant | [Maturity in Action](https://chat.openai.com/g/g-693460d3def48191ad08647301645a2e-maturity-in-action-a-praxeological-anthropology) | Applied praxeological anthropology assistant    |
 
 ---
 
