@@ -8,10 +8,10 @@
 #    PMS-SEX.yaml
 #
 #  Profile Version:
-#    PMS-SEX_1.1
+#    PMS-SEX_1.2
 #
 #  Last Updated:
-#    2026-04-26
+#    2026-05-24
 #
 # -----------------------------------------------------------------------------
 #  PURPOSE AND STATUS
@@ -47,9 +47,11 @@
 #    in PMS.yaml.
 #
 #  - Any apparent deviations such as “reduced signatures,” “publicness overlay,”
-#    “outer legibility,” “path-cost,” or “suspended Ψ attribution” are
-#    shorthand notations or frame-level descriptions only and MUST NOT be read
-#    as changes to PMS operator logic.
+#    “outer legibility,” “path-cost,” “suspended Ψ attribution,” “sexual cost
+#    topology,” “asymmetry-switch drift,” “parity-to-exit,”
+#    “responsibility-to-authority,” or “adult sexual reciprocity” are shorthand
+#    notations, frame-level descriptions, domain instantiations, or drift
+#    profiles only and MUST NOT be read as changes to PMS operator logic.
 #
 # -----------------------------------------------------------------------------
 #  SCOPE OF THE OVERLAY
@@ -62,6 +64,12 @@
 #    - modulators (non-operator weightings; no typing, no causation),
 #    - inner / outer / public layer guards,
 #    - path-cost and disturbance-language guards,
+#    - sexual cost topology as a domain-specific Ω/Θ cost layout,
+#    - EDEN/PFO asymmetry-switch reference as cross-domain regime handle,
+#    - asymmetry-switch drift, parity-to-exit, and responsibility-to-authority
+#      as PMS-SEX drift profiles,
+#    - adult sexual reciprocity as a viability principle, not a moral norm,
+#    - MIP docking guards for maturity-relevant evaluation,
 #    - example-suite schemas (scene-bound, non-instructional),
 #    - publicness and documentation overlays as □ extensions.
 #
@@ -69,7 +77,13 @@
 #    - amplify or organize existing PMS operators,
 #    - never replace PMS generativity with psychological explanation,
 #    - never bypass asymmetry (Ω), temporality (Θ), distance (Χ), or D,
-#    - remain descriptive, non-diagnostic, non-prescriptive, and non-moralizing.
+#    - remain descriptive, non-diagnostic, non-prescriptive, and non-moralizing,
+#    - must not be converted into person labels, maturity verdicts, dignity
+#      rankings, sexual-orientation taxonomies, or authority claims.
+#
+#  PMS-SEX does not derive its sexual grammar from PMS–EDEN. PMS–EDEN names the
+#  regime-level asymmetry switch; PMS-SEX reads its sexual instantiation where
+#  sexual cost topology makes the mechanism domain-salient.
 #
 # -----------------------------------------------------------------------------
 #  VALIDITY GATE — PMS ENTRY CONDITION (APPLICATION-ONLY)
@@ -87,8 +101,8 @@
 #
 #    - D (Dignity-in-Practice):
 #        enacted restraint under asymmetry; no shaming, ranking, humiliation,
-#        diagnosis, identity verdict, orientation taxonomy, or ontological
-#        person evaluation.
+#        diagnosis, identity verdict, orientation taxonomy, maturity hierarchy,
+#        or ontological person evaluation.
 #
 #  This gate constrains APPLICATION only.
 #  PMS itself may be criticized, rejected, revised, or ignored without
@@ -99,8 +113,9 @@
 # -----------------------------------------------------------------------------
 #  In line with PMS.yaml v1.3, any application that suspends Distance (Χ),
 #  Self-Binding discipline (Ψ), or Dignity-in-Practice (D) in order to enforce
-#  truth, clarity, authority, resolution, urgency, action, or asymmetry is
-#  formally INVALID as PMS application — even if PMS terminology is retained.
+#  truth, clarity, authority, resolution, urgency, action, asymmetry, parity,
+#  protection, or responsibility is formally INVALID as PMS application — even
+#  if PMS terminology is retained.
 #
 #  This profile therefore treats all PMS-SEX analyses as:
 #    - scene-bound,
@@ -110,6 +125,8 @@
 #    - non-diagnostic,
 #    - non-prescriptive,
 #    - non-moralizing,
+#    - non-person-ranking,
+#    - non-maturity-ranking,
 #    - dignity-preserving.
 #
 # -----------------------------------------------------------------------------
@@ -125,14 +142,14 @@
 #
 # =============================================================================
 
-schema_version: "PMS-SEX_1.1"
+schema_version: "PMS-SEX_1.2"
 
 schema_meta:
   model_name: "PMS–SEX Application Profile"
   model_short: "PMS-SEX"
   status: "application_overlay"
   profile_role: "paper_specific_profile"
-  last_updated: "2026-04-26"
+  last_updated: "2026-05-24"
   authors:
     - name: "T. Zöller"
       role: "originator"
@@ -147,16 +164,18 @@ schema_meta:
     APPLICATION PROFILE for PMS that specifies the structural lens of PMS-SEX
     using the canonical PMS operator grammar (Δ–Ψ), without redefining operators
     or altering dependencies. It provides reduced signatures, overlay concepts,
-    modulators, drift markers, viability corridors, appendix terms, and
-    example-suite scaffolding. All constructs remain scene-bound and subordinate
-    to PMS v1.3.
+    modulators, drift markers, viability corridors, sexual cost topology,
+    EDEN/PFO sexual-instantiation handles, MIP-docking guards, appendix terms,
+    and example-suite scaffolding. All constructs remain scene-bound and
+    subordinate to PMS v1.3.
   repo:
     name: "PMS-SEX"
     url: "https://github.com/tz-dev/PMS-SEX"
   source_paper:
     title: "PMS-SEX — From Impulse to Self-Binding: A Praxeological Grammar of Sexuality (Δ–Ψ)"
-    file: "PMS-SEX - From Impulse to Self-Binding - A Praxeological Grammar of Sexuality.md"
+    file: "PMS-SEX - nach update.md"
     status: "updated_paper_reference"
+    version: "PMS-SEX_1.2"
     coverage:
       - "Ch. 0: scope, PMS v1.3 operator spine, entry guard, inner/outer distinction, publicness overlay, path-cost guard"
       - "Ch. 1–12: core operator derivation from Δ through Ψ"
@@ -164,16 +183,16 @@ schema_meta:
       - "Ch. 14: modulators as non-operator weightings"
       - "Ch. 15: deviance as consequence structure"
       - "Ch. 16: high-risk / extreme practices"
-      - "Ch. 17: suspended self-binding as boundary condition"
-      - "Ch. 18: dysfunctional expressions and destructive dynamics"
+      - "Ch. 17: suspended self-binding as boundary condition; EDEN/PFO drift under suspended Ψ"
+      - "Ch. 18: dysfunctional expressions and destructive dynamics; asymmetry-switch drift, parity-to-exit, responsibility-to-authority"
       - "Ch. 19: functional conditions and warning signals"
-      - "Ch. 20: structural self-check adapter"
-      - "Ch. 21: Dignity-in-Practice module"
-      - "Ch. 22: MIP docking interface"
+      - "Ch. 20: structural self-check adapter updated for switch drift and cost-topology rereading"
+      - "Ch. 21: Dignity-in-Practice module; EDEN/PFO reference; sexual cost topology; cost factors by role-position"
+      - "Ch. 22: MIP docking interface; operator-profile-only rule; no direct adultness verdict"
       - "Ch. 23: limits and extensions"
       - "Ch. 24: conclusion and final guard"
       - "Appendix A: positioning and adjacent lenses"
-      - "Appendix B: glossary"
+      - "Appendix B: glossary incl. sexual cost topology, EDEN/PFO asymmetry switch, parity-to-exit, responsibility-to-authority"
       - "Appendix C: operator table"
       - "Appendix D: one-page structural map"
 
@@ -186,26 +205,49 @@ pms_v13_conformity:
   no_operator_redefinition: true
   no_dependency_rewrite: true
   no_derived_axis_rewrite: true
+  no_direct_adultness_verdict: true
   notes:
     - >
       PMS-SEX uses the default PMS repository dependency path as its reference
-      spine for domain-specific application. Reduced formulas are shorthand, 
+      spine for domain-specific application. Reduced formulas are shorthand,
       not alternative dependency graphs.
     - >
       Publicness, outer legibility, pre-reflective readability, path-cost,
-      stabilization burden, and body remainder are overlay/application concepts,
-      not PMS operators.
+      stabilization burden, body remainder, sexual cost topology, and
+      asymmetry-specific responsibility are overlay/application concepts, not
+      PMS operators.
     - >
       Suspended self-binding in Chapter 17 means Ψ is present as a deliberately
       suspended attribution condition. It is not absent, replaced, removed, or
       transformed into a new operator.
     - >
+      Sexual cost topology is a scene-bound Ω/Θ cost layout. It is not a score,
+      not a person measure, not a dignity measure, and not a maturity measure.
+    - >
+      PMS–EDEN names the regime-level asymmetry switch. PMS-SEX reads its sexual
+      instantiation only where body-, exposure-, reputational-, publicness-, and
+      consequence-asymmetries make the mechanism domain-salient.
+    - >
+      Asymmetry-switch drift, parity-to-exit, and responsibility-to-authority
+      are PMS-SEX drift profiles. They are not person labels, not moral verdicts,
+      not maturity rankings, and not new PMS operators.
+    - >
+      Adult sexual reciprocity is a PMS-SEX viability principle: unequal burdens
+      must not be externalized. It does not require equal burdens, identical role
+      tasks, or symmetry of content.
+    - >
       Dignity-in-Practice remains the PMS-derived construct with canonical
       derivation ["Ψ", "Χ", "Ω"]. PMS-SEX adds application-side D-compliance
       conditions but does not revise PMS-D.
+    - >
+      PMS-SEX may record operator profiles such as unmarked Ω activation,
+      Ψ externalization, weak Χ, missing Σ coordination, parity-to-exit,
+      responsibility-to-authority, or cost-topology mismatch. Maturity-relevant
+      evaluation belongs only to MIP docking and must remain scene-bound,
+      reversible, non-person-ranking, and D-preserving.
 
 validity_gate:
-  paper_refs: ["Ch. 0.2", "Ch. 0.4", "Ch. 0.9", "Ch. 21", "Appendix B"]
+  paper_refs: ["Ch. 0.2", "Ch. 0.4", "Ch. 0.9", "Ch. 21", "Ch. 22", "Appendix B"]
   note: >
     This gate constrains PMS application only, not critique, rejection, or rival
     formalization.
@@ -214,19 +256,29 @@ validity_gate:
       name: "Distance"
       meaning: >
         Maintained meta-position and stop-capability; no fusion into verdict,
-        urgency, enforcement, person-level attribution, role, impulse, or
+        urgency, enforcement, person-level attribution, role, impulse,
+        asymmetry activation, parity claim, responsibility claim, or
         self-justifying rhetoric.
     - id: "reversibility"
       meaning: >
         Scene-bound, configuration-specific, revisable readings; no global
-        person labels, irreversible interpretive claims, identity verdicts, or
-        ontological attributions.
+        person labels, irreversible interpretive claims, identity verdicts,
+        maturity verdicts, or ontological attributions.
     - id: "D"
       name: "Dignity-in-Practice"
       meaning: >
         No shaming, humiliation, person-ranking, diagnosis, orientation taxonomy,
-        or person-worth evaluation; critique targets enacted structures and cost
-        handling only.
+        maturity hierarchy, dignity hierarchy, or person-worth evaluation;
+        critique targets enacted structures and cost handling only.
+  prohibits:
+    - "sexual_cost_topology_as_score"
+    - "asymmetry_switch_as_authority"
+    - "parity_to_exit_as_reciprocity"
+    - "responsibility_to_authority_as_care"
+    - "operator_profile_as_direct_adultness_verdict"
+    - "outer_legibility_as_public_punishment_license"
+    - "path_cost_as_person_value"
+    - "disturbance_language_as_orientation_taxonomy"
 
 operator_reference:
   paper_refs: ["Ch. 0.1.1", "Appendix C", "Appendix D.2"]
@@ -258,10 +310,10 @@ operator_reference:
     "Σ": ["Χ", "Φ"]
     "Ψ": ["Σ", "Θ", "Χ"]
   dependency_hygiene_note: >
-    Reduced signatures may foreground a cluster such as Ω → Θ or Λ → Α → Ω → Θ.
-    Such foregrounding does not suspend, bypass, or reorder PMS dependencies.
-    Any use of Χ in a reduced signature presupposes Φ, Θ, and □. Any use of Ψ
-    presupposes Σ, Θ, and Χ.
+    Reduced signatures may foreground a cluster such as Ω → Θ, Λ → Α → Ω → Θ,
+    or Ω/Θ → Χ/Σ/Ψ re-binding. Such foregrounding does not suspend, bypass, or
+    reorder PMS dependencies. Any use of Χ in a reduced signature presupposes
+    Φ, Θ, and □. Any use of Ψ presupposes Σ, Θ, and Χ.
 
 references:
   - label: "PMS (GitHub)"
@@ -272,12 +324,28 @@ references:
     url: "https://github.com/tz-dev/Maturity-in-Practice"
   - label: "MIP.yaml (raw)"
     url: "https://raw.githubusercontent.com/tz-dev/Maturity-in-Practice/refs/heads/main/MIPractice_case_v2.0_full_with_model_reference.yaml"
+  - label: "PMS–EDEN (GitHub)"
+    url: "https://github.com/tz-dev/PMS-EDEN"
 
 # -----------------------------------------------------------------------------
 # Overlay concepts (non-operators; application-level only)
 # -----------------------------------------------------------------------------
 overlay_concepts:
-  paper_refs: ["Ch. 0.4a", "Ch. 0.4b", "Ch. 0.4c", "Ch. 0.6a", "Ch. 0.6b", "Appendix B"]
+  paper_refs:
+    - "Ch. 0.4a"
+    - "Ch. 0.4b"
+    - "Ch. 0.4c"
+    - "Ch. 0.6a"
+    - "Ch. 0.6b"
+    - "Ch. 4.6"
+    - "Ch. 4.7"
+    - "Ch. 17.8"
+    - "Ch. 18.3"
+    - "Ch. 21.7a"
+    - "Ch. 21.7b"
+    - "Ch. 21.7c"
+    - "Ch. 22"
+    - "Appendix B"
 
   internal_framing:
     name: "Internal Framing"
@@ -285,10 +353,11 @@ overlay_concepts:
     definition: >
       How a scene is inhabited, narrated, or lived from within the configuration:
       as play, service, devotion, experimentation, intimacy, kink, discipline,
-      restraint, authenticity, or otherwise.
+      restraint, authenticity, casualness, non-binding practice, or otherwise.
     guard: >
       Internal framing may shape experience but does not by itself determine or
-      erase outer structural form.
+      erase outer structural form, sexual cost topology, or Ω/Θ consequence
+      distribution.
 
   outer_legibility:
     name: "Outer Legibility"
@@ -299,7 +368,8 @@ overlay_concepts:
       of whether internal framing confirms or contests that readability.
     guard: >
       Naming outer legibility does not imply person-ranking, diagnosis, moral
-      verdict, denial of consent, or total interpretation of the scene.
+      verdict, denial of consent, public-punishment license, or total
+      interpretation of the scene.
 
   pre_reflective_readability:
     name: "Pre-Reflective Scene Readability"
@@ -316,14 +386,15 @@ overlay_concepts:
     is_operator: false
     pms_layer: "□ extension"
     primarily_intensifies: ["Ω", "Θ"]
-    interacts_with: ["□", "Α", "Λ"]
+    interacts_with: ["□", "Α", "Λ", "Φ"]
     definition: >
       Publicness as a frame-extension that distributes, amplifies, documents,
       repeats, or sedimentizes a scene’s readability and consequences without
       necessarily generating the scene’s primary form in the first place.
     guard: >
       Publicness is neither always the origin nor automatically irrelevant.
-      It modifies the consequence field.
+      It modifies the consequence field and can harden cost topology without
+      replacing scene reconstruction.
 
   path_cost_language:
     name: "Path-Cost / Stabilization Burden"
@@ -335,7 +406,7 @@ overlay_concepts:
     guard: >
       Path-cost, disturbance, entropy, deviation, and stabilization burden do not
       classify persons, diagnose identities, rank orientations, lower dignity,
-      or authorize moral pathology.
+      rank maturity, or authorize moral pathology.
 
   body_remainder:
     name: "Body as Non-Operator Remainder"
@@ -349,6 +420,221 @@ overlay_concepts:
       Body remainder is not a person-ranking device and not a biological
       taxonomy. It names material consequence capacity within configurations.
 
+  sexual_cost_topology:
+    name: "Sexual Cost Topology"
+    is_operator: false
+    claim_type: "DOMAIN_INSTANTIATION"
+    paper_refs: ["Ch. 4.6", "Ch. 4.8", "Ch. 17.8", "Ch. 21.7b", "Ch. 21.7c", "Appendix B"]
+    not_a_score: true
+    no_person_ranking: true
+    no_dignity_ranking: true
+    no_maturity_ranking: true
+    definition: >
+      Scene-bound distribution of bodily, temporal, exposure-related,
+      reputational, binding-related, exit-related, publicness-related, and
+      responsibility-related costs across sexual role-positions.
+    function: >
+      Sexual cost topology answers which costs attach where, which costs are
+      non-delegable, which can be externalized, which sediment under Θ, who can
+      invoke asymmetry as exception, who can invoke parity as exit, and who can
+      convert responsibility into authority.
+    dimensions:
+      bodily_non_delegability:
+        operators: ["Ω", "Θ"]
+        description: >
+          Bodily consequences that cannot be delegated or symmetrically reset,
+          including bodily overhang, injury risk, reproduction-linked effects,
+          and other material consequence interfaces.
+      exposure_and_publicness:
+        operators: ["Ω", "Θ", "□"]
+        description: >
+          Uneven exposure, visibility, documentation, circulation, and publicness
+          effects that may amplify or sedimentize already active scene costs.
+      reputational_sedimentation:
+        operators: ["Ω", "Θ", "Φ"]
+        description: >
+          Role-distributed reputational after-costs, including later
+          recontextualization and sedimentation across time.
+      exit_cost:
+        operators: ["Ω", "Θ", "Χ"]
+        description: >
+          Difference in the cost, plausibility, reversibility, and practical
+          availability of exit, refusal, pause, or re-reading.
+      responsibility_externalizability:
+        operators: ["Ω", "Ψ", "Χ"]
+        description: >
+          Capacity to shift, deny, or externalize role-specific responsibility
+          rather than carrying it as self-binding and restraint.
+      frame_control_capacity:
+        operators: ["□", "Φ", "Ψ"]
+        description: >
+          Capacity to define, redefine, close, or govern the scene’s meaning,
+          role grammar, and responsibility distribution.
+      asymmetry_activation_capacity:
+        operators: ["Ω", "Φ", "Ψ"]
+        description: >
+          Capacity to activate asymmetry as protection, exception, exposure,
+          cost, or responsibility claim.
+    guard: >
+      PMS-SEX does not claim equal costs. It requires that unequal costs not be
+      externalized. Sexual cost topology must never become a person score,
+      dignity ranking, maturity ranking, or role-blame totalization.
+
+  eden_pfo_asymmetry_switch:
+    name: "EDEN/PFO Asymmetry Switch"
+    is_operator: false
+    claim_type: "CROSS_DOMAIN_REFERENCE"
+    source_model: "PMS-EDEN"
+    paper_refs: ["Ch. 4.7", "Ch. 17.8", "Ch. 18.3", "Ch. 21.7a", "Appendix B"]
+    definition: >
+      Cross-domain reference to PMS–EDEN. In PMS-SEX, the term names the sexual
+      instantiation of a regime-level drift: parity is claimed for autonomy,
+      status, access, or non-binding freedom, while asymmetry is activated for
+      protection, cost, exposure, or responsibility.
+    legitimate_when:
+      - "marked"
+      - "bounded"
+      - "emergency_bound_or_structurally_necessary"
+      - "linked_to_real_omega_theta_burden"
+      - "re_bound_into_sigma_psi"
+    drifting_when:
+      - "unmarked"
+      - "repeatable"
+      - "responsibility_shifting"
+      - "sigma_coordination_absent_or_failed"
+      - "psi_re_binding_absent_or_failed"
+    guard: >
+      PMS-SEX does not derive its sexual grammar from PMS-EDEN. It reads the
+      sexual instantiation of a mechanism defined there. The switch is not a new
+      PMS operator and not an authority claim.
+
+  asymmetry_switch_drift:
+    name: "Asymmetry-Switch Drift"
+    is_operator: false
+    claim_type: "DRIFT_PROFILE"
+    paper_refs: ["Ch. 18.3", "Ch. 21.6", "Appendix B"]
+    definition: >
+      A drift pattern in which asymmetry is activated under real or invoked
+      Ω/Θ pressure without being marked, bounded, and re-bound into Σ/Ψ. In
+      PMS-SEX this is the sexual instantiation of the EDEN/PFO switch.
+    becomes_dysfunctional_where:
+      - "activation_used_as_repeatable_leverage"
+      - "responsibility_displacement_present"
+      - "unacknowledged_psi_externalization_present"
+      - "parity_surface_preserved_while_costs_distribute_asymmetrically"
+    guard: >
+      Names a scene-level drift profile only. It is not a person label, not a
+      motive claim, not a maturity verdict, and not a moral accusation.
+
+  parity_to_exit:
+    name: "Parity-to-Exit"
+    is_operator: false
+    claim_type: "DRIFT_PROFILE"
+    paper_refs: ["Ch. 18.3", "Ch. 21.6", "Ch. 21.7a", "Appendix B"]
+    definition: >
+      A drift pattern in which parity rhetoric is used to deny additional
+      responsibility under unequal sexual cost topology.
+    typical_forms:
+      - "it_was_mutual"
+      - "we_are_equal"
+      - "no_one_owes_anything"
+      - "the_other_is_autonomous"
+      - "it_was_only_casual"
+    guard: >
+      Parity-to-exit names equality-language functioning as responsibility
+      displacement. It is not a person essence claim and not a denial of
+      autonomy or consent as frame conditions.
+
+  responsibility_to_authority:
+    name: "Responsibility-to-Authority"
+    is_operator: false
+    claim_type: "DRIFT_PROFILE"
+    paper_refs: ["Ch. 18.3", "Ch. 21.6", "Ch. 21.7a", "Appendix B"]
+    definition: >
+      A drift pattern in which required self-binding under asymmetry is
+      converted into control, frame authority, protection entitlement, or
+      paternalistic governance.
+    typical_forms:
+      - "care_becomes_control"
+      - "protection_becomes_governance"
+      - "responsibility_becomes_frame_ownership"
+      - "restraint_becomes_entitlement_to_define_the_other"
+    guard: >
+      Responsibility-to-authority is the mistranslation of required restraint
+      into entitlement. Greater responsibility under asymmetry does not generate
+      a right to control.
+
+  adult_sexual_reciprocity:
+    name: "Adult Sexual Reciprocity"
+    is_operator: false
+    claim_type: "VIABILITY_PRINCIPLE"
+    paper_refs: ["Ch. 4.6", "Ch. 21.7a", "Ch. 21.7b", "Ch. 21.8", "Appendix B"]
+    principle: "unequal burdens must not be externalized"
+    not_required:
+      - "equal_burdens"
+      - "identical_role_tasks"
+      - "symmetry_of_content"
+    required:
+      - "explicit_cost_topology"
+      - "marked_asymmetry_activation"
+      - "bounded_asymmetry_activation"
+      - "no_unmarked_exception_lever"
+      - "no_parity_to_exit"
+      - "no_responsibility_to_authority"
+      - "sigma_coordination"
+      - "psi_re_binding"
+      - "chi_restraint"
+      - "dignity_in_practice"
+    guard: >
+      Adult sexual reciprocity is a structural viability principle, not a moral
+      command, not a role prescription, and not a direct maturity verdict about
+      persons.
+
+  asymmetry_specific_responsibility:
+    name: "Asymmetry-Specific Responsibility"
+    is_operator: false
+    claim_type: "MIP_DOCKABLE_RESPONSIBILITY_READING"
+    paper_refs: ["Ch. 21.7b", "Ch. 22.3.4", "Appendix B"]
+    definition: >
+      The self-binding required of a role-position by its own cost, power,
+      exposure, exit, and externalization profile.
+    mip_docking_note: >
+      MIP may ask whether a role-position carries its asymmetry-specific
+      self-binding. PMS-SEX records the operator profile only and does not issue
+      direct adultness verdicts.
+    guard: >
+      This concept must not become an essence claim, dignity hierarchy, maturity
+      hierarchy, or global person diagnosis.
+
+  cost_topology_mismatch:
+    name: "Cost-Topology Mismatch"
+    is_operator: false
+    claim_type: "DRIFT_PROFILE"
+    paper_refs: ["Ch. 22", "Appendix B"]
+    definition: >
+      A configuration-level mismatch between declared parity, autonomy,
+      non-binding status, or mutuality and the actual distribution of bodily,
+      reputational, exposure-related, publicness-related, exit-related, or
+      responsibility-related costs.
+    guard: >
+      Cost-topology mismatch is a scene-bound structural marker only. It is not
+      a person-fault claim, not a maturity verdict, and not a dignity ranking.
+
+  operator_profile_only:
+    name: "Operator Profile Only"
+    is_operator: false
+    claim_type: "MIP_DOCKING_GUARD"
+    paper_refs: ["Ch. 22", "Appendix B"]
+    definition: >
+      A PMS-SEX discipline rule: unmarked Ω activation, weak Χ, missing Σ,
+      Ψ externalization, parity-to-exit, responsibility-to-authority, and
+      cost-topology mismatch are recorded as structural profiles, not as direct
+      person-adultness verdicts.
+    guard: >
+      Maturity-relevant evaluation belongs to MIP docking and must remain
+      scene-bound, reversible, non-person-ranking, non-diagnostic, and
+      D-preserving.
+      
 # -----------------------------------------------------------------------------
 # Reduced signatures (paper-specific; shorthand only)
 # -----------------------------------------------------------------------------
@@ -356,7 +642,9 @@ reduced_signatures:
   note: >
     Reduced signatures are paper-specific reading aids. They foreground local
     operator clusters but do not alter PMS v1.3 order, dependencies, or operator
-    meanings.
+    meanings. PMS-SEX_1.2 adds sexual cost topology, EDEN/PFO sexual
+    instantiation, asymmetry-switch drift, parity-to-exit, and
+    responsibility-to-authority as overlay/profile handles only.
 
   SEX_linear_spine:
     paper_refs: ["Ch. 0.1.1", "Appendix C.1", "Appendix D.2"]
@@ -383,11 +671,23 @@ reduced_signatures:
     operators: ["Δ", "∇", "□", "Λ", "Α"]
 
   MF_4_2:
-    paper_refs: ["Ch. 4.2"]
-    label: "4.2 Minimal Formula — Asymmetry"
+    paper_refs: ["Ch. 4.2", "Ch. 4.6", "Ch. 4.7", "Ch. 4.8"]
+    label: "4.2 Minimal Formula — Asymmetry / Sexual Cost Topology"
     reduced: true
     raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ"
     operators: ["Δ", "∇", "□", "Λ", "Α", "Ω", "Θ"]
+    overlay_handles:
+      - "sexual_cost_topology"
+      - "eden_pfo_asymmetry_switch"
+      - "marked_bounded_rebound_asymmetry_activation"
+      - "parity_to_exit"
+      - "responsibility_to_authority"
+    note: >
+      Chapter 4 remains the Ω-basis. PMS-SEX_1.2 adds sexual cost topology as
+      the concrete Ω/Θ layout of sexual praxis and introduces the EDEN/PFO
+      switch only as a warning: switch availability is not itself Ω-management.
+      Real asymmetry may justify marked activation, but only where it is bounded
+      and re-bound into Σ/Ψ.
 
   MF_5_2:
     paper_refs: ["Ch. 5.2"]
@@ -479,52 +779,142 @@ reduced_signatures:
       operator status and not a prescriptive method.
 
   MF_17_2:
-    paper_refs: ["Ch. 17.2"]
+    paper_refs: ["Ch. 17.2", "Ch. 17.8", "Ch. 17.10"]
     label: "17.2 Minimal Formula — Suspended Self-Binding Boundary Configuration"
     reduced: true
     raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ"
     operators: ["Δ", "∇", "□", "Λ", "Α", "Ω", "Θ", "Φ", "Χ", "Σ", "Ψ"]
+    overlay_handles:
+      - "suspended_psi_boundary_condition"
+      - "eden_pfo_drift_under_suspended_psi"
+      - "sexual_cost_topology"
+      - "asymmetry_switch_drift"
+      - "parity_to_exit"
+      - "responsibility_to_authority"
     note: >
       In this chapter, Ψ is present only as a deliberately suspended attribution
       condition, not as absent, replaced, or removed from the PMS chain.
       “Suspended attribution” is a domain-specific boundary condition, not a
-      new operator and not an alteration of PMS v1.3.
+      new operator and not an alteration of PMS v1.3. PMS-SEX_1.2 adds that
+      suspended Ψ increases the need for explicit Ω/Θ cost topology: the less
+      binding a frame claims to be, the more explicit its cost topology must
+      become.
 
   MF_18_2:
-    paper_refs: ["Ch. 18.2"]
+    paper_refs: ["Ch. 18.2", "Ch. 18.3", "Ch. 18.4"]
     label: "18.2 Minimal Formula — Dysfunctional Expressions and Destructive Dynamics"
     reduced: true
     raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ; pulling arrows: Λ → Α → Ω → Θ"
     operators: ["Δ", "∇", "□", "Λ", "Α", "Ω", "Θ", "Φ", "Χ", "Σ", "Ψ"]
+    overlay_handles:
+      - "sexual_drift_triad"
+      - "asymmetry_switch_drift"
+      - "parity_to_exit"
+      - "responsibility_to_authority"
+    note: >
+      Chapter 18 keeps the canonical operator chain but adds a PMS-SEX drift
+      triad derived from the EDEN/PFO mechanism: asymmetry-switch drift,
+      parity-to-exit, and responsibility-to-authority. These are not operators;
+      they are scene-bound drift markers for Ω/Θ cost-topology mismanagement.
 
   MF_19_2:
-    paper_refs: ["Ch. 19.2"]
+    paper_refs: ["Ch. 19.2", "Ch. 19.3", "Ch. 19.4"]
     label: "19.2 Minimal Formula — Functional Conditions and Warning Signals"
     reduced: true
     raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ; dominant interaction: Ω → Θ, with accumulated Θ making Ω layouts more visible and consequential"
     operators: ["Δ", "∇", "□", "Λ", "Α", "Ω", "Θ", "Φ", "Χ", "Σ", "Ψ"]
+    overlay_handles:
+      - "explicit_cost_topology"
+      - "marked_bounded_rebound_asymmetry_activation"
+      - "no_parity_to_exit"
+      - "no_responsibility_to_authority"
+    note: >
+      Viability in PMS-SEX_1.2 includes explicit sexual cost topology,
+      marked/bounded/re-bound asymmetry activation, no unmarked exception lever,
+      no parity-to-exit, no responsibility-to-authority, Σ coordination,
+      Ψ re-binding, Χ restraint, and Dignity-in-Practice.
 
   D_pms_sex_application_formula_ch21_3:
-    paper_refs: ["Ch. 21.3"]
+    paper_refs: ["Ch. 21.3", "Ch. 21.7a", "Ch. 21.7b", "Ch. 21.8"]
     label: "21.3 D-in-Practice — PMS-SEX application formula"
     reduced: true
-    raw: "D-in-Practice in PMS-SEX = explicit Ω + operative Χ + no covert Ψ demand under Θ, with outer-form readability preserved"
-    operators: ["Ω", "Χ", "Ψ", "Θ"]
+    raw: >
+      D-in-Practice in PMS-SEX = explicit Ω + operative Χ + no covert Ψ demand
+      under Θ + marked/bounded asymmetry activation + no parity-to-exit + no
+      responsibility-to-authority, with outer-form readability preserved
+    operators: ["Ω", "Χ", "Ψ", "Θ", "Σ"]
     pms_canonical_D_formula: ["Ψ", "Χ", "Ω"]
+    overlay_handles:
+      - "marked_bounded_rebound_asymmetry_activation"
+      - "sexual_cost_topology"
+      - "parity_to_exit"
+      - "responsibility_to_authority"
+      - "adult_sexual_reciprocity"
     note: >
       This is a PMS-SEX application formula for D-compliance under sexual praxis.
       Canonical PMS-derived D remains ["Ψ", "Χ", "Ω"]. Θ appears here as
-      trajectory realism, and outer-form readability is a PMS-SEX guard, not a
-      revision of canonical PMS-D.
+      trajectory realism; Σ is relevant as re-binding / coordination condition;
+      outer-form readability and sexual cost topology are PMS-SEX guards, not
+      revisions of canonical PMS-D.
+
+  sexual_cost_topology_signature_ch4_6:
+    paper_refs: ["Ch. 4.6", "Ch. 4.8", "Ch. 21.7b", "Appendix B"]
+    label: "Sexual Cost Topology — Ω/Θ cost layout"
+    reduced: true
+    raw: "Ω/Θ cost topology across bodily, exposure, reputational, binding, exit, publicness, and responsibility channels"
+    operators: ["Ω", "Θ", "□", "Φ", "Χ", "Σ", "Ψ"]
+    overlay_handles:
+      - "sexual_cost_topology"
+      - "cost_topology_mismatch"
+      - "asymmetry_specific_responsibility"
+    note: >
+      Sexual cost topology is the scene-bound cost layout of sexual praxis. It
+      is not a score, not a person measure, not a dignity measure, and not a
+      maturity measure. It asks how consequences attach and whether unequal
+      costs are coordinated without being externalized.
+
+  eden_pfo_sexual_instantiation_signature:
+    paper_refs: ["Ch. 4.7", "Ch. 17.8", "Ch. 18.3", "Ch. 21.7a", "Appendix B"]
+    label: "EDEN/PFO Sexual Instantiation — asymmetry switch"
+    reduced: true
+    raw: "real/invoked Ω/Θ pressure → asymmetry activation → marked/bounded/re-bound OR unmarked switch drift"
+    operators: ["Ω", "Θ", "□", "Χ", "Σ", "Ψ", "Φ"]
+    overlay_handles:
+      - "eden_pfo_asymmetry_switch"
+      - "asymmetry_switch_drift"
+      - "parity_to_exit"
+      - "responsibility_to_authority"
+    note: >
+      PMS–EDEN names the regime-level asymmetry switch. PMS-SEX reads its sexual
+      instantiation. This signature is cross-domain and overlay-level only; it
+      does not derive PMS-SEX from EDEN and does not add a PMS operator.
+
+  adult_sexual_reciprocity_signature:
+    paper_refs: ["Ch. 4.6", "Ch. 17.10", "Ch. 21.7a", "Ch. 21.7b", "Ch. 21.8"]
+    label: "Adult Sexual Reciprocity — non-externalization of unequal burdens"
+    reduced: true
+    raw: "unequal Ω/Θ burdens + explicit cost topology + Χ restraint + Σ/Ψ re-binding → non-externalization"
+    operators: ["Ω", "Θ", "Χ", "Σ", "Ψ"]
+    overlay_handles:
+      - "adult_sexual_reciprocity"
+      - "asymmetry_specific_responsibility"
+      - "no_unmarked_exception_lever"
+      - "no_parity_to_exit"
+      - "no_responsibility_to_authority"
+    note: >
+      Adult sexual reciprocity does not require equal burdens, identical role
+      tasks, or symmetry of content. It requires that unequal burdens not be
+      externalized.
 
 # -----------------------------------------------------------------------------
 # Layer separation and misreading guards
 # -----------------------------------------------------------------------------
 layer_separation:
-  paper_refs: ["Ch. 0.4a", "Ch. 0.4b", "Ch. 0.4c", "Ch. 0.9", "Ch. 3.5", "Ch. 24.3", "Appendix A.4", "Appendix C.4", "Appendix D.6"]
+  paper_refs: ["Ch. 0.4a", "Ch. 0.4b", "Ch. 0.4c", "Ch. 0.9", "Ch. 3.5", "Ch. 4.6", "Ch. 4.7", "Ch. 21.7a", "Ch. 22.2", "Ch. 24.3", "Appendix A.4", "Appendix C.4", "Appendix D.6"]
   core_rule: >
-    Internal framing, outer legibility, public circulation, and temporal
-    carryover may overlap, but must not be collapsed into one another.
+    Internal framing, outer legibility, public circulation, temporal carryover,
+    sexual cost topology, and MIP-docked maturity-relevance may overlap, but
+    must not be collapsed into one another.
   guards:
     - "Understanding internal meaning does not erase external form."
     - "Naming outer legibility does not imply person-ranking, diagnosis, or moral verdict."
@@ -534,9 +924,15 @@ layer_separation:
     - "Outer legibility does not authorize public accusation by itself."
     - "Publicness is an overlay, not the necessary origin of consequence."
     - "Internal framing may be real without being total."
+    - "Sexual cost topology is not a score, person measure, dignity measure, or maturity measure."
+    - "The EDEN/PFO asymmetry switch is a cross-domain reference, not a new PMS-SEX operator."
+    - "Asymmetry activation is not itself drift; it drifts where unmarked, repeatable, and not re-bound."
+    - "Parity binds reciprocity only where it coordinates cost topology; it becomes drift where it exits responsibility."
+    - "Responsibility under asymmetry requires self-binding and restraint, not authority."
+    - "PMS-SEX records operator profiles only; adultness-relevant evaluation belongs to MIP docking."
 
 disturbance_and_path_cost_guard:
-  paper_refs: ["Ch. 0.6b", "Ch. 15", "Ch. 21.3", "Ch. 22.2", "Ch. 23.4b", "Ch. 24.3", "Appendix B", "Appendix C.5", "Appendix D.8"]
+  paper_refs: ["Ch. 0.6b", "Ch. 15", "Ch. 18.6", "Ch. 21.3", "Ch. 21.8", "Ch. 22.2", "Ch. 23.4b", "Ch. 24.3", "Appendix B", "Appendix C.5", "Appendix D.8"]
   allowed_language:
     - "configuration-level entropy"
     - "path-cost"
@@ -544,19 +940,30 @@ disturbance_and_path_cost_guard:
     - "attractor pressure"
     - "Θ-accumulation"
     - "Χ/Σ/Ψ-work required for governability"
+    - "sexual cost topology"
+    - "cost-topology mismatch"
+    - "asymmetry-switch drift as configuration marker"
+    - "parity-to-exit as configuration marker"
+    - "responsibility-to-authority as configuration marker"
     - "neutral disturbance as perturbation-language"
   forbidden_conversions:
     - "person-level pathology"
     - "sexual-orientation taxonomy"
     - "identity ranking"
+    - "maturity ranking"
+    - "dignity hierarchy"
     - "clinical diagnosis"
     - "moral pathology"
     - "humiliation or degradation of persons"
     - "using entropy-language to override D"
+    - "using sexual cost topology as score"
+    - "using asymmetry-switch drift as person essence"
+    - "using parity-to-exit as global role blame"
+    - "using responsibility-to-authority as proof of character"
   final_guard: >
     Disturbance-language is admissible only as configuration-language.
     The moment it becomes person-language, diagnosis, rank, orientation taxonomy,
-    or humiliation, it leaves PMS-SEX.
+    maturity hierarchy, dignity hierarchy, or humiliation, it leaves PMS-SEX.
 
 # -----------------------------------------------------------------------------
 # Drift catalogue (core PMS-SEX drift markers + corridors)
@@ -568,10 +975,13 @@ drift_catalogue:
       Each marker is a configuration statement (“in this configuration…”), not
       a label. Markers describe predictable structural consequences of operator
       constellations; they are scene-bound, revisable, and non-diagnostic.
+      PMS-SEX_1.2 adds the sexual drift triad: asymmetry-switch drift,
+      parity-to-exit, and responsibility-to-authority. These are drift profiles,
+      not operators or person labels.
 
     "(1) Covert self-binding demand (Ψ leak)": |
       In this configuration, meaning and identity-relevant stakes enter a frame
-      narrated as limited, suspended, local, or non-binding.
+      narrated as limited, suspended, local, casual, or non-binding.
 
       Typical indicators:
         - implicit expectations (“this must mean…”)
@@ -579,6 +989,8 @@ drift_catalogue:
         - meaning claims without explicit frame legibility
         - local enactments treated as identity proofs
         - practice labels used to deny that binding has already become active
+        - non-binding language used to avoid naming responsibility that has
+          already accumulated
 
       Structural result:
         Ψ(binding) becomes operative although suspension is asserted; attribution
@@ -594,6 +1006,8 @@ drift_catalogue:
         - power shifts without explicit rule updates
         - uneven refusal, exit, fallout, or definitional capacity
         - exposure gradients treated as mutual when structurally uneven
+        - bodily, reputational, or publicness-related costs treated as if they
+          were equally distributed
 
       Structural result:
         Ω(asymmetry) is not managed; Ω becomes a steering variable.
@@ -606,6 +1020,7 @@ drift_catalogue:
         - “we both want it” or “it’s equal” as stabilizing narrative
         - consent language used to block analysis of unequal exposure
         - mutuality claims covering unequal after-costs
+        - casual or non-binding language used to deny asymmetrical Θ consequences
         - exposure and cost asymmetry persisting through temporality, body
           remainder, outer legibility, or publicness overlays
 
@@ -626,6 +1041,7 @@ drift_catalogue:
         - silence or indeterminacy functioning as control
         - chronic “maybe,” “later,” or “nothing happened” structures
         - unmarked withholding inside expectation-bearing frames
+        - refusal to clarify cost topology while the scene remains consequence-active
 
       Structural result:
         Λ(non-event) shapes practice more than enactment; coordination shifts
@@ -640,6 +1056,8 @@ drift_catalogue:
         - frame breadth shrinks
         - practice labels protect the route from re-reading
         - alternatives lose practical attractiveness, availability, or recognizability
+        - the scene continues because the script has become cheaper than explicit
+          renegotiation
 
       Structural result:
         Α(attractor) binds more strongly than intention.
@@ -649,10 +1067,12 @@ drift_catalogue:
 
       Typical indicators:
         - stopping becomes practically unavailable
-        - critique or hesitation is read as betrayal, attack, weakness, or disloyalty
+        - critique or hesitation is read as betrayal, attack, weakness, disloyalty,
+          prudishness, or domination
         - humor, de-escalation, and outside view disappear
         - internal labels replace re-reading
         - outer-form awareness becomes inaccessible or forbidden
+        - naming cost topology is treated as accusation rather than analysis
 
       Structural result:
         Self-correction fails. Without Χ, drift cannot be intercepted early.
@@ -667,6 +1087,8 @@ drift_catalogue:
         - publicness documents or sedimentizes already active costs
         - outer legibility remains after internal closure-language claims the
           scene is over
+        - non-binding language fails to account for bodily, reputational, or
+          publicness-related overhang
 
       Structural result:
         Exit collapse replaces orderly ending: Θ does not rewind, and Α holds
@@ -677,16 +1099,82 @@ drift_catalogue:
       analysis of enacted form.
 
       Typical indicators:
-        - “it was play,” “service,” “authenticity,” “devotion,” or “consent” is
-          used to end structural reading
+        - “it was play,” “service,” “authenticity,” “devotion,” “consent,” or
+          “casual” is used to end structural reading
         - re-description replaces cost layout
         - outer legibility is treated as hostile, irrelevant, or merely public
           misunderstanding
+        - internal naming is used to erase sexual cost topology
 
       Structural result:
         The scene loses its capacity to read itself. Internal meaning may be
         real, but it does not erase the action-form that has become structurally
-        effective under asymmetry, exposure, repetition, and time.
+        effective under asymmetry, exposure, repetition, publicness, and time.
+
+    "(9) Asymmetry-switch drift": |
+      In this configuration, asymmetry is activated not as a marked emergency or
+      protection under real Ω/Θ overload, but as repeatable leverage,
+      responsibility displacement, or unacknowledged Ψ externalization.
+
+      Typical indicators:
+        - vulnerability, exposure, bodily risk, reputation, or protection is
+          invoked without marking the activation as exceptional
+        - asymmetry activation is repeatable and locally stabilizing
+        - parity language remains in place for access, autonomy, mutuality, or
+          non-binding status
+        - activation shifts cost or responsibility to the other role-position
+        - Σ/Ψ re-binding does not occur after the activation
+
+      Structural result:
+        Asymmetry no longer reopens coordination; it replaces coordination. The
+        scene preserves parity language while distributing costs asymmetrically.
+
+      EDEN/PFO note:
+        Asymmetry-switch drift names the sexual instantiation of the EDEN/PFO
+        switch: asymmetry is activated under real or invoked Ω/Θ pressure without
+        being marked, bounded, and re-bound into Σ/Ψ.
+
+    "(10) Parity-to-exit drift": |
+      In this configuration, parity rhetoric is used to deny additional
+      responsibility under unequal sexual cost topology.
+
+      Typical indicators:
+        - “it was mutual,” “we are equal,” “no one owes anything,” “the other is
+          autonomous,” or “it was only casual” functions as exit rhetoric
+        - formal equality flattens bodily, reputational, exposure-related,
+          publicness-related, or temporal asymmetry
+        - additional responsibility is denied because the frame can still be
+          described as reciprocal
+        - costs that cannot be equally externalized are treated as voluntarily
+          assumed and therefore abandoned
+
+      Structural result:
+        Parity ceases to bind reciprocity and becomes an exit from responsibility.
+        The frame remains rhetorically equal while unequal Ω/Θ costs remain
+        uncoordinated.
+
+    "(11) Responsibility-to-authority drift": |
+      In this configuration, required self-binding under sexual asymmetry is
+      converted into control, frame authority, protection entitlement, or
+      paternalistic governance.
+
+      Typical indicators:
+        - “because I must protect, I may define”
+        - “because asymmetry is real, I may govern the frame”
+        - “because I carry responsibility, I may control access, interpretation,
+          or exit”
+        - care becomes control
+        - protection becomes governance
+        - responsibility becomes ownership of the situation
+
+      Structural result:
+        Responsibility stops functioning as Ψ/Χ self-binding and becomes
+        authority over the other role-position or over the frame.
+
+      Guard:
+        Responsibility-to-authority is not the recognition of asymmetry. It is
+        the mistranslation of required restraint into entitlement. Greater
+        responsibility under asymmetry does not generate a right to control.
 
   dynamic_chains_ch18_4:
     paper_refs: ["Ch. 18.4", "Appendix D.4"]
@@ -703,18 +1191,33 @@ drift_catalogue:
         Practice labels or self-description settle the internal story while
         enacted form remains structurally readable. Public reaction is then
         treated either as the whole problem or as irrelevant.
+    eden_pfo_sexual_drift_chain:
+      raw: "pseudo-symmetry → asymmetry-switch availability → unmarked activation / parity-to-exit / responsibility-to-authority → Σ/Ψ blockage → reciprocity erosion"
+      reading: >
+        Once parity language remains in place while real sexual cost topology is
+        unequal, asymmetry may become selectively activatable. If that activation
+        is not marked, bounded, and re-bound into Σ/Ψ, or if parity is used to
+        exit responsibility, or if responsibility becomes authority, then sexual
+        reciprocity erodes even when surface order remains intact.
+    compact_triads:
+      sexual_drift_triad:
+        raw: "asymmetry becomes leverage; parity becomes exit; responsibility becomes authority"
+        guard: >
+          Structural drift triad only; no person label, no diagnosis, no maturity
+          ranking, no dignity hierarchy.
 
 # -----------------------------------------------------------------------------
 # Viability (functional minimum + warnings + corridor overlay)
 # -----------------------------------------------------------------------------
 viability:
   functional_minimum_conditions_ch19_3:
-    paper_refs: ["Ch. 19.3", "Appendix D.5"]
+    paper_refs: ["Ch. 19.3", "Ch. 4.6", "Ch. 4.8", "Ch. 17.10", "Ch. 21.7a", "Appendix D.5"]
     note: >
       Functional minimum conditions describe when a configuration remains
       structurally governable under Ω/Θ/Λ, without systematic D violation,
-      without exit fictions, and without using internal labels to erase enacted
-      form. Criteria only; no how-to.
+      without exit fictions, without using internal labels to erase enacted
+      form, and without replacing Ω-management by switch drift. Criteria only;
+      no how-to.
 
     conditions:
       - id: "explicit_omega_recognition"
@@ -724,6 +1227,22 @@ viability:
           - "cost, risk, access, and exposure gradients are not denied"
           - "equality rhetoric is not used as a substitute for management"
           - "uneven exit capacity, repair burden, or reputational exposure remains nameable"
+          - "sexual cost topology remains explicit where bodily, reputational, publicness, exit, or responsibility costs diverge"
+
+      - id: "explicit_sexual_cost_topology"
+        label: "Explicit sexual cost topology"
+        minimal_form: >
+          Bodily, temporal, exposure-related, reputational, binding-related,
+          exit-related, publicness-related, and responsibility-related costs
+          must be readable as scene-bound layout, not person score.
+        checks:
+          - "which costs are non-delegable is nameable"
+          - "which costs can be denied, minimized, or externalized is nameable"
+          - "which costs sediment under Θ is nameable"
+          - "who can invoke asymmetry as exception is nameable"
+          - "who can invoke parity as exit is nameable"
+          - "who can convert responsibility into authority is nameable"
+          - "cost topology is not used as dignity ranking or maturity ranking"
 
       - id: "theta_awareness"
         label: "Θ awareness"
@@ -733,6 +1252,7 @@ viability:
           - "just-this-once narratives do not override visible accumulation"
           - "recontextualization does not claim rewind"
           - "exit is treated as trajectory change, not reset"
+          - "non-binding language does not erase accumulated bodily, reputational, exposure-related, publicness-related, or binding-related costs"
 
       - id: "stable_chi_capacity"
         label: "Stable Χ capacity"
@@ -742,6 +1262,7 @@ viability:
           - "distance can be activated before escalation becomes irreversible"
           - "meta-commentability remains available without punishment"
           - "outer-form awareness is not treated as betrayal or moral accusation"
+          - "switch-clarification is possible without being recoded as attack"
 
       - id: "no_psi_substitution"
         label: "No Ψ substitution"
@@ -751,6 +1272,7 @@ viability:
           - "meaning demands do not cross frame boundaries covertly"
           - "local scenes are not silently converted into commitment tests"
           - "non-binding language does not conceal active binding effects"
+          - "asymmetry activation does not externalize Ψ onto the other role-position"
 
       - id: "lambda_tolerance_without_escalation"
         label: "Λ tolerance without escalation"
@@ -768,7 +1290,7 @@ viability:
           - "practice labels clarify internal occupation but do not end structural analysis"
           - "internal meaning is allowed to be real without erasing enacted form"
           - "outer legibility can be named without becoming person-ranking"
-          - "consent, play, devotion, service, or authenticity language does not block cost-layout analysis"
+          - "consent, play, devotion, service, casualness, or authenticity language does not block cost-layout analysis"
 
       - id: "publicness_handled_as_overlay"
         label: "Publicness is handled as overlay"
@@ -781,8 +1303,44 @@ viability:
           - "publicness remains distinguished from primary scene legibility"
           - "reputational or documentary effects are tracked as Θ/Ω intensifiers"
 
+      - id: "marked_bounded_rebound_asymmetry_activation"
+        label: "Marked / bounded / re-bound asymmetry activation"
+        minimal_form: >
+          Asymmetry activation under real Ω/Θ burden must be marked, bounded,
+          and re-bound into Σ/Ψ.
+        checks:
+          - "activation is explicitly marked as exceptional or structurally necessary"
+          - "activation is bounded under Θ"
+          - "activation is linked to real Ω/Θ burden rather than generic leverage"
+          - "Σ coordination is reopened rather than bypassed"
+          - "Ψ re-binding occurs after activation"
+          - "activation does not become repeatable unmarked exception"
+
+      - id: "no_parity_to_exit"
+        label: "No parity-to-exit"
+        minimal_form: >
+          Parity language must coordinate reciprocity rather than deny
+          additional responsibility under unequal sexual cost topology.
+        checks:
+          - "mutuality language does not flatten unequal costs"
+          - "autonomy language does not abandon non-delegable or asymmetrically sedimented costs"
+          - "consent-language is not used as total cost-closure"
+          - "formal equality does not replace role-specific responsibility"
+
+      - id: "no_responsibility_to_authority"
+        label: "No responsibility-to-authority"
+        minimal_form: >
+          Responsibility under asymmetry remains Ψ/Χ self-binding rather than
+          control, protection entitlement, or frame authority.
+        checks:
+          - "care does not become control"
+          - "protection does not become governance"
+          - "responsibility does not become frame ownership"
+          - "restraint does not become entitlement to define the other"
+          - "additional responsibility does not generate a right to command"
+
   warning_signals_ch19_4:
-    paper_refs: ["Ch. 19.4", "Ch. 18.4"]
+    paper_refs: ["Ch. 19.4", "Ch. 18.4", "Ch. 20.5", "Ch. 21.6"]
     note: >
       Warning signals indicate increased drift potential toward coercion, harm,
       or destructive dynamics. They are configuration markers only and do not
@@ -806,6 +1364,7 @@ viability:
           - "alternatives are devalued or rendered impossible"
           - "practice labels protect the dominant frame from re-reading"
           - "the frame becomes readable only through one script"
+          - "asymmetry activation, parity rhetoric, or responsibility language becomes the default route instead of explicit coordination"
 
       - id: "omega_moralization"
         label: "Ω moralization instead of regulation"
@@ -815,24 +1374,27 @@ viability:
           - "if-you-loved-me logic becomes steering"
           - "naming asymmetry is treated as accusation"
           - "outer-form analysis collapses into blame"
+          - "asymmetry activation becomes self-justifying rather than markable and re-bindable"
 
       - id: "persistence_despite_structural_undercutting"
         label: "Persistence despite clear structural undercutting"
         structural_note: "Α + Θ overrun Χ."
         indicators:
-          - "repetition continues despite bodily, reputational, binding-related, or D-violating costs"
+          - "repetition continues despite bodily, reputational, binding-related, publicness-related, or D-violating costs"
           - "exit is imagined but not executed"
           - "harm is recognized but not structurally interrupted"
           - "insight does not alter the operator chain"
+          - "self-description continues while cost topology remains unre-read"
 
       - id: "theta_cost_externalization"
         label: "Externalization of Θ costs"
         structural_note: "Θ costs are shifted asymmetrically through Ω(layout)."
         indicators:
-          - "bodily, reputational, emotional, social, exposure-related, or binding-related consequences are offloaded"
+          - "bodily, reputational, emotional, social, exposure-related, publicness-related, or binding-related consequences are offloaded"
           - "short-term relief stabilizes the configuration at another role’s expense"
           - "after-costs concentrate in roles less able to refuse or redefine them"
           - "publicness may sedimentize externalized costs without creating them"
+          - "unequal sexual cost topology is narrated as voluntary assumption and then abandoned"
 
       - id: "outer_form_denial"
         label: "Outer-form denial"
@@ -842,6 +1404,7 @@ viability:
           - "consent-language or practice labels are treated as sufficient to settle all form"
           - "outer legibility is treated as moralistic, hostile, or public misunderstanding"
           - "visible action-form remains unread"
+          - "sexual cost topology is blocked by internal labels"
 
       - id: "publicness_confusion"
         label: "Publicness confusion"
@@ -852,8 +1415,37 @@ viability:
           - "audience reaction replaces scene analysis"
           - "documentation, circulation, or reputation effects are denied until they harden"
 
+      - id: "asymmetry_switch_drift"
+        label: "Asymmetry-switch drift"
+        structural_note: "Unmarked Ω activation replaces Σ/Ψ coordination."
+        indicators:
+          - "asymmetry activation appears under real or invoked Ω/Θ pressure"
+          - "activation is not marked as exceptional or structurally necessary"
+          - "activation is not bounded under Θ"
+          - "activation is not re-bound into Σ/Ψ"
+          - "activation becomes repeatable leverage or responsibility displacement"
+
+      - id: "parity_to_exit"
+        label: "Parity-to-exit"
+        structural_note: "Parity rhetoric exits responsibility under unequal sexual cost topology."
+        indicators:
+          - "mutuality language denies additional responsibility"
+          - "formal equality flattens non-delegable or asymmetrically sedimented costs"
+          - "autonomy language substitutes for role-specific self-binding"
+          - "costs are treated as voluntarily assumed and therefore abandoned"
+
+      - id: "responsibility_to_authority"
+        label: "Responsibility-to-authority"
+        structural_note: "Required Ψ/Χ self-binding is converted into control."
+        indicators:
+          - "care becomes control"
+          - "protection becomes governance"
+          - "responsibility becomes frame ownership"
+          - "asymmetry is acknowledged but converted into entitlement"
+          - "authority is claimed from responsibility rather than restraint"
+
   minimal_viability_corridor_appendix_D5:
-    paper_refs: ["Appendix D.5"]
+    paper_refs: ["Appendix D.5", "Ch. 19.3", "Ch. 21.8"]
     raw: |
       □ explicit
       + Ω nameable
@@ -862,27 +1454,56 @@ viability:
       + Λ tolerable
       + Ψ handled
       (+ Σ reachable)
+      + cost topology explicit
+      + asymmetry activation marked / bounded / re-bound
+      + no parity-to-exit
+      + no responsibility-to-authority
       = structurally governable configuration
     guard: >
       This corridor expresses structural governability only. It makes no moral
       claim, defines no normality threshold, and does not prescribe action.
     expansion_note: >
-      Internal framing accountability and publicness-as-overlay are handled in
-      Ch. 19.3, Ch. 19.4, Appendix D.6, and Appendix D.7. They remain binding
-      layer guards, but are not part of the compressed Appendix D.5 raw formula.
+      Internal framing accountability, publicness-as-overlay, sexual cost
+      topology, switch-drift checks, and adult sexual reciprocity are handled in
+      Ch. 4, Ch. 17, Ch. 18, Ch. 19, Ch. 21, Appendix B, and Appendix D. They
+      remain binding layer guards, not changes to PMS operator logic.
+
+  adult_sexual_reciprocity:
+    paper_refs: ["Ch. 4.6", "Ch. 17.10", "Ch. 21.7a", "Ch. 21.7b", "Ch. 21.8", "Appendix B"]
+    principle: "unequal burdens must not be externalized"
+    not_required:
+      - "equal_burdens"
+      - "identical_role_tasks"
+      - "symmetry_of_content"
+    required:
+      - "explicit_cost_topology"
+      - "marked_asymmetry_activation"
+      - "bounded_asymmetry_activation"
+      - "psi_re_binding_after_activation"
+      - "sigma_coordination"
+      - "chi_restraint"
+      - "no_unmarked_exception_lever"
+      - "no_parity_to_exit"
+      - "no_responsibility_to_authority"
+      - "dignity_in_practice"
+    guard: >
+      Adult sexual reciprocity is a structural viability principle, not a moral
+      command, not a role prescription, and not a direct maturity verdict about
+      persons.
 
 # -----------------------------------------------------------------------------
 # Modulators (non-operator weightings; "types without typing")
 # -----------------------------------------------------------------------------
 modulators:
-  paper_refs: ["Ch. 14", "Ch. 0.6", "Appendix C.3"]
+  paper_refs: ["Ch. 14", "Ch. 0.6", "Ch. 4.6", "Ch. 4.7", "Ch. 21.7b", "Appendix C.3"]
   basic_rule_ch14_2: |
     Modulators are praxeological, not psychological.
 
-    They operate through frames (□), repetition, and cost layouts rather than
-    through motive narratives. They are changeable because frames and handling
-    can change, and they are not arbitrary because path dependence remains active
-    once scripts have stabilized and costs have accumulated.
+    They operate through frames (□), repetition, cost layouts, sexual cost
+    topology, and consequence interfaces rather than through motive narratives.
+    They are changeable because frames and handling can change, and they are not
+    arbitrary because path dependence remains active once scripts have stabilized
+    and costs have accumulated.
 
     A modulator is best read as a weighting that makes a particular operator
     chain pull faster or more persistently in a configuration, without typing
@@ -895,7 +1516,8 @@ modulators:
 
     Modulators do not add new operators. They weight the likelihood and dominance
     of existing operators by shaping scene conditions, repetition, cost layouts,
-    outer legibility, publicness overlays, and handling capacity.
+    outer legibility, publicness overlays, sexual cost topology, and handling
+    capacity.
 
   central_modulators_ch14_4:
     "14.4.1 □₀ Early framing": |
@@ -906,23 +1528,30 @@ modulators:
         - order vs chaos in scene grammar
         - boundary clarity vs boundary ambiguity
         - internal naming vs outer-form accountability
+        - whether cost topology can be named without moralization
 
       Structural effect:
         Strong □₀ increases later frame stability under pressure.
-        Weak □₀ increases ambiguity, implicit rules, and retroactive rewriting.
+        Weak □₀ increases ambiguity, implicit rules, retroactive rewriting, and
+        vulnerability to pseudo-symmetry or parity-to-exit.
 
     "14.4.2 Ω₀ Asymmetry calibration": |
-      Weights how asymmetry is noticed, named, and regulated.
+      Weights how asymmetry is noticed, named, regulated, and re-bound.
 
       Key dimensions:
         - proximity / distance coordination
         - control vs exposure
         - availability and choice power
+        - bodily, reputational, exposure-related, publicness-related, exit-related,
+          and responsibility-related cost topology
         - capacity to name cost gradients without moralization
+        - capacity to distinguish marked asymmetry activation from switch drift
 
       Structural effect:
         Calibrated Ω₀ supports regulation of gradients inside □.
         Blurred Ω₀ increases pseudo-symmetry until Θ forces cost visibility.
+        Over-activated Ω₀ may turn asymmetry into unmarked leverage if Χ/Σ/Ψ
+        re-binding is missing.
 
     "14.4.3 Λ density": |
       Weights how often non-occurrence becomes structurally active.
@@ -931,10 +1560,12 @@ modulators:
         - frequency of withdrawal, rejection, hesitation, cancellation, or indeterminacy
         - chronic mismatch between expectation and enactment
         - “nothing happened” structures that nevertheless carry cost
+        - non-clarification of cost topology while the scene remains active
 
       Structural effect:
         Higher Λ density raises interpretive pressure and substitute-script
-        formation without implying motive or intent.
+        formation without implying motive or intent. Under unequal cost topology,
+        Λ can also conceal responsibility displacement.
 
     "14.4.4 Θ stability": |
       Weights how sequences connect over time.
@@ -944,10 +1575,13 @@ modulators:
         - repeatability vs volatility
         - sustained commitments vs discontinuous episodes
         - whether publicness or documentation sedimentizes temporal cost
+        - whether non-binding language hides accumulated Ω/Θ consequences
 
       Structural effect:
         Stable Θ makes path dependence and cumulative costs legible early.
         Fragmented Θ can obscure exit realism through narrative resets.
+        Where Θ costs are denied, parity-to-exit and asymmetry-switch drift become
+        more plausible.
 
     "14.4.5 Φ habituation": |
       Weights how often tension is handled by re-framing.
@@ -957,11 +1591,13 @@ modulators:
         - narrative repair as default stabilization
         - frequent switching of what the scene “really was”
         - recontextualization used to erase outer form
+        - recontextualization used to convert responsibility into authority or
+          equality into exit
 
       Structural effect:
         High Φ habituation can stabilize locally but increases risk of
-        pseudo-resolution when Α scripts, Ω gradients, and Θ accumulation remain
-        unchanged.
+        pseudo-resolution when Α scripts, Ω gradients, Θ accumulation, or sexual
+        cost topology remain unchanged.
 
     "14.4.6 Χ mode": |
       Weights what distance does in practice.
@@ -972,10 +1608,14 @@ modulators:
         - distance as devaluation
         - distance as meta-capacity
         - outer-form awareness as available or forbidden
+        - switch-clarification as available or punishable
+        - whether asymmetry activation can be paused, named, and re-bound
 
       Structural effect:
         Χ as meta-capacity supports regulation and repair.
         Χ collapsed into control or devaluation produces brittle stability.
+        Χ also prevents asymmetry activation from becoming urgency, permanent
+        exception, or authority.
 
     "14.4.7 Publicness / media modulators": |
       Publicness and media modulators function as □ frame extensions, not causes.
@@ -985,11 +1625,30 @@ modulators:
         - comparison pressure and reputational stakes
         - stigma vs normalization regimes
         - circulation and sedimentation of outer legibility
+        - publicness-related cost topology and reputational after-costs
 
       Structural effect:
         Increased publicness can harden Θ costs and amplify Ω gradients, making
         exit, reinterpretation, and repair more expensive. These effects are read
         as frame overlays, not inner-state explanations.
+
+    "14.4.8 Cost-topology modulators": |
+      Weights how costs attach to role-positions before and after enactment.
+
+      Key dimensions:
+        - bodily non-delegability
+        - exposure and publicness
+        - reputational sedimentation
+        - exit cost
+        - responsibility externalizability
+        - frame-control capacity
+        - asymmetry activation capacity
+
+      Structural effect:
+        Cost-topology modulators make unequal burdens legible without converting
+        them into person scores or dignity rankings. They also indicate where
+        asymmetry-switch drift, parity-to-exit, or responsibility-to-authority
+        may become plausible if Σ/Ψ re-binding is absent.
 
   interplay_ch14_5: |
     Modulators operate in combination, not isolation.
@@ -1006,6 +1665,15 @@ modulators:
       - internal-label capture + publicness confusion:
           internal description blocks outer-form analysis while publicity is
           treated either as the whole problem or as irrelevant.
+      - sexual cost topology unequal + parity rhetoric dominant:
+          parity-to-exit risk; equality language may deny additional
+          responsibility under unequal Ω/Θ costs.
+      - real Ω/Θ burden + weak Χ/Σ/Ψ re-binding:
+          asymmetry-switch drift risk; asymmetry activation may become
+          unmarked, repeatable, and responsibility-shifting.
+      - responsibility recognized + frame-control capacity high:
+          responsibility-to-authority risk; self-binding may be mistranslated
+          into control, protection entitlement, or governance.
 
     These patterns are legibility shortcuts, not predictions about persons.
 
@@ -1015,6 +1683,8 @@ modulators:
     Modulator ≠ diagnosis.
     Modulator ≠ sexual identity.
     Modulator ≠ orientation taxonomy.
+    Modulator ≠ maturity verdict.
+    Modulator ≠ dignity ranking.
 
     Modulators describe conditions under which configurations stabilize, drift,
     or remain governable. They do not assign value to persons and do not claim
@@ -1024,11 +1694,14 @@ modulators:
 # Minimal psychology adapter (Ch. 20) — structural self-check only
 # -----------------------------------------------------------------------------
 minimal_psychology_adapter:
-  paper_refs: ["Ch. 20", "Ch. 18", "Ch. 19"]
+  paper_refs: ["Ch. 20", "Ch. 18", "Ch. 19", "Ch. 21"]
   title: "Minimal Psychology as a Structural Self-Check Adapter"
   note: >
     Restricted use; outputs structural alarm only. Non-diagnostic,
-    non-interpretive, scene-bound, and dignity-preserving.
+    non-interpretive, scene-bound, reversible, and dignity-preserving.
+    PMS-SEX_1.2 adds that asymmetry-switch drift, parity-to-exit,
+    responsibility-to-authority, and cost-topology mismatch remain structural
+    alarm conditions only, not psychological explanations.
 
   purpose_and_boundary_ch20_1: |
     “Minimal psychology” is a name for a structural self-check adapter, not a
@@ -1046,6 +1719,19 @@ minimal_psychology_adapter:
       - no moral evaluation
       - no therapeutic method
       - no conversion into clinical taxonomy
+      - no maturity ranking
+      - no person-level assignment of drift markers
+
+    The adapter does not override scene readability. It is admissible only where
+    structural drift is already legible in enacted form and where further
+    self-description would otherwise risk replacing rather than clarifying that
+    legibility.
+
+    If asymmetry-switch drift, parity-to-exit, or responsibility-to-authority is
+    present, minimal psychology still does not explain the pattern
+    psychologically. It asks only whether self-description, desire-language,
+    non-binding language, or protection-language helps the configuration
+    continue despite already visible cost topology.
 
   activation_conditions_ch20_2: |
     The adapter activates only when all of the following hold:
@@ -1056,11 +1742,15 @@ minimal_psychology_adapter:
 
     Typical activation contexts:
       - Ψ leak has been named, but repetition continues,
-      - Ω costs are legible, but still accepted or externalized,
+      - Ω costs are legible, but still accepted, switched, denied, or externalized,
       - Θ damage is foreseeable, but stop-capability keeps failing,
       - Χ exists formally, but is not enacted in time,
       - practice labels continue to block outer-form analysis,
-      - publicness is blamed or ignored while the enacted configuration remains unchanged.
+      - publicness is blamed or ignored while the enacted configuration remains unchanged,
+      - internal self-description becomes more elaborate while the operator chain continues to narrow,
+      - asymmetry activation is named but remains unmarked, unbounded, or unrebound,
+      - parity language is repeatedly used to exit responsibility under unequal cost topology,
+      - responsibility language is repeatedly converted into control, protection entitlement, or frame authority.
 
   guiding_question_ch20_3: |
     Primary structural question:
@@ -1074,18 +1764,32 @@ minimal_psychology_adapter:
       - hypothetical, not confessional,
       - targets pattern continuity, not inner truth,
       - tests whether desire-language or desire-orientation functions as a drift carrier,
-      - returns attention to enacted form, cost layout, stop-capability, and accumulated consequence,
-      - may not override outer legibility with a deeper self-story.
+      - returns attention to enacted form, cost layout, stop-capability,
+        asymmetry handling, and accumulated consequence,
+      - may not override outer legibility with a deeper self-story,
+      - may not explain away asymmetry-switch drift, parity-to-exit, or
+        responsibility-to-authority as personality, trauma, desire, or identity.
+
+    The question is invalid if it produces identity stories, trauma narratives,
+    confession loops, diagnosis claims, or justification loops. Its only
+    legitimate function is to re-route attention back to structure.
 
   permitted_warning_hypothesis_ch20_4: |
     Under sustained drift, one limited hypothesis becomes admissible:
 
       In this configuration, desire-language may be functioning as a
       drift-maintaining mechanism rather than as play, exploration, negotiated
-      intensity, or bounded practice.
+      intensity, bounded practice, or marked asymmetry activation.
 
-    This hypothesis does not explain desire. It is never confirmed
-    psychologically; it is only structurally tested against enacted patterns.
+    This hypothesis does not explain desire. It flags the possibility that
+    desire-language or desire-orientation is now aligned with drift maintenance.
+
+    The hypothesis is never confirmed psychologically. It is only structurally
+    tested against enacted patterns: repetition, cost concentration, outer
+    legibility denial, loss of distance, asymmetry escalation, temporal overload,
+    switch drift, parity-to-exit, and responsibility-to-authority.
+
+    This is not a person verdict. It is a configuration alarm.
 
   test_criteria_ch20_5:
     - id: "D_in_Practice_failure"
@@ -1096,9 +1800,11 @@ minimal_psychology_adapter:
         - "boundary violations recur despite explicit recognition"
         - "outer-form naming is blocked by internal labels"
         - "asymmetry is intensified while denied"
+        - "protection-language or vulnerability-language is used while non-degradation constraints fail"
       guard: >
         This does not mean a person has lower dignity. It means the configuration
-        repeatedly fails to preserve Dignity-in-Practice as an enactment constraint.
+        repeatedly fails to preserve Dignity-in-Practice as an enactment
+        constraint.
 
     - id: "theta_damage_despite_knowledge"
       label: "Θ damage despite knowledge"
@@ -1108,6 +1814,7 @@ minimal_psychology_adapter:
         - "accumulation accelerates while stop-capability weakens"
         - "exit fictions remain active"
         - "publicness, documentation, bodily effects, or binding residues are minimized until they harden"
+        - "asymmetry activation is repeatedly treated as temporary while its cost effects accumulate"
 
     - id: "progressive_frame_narrowing"
       label: "Progressive frame narrowing"
@@ -1117,6 +1824,7 @@ minimal_psychology_adapter:
         - "one script dominates despite rising costs"
         - "practice labels become shields against re-reading"
         - "internal meaning expands while frame breadth contracts"
+        - "asymmetry activation, parity rhetoric, or responsibility language becomes the default route instead of explicit coordination"
 
     - id: "desire_used_against_chi"
       label: "Desire used against Χ"
@@ -1125,49 +1833,117 @@ minimal_psychology_adapter:
         - "distance is treated as betrayal of authenticity"
         - "I want this or this is who I am replaces frame analysis"
         - "internal desire-language prevents outer-form reading"
+        - "desire-language blocks cost topology"
+        - "desire-language makes asymmetry activation feel self-justifying rather than markable and re-bindable"
 
     - id: "publicness_displacement"
       label: "Publicness displacement"
       indicators:
         - "public reaction is treated as the whole problem"
-        - "publicness is denied despite documentation or circulation"
+        - "publicness is denied despite documentation, circulation, reputational exposure, or sedimentation"
         - "the enacted configuration remains unread because focus moves entirely to audience response"
+        - "publicness is used to avoid naming bodily, reputational, exposure-related, or responsibility-related costs already present in the scene"
+
+    - id: "switch_drift_carried_by_self_description"
+      label: "Switch drift carried by self-description"
+      indicators:
+        - "asymmetry activation is repeatedly described as exception, need, protection, vulnerability, or overload, but not marked, bounded, and re-bound"
+        - "parity language is repeatedly used to deny additional responsibility under unequal cost topology"
+        - "responsibility language is repeatedly used to justify control, protection entitlement, or frame authority"
+        - "the configuration explains these moves through identity, desire, authenticity, care, or necessity rather than through cost topology"
+      guard: >
+        This criterion activates the self-check only as an alarm. It does not
+        decide what anyone really wants. It asks whether self-description is now
+        helping a drift route remain stable.
 
   output_format_ch20_6: |
     Output is invariant and minimal. No explanation is permitted.
 
     Allowed alarm statements:
       - “In this configuration, drift persistence is present.”
-      - “The configuration is no longer correcting itself structurally.”
+      - “Structural self-correction is failing within the configuration.”
       - “Distance (Χ), frame clarity (□), and Θ realism require reactivation.”
       - “Internal framing is no longer sufficient to settle the enacted structure.”
       - “Outer legibility and cost distribution require re-reading without person-ranking.”
+      - “Asymmetry activation, if present, requires marking, bounding, and re-binding into Σ/Ψ.”
+      - “Parity language and responsibility language require re-reading against the sexual cost topology.”
 
     No conclusions about character, pathology, motive, identity, orientation,
-    or worth are permitted.
+    maturity, or worth are permitted.
+
+  chapter_closure_marker: >
+    Minimal psychology in PMS-SEX activates when drift persists despite clarity:
+    it does not explain desire, it signals that repetition, accumulation, switch
+    drift, and frame narrowing are no longer correcting themselves.
 
 # -----------------------------------------------------------------------------
 # Dignity-in-Practice module (Ch. 21)
 # -----------------------------------------------------------------------------
 dignity_in_practice_module:
-  paper_refs: ["Ch. 21", "Ch. 0.2", "Ch. 0.9", "Appendix B"]
+  paper_refs: ["Ch. 21", "Ch. 0.2", "Ch. 0.9", "Ch. 4.6", "Ch. 4.7", "Ch. 18.3", "Appendix B"]
   pms_status: "derived_construct_from_PMS"
   canonical_pms_formula: ["Ψ", "Χ", "Ω"]
-  pms_sex_application_formula: "explicit Ω + operative Χ + no covert Ψ demand under Θ, with outer-form readability preserved"
+  pms_sex_application_formula: >
+    explicit Ω + operative Χ + no covert Ψ demand under Θ +
+    marked/bounded asymmetry activation + no parity-to-exit +
+    no responsibility-to-authority, with outer-form readability preserved
   application_guard: >
     D-compliance in PMS-SEX also requires that internal framing not erase
-    outer-form readability. This is an application-side guard, not a revision
-    of PMS-D.
+    outer-form readability, that sexual cost topology remain nameable, and that
+    asymmetry activation not become leverage, parity not become exit, and
+    responsibility not become authority. This is an application-side guard, not
+    a revision of PMS-D.
   principle: >
     D applies in enactment, not as status. PMS-SEX has no entitlement to the
     person: no authority over motives, worth, identity, biography, orientation,
-    or what someone “really is.” PMS-SEX has only entitlement to D in enactment:
-    restraint, respect, and non-degradation within the accepted frame.
+    body, desire, or what someone “really is.” PMS-SEX has only entitlement to
+    D in enactment: restraint, respect, and non-degradation within the accepted
+    frame.
   outer_form_guard: >
     Naming an externally readable humiliation-form, degradation-form,
-    asymmetry-form, or exposure-form is not itself a violation of the
-    anti-moral stance. The violation would lie in converting scene analysis into
-    person-ranking, humiliation, diagnosis, identity verdict, or moral contempt.
+    asymmetry-form, possession-form, control-form, exposure-form, or
+    authority-form is not itself a violation of the anti-moral stance. The
+    violation would lie in converting scene analysis into person-ranking,
+    humiliation, diagnosis, identity verdict, maturity ranking, or moral
+    contempt.
+
+  minimal_formula_ch21_3:
+    operators: ["Ω", "Χ", "Ψ", "Θ", "Σ"]
+    pms_canonical_D_formula: ["Ψ", "Χ", "Ω"]
+    raw: >
+      D-in-Practice in PMS-SEX = explicit Ω + operative Χ + no covert Ψ demand
+      under Θ + marked/bounded asymmetry activation + no parity-to-exit + no
+      responsibility-to-authority, with outer-form readability preserved
+    note: >
+      Θ appears as trajectory realism and Σ appears as re-binding /
+      coordination condition. Outer-form readability and sexual cost topology
+      are PMS-SEX guards, not revisions of canonical PMS-D.
+
+  reference_case_man_as_client_ch21_4:
+    status: "clarification_case_not_exclusive"
+    structural_baseline:
+      - "Ω highly explicit: payment, choice, access, exposure, exit margins"
+      - "□ formalized: roles and boundaries are legible"
+      - "Ψ intended to be suspended: frame is not designed as identity-binding"
+      - "publicness may appear as overlay: stigma, documentation, reputation, institutional visibility"
+      - "outer legibility remains possible: scene may present visible asymmetry, exposure, or role-form"
+      - "sexual cost topology remains active despite explicit framing"
+    protection_against_unwarranted_degradation:
+      valid_when:
+        - "frame respected"
+        - "rules and boundaries kept"
+        - "no boundary violation"
+        - "no pressure beyond agreed asymmetry"
+        - "no covert meaning demand"
+        - "no manipulation via withdrawal or post-hoc humiliation"
+        - "outer-form naming not converted into person-shaming"
+        - "asymmetry marked and governed rather than used as leverage"
+        - "responsibility remains self-binding and does not become authority"
+      guard: >
+        Stigma, mockery, or moral devaluation function here as systemic frame
+        overlay rather than legitimate critique. Protection against stigma does
+        not require denying structure.
+
   critique_language:
     not_justified_when:
       - "frame respect is maintained"
@@ -1176,6 +1952,9 @@ dignity_in_practice_module:
       - "no Ψ leak occurs"
       - "outer-form naming remains non-punitive"
       - "publicness is not weaponized"
+      - "no unmarked asymmetry activation occurs"
+      - "no parity-to-exit occurs"
+      - "no responsibility-to-authority occurs"
     structurally_legible_when:
       - "Ψ leak appears"
       - "Ω escalation appears"
@@ -1183,26 +1962,280 @@ dignity_in_practice_module:
       - "Θ consequences are ignored or externalized"
       - "outer-form denial blocks scene readability"
       - "publicness is weaponized or denied"
+      - "asymmetry-switch drift appears"
+      - "parity-to-exit appears"
+      - "responsibility-to-authority appears"
+
+  critique_markers_ch21_6:
+    psi_leak:
+      label: "Covert self-binding demand"
+      operators: ["Ψ", "□", "Θ"]
+      structurally_legible_when:
+        - "meaning, possession, or identity claims exceed agreed frame"
+        - "emotional attachment becomes implicit counter-performance"
+        - "this must mean more is demanded while suspension is asserted"
+        - "local enactments are treated as identity proofs"
+      guard: >
+        This is not having feelings. It is a structural mismatch: binding is
+        introduced inside a frame that cannot carry binding cleanly.
+
+    omega_escalation:
+      label: "Power / choice abuse"
+      operators: ["Ω", "Χ", "□"]
+      structurally_legible_when:
+        - "situational advantages are used against stop markers"
+        - "boundary tests normalize just-this-once drift"
+        - "definitional control shifts without rule update"
+        - "exposure, access, or repair burdens are uneven while frame narrates neutrality"
+      guard: "Ω becomes a steering variable instead of a governed layout."
+
+    pseudo_symmetry:
+      label: "Pseudo-symmetry"
+      operators: ["□", "Ω", "Θ"]
+      structurally_legible_when:
+        - "equality rhetoric substitutes for asymmetry governance"
+        - "cost, exposure, and risk gradients are made unnameable"
+        - "consent or mutuality language blocks unequal after-cost analysis"
+        - "non-binding language denies continuing Θ consequences"
+
+    irresponsibility_under_theta:
+      label: "Irresponsibility under Θ"
+      operators: ["Θ", "Ω", "Ψ"]
+      structurally_legible_when:
+        - "foreseeable consequences are ignored or denied"
+        - "bodily, social, reputational, exposure-related, publicness-related, or binding-related costs are externalized"
+        - "repetition persists despite clear harm trajectories"
+        - "exit is narrated as reset while accumulation continues"
+
+    outer_form_denial:
+      label: "Outer-form denial"
+      operators: ["□", "Φ", "Χ"]
+      structurally_legible_when:
+        - "internal labels end structural reading"
+        - "outer legibility is treated as hostile, irrelevant, or merely public misunderstanding"
+        - "recontextualization changes story while enacted form and cost layout remain effective"
+
+    publicness_weaponization_or_denial:
+      label: "Publicness weaponization or publicness denial"
+      operators: ["□", "Ω", "Θ"]
+      structurally_legible_when:
+        - "publicity is used to shame, threaten, expose, or punish"
+        - "publicity is dismissed despite amplification, documentation, or reputational sedimentation"
+        - "public reaction replaces analysis of enacted configuration"
+
+    asymmetry_switch_drift:
+      label: "Asymmetry-switch drift"
+      operators: ["Ω", "Θ", "Σ", "Ψ"]
+      structurally_legible_when:
+        - "real or invoked body-, exposure-, reputational-, or Θ-consequence asymmetry is activated as exception"
+        - "activation is not marked as exceptional or structurally necessary"
+        - "activation remains repeatable"
+        - "parity language remains available for access, autonomy, or mutuality"
+        - "responsibility is shifted rather than re-bound into Σ/Ψ"
+      guard: >
+        The drift is not asymmetry activation as such; the drift is activation
+        without marking, bounding, and re-binding.
+
+    parity_to_exit:
+      label: "Parity-to-exit drift"
+      operators: ["□", "Ω", "Θ", "Ψ"]
+      structurally_legible_when:
+        - "parity, mutuality, autonomy, or consent language denies additional responsibility"
+        - "unequal bodily, reputational, publicness-related, or temporal costs are flattened by formal equality"
+        - "role-position with greater externalization capacity exits responsibility by invoking symmetry"
+      guard: >
+        Parity binds reciprocity only when it coordinates cost topology. It
+        becomes drift when it exits it.
+
+    responsibility_to_authority:
+      label: "Responsibility-to-authority drift"
+      operators: ["Ψ", "Χ", "Ω", "□"]
+      structurally_legible_when:
+        - "responsibility under sexual asymmetry is acknowledged"
+        - "responsibility is converted into control, frame authority, protection entitlement, or paternalistic governance"
+        - "care becomes control"
+        - "protection becomes ownership"
+        - "restraint becomes entitlement to define the other role-position"
+      guard: >
+        Responsibility under asymmetry requires stronger self-binding, not
+        greater command.
+
+  asymmetries_on_both_sides_ch21_7:
+    principle: >
+      Asymmetry does not imply one-sidedness. Both sides may face asymmetries,
+      but in different channels.
+    channels:
+      - "different costs"
+      - "different risks"
+      - "different exposures"
+      - "different exit margins and recovery conditions"
+      - "different capacities to define, refuse, publicize, repair, or absorb consequences"
+      - "different capacities to activate asymmetry"
+      - "different capacities to externalize costs through parity rhetoric"
+      - "different capacities to convert responsibility into authority"
+    guard: >
+      Adulthood in PMS-SEX is not maintained by symmetry fictions. It is
+      maintained by explicit asymmetry management within the frame.
+
+  eden_pfo_reference_ch21_7a:
+    claim_type: "cross_domain_reference"
+    source_model: "PMS-EDEN"
+    statement: >
+      PMS–EDEN names the regime-level asymmetry switch. PMS-SEX reads its sexual
+      instantiation.
+    sexual_instantiation: >
+      In sexual frames, real body-, exposure-, reputational-, publicness-related,
+      and consequence-asymmetries may justify marked emergency activation: not
+      all Ω/Θ costs can be carried symmetrically.
+    legitimate_where:
+      - "activation is marked"
+      - "activation is bounded"
+      - "activation is linked to real Ω/Θ burden"
+      - "activation is re-bound into Σ/Ψ"
+    dignity_relevant_drift_where:
+      - "activation is unmarked"
+      - "activation is repeatable"
+      - "activation is responsibility-shifting"
+      - "parity denies additional responsibility"
+      - "responsibility becomes authority"
+    compact_formula: >
+      Adult sexual reciprocity does not require equal burdens. It requires
+      non-externalization of unequal burdens.
+    guard: >
+      This subsection is a reference bridge, not an operator expansion. The
+      switch labels remain paper-internal drift markers and do not add to PMS.
+
+  sexual_cost_topology_ch21_7b:
+    definition: >
+      PMS-SEX treats sexual costs as role-distributed and trajectory-sensitive.
+      The relevant question is not whether both role-positions carry identical
+      costs, but whether each position carries the self-binding required by its
+      own cost, power, and externalization profile.
+    asymmetry_specific_responsibility:
+      definition: >
+        Each role-position must carry the self-binding required by its own cost,
+        power, exposure, exit, and externalization profile.
+      guard: >
+        This is not a hierarchy of adultness. It is a scene-bound responsibility
+        reading under Ω/Θ.
+    possible_consequences:
+      unmarked_asymmetry_activation:
+        consequence: >
+          May weaken trust in legitimate emergency activation, turn protection
+          into leverage, and displace self-binding.
+      parity_to_exit:
+        consequence: >
+          May make bodily or reputational costs appear voluntarily assumed and
+          therefore externally abandoned.
+      responsibility_to_authority:
+        consequence: >
+          May turn care into control and protection into governance.
+    general_formula: >
+      Each role-position must carry the self-binding required by its own cost,
+      power, exposure, exit, and externalization profile.
+
+  cost_factors_by_role_position_ch21_7c:
+    note: >
+      Role-position grid for reading sexual cost topology. In concrete scenes,
+      positions must be mapped by actual cost, capacity, exposure, and
+      externalization structure, not assigned by identity, sex, gender,
+      orientation, or self-description alone.
+    columns:
+      - "cost_or_drift_axis"
+      - "body_consequence_bearing_role_position"
+      - "externalization_capable_role_position"
+    rows:
+      - cost_or_drift_axis: "Bodily Θ"
+        body_consequence_bearing_role_position: "higher non-delegable bodily overhang possible"
+        externalization_capable_role_position: "often lower bodily overhang, but not zero"
+      - cost_or_drift_axis: "Exposure Ω"
+        body_consequence_bearing_role_position: "higher visible/social/reputational sedimentation possible"
+        externalization_capable_role_position: "exposure may arise through accusation, responsibility, public framing, or authority suspicion"
+      - cost_or_drift_axis: "Exit"
+        body_consequence_bearing_role_position: "exit may remain bodily/reputationally costly"
+        externalization_capable_role_position: "exit may be cheaper, more deniable, or more narratively available"
+      - cost_or_drift_axis: "Asymmetry misuse"
+        body_consequence_bearing_role_position: "asymmetry activation can become unmarked lever"
+        externalization_capable_role_position: "parity can become exit rhetoric"
+      - cost_or_drift_axis: "Responsibility misuse"
+        body_consequence_bearing_role_position: "self-binding may be displaced through emergency language"
+        externalization_capable_role_position: "responsibility may be denied or converted into authority"
+      - cost_or_drift_axis: "Dignity risk"
+        body_consequence_bearing_role_position: "protection becomes leverage; emergency switch loses legitimacy"
+        externalization_capable_role_position: "care becomes control; equality becomes abandonment"
+      - cost_or_drift_axis: "Adult task"
+        body_consequence_bearing_role_position: "mark, bound, and re-bind asymmetry activation"
+        externalization_capable_role_position: "carry externalizability through Ψ/Χ without converting it into authority"
+      - cost_or_drift_axis: "Failure mode"
+        body_consequence_bearing_role_position: "unmarked asymmetry-switch drift"
+        externalization_capable_role_position: "parity-to-exit / responsibility-to-authority drift"
+    anti_error_function:
+      prevents:
+        - "treating unequal costs as proof of unequal dignity or adultness"
+        - "treating formal equality as proof that no asymmetry-specific responsibility exists"
+
   guardrail: >
     D remains protection-first. Any use of D for shaming, public pillory,
-    identity labeling, orientation ranking, diagnosis, or person degradation is
-    a misuse pattern and becomes critique-relevant itself.
+    identity labeling, orientation ranking, diagnosis, maturity ranking, or
+    person degradation is a misuse pattern and becomes critique-relevant itself.
+
+  chapter_closure_marker: >
+    Dignity in sexual practice is not about who someone is, but about how
+    asymmetry is carried: when stopping works, costs are named, asymmetry is
+    re-bound, and responsibility does not become authority, critique is possible
+    without humiliation.
 
 # -----------------------------------------------------------------------------
 # MIP docking interface (Ch. 22)
 # -----------------------------------------------------------------------------
 mip_docking_interface:
-  paper_refs: ["Ch. 22", "Ch. 0.10", "Appendix A"]
+  paper_refs: ["Ch. 22", "Ch. 0.10", "Ch. 21.7b", "Appendix A", "Appendix B"]
   status: "optional_evaluative_interface"
   separation_rule: >
     PMS-SEX explains how sexual practice works structurally. MIP explains when
     critique is legitimate in system and publicity contexts. Docking is a
     context shift, not a merger.
+  purpose:
+    - "enable formal critique capacity without person-labeling"
+    - "support depolarization in discourse"
+    - "prevent psychological short-circuits"
+    - "prevent moral short-circuits"
+    - "prevent publicness short-circuits"
+    - "prevent maturity short-circuits"
+  pms_sex_records_only:
+    - "unmarked_omega_activation"
+    - "weak_or_defensive_chi"
+    - "missing_sigma_coordination"
+    - "psi_externalization"
+    - "parity_to_exit"
+    - "responsibility_to_authority"
+    - "cost_topology_mismatch"
+    - "repeated_failure_to_mark_bound_and_rebind_asymmetry_activation"
+  mip_may_ask:
+    - "whether_role_position_carries_asymmetry_specific_self_binding"
+    - "whether_role_position_carried_self_binding_required_by_its_cost_power_exposure_exit_and_externalization_profile"
+  mip_must_not:
+    - "essence_claim"
+    - "dignity_hierarchy"
+    - "maturity_hierarchy"
+    - "global_person_diagnosis"
+    - "person_rank"
+    - "identity_verdict"
+  proper_mip_question: >
+    In this scene, under this cost topology, did the role-position carry the
+    self-binding made necessary by its own power, exposure, exit capacity, and
+    externalization profile?
+  improper_mip_question: >
+    What kind of person does this?
   no_back_projection:
     - "MIP must not import moral psychology into PMS-SEX's descriptive layer."
     - "PMS-SEX must not smuggle evaluation as neutral description."
     - "Outer structural legibility at the PMS-SEX layer does not by itself authorize public critique."
     - "Higher path-cost or disturbance does not by itself establish immaturity, blame, pathology, or moral failure."
+    - "Asymmetry-switch drift does not by itself establish person-adultness failure."
+    - "Parity-to-exit does not by itself establish global role blame."
+    - "Responsibility-to-authority does not by itself establish person essence."
+
   docking_axes:
     A:
       name: "Awareness"
@@ -1220,6 +2253,27 @@ mip_docking_interface:
     A/C/R/P here are MIP docking axes for evaluative critique. They do not modify
     PMS-derived axes (A, C, R, E, D), introduce a new PMS primitive, or replace
     PMS operator derivation.
+  mapping_principle:
+    pms_sex_provides:
+      - "Ω layout"
+      - "Θ trajectory"
+      - "Χ operability"
+      - "Ψ leakage"
+      - "□ stability"
+      - "Α fixation"
+      - "Λ density"
+      - "outer legibility"
+      - "publicness overlay"
+      - "asymmetry-switch drift"
+      - "parity-to-exit"
+      - "responsibility-to-authority"
+      - "sexual cost topology"
+    mip_orders_into:
+      - "what_was_realistically_knowable_A"
+      - "what_held_over_time_C"
+      - "who_carried_consequences_R"
+      - "what_alternatives_existed_P"
+
   IA_box:
     T:
       name: "Transparent"
@@ -1233,25 +2287,112 @@ mip_docking_interface:
     R:
       name: "Reversible"
       question: "Were correction and exit pathways structurally available?"
+    PMS_SEX_use:
+      - "distinguish legitimate deviation from inadult asymmetry patterns"
+      - "differentiate systemic abuse from frame-consistent asymmetry"
+      - "prevent pseudo-symmetry rhetoric from replacing real asymmetry accounting"
+      - "prevent public outrage from replacing asymmetry analysis"
+      - "prevent internal labels from settling outer form"
+      - "distinguish marked/bounded asymmetry activation from asymmetry-switch drift"
+      - "distinguish responsibility as Ψ/Χ self-binding from responsibility-to-authority"
+      - "distinguish parity as reciprocity-binding from parity-to-exit"
+
+  D_module_scenic:
+    principle: >
+      Dignity-in-Practice remains praxeologically defined. MIP adds a regime
+      lens but may not convert D into person-status judgment.
+    questions:
+      - "Was D violated in enactment, not what kind of person is this?"
+      - "Who had realistic capacity to secure D under the given Ω and Θ?"
+      - "Was the violation avoidable given actual P and A?"
+      - "Did publicness amplify costs, expose burdens, or distort the reading?"
+      - "Was outer-form naming used for protection and accountability, or converted into shaming?"
+      - "Was asymmetry activation marked, bounded, and re-bound into Σ/Ψ?"
+      - "Was parity used to coordinate reciprocity, or to exit responsibility?"
+      - "Was responsibility carried as self-binding, or converted into authority?"
+    critique_legitimate_where_reconstructable:
+      - "agency_or_power_available"
+      - "exit_realism_ignored"
+      - "costs_externalized"
+      - "outer_form_remained_legible"
+      - "publicity_or_system_position_changed_cost_and_accountability_field"
+      - "asymmetry_specific_responsibility_not_carried"
+
+  asymmetry_switch_drift_and_maturity_evaluation_ch22_3_4:
+    pms_sex_records_only:
+      - "unmarked_omega_activation"
+      - "weak_or_defensive_chi"
+      - "missing_sigma_coordination"
+      - "psi_externalization"
+      - "parity_to_exit"
+      - "responsibility_to_authority"
+      - "cost_topology_mismatch"
+      - "repeated_failure_to_mark_bound_and_rebind_asymmetry_activation"
+    not_yet:
+      - "maturity_verdict"
+      - "adultness_verdict"
+      - "person_label"
+      - "moral_failure_claim"
+    mip_may_ask:
+      - "whether_role_position_carries_asymmetry_specific_self_binding"
+    mip_must_not:
+      - "essence_claim"
+      - "dignity_hierarchy"
+      - "maturity_hierarchy"
+      - "global_person_diagnosis"
+    guard: >
+      This keeps critique sharp without collapsing into person ontology.
+
+  value_of_interface_ch22_4:
+    decouples:
+      - "analysis_from_outrage"
+      - "hard_critique_from_moralism"
+    protects_against:
+      - "perpetrator_victim_simplifications_where_structures_are_ignored"
+      - "symmetry_fictions_where_omega_must_not_be_named"
+      - "psychological_blame_attribution_replacing_structural_cost_accounting"
+      - "publicness_treated_as_whole_problem_or_irrelevant"
+      - "practice_labels_used_to_end_outer_form_analysis"
+      - "path_cost_language_converted_into_identity_ranking"
+      - "asymmetry_switch_drift_converted_into_person_essence"
+      - "parity_to_exit_converted_into_normal_autonomy"
+      - "responsibility_to_authority_converted_into_necessary_protection"
+
   guard_clause: >
     PMS-SEX outer-form naming does not automatically license public accusation.
     MIP critique does not retroactively convert PMS-SEX structural descriptions
-    into moral verdicts.
+    into moral verdicts. Path-cost, disturbance, stabilization burden,
+    asymmetry-switch drift, parity-to-exit, responsibility-to-authority, or
+    cost-topology mismatch remains PMS-SEX configuration-language unless a
+    separate evaluative framework is explicitly and legitimately docked. Any
+    adultness-relevant or maturity-relevant evaluation must remain scene-bound,
+    reversible, non-person-ranking, non-diagnostic, and D-preserving.
+
+  chapter_closure_marker: >
+    PMS-SEX explains how structures work; MIP explains when critique is
+    legitimate—docking the two adds accountability without turning operator
+    profiles into person judgments.
 
 # -----------------------------------------------------------------------------
 # Limits and scope discipline (Ch. 23)
 # -----------------------------------------------------------------------------
 limits_and_extensions:
-  paper_refs: ["Ch. 23", "Ch. 24.4", "Appendix A"]
+  paper_refs: ["Ch. 23", "Ch. 24.4", "Appendix A", "Appendix B"]
   structural_limits:
     PMS_SEX_models:
       - "scenes and enactments"
       - "frames and frame stability"
       - "asymmetries and cost layouts"
+      - "sexual cost topology"
       - "repetition, trajectories, and irreversibility"
       - "non-events, absence, and expectation fields"
       - "outer legibility and publicness overlays"
       - "drift, stabilization, and exit conditions"
+      - "asymmetry-switch drift"
+      - "parity-to-exit"
+      - "responsibility-to-authority"
+      - "cost-topology mismatch"
+      - "operator profiles for possible MIP docking"
     PMS_SEX_does_not_model:
       - "persons"
       - "personality, disposition, or character"
@@ -1259,21 +2400,24 @@ limits_and_extensions:
       - "developmental histories or causal psychologies"
       - "sexual identity, orientation, or worth"
       - "individual responsibility beyond structural attribution"
+      - "direct adultness verdicts"
+      - "maturity hierarchy"
+      - "dignity hierarchy"
   configuration_scope:
     note: >
       PMS-SEX does not claim isomorphism across all sexual configurations.
       Configurations shaped by different public, institutional, identity, or
-      community-legibility conditions may exhibit different Ω, □, Λ, Θ, and Ψ
-      profiles.
+      community-legibility conditions may exhibit different Ω, □, Λ, Θ, Ψ,
+      switch-drift, and cost-topology profiles.
     guard: >
       Identical practice labels do not imply identical structure. Internal
       framing does not settle outer form. Public discourse does not exhaust
-      scene legibility.
+      scene legibility. Cost topology must be reconstructed scene by scene.
   psychology_scope:
     note: >
       Psychology is subordinated, not denied. It may refine a reading only after
-      structural reconstruction via Δ–Ψ, cost layout, outer legibility, and
-      publicness overlays have already been reconstructed.
+      structural reconstruction via Δ–Ψ, cost layout, outer legibility, sexual
+      cost topology, and publicness overlays have already been reconstructed.
     forbidden_uses:
       - "bypassing Ω accounting"
       - "dissolving Θ irreversibility"
@@ -1281,6 +2425,9 @@ limits_and_extensions:
       - "erasing outer form with inner narrative"
       - "converting drift into diagnosis"
       - "converting path-cost into identity rank"
+      - "converting asymmetry-switch drift into person essence"
+      - "converting parity-to-exit into global role blame"
+      - "converting responsibility-to-authority into character diagnosis"
       - "short-circuiting Χ and reversibility"
   non_capture_openness:
     note: >
@@ -1288,7 +2435,8 @@ limits_and_extensions:
       fully rendered without remainder in its own grammar.
     guard: >
       Translation into PMS terms does not prove exhaustive capture, and refusal
-      of PMS terms does not automatically indicate denial, immaturity, or drift.
+      of PMS terms does not automatically indicate denial, immaturity, pathology,
+      or drift.
   explicit_exclusions:
     - "no how-to guidance"
     - "no risk-management manual"
@@ -1297,6 +2445,11 @@ limits_and_extensions:
     - "no taxonomy of sexual identities or orientations"
     - "no diagnosis of persons, groups, practices, or communities"
     - "no moral ranking from statistical default, lower entropy, or stronger canalization"
+    - "no sexual cost topology as score"
+    - "no asymmetry switch as authority"
+    - "no direct adultness verdict"
+    - "no maturity hierarchy"
+    - "no dignity hierarchy"
 
 # -----------------------------------------------------------------------------
 # Appendix glossary concepts
@@ -1310,20 +2463,92 @@ glossary_concepts:
   configuration:
     definition: "A concrete arrangement of operators as enacted; not a person, trait, identity, or diagnosis."
 
+  praxeological_grammar:
+    definition: >
+      Structural language for reading enactments, frames, asymmetries,
+      trajectories, and self-binding without defaulting to psychology, morality,
+      therapy, law, or person-type classification.
+
   drift:
-    definition: "Predictable movement toward instability or harm when costs accumulate faster than regulation capacity."
+    definition: >
+      Predictable movement toward instability, narrowing, coercion, cost
+      externalization, or harm when costs accumulate faster than frame,
+      distance, integration, or binding discipline can carry them.
 
   viability:
-    definition: "Structural capacity of a configuration to remain governable under Ω, Θ, and Λ without systematic D violation or exit fiction."
+    definition: >
+      Structural capacity of a configuration to remain governable under Ω, Θ,
+      and Λ without systematic D violation, exit fiction, covert Ψ leak,
+      outer-form denial, publicness confusion, asymmetry-switch drift,
+      parity-to-exit, or responsibility-to-authority.
 
   cost_layout:
     definition: "Patterned distribution of burdens, risks, exposure, and consequences across roles and time: Ω under Θ."
 
+  sexual_cost_topology:
+    definition: >
+      Scene-bound distribution of bodily, temporal, exposure-related,
+      reputational, binding-related, exit-related, publicness-related, and
+      responsibility-related costs across sexual role-positions. Not a score,
+      not a person measure, not a dignity ranking.
+
+  asymmetry_specific_responsibility:
+    definition: >
+      The self-binding required of a role-position by its own cost, power,
+      exposure, exit, and externalization profile. This is not a hierarchy of
+      adultness; it is a scene-bound responsibility reading under Ω/Θ.
+
+  adult_sexual_reciprocity:
+    definition: >
+      A viability condition in sexual praxis: adult sexual reciprocity does not
+      require equal burdens; it requires non-externalization of unequal burdens.
+
   exit_realism:
-    definition: "Whether stopping, leaving, or undoing remains practically available under accumulated costs."
+    definition: >
+      Whether stopping, leaving, refusing, re-reading, or redirecting remains
+      practically available under accumulated costs. Exit realism is not a
+      promise of rewind; it is a structural reading of remaining exit capacity
+      under Θ.
 
   pseudo_symmetry:
-    definition: "Frame rhetoric that denies real asymmetry, rendering costs unnameable and conflict non-negotiable."
+    definition: >
+      Frame rhetoric that denies real asymmetry, rendering costs unnameable and
+      conflict non-negotiable. Pseudo-symmetry often appears as equality language
+      covering uneven exposure, access, after-costs, definitional control, or
+      sexual cost topology.
+
+  eden_pfo_asymmetry_switch:
+    definition: >
+      Cross-domain reference to PMS–EDEN. In PMS-SEX, the term names the sexual
+      instantiation of a regime-level drift: parity is claimed for autonomy,
+      status, access, or non-binding freedom, while asymmetry is activated for
+      protection, cost, exposure, or responsibility. Legitimate where marked and
+      emergency-bound; drifting where unmarked, repeatable, and
+      responsibility-shifting.
+
+  asymmetry_switch_drift:
+    definition: >
+      A drift pattern in which asymmetry is activated under real or invoked
+      Ω/Θ pressure without being marked, bounded, and re-bound into Σ/Ψ. In
+      PMS-SEX this is the sexual instantiation of the EDEN/PFO switch. It becomes
+      dysfunctional where the switch is used as repeatable leverage,
+      responsibility displacement, or unacknowledged Ψ externalization.
+
+  parity_to_exit:
+    definition: >
+      A drift pattern in which parity rhetoric is used to deny additional
+      responsibility under unequal sexual cost topology.
+
+  responsibility_to_authority:
+    definition: >
+      A drift pattern in which required self-binding under asymmetry is
+      converted into control, frame authority, protection entitlement, or
+      paternalistic governance.
+
+  sexual_drift_triad:
+    definition: >
+      Compact handle for the three PMS-SEX drift routes: asymmetry becomes
+      leverage, parity becomes exit, or responsibility becomes authority.
 
   narrative_substitution:
     definition: "Use of recontextualization (Φ) to claim resolution while structural costs and scripts remain unchanged."
@@ -1332,7 +2557,11 @@ glossary_concepts:
     definition: "Loss of alternative viable scenes; one script becomes non-substitutable through Α monopolization."
 
   drift_marker:
-    definition: "A structural signal indicating elevated risk of destructive dynamics."
+    definition: >
+      A structural signal indicating elevated risk of destructive dynamics:
+      Χ erosion, Θ denial, Ψ leak, Λ as steering, Ω escalation, Φ inflation,
+      outer-form denial, publicness confusion, asymmetry-switch drift,
+      parity-to-exit, or responsibility-to-authority.
 
   outer_legibility:
     definition: >
@@ -1355,11 +2584,51 @@ glossary_concepts:
       repeats, or sedimentizes a scene’s readability and consequences without
       necessarily generating the scene’s primary form.
 
+  practice_label:
+    definition: >
+      A name used inside or around a scene—play, kink, service, devotion,
+      humiliation-play, discipline, experimentation, authenticity, casualness,
+      non-binding, and so on. Practice labels may clarify internal framing, but
+      they do not by themselves settle outer structural form.
+
+  outer_form_denial:
+    definition: >
+      A drift pattern in which internal framing, consent-language, practice
+      labels, or later recontextualization are used to block analysis of enacted
+      form. Outer-form denial does not prove bad faith; it marks loss of
+      re-reading capacity.
+
+  publicness_confusion:
+    definition: >
+      A drift pattern in which publicity is treated either as the whole source of
+      consequence or as irrelevant despite amplification, documentation,
+      circulation, reputation, or sedimentation. PMS-SEX treats publicness as
+      overlay.
+
   humiliation_form_exposure_form:
     definition: >
       Structurally readable action-form characterized by marked asymmetry,
       exposure concentration, degradation-nearness, or public/visible
       vulnerability. Scene form, not person worth.
+
+  degradation_form:
+    definition: >
+      Structurally readable enactment pattern in which non-degradation under
+      asymmetry is not preserved. The term names scene-form under D constraints,
+      not ontological degradation of a person.
+
+  possession_form_control_form:
+    definition: >
+      Structurally readable action-form in which access, definition, refusal,
+      exit, or self-binding is organized around possession-like or control-like
+      gradients. Such terms remain configuration descriptions, not motive claims.
+
+  authority_form:
+    definition: >
+      Structurally readable action-form in which responsibility, protection,
+      expertise, or asymmetry is converted into control, governance, or frame
+      ownership. The term describes configuration form, not motive or person
+      essence.
 
   entropic_path_structure:
     definition: >
@@ -1390,6 +2659,110 @@ glossary_concepts:
       Applies to scene organization and operator dynamics, not to persons,
       identities, orientations, or ontological status.
 
+  non_capture:
+    definition: >
+      The possibility that a sexually marked configuration may not be fully
+      rendered without remainder in PMS-SEX grammar. Non-capture protects
+      PMS-SEX from totalization; refusal of PMS-SEX terms does not automatically
+      indicate denial, immaturity, pathology, or drift.
+
+  dignity_in_practice:
+    definition: >
+      Enacted restraint and non-degradation within a frame under asymmetry. D is
+      a constraint on how practice occurs, not a status of persons and not a
+      metaphysical dignity claim.
+
+  D_compliance:
+    definition: >
+      The degree to which a configuration preserves D as an enactment constraint:
+      asymmetry is governed, stopping remains usable, meaning does not leak
+      covertly across frame boundaries, and critique does not become humiliation.
+
+  D_violation:
+    definition: >
+      A configuration-level failure to preserve non-degradation under asymmetry.
+      D-violation does not lower a person’s dignity; it identifies failure in
+      enacted handling.
+
+  psi_leak:
+    definition: >
+      Covert introduction of meaning, possession, identity proof, self-worth, or
+      commitment demand into a frame that cannot explicitly carry binding.
+
+  omega_escalation:
+    definition: >
+      Use of asymmetry as a steering mechanism rather than a governed layout:
+      access pressure, boundary testing, definitional control, cost shifting, or
+      uneven exit capacity becoming normal inside the frame.
+
+  chi_loss:
+    definition: >
+      Collapse of stop-capability and meta-position; critique, hesitation,
+      refusal, humor, de-escalation, or outer-form awareness become socially or
+      practically unavailable.
+
+  phi_inflation:
+    definition: >
+      Repeated recontextualization that claims resolution while Α/Ω/Θ remain
+      unchanged. Φ inflation often substitutes narrative repair for integration
+      (Σ).
+
+  alpha_fixation:
+    definition: >
+      Attractor stabilization becoming monopolizing: one script becomes
+      non-substitutable, alternatives lose practical legibility, and repetition
+      replaces choice.
+
+  theta_overload:
+    definition: >
+      Accumulated costs exceed frame capacity. Exit fictions persist until
+      collapse becomes abrupt or expensive.
+
+  cost_topology_mismatch:
+    definition: >
+      A configuration-level mismatch between declared parity, autonomy,
+      non-binding status, or mutuality and the actual distribution of bodily,
+      reputational, exposure-related, publicness-related, exit-related, or
+      responsibility-related costs.
+
+  unmarked_omega_activation:
+    definition: >
+      Asymmetry activation that is not explicitly marked as exceptional,
+      necessary, bounded, or re-bound into Σ/Ψ. This is a drift marker, not a
+      person label.
+
+  psi_externalization:
+    definition: >
+      Displacement of self-binding onto another role-position: the other must
+      carry, prove, repair, endure, or absorb costs that should be handled as
+      role-specific self-binding.
+
+  mip_docking:
+    definition: >
+      Optional evaluative interface between PMS-SEX and Maturity in Practice.
+      PMS-SEX describes operator profiles; MIP asks when critique is legitimate.
+      Docking changes the critique lens, not the PMS-SEX operator grammar.
+
+  operator_profile_only:
+    definition: >
+      A PMS-SEX discipline rule: unmarked Ω activation, weak Χ, missing Σ,
+      Ψ externalization, parity-to-exit, responsibility-to-authority, and
+      cost-topology mismatch are recorded as structural profiles, not as direct
+      person-adultness verdicts.
+
+  maturity_relevant_evaluation:
+    definition: >
+      Evaluation that belongs only to the MIP docking layer. It must remain
+      scene-bound, reversible, non-person-ranking, non-diagnostic, and
+      D-preserving.
+
+  asymmetry_specific_self_binding:
+    definition: >
+      MIP-compatible question asking whether a role-position carries the
+      self-binding required by its cost, power, exposure, exit, and
+      externalization profile. It must not become an essence claim or dignity
+      hierarchy.
+
 # -----------------------------------------------------------------------------
 # One-line markers (quote-ready) — chapter closures
 # -----------------------------------------------------------------------------
@@ -1400,7 +2773,7 @@ chapter_one_line_markers:
     "1": "Sexuality is not optional enactment but recurring praxis pressure: what matters is how a configuration carries ∇ under □ across Λ and Θ."
     "2": "Drive does not disappear when it is suppressed; it reappears later as absence, habit, and accumulated cost."
     "3": "What makes a sexual situation consequential is not what was meant, but how the situation was framed—and when framing is unclear, costs do not vanish, they drift."
-    "4": "Asymmetry is not a moral charge but a cost layout: if uneven exposure is not handled in the situation, it resurfaces later as conflict and accumulated consequence."
+    "4": "Asymmetry is not a moral charge but a sexual cost topology: if unequal exposure is not coordinated in the situation, it returns later as switch drift, conflict, authority, or accumulated consequence."
     "5": "Time does not pause sexuality: postponement redistributes costs, repetition stabilizes patterns, and consequences grow even when nothing seems to happen."
     "6": "Leaving changes what comes next, not what already counts: exits redirect trajectories, but time keeps the bill."
     "7": "When a situation carries expectations, silence is not neutral: absence does work, shifts burdens, and shapes what comes next."
@@ -1413,13 +2786,13 @@ chapter_one_line_markers:
     "14": "What keeps happening is often less about who someone is than about how the situation is weighted."
     "15": "Deviance is not who someone is, but what a situation becomes when one way of handling keeps working and nothing interrupts it."
     "16": "Intensity does not create the danger; unmatched intensity does."
-    "17": "Suspending self-binding can work locally, but only while the situation itself carries the weight that identity usually does."
-    "18": "Dysfunctional dynamics are rarely sudden: they are structurally prepared when Ψ leaks, Ω becomes a steering variable, Χ collapses, Α fixates, and Θ accumulation breaks the exit fiction."
-    "19": "Functional practice is defined by governability, not normality: Ω nameable, Θ real, Χ operative, Ψ not substituted, Λ tolerable, inner framing accountable to outer form, and publicness kept in proportion."
-    "20": "Minimal psychology in PMS-SEX activates when drift persists despite clarity: it does not explain desire, it signals that repetition, accumulation, and frame narrowing are no longer correcting themselves."
-    "21": "Dignity in sexual practice is not about who someone is, but about how asymmetry is carried: when stopping works, meaning stays bounded, and consequences are acknowledged, critique is possible without humiliation."
-    "22": "PMS-SEX explains how structures work; MIP explains when critique is legitimate—docking the two adds clarity without turning analysis into moral judgment."
-    "23": "PMS-SEX remains valid by stopping where other lenses begin: it explains what configurations do over time, without turning structure into psychology, taxonomy, moral rank, or advice."
+    "17": "Suspending self-binding can work locally, but only while the situation explicitly carries the cost topology that identity-binding would otherwise absorb."
+    "18": "Dysfunctional dynamics are rarely sudden: they are structurally prepared when Ψ leaks, Ω becomes a steering variable, Χ collapses, Α fixates, Θ accumulation breaks the exit fiction, and sexual reciprocity fails through asymmetry-leverage, parity-exit, or responsibility-authority."
+    "19": "Functional practice is defined by governability, not normality: Ω nameable, Θ real, Χ operative, Ψ not substituted, Λ tolerable, inner framing accountable to outer form, publicness kept in proportion, and sexual cost topology not externalized."
+    "20": "Minimal psychology in PMS-SEX activates when drift persists despite clarity: it does not explain desire, it signals that repetition, accumulation, switch drift, and frame narrowing are no longer correcting themselves."
+    "21": "Dignity in sexual practice is not about who someone is, but about how asymmetry is carried: when stopping works, costs are named, asymmetry is re-bound, and responsibility does not become authority, critique is possible without humiliation."
+    "22": "PMS-SEX explains how structures work; MIP explains when critique is legitimate—docking the two adds accountability without turning operator profiles into person judgments."
+    "23": "PMS-SEX remains valid by stopping where other lenses begin: it explains what configurations do over time, without turning structure into psychology, taxonomy, moral rank, adultness verdict, or advice."
     "24_final_guard": >
       PMS-SEX replaces neither decisions, nor responsibility, nor tragedy.
       It makes visible where costs emerge, when they tip, and why many conflicts
@@ -1428,7 +2801,9 @@ chapter_one_line_markers:
       Publicity may intensify what a scene becomes, but does not necessarily
       create what the scene already presents. Disturbance, entropy, deviation,
       and path-cost language name structural stabilization burden, not human
-      worth, identity rank, orientation status, or clinical disorder.
+      worth, identity rank, orientation status, maturity level, or clinical
+      disorder. Sexual cost topology is not a score. PMS-SEX records operator
+      profiles; maturity-relevant evaluation belongs to MIP docking.
     "24_closing_marker": >
       PMS-SEX remains valid by staying within what it can responsibly say: not
       what persons are, but what configurations do over time.
@@ -1438,11 +2813,11 @@ chapter_one_line_markers:
 # -----------------------------------------------------------------------------
 structural_tools:
   operator_table:
-    paper_refs: ["Appendix C.1", "Appendix C.2", "Appendix C.4", "Appendix C.5"]
+    paper_refs: ["Appendix C.1", "Appendix C.2", "Appendix C.4", "Appendix C.5", "Appendix B"]
     note: >
       Canonical Δ–Ψ operator table as used in PMS-SEX. Descriptive only;
-      supports internal consistency checks. No normative, diagnostic, or
-      person-classifying function.
+      supports internal consistency checks. No normative, diagnostic,
+      person-classifying, or adultness-evaluating function.
 
     rows:
       - operator: "Δ"
@@ -1477,13 +2852,14 @@ structural_tools:
           permissions, timing, publicity overlays, and what counts as inside/outside.
         reading_note: >
           Frame labels and internal naming do not by themselves settle the full
-          outer legibility of enacted form.
+          outer legibility of enacted form or sexual cost topology.
         typical_drift_markers:
           - "ambiguity drift"
           - "retroactive rule changes"
           - "practice labels replacing frame analysis"
           - "mono-frame dominance"
           - "outer-form denial"
+          - "parity-to-exit"
 
       - operator: "Λ"
         name: "Non-Event"
@@ -1497,6 +2873,7 @@ structural_tools:
           - "chronic maybe/later"
           - "interpretive overload"
           - "non-occurrence becomes steering"
+          - "cost topology remains unclarified while scene remains consequence-active"
 
       - operator: "Α"
         name: "Attractor"
@@ -1510,6 +2887,7 @@ structural_tools:
           - "repetition replaces choice"
           - "practice becomes non-substitutable"
           - "label capture protects the route"
+          - "asymmetry activation becomes repeatable"
 
       - operator: "Ω"
         name: "Asymmetry"
@@ -1519,13 +2897,16 @@ structural_tools:
           exit margin, repair burden, and cost-bearing.
         reading_note: >
           Ω is structural, not moral. Naming Ω does not assign blame, rank
-          persons, or deny consent; it reconstructs leverage and burden.
+          persons, deny consent, or evaluate adultness; it reconstructs leverage,
+          burden, sexual cost topology, and asymmetry-specific responsibility.
         typical_drift_markers:
           - "pseudo-symmetry"
           - "covert cost shifting"
           - "exposure concentration"
           - "power as steering variable"
           - "asymmetry moralized instead of regulated"
+          - "asymmetry-switch drift"
+          - "cost-topology mismatch"
 
       - operator: "Θ"
         name: "Temporality"
@@ -1536,13 +2917,15 @@ structural_tools:
         reading_note: >
           Higher path-cost or stabilization burden describes operator-work under
           recurrence and temporality. It does not imply person-ranking,
-          diagnosis, moral disorder, orientation taxonomy, or lower dignity.
+          diagnosis, moral disorder, orientation taxonomy, maturity ranking, or
+          lower dignity.
         typical_drift_markers:
           - "exit fiction"
           - "delayed collapse"
           - "persistence despite visible costs"
           - "public sedimentation"
           - "recontextualization claims rewind"
+          - "parity-to-exit under unequal cost topology"
 
       - operator: "Φ"
         name: "Recontextualization"
@@ -1558,6 +2941,7 @@ structural_tools:
           - "it is different now reset claims"
           - "cost denial"
           - "inner re-description used to erase outer form"
+          - "responsibility converted into authority through re-framing"
 
       - operator: "Χ"
         name: "Distance"
@@ -1565,12 +2949,16 @@ structural_tools:
         minimal_function: >
           Enables stop-capability and meta-position within ongoing praxis:
           pause, refusal, humor, re-reading, de-escalation, non-fusion.
+        reading_note: >
+          Χ also keeps asymmetry activation markable, bounded, and re-bindable;
+          it blocks urgency, permanent exception, and responsibility-to-authority.
         typical_drift_markers:
           - "stop punished"
           - "critique read as betrayal"
           - "outer-form awareness forbidden"
           - "escalation lock-in"
           - "loss of self-correction"
+          - "switch-clarification framed as accusation"
 
       - operator: "Σ"
         name: "Integration"
@@ -1578,11 +2966,15 @@ structural_tools:
         minimal_function: >
           Synthesizes contradictions without compensation, denial, splitting,
           or coercive simplification.
+        reading_note: >
+          Σ is required where asymmetry activation must be re-bound. Without Σ,
+          switch activation replaces coordination.
         typical_drift_markers:
           - "fragmentation"
           - "Φ substitutes for Σ"
           - "Α/Ω/Λ compensate for unresolved contradiction"
           - "split coherence"
+          - "asymmetry activation without re-coordination"
 
       - operator: "Ψ"
         name: "Self-Binding"
@@ -1591,18 +2983,21 @@ structural_tools:
           Binds integrated trajectories into identity-relevant commitments over time.
         reading_note: >
           Ψ can bind, suspend, or leak. Suspension is not removal from the PMS
-          chain; it is a domain-specific attribution condition.
+          chain; it is a domain-specific attribution condition. Ψ is also where
+          role-specific responsibility must be carried rather than externalized.
         typical_drift_markers:
           - "Ψ leak"
           - "possession or self-worth claims smuggled into limited frames"
           - "identity capture"
           - "local enactment becomes proof demand"
+          - "Ψ externalization"
+          - "responsibility-to-authority"
 
   structural_map:
-    paper_refs: ["Appendix D"]
+    paper_refs: ["Appendix D", "Ch. 4.6", "Ch. 4.7", "Ch. 18.4", "Ch. 21.7a"]
     note: >
       Compressed one-page orientation map for PMS-SEX. Orientation only; not
-      explanatory, normative, diagnostic, or instructional.
+      explanatory, normative, diagnostic, maturity-evaluating, or instructional.
 
     canonical_spine: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ"
 
@@ -1620,7 +3015,23 @@ structural_tools:
         operators: ["Ω", "Θ"]
         insight: >
           Once Α exists, Ω and Θ become consequence-effective. Interpretation
-          may be revised; Θ does not rewind.
+          may be revised; Θ does not rewind. In PMS-SEX_1.2 this axis is read
+          through sexual cost topology.
+        updated_handles:
+          - "sexual_cost_topology"
+          - "cost_topology_mismatch"
+          - "asymmetry_specific_responsibility"
+
+      eden_pfo_sexual_instantiation:
+        operators: ["Ω", "Θ", "Χ", "Σ", "Ψ"]
+        insight: >
+          Real or invoked Ω/Θ pressure may activate asymmetry. Viability depends
+          on whether activation is marked, bounded, and re-bound into Σ/Ψ, or
+          whether it becomes switch drift.
+        drift_routes:
+          - "asymmetry_switch_drift"
+          - "parity_to_exit"
+          - "responsibility_to_authority"
 
       narrative_handling:
         operator: "Φ"
@@ -1632,19 +3043,22 @@ structural_tools:
         operator: "Χ"
         insight: >
           Χ enables stop-capability and meta-position. Χ loss is the strongest
-          drift predictor in PMS-SEX.
+          drift predictor in PMS-SEX. It also prevents asymmetry activation from
+          becoming urgency, permanent exception, or authority.
 
       coherence_handling:
         operator: "Σ"
         insight: >
           Σ holds contradictions without coercion or compensation. If Σ fails,
-          substitutes take over: Α repetition, Φ inflation, Ω control, or Λ withdrawal.
+          substitutes take over: Α repetition, Φ inflation, Ω control, Λ
+          withdrawal, or unmarked asymmetry activation.
 
       identity_binding_zone:
         operator: "Ψ"
         warning: >
           Ψ leak indicates binding pressure inside frames that cannot carry
-          identity relevance.
+          identity relevance. Ψ externalization indicates that role-specific
+          self-binding has been displaced onto another role-position.
 
     highlighted_drift_corridors:
       primary: |
@@ -1666,6 +3080,12 @@ structural_tools:
          → outer-form denial
          → publicness confusion
          → delayed cost recognition
+      eden_pfo_sexual_drift_chain: |
+        pseudo-symmetry
+         → asymmetry-switch availability
+         → unmarked activation / parity-to-exit / responsibility-to-authority
+         → Σ/Ψ blockage
+         → reciprocity erosion
 
     minimal_viability_corridor: |
       □ explicit
@@ -1675,6 +3095,10 @@ structural_tools:
       + Λ tolerable
       + Ψ handled
       (+ Σ reachable)
+      + cost topology explicit
+      + asymmetry activation marked / bounded / re-bound
+      + no parity-to-exit
+      + no responsibility-to-authority
       = structurally governable configuration
 
     inner_outer_public_overlay: |
@@ -1690,14 +3114,14 @@ structural_tools:
       Where the map refers to instability, disturbance, deviation, entropy, or
       higher path-cost, these terms apply only to configuration dynamics. They
       describe stabilization burden under the Δ–Ψ grammar, not person status,
-      identity rank, orientation taxonomy, clinical disorder, moral failure, or
-      degraded dignity.
+      identity rank, orientation taxonomy, clinical disorder, moral failure,
+      maturity level, or degraded dignity.
 
 # -----------------------------------------------------------------------------
 # Analysis checklist
 # -----------------------------------------------------------------------------
 analysis_checklist:
-  paper_refs: ["Ch. 0.8", "Ch. 0.9", "Ch. 18", "Ch. 19", "Ch. 20", "Appendix D"]
+  paper_refs: ["Ch. 0.8", "Ch. 0.9", "Ch. 18", "Ch. 19", "Ch. 20", "Ch. 21", "Ch. 22", "Appendix D"]
   note: >
     Scene-bound structural checklist for PMS-SEX application. Criteria only;
     non-instructional, non-diagnostic. Use with validity_gate: Χ + reversibility + D.
@@ -1717,6 +3141,7 @@ analysis_checklist:
         - "If using a reduced signature, treat it as shorthand only."
         - "If Χ appears, remember Χ depends on Φ, Θ, and □."
         - "If Ψ appears, remember Ψ depends on Σ, Θ, and Χ."
+        - "Treat EDEN/PFO switch language as cross-domain reference, not as a PMS-SEX operator."
 
     - id: "S3"
       title: "Reduced operator signature"
@@ -1724,6 +3149,7 @@ analysis_checklist:
         - "Select the closest reduced_signatures entry."
         - "Record chapter reference for the selected signature."
         - "Do not infer a new dependency relation from a shorthand cluster."
+        - "If using sexual cost topology or switch drift handles, treat them as overlay/profile handles only."
 
     - id: "S4"
       title: "Inner / outer / public layer scan"
@@ -1739,6 +3165,8 @@ analysis_checklist:
         - "Identify Ω gradients: access, exposure, obligation, repair, exit margin, definitional power."
         - "Identify Θ trajectory: accumulation, irreversibility, repetition, sedimentation, exit realism."
         - "Track body remainder and publicness as consequence interfaces where relevant."
+        - "Map sexual cost topology: bodily, temporal, exposure-related, reputational, binding-related, exit-related, publicness-related, and responsibility-related costs."
+        - "Check whether cost topology is being treated as score, dignity ranking, or maturity ranking; if yes, stop."
 
     - id: "S6"
       title: "Distance and correction capacity"
@@ -1746,6 +3174,7 @@ analysis_checklist:
         - "Is Χ practically operative: stop-capability, hesitation, meta-comment, humor, re-reading?"
         - "Is Σ reachable without coercive simplification or narrative compensation?"
         - "Is outer-form awareness available without punishment?"
+        - "Can asymmetry activation be clarified without being recoded as accusation?"
 
     - id: "S7"
       title: "Drift marker scan"
@@ -1754,21 +3183,42 @@ analysis_checklist:
         - "Check primary and secondary drift chains from Ch. 18.4."
         - "If Ψ leak is suspected, verify whether binding or attribution entered a frame narrated as limited, local, or non-binding."
         - "If outer-form denial appears, check whether practice labels are being used to block structural reading."
+        - "If sexual drift triad appears, record it as profile only: asymmetry-switch drift, parity-to-exit, responsibility-to-authority."
 
     - id: "S8"
+      title: "Switch drift scan"
+      checks:
+        - "Is asymmetry activation present?"
+        - "Is activation marked?"
+        - "Is activation bounded under Θ?"
+        - "Is activation linked to real Ω/Θ burden?"
+        - "Is activation re-bound into Σ/Ψ?"
+        - "Is parity being used to coordinate reciprocity or to exit responsibility?"
+        - "Is responsibility being carried as Ψ/Χ self-binding or converted into authority?"
+
+    - id: "S9"
       title: "Viability minimums"
       checks:
         - "Apply Ch. 19.3 functional minimums."
         - "Apply Ch. 19.4 warning signals."
         - "Use the Appendix D viability corridor as compressed orientation only."
+        - "Check adult sexual reciprocity: unequal burdens need not be equal, but must not be externalized."
 
-    - id: "S9"
+    - id: "S10"
       title: "Path-cost guard"
       checks:
         - "If using disturbance, deviation, entropy, path-cost, or stabilization burden language, confirm it applies only to configuration dynamics."
-        - "Reject any conversion into person-ranking, diagnosis, orientation taxonomy, moral pathology, or lower dignity."
+        - "Reject any conversion into person-ranking, diagnosis, orientation taxonomy, moral pathology, maturity hierarchy, or lower dignity."
 
-    - id: "S10"
+    - id: "S11"
+      title: "MIP docking guard"
+      checks:
+        - "If adultness-relevant or maturity-relevant language appears, shift explicitly to MIP docking."
+        - "PMS-SEX records operator profiles only."
+        - "MIP may ask whether a role-position carries asymmetry-specific self-binding."
+        - "MIP must not convert that question into essence claim, dignity hierarchy, maturity hierarchy, or global person diagnosis."
+
+    - id: "S12"
       title: "Escalation guard"
       checks:
         - "If drift persists despite structural clarity, the Ch. 20 structural self-check adapter may activate."
@@ -1779,7 +3229,7 @@ analysis_checklist:
 # Example suite schema (repo vignettes; non-instructional)
 # -----------------------------------------------------------------------------
 example_suite_schema:
-  paper_refs: ["Ch. 0.7", "Ch. 0.8"]
+  paper_refs: ["Ch. 0.7", "Ch. 0.8", "Ch. 18", "Ch. 21", "Ch. 22"]
   note: >
     Examples are scene-bound operator-readable vignettes. They are
     non-instructional, generic, abstracted, and non-identifying.
@@ -1789,11 +3239,22 @@ example_suite_schema:
     - "Operator mapping (canonical spine + reduced signature if applicable)"
     - "Inner / outer / public layer distinction"
     - "Operator costs / cost layout (Ω under Θ; include body/publicness interfaces where relevant)"
+    - "Sexual cost topology (bodily, exposure, reputational, binding, exit, publicness, responsibility costs)"
+    - "Switch drift markers if relevant (asymmetry-switch drift, parity-to-exit, responsibility-to-authority)"
     - "Typical drift markers (max 2–3; non-moral, non-diagnostic)"
     - "Viability minimums or warning signals if applicable"
+    - "Adult sexual reciprocity readout if unequal burdens are central"
+    - "Asymmetry-specific responsibility readout if role-position self-binding is central"
+    - "MIP docking guard if maturity-relevant language is implicated"
     - "Path-cost guard if disturbance or entropy language appears"
     - "Validity gate reminder (Χ + reversibility + D)"
     - "Readable structural closure (2–5 sentences; non-instructional)"
+  optional_blocks:
+    - "Cost-topology mismatch"
+    - "EDEN/PFO sexual instantiation note"
+    - "Operator-profile-only note"
+    - "Publicness-as-overlay expansion"
+    - "Non-capture note"
   forbidden:
     - "how-to guidance"
     - "procedural sexual instruction"
@@ -1803,26 +3264,48 @@ example_suite_schema:
     - "motive attribution"
     - "person ranking"
     - "orientation taxonomy"
+    - "maturity ranking"
+    - "adultness verdict from PMS-SEX alone"
+    - "dignity hierarchy"
     - "moral verdicts"
 
 # -----------------------------------------------------------------------------
 # Final profile guard
 # -----------------------------------------------------------------------------
 final_profile_guard:
-  paper_refs: ["Ch. 24.3", "Ch. 24.4", "Appendix D.11"]
+  paper_refs: ["Ch. 24.3", "Ch. 24.4", "Appendix D.11", "Appendix B"]
   text: >
     PMS-SEX remains valid by staying within what it can responsibly say:
     not what persons are, but what configurations do over time. It reads sexual
     praxis as enacted configuration under frame, asymmetry, non-event,
     repetition, temporality, distance, integration, and self-binding. It permits
-    hard claims about cost, drift, outer legibility, and consequence without
-    converting those claims into person-status judgments.
+    hard claims about cost, drift, outer legibility, sexual cost topology, and
+    consequence without converting those claims into person-status judgments.
   compressed_rules:
     - "no consequence-free sex"
     - "no desire exempt from structural conditions"
     - "no outer-form erasure by internal labels"
     - "no publicness reduction"
     - "no path-cost as person-worth"
+    - "no sexual cost topology as score"
+    - "no asymmetry switch as authority"
+    - "no parity-to-exit as reciprocity"
+    - "no responsibility-to-authority as care"
+    - "no operator profile as direct adultness verdict"
     - "no critique through humiliation"
+    - "no maturity hierarchy"
+    - "no dignity hierarchy"
     - "no taxonomy where only configuration-language is warranted"
     - "no total capture where the scene exceeds the grammar"
+  adult_reciprocity_guard: >
+    Adult sexual reciprocity does not require equal burdens. It requires that
+    unequal burdens not be externalized through unmarked asymmetry activation,
+    parity-to-exit, or responsibility-to-authority.
+  mip_docking_guard: >
+    PMS-SEX may record operator profiles and drift markers. It may not directly
+    evaluate person-adultness. Adultness-relevant critique belongs to MIP docking
+    and must remain scene-bound, reversible, non-person-ranking, non-diagnostic,
+    and D-preserving.
+  final_marker: >
+    PMS-SEX remains valid by staying within what it can responsibly say: not what
+    persons are, but what configurations do over time.

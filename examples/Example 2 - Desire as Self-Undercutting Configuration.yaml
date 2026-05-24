@@ -1,62 +1,112 @@
 case:
-  schema_version: "PMS-SEX_CASE_1.1"
+  schema_version: "PMS-SEX_CASE_1.2"
   case_id: "PMS-SEX_EXAMPLE_02"
   title: "Desire as Self-Undercutting Configuration — Minimal Psychology Trigger"
   short_label: "Repetition Despite Known Θ Damage"
   legacy_label: "Desire as Self-Punishment"
-  profile_reference:
-    model: "PMS-SEX"
-    schema_version: "PMS-SEX_1.1"
-    depends_on:
-      model: "PMS"
-      schema_version: "PMS_1.3"
-  status: "example_vignette"
-  last_updated: "2026-04-26"
+  last_updated: "2026-05-24"
 
-  scope_discipline:
-    structural_mapping_only: true
-    non_diagnostic: true
-    non_clinical: true
-    non_prescriptive: true
-    non_moralizing: true
-    no_motive_attribution: true
-    no_person_ranking: true
-    no_orientation_taxonomy: true
-    no_how_to_guidance: true
-    validity_gate_required:
-      - "Χ"
-      - "reversibility"
-      - "D"
-    note: >
-      This case maps a configuration, not a person. Minimal psychology is used
-      only as a PMS-SEX structural self-check signal under Ch. 20 conditions.
-      It does not explain desire, diagnose motives, classify identity, or assign
-      moral worth.
+  status:
+    case_type: "example_suite_vignette"
+    role: "repo_vignette"
+    function: "scene_bound_operator_reading"
+    instructionality: "non_instructional"
+    diagnostic_status: "non_diagnostic"
+    prescriptive_status: "non_prescriptive"
+    moral_status: "non_moralizing"
+    person_classification: false
+
+  profile_dependency:
+    model: "PMS-SEX"
+    schema_version: "PMS-SEX_1.2"
+    base_model: "PMS"
+    base_schema_version: "PMS_1.3"
+    conformity_status: "conformant_application_case"
+    case_role: "example_suite_vignette"
+    application_status: "scene_bound_structural_mapping_only"
 
   paper_refs:
     primary:
+      - "Ch. 0.7: EDEN/PFO asymmetry switch reference"
+      - "Ch. 0.8: Sexual Cost Topology"
+      - "Ch. 0.9: Validity gate"
+      - "Ch. 17: Alternative explanations and methodological discipline"
       - "Ch. 18.3: Dysfunction markers"
       - "Ch. 19.3: Functional minimum conditions"
       - "Ch. 19.4: Warning signals"
       - "Ch. 20: Minimal Psychology as Structural Self-Check Adapter"
       - "Ch. 21: Dignity-in-Practice module"
+      - "Ch. 22: MIP docking interface"
       - "Appendix D.4: Highlighted drift corridors"
       - "Appendix D.5: Minimal viability corridor"
       - "Appendix D.8: Path-cost / disturbance guard"
     secondary:
-      - "Ch. 0.9: Validity gate"
       - "Ch. 14: Modulators"
       - "Ch. 15: Deviance as consequence structure"
       - "Ch. 23: Limits and scope discipline"
       - "Ch. 24.3–24.4: Final guard"
 
+  scope_discipline:
+    summary: >
+      This case maps a configuration, not a person. Minimal psychology is used
+      only as a PMS-SEX structural self-check signal under Ch. 20 conditions. It
+      does not explain desire, diagnose motives, classify identity, assign moral
+      worth, evaluate adultness, or rank dignity.
+    claims:
+      - "scene-bound"
+      - "configuration-specific"
+      - "revisable"
+      - "non-diagnostic"
+      - "non-clinical"
+      - "non-prescriptive"
+      - "non-moralizing"
+      - "non-instructional"
+      - "operator-profile-only where maturity questions would require MIP docking"
+    forbidden_conversions:
+      - "motive attribution"
+      - "person ranking"
+      - "maturity ranking"
+      - "adultness verdict from PMS-SEX"
+      - "dignity hierarchy"
+      - "orientation taxonomy"
+      - "how-to guidance"
+      - "asymmetry switch as authority"
+      - "cost topology as score"
+      - "minimal psychology as explanation"
+    validity_gate:
+      required: ["Χ", "reversibility", "D"]
+      applies_to: "application_only"
+    additional_1_2_guards:
+      - "sexual_cost_topology_not_score"
+      - "operator_profile_only"
+      - "mip_boundary"
+      - "no_asymmetry_switch_as_authority"
+
+  minimal_vignette:
+    scene_bound: true
+    non_identifying: true
+    non_instructional: true
+    scene_id: "CASE_02_DESIRE_SELF_UNDERCUTTING"
+    scene_type: "repeated sexual configuration under known Θ damage"
+    abstraction_level: "generic_non_identifying"
+    text: >
+      A repeated sexual configuration continues over time even after one role
+      explicitly recognizes that the practice produces cumulative depletion,
+      after-cost, exposure-related burden, or dignity-relevant undercutting. The
+      frame was initially plural, with several viable ways to coordinate desire,
+      but gradually narrows around one dominant route. Stopping, pausing, or
+      choosing alternatives remains formally possible, yet becomes practically
+      harder than repetition. PMS-SEX reads this as a configuration in which
+      desire-language has become structurally overburdened by regulation,
+      relief, self-relation, and cost carriage.
+
   repo_usefulness:
     why_this_case_is_useful: >
       This vignette demonstrates the narrow PMS-SEX condition under which
       minimal psychology may activate: drift persists despite structural
-      clarity, known Θ damage, D-in-Practice undercutting, Χ decline, and frame
-      narrowing. The case is useful because it distinguishes structural warning
-      from psychological explanation.
+      clarity, known Θ damage, D-in-Practice undercutting, Χ decline, frame
+      narrowing, and visible cost-topology mismatch. The case is useful because
+      it distinguishes structural warning from psychological explanation.
     structural_focus:
       - "Α fixation under repeated enactment"
       - "Ω cost concentration"
@@ -64,17 +114,21 @@ case:
       - "Χ erosion despite explicit knowledge"
       - "□ narrowing toward mono-frame"
       - "Ψ functional capture without identity verdict"
+      - "sexual cost topology becoming non-governable under repetition"
       - "minimal psychology as self-check alarm only"
+      - "operator-profile-only discipline where maturity-relevant questions would require MIP docking"
 
   scene_packet:
     minimal_vignette: >
       A repeated sexual configuration continues over time even after one role
       explicitly recognizes that the practice produces cumulative depletion,
-      after-cost, or dignity-relevant undercutting. The frame was initially
-      plural, with several viable ways to coordinate desire, but gradually
-      narrows around one dominant route. Stopping, pausing, or choosing
-      alternatives remains formally possible, yet becomes practically harder
-      than repetition.
+      after-cost, exposure-related burden, or dignity-relevant undercutting. The
+      frame was initially plural, with several viable ways to coordinate desire,
+      but gradually narrows around one dominant route. Stopping, pausing, or
+      choosing alternatives remains formally possible, yet becomes practically
+      harder than repetition. PMS-SEX reads this as a configuration in which
+      desire-language has become structurally overburdened by regulation, relief,
+      self-relation, and cost carriage.
     scene_id:
       temporality_Θ: >
         Longitudinal repetition of the same configuration with visible cumulative
@@ -89,7 +143,8 @@ case:
         R1:
           description: >
             Primary carrier of bodily, emotional, reputational, dignity-relevant,
-            or binding-related after-costs.
+            binding-related, exit-related, or self-attribution-related
+            after-costs.
           structural_position: "higher downstream exposure under Θ"
         R2:
           description: >
@@ -108,19 +163,25 @@ case:
       - "withdrawal that reopens alternatives rather than intensifying pressure"
       - "non-occurrence that does not become self-devaluation, punishment, or proof of failure"
       - "hesitation that functions as Χ activation rather than as escalation trigger"
+      - "cost-topology review after repeated bodily, exposure-related, binding-related, or exit-related accumulation"
     observed_realizations_neutral:
       - "explicit acknowledgment that the pattern is damaging or depleting"
       - "continued repetition without durable frame change"
       - "shrinking set of alternative practices or exits"
       - "rising practical cost of stopping despite formal availability"
       - "desire-language increasingly used to settle what the frame can be"
+      - "known Θ damage no longer reliably activates Χ or Σ"
 
   operator_mapping:
     canonical_spine:
       raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ"
       note: >
         Canonical PMS v1.3 spine retained. The case foregrounds Α/Ω/Θ/Χ/□/Ψ
-        interactions but does not alter operator order or dependencies.
+        interactions but does not alter operator order or dependencies. Sexual
+        cost topology, asymmetry switch, parity-to-exit,
+        responsibility-to-authority, adult sexual reciprocity, and
+        asymmetry-specific responsibility are PMS-SEX overlay handles, not PMS
+        operators.
     closest_reduced_signatures:
       - id: "MF_18_2"
         label: "18.2 Minimal Formula — Dysfunctional Expressions and Destructive Dynamics"
@@ -133,7 +194,8 @@ case:
         raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ; dominant interaction: Ω → Θ"
         reason: >
           The case tests viability failure under Ω nameability, Θ realism, Χ
-          operability, Ψ handling, and Λ tolerance.
+          operability, Ψ handling, Λ tolerance, and explicit sexual cost
+          topology.
       - id: "MF_14_3"
         label: "14.3 Minimal Formula — Modulators"
         raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ"
@@ -146,20 +208,45 @@ case:
         reason: >
           Ψ becomes functionally relevant when the repeated route starts to carry
           self-attribution, even if explicit identity-binding is denied.
+      - id: "sexual_cost_topology_signature_ch4_6"
+        label: "Sexual Cost Topology — Ω/Θ cost layout"
+        raw: "Ω/Θ cost topology across bodily, exposure, reputational, binding, exit, publicness, and responsibility channels"
+        reason: >
+          The case is primarily a mismatch between the internal desire frame and
+          accumulated costs over time.
+      - id: "minimal_psychology_adapter_signature_ch20"
+        label: "Minimal Psychology Adapter — structural self-check only"
+        raw: "drift markers + failed viability + repeated voluntary configuration + known Θ damage + D stress + Χ decline → alarm output only"
+        reason: >
+          Minimal psychology is allowed here only as a structural self-check
+          alarm, not as desire explanation, motive theory, identity story, or
+          clinical interpretation.
+      - id: "adult_sexual_reciprocity_signature"
+        label: "Adult Sexual Reciprocity — non-externalization of unequal burdens"
+        raw: "unequal Ω/Θ burdens + explicit cost topology + Χ restraint + Σ/Ψ re-binding → non-externalization"
+        reason: >
+          The case tests whether the role-positions can carry their
+          asymmetry-specific self-binding without converting desire, harm, or
+          responsibility into person-ranking or authority.
     dependency_hygiene:
       - "Χ presupposes Φ, Θ, and □."
       - "Σ presupposes Χ and Φ."
       - "Ψ presupposes Σ, Θ, and Χ."
       - "Mono-frame language does not redefine □; it names narrowing of available frame alternatives."
       - "Functional Ψ capture does not create a new operator and does not authorize identity verdicts."
+      - "Sexual cost topology is an overlay handle, not a PMS operator."
+      - "Minimal psychology output is alarm-only and may not become explanation, diagnosis, or identity verdict."
+      - "Any maturity-relevant evaluation belongs to MIP docking, not PMS-SEX itself."
 
   drift_trace:
-    raw: "□ plural → Α fixation → Ω cost concentration → Θ damage accumulation → Χ erosion → □ mono-frame → Ψ functional capture"
+    raw: "□ plural → Α fixation → Ω cost concentration → Θ damage accumulation → Χ erosion → □ mono-frame → Ψ functional capture → minimal psychology alarm"
     formal_translation: >
       A plural frame narrows as one route becomes attractor-stabilized. Costs
       concentrate asymmetrically and accumulate temporally. Distance weakens,
       alternatives lose legibility, and the route begins to carry
       self-attribution without explicit self-binding being responsibly handled.
+      Minimal psychology may activate only as a structural self-check alarm where
+      drift persists despite known Θ damage and failing viability conditions.
     transitions:
       - operator: "□"
         label: "Frame pluralization to narrowing"
@@ -176,7 +263,8 @@ case:
         label: "Cost concentration"
         reading: >
           After-costs concentrate on one role through exposure, recovery burden,
-          degradation-nearness, reputational vulnerability, or binding residue.
+          degradation-nearness, reputational vulnerability, binding residue, or
+          exit friction.
       - operator: "Θ"
         label: "Damage accumulation"
         reading: >
@@ -200,16 +288,22 @@ case:
           begins to matter for self-attribution: what one does, deserves, can
           get, or can imagine. This remains a configuration claim, not a person
           claim.
+      - operator: "minimal_psychology_adapter"
+        label: "Structural self-check alarm"
+        reading: >
+          Minimal psychology may ask what structural role desire-language is
+          playing in this configuration. It may not explain desire, diagnose
+          motive, classify identity, or rank maturity.
 
   inner_outer_public_layer_distinction:
     internal_framing:
       description: >
         Internally, the repeated practice may be narrated as desire, relief,
-        authenticity, inevitability, intensity, familiarity, or the only route
-        that feels real.
+        authenticity, inevitability, intensity, familiarity, self-knowledge, or
+        the only route that feels real.
       guard: >
         Internal framing may be real but does not settle the configuration’s
-        outer form or cost distribution.
+        outer form, cost topology, or accumulated Θ damage.
     outer_legibility:
       description: >
         Externally, the configuration is readable as repeated enactment despite
@@ -217,7 +311,7 @@ case:
         concentrated after-costs.
       guard: >
         Naming this outer legibility does not diagnose the person, condemn the
-        desire, or rank the practice.
+        desire, rank the practice, or generate a maturity verdict.
     publicness_overlay:
       description: >
         Publicness is not required for the drift to exist. If documentation,
@@ -243,7 +337,8 @@ case:
       bodily:
         description: >
           Exhaustion, somatic stress, dissociation-like withdrawal, saturation,
-          or delayed recovery may function as body remainder.
+          delayed recovery, or accumulated body remainder may function as
+          consequence interfaces.
         guard: >
           Body remainder is a consequence interface, not a biological taxonomy
           or person-ranking device.
@@ -251,11 +346,29 @@ case:
         description: >
           Each repetition increases path dependence, reduces low-cost exit, and
           makes alternatives less practicable.
+      exposure:
+        description: >
+          The configuration may create vulnerability to being seen, remembered,
+          narrated, or fixed by the repeated route, even without publicness.
+      reputational:
+        description: >
+          Where the scene becomes socially visible or narratively shareable,
+          repetition may sediment standing, reputation, or interpretation costs.
+      binding_related:
+        description: >
+          The repeated route may begin to carry self-attribution, deservedness,
+          identity proof, loyalty, or relationship meaning without explicit and
+          reversible Ψ handling.
+      exit_related:
+        description: >
+          Stopping remains formally possible but becomes practically more costly
+          because the attractor has become the dominant route for relief,
+          self-relation, or stabilization.
       dignity_in_practice:
         description: >
           Repeated enactments may undercut D-in-Practice when degradation-near,
           self-devaluing, or humiliation-form scripts recur without
-          play-reversibility, containment, or recovery.
+          play-reversibility, containment, recovery, or operative Χ.
         guard: >
           This does not mean the person has lower dignity. It means the
           configuration may fail to preserve D as an enactment constraint.
@@ -267,6 +380,11 @@ case:
         description: >
           R1 carries more after-cost, while R2 remains adjacent but less exposed
           to downstream accumulation.
+      responsibility_related:
+        description: >
+          The configuration may require asymmetry-specific self-binding around
+          repetition, cost naming, slowing, distance activation, and refusal to
+          convert responsibility into authority.
       publicness_optional:
         description: >
           Documentation, reputation, or disclosure may sedimentize costs if
@@ -282,23 +400,187 @@ case:
       reopening, distance activation, or viable diversification. The attractor
       becomes a regulator that the frame can no longer easily interrupt.
 
-  rational_response_envelope:
-    note: >
-      These responses are structurally intelligible within the configuration.
-      They are not called healthy, virtuous, pathological, chosen freely, or
-      morally preferred.
-    responses:
-      - response: "continuing the practice because it reliably resolves immediate pressure"
-        operator_reading: "Α stabilizes local relief despite Θ accumulation."
-      - response: "avoiding Χ because stopping intensifies discomfort, emptiness, shame, or destabilization"
-        operator_reading: "Χ becomes practically costly; distance is no longer easily protective."
-      - response: "interpreting alternatives as unreal, unavailable, or not really me"
-        operator_reading: "□ narrows under Α fixation and Ψ functional capture."
-      - response: "treating known harm as insufficient reason to stop"
-        operator_reading: "Θ damage has become part of the trajectory rather than a corrective signal."
-    closure: >
-      These responses follow Α + Ω under Θ. They do not imply lack of
-      intelligence, agency, morality, or worth.
+  sexual_cost_topology:
+    definition: >
+      Scene-bound distribution of bodily, temporal, exposure-related,
+      reputational, binding-related, exit-related, publicness-related, and
+      responsibility-related costs across sexual role-positions. Not a score,
+      not a person measure, not a maturity measure, and not a dignity ranking.
+    topology_status: "highly_concentrated_and_self_undercutting"
+    channels:
+      bodily_costs:
+        R1: "higher cumulative depletion, saturation, recovery burden, or body remainder"
+        R2: "lower downstream accumulation or less direct exposure in the vignette"
+      temporal_costs:
+        R1: "high path-dependence and reduced low-cost exit over repetition"
+        R2: "lower temporal carryover unless relational or publicness layers enter"
+      exposure_costs:
+        R1: "higher exposure to being fixed by the repeated route or its consequences"
+        R2: "lower exposure in the base vignette"
+      reputational_costs:
+        R1: "context-dependent; may rise where publicness, disclosure, or audience uptake enters"
+        R2: "context-dependent; lower in the base vignette"
+      binding_costs:
+        R1: "risk that repeated enactment begins to carry self-worth, deservedness, or identity proof"
+        R2: "risk of under-reading the binding residue if less exposed to downstream costs"
+      exit_costs:
+        R1: "formal exit remains possible but practical exit cost rises as Α fixation and Ψ capture intensify"
+        R2: "lower exit cost in the base vignette unless the relation becomes binding-relevant"
+      publicness_costs:
+        R1: "overlay-dependent; intensified by documentation, reputation, or circulation"
+        R2: "overlay-dependent"
+      responsibility_costs:
+        R1: "must not let known damage become only after-the-fact pressure; must preserve Χ and specificity where possible"
+        R2: "must not externalize R1's cost concentration by treating repetition as proof of governability"
+    cost_topology_mismatch:
+      present: true
+      expression: >
+        The internal frame of desire, relief, or authenticity no longer matches
+        the distribution of accumulated bodily, temporal, binding, exit, and
+        dignity-relevant costs.
+      guard: >
+        Mismatch is configuration-language. It does not imply pathology,
+        defective desire, lower dignity, or person-level maturity ranking.
+
+  switch_drift_markers:
+    status: "relevant_as_scan_not_primary_claim"
+    eden_pfo_reference:
+      status: "cross_domain_reference_only"
+      note: >
+        PMS–EDEN names the regime-level asymmetry switch. PMS-SEX reads only the
+        sexual instantiation where real or invoked Ω/Θ pressure may activate
+        asymmetry. This adds no PMS operator and creates no person label.
+    asymmetry_switch_drift:
+      status: "possible_but_not_primary"
+      expression: >
+        Accumulated harm, depletion, or dignity-relevant cost may be invoked to
+        interrupt or reshape the frame. This is structurally viable only where
+        the activation is marked, bounded, linked to real Ω/Θ burden, and
+        re-bound into Σ/Ψ. It drifts where accumulated cost becomes an unmarked,
+        repeatable exception lever without re-binding.
+      guard: >
+        The drift is not naming harm or activating asymmetry as such. The drift
+        is unmarked, repeatable activation without re-binding.
+    parity_to_exit:
+      status: "possible"
+      expression: >
+        Desire/autonomy language, formal voluntariness, or the claim that the
+        route is self-chosen may be used to deny the additional responsibility
+        required by known unequal cost topology.
+      guard: >
+        Autonomy-language remains valid only where it does not erase cost
+        topology, Θ accumulation, Χ erosion, or Ψ capture.
+    responsibility_to_authority:
+      status: "possible"
+      expression: >
+        Responsibility for protecting, stopping, interpreting, or rescuing the
+        configuration may become authority over the frame, over R1's self-reading,
+        or over what must count as healthy, authentic, damaged, or mature.
+      guard: >
+        Responsibility under asymmetry requires stronger self-binding, not
+        greater command.
+    re_binding_test:
+      required: true
+      test: >
+        Any asymmetry activation must be marked, temporally bounded, connected to
+        real Ω/Θ burden, and re-bound into Σ/Ψ with Χ and D intact. Parity must
+        not become exit; responsibility must not become authority.
+
+  adult_sexual_reciprocity_readout:
+    principle: >
+      Adult sexual reciprocity does not require equal burdens. It requires that
+      unequal burdens are not externalized.
+    case_application: >
+      In this case, reciprocity is structurally endangered when R1's accumulated
+      cost remains internalized as private damage while the configuration
+      continues to run as if desire alone settled governability. Reciprocity
+      would require cost topology to become explicit, Χ to become operative, and
+      Σ/Ψ to carry the difference between desire, relief, harm, self-relation,
+      and repetition. R2, where present as adjacent role-position, must not use
+      R1's continued participation as proof that no cost topology exists. R1 must
+      not convert accumulated cost into unmarked standing leverage. Both
+      positions remain role positions, not person types.
+    failure_modes:
+      - id: "desire_as_cost_exit"
+        description: "Desire-language exits cost-topology review."
+      - id: "harm_as_unmarked_lever"
+        description: "Accumulated harm is activated without marking, bounding, and re-binding."
+      - id: "protection_as_frame_authority"
+        description: "Care, safety, rescue, or interpretation becomes authority over the frame."
+      - id: "self_attribution_as_binding_capture"
+        description: "Repeated enactment begins to define what R1 can imagine, deserve, or be."
+    guard: >
+      This is not a hierarchy of adultness. It is a scene-bound responsibility
+      reading under Ω/Θ.
+
+  asymmetry_specific_responsibility_readout:
+    definition: >
+      Each role-position must carry the self-binding required by its own cost,
+      power, exposure, exit, and externalization profile.
+    R1:
+      likely_self_binding_tasks:
+        - "keeping known Θ damage structurally readable rather than folded back into the script"
+        - "activating Χ before accumulated cost becomes only after-the-fact pressure"
+        - "naming cost topology without converting it into person essence or self-condemnation"
+        - "distinguishing desire-language from governability"
+        - "preventing harm activation from becoming an unmarked standing lever"
+      drift_risk: "asymmetry-switch drift if accumulated harm becomes unmarked and repeatable pressure without re-binding"
+    R2:
+      likely_self_binding_tasks:
+        - "not treating R1's repetition as proof that no cost topology exists"
+        - "not using formal voluntariness or autonomy-language to exit responsibility"
+        - "maintaining Χ and Σ where R1's stop-capability is visibly weakening"
+        - "not converting protection, care, or rescue responsibility into authority"
+      drift_risk: "parity-to-exit or responsibility-to-authority"
+    shared:
+      likely_self_binding_tasks:
+        - "cost topology must remain speakable"
+        - "known Θ damage must not be narratively reset"
+        - "desire-language must remain accountable to outer-form readability"
+        - "neither parity nor asymmetry may be used to bypass Σ/Ψ"
+        - "minimal psychology must remain alarm-only"
+
+  minimal_psychology_trigger:
+    source: "Ch. 20"
+    activation_status: "trigger_conditions_met_in_vignette"
+    activation_basis:
+      - "drift markers from Ch. 18 are present"
+      - "minimal viability conditions from Ch. 19 are no longer restoring correction"
+      - "the configuration is carried voluntarily and repeatedly"
+      - "known Θ damage continues without durable interruption"
+      - "D-in-Practice is repeatedly undercut in enactment"
+      - "□ narrows toward a mono-frame"
+      - "Χ exists formally but is not enacted in time"
+      - "sexual cost topology is concentrated and no longer corrected by desire-language"
+    permitted_structural_question:
+      preferred_form: "What structural role is this desire playing in this configuration?"
+      colloquial_form_allowed_only_if_translated: "Why do I really desire X?"
+      constraints:
+        - "hypothetical, not confessional"
+        - "targets pattern continuity, not inner truth"
+        - "tests whether desire-language functions as a drift carrier"
+        - "returns attention to enacted form, cost layout, Χ, Θ, and D"
+        - "may not become identity story, trauma explanation, motive verdict, or maturity verdict"
+    permitted_warning_hypothesis:
+      text: >
+        In this configuration, desire-language may be functioning as a
+        drift-maintaining or self-undercutting handling mode rather than as play,
+        exploration, negotiated intensity, or bounded practice.
+      strict_limits:
+        - "not an explanation of desire"
+        - "not a claim about inner motive"
+        - "not a diagnosis"
+        - "not a person-type"
+        - "not an identity verdict"
+        - "not a moral judgement"
+        - "not an adultness verdict"
+    allowed_alarm_outputs:
+      - "In this configuration, drift persistence is present."
+      - "The configuration is no longer correcting itself structurally."
+      - "Distance (Χ), frame clarity (□), and Θ realism require reactivation."
+      - "Internal framing is no longer sufficient to settle the enacted structure."
+      - "Outer legibility and cost distribution require re-reading without person-ranking."
+      - "PMS-SEX records the operator profile only; any maturity-relevant evaluation belongs to MIP docking."
 
   drift_markers:
     selected_core_markers:
@@ -332,17 +614,27 @@ case:
           - "stopping becomes practically unavailable"
           - "hesitation is read as betrayal of authenticity"
           - "outer-form awareness becomes inaccessible"
-    optional_secondary_marker:
-      id: "outer_form_denial"
-      source: "Ch. 18.3(8)"
-      label: "Outer-form denial"
-      configuration_statement: >
-        Internal desire-language may block analysis of the enacted form, making
-        the configuration unable to read itself structurally.
-      typical_indicators:
-        - "I want this, therefore it is structurally settled"
-        - "practice labels or desire claims block cost-layout analysis"
-        - "known damage is folded back into the script"
+    optional_secondary_markers:
+      - id: "outer_form_denial"
+        source: "Ch. 18.3(8)"
+        label: "Outer-form denial"
+        configuration_statement: >
+          Internal desire-language may block analysis of the enacted form, making
+          the configuration unable to read itself structurally.
+        typical_indicators:
+          - "I want this, therefore it is structurally settled"
+          - "practice labels or desire claims block cost-layout analysis"
+          - "known damage is folded back into the script"
+      - id: "cost_topology_mismatch"
+        label: "Cost-topology mismatch"
+        configuration_statement: >
+          Internal desire framing no longer matches bodily, temporal,
+          binding-related, exit-related, and dignity-relevant cost distribution.
+      - id: "psi_functional_capture"
+        label: "Ψ functional capture"
+        configuration_statement: >
+          The repeated route begins to carry self-attribution, deservedness, or
+          identity relevance without explicit and reversible Ψ handling.
     drift_corridors:
       primary:
         source: "Appendix D.4"
@@ -370,6 +662,10 @@ case:
         + Λ tolerable
         + Ψ handled
         (+ Σ reachable)
+        + cost topology explicit
+        + asymmetry activation marked / bounded / re-bound where present
+        + no parity-to-exit
+        + no responsibility-to-authority
         = structurally governable configuration
     conditions:
       explicit_omega_recognition:
@@ -377,6 +673,11 @@ case:
         reading: >
           Cost concentration is known but not sufficiently regulable. Ω may be
           acknowledged as harm yet not converted into frame adjustment.
+      explicit_sexual_cost_topology:
+        status: "failing_or_fragile"
+        reading: >
+          Bodily, temporal, binding-related, exit-related, and D-relevant costs
+          are visible but not yet carried by the frame as topology.
       theta_awareness:
         status: "known_but_not_corrective"
         reading: >
@@ -409,10 +710,26 @@ case:
           Publicness is not central unless documentation, reputation, or
           circulation enters. If it does, it must be treated as Ω/Θ
           intensification, not origin.
+      marked_bounded_rebound_asymmetry_activation:
+        status: "required_if_activation_occurs"
+        reading: >
+          Harm or depletion may need to be named asymmetrically. It drifts if
+          this activation becomes unmarked, repeatable, and not re-bound into
+          Σ/Ψ.
+      no_parity_to_exit:
+        status: "at_risk"
+        reading: >
+          Autonomy or desire-language can become a way to deny additional
+          responsibility for known cost topology.
+      no_responsibility_to_authority:
+        status: "at_risk"
+        reading: >
+          Protection, rescue, interpretation, or care can become authority over
+          the frame or the role-position.
     conclusion: >
       The configuration is drift-prepared because Θ damage is known but not
-      corrective, Χ is weak, Ψ is at risk of covert capture, and the frame
-      narrows around an attractor.
+      corrective, Χ is weak, Ψ is at risk of covert capture, cost topology is
+      concentrated, and the frame narrows around an attractor.
 
   warning_signals:
     source: "Ch. 19.4"
@@ -445,50 +762,21 @@ case:
           - "internal desire-language blocks structural reading"
           - "visible action-form remains unread"
           - "known harm is reabsorbed as part of the route"
-
-  minimal_psychology_trigger:
-    source: "Ch. 20"
-    activation_status: "trigger_conditions_met_in_vignette"
-    activation_basis:
-      - "drift markers from Ch. 18 are present"
-      - "minimal viability conditions from Ch. 19 are no longer restoring correction"
-      - "the configuration is carried voluntarily and repeatedly"
-      - "known Θ damage continues without durable interruption"
-      - "D-in-Practice is repeatedly undercut in enactment"
-      - "□ narrows toward a mono-frame"
-      - "Χ exists formally but is not enacted in time"
-    permitted_structural_question:
-      preferred_form: "What structural role is this desire playing in this configuration?"
-      colloquial_form_allowed_only_if_translated: "Why do I really desire X?"
-      constraints:
-        - "hypothetical, not confessional"
-        - "targets pattern continuity, not inner truth"
-        - "tests whether desire-language functions as a drift carrier"
-        - "returns attention to enacted form, cost layout, Χ, and Θ"
-        - "may not become identity story, trauma explanation, or motive verdict"
-    permitted_warning_hypothesis:
-      text: >
-        In this configuration, desire-language may be functioning as a
-        drift-maintaining or self-undercutting handling mode rather than as play,
-        exploration, negotiated intensity, or bounded practice.
-      strict_limits:
-        - "not an explanation of desire"
-        - "not a claim about inner motive"
-        - "not a diagnosis"
-        - "not a person-type"
-        - "not an identity verdict"
-        - "not a moral judgement"
-    allowed_alarm_outputs:
-      - "In this configuration, drift persistence is present."
-      - "The configuration is no longer correcting itself structurally."
-      - "Distance (Χ), frame clarity (□), and Θ realism require reactivation."
-      - "Internal framing is no longer sufficient to settle the enacted structure."
-      - "Outer legibility and cost distribution require re-reading without person-ranking."
+      - id: "cost_topology_mismatch"
+        label: "Cost-topology mismatch"
+        structural_note: "The internal frame no longer carries the external cost layout."
+        indicators:
+          - "desire-language remains stable while body remainder accumulates"
+          - "exit fiction replaces exit realism"
+          - "D-in-Practice stress persists despite explicit knowledge"
 
   dignity_in_practice_stress_test:
     source: "Ch. 21"
     canonical_pms_D_formula: ["Ψ", "Χ", "Ω"]
-    pms_sex_application_formula: "explicit Ω + operative Χ + no covert Ψ demand under Θ, with outer-form readability preserved"
+    pms_sex_application_formula: >
+      explicit Ω + operative Χ + no covert Ψ demand under Θ + marked/bounded
+      asymmetry activation + no parity-to-exit + no responsibility-to-authority,
+      with outer-form readability preserved
     risk_point: >
       Degradation-near or self-devaluing scripts repeat without sufficient
       reversibility, containment, recovery, or distance activation.
@@ -503,7 +791,65 @@ case:
       - "D applies in enactment, not as status."
       - "This does not lower dignity or worth."
       - "The case critiques configuration handling, not the person."
-      - "D must not be used for shaming, humiliation, diagnosis, or identity ranking."
+      - "D must not be used for shaming, humiliation, diagnosis, identity ranking, or maturity ranking."
+
+  mip_docking_guard:
+    applies_if: "reader infers maturity, adultness, agency-capacity, or role-capacity evaluation"
+    pms_sex_records_only:
+      - "Α fixation"
+      - "known Θ damage"
+      - "weak_or_defensive_chi"
+      - "missing_sigma_coordination"
+      - "psi_functional_capture"
+      - "psi_externalization"
+      - "cost_topology_mismatch"
+      - "asymmetry_switch_drift_risk"
+      - "parity_to_exit_risk"
+      - "responsibility_to_authority_risk"
+    not_allowed_in_pms_sex:
+      - "maturity_verdict"
+      - "adultness_verdict"
+      - "person_label"
+      - "moral_failure_claim"
+      - "dignity_hierarchy"
+      - "essence_claim"
+      - "desire_pathology_claim"
+    proper_mip_question_if_docked: >
+      In this scene, under this cost topology, did the role-position carry the
+      self-binding made necessary by its own power, exposure, exit capacity,
+      cost concentration, and externalization profile?
+    guard: >
+      Any maturity-relevant evaluation belongs to MIP docking and must remain
+      scene-bound, reversible, non-person-ranking, non-diagnostic, and
+      D-preserving. PMS-SEX itself records operator profiles only.
+
+  operator_profile_only_note:
+    text: >
+      This case may record Α fixation, Θ damage accumulation, Χ loss, outer-form
+      denial, Ψ functional capture, D-in-Practice stress, cost-topology mismatch,
+      and minimal-psychology trigger conditions. None of these profiles is a
+      person diagnosis, person-adultness claim, moral verdict, or dignity
+      ranking.
+
+  rational_response_envelope:
+    note: >
+      These responses are structurally intelligible within the configuration.
+      They are not called healthy, virtuous, pathological, chosen freely, or
+      morally preferred.
+    responses:
+      - response: "continuing the practice because it reliably resolves immediate pressure"
+        operator_reading: "Α stabilizes local relief despite Θ accumulation."
+      - response: "avoiding Χ because stopping intensifies discomfort, emptiness, shame, or destabilization"
+        operator_reading: "Χ becomes practically costly; distance is no longer easily protective."
+      - response: "interpreting alternatives as unreal, unavailable, or not really me"
+        operator_reading: "□ narrows under Α fixation and Ψ functional capture."
+      - response: "treating known harm as insufficient reason to stop"
+        operator_reading: "Θ damage has become part of the trajectory rather than a corrective signal."
+      - response: "using desire-language to settle governability"
+        operator_reading: "Internal framing blocks outer-form cost topology; Φ may substitute for Σ."
+    closure: >
+      These responses follow Α + Ω under Θ. They do not imply lack of
+      intelligence, agency, morality, maturity, or worth.
 
   path_cost_and_disturbance_guard:
     source: "Appendix D.8"
@@ -515,10 +861,13 @@ case:
       - "Χ loss"
       - "failed or overloaded Σ"
       - "Ψ leak or functional capture"
+      - "cost-topology mismatch"
+      - "asymmetry-specific self-binding burden"
     case_application: >
       This configuration has rising path-cost because the frame must carry
       repetition, known damage, narrowing alternatives, self-attribution risk,
-      and weakening distance without sufficient integration.
+      weakening distance, and D-in-Practice stress without sufficient
+      integration.
     forbidden_conversions:
       - "person-level pathology"
       - "sexual identity taxonomy"
@@ -528,10 +877,13 @@ case:
       - "lower dignity"
       - "degraded worth"
       - "humiliation as critique"
+      - "maturity ranking"
+      - "adultness verdict from PMS-SEX"
+      - "cost topology as score"
     final_guard: >
       Path-cost language is valid only as configuration-language. If converted
-      into person-language, diagnosis, rank, taxonomy, or humiliation, the use
-      leaves PMS-SEX.
+      into person-language, diagnosis, rank, taxonomy, humiliation, maturity
+      ranking, or dignity hierarchy, the use leaves PMS-SEX.
 
   reader_guard:
     this_example_does_not_claim:
@@ -541,6 +893,9 @@ case:
       - "that anyone is responsible for wanting harm"
       - "that self-punishment is an inner motive explanation"
       - "that the case authorizes intervention, therapy, legal judgment, or public accusation"
+      - "that PMS-SEX can evaluate adultness directly"
+      - "that sexual cost topology ranks persons"
+      - "that D-in-Practice stress lowers dignity"
     this_example_does_claim:
       - "that repetition under known harm is a drift marker"
       - "that desire can become structurally overburdened by regulation, relief, and self-relation"
@@ -548,6 +903,8 @@ case:
       - "that Θ damage can accumulate even when harm is explicitly known"
       - "that minimal psychology is justified only as a structural self-check alarm under Ch. 20 conditions"
       - "that D-in-Practice can be undercut by configuration dynamics without assigning lower dignity or blame"
+      - "that adult sexual reciprocity requires non-externalization of unequal burdens"
+      - "that PMS-SEX records operator profiles only where maturity questions would require MIP docking"
 
   pms_validity_check:
     application_gate:
@@ -555,31 +912,109 @@ case:
         required: true
         condition: >
           Distance must be re-activated as protective meta-capacity, not as
-          punishment, superiority, or moral verdict.
+          punishment, superiority, moral verdict, or enforced clarity.
       reversibility:
         required: true
         condition: >
           All readings remain scene-bound and revisable; no global person label,
-          motive claim, diagnosis, or identity verdict may be inferred.
+          motive claim, diagnosis, identity verdict, or adultness verdict may be
+          inferred.
       D_dignity_in_practice:
         required: true
         condition: >
           D constrains enactment and critique. No shaming, humiliation,
-          person-ranking, or ontological evaluation is permitted.
+          person-ranking, maturity ranking, or ontological evaluation is
+          permitted.
     additional_case_conditions:
       - "□ alternatives must remain legible as structural possibilities."
       - "Θ damage must be treated as non-negotiable accumulation, not narratively reset."
       - "Ψ must remain self-referential and may not become an imposed identity verdict."
       - "Minimal psychology must output alarm only, not explanation."
+      - "Sexual cost topology must remain scene-bound and non-ranking."
+      - "Any asymmetry activation must be marked, bounded, and re-bound into Σ/Ψ."
+      - "Parity must not become exit from responsibility."
+      - "Responsibility must not become authority."
     invalid_uses:
       - "using the case to diagnose a person"
       - "using desire-language to prove pathology"
       - "using D to shame or humiliate"
       - "using path-cost to rank identities or practices"
       - "using PMS-SEX language to enforce truth, clarity, urgency, or action while suspending Χ, reversibility, or D"
+      - "using minimal psychology to explain desire"
+      - "using operator profiles as maturity verdicts"
     validity_conclusion: >
       Without Χ, reversibility, and D, the case remains descriptive mapping only
       and cannot be used as a PMS-valid application.
+
+  analysis_checklist_application:
+    S1_scene_boundary:
+      result: >
+        Scene is bounded as repeated sexual enactment under known Θ damage,
+        cost concentration, and frame narrowing.
+    S2_canonical_dependency_check:
+      result: >
+        PMS v1.3 spine preserved. Reduced signatures are used as shorthand only.
+        Sexual cost topology and switch-drift handles are overlay handles, not
+        new operators.
+    S3_reduced_signature:
+      selected:
+        - "MF_18_2"
+        - "MF_19_2"
+        - "MF_14_3"
+        - "MF_12_2"
+        - "sexual_cost_topology_signature_ch4_6"
+        - "minimal_psychology_adapter_signature_ch20"
+        - "adult_sexual_reciprocity_signature"
+    S4_inner_outer_public_scan:
+      result: >
+        Internal framing: desire, relief, authenticity, or inevitability. Outer
+        legibility: repeated enactment despite known damage, narrowed
+        alternatives, and cost concentration. Publicness: possible overlay, not
+        required.
+    S5_cost_axis_scan:
+      result: >
+        Ω appears through bodily, emotional, reputational, dignity-relevant,
+        binding-related, exit-related, and self-attribution costs. Θ appears
+        through repetition, after-effects, and reduced exit realism.
+    S6_distance_and_correction_capacity:
+      result: >
+        Χ is conceptually available but practically failing. Σ would require
+        integrating desire-language with outer-form cost topology and known Θ
+        damage.
+    S7_drift_marker_scan:
+      result: >
+        Α fixation, temporal overload, Χ loss, outer-form denial, Ψ functional
+        capture, and cost-topology mismatch are structurally relevant.
+    S8_switch_drift_scan:
+      result: >
+        Switch drift is not the primary claim but must be scanned. Accumulated
+        harm may be validly named only where activation is marked, bounded, and
+        re-bound. Autonomy or desire-language may become parity-to-exit if it
+        blocks cost responsibility. Protection or rescue may become
+        responsibility-to-authority if it becomes frame control.
+    S9_viability_minimums:
+      result: >
+        Viability is weakened where Ω is insufficiently nameable, cost topology
+        is concentrated, Θ is known but not corrective, Χ is failing, Λ is not
+        tolerated, and Ψ is not explicitly handled.
+    S10_minimal_psychology_gate:
+      result: >
+        Trigger conditions are met only for alarm output. The permitted question
+        is what structural role desire-language plays in this configuration, not
+        why the desire exists.
+    S11_adult_reciprocity_and_mip_guard:
+      result: >
+        Adult sexual reciprocity is read only as non-externalization of unequal
+        burdens. Any adultness-relevant evaluation must be docked in MIP and
+        remain scene-bound, reversible, non-person-ranking, non-diagnostic, and
+        D-preserving.
+    S12_path_cost_guard:
+      result: >
+        Path-cost is used only as configuration-language.
+    S13_escalation_guard:
+      result: >
+        No motive explanation, diagnosis, humiliation, maturity ranking, or
+        person-label is allowed.
 
   structural_closure:
     non_normative_summary: >
@@ -590,10 +1025,43 @@ case:
     minimal_psychology_closure: >
       The permitted question is not why the desire exists, but what structural
       role it is playing now. Minimal psychology does not explain; it flags that
-      distance has eroded, D-in-Practice is being undercut in enactment, and
-      time is converting damage into trajectory.
+      distance has eroded, D-in-Practice is being undercut in enactment, time is
+      converting damage into trajectory, and sexual cost topology is no longer
+      being corrected by the frame.
+    adult_reciprocity_closure: >
+      The relevant reciprocity question is not whether burdens are equal, but
+      whether unequal burdens are externalized. Desire-language becomes drift
+      where it exits cost realism; harm-language becomes drift where it becomes
+      an unmarked standing lever; responsibility becomes drift where it becomes
+      authority rather than self-binding.
     final_marker: >
       This is not pathology. It is drift under accumulation. Desire is not
       condemned; it is recognized as structurally overburdened—carrying
-      regulation, relief, and self-relation at once. That overload, not the
-      desire itself, is what makes the configuration unstable.
+      regulation, relief, cost topology, and self-relation at once. That overload,
+      not the desire itself, is what makes the configuration unstable.
+
+  final_case_guard:
+    text: >
+      This case remains PMS-SEX-valid only as configuration analysis. It may name
+      cost, drift, outer legibility, sexual cost topology, minimal psychology
+      trigger conditions, D-in-Practice stress, and operator profiles. It must not
+      convert those claims into person-ranking, diagnosis, orientation taxonomy,
+      legal judgment, adultness verdict, maturity hierarchy, dignity hierarchy,
+      or humiliating critique.
+    compressed_rules:
+      - "no desire pathology"
+      - "no person diagnosis"
+      - "no moral ranking"
+      - "no clinical conclusion"
+      - "no maturity ranking"
+      - "no adultness verdict from PMS-SEX alone"
+      - "no dignity hierarchy"
+      - "no path-cost as person-worth"
+      - "no sexual cost topology as score"
+      - "no publicness reduction"
+      - "no minimal psychology as explanation"
+      - "no parity-to-exit as reciprocity"
+      - "no responsibility-to-authority as care"
+      - "no asymmetry switch as authority"
+      - "no operator profile as person verdict"
+      - "no prescription"

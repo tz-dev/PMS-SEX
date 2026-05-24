@@ -1,16 +1,58 @@
 case:
-  schema_version: "PMS-SEX-CASE_1.1"
-  case_id: "PMS-SEX-EXAMPLE-04"
-  case_label: "High Intensity + Narrative Safety"
-  case_short: "Intensity That Outruns Its Own Frame"
+  schema_version: "PMS-SEX_CASE_1.2"
+  case_id: "PMS-SEX_EXAMPLE_04"
+  legacy_case_id: "PMS-SEX-EXAMPLE-04"
+  title: "High Intensity + Narrative Safety"
+  short_label: "Intensity That Outruns Its Own Frame"
+
+  status:
+    case_type: "example_suite_vignette"
+    role: "repo_vignette"
+    function: "scene_bound_operator_reading"
+    instructionality: "non_instructional"
+    diagnostic_status: "non_diagnostic"
+    prescriptive_status: "non_prescriptive"
+    moral_status: "non_moralizing"
+    person_classification: false
+
   profile_dependency:
     model: "PMS-SEX"
-    schema_version: "PMS-SEX_1.1"
+    schema_version: "PMS-SEX_1.2"
     base_model: "PMS"
     base_schema_version: "PMS_1.3"
-    conformity_status: "application_overlay_case"
+    conformity_status: "conformant_application_case"
+    case_role: "example_suite_vignette"
+    application_status: "scene_bound_structural_mapping_only"
+
+  paper_refs:
+    primary:
+      - "Ch. 0.7: EDEN/PFO asymmetry switch reference"
+      - "Ch. 0.8: Sexual Cost Topology"
+      - "Ch. 0.9: Validity gate"
+      - "Ch. 16.2: High-risk / extreme practices"
+      - "Ch. 18.3: Dysfunction markers"
+      - "Ch. 19.3: Functional minimum conditions"
+      - "Ch. 19.4: Warning signals"
+      - "Ch. 21: Dignity-in-Practice module"
+      - "Ch. 22: MIP docking interface"
+      - "Appendix D.4: Highlighted drift corridors"
+      - "Appendix D.5: Minimal viability corridor"
+      - "Appendix D.8: Path-cost / disturbance guard"
+    secondary:
+      - "Ch. 4: Asymmetry / Sexual Cost Topology"
+      - "Ch. 5: Temporality"
+      - "Ch. 6: Exit realism"
+      - "Ch. 10: Distance"
+      - "Ch. 12: Self-binding"
+      - "Ch. 14: Modulators"
+      - "Ch. 23: Limits and scope discipline"
+      - "Ch. 24.3–24.4: Final guard"
+
   scope_discipline:
-    status: "structural_mapping_only"
+    summary: >
+      Structural mapping only. The case describes high-intensity drift as a
+      scene-bound operator profile, not as diagnosis, motive attribution, person
+      ranking, maturity ranking, adultness verdict, or prescription.
     claims:
       - "scene-bound"
       - "configuration-specific"
@@ -19,32 +61,45 @@ case:
       - "non-prescriptive"
       - "non-moralizing"
       - "non-instructional"
-    forbids:
+      - "operator-profile-only where maturity questions would require MIP docking"
+    forbidden_conversions:
       - "intent diagnosis"
       - "motive attribution"
       - "person ranking"
+      - "maturity ranking"
+      - "adultness verdict from PMS-SEX"
+      - "dignity hierarchy"
       - "orientation taxonomy"
       - "clinical interpretation"
       - "moral verdict"
       - "procedural sexual instruction"
       - "risk optimization"
+      - "asymmetry switch as authority"
+      - "cost topology as score"
     validity_gate:
-      requires: ["Χ", "reversibility", "D"]
-      note: >
-        Any use of this case as PMS-SEX application presupposes maintained
-        Distance (Χ), reversibility, and Dignity-in-Practice (D). Without these,
-        the case remains descriptive only.
+      required: ["Χ", "reversibility", "D"]
+      applies_to: "application_only"
+    additional_1_2_guards:
+      - "sexual_cost_topology_not_score"
+      - "operator_profile_only"
+      - "mip_boundary"
+      - "no_asymmetry_switch_as_authority"
 
   minimal_vignette:
-    title: "Narratively Safe Intensity with Weak Operational Containment"
-    vignette: >
-      A repeated high-intensity sexual configuration develops over a short-to-medium
-      timeframe. The scene is narrated as safe because communication is frequent,
-      transparent, and mutually reassuring. Under high activation, however, the
-      frame remains verbally stable while practical stop-capability, pacing,
-      recovery realism, and after-cost tracking weaken. Costs appear sudden only
-      after repetition, asymmetry, and temporality have already compressed.
-
+    scene_bound: true
+    non_identifying: true
+    non_instructional: true
+    scene_id: "CASE_04_HIGH_INTENSITY_NARRATIVE_SAFETY"
+    scene_type: "repeated high-activation sexual configuration"
+    abstraction_level: "generic_non_identifying"
+    text: >
+      A repeated high-intensity sexual configuration develops over a
+      short-to-medium timeframe. The scene is narrated as safe because
+      communication is frequent, transparent, and mutually reassuring. Under high
+      activation, however, the frame remains verbally stable while practical
+      stop-capability, pacing, recovery realism, cost-topology tracking, and
+      after-cost regulation weaken. Costs appear sudden only after repetition,
+      asymmetry, and temporality have already compressed.
     scene_boundaries:
       scene_unit: "repeated high-activation sexual configuration"
       timeframe: "short-to-medium timeframe with rapid escalation"
@@ -56,38 +111,45 @@ case:
       roles_not_persons:
         R1:
           description: >
-            Role with higher exposure to bodily, reputational, or binding-related
-            after-costs.
+            Role with higher exposure to bodily, reputational, binding-related,
+            recovery-related, or exit-related after-costs.
           structural_position:
             - "higher downstream exposure"
             - "higher recovery burden"
             - "greater sensitivity to accumulated costs"
+            - "greater dependence on timely Χ activation"
+            - "higher cost if intensity becomes identity, proof, or obligation"
         R2:
           description: >
-            Role with higher tolerance for escalation and faster recovery from
-            overload.
+            Role with higher tolerance for escalation, faster recovery from
+            overload, or lower downstream exposure to accumulated after-costs.
           structural_position:
             - "higher escalation tolerance"
             - "lower recovery burden"
             - "greater continuity capacity under intensity"
+            - "greater capacity to treat the frame as narratively resolved"
+            - "higher risk of externalizing R1's after-costs through reassurance or parity language"
 
     trigger:
       delta:
         operator: "Δ"
         description: >
-          High salience of mutual desire, exceptional intensity, and the difference
-          between narrated safety and actual containment capacity becomes visible.
+          High salience of mutual desire, exceptional intensity, and the
+          difference between narrated safety and actual containment capacity
+          becomes visible.
       impulse:
         operator: "∇"
         description: >
           Strong activation pressure demands immediate enactment and continuity
-          rather than paced coordination, delay, or structural re-checking.
+          rather than paced coordination, delay, de-escalation, or structural
+          re-checking.
 
     lambda_candidates_expected_but_missing:
       - id: "neutral_deescalating_pause"
         operator: "Λ"
         expected_form: >
-          Pauses that actually de-escalate rather than merely postpone escalation.
+          Pauses that actually de-escalate rather than merely postpone
+          escalation.
         missing_form: >
           Pauses become difficult to hold because interruption appears to weaken
           the exceptional intensity of the frame.
@@ -97,8 +159,24 @@ case:
           Silence, delay, or slower pacing can be tolerated without becoming
           alarming.
         missing_form: >
-          Delay is read as loss of mood, loss of intensity, or possible weakening
-          of the shared narrative.
+          Delay is read as loss of mood, loss of intensity, or possible
+          weakening of the shared narrative.
+      - id: "cost_topology_review"
+        operator: "Λ"
+        expected_form: >
+          Repeated high activation triggers review of bodily, exposure,
+          recovery, binding, exit, publicness, and responsibility costs.
+        missing_form: >
+          Cost review is replaced by reassurance, explanation, or the claim that
+          communication has already made the frame safe.
+      - id: "peak_condition_frame_test"
+        operator: "Λ"
+        expected_form: >
+          The frame is tested under peak conditions, not only during calm
+          narration.
+        missing_form: >
+          The frame is treated as sufficient because it is coherent in
+          explanation, even if it weakens under activation.
 
     observed_realizations_neutral:
       - "Frequent reassurance talk replaces structural checks."
@@ -106,6 +184,8 @@ case:
       - "Post-hoc explanation substitutes for pre-hoc regulation."
       - "Stop-capability exists in principle but is rarely activated under peak pressure."
       - "The communicative frame remains narratively stable while recovery and exposure gradients sharpen."
+      - "High activation makes small coordination gaps consequential before they are nameable."
+      - "The frame's internal safety narrative remains stronger than its operational pacing capacity."
 
   repo_usefulness:
     structural_focus: >
@@ -113,7 +193,21 @@ case:
       intensity does not become risky by moral defect, bad intent, or lack of
       communication, but through intensity-structure mismatch. It shows how ∇,
       Α, Ω, Θ, Φ, and Χ interact when a frame remains narratively coherent but
-      operationally weak under load.
+      operationally weak under load. PMS-SEX 1.2 adds that high-intensity scenes
+      require explicit sexual cost-topology mapping, switch-drift scanning, and
+      asymmetry-specific responsibility because mutual narration alone does not
+      distribute after-costs.
+    demonstrates:
+      - "intensity as drift multiplier"
+      - "communication as necessary but not sufficient for containment"
+      - "Φ narrative safety substituting for operative Χ and Σ"
+      - "compressed Θ accumulation under rapid repetition"
+      - "Ω sharpening through unequal recovery, exposure, and after-costs"
+      - "sexual cost topology becoming visible only after acceleration"
+      - "parity-to-exit risk where mutual intensity or mutual communication denies unequal after-cost responsibility"
+      - "responsibility-to-authority risk where protection, safety, or pacing becomes frame control"
+      - "asymmetry-switch drift risk where overload or vulnerability is activated without marking, bounding, and re-binding"
+      - "operator-profile-only discipline where maturity-relevant questions would require MIP docking"
     profile_links:
       reduced_signatures:
         - id: "MF_16_2"
@@ -131,6 +225,9 @@ case:
         - "dignity_in_practice_module"
         - "analysis_checklist"
         - "example_suite_schema"
+        - "sexual_cost_topology"
+        - "eden_pfo_asymmetry_switch_reference"
+        - "mip_docking_interface"
 
   operator_mapping:
     canonical_spine:
@@ -139,6 +236,11 @@ case:
         This case foregrounds ∇ escalation, Α acceleration, Ω sharpening, Θ
         compression, Φ narrative substitution, and Χ erosion. The foregrounding
         is shorthand only and does not alter PMS v1.3 order or dependencies.
+        Sexual cost topology, asymmetry switch, parity-to-exit,
+        responsibility-to-authority, adult sexual reciprocity, and
+        asymmetry-specific responsibility are PMS-SEX overlay handles, not PMS
+        operators.
+
     case_reduced_signature:
       selected_profile_signature: "MF_16_2"
       raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ; pulling arrows: ∇ → □ → Ω → Θ"
@@ -146,10 +248,64 @@ case:
       reduced: true
       operators: ["Δ", "∇", "□", "Λ", "Α", "Ω", "Θ", "Φ", "Χ", "Σ", "Ψ"]
       hygiene_note: >
-        The reduced trace highlights the local drift mechanics of intensity.
-        It uses the PMS-SEX MF_16_2 shorthand and presupposes the canonical
-        PMS v1.3 spine. It does not create a new dependency graph. Any use of Χ
-        presupposes Φ, Θ, and □. Any use of Ψ presupposes Σ, Θ, and Χ.
+        The reduced trace highlights the local drift mechanics of intensity. It
+        uses the PMS-SEX MF_16_2 shorthand and presupposes the canonical PMS v1.3
+        spine. It does not create a new dependency graph. Any use of Χ
+        presupposes Φ, Θ, and □. Any use of Σ presupposes Χ and Φ. Any use of Ψ
+        presupposes Σ, Θ, and Χ.
+
+    additional_reduced_signatures:
+      - id: "MF_4_2"
+        label: "Asymmetry / Sexual Cost Topology"
+        raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ"
+        reason: >
+          The case becomes legible once repeated high activation produces
+          uneven recovery, exposure, after-cost, exit, and responsibility
+          gradients across time.
+      - id: "MF_5_2"
+        label: "Temporality"
+        raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ"
+        reason: >
+          High intensity compresses time. Costs appear sudden because Θ
+          accumulates faster than the frame updates.
+      - id: "MF_6_2"
+        label: "Exit Realism"
+        raw: "(□ → Λ → Α) → Ω → Θ → (Χ/Σ/Ψ)"
+        reason: >
+          Stop-capability may remain declared while practical exit, slowing, or
+          de-escalation become harder under peak activation.
+      - id: "MF_10_2"
+        label: "Distance"
+        raw: "Δ → ∇ → □ → (Λ) → Α → Ω → Θ → Φ → Χ"
+        reason: >
+          The critical viability question is whether Χ works under intensity,
+          not only during calm re-narration.
+      - id: "MF_12_2"
+        label: "Self-Binding"
+        raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ"
+        reason: >
+          Exceptional intensity may begin to carry self-worth, proof,
+          commitment, or identity-relevant stakes if Ψ is not explicitly
+          handled.
+      - id: "sexual_cost_topology_signature_ch4_6"
+        label: "Sexual Cost Topology — Ω/Θ cost layout"
+        raw: "Ω/Θ cost topology across bodily, exposure, reputational, binding, exit, publicness, and responsibility channels"
+        reason: >
+          The case turns on mismatch between narrated safety and distributed
+          after-costs under compressed Θ.
+      - id: "eden_pfo_sexual_instantiation_signature"
+        label: "EDEN/PFO Sexual Instantiation — asymmetry switch"
+        raw: "real/invoked Ω/Θ pressure → asymmetry activation → marked/bounded/re-bound OR unmarked switch drift"
+        reason: >
+          Cross-domain switch logic is relevant as a guard: overload,
+          vulnerability, protection, or recovery asymmetry may be named only
+          where marked, bounded, and re-bound into Σ/Ψ.
+      - id: "adult_sexual_reciprocity_signature"
+        label: "Adult Sexual Reciprocity — non-externalization of unequal burdens"
+        raw: "unequal Ω/Θ burdens + explicit cost topology + Χ restraint + Σ/Ψ re-binding → non-externalization"
+        reason: >
+          The case tests whether high intensity can remain reciprocal when
+          after-costs are unequal and acceleration makes interruption difficult.
 
     operator_roles:
       delta:
@@ -172,23 +328,26 @@ case:
       non_event:
         operator: "Λ"
         function_in_case: >
-          Pauses, delay, silence, or slowing become structurally significant
-          because they are expected to regulate intensity but fail to remain
-          neutral.
+          Pauses, delay, silence, slowing, cost review, or peak-condition
+          re-testing become structurally significant because they are expected to
+          regulate intensity but fail to remain neutral.
       attractor:
         operator: "Α"
         function_in_case: >
           Intensity-driven repetition stabilizes quickly into a preferred route.
+        drift_risk: >
+          High activation makes continuation locally easier than interruption,
+          even where costs begin to appear.
       asymmetry:
         operator: "Ω"
         function_in_case: >
-          Recovery capacity, exposure, and after-cost handling diverge between
-          roles.
+          Recovery capacity, exposure, after-cost handling, exit cost, and
+          responsibility burden diverge between roles.
       temporality:
         operator: "Θ"
         function_in_case: >
-          Costs accumulate rapidly and compress exit windows under repeated
-          high activation.
+          Costs accumulate rapidly and compress exit windows under repeated high
+          activation.
       recontextualization:
         operator: "Φ"
         function_in_case: >
@@ -209,12 +368,13 @@ case:
         operator: "Σ"
         function_in_case: >
           Would be required to integrate intensity, asymmetry, recovery limits,
-          exposure, and frame claims without denial or compensation.
+          exposure, cost topology, and frame claims without denial or
+          compensation.
       self_binding:
         operator: "Ψ"
         function_in_case: >
           May become relevant if repeated intensity starts to carry identity,
-          commitment, or self-worth stakes beyond the local frame.
+          commitment, obligation, or self-worth stakes beyond the local frame.
         guard: >
           Any Ψ relevance must remain explicit, self-bound, and non-coercive.
           No covert Ψ demand may be imposed on another role.
@@ -229,15 +389,16 @@ case:
         emotionally vivid, and narratively safe.
       guard: >
         Internal communicative meaning may be real without settling the outer
-        structure of escalation, asymmetry, or accumulated after-costs.
+        structure of escalation, asymmetry, cost topology, or accumulated
+        after-costs.
     outer_legibility:
       description: >
         Externally, the configuration is readable as high activation under a
         frame that narrates safety more reliably than it operationalizes
-        interruption, recovery, and cost tracking.
+        interruption, recovery, cost-topology review, and after-cost tracking.
       guard: >
         Naming this outer legibility does not imply recklessness, blame,
-        diagnosis, or bad faith.
+        diagnosis, bad faith, maturity verdict, or adultness ranking.
     publicness_overlay:
       description: >
         Publicness may enter through documentation, witnesses, shared narratives,
@@ -246,17 +407,19 @@ case:
       status: "overlay"
       pms_layer: "□ extension"
       intensifies: ["Ω", "Θ"]
+      interacts_with: ["□", "Α", "Λ", "Ψ"]
       guard: >
         Publicness does not necessarily generate the primary action-form, but it
-        may harden exposure, sedimentize consequence, and increase exit cost.
+        may harden exposure, sedimentize consequence, increase exit cost, and
+        intensify reputational or documentation burdens.
     temporal_carryover:
       description: >
         Even when the scene is later explained, clarified, or mutually narrated
-        as safe, accumulated bodily, reputational, emotional, or binding-related
-        residues remain Θ-relevant.
+        as safe, accumulated bodily, reputational, emotional, exit-related, or
+        binding-related residues remain Θ-relevant.
       guard: "Θ does not rewind."
 
-  operator_costs_and_cost_layout:
+  cost_layout:
     cost_layout_summary: >
       The core cost layout is Ω under compressed Θ: one role carries higher
       after-costs and recovery burden while the frame continues to present the
@@ -265,11 +428,13 @@ case:
       bodily:
         operators: ["Ω", "Θ"]
         description: >
-          Recovery limits are reached earlier than acknowledged. The configuration
-          may remain narratively safe while bodily after-costs accumulate.
+          Recovery limits are reached earlier than acknowledged. The
+          configuration may remain narratively safe while bodily after-costs
+          accumulate.
         body_remainder_guard: >
           Bodily consequence is treated as a material interface of configuration
-          cost, not as person-ranking, biological taxonomy, or diagnosis.
+          cost, not as person-ranking, biological taxonomy, maturity ranking, or
+          diagnosis.
       temporal:
         operators: ["Α", "Θ", "Χ"]
         description: >
@@ -284,6 +449,11 @@ case:
         publicness_guard: >
           Exposure effects are treated as Θ/Ω intensifiers, not as the sole
           origin of consequence.
+      reputational:
+        operators: ["□", "Ω", "Θ"]
+        description: >
+          If the scene becomes socially visible or narratively shareable, one
+          role may carry higher reputational, explanation, or standing cost.
       coordination:
         operators: ["□", "Φ", "Χ", "Σ"]
         description: >
@@ -292,12 +462,24 @@ case:
       binding_related:
         operators: ["Θ", "Ψ"]
         description: >
-          Repeated exceptional intensity may begin to carry identity-relevant or
-          commitment-like stakes, even if the immediate frame initially appears
-          local.
+          Repeated exceptional intensity may begin to carry identity-relevant,
+          proof-like, self-worth, or commitment-like stakes, even if the
+          immediate frame initially appears local.
         psi_guard: >
           Binding relevance must not be smuggled into a limited frame as a proof
           demand or covert obligation.
+      exit_related:
+        operators: ["Χ", "Ω", "Θ", "Λ"]
+        description: >
+          Stop-capability, slowing, or de-escalation remains formally available
+          but becomes harder to enact because interruption appears to betray
+          intensity, intimacy, or the shared narrative.
+      responsibility_related:
+        operators: ["Ψ", "Χ", "Ω", "Σ"]
+        description: >
+          Responsibility becomes necessary around pacing, containment, recovery,
+          after-cost tracking, and the refusal to let narrative safety substitute
+          for operational restraint.
 
     asymmetry_pattern:
       R1:
@@ -306,21 +488,68 @@ case:
           - "greater recovery burden"
           - "higher exposure to bodily, reputational, or binding-related residues"
           - "greater dependence on timely Χ activation"
+          - "higher risk if post-hoc explanation replaces pre-hoc regulation"
       R2:
         cost_position:
           - "higher tolerance for escalation"
           - "faster recovery from overload"
           - "lower downstream exposure"
           - "greater continuity capacity under intensity"
+          - "greater risk of under-reading R1's accumulated after-costs"
       structural_result: >
         The same intensity is not structurally identical across roles. What is
         enrichment for one role may become accumulated after-cost handling for
         another.
+      not_a_moral_claim: true
 
     system_effect: >
       Costs appear sudden because high intensity compresses accumulation. The
-      collapse is not necessarily produced by conflict, malice, or deception;
-      it can emerge when Θ catches up with a frame that never slowed enactment.
+      collapse is not necessarily produced by conflict, malice, deception, or
+      lack of communication; it can emerge when Θ catches up with a frame that
+      never slowed enactment.
+
+  sexual_cost_topology:
+    definition: >
+      Scene-bound distribution of bodily, temporal, exposure-related,
+      reputational, binding-related, exit-related, publicness-related, and
+      responsibility-related costs across sexual role-positions. Not a score,
+      not a person measure, not a maturity measure, and not a dignity ranking.
+    topology_status: "compressed_accumulation_under_narrative_safety"
+    channels:
+      bodily_costs:
+        R1: "higher recovery burden, overload risk, saturation, or body remainder under repeated high activation"
+        R2: "lower recovery burden or greater tolerance for escalation in the vignette"
+      temporal_costs:
+        R1: "higher compressed accumulation and shorter safe exit window under repetition"
+        R2: "greater continuity capacity and stronger local reset plausibility"
+      exposure_costs:
+        R1: "higher exposure to after-effects, documentation, memory, or reputational traces where present"
+        R2: "lower exposure or greater capacity to narratively contain the scene"
+      reputational_costs:
+        R1: "context-dependent; may rise if the high-intensity scene becomes socially or narratively visible"
+        R2: "context-dependent; may be lower where recovery and exposure are lower"
+      binding_costs:
+        R1: "risk that exceptional intensity becomes self-worth, proof, or commitment-like residue"
+        R2: "risk of under-reading binding residue because the scene is narrated as mutually understood"
+      exit_costs:
+        R1: "slowing or stopping becomes costly under peak activation and after repetition"
+        R2: "exit or continuation may remain easier if recovery is faster and exposure lower"
+      publicness_costs:
+        R1: "overlay-dependent; intensified by documentation, witnesses, reputation, or circulation"
+        R2: "overlay-dependent"
+      responsibility_costs:
+        R1: "must not let overload become only after-the-fact pressure; must preserve Χ and specificity where possible"
+        R2: "must not externalize after-costs by relying on mutual communication or mutual intensity alone"
+    cost_topology_mismatch:
+      present: true
+      expression: >
+        Narrated safety, mutual communication, and shared intensity do not match
+        the actual distribution of recovery burden, exposure, exit difficulty,
+        binding residue, and responsibility costs under compressed Θ.
+      guard: >
+        Mismatch is configuration-language. It does not imply defective
+        intensity, failed consent, pathology, recklessness, lower dignity, or
+        person-level maturity ranking.
 
   typical_drift_markers:
     max_count_note: "Primary markers only; non-exhaustive and non-diagnostic."
@@ -358,6 +587,137 @@ case:
           Χ exists in principle but is not practically available at the moment
           when it would need to regulate the configuration.
 
+    optional_secondary_markers:
+      - id: "theta_cost_externalization"
+        label: "Θ cost externalization"
+        case_expression: >
+          After-costs concentrate in R1 while the scene remains narrated as
+          mutual, transparent, and equally carried.
+      - id: "outer_form_denial"
+        label: "Outer-form denial"
+        case_expression: >
+          The internal safety narrative blocks recognition that the enacted form
+          is high-intensity repetition under uneven recovery and exposure.
+      - id: "cost_topology_mismatch"
+        label: "Cost-topology mismatch"
+        case_expression: >
+          Narrative safety does not match bodily, temporal, exposure,
+          binding-related, exit-related, and responsibility-related costs.
+      - id: "psi_leak"
+        label: "Ψ leak / proof burden"
+        case_expression: >
+          Exceptional intensity becomes proof of intimacy, worth, commitment, or
+          self-attribution without explicit Ψ handling.
+      - id: "parity_to_exit"
+        label: "Parity-to-exit"
+        case_expression: >
+          Mutual intensity or mutual communication is used to deny additional
+          responsibility under unequal after-costs.
+      - id: "responsibility_to_authority"
+        label: "Responsibility-to-authority"
+        case_expression: >
+          Safety, protection, pacing, or care responsibility becomes frame
+          authority instead of self-binding.
+
+  switch_drift_markers:
+    status: "relevant_as_scan_not_primary_claim"
+    eden_pfo_reference:
+      status: "cross_domain_reference_only"
+      note: >
+        PMS–EDEN names the regime-level asymmetry switch. PMS-SEX reads only the
+        sexual instantiation where real or invoked Ω/Θ pressure may activate
+        asymmetry. This adds no PMS operator and creates no person label.
+    asymmetry_switch_drift:
+      status: "possible"
+      expression: >
+        Overload, vulnerability, recovery burden, or exposure cost may be
+        invoked to interrupt, reshape, or reframe the high-intensity scene. This
+        is structurally viable only where activation is marked, bounded,
+        connected to real Ω/Θ burden, and re-bound into Σ/Ψ. It drifts where
+        overload or vulnerability becomes an unmarked, repeatable exception
+        lever without re-binding.
+      guard: >
+        The drift is not naming overload or asymmetry as such. The drift is
+        unmarked, repeatable activation without re-binding.
+    parity_to_exit:
+      status: "highly_relevant"
+      expression: >
+        'We both wanted this,' 'we talked about it,' 'we both said it was safe,'
+        or 'it was mutual' may become parity rhetoric used to deny additional
+        responsibility under unequal sexual cost topology.
+      guard: >
+        Mutuality language remains valid only where it does not erase recovery
+        gradients, compressed Θ, exit cost, or after-cost concentration.
+    responsibility_to_authority:
+      status: "possible"
+      expression: >
+        Responsibility for safety, containment, protection, pacing, or repair
+        may be converted into authority to define what counts as safe, whether
+        interruption is legitimate, or whose reading of the scene governs.
+      guard: >
+        Responsibility under asymmetry requires stronger self-binding, not
+        greater command.
+    re_binding_test:
+      required: true
+      test: >
+        Any asymmetry activation must be marked, temporally bounded, connected to
+        real Ω/Θ burden, and re-bound into Σ/Ψ with Χ and D intact. Parity must
+        not become exit; responsibility must not become authority.
+
+  adult_sexual_reciprocity_readout:
+    principle: >
+      Adult sexual reciprocity does not require equal burdens. It requires that
+      unequal burdens are not externalized.
+    case_application: >
+      In this case, adult sexual reciprocity would not require equal tolerance
+      for intensity, equal recovery speed, or identical after-costs. It would
+      require that those unequal burdens remain nameable, that high activation
+      does not override Χ, that post-hoc communication does not replace
+      containment, and that each role-position carries the self-binding made
+      necessary by its own escalation capacity, exposure level, recovery
+      profile, and externalization risk.
+    failure_modes:
+      - id: "mutual_intensity_as_cost_exit"
+        description: "Mutual desire or communication is used to avoid cost-topology review."
+      - id: "overload_as_unmarked_lever"
+        description: "Overload or vulnerability is activated without marking, bounding, and re-binding."
+      - id: "safety_as_frame_authority"
+        description: "Safety, protection, pacing, or care responsibility becomes authority over the frame."
+      - id: "intensity_as_binding_proof"
+        description: "Exceptional intensity becomes covert proof of intimacy, worth, or commitment."
+    guard: >
+      This is not a hierarchy of adultness. It is a scene-bound responsibility
+      reading under Ω/Θ.
+
+  asymmetry_specific_responsibility_readout:
+    definition: >
+      Each role-position must carry the self-binding required by its own cost,
+      power, exposure, exit, and externalization profile.
+    R1:
+      likely_self_binding_tasks:
+        - "naming overload, recovery limits, and after-costs before they become only after-the-fact pressure"
+        - "activating Χ early enough that de-escalation remains possible"
+        - "keeping cost topology specific, bounded, and re-bindable"
+        - "not converting overload into unmarked standing leverage"
+        - "distinguishing genuine after-costs from global person claims"
+      drift_risk: "asymmetry-switch drift if overload or vulnerability becomes unmarked repeatable pressure without re-binding"
+    R2:
+      likely_self_binding_tasks:
+        - "not treating mutual communication as proof that no cost topology exists"
+        - "not using mutual intensity or mutual consent to exit responsibility for unequal after-costs"
+        - "maintaining Χ where escalation capacity exceeds the other role's recovery capacity"
+        - "supporting Σ by allowing the frame to be tested under peak conditions"
+        - "not converting safety, care, protection, or pacing responsibility into authority"
+      drift_risk: "parity-to-exit or responsibility-to-authority"
+    shared:
+      likely_self_binding_tasks:
+        - "narrative safety must remain accountable to enacted cost topology"
+        - "Χ must work under intensity, not only after the scene"
+        - "Λ pauses must remain tolerable without becoming threat signals"
+        - "cost topology must remain speakable"
+        - "neither parity nor asymmetry may be used to bypass Σ/Ψ"
+        - "responsibility must not become authority"
+
   viability_minimums_and_warning_signals:
     functional_minimums:
       explicit_omega_recognition:
@@ -367,6 +727,13 @@ case:
           - "Recovery differences must be nameable as structural asymmetry."
           - "Exposure differences must not be dissolved into mutual-intensity rhetoric."
           - "After-cost concentration must remain discussable without accusation."
+      explicit_sexual_cost_topology:
+        status: "stressed"
+        minimal_form: "Sexual cost topology must be explicit and non-ranking."
+        case_check:
+          - "Bodily, temporal, exposure, binding, exit, publicness, and responsibility costs must be mapped."
+          - "Cost topology must not be reduced to consent status or communication quality."
+          - "Cost mismatch must remain configuration-language, not person-ranking."
       theta_awareness:
         status: "stressed"
         minimal_form: "Consequences are treated as real: exit realism."
@@ -411,6 +778,29 @@ case:
           - "Documentation or reputational traces must be tracked if present."
           - "Publicity must not be treated as the sole source of harm."
           - "Publicity must not be ignored if it hardens costs."
+      marked_bounded_rebound_asymmetry_activation:
+        status: "required_if_activation_occurs"
+        minimal_form: >
+          Overload, vulnerability, or recovery asymmetry may be named only where
+          activation is marked, bounded, and re-bound into Σ/Ψ.
+        case_check:
+          - "Overload naming must not become unmarked standing leverage."
+          - "Recovery asymmetry must be linked to real Ω/Θ burden."
+          - "Switch activation must remain bounded and D-preserving."
+      no_parity_to_exit:
+        status: "at_risk"
+        minimal_form: "Mutuality must not exit responsibility for unequal costs."
+        case_check:
+          - "Mutual desire must not erase recovery asymmetry."
+          - "Mutual communication must not erase after-cost concentration."
+          - "Mutual safety narration must not erase compressed Θ."
+      no_responsibility_to_authority:
+        status: "at_risk"
+        minimal_form: "Safety responsibility must remain self-binding."
+        case_check:
+          - "Protection must not become unilateral frame control."
+          - "Pacing responsibility must not authorize command."
+          - "Care must not become governance."
 
     warning_signals:
       - id: "phi_narrative_inflation"
@@ -431,6 +821,18 @@ case:
         present_when: >
           Repetition continues after overload is recognized, because intensity
           remains easier than interruption.
+      - id: "cost_topology_mismatch"
+        present_when: >
+          Narrated safety and mutuality no longer match bodily, temporal,
+          exposure, binding, exit, publicness, and responsibility costs.
+      - id: "parity_to_exit"
+        present_when: >
+          Mutual intensity or mutual communication is used to deny additional
+          responsibility under unequal cost topology.
+      - id: "responsibility_to_authority"
+        present_when: >
+          Safety, protection, pacing, or care responsibility becomes authority
+          over the frame.
 
     minimal_viability_corridor:
       raw: |
@@ -441,6 +843,10 @@ case:
         + Λ tolerable
         + Ψ handled
         (+ Σ reachable)
+        + cost topology explicit
+        + asymmetry activation marked / bounded / re-bound where present
+        + no parity-to-exit
+        + no responsibility-to-authority
         = structurally governable configuration
       case_translation:
         - "The communicative frame must be explicit and tested under peak conditions."
@@ -450,6 +856,8 @@ case:
         - "Pauses must remain tolerable without becoming threat signals."
         - "Intensity must not smuggle in covert binding demands."
         - "Contradictions between desire, cost, recovery, and exposure must be integrable without narrative substitution."
+        - "Mutuality must not become parity-to-exit."
+        - "Safety responsibility must not become authority."
 
   rational_response_envelope:
     status: "structural_reasonableness_not_prescription"
@@ -472,6 +880,14 @@ case:
       - response: "Treating post-hoc explanation as equivalent to containment."
         operator_reading: >
           Φ substitutes for operational regulation and delays Σ.
+      - response: "Relying on mutual intensity to settle responsibility."
+        operator_reading: >
+          Parity-to-exit risk appears if mutuality language blocks cost
+          re-internalization.
+      - response: "Claiming safety authority in the name of protection."
+        operator_reading: >
+          Responsibility-to-authority risk appears if safety responsibility
+          becomes frame control.
 
   narrative_substitution_mechanism:
     title: "Φ as Failed Regulator"
@@ -489,17 +905,21 @@ case:
     guard: >
       This is not a critique of communication. It only marks the point where
       communication is asked to do operator-work that requires distance,
-      temporality realism, asymmetry accounting, and integration.
+      temporality realism, asymmetry accounting, cost-topology mapping, and
+      integration.
 
   distance_erosion:
     title: "Χ under Pressure"
     risk_point: >
-      Distance exists in principle but collapses in practice under peak activation.
+      Distance exists in principle but collapses in practice under peak
+      activation.
     failure_mode:
       - "Stopping feels like betrayal of intensity or intimacy."
       - "Meta-position is postponed until later."
       - "De-escalation is read as breaking the mood rather than regulating the configuration."
       - "Reassurance becomes the only accepted response to overload."
+      - "Cost-topology review is treated as cooling, mistrust, or loss of intensity."
+      - "Χ is framed as rejection rather than as the condition for preserving the scene."
     structural_indicator: >
       The only acceptable responses to overload are reassurance or continuation,
       not interruption, slowing, re-reading, humor, or pause.
@@ -512,23 +932,89 @@ case:
     pms_status: "derived_construct_from_PMS"
     canonical_pms_formula: ["Ψ", "Χ", "Ω"]
     pms_sex_application_formula: >
-      explicit Ω + operative Χ + no covert Ψ demand under Θ, with outer-form
-      readability preserved
+      explicit Ω + operative Χ + no covert Ψ demand under Θ + marked/bounded
+      asymmetry activation + no parity-to-exit + no responsibility-to-authority,
+      with outer-form readability preserved
     risk_point: >
       Dignity-in-Practice is stressed where pressure-through-overload replaces
-      practical restraint, even if the scene is communicatively narrated as safe.
+      practical restraint, even if the scene is communicatively narrated as
+      safe.
     failure_mode:
       - "Ω gradients remain under-described because mutual intensity dominates the frame."
       - "Χ is present symbolically but not operational under load."
       - "Θ costs are explained after they accumulate rather than regulated before they harden."
       - "Outer-form readability is blocked by the internal claim that communication was sufficient."
+      - "Mutuality language exits responsibility for unequal after-costs."
+      - "Safety or protection responsibility becomes authority over the frame."
     structural_indicator: >
       The frame protects the narrative of transparency more reliably than it
       protects recoverability, interruption, and non-degradation under intensity.
     guardrail: >
       Naming a D-in-Practice stress point does not rank persons, diagnose
-      motives, deny consent, or moralize intensity. It identifies where enacted
-      restraint under asymmetry is structurally under pressure.
+      motives, deny consent, moralize intensity, assign maturity level, or
+      produce an adultness verdict. It identifies where enacted restraint under
+      asymmetry is structurally under pressure.
+
+  switch_drift_and_eden_pfo_guard:
+    status: "scan_required_but_not_primary_mechanism"
+    note: >
+      The primary mechanism of this case is intensity-structure mismatch under
+      compressed Θ. Switch drift is scanned because high-intensity scenes often
+      create asymmetry activation surfaces around vulnerability, overload,
+      protection, pacing, and responsibility.
+    asymmetry_switch_guard: >
+      Overload, recovery asymmetry, or vulnerability may be named only where
+      marked, bounded, and re-bound into Σ/Ψ. Unmarked repetition of overload as
+      exception lever becomes switch drift.
+    parity_to_exit_guard: >
+      Mutuality, mutual desire, and mutual communication must not be used to exit
+      responsibility for unequal after-costs.
+    responsibility_to_authority_guard: >
+      Safety responsibility, protection responsibility, or pacing responsibility
+      must not become authority over the frame or the other role-position.
+    final_guard: >
+      The switch scan records operator profiles only. It does not diagnose,
+      rank, or evaluate person-adultness.
+
+  mip_docking_guard:
+    applies_if: "reader infers maturity, adultness, responsibility-capacity, recklessness, or role-capacity evaluation"
+    pms_sex_records_only:
+      - "high_intensity_acceleration"
+      - "narrative_safety_substitution"
+      - "weak_or_symbolic_chi"
+      - "missing_sigma_coordination"
+      - "omega_recovery_exposure_gradient"
+      - "theta_compression"
+      - "cost_topology_mismatch"
+      - "parity_to_exit_risk"
+      - "responsibility_to_authority_risk"
+      - "asymmetry_switch_drift_risk"
+    not_allowed_in_pms_sex:
+      - "maturity_verdict"
+      - "adultness_verdict"
+      - "person_label"
+      - "reckless_person_claim"
+      - "moral_failure_claim"
+      - "dignity_hierarchy"
+      - "essence_claim"
+      - "diagnosis"
+    proper_mip_question_if_docked: >
+      In this scene, under this cost topology, did the role-position carry the
+      self-binding made necessary by its own escalation capacity, recovery
+      profile, exposure level, exit capacity, and externalization profile?
+    guard: >
+      Any maturity-relevant evaluation belongs to MIP docking and must remain
+      scene-bound, reversible, non-person-ranking, non-diagnostic, and
+      D-preserving. PMS-SEX itself records operator profiles only.
+
+  operator_profile_only_note:
+    text: >
+      This case may record intensity acceleration, narrative safety substitution,
+      Ω recovery/exposure gradients, Θ compression, weak Χ, missing Σ,
+      cost-topology mismatch, parity-to-exit risk, responsibility-to-authority
+      risk, and asymmetry-switch drift risk. None of these profiles is a person
+      diagnosis, person-adultness claim, moral verdict, dignity ranking, or
+      authority claim.
 
   path_cost_guard:
     path_cost_terms_used:
@@ -537,11 +1023,12 @@ case:
       - "drift multiplier"
       - "irreversible trajectory"
       - "operator-work"
+      - "cost-topology mismatch"
+      - "asymmetry-specific self-binding burden"
     admissibility: >
       These terms apply only to configuration dynamics. They describe the extra
-      operator-work required to keep a high-intensity scene coherent,
-      reversible, non-coercive, and dignity-preserving under recurrence and
-      temporality.
+      operator-work required to keep a high-intensity scene coherent, reversible,
+      non-coercive, and dignity-preserving under recurrence and temporality.
     forbidden_conversions:
       - "No path-cost as person-worth."
       - "No intensity as moral disorder."
@@ -549,6 +1036,13 @@ case:
       - "No disturbance-language as diagnosis."
       - "No humiliation or degradation of persons."
       - "No orientation taxonomy."
+      - "No maturity ranking."
+      - "No adultness verdict from PMS-SEX."
+      - "No cost topology as score."
+    final_guard: >
+      Path-cost language remains configuration-language only. If converted into
+      person-language, diagnosis, rank, taxonomy, humiliation, maturity ranking,
+      dignity hierarchy, or authority claim, the use leaves PMS-SEX.
 
   reader_guard:
     misinterpretation_prevention:
@@ -559,12 +1053,19 @@ case:
         - "that escalation is a moral failure"
         - "that high intensity is pathological"
         - "that one role is morally superior or inferior"
+        - "that unequal recovery means unequal dignity"
+        - "that PMS-SEX can directly evaluate adultness"
+        - "that sexual cost topology ranks persons"
+        - "that safety responsibility creates authority"
       does_claim:
         - "that intensity can multiply small frame errors"
         - "that narration cannot replace regulation"
         - "that costs can compress and appear sudden without conflict or malice"
         - "that Ω and Θ remain active even when □ is communicatively stable"
         - "that Χ must be operative under pressure, not merely available in principle"
+        - "that adult sexual reciprocity requires non-externalization of unequal burdens"
+        - "that mutuality can become parity-to-exit if it blocks cost-topology review"
+        - "that safety responsibility can become responsibility-to-authority if it becomes frame control"
 
   validity_check:
     application_gate:
@@ -581,17 +1082,26 @@ case:
         - id: "omega_tracked"
           operator: "Ω"
           requirement: >
-            Asymmetry is tracked across recovery, exposure, access, repair, and
-            after-costs.
+            Asymmetry is tracked across recovery, exposure, access, repair,
+            responsibility, and after-costs.
         - id: "theta_acceleration_acknowledged"
           operator: "Θ"
           requirement: >
             Temporality is acknowledged as accelerating under intensity.
+        - id: "sexual_cost_topology_explicit"
+          requirement: >
+            Bodily, temporal, exposure, reputational, binding, exit, publicness,
+            and responsibility costs are mapped without score or rank.
+        - id: "switch_drift_checked"
+          requirement: >
+            Asymmetry activation is marked/bounded/re-bound where present;
+            parity does not exit responsibility; responsibility does not become
+            authority.
         - id: "dignity_constrains_overload_pressure"
           operator: "D"
           requirement: >
-            Dignity-in-Practice constrains pressure-through-overload and prevents
-            degradation, shaming, or person-ranking.
+            Dignity-in-Practice constrains pressure-through-overload and
+            prevents degradation, shaming, person-ranking, or maturity ranking.
         - id: "psi_not_smuggled"
           operator: "Ψ"
           requirement: >
@@ -599,7 +1109,82 @@ case:
             self-worth demand.
       otherwise: >
         Without these conditions, the case may describe the configuration but
-        must not prescribe, rank, diagnose, or authorize critique-through-humiliation.
+        must not prescribe, rank, diagnose, authorize critique-through-humiliation,
+        or infer maturity/adultness.
+
+  analysis_checklist_application:
+    S1_scene_boundary:
+      status: "satisfied"
+      note: >
+        The scene is bounded as repeated high-activation sexual configuration
+        over a short-to-medium timeframe with rapid escalation.
+    S2_canonical_dependency_check:
+      status: "satisfied"
+      note: >
+        PMS v1.3 spine preserved. Reduced signatures are shorthand only. Sexual
+        cost topology and switch-drift handles are overlay handles, not new
+        operators.
+    S3_reduced_operator_signature:
+      status: "satisfied"
+      selected:
+        - "MF_16_2 High-Risk / Extreme Practices"
+        - "MF_19_2 Functional Conditions and Warning Signals"
+        - "MF_4_2 Asymmetry / Sexual Cost Topology"
+        - "MF_5_2 Temporality"
+        - "MF_6_2 Exit Realism"
+        - "MF_10_2 Distance"
+        - "MF_12_2 Self-Binding"
+    S4_inner_outer_public_layer_scan:
+      status: "satisfied"
+      note: >
+        Internal narrative safety, outer high-activation cost topology, optional
+        publicness, and temporal carryover are separated.
+    S5_cost_axis_scan:
+      status: "satisfied"
+      note: >
+        Ω gradients and Θ compression are identified through bodily recovery,
+        exposure, reputational residue, binding, exit, and responsibility costs.
+    S6_distance_and_correction_capacity:
+      status: "stressed"
+      note: >
+        Χ is present in principle but may become symbolic under peak activation.
+    S7_drift_marker_scan:
+      status: "satisfied"
+      markers:
+        - "Φ narrative inflation"
+        - "persistence despite structural undercutting"
+        - "Χ erosion under intensity"
+        - "cost-topology mismatch"
+    S8_switch_drift_scan:
+      status: "satisfied"
+      note: >
+        Parity-to-exit is a risk where mutual intensity or mutual communication
+        denies unequal after-costs. Responsibility-to-authority is a risk where
+        safety responsibility becomes frame control. Asymmetry-switch drift is
+        possible where overload or vulnerability becomes unmarked standing
+        leverage.
+    S9_viability_minimums:
+      status: "stressed"
+      note: >
+        Viability is weakened where Ω is undernamed, Θ compression is
+        underestimated, Χ is symbolic, Λ pauses are not tolerated, cost topology
+        is implicit, and Φ substitutes for Σ.
+    S10_adult_reciprocity_and_mip_guard:
+      status: "satisfied"
+      note: >
+        Adult sexual reciprocity is read only as non-externalization of unequal
+        burdens. Any adultness-relevant evaluation must be docked in MIP and
+        remain scene-bound, reversible, non-person-ranking, non-diagnostic, and
+        D-preserving.
+    S11_path_cost_guard:
+      status: "satisfied"
+      note: >
+        Drift and path-cost remain configuration-language only.
+    S12_escalation_guard:
+      status: "satisfied"
+      note: >
+        No motive explanation, diagnosis, maturity verdict, or person-label is
+        introduced.
 
   structural_closure:
     closure: >
@@ -607,13 +1192,49 @@ case:
       can actually carry what it narrates. When activation is extreme, repetition
       accelerates, asymmetries sharpen, and time compresses. If regulation
       remains rhetorical while enactment accelerates, costs do not rise
-      gradually; they jump. What looks like a sudden collapse is often Θ
-      catching up with a frame that never slowed the scene.
+      gradually; they jump. What looks like a sudden collapse is often Θ catching
+      up with a frame that never slowed the scene.
+    adult_reciprocity_closure: >
+      The relevant reciprocity question is not whether both roles wanted the
+      intensity, communicated frequently, or narrated the scene as safe. It is
+      whether unequal recovery, exposure, after-cost, exit, and responsibility
+      burdens are externalized. Mutuality becomes drift where it exits cost
+      responsibility; overload becomes drift where it becomes an unmarked lever;
+      safety becomes drift where it becomes authority rather than self-binding.
     citable_sentence: >
       Intensity is a drift multiplier when it converts small coordination gaps
       into irreversible trajectories faster than Distance (Χ) can regulate them.
     final_guard: >
-      No person diagnosis. No moral ranking. No path-cost as person-worth. No
-      critique through humiliation. Only configuration-language: what this
-      scene produces over time under frame, impulse, repetition, asymmetry,
-      temporality, recontextualization, and limited stop-capability.
+      No person diagnosis. No moral ranking. No maturity ranking. No adultness
+      verdict from PMS-SEX. No path-cost as person-worth. No critique through
+      humiliation. Only configuration-language: what this scene produces over
+      time under frame, impulse, repetition, asymmetry, temporality,
+      recontextualization, and limited stop-capability.
+
+  final_case_guard:
+    text: >
+      This case remains PMS-SEX-valid only as configuration analysis. It may name
+      cost, drift, outer legibility, sexual cost topology, switch-drift risk,
+      D-in-Practice stress, and operator profiles. It must not convert those
+      claims into person-ranking, diagnosis, orientation taxonomy, legal
+      judgment, adultness verdict, maturity hierarchy, dignity hierarchy, or
+      humiliating critique.
+    compressed_rules:
+      - "no person diagnosis"
+      - "no intent attribution"
+      - "no moral ranking"
+      - "no maturity ranking"
+      - "no adultness verdict from PMS-SEX alone"
+      - "no dignity hierarchy"
+      - "no orientation taxonomy"
+      - "no path-cost as person-worth"
+      - "no intensity as moral disorder"
+      - "no recovery asymmetry as person ranking"
+      - "no sexual cost topology as score"
+      - "no publicness reduction"
+      - "no parity-to-exit as reciprocity"
+      - "no responsibility-to-authority as care"
+      - "no asymmetry switch as authority"
+      - "no safety responsibility as frame authority"
+      - "no operator profile as person verdict"
+      - "no prescription"

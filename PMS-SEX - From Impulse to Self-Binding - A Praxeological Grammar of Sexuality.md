@@ -553,25 +553,33 @@ What makes a sexual situation consequential is not what was meant, but how the s
 
 ## 4. Asymmetry (Ω): The Structural Core
 
-This chapter introduces Ω (Asymmetry: structural gradients of access, exposure, capacity, and cost-bearing) as the core operator for making sexual praxis criticizable without moral theater. The point is not that asymmetry is “bad.” The point is that asymmetry is *there*—and either becomes governable inside the frame or returns as covert cost distribution over time.
+This chapter introduces Ω (Asymmetry: structural gradients of access, exposure, capacity, obligation, and cost-bearing) as the core operator for making sexual praxis criticizable without moral theater. The point is not that asymmetry is “bad.” The point is that asymmetry is *there*—and either becomes governable inside the frame or returns as covert cost distribution over time.
 
-Asymmetry analysis remains scene-bound. It names cost and exposure gradients in configurations, not personal worth, sexual rank, identity status, or moral quality.
+Asymmetry analysis remains scene-bound. It names cost and exposure gradients in configurations, not personal worth, sexual rank, identity status, maturity level, or moral quality.
 
 ### 4.1 Thesis
 
-Sexual praxis is asymmetry-sensitive. Ω (Asymmetry: directional imbalance in power, exposure, capacity, or obligation) is not a moral accusation but a structural fact. It is either governed inside the scene grammar or displaced into denial strategies that remain locally stabilizing only by shifting burdens across roles and time.
+Sexual praxis is asymmetry-sensitive. Ω (Asymmetry: directional imbalance in power, exposure, capacity, consequence, or obligation) is not a moral accusation but a structural fact. It is either governed inside the scene grammar or displaced into denial strategies that remain locally stabilizing only by shifting burdens across roles and time.
 
-This means that critique in PMS-SEX begins with cost layout, not with person judgment. The question is not “who is bad?” but “where do access, exposure, burden, and consequence accumulate, and are those gradients governable inside the frame?”
+This means that critique in PMS-SEX begins with cost layout, not with person judgment. The question is not “who is bad?” but:
+
+* where do access, exposure, burden, and consequence accumulate?
+* which costs are bodily, temporal, reputational, binding-related, or exit-related?
+* which costs are non-delegable?
+* which costs can be externalized?
+* are these gradients governable inside the frame?
+
+Asymmetry itself is not the failure. Ungoverned, unmarked, denied, externalized, or authority-converting asymmetry is the failure mode.
 
 ### 4.2 Minimal Formula (Operatorial)
 
 **Δ → ∇ → □ → Λ → Α → Ω → Θ**
 
-Read as a structural sequence: Δ (Difference: the distinctions that make the field differentiable) makes the field legible as differentiated; ∇ (Impulse: directed tension arising from difference) introduces directional pressure; □ (Frame: the grammar that defines legibility, boundaries, and roles) constrains what counts as an event; Λ (Non-Event: structured absence, delay, or counterfactual expectation within the frame) makes “not happening / not yet / not as expected” structurally active; repetition under that condition stabilizes into Α (Attractor: recurrent script formation under repeated framed interactions and non-events); these stabilized scripts generate Ω(asymmetry) as persistent gradients in roles, exposure, and responsibility; Θ (Temporality: trajectory, accumulation, irreversibility) extends those gradients into consequence-effective paths.
+Read as a structural sequence: Δ (Difference: the distinctions that make the field differentiable) makes the field legible as differentiated; ∇ (Impulse: directed tension arising from difference) introduces directional pressure; □ (Frame: the grammar that defines legibility, boundaries, roles, and consequence interfaces) constrains what counts as an event; Λ (Non-Event: structured absence, delay, or counterfactual expectation within the frame) makes “not happening / not yet / not as expected” structurally active; repetition under that condition stabilizes into Α (Attractor: recurrent script formation under repeated framed interactions and non-events); these stabilized scripts generate Ω (Asymmetry) as persistent gradients in roles, exposure, access, obligation, and responsibility; Θ (Temporality: trajectory, accumulation, irreversibility) extends those gradients into consequence-effective paths.
 
 The constraint is PMS-formal: Ω is not treated as a raw difference “already there.” It becomes structurally decisive when a stabilized script (Α) generates persistent gradients—and when Θ turns those gradients into downstream costs that cannot be rhetorically reset.
 
-This formulation also prevents a common overclaim. Difference alone is not yet asymmetry in the PMS-SEX sense. Asymmetry becomes analytically decisive when difference is stabilized into unequal access, exposure, obligation, or cost-bearing under a frame.
+This formulation also prevents a common overclaim. Difference alone is not yet asymmetry in the PMS-SEX sense. Asymmetry becomes analytically decisive when difference is stabilized into unequal access, exposure, obligation, consequence, or cost-bearing under a frame.
 
 ### 4.3 Heterosexuality as the Clearest Reference Case
 
@@ -580,9 +588,10 @@ Heterosexual constellations are often a methodologically clear reference case be
 Typical visibility channels include:
 
 * Θ (Temporality: bodily overhang and irreversibility) through reproduction- and pregnancy-linked consequences that cannot be jointly “reset” by intention,
-* exposure gradients (safety, reputational risk, social sanction) that attach unevenly under the prevailing □(frame),
+* exposure gradients (safety, reputational risk, social sanction, bodily visibility) that attach unevenly under the prevailing □ (frame),
 * access and exit gradients that differ by role-position inside the frame grammar,
 * bodily vulnerability gradients as risk parameters, not as value claims,
+* reputational sedimentation that may distribute differently across role-positions,
 * publicness overlays that may amplify and sedimentize already uneven exposure patterns.
 
 These are frame and cost parameters. They do not establish superiority, blame, normality, pathology, or ontological ranking. They establish why Ω is often visible early and why denial strategies tend to become costly under accumulation.
@@ -591,19 +600,19 @@ This methodological focus does not convert heterosexuality into a norm hierarchy
 
 ### 4.4 Symmetry as Narrative, Not Structure
 
-Many configurations maintain a “we are equal / 50–50” story that functions as integration talk while leaving Ω unmanaged.
+Many configurations maintain a “we are equal / mutual / 50–50” story that functions as integration talk while leaving Ω unmanaged.
 
-Σ (Integration: coherent synthesis of conflicting elements into viable coordination) remains clean as an operator. The issue is not Σ. The issue is an *integration-claim* that substitutes for actual Ω-management inside □(frame). A configuration can speak as if it has integrated asymmetry while still distributing costs covertly.
+Σ (Integration: coherent synthesis of conflicting elements into viable coordination) remains clean as an operator. The issue is not Σ. The issue is an *integration-claim* that substitutes for actual Ω-management inside □ (frame). A configuration can speak as if it has integrated asymmetry while still distributing costs covertly.
 
 Pseudo-symmetry typically appears when:
 
-* Ω(asymmetry) is operative as access/exposure/cost tilt,
-* □(frame) does not name or regulate the tilt,
-* and Θ(temporality) accumulates costs until the gradients become consequence-visible.
+* Ω (asymmetry) is operative as access/exposure/cost tilt,
+* □ (frame) does not name or regulate the tilt,
+* and Θ (temporality) accumulates costs until the gradients become consequence-visible.
 
 This is why “equal” cannot function as a structural argument. A symmetry narrative does not remove Ω; it can only hide it—often by relocating costs into later time and downstream role-positions.
 
-The same applies to benign self-description. A configuration may internally name itself as consensual, playful, mutual, or balanced while still leaving concrete asymmetry unmanaged. Internal framing matters, but it does not by itself settle the cost layout.
+The same applies to benign self-description. A configuration may internally name itself as consensual, playful, mutual, balanced, casual, or non-binding while still leaving concrete asymmetry unmanaged. Internal framing matters, but it does not by itself settle the cost layout.
 
 ### 4.5 Ω Mechanics: Management vs Denial
 
@@ -611,70 +620,171 @@ A configuration can be structurally asymmetrical and still viable. The decisive 
 
 **Ω managed (functional configuration):**
 
-* role expectations are explicit or reliably implicit inside □(frame),
+* role expectations are explicit or reliably implicit inside □ (frame),
 * boundaries and practical stop capability are reachable via Χ (Distance: reflective inhibition and stop-capability),
-* Θ (Temporality: cost realism) is present—trajectories, follow-up, and overhang are accounted for rather than rhetorically reset,
+* Θ (Temporality: cost realism) is present—trajectories, follow-up, repeatability, and overhang are accounted for rather than rhetorically reset,
 * D (Dignity-in-practice: enacted restraint and protection under asymmetry) is protected in how gradients are carried, not merely asserted,
 * internal framing does not erase visible cost layout,
-* publicness is handled as a possible amplifier of exposure rather than ignored or treated as the only source of consequence.
+* publicness is handled as a possible amplifier of exposure rather than ignored or treated as the only source of consequence,
+* asymmetry activation, where needed, is marked, bounded, and re-bound into Σ/Ψ.
 
 **Ω denied (drift configuration):**
 
 * “as-if symmetry” replaces regulation, so Ω persists without governance,
 * Φ (Recontextualization: embedding into a new frame) is used as narrative repair without cost recognition, so the frame story changes while the gradients remain,
-* Λ(non-event) becomes steering—silence, withdrawal, indeterminacy, or delayed clarification carry pressure and shift responsibility,
+* Λ (non-event) becomes steering—silence, withdrawal, indeterminacy, or delayed clarification carry pressure and shift responsibility,
 * exit becomes an “as-if” fiction: Θ and Α keep consequences active even when the narrative claims harmlessness,
-* internal labels such as play, freedom, devotion, or authenticity are used to block cost-layout analysis,
-* publicity is blamed for all harm even where the scene’s asymmetry was already structurally active before circulation.
+* internal labels such as play, freedom, autonomy, devotion, authenticity, or mutuality are used to block cost-layout analysis,
+* publicity is blamed for all harm even where the scene’s asymmetry was already structurally active before circulation,
+* asymmetry activation becomes available without marking, bounding, or re-binding.
 
-Denial is not a private vice. It is a structural move: it preserves short-term scene stability by exporting costs into time, into ambiguity, or into roles less able to refuse them.
+Denial is not a private vice. It is a structural move: it preserves short-term scene stability by exporting costs into time, ambiguity, publicness, or roles less able to refuse them.
 
-### 4.6 Cost Layout as Mandatory Lens
+### 4.6 Sexual Cost Topology
+
+Sexual asymmetry cannot be evaluated by asking whether both role-positions are “equally free” in abstract terms. The relevant object is the **sexual cost topology**: the scene-bound distribution of bodily, temporal, exposure-related, reputational, binding-related, exit-related, and responsibility-related costs across role-positions in sexual praxis.
+
+Sexual cost topology is not a person score. It is not a dignity measure. It does not rank bodies, roles, identities, orientations, or preferences. It asks only how consequences attach.
+
+A minimal sexual cost topology asks:
+
+* which costs are bodily non-delegable?
+* which costs are reputationally or socially amplified?
+* which costs accumulate under Θ?
+* which costs become publicly sedimented if exposed or circulated?
+* which costs can be plausibly denied, minimized, or externalized?
+* who can exit cheaply, and who cannot?
+* who can redefine the frame after the fact?
+* who can invoke asymmetry as exception?
+* who can invoke parity as exit?
+* who can convert responsibility into authority?
+
+This topology is not symmetrical in content. One role-position may carry more bodily, reproductive, exposure-related, or reputational overhang. Another role-position may carry greater responsibility precisely where it can externalize consequences more easily, exit more cheaply, redefine the frame, plausibly deny downstream costs, or convert responsibility into authority.
+
+PMS-SEX therefore does not ask whether both sides carry the same costs. It asks whether unequal costs are coordinated without being externalized.
+
+The guiding formula is:
+
+> **Adult sexual reciprocity does not require equal burdens. It requires non-externalization of unequal burdens.**
+
+This is not a moral command and not a role prescription. It is a structural viability condition: where a role-position externalizes its own asymmetry-specific burden, reciprocity becomes unstable under Ω/Θ even if the scene remains rhetorically mutual.
+
+### 4.7 EDEN/PFO Note: Switch Availability Is Not Ω-Management
+
+PMS-SEX does not derive the asymmetry-switch mechanism on its own. PMS–EDEN names the regime-level asymmetry switch. PMS-SEX reads its sexual instantiation.
+
+The presence of real asymmetry does not by itself justify switching between parity and asymmetry claims. In sexual praxis, body-, exposure-, reputational-, publicness-, and consequence-asymmetries may make asymmetry activation materially salient. Some Ω/Θ costs cannot be carried symmetrically. For that reason, asymmetry activation is not illegitimate as such.
+
+The viability question is narrower and stricter:
+
+* Is asymmetry activation marked?
+* Is it bounded?
+* Is it linked to a real Ω/Θ burden?
+* Is it re-bound into Σ/Ψ?
+* Or does it become unmarked leverage, responsibility displacement, parity-to-exit, or responsibility-to-authority drift?
+
+In sexual praxis, Ω-management requires more than acknowledging unequal costs. It requires asking whether asymmetry is being coordinated, or whether asymmetry is becoming a switch.
+
+The sexual instantiation of the EDEN/PFO mechanism can be stated as follows:
+
+> Real body-, exposure-, reputational-, and Θ-consequence asymmetries may justify marked emergency activation. Dignity and reciprocity fail where the switch becomes an unmarked lever, Ψ-externalization, parity-to-exit, or responsibility-to-authority drift.
+
+This distinction matters because both errors are possible:
+
+* A role-position bearing higher bodily, exposure, or reputational cost may activate asymmetry without marking, bounding, or re-binding it. Then protection can become leverage.
+* A role-position with greater exit capacity, lower bodily overhang, or greater frame-control capacity may invoke parity to deny additional responsibility. Then equality can become abandonment.
+* A role-position recognizing additional responsibility may convert it into authority. Then care can become control.
+
+Sexual reciprocity fails where asymmetry becomes leverage, parity becomes exit, or responsibility becomes authority.
+
+### 4.8 Cost Layout as Mandatory Lens
 
 Ω is described in PMS-SEX only as a cost and exposure layout. This keeps critique criterial rather than moralistic.
 
 A minimal Ω(layout) description answers:
 
 * who carries short-term costs in the scene,
-* who carries long-term costs under Θ(temporality),
-* who can evade, switch, or externalize costs—and who cannot,
-* which costs attach as bodily, social, reputational, exposure-related, or binding-related consequences,
+* who carries long-term costs under Θ,
+* who can evade, switch, deny, or externalize costs—and who cannot,
+* which costs attach as bodily, social, reputational, exposure-related, publicness-related, exit-related, or binding-related consequences,
 * whether internal framing clarifies or obscures the cost layout,
-* whether publicness distributes or intensifies costs that were already structurally present.
+* whether publicness distributes or intensifies costs that were already structurally present,
+* whether asymmetry activation is marked, bounded, and re-bound,
+* whether parity language is coordinating reciprocity or functioning as exit rhetoric,
+* whether responsibility remains self-binding or becomes frame authority.
 
-This is the anchor that makes critique possible without humiliating narratives: if costs are asymmetric, and if the asymmetry is denied, the configuration becomes criticizable on viability grounds regardless of intent or self-description.
+This is the anchor that makes critique possible without humiliating narratives: if costs are asymmetric, and if the asymmetry is denied, switched, externalized, or converted into authority, the configuration becomes criticizable on viability grounds regardless of intent or self-description.
 
 Outer legibility does not imply moral verdict. It functions only as a criterion for reading consequence form, frame narrowing, and asymmetry distribution.
 
-### 4.7 Chapter Closure — Asymmetry as the Structural Core
+A useful compact distinction is:
+
+| Cost / drift axis | Body-consequence-bearing role-position | Externalization-capable role-position |
+| - | - | - |
+| Bodily Θ | higher non-delegable bodily overhang possible | often lower bodily overhang, but not zero |
+| Exposure Ω | higher visible/social/reputational sedimentation possible | exposure may arise through accusation, responsibility, public framing, or authority suspicion |
+| Exit | exit may remain bodily/reputationally costly | exit may be cheaper, more deniable, or more narratively available |
+| Asymmetry misuse | asymmetry activation can become unmarked lever | parity can become exit rhetoric |
+| Responsibility misuse | self-binding may be displaced through emergency language | responsibility may be denied or converted into authority |
+| Dignity risk | protection becomes leverage; emergency switch loses legitimacy | care becomes control; equality becomes abandonment |
+| Adult task | mark, bound, and re-bind asymmetry activation | carry externalizability through Ψ/Χ without converting it into authority |
+| Failure mode | unmarked asymmetry-switch drift | parity-to-exit / responsibility-to-authority drift |
+
+The table is not a taxonomy of persons. It is a role-position grid for cost topology. In any concrete scene, the positions must be re-mapped; they cannot be assigned by identity, sex, gender, orientation, or self-description alone.
+
+### 4.9 Chapter Closure — Asymmetry as the Structural Core
 
 #### (1) Structural Result (Condensation)
 
-This chapter shows that sexual situations become criticizable not because someone is wrong, but because **costs are unevenly carried**. Asymmetry names that unevenness: who is more exposed, who can withdraw, who absorbs consequences over time. The central result is that asymmetry does not disappear when it is denied. When it is left unnamed, it reorganizes the situation indirectly—through silence, repetition, and delayed fallout—until the imbalance becomes visible as conflict or constraint rather than as coordination.
+This chapter shows that sexual situations become criticizable not because someone is wrong, but because **costs are unevenly carried**. Asymmetry names that unevenness: who is more exposed, who can withdraw, who absorbs consequences over time, who can redefine the frame, and who can externalize costs. The central result is that asymmetry does not disappear when it is denied. When it is left unnamed, it reorganizes the situation indirectly—through silence, repetition, delayed fallout, selective activation, and shifted responsibility—until the imbalance becomes visible as conflict or constraint rather than as coordination.
 
 What changes in perspective is this: claims of equality do not determine how a situation works. What determines viability is whether uneven exposure and obligation are handled inside the situation, or pushed into time and ambiguity where they harden into drift.
 
-The same applies to internal framing. A scene may be internally named as mutual, playful, intimate, or consensual while still requiring asymmetry analysis. Such analysis does not deny internal meaning; it reconstructs cost layout.
+The same applies to internal framing. A scene may be internally named as mutual, playful, intimate, consensual, casual, or non-binding while still requiring asymmetry analysis. Such analysis does not deny internal meaning; it reconstructs cost topology.
+
+This chapter also introduces the SEX-specific relevance of the EDEN/PFO switch. PMS–EDEN names the regime-level asymmetry switch; PMS-SEX reads its sexual instantiation. In sexual frames, asymmetry activation may be legitimate where Ω/Θ costs cannot be carried symmetrically, but it must remain marked, bounded, and re-bound into Σ/Ψ. Otherwise, asymmetry becomes leverage, parity becomes exit, or responsibility becomes authority.
 
 #### (2) Cost Distribution (explicit)
 
-The costs of unmanaged asymmetry accumulate concretely: **over time**, consequences persist and stack even when intentions change; through **repetition**, unequal roles solidify into default expectations; through **exposure**, one side becomes more vulnerable to risk or fallout; through **irreversibility**, some effects cannot be jointly undone once they have occurred; through **outer legibility**, the scene may remain readable as an asymmetry-form even where internal naming contests that reading; and through **publicness**, uneven exposure may be amplified, documented, and sedimentized without being created from nothing.
+The costs of unmanaged asymmetry accumulate concretely:
+
+* **Over time:** consequences persist and stack even when intentions change.
+* **Through repetition:** unequal roles solidify into default expectations.
+* **Through exposure:** one role-position may become more vulnerable to risk, visibility, reputation, bodily overhang, or fallout.
+* **Through irreversibility:** some effects cannot be jointly undone once they have occurred.
+* **Through outer legibility:** the scene may remain readable as an asymmetry-form even where internal naming contests that reading.
+* **Through publicness:** uneven exposure may be amplified, documented, and sedimentized without being created from nothing.
+* **Through switch drift:** asymmetry can become a standing lever where it is not marked and re-bound.
+* **Through parity-to-exit:** equality rhetoric can deny additional responsibility under unequal cost topology.
+* **Through responsibility-to-authority:** required self-binding can be converted into control, protection entitlement, or frame ownership.
+
+Sexual cost topology is therefore not an optional add-on. It is the concrete form of Ω analysis in PMS-SEX.
 
 #### (3) Structural Viability Corridor
 
-**Viability increases where** uneven exposure and obligation are legible within the situation, interruptions remain practically possible, internal framing does not erase cost layout, and publicness is treated as a possible amplifier rather than as the whole source of consequence.
+**Viability increases where** uneven exposure and obligation are legible within the situation, interruptions remain practically possible, internal framing does not erase cost layout, publicness is treated as a possible amplifier rather than as the whole source of consequence, and asymmetry activation remains marked, bounded, and re-bound into Σ/Ψ.
 
-**Drift begins where** equality is asserted instead of unevenness being handled, where silence or delay carries responsibility, where time is treated as if it could reset consequences, or where benign self-description substitutes for Ω-management.
+**Drift begins where** equality is asserted instead of unevenness being handled, where silence or delay carries responsibility, where time is treated as if it could reset consequences, where benign self-description substitutes for Ω-management, where asymmetry is activated as unmarked leverage, where parity becomes exit rhetoric, or where responsibility becomes authority.
+
+This corridor is descriptive, not prescriptive. It evaluates the governability of the configuration, not the worth of any role-position.
 
 #### (4) Entry Guard (with meaning)
 
-* **Χ (Distance):** preserved by analyzing cost layouts and role gradients rather than intentions or character, keeping reflective stop-capability intact.
+* **Χ (Distance):** preserved by analyzing cost layouts and role gradients rather than intentions or character, keeping reflective stop-capability intact. Χ is also required to prevent asymmetry activation from becoming urgency, accusation, or permanent exception.
 * **Reversibility:** preserved by binding all claims to specific situations and trajectories, allowing revision of interpretation without erasing accumulated effects.
-* **D (Dignity-in-Practice):** preserved by critiquing structures of exposure and cost without shaming, ranking, diagnosing, or assigning personal valuation.
+* **D (Dignity-in-Practice):** preserved by critiquing structures of exposure and cost without shaming, ranking, diagnosing, or assigning personal valuation. D fails where asymmetry becomes leverage, parity becomes abandonment, or responsibility becomes control.
 
-#### (5) One-line Marker (quote-ready)
+#### (5) Structural Viability Verdict (Non-Moral)
 
-Asymmetry is not a moral charge but a cost layout: if uneven exposure is not handled in the situation, it resurfaces later as conflict and accumulated consequence.
+A sexual configuration remains structurally viable where its asymmetries are legible, bounded, and coordinated. It becomes structurally unstable where asymmetry is denied, where equality rhetoric masks unequal costs, where non-binding language hides continuing Θ-consequences, or where role-position costs are externalized rather than carried.
+
+Sexual reciprocity does not require identical burdens. It requires that unequal burdens not be displaced onto the other role-position without marking, coordination, and self-binding.
+
+This verdict evaluates configuration viability, not persons.
+
+#### (6) One-line Marker (quote-ready)
+
+Asymmetry is not a moral charge but a sexual cost topology: if unequal exposure is not coordinated in the situation, it returns later as switch drift, conflict, authority, or accumulated consequence.
 
 ---
 
@@ -2327,6 +2437,8 @@ This chapter describes a boundary configuration: a structurally possible but hig
 
 The purpose is not to normalize, prescribe, or evaluate the practice. The purpose is to clarify the operator burden: if self-binding is suspended, coherence must be carried elsewhere.
 
+The updated PMS-SEX focus adds one further constraint: where Ψ is suspended, asymmetry does not become easier to handle. It becomes more demanding. A frame that describes itself as local, casual, playful, experimental, or non-binding may preserve parity language while bodily, exposure-related, reputational, publicness-related, or temporal consequences continue to accrue asymmetrically. Suspended Ψ therefore increases the need for explicit Ω-management rather than reducing it.
+
 ### 17.2 Minimal Formula (Operatorial)
 
 **Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ**
@@ -2335,9 +2447,11 @@ In this chapter, the arrows that pull most are **∇ → □ → Ω → Θ**, wi
 
 This formula follows the default PMS repository dependency path. “Suspended attribution” is not a new operator and not an alteration of PMS v1.3. It names a domain-specific boundary condition inside PMS-SEX: self-binding is prevented from silently governing attribution, while Ψ remains part of the PMS chain.
 
+The decisive risk is not that Ψ is missing from the model. The risk is that Ψ is socially or narratively suspended while its effects return covertly through attribution, jealousy, possession logic, exposure cost, bodily overhang, reputational sedimentation, or responsibility displacement.
+
 ### 17.3 Structural Setup — Scene Grammar
 
-**Δ (Difference):** distinctions must remain clear and non-negotiable in the scene grammar: private/public, involved/not involved, permitted/not permitted, inside/outside the contract frame, local/binding-relevant, internally named/externally readable.
+**Δ (Difference):** distinctions must remain clear and non-negotiable in the scene grammar: private/public, involved/not involved, permitted/not permitted, inside/outside the contract frame, local/binding-relevant, internally named/externally readable, parity-claim/asymmetry-activation.
 
 **∇ (Impulse):** pressure is realized as enacted praxis rather than displaced into chronic non-event load; the configuration is organized around explicit enactment rather than non-enactment.
 
@@ -2347,9 +2461,17 @@ This formula follows the default PMS repository dependency path. “Suspended at
 
 **Α (Attractor):** repetition can stabilize the practice into a script. The viability question is whether the attractor remains local and interruptible, or whether it begins to monopolize the configuration.
 
-**Ω (Asymmetry):** exposure, access, definitional control, and after-costs do not disappear because Ψ is suspended. They must remain legible as cost layout.
+**Ω (Asymmetry):** exposure, access, definitional control, after-costs, exit differences, and reputational consequences do not disappear because Ψ is suspended. They must remain legible as sexual cost topology.
 
 **Θ (Temporality):** repeated local scenes still accumulate. Suspension of binding changes attribution grammar; it does not make time reversible.
+
+**Φ (Recontextualization):** non-binding language may reframe the scene as casual, mutual, experimental, local, or “only play.” Such recontextualization can regulate meaning, but it cannot erase accumulated cost, outer form, or asymmetry.
+
+**Χ (Distance):** interruption, stop-capability, and meta-reading must remain practically available. Χ is not merely the right to say that the frame is non-binding; it is the practical ability to pause, reread, limit, or exit without being punished.
+
+**Σ (Integration):** integration remains limited but not irrelevant. Contradictions between internal framing, outer legibility, cost topology, repetition, publicness, and asymmetry must still be coordinable.
+
+**Ψ (Self-Binding):** Ψ is suspended as attribution condition, not abolished as operator reality. It may return covertly where repeated scenes become identity-relevant, possessive, reputationally sedimented, or responsibility-bearing.
 
 ### 17.4 Generative Mechanism — What Is Produced?
 
@@ -2357,27 +2479,33 @@ This formula follows the default PMS repository dependency path. “Suspended at
 
 (Ψ: contextual meaning = self-binding as identity-relevant fixation over time.)
 
-If **Ψ(self-binding)** is deliberately suspended while **□(frame)** remains explicit and **Χ (Distance: stop-capability and meta-position)** remains operational, then local coherence can become structurally possible: the configuration can run as a bounded practice with legible rules and costs without docking meaning to the self-model.
+If **Ψ (self-binding)** is deliberately suspended while **□ (frame)** remains explicit and **Χ (Distance: stop-capability and meta-position)** remains operational, then local coherence can become structurally possible: the configuration can run as a bounded practice with legible rules and costs without docking meaning to the self-model.
 
 This does not remove costs. It relocates where coherence is carried: from identity-level continuity into frame-level explicitness.
 
-It also does not erase outer form. A configuration may remain local in Ψ terms while still presenting a strongly marked outer form under asymmetry, exposure, repetition, or temporality.
+It also does not erase outer form. A configuration may remain local in Ψ terms while still presenting a strongly marked outer form under asymmetry, exposure, repetition, publicness overlay, or temporality.
+
+The sharper condition is this: where Ψ is suspended, the frame must carry more, not less. It must carry cost topology, asymmetry activation, interruption, after-costs, and re-reading capacity explicitly enough that covert binding does not become the hidden stabilizer.
 
 #### 17.4.2 Controlled Attractor Formation Under Repetition
 
 (Α: contextual meaning = attractor as script stabilization under repetition.)
 
-If repetition occurs while **Α(attractor)** is kept non-monopolizing through stable framing and available stop-capability, then the configuration can keep the script locally bounded without collapsing into exclusivity. The viability condition is not “no attractor,” but “no attractor monopolization.”
+If repetition occurs while **Α (attractor)** is kept non-monopolizing through stable framing and available stop-capability, then the configuration can keep the script locally bounded without collapsing into exclusivity. The viability condition is not “no attractor,” but “no attractor monopolization.”
 
-Practice labels do not guarantee this. A label such as play, experimentation, freedom, service, or non-binding may describe internal framing, but it does not by itself settle whether Α is becoming monopolizing.
+Practice labels do not guarantee this. A label such as play, experimentation, freedom, service, casualness, or non-binding may describe internal framing, but it does not by itself settle whether Α is becoming monopolizing.
+
+Repetition also raises the cost of pretending that each scene resets. Under Θ, repeated non-binding scenes may still generate path dependence, expectation, exposure, and after-costs. The scene may remain locally non-binding in its declared attribution grammar while becoming structurally binding in its cost topology.
 
 #### 17.4.3 Cost Legibility as the Main Stabilizer
 
 (Ω: contextual meaning = asymmetry as gradients of access, exposure, obligation, and cost-bearing.)
 
-If **Ω(asymmetry)** is openly regulated inside the frame and **Θ (Temporality: accumulation and irreversibility)** is tracked as trajectory rather than narrated as reset, then the configuration can remain legible: who carries what, what repeats, what accumulates, what becomes externally readable, what becomes publicly circulated, and what cannot be rewound.
+If **Ω (asymmetry)** is openly regulated inside the frame and **Θ (Temporality: accumulation and irreversibility)** is tracked as trajectory rather than narrated as reset, then the configuration can remain legible: who carries what, what repeats, what accumulates, what becomes externally readable, what becomes publicly circulated, and what cannot be rewound.
 
 Publicness may amplify or sedimentize after-costs, but it is not necessarily their origin. The configuration may already be structurally readable through exposure, asymmetry, and repeated action-form before any public circulation occurs.
+
+Suspended Ψ makes cost legibility more important because the frame cannot rely on identity-level continuity to absorb contradictions later. If the scene claims to be non-binding, it must make the cost topology more explicit, not less.
 
 ### 17.5 Characteristics of the Configuration
 
@@ -2386,6 +2514,8 @@ Publicness may amplify or sedimentize after-costs, but it is not necessarily the
 * Coherence is achieved inside the frame, not globally in the self-model.
 * Outer legibility is not dissolved by internal limitation-language.
 * Publicness is a possible overlay, not the sole creator of consequence.
+* Cost topology remains active even where attribution is locally limited.
+* Asymmetry activation requires stronger marking, not weaker, because the frame cannot silently borrow long-term Ψ to repair consequences later.
 
 This form is not “relationship-free.” It is binding-free only in a narrow operator sense: Ψ is not allowed to silently govern attribution.
 
@@ -2398,6 +2528,8 @@ Under strict viability conditions, the following can be structurally possible:
 * **Functional local coherence with limited Σ demand:** **Σ (Integration: synthesis of contradictions into a viable whole)** can remain limited if the frame stays narrow, legible, and consistently carried; however, this does not eliminate integration pressure where contradictions accumulate.
 * **Controlled intensity:** high gradients can remain governable when frame explicitness, temporal realism, and stop-capability match the load.
 * **Layer distinction:** internal framing, outer legibility, and publicness can be kept analytically distinct rather than collapsed into one another.
+* **Explicit cost topology:** the frame can make bodily, reputational, exposure-related, publicness-related, exit-related, and responsibility-related costs visible without turning them into person judgments.
+* **Bounded asymmetry activation:** if real Ω/Θ overload appears, asymmetry activation can remain structurally viable where it is marked, bounded, and re-bound into Σ/Ψ.
 
 These are possibilities, not promises, and they remain dependent on stable scene conditions.
 
@@ -2414,55 +2546,107 @@ Typical risk markers:
 * **Χ erosion:** the meta-position is experienced as disturbance; stop-capability becomes socially costly, which makes the configuration practically non-interruptible.
 * **Outer-form denial:** contract language or internal limitation-language is used to block analysis of the enacted form.
 * **Publicness confusion:** public circulation is treated either as the whole problem or as irrelevant, instead of as an overlay that may amplify and sedimentize already active readability.
+* **Asymmetry-switch drift:** asymmetry is activated when costs become visible, but without being marked, bounded, and re-bound into Σ/Ψ.
+* **Parity-to-exit drift:** parity language such as “it was mutual,” “we are equal,” “no strings,” or “the other is autonomous” is used to deny additional responsibility under unequal cost topology.
+* **Responsibility-to-authority drift:** required self-binding under sexual asymmetry is converted into control, protection entitlement, frame ownership, or paternalistic governance.
 
-**Formula:** “This configuration shows elevated drift potential via Ψ leak + Α hardening + Θ accumulation under weakening Χ.”
+**Formula:** “This configuration shows elevated drift potential via Ψ leak + Α hardening + Θ accumulation under weakening Χ, especially where suspended Ψ hides asymmetry-switch drift, parity-to-exit, or responsibility-to-authority.”
 
-This formula remains structural. It does not imply blame, pathology, identity rank, orientation taxonomy, or moral failure.
+This formula remains structural. It does not imply blame, pathology, identity rank, orientation taxonomy, moral failure, or person-level immaturity.
 
-### 17.8 Hard Clarification
+### 17.8 EDEN/PFO Drift under Suspended Ψ
 
-* **No consequence-free sex.**
-  **Θ(temporality), Α(attractor), Λ(non-event), and Ω(asymmetry)** remain operative independent of intent or contract language. Suspension changes how costs are narrated, not whether costs exist.
+PMS–EDEN names the regime-level asymmetry switch. PMS-SEX reads its sexual instantiation.
 
-* **Suspension of self-binding does not dissolve outer structural form.**
+Where Ψ is suspended, asymmetry activation requires stronger marking, not weaker. A non-binding frame may preserve parity language—“casual,” “mutual,” “only play,” “no strings,” “local,” “not identity-relevant”—while bodily, exposure-related, reputational, publicness-related, or temporal consequences continue to accrue asymmetrically.
+
+Under such conditions, the EDEN/PFO asymmetry switch becomes sexually salient. A role-position may activate asymmetry when costs become visible while preserving parity for autonomy, access, or non-binding status. Conversely, another role-position may use parity to deny additional responsibility, or convert responsibility into frame authority.
+
+Suspended Ψ therefore does not reduce the need for Ω-management. It increases it. The less binding the frame claims to be, the more explicit its cost topology must become.
+
+Three drift routes are especially relevant:
+
+1. **Asymmetry activation without re-binding:** real or invoked Ω/Θ pressure activates exception, protection, vulnerability, or cost claims, but the activation remains unmarked, repeatable, and responsibility-shifting.
+2. **Parity-to-exit:** parity or mutuality language denies additional responsibility under unequal sexual cost topology.
+3. **Responsibility-to-authority:** required self-binding under asymmetry becomes control, protection entitlement, frame authority, or paternalistic governance.
+
+These routes are not person types. They are scene-level drift patterns. Each route preserves local frame stability while preventing Σ/Ψ coordination under real Ω.
+
+The compact formula is:
+
+> **The less binding a sexual frame claims to be, the more explicit its Ω/Θ cost topology must become.**
+
+### 17.9 Hard Clarification
+
+* **No consequence-free sex.**  
+  **Θ (temporality), Α (attractor), Λ (non-event), and Ω (asymmetry)** remain operative independent of intent or contract language. Suspension changes how costs are narrated, not whether costs exist.
+
+* **Suspension of self-binding does not dissolve outer structural form.**  
   It changes how meaning is carried, not how action-forms remain readable under asymmetry, exposure, repetition, and temporality. A configuration may remain local in Ψ terms while still presenting a strongly marked outer form.
 
-* **No suspension formula removes outer legibility.**
+* **No suspension formula removes outer legibility.**  
   Contract language, explicit limitation, declared non-binding status, or local play framing may regulate attribution, but they do not by themselves erase the visible action-form or its consequence structure.
 
-* **Suspended self-binding is not protection.**
+* **Suspended self-binding is not protection.**  
   It is a burden shift: coherence must be carried by frame explicitness, cost legibility, and stop-capability rather than by identity-level continuity.
 
-* **Naming outer form is not person-ranking.**
+* **Suspended self-binding is not a license for unmarked asymmetry activation.**  
+  If asymmetry activation becomes necessary under real Ω/Θ pressure, it must be marked, bounded, and re-bound into Σ/Ψ. Suspension does not make exception use cheaper; it makes unmarked exception use more dangerous.
+
+* **Parity language is not enough.**  
+  “Mutual,” “equal,” “casual,” or “non-binding” may describe local frame intention, but these terms do not settle sexual cost topology.
+
+* **Responsibility does not generate authority.**  
+  Where asymmetry creates additional responsibility, that responsibility must be carried as Ψ/Χ self-binding, not converted into control, frame ownership, or governance over the other role-position.
+
+* **Naming outer form is not person-ranking.**  
   A scene may remain externally legible as an asymmetry-form, exposure-form, possession-form, humiliation-form, or control-form without this implying a judgment about anyone’s worth, motives, identity, or dignity.
 
-### 17.9 Chapter Closure — Suspended Self-Binding as Boundary Configuration
+### 17.10 Chapter Closure — Suspended Self-Binding as Boundary Configuration
 
 #### (1) Structural Result (Condensation)
 
 This chapter shows that explicit sexual practice can remain locally coherent even when identity-level binding is deliberately held back—but only as a **boundary configuration**. When meaning is not anchored in “who we are,” coherence must be carried by explicit agreements, visible limits, cost legibility, and the ability to stop and re-read the situation. What changes in understanding is the recognition that suspension of self-binding does not remove structure; it **moves the burden of coherence** from identity continuity to frame precision and ongoing regulation.
 
-The chapter also clarifies that suspended Ψ does not erase outer form. A scene may be internally narrated as local, limited, playful, or non-binding while its action-form remains externally readable under asymmetry, exposure, repetition, publicness overlay, or temporal accumulation.
+The chapter also clarifies that suspended Ψ does not erase outer form. A scene may be internally narrated as local, limited, playful, casual, or non-binding while its action-form remains externally readable under asymmetry, exposure, repetition, publicness overlay, or temporal accumulation.
+
+The updated PMS-SEX point is sharper: suspended Ψ is a high-risk site for asymmetry-switch drift. Where the frame claims not to bind, cost topology must become more explicit. Otherwise, parity language may mask unequal consequence, asymmetry activation may become a standing lever, or responsibility may convert into authority.
 
 #### (2) Cost Distribution (explicit)
 
-Even with suspended binding, costs accumulate concretely: **over time**, repetition forms paths; through **exposure**, uneven burdens and vulnerabilities appear; through **narrowing**, alternatives lose ease; through **outer legibility**, the enacted form may remain readable beyond contract language; through **publicness**, already active readability may be amplified, documented, or sedimentized; and through **irreversibility**, bodily and documented effects persist regardless of how the frame describes them.
+Even with suspended binding, costs accumulate concretely:
+
+* **Over time:** repetition forms paths.
+* **Through exposure:** uneven burdens and vulnerabilities appear.
+* **Through narrowing:** alternatives lose ease.
+* **Through outer legibility:** the enacted form may remain readable beyond contract language.
+* **Through publicness:** already active readability may be amplified, documented, or sedimentized.
+* **Through irreversibility:** bodily and documented effects persist regardless of how the frame describes them.
+* **Through asymmetry-switch drift:** protection or exception can become unmarked leverage.
+* **Through parity-to-exit:** non-binding or mutuality language can be used to deny additional responsibility.
+* **Through responsibility-to-authority:** care, protection, or repair responsibility can become control over the frame.
 
 #### (3) Structural Viability Corridor
 
-**Viability increases where** framing stays explicit, stopping remains practically usable, costs are named as they arise, repetition does not become exclusive, and internal limitation-language remains accountable to enacted form.
+**Viability increases where** framing stays explicit, stopping remains practically usable, costs are named as they arise, repetition does not become exclusive, internal limitation-language remains accountable to enacted form, and asymmetry activation remains marked, bounded, and re-bound into Σ/Ψ.
 
-**Drift begins where** meaning quietly enters despite suspension, repetition hardens into dependency, non-occurrence starts steering the situation, interruption becomes socially costly, practice labels block outer-form analysis, or publicness is mistaken for the whole source of consequence.
+**Drift begins where** meaning quietly enters despite suspension, repetition hardens into dependency, non-occurrence starts steering the situation, interruption becomes socially costly, practice labels block outer-form analysis, publicness is mistaken for the whole source of consequence, asymmetry activation becomes unmarked, parity becomes exit, or responsibility becomes authority.
 
 #### (4) Entry Guard (with meaning)
 
-* **Χ (Distance):** maintained by keeping interruption, meta-reading, and outer-form awareness legitimate parts of the situation, not signs of failure.
+* **Χ (Distance):** maintained by keeping interruption, meta-reading, and outer-form awareness legitimate parts of the situation, not signs of failure. Χ also prevents suspended Ψ from becoming an excuse for unmarked exception use.
 * **Reversibility:** maintained by treating the configuration as scene-bound and revisable, without claiming that accumulated effects disappear.
-* **D (Dignity-in-Practice):** maintained by analyzing structure, outer legibility, and cost without attributing motives, defects, diagnosis, identity rank, or personal worth.
+* **D (Dignity-in-Practice):** maintained by analyzing structure, outer legibility, and cost without attributing motives, defects, diagnosis, identity rank, personal worth, or maturity hierarchy. D fails where asymmetry becomes leverage, parity becomes abandonment, or responsibility becomes control.
 
-#### (5) One-line Marker (quote-ready)
+#### (5) Structural Viability Verdict (Non-Moral)
 
-Suspending self-binding can work locally, but only while the situation itself carries the weight that identity usually does.
+Suspended self-binding can remain locally viable only where the frame carries what identity-binding would otherwise absorb: cost topology, interruption, outer legibility, temporal accumulation, and re-binding conditions. It becomes structurally unstable where non-binding language hides continuing consequences, where cost asymmetries are treated as resettable, or where switch drift replaces Ω-management.
+
+Adult sexual reciprocity does not require equal burdens. It requires that unequal burdens not be externalized through unmarked asymmetry activation, parity-to-exit, or responsibility-to-authority.
+
+#### (6) One-line Marker (quote-ready)
+
+Suspending self-binding can work locally, but only while the situation explicitly carries the cost topology that identity-binding would otherwise absorb.
 
 ---
 
@@ -2474,7 +2658,7 @@ This chapter analyzes enactments, roles, and scenes. It consolidates drift and d
 
 This chapter consolidates typical drift and destruction dynamics without pathologizing them. It is not about “errors,” defects, or person-types, but about predictable consequences of specific operator configurations. All claims remain scene-bound and revisable: in this configuration, under this frame, with this distribution of costs, these dynamics become more likely.
 
-Destructive dynamics need not become visible only through public reaction or later narrative settlement. In some configurations, drift is already strongly legible at the level of outer form: through asymmetry concentration, marked exposure, narrowing alternatives, repeated non-events, interruption failure, or consequence concentration.
+Destructive dynamics need not become visible only through public reaction or later narrative settlement. In some configurations, drift is already strongly legible at the level of outer form: through asymmetry concentration, marked exposure, narrowing alternatives, repeated non-events, interruption failure, consequence concentration, or switch drift.
 
 Such legibility remains structural, not moral. It does not rank persons; it identifies enacted drift preparation.
 
@@ -2486,6 +2670,8 @@ In this chapter, the arrows that pull most are **Λ → Α → Ω → Θ**, with
 
 This formula follows the default PMS repository dependency path. The chapter does not add a new operator or alter PMS v1.3; it isolates the operator cluster that makes dysfunctional drift structurally legible inside PMS-SEX.
 
+The updated reading adds a specific sexual drift cluster derived from the EDEN/PFO mechanism: **asymmetry-switch drift**, **parity-to-exit drift**, and **responsibility-to-authority drift**. These are not new PMS operators. They are paper-internal drift markers for how Ω/Θ cost topology becomes mismanaged in sexual frames.
+
 ### 18.3 Core Dysfunction Markers (Structural)
 
 > **Reading rule:** Each marker is a configuration statement (“in this configuration…”), not a label.
@@ -2494,15 +2680,16 @@ This formula follows the default PMS repository dependency path. The chapter doe
 
 (Ψ: contextual meaning = self-binding as identity-relevant commitment and attribution over time.)
 
-In this configuration, meaning and identity-relevant stakes enter a frame that is narrated as limited, suspended, local, or non-binding:
+In this configuration, meaning and identity-relevant stakes enter a frame that is narrated as limited, suspended, local, casual, or non-binding:
 
 * implicit expectations (“this must mean…”),
 * jealousy as rule-substitute or possession logic inside a play frame,
 * meaning claims without explicit frame legibility,
 * local enactments treated as identity proofs,
-* practice labels used to deny that binding has already become active.
+* practice labels used to deny that binding has already become active,
+* non-binding language used to avoid naming responsibility that has already accumulated.
 
-**Structural result:** Ψ(binding) becomes operative although suspension is asserted; attribution is silently demanded while the frame cannot carry binding explicitly.
+**Structural result:** Ψ (binding) becomes operative although suspension is asserted; attribution is silently demanded while the frame cannot carry binding explicitly.
 
 Internal non-binding language does not by itself prevent binding effects. A scene may be internally narrated as local, playful, exploratory, or non-binding while still becoming attribution-relevant through repetition, asymmetry, exposure, outer legibility, or temporal carryover.
 
@@ -2516,9 +2703,10 @@ In this configuration, asymmetry increases while remaining unacknowledged inside
 * access pressure: time, body, availability, attention, or repair,
 * power shifts without explicit rule updates,
 * uneven capacity to refuse, exit, absorb fallout, or define what the scene “really was,”
-* exposure gradients treated as mutual when they are structurally uneven.
+* exposure gradients treated as mutual when they are structurally uneven,
+* bodily, reputational, or publicness-related costs treated as if they were equally distributed.
 
-**Structural result:** Ω(asymmetry) is not managed; within the frame, Ω becomes a steering variable—access and cost gradients begin to govern expectation, pressure, and what counts as “normal.”
+**Structural result:** Ω (asymmetry) is not managed; within the frame, Ω becomes a steering variable—access and cost gradients begin to govern expectation, pressure, and what counts as “normal.”
 
 Naming asymmetry is not person-ranking. It reconstructs how the configuration distributes exposure, access, and cost.
 
@@ -2531,9 +2719,10 @@ In this configuration, equality rhetoric functions as a lid on cost description:
 * “we both want it” or “it’s equal” as a stabilizing narrative,
 * consent language used to block analysis of unequal exposure,
 * mutuality claims covering unequal after-costs,
+* casual or non-binding language used to deny asymmetrical Θ consequences,
 * real exposure and cost asymmetry persisting through temporality, the body remainder, outer legibility, or publicity overlays.
 
-**Structural result:** conflict becomes non-negotiable because Ω(asymmetry) must not be named inside □(frame). Denial becomes the rule, so repair cannot be carried as explicit coordination.
+**Structural result:** conflict becomes non-negotiable because Ω (asymmetry) must not be named inside □ (frame). Denial becomes the rule, so repair cannot be carried as explicit coordination.
 
 A scene may be internally framed as mutual or consensual while still presenting visible gradients of exposure, access, or cost-bearing. This does not deny consent as an internal, practical, or legal frame condition; it only states that consent-language does not by itself settle cost distribution. Naming those gradients does not issue a moral verdict.
 
@@ -2547,9 +2736,10 @@ In this configuration, absence becomes an active steering mechanism:
 * devaluation through non-occurrence (“not worth it” as a structural message),
 * silence or indeterminacy functioning as an instrument of control,
 * chronic “maybe,” “later,” or “nothing happened” structures,
-* unmarked withholding inside an expectation-bearing frame.
+* unmarked withholding inside an expectation-bearing frame,
+* refusal to clarify cost topology while the scene remains consequence-active.
 
-**Structural result:** Λ(non-event) shapes practice more than enactment; legibility pressure rises, and coordination shifts into interpretation and guessing rather than explicit frame work.
+**Structural result:** Λ (non-event) shapes practice more than enactment; legibility pressure rises, and coordination shifts into interpretation and guessing rather than explicit frame work.
 
 Internal framing does not decide the whole effect of Λ. What is internally named as care, restraint, freedom, uncertainty, self-protection, or play may still become externally readable as withholding, asymmetry concentration, or exposure management where the frame makes absence consequential.
 
@@ -2563,9 +2753,10 @@ In this configuration, stabilization flips into fixation:
 * repetition replaces choice; the script runs the scene,
 * frame breadth shrinks as a side effect; the frame becomes readable only through the script,
 * practice labels are used to protect the stabilized route from re-reading,
-* alternatives lose practical attractiveness, availability, or recognizability.
+* alternatives lose practical attractiveness, availability, or recognizability,
+* the scene continues because the script has become cheaper than explicit renegotiation.
 
-**Structural result:** Α(attractor) binds more strongly than intention; alternatives lose legibility and the configuration narrows into a single-path logic.
+**Structural result:** Α (attractor) binds more strongly than intention; alternatives lose legibility and the configuration narrows into a single-path logic.
 
 This does not define a person. It describes path consolidation in the configuration.
 
@@ -2576,12 +2767,13 @@ This does not define a person. It describes path consolidation in the configurat
 In this configuration, the meta-layer collapses:
 
 * stopping becomes practically unavailable in the moment,
-* critique or hesitation is read as betrayal, attack, weakness, or disloyalty,
+* critique or hesitation is read as betrayal, attack, weakness, disloyalty, prudishness, or domination,
 * humor, de-escalation, and “outside view” disappear,
 * internal labels replace re-reading,
-* outer-form awareness becomes inaccessible or forbidden.
+* outer-form awareness becomes inaccessible or forbidden,
+* naming cost topology is treated as accusation rather than analysis.
 
-**Structural result:** self-correction fails. Without Χ(distance), drift cannot be intercepted early, so other operators must carry tension through escalation, withdrawal, fixation, publicness panic, or narrative repair.
+**Structural result:** self-correction fails. Without Χ (distance), drift cannot be intercepted early, so other operators must carry tension through escalation, withdrawal, fixation, publicness panic, narrative repair, or switch drift.
 
 Χ loss is a structural risk marker, not a character judgment.
 
@@ -2595,9 +2787,10 @@ In this configuration, costs accumulate faster than the frame can carry:
 * exit fictions persist: “you can stop anytime,” “it does not count,” “we can always undo it,”
 * collapse becomes abrupt: body, reputation, bonding, exposure, or rule crash,
 * publicness documents or sedimentizes costs already active in the configuration,
-* outer legibility remains after internal closure-language claims the scene is over.
+* outer legibility remains after internal closure-language claims the scene is over,
+* non-binding language fails to account for bodily, reputational, or publicness-related overhang.
 
-**Structural result:** exit collapse replaces orderly ending: Θ(temporality) does not rewind, and Α(attractor) holds the configuration in place too long for low-cost exit to remain plausible.
+**Structural result:** exit collapse replaces orderly ending: Θ (temporality) does not rewind, and Α (attractor) holds the configuration in place too long for low-cost exit to remain plausible.
 
 Publicness may intensify consequence visibility, but it does not necessarily create the destructive form. Many temporal costs are already active before publicity occurs.
 
@@ -2607,13 +2800,62 @@ Publicness may intensify consequence visibility, but it does not necessarily cre
 
 In this configuration, internal framing or later recontextualization blocks analysis of enacted form:
 
-* “it was play,” “it was devotion,” “it was service,” “it was authenticity,” or “it was consensual” is used to end structural reading,
+* “it was play,” “it was devotion,” “it was service,” “it was authenticity,” “it was consensual,” or “it was casual” is used to end structural reading,
 * re-description replaces cost layout,
-* outer legibility is treated as hostile, irrelevant, or merely public misunderstanding.
+* outer legibility is treated as hostile, irrelevant, merely public misunderstanding, or merely prudish overreach,
+* internal naming is used to erase sexual cost topology.
 
-**Structural result:** the scene loses its capacity to read itself. Internal meaning may be real, but it does not erase the action-form that has become structurally effective under asymmetry, exposure, repetition, and time.
+**Structural result:** the scene loses its capacity to read itself. Internal meaning may be real, but it does not erase the action-form that has become structurally effective under asymmetry, exposure, repetition, publicness, and time.
 
 This is not a denial of internal meaning. It is the refusal to let internal naming become totalizing.
+
+#### (9) Asymmetry-switch drift
+
+(Ω / Θ / Σ / Ψ: contextual meaning = asymmetry activation under consequence pressure and its re-binding conditions.)
+
+In this configuration, asymmetry is activated not as a marked emergency or protection under real Ω/Θ overload, but as repeatable leverage, responsibility displacement, or unacknowledged Ψ externalization:
+
+* vulnerability, exposure, bodily risk, reputation, or protection is invoked without marking the activation as exceptional,
+* asymmetry activation is repeatable and locally stabilizing,
+* parity language remains in place for access, autonomy, mutuality, or non-binding status,
+* activation shifts cost or responsibility to the other role-position,
+* Σ/Ψ re-binding does not occur after the activation.
+
+**Structural result:** asymmetry no longer reopens coordination; it replaces coordination. The scene preserves parity language while distributing costs asymmetrically.
+
+Asymmetry-switch drift names the sexual instantiation of the EDEN/PFO switch: asymmetry is activated under real or invoked Ω/Θ pressure without being marked, bounded, and re-bound into Σ/Ψ. It becomes dysfunctional where the switch is used as repeatable leverage, responsibility displacement, or unacknowledged Ψ externalization.
+
+#### (10) Parity-to-exit drift
+
+(□ / Ω / Θ / Ψ: contextual meaning = parity rhetoric under unequal cost topology.)
+
+In this configuration, parity rhetoric is used to deny additional responsibility under unequal sexual cost topology:
+
+* “it was mutual,” “we are equal,” “no one owes anything,” “the other is autonomous,” or “it was only casual” functions as exit rhetoric,
+* formal equality is used to flatten bodily, reputational, exposure-related, publicness-related, or temporal asymmetry,
+* additional responsibility is denied because the frame can still be described as reciprocal,
+* costs that cannot be equally externalized are treated as voluntarily assumed and therefore abandoned.
+
+**Structural result:** parity ceases to bind reciprocity and becomes an exit from responsibility. The frame remains rhetorically equal while unequal Ω/Θ costs remain uncoordinated.
+
+Parity-to-exit is not a person label. It is a drift marker for equality-language functioning as responsibility displacement.
+
+#### (11) Responsibility-to-authority drift
+
+(Ψ / Χ / Ω / □: contextual meaning = self-binding under asymmetry converted into control.)
+
+In this configuration, required self-binding under sexual asymmetry is converted into control, frame authority, protection entitlement, or paternalistic governance:
+
+* “because I must protect, I may define,”
+* “because asymmetry is real, I may govern the frame,”
+* “because I carry responsibility, I may control access, interpretation, or exit,”
+* care becomes control,
+* protection becomes governance,
+* responsibility becomes ownership of the situation.
+
+**Structural result:** responsibility stops functioning as Ψ/Χ self-binding and becomes authority over the other role-position or over the frame.
+
+Responsibility-to-authority is not the recognition of asymmetry. It is the mistranslation of required restraint into entitlement. Greater responsibility under asymmetry does not generate a right to control.
 
 ### 18.4 Dynamic Chaining (Typical)
 
@@ -2621,13 +2863,19 @@ Many destructive dynamics follow—not necessarily, but often—a recognizable c
 
 > **Ψ leak → Ω escalation → Χ loss → Α fixation → Θ overload → exit collapse**
 
-Reading: once meaning and attribution (Ψ) become covert, Ω(asymmetry) more easily becomes a steering variable inside □(frame). When Χ(distance) is not operational, the script hardens (Α), and temporal costs (Θ) accumulate until the exit fiction breaks.
+Reading: once meaning and attribution (Ψ) become covert, Ω (asymmetry) more easily becomes a steering variable inside □ (frame). When Χ (distance) is not operational, the script hardens (Α), and temporal costs (Θ) accumulate until the exit fiction breaks.
 
 A secondary chain often runs alongside it:
 
 > **internal-label capture → outer-form denial → publicness confusion → delayed cost recognition**
 
 Reading: practice labels or self-description settle the internal story while enacted form remains structurally readable. Public reaction is then treated either as the whole problem or as irrelevant, preventing the configuration from seeing how publicness may amplify readability without creating it.
+
+The EDEN/PFO sexual drift chain can be added as a third chain:
+
+> **pseudo-symmetry → asymmetry-switch availability → unmarked activation / parity-to-exit / responsibility-to-authority → Σ/Ψ blockage → reciprocity erosion**
+
+Reading: once parity language remains in place while real sexual cost topology is unequal, asymmetry may become selectively activatable. If that activation is not marked, bounded, and re-bound into Σ/Ψ, or if parity is used to exit responsibility, or if responsibility becomes authority, then sexual reciprocity erodes even when surface order remains intact.
 
 ### 18.5 Non-Goals (Clear)
 
@@ -2639,11 +2887,13 @@ This chapter does not do:
 * moral ranking,
 * identity evaluation,
 * sexual-orientation taxonomy,
-* clinical interpretation.
+* clinical interpretation,
+* maturity ranking,
+* person-level assignment of drift markers.
 
 It describes predictability of drift in operator terms, not evaluation of persons.
 
-Where this chapter uses terms such as drift, dysfunction, destruction, instability, disturbance, or path-cost, these remain strictly structural. They describe stabilization burden in a configuration, not human worth, dignity, identity, or clinical status.
+Where this chapter uses terms such as drift, dysfunction, destruction, instability, disturbance, path-cost, asymmetry-switch drift, parity-to-exit, or responsibility-to-authority, these remain strictly structural. They describe stabilization burden in a configuration, not human worth, dignity, identity, orientation status, clinical status, or moral quality.
 
 ### 18.6 Chapter Closure — Drift Chains as Structural Preparation
 
@@ -2653,6 +2903,8 @@ This chapter consolidates dysfunctional dynamics as recognizable configuration c
 
 The scene’s destructive tendency is therefore not readable from internal meaning claims alone. It is reconstructed from the enacted configuration, including where outer form, asymmetry use, non-events, publicness overlays, and consequence preparation remain visible despite justificatory or limiting narratives.
 
+The updated PMS-SEX reading adds a specific sexual drift triad: **asymmetry becomes leverage, parity becomes exit, or responsibility becomes authority**. Each route preserves some surface order while preventing Σ/Ψ coordination under real Ω.
+
 #### (2) Cost Layout (Ω/Θ, incl. body/publicness as frame overlays)
 
 * **Ω layout:** unmanaged gradients of access, exposure, and cost-bearing become governing; naming costs becomes harder as pseudo-symmetry takes over.
@@ -2660,6 +2912,9 @@ The scene’s destructive tendency is therefore not readable from internal meani
 * **□ overlays:** publicness and documentation can amplify, distribute, and sedimentize consequences and reduce reversibility of later re-readings.
 * **Outer legibility:** enacted form may remain structurally readable before public circulation and beyond internal naming.
 * **Body remainder:** material consequence capacity can force visibility even when the frame denies it.
+* **Switch drift:** asymmetry activation can become leverage when not marked, bounded, and re-bound.
+* **Parity-to-exit:** equality rhetoric can deny additional responsibility under unequal sexual cost topology.
+* **Responsibility-to-authority:** required self-binding can become control, protection entitlement, or frame governance.
 
 #### (3) Structural Reading Corridor (No How-To)
 
@@ -2670,21 +2925,26 @@ Several readings are structurally warranted as criteria:
 * treating Χ availability as decisive is rational because it is the primary drift limiter under intensity and repetition,
 * treating Θ realism as mandatory is rational because exit fictions are structurally unstable under accumulation,
 * treating outer-form denial as drift-relevant is rational because internal naming cannot by itself settle enacted form,
-* treating publicness as overlay is rational because publicity may harden readability without being its sole origin.
+* treating publicness as overlay is rational because publicity may harden readability without being its sole origin,
+* treating asymmetry-switch drift as critical is rational because unmarked asymmetry activation replaces coordination with leverage,
+* treating parity-to-exit as critical is rational because equality rhetoric can abandon unequal cost topology,
+* treating responsibility-to-authority as critical is rational because self-binding under asymmetry can be mistranslated into control.
 
 #### (4) Entry Guard (with meaning)
 
-* **Χ (Distance):** maintained by keeping interruption, hesitation, meta-reading, and outer-form awareness practically available even under intensity and repetition; loss of distance is treated as a structural risk marker, not as resistance or bad faith.
-* **Reversibility:** maintained by analyzing drift as configuration-bound and revisable, while explicitly acknowledging that accumulated costs—bodily, temporal, reputational, exposure-related, and binding-related—do not disappear through re-framing.
-* **D (Dignity-in-Practice):** maintained by describing destructive dynamics without attributing intent, pathology, defect, identity rank, orientation status, or personal worth, and by treating asymmetry and drift as structural effects rather than moral verdicts.
+* **Χ (Distance):** maintained by keeping interruption, hesitation, meta-reading, and outer-form awareness practically available even under intensity and repetition; loss of distance is treated as a structural risk marker, not as resistance or bad faith. Χ also prevents asymmetry activation from becoming urgency, exception permanence, or authority.
+* **Reversibility:** maintained by analyzing drift as configuration-bound and revisable, while explicitly acknowledging that accumulated costs—bodily, temporal, reputational, exposure-related, publicness-related, and binding-related—do not disappear through re-framing.
+* **D (Dignity-in-Practice):** maintained by describing destructive dynamics without attributing intent, pathology, defect, identity rank, orientation status, maturity level, or personal worth, and by treating asymmetry and drift as structural effects rather than moral verdicts. D fails where asymmetry becomes leverage, parity becomes abandonment, or responsibility becomes control.
 
 #### (5) Viability Verdict (Non-Moral)
 
 Viability increases where meaning, asymmetry, outer form, publicness, and temporality remain nameable inside stable frames and where distance remains operational. Drift potential increases where covert binding enters limited frames, asymmetry becomes the steering variable, distance collapses, practice labels block re-reading, publicness is treated as either the whole cause or irrelevant, and accumulation outpaces legibility—because the configuration then prepares collapse long before it looks “dramatic.”
 
+The sexual drift triad sharpens this verdict: sexual reciprocity fails where asymmetry becomes leverage, parity becomes exit, or responsibility becomes authority. This is a structural viability claim, not a moral verdict about persons.
+
 #### (6) One-line Marker (quote-ready)
 
-Dysfunctional dynamics are rarely sudden: they are structurally prepared when Ψ leaks, Ω becomes a steering variable, Χ collapses, Α fixates, and Θ accumulation breaks the exit fiction.
+Dysfunctional dynamics are rarely sudden: they are structurally prepared when Ψ leaks, Ω becomes a steering variable, Χ collapses, Α fixates, Θ accumulation breaks the exit fiction, and sexual reciprocity fails through asymmetry-leverage, parity-exit, or responsibility-authority.
 
 ---
 
@@ -2962,29 +3222,36 @@ Boundaries remain strict:
 * no identity ranking,
 * no moral evaluation,
 * no therapeutic method,
-* no conversion into clinical taxonomy.
+* no conversion into clinical taxonomy,
+* no maturity ranking,
+* no person-level assignment of drift markers.
 
 All outputs remain **scene-bound, reversible, and dignity-preserving**.
 
 This probe does not override scene readability. It is admissible only where structural drift is already legible in enacted form and where further self-description would otherwise risk replacing rather than clarifying that legibility.
 
+The updated PMS-SEX context adds one refinement: if the new Chapter 18 markers are present—**asymmetry-switch drift**, **parity-to-exit**, or **responsibility-to-authority**—minimal psychology still does not explain them psychologically. It only asks whether self-description, desire-language, non-binding language, or protection-language is helping the configuration continue despite already visible cost topology.
+
 ### 20.2 When This Adapter Activates (Explicit Link to 18/19)
 
 Minimal psychology is **not always relevant**. It activates only when the following condition holds:
 
-> Drift markers from **Chapter 18** are present
-> **and** minimal viability conditions from **Chapter 19** are no longer restoring correction
+> Drift markers from **Chapter 18** are present  
+> **and** minimal viability conditions from **Chapter 19** are no longer restoring correction  
 > **but** the configuration is still carried voluntarily and repeatedly.
 
 Typical activation context:
 
 * Ψ leak has been named, but repetition continues,
-* Ω costs are legible, but still accepted or externalized,
+* Ω costs are legible, but still accepted, switched, denied, or externalized,
 * Θ damage is foreseeable, but stop-capability keeps failing,
 * Χ exists formally, but is not enacted in time,
 * practice labels continue to block outer-form analysis,
 * publicness is blamed or ignored while the enacted configuration remains unchanged,
-* internal self-description becomes more elaborate while the operator chain continues to narrow.
+* internal self-description becomes more elaborate while the operator chain continues to narrow,
+* asymmetry activation is named but remains unmarked, unbounded, or unrebound,
+* parity language is repeatedly used to exit responsibility under unequal cost topology,
+* responsibility language is repeatedly converted into control, protection entitlement, or frame authority.
 
 At this point, structural description remains correct—but **no longer sufficient** to interrupt the path.
 
@@ -2999,8 +3266,9 @@ Constraints:
 * it is **hypothetical**, not confessional,
 * it targets **pattern continuity**, not inner truth,
 * it is asked to test **whether desire-language or desire-orientation is functioning as a drift carrier in the configuration**,
-* it must return attention to enacted form, cost layout, stop-capability, and accumulated consequence,
-* it may not be used to override outer legibility with a deeper self-story.
+* it must return attention to enacted form, cost layout, stop-capability, asymmetry handling, and accumulated consequence,
+* it may not be used to override outer legibility with a deeper self-story,
+* it may not be used to explain away asymmetry-switch drift, parity-to-exit, or responsibility-to-authority as personality, trauma, desire, or identity.
 
 The question is invalid if it produces identity stories, trauma narratives, confession loops, diagnosis claims, or justification loops. Its only legitimate function is to **re-route attention back to structure**.
 
@@ -3008,12 +3276,12 @@ The question is invalid if it produces identity stories, trauma narratives, conf
 
 Under sustained drift, one limited hypothesis becomes admissible:
 
-> In this configuration, desire-language may be functioning as a **drift-maintaining mechanism**
-> rather than as play, exploration, negotiated intensity, or bounded practice.
+> In this configuration, desire-language may be functioning as a **drift-maintaining mechanism**  
+> rather than as play, exploration, negotiated intensity, bounded practice, or marked asymmetry activation.
 
 This hypothesis does **not** explain desire. It flags the possibility that **desire-language or desire-orientation is now aligned with drift maintenance**.
 
-The hypothesis is never confirmed psychologically. It is only **structurally tested** against enacted patterns: repetition, cost concentration, outer legibility denial, loss of distance, asymmetry escalation, and temporal overload.
+The hypothesis is never confirmed psychologically. It is only **structurally tested** against enacted patterns: repetition, cost concentration, outer legibility denial, loss of distance, asymmetry escalation, temporal overload, switch drift, parity-to-exit, and responsibility-to-authority.
 
 This is not a person verdict. It is a configuration alarm.
 
@@ -3031,7 +3299,8 @@ Across scenes:
 * degradation-near or humiliation-form scripts appear without play-reversibility,
 * boundary violations recur despite explicit recognition,
 * outer-form naming is blocked by internal labels,
-* asymmetry is intensified while being denied.
+* asymmetry is intensified while being denied,
+* protection-language or vulnerability-language is used while non-degradation constraints fail.
 
 This maps directly to **Chapter 18 drift chains** where Ψ leak and Ω escalation persist, and to **Chapter 19 failure** of D as a viability constraint.
 
@@ -3045,7 +3314,8 @@ Across time:
 * repetition continues unchanged,
 * accumulation accelerates while stop-capability weakens,
 * exit fictions remain active,
-* publicness, documentation, bodily effects, or binding residues are minimized until they harden.
+* publicness, documentation, bodily effects, or binding residues are minimized until they harden,
+* asymmetry activation is repeatedly treated as temporary while its cost effects accumulate.
 
 This is the **Θ overload phase** described in Chapter 18, combined with the **Θ realism failure** marker from Chapter 19.
 
@@ -3059,7 +3329,8 @@ Across configurations:
 * avoidance and substitution become structurally unavailable,
 * one script dominates despite rising costs,
 * practice labels become shields against re-reading,
-* internal meaning expands while frame breadth contracts.
+* internal meaning expands while frame breadth contracts,
+* asymmetry activation, parity rhetoric, or responsibility language becomes the default route instead of explicit coordination.
 
 This is **Α fixation** (Chapter 18) combined with **loss of functional alternatives** (Chapter 19 viability collapse).
 
@@ -3070,7 +3341,9 @@ Across scenes:
 * desire is invoked to bypass stopping, hesitation, or meta-commentary,
 * distance is treated as betrayal of authenticity,
 * “I want this” or “this is who I am” replaces frame analysis,
-* internal desire-language prevents outer-form reading.
+* internal desire-language prevents outer-form reading,
+* desire-language blocks cost topology,
+* desire-language makes asymmetry activation feel self-justifying rather than markable and re-bindable.
 
 This is **Χ erosion** through self-description. The issue is not desire itself; the issue is desire functioning as an anti-distance device.
 
@@ -3080,9 +3353,21 @@ Across scenes or aftermath:
 
 * public reaction is treated as the whole problem,
 * or publicness is denied despite documentation, circulation, reputational exposure, or sedimentation,
-* the enacted configuration remains unread because the focus moves entirely to audience response.
+* the enacted configuration remains unread because the focus moves entirely to audience response,
+* publicness is used to avoid naming bodily, reputational, exposure-related, or responsibility-related costs already present in the scene.
 
 This is **publicness confusion**: publicity is neither the sole origin nor irrelevant. It is an overlay that can amplify and harden what the scene already presents.
+
+#### (6) Switch drift carried by self-description
+
+Across scenes:
+
+* asymmetry activation is repeatedly described as exception, need, protection, vulnerability, or overload, but not marked, bounded, and re-bound,
+* parity language is repeatedly used to deny additional responsibility under unequal cost topology,
+* responsibility language is repeatedly used to justify control, protection entitlement, or frame authority,
+* the configuration explains these moves through identity, desire, authenticity, care, or necessity rather than through cost topology.
+
+This criterion activates the self-check only as an alarm. It does not decide what anyone “really wants.” It asks whether self-description is now helping a drift route remain stable.
 
 ### 20.6 Output Format (Invariant, Minimal)
 
@@ -3093,8 +3378,10 @@ Minimal psychology **never outputs explanation**. It outputs a **structural alar
 * “Distance (Χ), frame clarity (□), and Θ realism require reactivation.”
 * “Internal framing is no longer sufficient to settle the enacted structure.”
 * “Outer legibility and cost distribution require re-reading without person-ranking.”
+* “Asymmetry activation, if present, requires marking, bounding, and re-binding into Σ/Ψ.”
+* “Parity language and responsibility language require re-reading against the sexual cost topology.”
 
-No conclusions about character, pathology, motive, identity, orientation, or worth are permitted.
+No conclusions about character, pathology, motive, identity, orientation, maturity, or worth are permitted.
 
 ### 20.7 Chapter Closure — Minimal Psychology as Structural Alarm
 
@@ -3103,6 +3390,8 @@ No conclusions about character, pathology, motive, identity, orientation, or wor
 This chapter establishes minimal psychology as a **boundary mechanism inside PMS-SEX**, not as an explanatory layer. It becomes relevant only when drift dynamics (Chapter 18) and viability criteria (Chapter 19) are already structurally legible, yet repetition continues unchanged. The result is a precise repositioning: minimal psychology does not explain why drift occurs, but marks the point where **structural description alone no longer interrupts reenactment**. Its role is to signal internal correction failure before critique turns outward.
 
 The chapter also clarifies that this alarm does not override scene readability. It does not replace enacted form with inner truth; it only tests whether self-description is now helping the configuration continue.
+
+The updated drift vocabulary sharpens this alarm: where asymmetry becomes leverage, parity becomes exit, or responsibility becomes authority, the self-check does not ask for a deeper motive. It asks whether the configuration has lost the capacity to re-read its own cost topology.
 
 #### (2) Cost Distribution (explicit)
 
@@ -3115,15 +3404,18 @@ Even without psychological explanation, costs accumulate concretely:
 * through **Ω concentration:** access, exposure, and repair burdens distribute unevenly,
 * through **outer legibility denial:** internal labels prevent reading of enacted form,
 * through **publicness confusion:** publicity is treated as either the whole cause or irrelevant,
-* through **D-in-Practice failure:** the configuration repeatedly fails to preserve non-degradation under asymmetry via boundary violations, humiliation-form dynamics, or degradation-near scripts.
+* through **D-in-Practice failure:** the configuration repeatedly fails to preserve non-degradation under asymmetry via boundary violations, humiliation-form dynamics, or degradation-near scripts,
+* through **asymmetry-switch drift:** asymmetry activation becomes repeatable without re-binding,
+* through **parity-to-exit:** equality or mutuality language denies additional responsibility under unequal cost topology,
+* through **responsibility-to-authority:** required self-binding becomes control or frame authority.
 
 Minimal psychology names these costs without redescribing them as inner deficits.
 
 #### (3) Structural Viability Corridor
 
-**Viability increases where** the alarm restores distance, reopens frame breadth, re-centers Θ realism, permits outer-form reading, keeps publicness in proportion, and interrupts repetition without converting the situation into identity narrative.
+**Viability increases where** the alarm restores distance, reopens frame breadth, re-centers Θ realism, permits outer-form reading, keeps publicness in proportion, makes sexual cost topology explicit, and interrupts repetition without converting the situation into identity narrative.
 
-**Drift begins where** the alarm is ignored, domesticated, moralized, or turned into self-interpretation, allowing Α fixation, Θ accumulation, Ω concentration, outer-form denial, and dignity erosion to continue under the appearance of insight.
+**Drift begins where** the alarm is ignored, domesticated, moralized, or turned into self-interpretation, allowing Α fixation, Θ accumulation, Ω concentration, outer-form denial, switch drift, parity-to-exit, responsibility-to-authority, and dignity erosion to continue under the appearance of insight.
 
 The corridor remains praxeological: it distinguishes interruption from continuation, not health from pathology.
 
@@ -3131,11 +3423,11 @@ The corridor remains praxeological: it distinguishes interruption from continuat
 
 * **Χ (Distance):** preserved by using the “why” question strictly as a meta-interrupt to reenactment, not as a fusion with desire, identity, or deeper truth.
 * **Reversibility:** preserved by keeping all hypotheses hypothetical and configuration-bound, while explicitly acknowledging that accumulated effects do not reset through reinterpretation.
-* **D (Dignity-in-Practice):** preserved by refusing explanation, typing, diagnosis, identity ranking, or evaluation of persons, and by limiting the alarm to protection against further structural self-undercutting.
+* **D (Dignity-in-Practice):** preserved by refusing explanation, typing, diagnosis, identity ranking, maturity ranking, or evaluation of persons, and by limiting the alarm to protection against further structural self-undercutting.
 
 #### (5) One-line Marker (quote-ready)
 
-Minimal psychology in PMS-SEX activates when drift persists despite clarity: it does not explain desire, it signals that repetition, accumulation, and frame narrowing are no longer correcting themselves.
+Minimal psychology in PMS-SEX activates when drift persists despite clarity: it does not explain desire, it signals that repetition, accumulation, switch drift, and frame narrowing are no longer correcting themselves.
 
 ---
 
@@ -3143,7 +3435,7 @@ Minimal psychology in PMS-SEX activates when drift persists despite clarity: it 
 
 *(Protection and critique module, non-moralizing)*
 
-**NOTE:** In *Maturity in Practice (MIP)*, “dignity” is split into **ontological dignity** (non-negotiable human worth) and **praxeological dignity** (*Dignity-in-Practice, D*). PMS-SEX uses **D only in the praxeological sense**: a constraint on *how* sexual practice is enacted. **D never justifies humiliation, degradation, shaming, diagnosis, identity ranking, or person-level valuation** as a mode of coordination or critique.
+**NOTE:** In *Maturity in Practice (MIP)*, “dignity” is split into **ontological dignity** (non-negotiable human worth) and **praxeological dignity** (*Dignity-in-Practice, D*). PMS-SEX uses **D only in the praxeological sense**: a constraint on *how* sexual practice is enacted. **D never justifies humiliation, degradation, shaming, diagnosis, identity ranking, maturity ranking, or person-level valuation** as a mode of coordination or critique.
 
 ### 21.1 Purpose of the Module
 
@@ -3151,7 +3443,9 @@ This chapter defines **Dignity-in-Practice (D)** as a structural minimum conditi
 
 The module is scene-bound: it evaluates enactments inside frames, not people as global entities.
 
-Dignity-in-Practice does not require denying outer form. A scene may remain externally legible as a humiliation-form, degradation-form, asymmetry-form, possession-form, control-form, or exposure-form without this implying a judgment about anyone’s worth, motives, identity, orientation, or dignity. The question is not what persons are, but how a configuration handles asymmetry in enactment.
+Dignity-in-Practice does not require denying outer form. A scene may remain externally legible as a humiliation-form, degradation-form, asymmetry-form, possession-form, control-form, exposure-form, or authority-form without this implying a judgment about anyone’s worth, motives, identity, orientation, maturity, or dignity. The question is not what persons are, but how a configuration handles asymmetry in enactment.
+
+The updated PMS-SEX focus adds a further criterion: Dignity-in-Practice must block not only degradation and humiliation, but also the sexual drift triad in which **asymmetry becomes leverage, parity becomes exit, or responsibility becomes authority**.
 
 ### 21.2 Principle: D Applies in Enactment, Not as Status
 
@@ -3160,35 +3454,41 @@ Dignity-in-Practice does not require denying outer form. A scene may remain exte
 In this configuration, two constraints must be kept distinct:
 
 * **No entitlement to the person**
-  No authority over motives, worth, identity, biography, orientation, or “what someone really is.”
+  No authority over motives, worth, identity, biography, orientation, body, desire, or “what someone really is.”
 
 * **Entitlement to D in enactment**
   Restraint, respect, and non-degradation within the accepted frame.
 
 D is therefore not a virtue, not a character trait, and not a moral rank. It is a practice condition testable only in enactment: whether the configuration preserves non-degradation while carrying real asymmetries.
 
-This distinction also protects outer-form analysis. Naming an externally readable humiliation-form, degradation-form, asymmetry-form, or exposure-form is not itself a violation of the model’s anti-moral stance. The violation would lie in converting scene analysis into person-ranking, humiliation, diagnosis, or moral contempt.
+This distinction also protects outer-form analysis. Naming an externally readable humiliation-form, degradation-form, asymmetry-form, possession-form, control-form, authority-form, or exposure-form is not itself a violation of the model’s anti-moral stance. The violation would lie in converting scene analysis into person-ranking, humiliation, diagnosis, or moral contempt.
+
+D also does not require symmetrical burdens. It requires that unequal burdens not be externalized as humiliation, abandonment, leverage, control, or authority.
 
 ### 21.3 Minimal Formula of D (PMS-Compliant)
 
-(Asymmetry: contextual meaning = gradients of access, exposure, obligation, and cost-bearing.)
-(Distance: contextual meaning = stop-capability and meta-position within ongoing praxis.)
-(Self-Binding: contextual meaning = identity-relevant commitment over time.)
-(Temporality: contextual meaning = accumulation, irreversibility, and trajectory.)
+(Asymmetry: contextual meaning = gradients of access, exposure, obligation, and cost-bearing.)  
+(Distance: contextual meaning = stop-capability and meta-position within ongoing praxis.)  
+(Self-Binding: contextual meaning = identity-relevant commitment over time.)  
+(Temporality: contextual meaning = accumulation, irreversibility, and trajectory.)  
 (Frame: contextual meaning = the rule-and-role grammar that makes enactment legible.)
 
 D-compliance becomes structurally legible where the configuration carries the following constraints:
 
-* **Ω is explicit:** asymmetry is recognized and governed, not denied, romanticized, or hidden under pseudo-symmetry.
+* **Ω is explicit:** asymmetry is recognized and governed, not denied, romanticized, hidden under pseudo-symmetry, or activated as unmarked leverage.
 * **Χ is operative:** stop-capability, meta-position, and protection capacity work in practice, not only as claims.
 * **No covert Ψ demand:** meaning, possession, self-worth, and identity claims are not smuggled into the frame.
 * **Θ is carried:** repetition, consequences, downstream costs, and exit realism remain nameable.
 * **Outer form remains readable as a PMS-SEX guard:** internal framing, practice labels, or later recontextualization do not erase enacted form.
+* **Asymmetry activation is marked and bounded:** real Ω/Θ overload may require activation, but it must be explicit, limited, and re-bound.
+* **Parity does not become exit:** equality language must not deny additional responsibility under unequal sexual cost topology.
+* **Responsibility does not become authority:** required self-binding must not become control, frame ownership, or paternalistic governance.
 
 **Short PMS-SEX application formula:**
-**D-in-Practice in PMS-SEX = explicit Ω + operative Χ + no covert Ψ demand under Θ, with outer-form readability preserved**
 
-This is not an ethical ideal. It is a viability constraint: without these conditions, the configuration easily drifts into coercion, humiliation, degradation, or cost externalization while still narrating itself as “consensual,” “just play,” “devotion,” “service,” “authenticity,” or “mutual.”
+> **D-in-Practice in PMS-SEX = explicit Ω + operative Χ + no covert Ψ demand under Θ + marked/bounded asymmetry activation + no parity-to-exit + no responsibility-to-authority, with outer-form readability preserved**
+
+This is not an ethical ideal. It is a viability constraint: without these conditions, the configuration easily drifts into coercion, humiliation, degradation, cost externalization, abandonment, or authority-conversion while still narrating itself as “consensual,” “just play,” “devotion,” “service,” “authenticity,” “casual,” or “mutual.”
 
 The same restriction applies to disturbance or path-cost language. Higher stabilization burden may describe a configuration’s structural demands, but it does not lower dignity, reduce personhood, rank identity, or authorize humiliation.
 
@@ -3198,7 +3498,7 @@ This subsection is a clarification case, not a special right and not an exclusiv
 
 #### (1) Structural baseline
 
-(Frame: contextual meaning = the rule-and-role grammar that defines what counts as an event.)
+(Frame: contextual meaning = the rule-and-role grammar that defines what counts as an event.)  
 (Asymmetry: contextual meaning = gradients of access, exposure, obligation, and cost-bearing.)
 
 In this configuration:
@@ -3207,7 +3507,8 @@ In this configuration:
 * □ is formalized: roles and boundaries are legible,
 * Ψ is intended to be suspended: the frame is not designed as identity-binding,
 * publicness may appear as an overlay: stigma, documentation, reputation, or institutional visibility,
-* outer legibility remains possible: the scene may still present visible asymmetry, exposure, or role-form.
+* outer legibility remains possible: the scene may still present visible asymmetry, exposure, or role-form,
+* sexual cost topology remains active: bodily, reputational, exposure-related, publicness-related, and exit-related costs do not disappear because the frame is explicit.
 
 Precisely for that reason, D is not “automatic,” but it is unusually observable: the gap between declared frame and enacted mode is easy to see.
 
@@ -3219,7 +3520,9 @@ In this configuration, critique or devaluation is not justified when:
 * there is no boundary violation and no pressure beyond the agreed asymmetry,
 * there is no covert meaning demand: no Ψ leak,
 * there is no manipulation via withdrawal or post-hoc humiliation,
-* outer-form naming is not converted into person-shaming.
+* outer-form naming is not converted into person-shaming,
+* asymmetry is marked and governed rather than used as leverage,
+* responsibility remains self-binding and does not become authority over the other role-position.
 
 Stigma, mockery, or moral devaluation function here as a systemic frame overlay rather than as legitimate critique. They do not describe the configuration; they attempt to punish it from outside the frame.
 
@@ -3235,6 +3538,9 @@ Critique is structurally invalid when all of the following are true in this conf
 * **No Ψ leak:** no intimacy, possession, self-worth, or identity demand across the frame boundary.
 * **Outer-form naming remains non-punitive:** structural readability is not used to shame or rank persons.
 * **Publicness is not weaponized:** visibility, reputation, or stigma is not used as leverage or punishment.
+* **No unmarked asymmetry activation:** any activation under Ω/Θ pressure is marked, bounded, and re-bound.
+* **No parity-to-exit:** equality or mutuality language is not used to deny responsibility under unequal cost topology.
+* **No responsibility-to-authority:** responsibility is carried as self-binding rather than control.
 
 In these cases, critique is frame-external or moralizing rather than praxeological. It does not target drift or harm mechanisms; it targets person-status.
 
@@ -3276,7 +3582,8 @@ In this configuration:
 
 * equality rhetoric substitutes for explicit asymmetry governance,
 * cost, exposure, and risk gradients are made unnameable inside the frame,
-* consent or mutuality language is used to block analysis of unequal after-costs.
+* consent or mutuality language is used to block analysis of unequal after-costs,
+* non-binding language is used to deny continuing Θ consequences.
 
 Pseudo-symmetry increases conflict load because the configuration must not name what is structurally doing the steering.
 
@@ -3287,7 +3594,7 @@ Pseudo-symmetry increases conflict load because the configuration must not name 
 In this configuration:
 
 * foreseeable consequences are ignored or denied,
-* costs are externalized: bodily, social, reputational, exposure-related, or binding-related,
+* costs are externalized: bodily, social, reputational, exposure-related, publicness-related, or binding-related,
 * repetition persists despite clear harm trajectories,
 * exit is narrated as reset while accumulation continues.
 
@@ -3299,7 +3606,7 @@ Here, critique is not morality but structural protection: it targets cost reloca
 
 In this configuration:
 
-* internal labels such as play, kink, devotion, service, discipline, authenticity, or consent are used to end structural reading,
+* internal labels such as play, kink, devotion, service, discipline, authenticity, consent, or casualness are used to end structural reading,
 * outer legibility is treated as hostile, irrelevant, or merely public misunderstanding,
 * recontextualization changes the story while the enacted action-form and cost layout remain effective.
 
@@ -3317,6 +3624,46 @@ In this configuration:
 
 Here, critique targets the misuse or denial of publicness as overlay. Publicity may intensify consequence; it need not create the primary form.
 
+#### (7) Asymmetry-switch drift
+
+(Asymmetry / Temporality / Integration / Self-Binding: contextual meaning = asymmetry activation under consequence pressure and its re-binding conditions.)
+
+In this configuration:
+
+* real or invoked body-, exposure-, reputational-, or Θ-consequence asymmetry is activated as exception,
+* the activation is not marked as exceptional or structurally necessary,
+* the activation remains repeatable,
+* parity language remains available for access, autonomy, or mutuality,
+* responsibility is shifted rather than re-bound into Σ/Ψ.
+
+Here, critique targets the substitution of coordination by unmarked asymmetry activation. The drift is not asymmetry activation as such; the drift is activation without marking, bounding, and re-binding.
+
+#### (8) Parity-to-exit drift
+
+(Frame / Asymmetry / Temporality / Self-Binding: contextual meaning = equality rhetoric under unequal sexual cost topology.)
+
+In this configuration:
+
+* parity, mutuality, autonomy, or consent language is used to deny additional responsibility,
+* unequal bodily, reputational, publicness-related, or temporal costs are flattened by formal equality claims,
+* the role-position with greater externalization capacity exits responsibility by invoking symmetry.
+
+Here, critique targets equality-language functioning as responsibility displacement. Parity binds reciprocity only when it coordinates cost topology; it becomes drift when it exits it.
+
+#### (9) Responsibility-to-authority drift
+
+(Self-Binding / Distance / Asymmetry / Frame: contextual meaning = responsibility under asymmetry mistranslated as control.)
+
+In this configuration:
+
+* required responsibility under sexual asymmetry is acknowledged,
+* but responsibility is converted into control, frame authority, protection entitlement, or paternalistic governance,
+* care becomes control,
+* protection becomes ownership,
+* restraint becomes entitlement to define the other role-position.
+
+Here, critique targets the conversion of Ψ/Χ responsibility into authority. Responsibility under asymmetry requires stronger self-binding, not greater command.
+
 ### 21.7 Asymmetries on Both Sides (Anti-Reduction)
 
 Asymmetry does not imply one-sidedness. In many explicit frames, both sides face asymmetries, but in different channels:
@@ -3325,39 +3672,104 @@ Asymmetry does not imply one-sidedness. In many explicit frames, both sides face
 * different risks,
 * different exposures,
 * different exit margins and recovery conditions,
-* different capacities to define, refuse, publicize, repair, or absorb consequences.
+* different capacities to define, refuse, publicize, repair, or absorb consequences,
+* different capacities to activate asymmetry,
+* different capacities to externalize costs through parity rhetoric,
+* different capacities to convert responsibility into authority.
 
 Adulthood in PMS-SEX is not maintained by symmetry fictions. It is maintained by explicit asymmetry management within the frame. A symmetry claim does not replace responsibility; it often obscures it.
 
-Outer legibility also does not imply one-sided blame. A scene can show visible asymmetry without that visibility settling culpability, worth, motive, or identity. It only tells the analysis where cost, exposure, and leverage must be reconstructed.
+Outer legibility also does not imply one-sided blame. A scene can show visible asymmetry without that visibility settling culpability, worth, motive, identity, or maturity. It only tells the analysis where cost, exposure, and leverage must be reconstructed.
+
+### 21.7a EDEN/PFO Reference: Asymmetry Switch in Sexual Frames
+
+PMS–EDEN names the regime-level asymmetry switch. PMS-SEX reads its sexual instantiation.
+
+In sexual frames, real body-, exposure-, reputational-, publicness-related, and consequence-asymmetries may justify marked emergency activation: not all Ω/Θ costs can be carried symmetrically.
+
+The switch is therefore not illegitimate as such. It becomes dignity-relevant where activation is unmarked, repeatable, and responsibility-shifting. In such cases, asymmetry no longer reopens coordination; it replaces coordination. The scene preserves parity language while distributing costs asymmetrically.
+
+Sexual reciprocity also fails through the counter-move. A role-position may invoke parity to deny additional responsibility under unequal sexual cost topology: “it was mutual,” “we are equal,” “the other is autonomous,” “it was casual,” or “no one owes anything.” Or required responsibility may be converted into authority: protection entitlement, control, frame ownership, or paternalistic governance.
+
+Dignity-in-practice requires both drifts to be blocked. One role-position must not convert asymmetry activation into an unmarked lever. The other must not convert greater externalizability into parity-exit or required responsibility into authority.
+
+Adult sexual reciprocity does not require equal burdens. It requires non-externalization of unequal burdens.
+
+This subsection is a reference bridge, not an operator expansion. The switch labels remain paper-internal drift markers and do not add to PMS.
+
+### 21.7b Sexual Cost Topology and Asymmetry-Specific Responsibility
+
+PMS-SEX treats sexual costs as role-distributed and trajectory-sensitive. The relevant question is not whether both role-positions carry identical costs, but whether each position carries the self-binding required by its own cost, power, and externalization profile.
+
+One role-position may carry higher bodily non-delegability: pregnancy possibility, bodily aftereffects, cyclicity, injury risk, exposure, reputational sedimentation, and social readability. Another role-position may carry higher responsibility where it has greater exit capacity, lower bodily overhang, more plausible denial, more frame-control options, or greater ability to convert responsibility into authority.
+
+These costs are not equal in content. But adult reciprocity does not require equal content. It requires that neither side externalizes its own asymmetry-specific burden. The bodily-consequence-bearing role-position must not use asymmetry activation as unmarked leverage. The externalization-capable role-position must not use parity as exit or responsibility as authority.
+
+The possible consequences differ as well. Unmarked asymmetry activation may weaken trust in legitimate emergency activation, turn protection into leverage, and displace self-binding. Parity-to-exit may make bodily or reputational costs appear voluntarily assumed and therefore externally abandoned. Responsibility-to-authority may turn care into control and protection into governance. Each route produces dignity risk by preserving surface order while blocking Σ/Ψ coordination.
+
+The general formula is:
+
+> **Each role-position must carry the self-binding required by its own cost, power, and externalization profile.**
+
+### 21.7c Cost Factors by Role-Position
+
+The following table is not a taxonomy of persons. It is a role-position grid for reading sexual cost topology. In concrete scenes, the positions must be mapped by actual cost, capacity, exposure, and externalization structure, not assigned by identity, sex, gender, orientation, or self-description alone.
+
+| Cost / drift axis | Body-consequence-bearing role-position | Externalization-capable role-position |
+| - | - | - |
+| Bodily Θ | higher non-delegable bodily overhang possible | often lower bodily overhang, but not zero |
+| Exposure Ω | higher visible/social/reputational sedimentation possible | exposure may arise through accusation, responsibility, public framing, or authority suspicion |
+| Exit | exit may remain bodily/reputationally costly | exit may be cheaper, more deniable, or more narratively available |
+| Asymmetry misuse | asymmetry activation can become unmarked lever | parity can become exit rhetoric |
+| Responsibility misuse | self-binding may be displaced through emergency language | responsibility may be denied or converted into authority |
+| Dignity risk | protection becomes leverage; emergency switch loses legitimacy | care becomes control; equality becomes abandonment |
+| Adult task | mark, bound, and re-bind asymmetry activation | carry externalizability through Ψ/Χ without converting it into authority |
+| Failure mode | unmarked asymmetry-switch drift | parity-to-exit / responsibility-to-authority drift |
+
+The table is intentionally asymmetric in content. Its purpose is to prevent two opposite errors:
+
+1. treating unequal costs as proof of unequal dignity or adultness,
+2. treating formal equality as proof that no asymmetry-specific responsibility exists.
+
+Both errors break PMS-SEX. The first collapses into hierarchy; the second collapses into pseudo-symmetry.
 
 ### 21.8 Chapter Closure — Dignity as Enactment Constraint
 
 #### (1) Structural Result (Condensation)
 
-This chapter shows that dignity in explicit sexual practice is not about personal worth or moral standing, but about **how asymmetry is handled in action**. When differences in access, exposure, or power are present, dignity becomes a structural property of the scene: whether restraint holds, stopping is usable, and interaction remains non-degrading inside the agreed frame. What changes in understanding is the shift from judging intentions to reading **enactment quality**—degradation is not a feeling or an attitude, but a predictable outcome of configurations where asymmetry is used as leverage rather than governed as a condition.
+This chapter shows that dignity in explicit sexual practice is not about personal worth or moral standing, but about **how asymmetry is handled in action**. When differences in access, exposure, power, bodily overhang, exit capacity, or reputational sedimentation are present, dignity becomes a structural property of the scene: whether restraint holds, stopping is usable, costs are nameable, and interaction remains non-degrading inside the agreed frame.
 
-The chapter also clarifies that naming an externally readable degradation-form does not violate the model’s anti-moral stance. The violation would lie in converting scene analysis into person-ranking, diagnosis, humiliation, identity verdict, or moral contempt, not in reconstructing the enactment’s outer structural form.
+What changes in understanding is the shift from judging intentions to reading **enactment quality**. Degradation is not a feeling or an attitude, but a predictable outcome of configurations where asymmetry is used as leverage rather than governed as a condition.
+
+The chapter also clarifies that naming an externally readable degradation-form does not violate the model’s anti-moral stance. The violation would lie in converting scene analysis into person-ranking, diagnosis, humiliation, identity verdict, maturity ranking, or moral contempt, not in reconstructing the enactment’s outer structural form.
+
+The updated PMS-SEX result is this: dignity also fails where asymmetry becomes leverage, parity becomes exit, or responsibility becomes authority. These are not person defects. They are structural failures of cost topology and self-binding.
 
 #### (2) Cost Sentence (explicit)
 
-When dignity fails, costs accumulate concretely through **repetition that normalizes pressure**, **exposure that concentrates risk**, **outer legibility that persists beyond internal naming**, **publicness that may amplify or sedimentize consequence**, **narrowing of exit and refusal options**, and **irreversibility** carried in bodily, reputational, exposure-related, or binding-related consequences that cannot be undone by later reinterpretation.
+When dignity fails, costs accumulate concretely through **repetition that normalizes pressure**, **exposure that concentrates risk**, **outer legibility that persists beyond internal naming**, **publicness that may amplify or sedimentize consequence**, **narrowing of exit and refusal options**, **unmarked asymmetry activation**, **parity-based responsibility exit**, **authority-conversion**, and **irreversibility** carried in bodily, reputational, exposure-related, publicness-related, or binding-related consequences that cannot be undone by later reinterpretation.
 
 #### (3) Structural Viability Corridor
 
-**Viability increases where** asymmetry is explicit and managed, stopping works without penalty, meaning stays within the declared frame, internal framing remains accountable to outer form, publicness is kept in proportion, and consequences are carried as real over time.
+**Viability increases where** asymmetry is explicit and managed, stopping works without penalty, meaning stays within the declared frame, internal framing remains accountable to outer form, publicness is kept in proportion, consequences are carried as real over time, asymmetry activation is marked and re-bound, parity coordinates rather than exits responsibility, and responsibility remains self-binding rather than authority.
 
-**Drift begins where** asymmetry is denied or exploited, stopping is punished or delegitimized, meaning escalates covertly, practice labels erase enacted form, publicness is weaponized or denied, or repeated pressure converts temporary imbalance into durable harm.
+**Drift begins where** asymmetry is denied or exploited, stopping is punished or delegitimized, meaning escalates covertly, practice labels erase enacted form, publicness is weaponized or denied, repeated pressure converts temporary imbalance into durable harm, asymmetry activation becomes unmarked leverage, parity becomes responsibility exit, or responsibility becomes control.
 
 #### (4) Entry Guard (with meaning)
 
-* **Χ (Distance):** maintained by recognizing interruption, refusal, meta-comment, and outer-form awareness as legitimate scene actions that preserve stop-capability.
+* **Χ (Distance):** maintained by recognizing interruption, refusal, meta-comment, switch-clarification, and outer-form awareness as legitimate scene actions that preserve stop-capability.
 * **Reversibility:** maintained by keeping all interpretations scene-bound and revisable, while not denying accumulated effects.
-* **D (Dignity-in-Practice):** maintained by evaluating configurations through restraint and non-degradation in enactment, never through shaming, diagnosis, identity ranking, humiliation, or person valuation.
+* **D (Dignity-in-Practice):** maintained by evaluating configurations through restraint and non-degradation in enactment, never through shaming, diagnosis, identity ranking, humiliation, maturity ranking, or person valuation. D is also maintained by blocking asymmetry-leverage, parity-exit, and responsibility-authority.
 
-#### (5) One-line Marker (quote-ready)
+#### (5) Structural Viability Verdict (Non-Moral)
 
-Dignity in sexual practice is not about who someone is, but about how asymmetry is carried: when stopping works, meaning stays bounded, and consequences are acknowledged, critique is possible without humiliation.
+A sexual configuration remains dignity-viable where asymmetry is made explicit, stop-capability remains operative, cost topology is carried, outer legibility remains readable, and responsibility is held as Ψ/Χ self-binding. It becomes structurally non-viable where costs are externalized, asymmetry is denied or switched without re-binding, parity is used to exit responsibility, or responsibility is converted into authority.
+
+Adult sexual reciprocity does not require equal burdens. It requires that unequal burdens not be externalized.
+
+#### (6) One-line Marker (quote-ready)
+
+Dignity in sexual practice is not about who someone is, but about how asymmetry is carried: when stopping works, costs are named, asymmetry is re-bound, and responsibility does not become authority, critique is possible without humiliation.
 
 ---
 
@@ -3367,7 +3779,7 @@ Dignity in sexual practice is not about who someone is, but about how asymmetry 
 
 This chapter provides an optional **interface layer** between two models with different jobs:
 
-* **PMS-SEX** explains **how** sexual practice works structurally (Δ–Ψ): enactments, frames, drift, viability, outer legibility, and cost trajectories.
+* **PMS-SEX** explains **how** sexual practice works structurally (Δ–Ψ): enactments, frames, drift, viability, outer legibility, sexual cost topology, and cost trajectories.
 * **Maturity in Practice (MIP)** explains **when and why critique is legitimate** in system and publicity contexts, without psychologizing and without moral escalation.
 
 Aims of the docking interface:
@@ -3376,9 +3788,12 @@ Aims of the docking interface:
 * support **depolarization** in discourse,
 * prevent **psychological short-circuits**: motive talk replacing structural analysis,
 * prevent **moral short-circuits**: outer-form naming becoming person-ranking,
-* prevent **publicness short-circuits**: audience reaction replacing scene reconstruction.
+* prevent **publicness short-circuits**: audience reaction replacing scene reconstruction,
+* prevent **maturity short-circuits**: operator drift markers being converted directly into person-adultness verdicts.
 
 This interface complements PMS-SEX **evaluatively**: it translates structural descriptions into critique-relevant questions without changing PMS-SEX’s substantive grammar.
+
+PMS-SEX may record that a configuration shows unmarked Ω activation, weak or defensive Χ, missing Σ coordination, Ψ externalization, parity-to-exit, responsibility-to-authority, or cost-topology mismatch. It does not thereby evaluate the adultness of a person. Any maturity-relevant evaluation belongs to the MIP docking layer and must remain scene-bound, reversible, non-person-ranking, and D-preserving.
 
 ### 22.2 Separation of Layers (Mandatory Clarification)
 
@@ -3387,23 +3802,28 @@ This interface complements PMS-SEX **evaluatively**: it translates structural de
 **PMS-SEX layer**
 
 * praxeological grammar (Δ–Ψ),
-* describes enactments, costs, drift, viability, outer legibility, and publicness overlays,
+* describes enactments, costs, drift, viability, outer legibility, sexual cost topology, and publicness overlays,
+* records operator profiles such as Ω layout, Θ trajectory, Χ operability, Ψ leakage, □ stability, Α fixation, Λ density, asymmetry-switch drift, parity-to-exit, responsibility-to-authority, and cost-topology mismatch,
 * does not assign moral rank to persons,
-* does not diagnose motives, identities, or orientations.
+* does not diagnose motives, identities, or orientations,
+* does not evaluate adultness as person status.
 
 **MIP layer**
 
 * regime / system / publicity lens,
 * structures **attribution, critique, responsibility**, and power-aware communication,
+* may evaluate whether a role-position carries its asymmetry-specific self-binding,
 * does so without motive speculation as a default,
-* does not convert dignity into shaming or public punishment.
+* does not convert dignity into shaming or public punishment,
+* does not convert maturity-relevant evaluation into essence claims or dignity hierarchy.
 
 **No back-projection rule:**
 
 * MIP must not “correct” PMS-SEX by importing moral psychology into the descriptive layer.
 * PMS-SEX must not “replace” MIP by smuggling evaluation as if it were neutral description.
 * Naming outer structural legibility at the PMS-SEX layer does not by itself authorize public critique, attribution escalation, or person-level judgment.
-* Naming higher path-cost, disturbance, or stabilization burden does not by itself establish immaturity, blame, moral failure, or identity rank.
+* Naming higher path-cost, disturbance, stabilization burden, asymmetry-switch drift, parity-to-exit, responsibility-to-authority, or cost-topology mismatch does not by itself establish immaturity, blame, moral failure, or identity rank.
+* MIP may ask whether a role-position carries its asymmetry-specific self-binding; it may not convert that question into an essence claim, person rank, or dignity hierarchy.
 
 **Docking is a context shift, not a merger:**
 (Φ: contextual meaning = recontextualization across frames.) `Φ(context)` may relocate what becomes visible and discussable, but it does not dissolve ∇/Α/Ω/Θ. Put differently: evaluation changes the *lens*, not the underlying structure.
@@ -3414,9 +3834,9 @@ Any transition from scene legibility to critique legitimacy requires explicit MI
 
 #### 22.3.1 A–C–R–P Axes (MIP)
 
-(A: contextual meaning = awareness of role/context/impact as enacted.)
-(C: contextual meaning = coherence over time under frame and cost pressure.)
-(R: contextual meaning = responsibility handling under consequences.)
+(A: contextual meaning = awareness of role/context/impact as enacted.)  
+(C: contextual meaning = coherence over time under frame and cost pressure.)  
+(R: contextual meaning = responsibility handling under consequences.)  
 (P: contextual meaning = real agency and choice capacity under power.)
 
 MIP operationalizes critique by organizing enactments into four critique-relevant axes:
@@ -3428,7 +3848,7 @@ MIP operationalizes critique by organizing enactments into four critique-relevan
 
 **Mapping principle:**
 
-* PMS-SEX provides **operator profiles**: Ω layout, Θ trajectory, Χ operability, Ψ leakage, □ stability, Α fixation, Λ density, outer legibility, publicness overlay.
+* PMS-SEX provides **operator profiles**: Ω layout, Θ trajectory, Χ operability, Ψ leakage, □ stability, Α fixation, Λ density, outer legibility, publicness overlay, asymmetry-switch drift, parity-to-exit, responsibility-to-authority, and sexual cost topology.
 * MIP orders these descriptions into **critique-relevant terms**: what was realistically knowable (A), what held over time (C), who carried consequences (R), and what alternatives existed (P).
 
 This is not a conversion of PMS into “scores.” It is a **translation into critique language** suitable for system-level communication.
@@ -3450,7 +3870,10 @@ Use of the IA box in PMS-SEX contexts:
 * differentiating **systemic abuse** from **frame-consistent asymmetry**,
 * preventing pseudo-symmetry rhetoric from replacing real asymmetry accounting,
 * preventing public outrage from replacing asymmetry analysis,
-* preventing internal labels from settling outer form.
+* preventing internal labels from settling outer form,
+* distinguishing marked/bounded asymmetry activation from asymmetry-switch drift,
+* distinguishing responsibility as Ψ/Χ self-binding from responsibility-to-authority,
+* distinguishing parity as reciprocity-binding from parity-to-exit.
 
 The IA box does not replace PMS-SEX drift markers. It provides a **publicly communicable** structure for critique without psychologizing.
 
@@ -3465,6 +3888,9 @@ The D module remains **praxeologically defined**. MIP adds a regime lens by aski
 * Was the violation avoidable given actual P (alternatives, exit margins) and A (foreseeability)?
 * Did publicness amplify costs, expose burdens, or distort the reading?
 * Was outer-form naming used for protection and accountability, or converted into shaming?
+* Was asymmetry activation marked, bounded, and re-bound into Σ/Ψ?
+* Was parity used to coordinate reciprocity, or to exit responsibility?
+* Was responsibility carried as self-binding, or converted into authority?
 
 Critique is treated as structurally legitimate only where the following conditions can be reconstructed:
 
@@ -3472,9 +3898,37 @@ Critique is treated as structurally legitimate only where the following conditio
 * exit realism was ignored (Θ treated as reversible when it was not),
 * costs were externalized (Ω used to shift burdens while denying them),
 * outer form remained legible despite internal narratives,
-* publicity or system position changed the cost and accountability field.
+* publicity or system position changed the cost and accountability field,
+* asymmetry-specific responsibility was not carried by the role-position structurally able or required to carry it.
 
-Guardrail: D remains protection-first. Any use of D for shaming, public pillory, identity labeling, orientation ranking, or person degradation counts as a misuse pattern and becomes critique-relevant itself.
+Guardrail: D remains protection-first. Any use of D for shaming, public pillory, identity labeling, orientation ranking, maturity ranking, or person degradation counts as a misuse pattern and becomes critique-relevant itself.
+
+#### 22.3.4 Asymmetry-Switch Drift and Maturity-Relevant Evaluation
+
+Where asymmetry-switch drift is knowingly repeated, PMS-SEX records the operator profile only:
+
+* unmarked Ω activation,
+* weak or defensive Χ,
+* missing Σ coordination,
+* Ψ externalization,
+* parity-to-exit,
+* responsibility-to-authority,
+* cost-topology mismatch,
+* repeated failure to mark, bound, and re-bind asymmetry activation.
+
+This remains a PMS-SEX structural description. It is not yet a maturity verdict.
+
+Any maturity-relevant evaluation belongs to the MIP docking layer. Such evaluation must remain scene-bound, reversible, non-person-ranking, and D-preserving. MIP may ask whether a role-position carries its asymmetry-specific self-binding. It may not convert that question into an essence claim, dignity hierarchy, maturity hierarchy, or global person diagnosis.
+
+The proper MIP question is not:
+
+> “What kind of person does this?”
+
+but:
+
+> “In this scene, under this cost topology, did the role-position carry the self-binding made necessary by its own power, exposure, exit capacity, and externalization profile?”
+
+This keeps critique sharp without collapsing into person ontology.
 
 ### 22.4 Value of the MIP Docking Interface
 
@@ -3489,7 +3943,10 @@ This interface has a specific function in discourse and system contexts:
   * psychological blame attribution replacing structural cost accounting,
   * publicness treated as either the whole problem or irrelevant,
   * practice labels used to end outer-form analysis,
-  * path-cost language converted into identity ranking.
+  * path-cost language converted into identity ranking,
+  * asymmetry-switch drift converted into person essence,
+  * parity-to-exit converted into “normal autonomy,”
+  * responsibility-to-authority converted into “necessary protection.”
 
 The interface is optional, but becomes highly effective when publicity amplifies conflict and when evaluation must be communicated without collapsing into person-judgment.
 
@@ -3502,33 +3959,36 @@ This chapter is not an extension of PMS-SEX. It provides only an interface for c
 * MIP is referenced as a separate schema (*MIPractice_case*) with its own guardrails, including application zones and the default-off status of the D module.
 * PMS-SEX outer-form naming does not automatically license public accusation.
 * MIP critique does not retroactively convert PMS-SEX structural descriptions into moral verdicts.
-* Path-cost, disturbance, or stabilization burden remains PMS-SEX configuration-language unless a separate evaluative framework is explicitly and legitimately docked.
+* Path-cost, disturbance, stabilization burden, asymmetry-switch drift, parity-to-exit, responsibility-to-authority, or cost-topology mismatch remains PMS-SEX configuration-language unless a separate evaluative framework is explicitly and legitimately docked.
+* Any adultness-relevant or maturity-relevant evaluation must remain scene-bound, reversible, non-person-ranking, non-diagnostic, and D-preserving.
 
 ### 22.6 Chapter Closure — Docking Without Mixing
 
 #### (1) Structural Result (Condensation)
 
-This chapter shows that **analysis and critique can be connected without being confused**. PMS-SEX explains how sexual practice becomes stable, risky, or destructive through frames, repetition, asymmetry, non-events, outer legibility, publicness overlays, and time. MIP does not change that explanation; it provides a second lens that asks when critique is *legitimate* in system and publicity contexts. What changes in understanding is that critique does not require guessing motives or judging persons: it can be grounded in what was foreseeable, what alternatives existed, who carried costs, how publicness changed the field, and how stable the configuration actually was.
+This chapter shows that **analysis and critique can be connected without being confused**. PMS-SEX explains how sexual practice becomes stable, risky, or destructive through frames, repetition, asymmetry, non-events, outer legibility, publicness overlays, sexual cost topology, and time. MIP does not change that explanation; it provides a second lens that asks when critique is *legitimate* in system and publicity contexts. What changes in understanding is that critique does not require guessing motives or judging persons: it can be grounded in what was foreseeable, what alternatives existed, who carried costs, how publicness changed the field, and how stable the configuration actually was.
+
+The updated docking point is precise: PMS-SEX may record unmarked Ω activation, weak or defensive Χ, missing Σ coordination, Ψ externalization, parity-to-exit, responsibility-to-authority, or cost-topology mismatch. MIP may then ask whether the relevant role-position carried its asymmetry-specific self-binding. That question must never become an essence claim, dignity hierarchy, maturity ranking, or global person verdict.
 
 #### (2) Cost Sentence (explicit)
 
-Costs accumulate where **time turns repetition into trajectory**, **asymmetry shifts burdens unevenly**, **outer legibility remains denied**, and **publicity hardens consequences**, especially when critique shortcuts turn structural patterns into personal blame rather than accountable cost descriptions.
+Costs accumulate where **time turns repetition into trajectory**, **asymmetry shifts burdens unevenly**, **outer legibility remains denied**, **publicity hardens consequences**, **asymmetry activation becomes unmarked**, **parity exits responsibility**, or **responsibility becomes authority**, especially when critique shortcuts turn structural patterns into personal blame rather than accountable cost descriptions.
 
 #### (3) Structural Viability Corridor
 
-**Viability increases where** descriptive analysis and evaluative critique stay distinct: structures are named clearly, critique tracks foreseeability, alternatives, cost-bearing, outer legibility, and publicness, and publicity does not collapse evaluation into shaming.
+**Viability increases where** descriptive analysis and evaluative critique stay distinct: structures are named clearly, critique tracks foreseeability, alternatives, cost-bearing, outer legibility, publicness, asymmetry-specific responsibility, and sexual cost topology, and publicity does not collapse evaluation into shaming.
 
-**Drift begins where** layers are mixed—when moral psychology replaces structural analysis, asymmetry checks become labels, outer-form naming becomes public accusation, disturbance language becomes identity ranking, or dignity is used as sanction instead of protection.
+**Drift begins where** layers are mixed—when moral psychology replaces structural analysis, asymmetry checks become labels, outer-form naming becomes public accusation, disturbance language becomes identity ranking, dignity is used as sanction instead of protection, or maturity-relevant evaluation becomes person-ranking.
 
 #### (4) Entry Guard (with meaning)
 
 * **Χ (Distance):** preserved by maintaining a clear meta-position between describing structures and evaluating responsibility.
 * **Reversibility:** preserved by keeping all critique conditional, scene-bound, and open to revision as structural facts change.
-* **D (Dignity-in-Practice):** preserved by ensuring critique targets configurations and cost handling, never person worth, diagnosis, identity, orientation, or dignity status.
+* **D (Dignity-in-Practice):** preserved by ensuring critique targets configurations and cost handling, never person worth, diagnosis, identity, orientation, maturity, or dignity status.
 
 #### (5) One-line Marker (quote-ready)
 
-PMS-SEX explains how structures work; MIP explains when critique is legitimate—docking the two adds clarity without turning analysis into moral judgment.
+PMS-SEX explains how structures work; MIP explains when critique is legitimate—docking the two adds accountability without turning operator profiles into person judgments.
 
 ---
 
@@ -4321,7 +4781,7 @@ All glossary entries are to be read under the PMS application gate:
 
 * **Χ (Distance):** maintain reflective distance and stop-capability.
 * **Reversibility:** keep readings scene-bound, revisable, and non-final.
-* **D (Dignity-in-Practice):** no shaming, humiliation, person-ranking, diagnosis, or ontological evaluation.
+* **D (Dignity-in-Practice):** no shaming, humiliation, person-ranking, diagnosis, maturity ranking, or ontological evaluation.
 
 ### Core PMS Operators (Δ–Ψ)
 
@@ -4373,16 +4833,40 @@ A structural language for reading enactments, frames, asymmetries, trajectories,
 Predictable movement toward instability, narrowing, coercion, cost externalization, or harm when costs accumulate faster than frame, distance, integration, or binding discipline can carry them.
 
 **Viability**  
-Structural capacity of a configuration to remain governable under Ω, Θ, and Λ without systematic D violation, exit fiction, covert Ψ leak, outer-form denial, or publicness confusion.
+Structural capacity of a configuration to remain governable under Ω, Θ, and Λ without systematic D violation, exit fiction, covert Ψ leak, outer-form denial, publicness confusion, asymmetry-switch drift, parity-to-exit, or responsibility-to-authority.
 
 **Cost Layout**  
 The patterned distribution of burdens, risks, exposure, access, repair demands, documentation, and consequences across roles and time: Ω under Θ.
+
+**Sexual Cost Topology**  
+Scene-bound distribution of bodily, temporal, exposure-related, reputational, binding-related, exit-related, publicness-related, and responsibility-related costs across sexual role-positions. Not a score, not a person measure, not a dignity ranking.
+
+**Asymmetry-Specific Responsibility**  
+The self-binding required of a role-position by its own cost, power, exposure, exit, and externalization profile. This is not a hierarchy of adultness; it is a scene-bound responsibility reading under Ω/Θ.
+
+**Adult Sexual Reciprocity**  
+A viability condition in sexual praxis: adult sexual reciprocity does not require equal burdens; it requires non-externalization of unequal burdens.
 
 **Exit Realism**  
 Whether stopping, leaving, refusing, re-reading, or redirecting remains practically available under accumulated costs. Exit realism is not a promise of rewind; it is a structural reading of remaining exit capacity under Θ.
 
 **Pseudo-Symmetry**  
-Frame rhetoric that denies real asymmetry, rendering costs unnameable and conflict non-negotiable. Pseudo-symmetry often appears as equality language covering uneven exposure, access, after-costs, or definitional control.
+Frame rhetoric that denies real asymmetry, rendering costs unnameable and conflict non-negotiable. Pseudo-symmetry often appears as equality language covering uneven exposure, access, after-costs, definitional control, or sexual cost topology.
+
+**EDEN/PFO Asymmetry Switch**  
+Cross-domain reference to PMS–EDEN. In PMS-SEX, the term names the sexual instantiation of a regime-level drift: parity is claimed for autonomy, status, access, or non-binding freedom, while asymmetry is activated for protection, cost, exposure, or responsibility. Legitimate where marked and emergency-bound; drifting where unmarked, repeatable, and responsibility-shifting.
+
+**Asymmetry-Switch Drift**  
+A drift pattern in which asymmetry is activated under real or invoked Ω/Θ pressure without being marked, bounded, and re-bound into Σ/Ψ. In PMS-SEX this is the sexual instantiation of the EDEN/PFO switch. It becomes dysfunctional where the switch is used as repeatable leverage, responsibility displacement, or unacknowledged Ψ externalization.
+
+**Parity-to-Exit**  
+A drift pattern in which parity rhetoric is used to deny additional responsibility under unequal sexual cost topology.
+
+**Responsibility-to-Authority**  
+A drift pattern in which required self-binding under asymmetry is converted into control, frame authority, protection entitlement, or paternalistic governance.
+
+**Sexual Drift Triad**  
+Compact handle for the three PMS-SEX drift routes: asymmetry becomes leverage, parity becomes exit, or responsibility becomes authority.
 
 **Narrative Substitution**  
 Use of reinterpretation (Φ) to claim resolution while structural costs, asymmetries, scripts, or temporal accumulation remain unchanged.
@@ -4391,13 +4875,13 @@ Use of reinterpretation (Φ) to claim resolution while structural costs, asymmet
 Loss of alternative viable scenes; one script becomes non-substitutable. Frame narrowing is often the visible form of Α monopolization.
 
 **Drift Marker**  
-A structural signal indicating elevated risk of destructive dynamics: Χ erosion, Θ denial, Ψ leak, Λ as steering, Ω escalation, Φ inflation, outer-form denial, or publicness confusion.
+A structural signal indicating elevated risk of destructive dynamics: Χ erosion, Θ denial, Ψ leak, Λ as steering, Ω escalation, Φ inflation, outer-form denial, publicness confusion, asymmetry-switch drift, parity-to-exit, or responsibility-to-authority.
 
 **Outer Legibility**  
 The structurally readable action-form a scene presents under visible asymmetry, exposure, markedness, repetition, and consequence, independent of whether internal framing confirms or contests that readability. Outer legibility is not a moral verdict and not a person judgment.
 
 **Internal Framing**  
-How a scene is inhabited, narrated, or lived from within the configuration: as play, service, devotion, experimentation, intimacy, kink, discipline, restraint, authenticity, or otherwise. Internal framing may shape experience without fully determining outer structural form.
+How a scene is inhabited, narrated, or lived from within the configuration: as play, service, devotion, experimentation, intimacy, kink, discipline, restraint, authenticity, casualness, non-binding practice, or otherwise. Internal framing may shape experience without fully determining outer structural form.
 
 **Pre-Reflective Readability**  
 The early or immediate scene-legibility of certain marked configurations prior to elaborate internal translation or justificatory narration. This is a structural readability claim, not a psychology thesis, not a theory of innocence, and not a license for person-ranking.
@@ -4406,7 +4890,7 @@ The early or immediate scene-legibility of certain marked configurations prior t
 Publicness as a frame-extension that distributes, amplifies, documents, repeats, or sedimentizes a scene’s readability and consequences without necessarily generating the scene’s primary form in the first place. Publicness modifies the consequence field; it is neither always the origin nor automatically irrelevant.
 
 **Practice Label**  
-A name used inside or around a scene—play, kink, service, devotion, humiliation-play, discipline, experimentation, authenticity, and so on. Practice labels may clarify internal framing, but they do not by themselves settle outer structural form.
+A name used inside or around a scene—play, kink, service, devotion, humiliation-play, discipline, experimentation, authenticity, casualness, non-binding, and so on. Practice labels may clarify internal framing, but they do not by themselves settle outer structural form.
 
 **Outer-Form Denial**  
 A drift pattern in which internal framing, consent-language, practice labels, or later recontextualization are used to block analysis of enacted form. Outer-form denial does not prove bad faith; it marks loss of re-reading capacity.
@@ -4423,6 +4907,9 @@ A structurally readable enactment pattern in which non-degradation under asymmet
 **Possession-Form / Control-Form**  
 A structurally readable action-form in which access, definition, refusal, exit, or self-binding is organized around possession-like or control-like gradients. Such terms remain configuration descriptions, not motive claims.
 
+**Authority-Form**  
+A structurally readable action-form in which responsibility, protection, expertise, or asymmetry is converted into control, governance, or frame ownership. The term describes configuration form, not motive or person essence.
+
 **Entropic Path-Structure**  
 A configuration’s degree of stabilization difficulty under frame, attractor formation, asymmetry, temporality, distance, integration, and self-binding. This term describes structural path-cost, not person worth, clinical status, identity rank, or moral disorder.
 
@@ -4430,7 +4917,7 @@ A configuration’s degree of stabilization difficulty under frame, attractor fo
 A strictly structural term for deviation, perturbation, instability, or added stabilization burden within a configuration. It does not imply moral failure, diagnosis, pathology, lower dignity, or degraded personhood.
 
 **Path-Cost**  
-The operator-work required for a configuration to remain coherent, reversible, non-coercive, and dignity-preserving over time. Path-cost may rise through Λ-density, Α-fixation, Ω-asymmetry, Θ-accumulation, Χ-loss, failed or overloaded Σ, covert Ψ leak, outer-form denial, or publicness sedimentation.
+The operator-work required for a configuration to remain coherent, reversible, non-coercive, and dignity-preserving over time. Path-cost may rise through Λ-density, Α-fixation, Ω-asymmetry, Θ-accumulation, Χ-loss, failed or overloaded Σ, covert Ψ leak, outer-form denial, publicness sedimentation, asymmetry-switch drift, parity-to-exit, or responsibility-to-authority.
 
 **Stabilization Burden**  
 The amount of framing, distance, integration, self-binding discipline, or cost accounting required to keep a configuration from narrowing, externalizing costs, or collapsing under recurrence.
@@ -4470,6 +4957,29 @@ Attractor stabilization becoming monopolizing: one script becomes non-substituta
 **Θ Overload**  
 Accumulated costs exceed frame capacity. Exit fictions persist until collapse becomes abrupt or expensive.
 
+**Cost-Topology Mismatch**  
+A configuration-level mismatch between declared parity, autonomy, non-binding status, or mutuality and the actual distribution of bodily, reputational, exposure-related, publicness-related, exit-related, or responsibility-related costs.
+
+**Unmarked Ω Activation**  
+Asymmetry activation that is not explicitly marked as exceptional, necessary, bounded, or re-bound into Σ/Ψ. This is a drift marker, not a person label.
+
+**Ψ Externalization**  
+Displacement of self-binding onto another role-position: the other must carry, prove, repair, endure, or absorb costs that should be handled as role-specific self-binding.
+
+### MIP Docking Terms
+
+**MIP Docking**  
+Optional evaluative interface between PMS-SEX and Maturity in Practice. PMS-SEX describes operator profiles; MIP asks when critique is legitimate. Docking changes the critique lens, not the PMS-SEX operator grammar.
+
+**Operator Profile Only**  
+A PMS-SEX discipline rule: unmarked Ω activation, weak Χ, missing Σ, Ψ externalization, parity-to-exit, responsibility-to-authority, and cost-topology mismatch are recorded as structural profiles, not as direct person-adultness verdicts.
+
+**Maturity-Relevant Evaluation**  
+Evaluation that belongs only to the MIP docking layer. It must remain scene-bound, reversible, non-person-ranking, non-diagnostic, and D-preserving.
+
+**Asymmetry-Specific Self-Binding**  
+MIP-compatible question asking whether a role-position carries the self-binding required by its cost, power, exposure, exit, and externalization profile. It must not become an essence claim or dignity hierarchy.
+
 ### Methodological Guards
 
 **Scene-Bound**  
@@ -4482,13 +4992,13 @@ Descriptions remain revisable; consequences under Θ do not rewind through reint
 No inference about pathology, motive structure, mental state, clinical condition, or psychological essence.
 
 **Non-Moralizing**  
-No purity claims, virtue ranking, moral ontology, person-worth judgment, identity hierarchy, or humiliation.
+No purity claims, virtue ranking, moral ontology, person-worth judgment, identity hierarchy, maturity hierarchy, or humiliation.
 
 **Non-Prescriptive**  
 No how-to, optimization, intervention method, risk-management manual, or instruction for enactment.
 
 **No Person-Typing**  
-PMS-SEX terms describe configurations, not character, essence, sexual identity, orientation, or personal worth.
+PMS-SEX terms describe configurations, not character, essence, sexual identity, orientation, maturity level, or personal worth.
 
 **No Orientation Taxonomy**  
 Default/deviation, entropy, disturbance, and path-cost language must not be converted into a sexual-orientation classification or hierarchy.
@@ -4496,11 +5006,14 @@ Default/deviation, entropy, disturbance, and path-cost language must not be conv
 **No Public-Punishment Inference**  
 Outer legibility does not automatically authorize public critique, exposure, shaming, or attribution escalation. Public critique requires a separate evaluative docking lens.
 
+**No Direct Adultness Verdict**  
+PMS-SEX may record operator profiles and drift markers. It may not directly evaluate person-adultness. Adultness-relevant critique belongs to MIP docking and must remain scene-bound, reversible, non-person-ranking, and D-preserving.
+
 **Internal / Outer / Public Separation**  
 Internal framing, outer legibility, and public circulation may overlap, but must not be collapsed into one another.
 
 **Final Path-Cost Guard**  
-Disturbance, entropy, deviation, and path-cost language name structural stabilization burden, not human worth, identity rank, orientation status, or clinical disorder.
+Disturbance, entropy, deviation, and path-cost language name structural stabilization burden, not human worth, identity rank, orientation status, maturity level, or clinical disorder.
 
 ---
 
