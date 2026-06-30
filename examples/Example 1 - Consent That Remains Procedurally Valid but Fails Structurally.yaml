@@ -1,1057 +1,775 @@
-case:
-  schema_version: "PMS-SEX_CASE_1.2"
-  case_id: "PMS-SEX_EXAMPLE_01"
-  legacy_case_id: "PMS-SEX_CASE_01"
-  title: "Consent That Remains Procedurally Valid but Fails Structurally"
-  short_label: "Formal Consent vs. Drift under Accumulating Costs"
+case_schema_version: PMS-SEX_CASE_TEMPLATE
+case_meta:
+  id: pms_sex_case_consent_procedural_valid_structural_failure
+  title: Consent That Remains Procedurally Valid but Fails Structurally
+  subtitle: Formal agreement without structural carriage of cost, expectation, and after-effect
+  status: example
+  model: PMS-SEX
+  model_schema_version: PMS-SEX_PROFILE
+  base_schema: PMS_1.3
+  file_name: Example - Consent That Remains Procedurally Valid but Fails Structurally.yaml
+  authorship:
+    originator: T. Zöller
+    formalization_assistant: ChatGPT 5.5 (Thinking)
+  purpose: Demonstrate a bounded PMS-SEX structural reading of a scene in which formal consent remains procedurally valid while cost topology, binding expectation, and after-scene dignity are not structurally carried.
+  case_type: dignity_case
+  primary_focus:
+    construct: sexual_cost_topology
+    construct_status: concept
+    yaml_home: concepts.sexual_cost_topology
+    secondary_constructs:
+      - covert_psi_expectation
+      - after_scene_dignity
+      - sexual_reciprocity_under_real_asymmetry
+      - Dignity-in-Practice
+      - cost_topology_mismatch
+      - pseudo_symmetry_drift
+    not_a_case_of:
+      - invalid consent finding
+      - person guilt verdict
+      - legal or forensic judgment
+      - practice guidance
+      - sexual identity taxonomy
 
-  status:
-    case_type: "example_suite_vignette"
-    role: "repo_vignette"
-    function: "scene_bound_operator_reading"
-    instructionality: "non_instructional"
-    diagnostic_status: "non_diagnostic"
-    prescriptive_status: "non_prescriptive"
-    moral_status: "non_moralizing"
-    person_classification: false
+case_guardrails:
+  non_diagnostic: true
+  non_prescriptive: true
+  non_verdictive: true
+  non_person_labeling: true
+  non_orientation_taxonomy: true
+  non_sex_ranking: true
+  non_genital_truth: true
+  non_biological_destiny: true
+  no_hidden_motive_inference: true
+  no_psychological_diagnosis: true
+  no_therapy_or_intervention_protocol: true
+  no_practice_guidance: true
+  no_risk_optimization: true
+  no_public_punishment: true
+  no_public_confession_requirement: true
+  description_mode: structural_mapping_only
+  validity_gate_reference: guard_sets.final_profile
+  required_pms_entry_conditions:
+    - Χ
+    - reversibility
+    - Dignity-in-Practice
+  required_pms_sex_conditions:
+    - scene_bound
+    - operator_profile_only
+    - internal_outer_public_layers_distinguished
+    - sexual_cost_topology_explicit_if_relevant
+    - after_scene_dignity_checked_if_relevant
+    - direct_otherness_not_converted_into_access_entitlement
+    - genital_meaning_not_converted_into_genital_sovereignty
+    - withdrawal_not_moralized_or_exculpated_by_default
+    - viability_read_as_governability_not_normality
+    - mip_docking_only_if_maturity_or_adultness_language_appears
+  core_rule: Map configurations; do not diagnose persons, prescribe practice, rank sexes, infer motives, or authorize action.
+  invalid_if_any:
+    - scene_packet_replaced_by_impression
+    - operator_trace_used_as_person_verdict
+    - visible_form_totalized_as_whole_configuration
+    - internal_framing_erases_outer_legibility
+    - public_measure_formation_becomes_confession_demand
+    - consent_or_mutuality_substitutes_for_cost_topology
+    - access_threshold_becomes_entitlement
+    - permission_image_treated_as_consent
+    - body_boundary_coding_treated_as_person_truth
+    - genital_meaning_treated_as_genital_sovereignty
+    - withdrawal_treated_as_automatic_guilt
+    - withdrawal_treated_as_automatic_exculpation
+    - D_suspended_for_clarity_or_punishment
+    - description_converted_directly_into_binding_or_action
+  prohibited_shortcuts:
+    - PMS-SEX-by-vibe
+    - deviance-by-label
+    - practice-label-settles-structure
+    - consent-settles-cost
+    - public-reaction-settles-harm
+    - body-state-proves-person-truth
+    - genital-self-description-settles-analysis
+    - orientation-or-identity-used-as-explanation
+    - motive-inference-from-operator-trace
+    - maturity-verdict-without-MIP-docking
 
-  profile_dependency:
-    model: "PMS-SEX"
-    schema_version: "PMS-SEX_1.2"
-    base_model: "PMS"
-    base_schema_version: "PMS_1.3"
-    conformity_status: "conformant_application_case"
-    case_role: "example_suite_vignette"
-    application_status: "scene_bound_structural_mapping_only"
+repo_use:
+  status: structural_focus_only
+  intended_use:
+    - scene_bound_analysis
+    - operator_mapping
+    - cost_topology_readout
+    - drift_and_viability_scan
+    - dignity_in_practice_check
+    - mip_docking_gate_if_relevant
+  not_intended_for:
+    - practice_guidance
+    - therapy_or_intervention
+    - legal_or_forensic_judgment
+    - relationship_advice
+    - diagnosis
+    - person_verdict
+    - sexual_identity_taxonomy
+    - maturity_or_adultness_verdict_from_PMS_SEX_alone
+  output_contract: A completed case may name scene-bound structures, operator profiles, cost topology, drift risk, viability status, D-status, and docking conditions; it must not prescribe action or decide person status.
 
-  paper_refs:
-    primary:
-      - "Ch. 0.7: EDEN/PFO asymmetry switch reference"
-      - "Ch. 0.8: Sexual Cost Topology"
-      - "Ch. 0.9: Validity gate"
-      - "Ch. 18.3: Dysfunction markers"
-      - "Ch. 19.3: Functional minimum conditions"
-      - "Ch. 19.4: Warning signals"
-      - "Ch. 21: Dignity-in-Practice module"
-      - "Ch. 22: MIP docking interface"
-      - "Appendix D.4: Highlighted drift corridors"
-      - "Appendix D.5: Minimal viability corridor"
-      - "Appendix D.8: Path-cost / disturbance guard"
-    secondary:
-      - "Ch. 0.2"
-      - "Ch. 0.4"
-      - "Ch. 3"
-      - "Ch. 4: Asymmetry / Sexual Cost Topology"
-      - "Ch. 5: Temporality"
-      - "Ch. 6: Exit realism"
-      - "Ch. 8"
-      - "Ch. 10: Distance"
-      - "Ch. 12: Self-binding"
-      - "Ch. 17: Alternative explanations and methodological discipline"
-      - "Appendix B"
-      - "Appendix C"
+example_schema_alignment:
+  required_fields_from_PMS_SEX_yaml:
+    vignette: minimal_vignette
+    repo_use: repo_use
+    operator_mapping: scene_packet.operator_trace and pms_sex_map.operator_profile
+    layer_distinction: scene_packet.layer_distinction and pms_sex_map.layer_readout
+    cost_topology: scene_packet.sexual_cost_topology and pms_sex_map.cost_topology_readout
+    drift_readout: pms_sex_map.drift_scan
+    viability_readout: pms_sex_map.viability_readout
+    dignity_readout: pms_sex_map.dignity_in_practice_readout
+    mip_gate: pms_sex_map.mip_docking_gate
+    closure: readable_structural_closure
+  optional_fields_from_PMS_SEX_yaml:
+    direct_otherness_readout: pms_sex_map.direct_otherness_and_access
+    genital_integration_readout: pms_sex_map.embodiment_boundary_genital_readout
+    withdrawal_expectation_readout: pms_sex_map.withdrawal_binding_readout
+    boundary_aggression_readability: pms_sex_map.dignity_in_practice_readout.application_condition_profile.boundary_aggression_readability
+    eden_pfo_switch_note: pms_sex_map.asymmetry_activation_and_reciprocity and pms_sex_map.drift_scan
+    publicness_overlay_expansion: scene_packet.layer_distinction.publicness_overlay
+    biological_affordance_guard: scene_packet.embodiment_and_genital_meaning.biological_affordance_guard
+    non_capture_note: pms_sex_map.non_capture_and_limits
 
-  scope_discipline:
-    summary: >
-      Structural mapping only. This case does not diagnose persons, infer
-      motives, rank identities, evaluate legal validity, evaluate person-
-      adultness, or prescribe action. It reconstructs a configuration in which a
-      formally consent-based frame remains intact while cost distribution,
-      temporality, distance-capacity, and asymmetry-specific self-binding drift
-      structurally.
-    claims:
-      - "scene-bound"
-      - "configuration-specific"
-      - "revisable"
-      - "non-diagnostic"
-      - "non-prescriptive"
-      - "non-moralizing"
-      - "non-instructional"
-      - "operator-profile-only where maturity questions would require MIP docking"
-    forbidden_conversions:
-      - "legal evaluation"
-      - "clinical interpretation"
-      - "person diagnosis"
-      - "moral ranking"
-      - "maturity ranking"
-      - "adultness verdict from PMS-SEX"
-      - "dignity hierarchy"
-      - "consent erasure"
-      - "procedural or sexual instruction"
-      - "risk optimization"
-      - "asymmetry switch as authority"
-      - "cost topology as score"
-    validity_gate:
-      required: ["Χ", "reversibility", "D"]
-      applies_to: "application_only"
-    additional_1_2_guards:
-      - "sexual_cost_topology_not_score"
-      - "operator_profile_only"
-      - "mip_boundary"
-      - "no_asymmetry_switch_as_authority"
-
-  minimal_vignette:
-    scene_bound: true
-    non_identifying: true
-    non_instructional: true
-    scene_id: "CASE_01_FORMAL_CONSENT_ACCUMULATING_COST"
-    scene_type: "repeated consent-based sexual frame under accumulating asymmetric costs"
-    abstraction_level: "generic_non_identifying"
-    text: >
-      A repeated sexual configuration is organized through an explicit
-      consent-based frame. The frame includes articulated rules, declared
-      reversibility, and formal stop-options. No single rupture event occurs.
-      Over time, however, one role experiences the configuration increasingly as
-      cumulative: recovery, emotional processing, bodily after-effects, exposure
-      management, and refusal burden accumulate. The other role experiences the
-      configuration more episodically, with lower downstream handling or greater
-      externalization capacity. The formal consent frame remains legible, but
-      the cost layout becomes increasingly asymmetrical under time. PMS-SEX
-      reads this as a sexual cost-topology problem, not as consent erasure.
+minimal_vignette:
+  scene: "Two adult role-positions enter a formally agreed, private, non-binding sexual interaction. The agreement is not later negated; instead, it becomes the repeated closure device through which hesitation, tonal unease, and after-scene clarification are treated as already settled. Role A can point back to procedural validity and keep the scene narratively closed, while Role B carries stronger exposure, body-boundary, symbolic, exit, and after-scene dignity costs. The structural failure does not lie in absent consent, but in the way consent becomes too heavy a proof-form: speaking later about cost begins to look like reopening, contradiction, accusation, or failure to honor the frame."
+  temporal_boundary: The scene begins with the explicit pre-scene agreement, includes the interaction and the repeated handling of hesitation through reference to that agreement, and ends with the after-scene exchange in which later meta-commentary becomes socially or practically costly even though the formal consent record remains intact.
   roles:
-    R1:
-      description: >
-        Role with higher initiation frequency, stronger episodic orientation, or
-        lower downstream exposure after enactment.
-      person_status: "role_only_not_person_type"
-    R2:
-      description: >
-        Role with lower initiation frequency, higher recovery, processing,
-        after-cost, exposure, and refusal-handling burden.
-      person_status: "role_only_not_person_type"
-  frame_anchor:
-    operator: "□"
-    description: >
-      Explicit consent-based frame with declared rules, articulated stop-options,
-      and the statement that participation remains reversible.
-  temporality:
-    operator: "Θ"
-    description: >
-      Repeated encounters across time. The case is defined by cumulative effects,
-      not by one isolated violation or rupture.
-  trigger:
-    delta:
-      operator: "Δ"
-      description: >
-        Difference emerges between formal consent clarity and lived cost
-        distribution.
-    impulse:
-      operator: "∇"
-      description: >
-        Pressure rises to maintain continuity and intensity without reopening the
-        frame’s assumptions.
-  lambda_candidates:
-    operator: "Λ"
-    expected_but_missing_or_underused:
-      - "pauses that remain non-steering"
-      - "explicit renegotiation after repeated accumulation"
-      - "non-occurrence that does not become guilt, devaluation, or interpretive pressure"
-      - "hesitation treated as structurally meaningful rather than as disruption"
-      - "cost-topology review after repeated bodily, exposure-related, or binding-related accumulation"
-  observed_realizations:
-    - "consent is reaffirmed verbally and procedurally"
-    - "declared reversibility remains present"
-    - "the phrase 'you can always say no' becomes a catch-all stabilizer"
-    - "practical stop-capability becomes less frequently activated"
-    - "cost distribution remains under-articulated because no formal rule has been broken"
-    - "asymmetry-specific responsibility remains implicit rather than explicitly carried"
+    - id: role_A
+      label: frame-closing and lower-aftercost role-position
+    - id: role_B
+      label: formally consenting and higher-aftercost role-position
+    - id: field_or_medium
+      label: procedural consent record plus repeated closure grammar
+  surface_description: The scene may initially appear as a mutually agreed, procedurally valid, private, non-binding interaction whose formal rules were respected.
+  pms_sex_question: Can procedural consent remain valid while its repeated use as closure proof makes later Χ, cost-language, and after-scene dignity structurally difficult to carry?
 
-  repo_usefulness:
-    structural_focus: >
-      This example shows why PMS-SEX separates formal frame validity from
-      structural governability. It demonstrates that a scene can remain formally
-      consent-based while still drifting under Α repetition, Ω cost asymmetry, Θ
-      accumulation, Χ erosion, sexual cost-topology mismatch, and weak
-      asymmetry-specific self-binding.
-    demonstrates:
-      - "consent as frame condition does not erase temporality"
-      - "formal reversibility does not guarantee practical Χ availability"
-      - "no single violation is required for drift to become structurally legible"
-      - "Ω may emerge through after-costs, recovery burden, exposure, and exit friction"
-      - "sexual cost topology may become unequal while consent remains locally intact"
-      - "Ψ relevance may leak into a frame narrated as local or non-binding"
-      - "parity language may become exit from cost re-internalization where unequal burdens accumulate"
-      - "responsibility may drift toward authority if protection, care, or frame maintenance becomes control"
-    avoids:
-      - "reducing the case to coercion"
-      - "collapsing consent into pathology"
-      - "treating either role as morally defective"
-      - "using structural cost language as person-ranking"
-      - "treating sexual cost topology as score"
-      - "converting asymmetry-specific responsibility into maturity ranking"
+scene_packet:
+  specified_scene: A formally agreed, private, non-binding sexual interaction in which the consent record remains valid but becomes a repeated proof-form that closes later cost-language, weakens practical Χ, and leaves asymmetrical after-scene dignity insufficiently carried.
+  role_positions:
+    role_A:
+      scene_position: Role-position with stronger frame-control capacity, lower visible after-cost, easier narrative exit, and greater ability to make the prior agreement function as closure proof.
+      not_identity: true
+    role_B:
+      scene_position: Role-position that formally agrees but carries higher exposure, body-boundary, symbolic, clarification, exit, and after-scene dignity costs once later cost-language becomes harder to introduce.
+      not_identity: true
+    field_or_medium:
+      scene_position: The procedural consent record plus the repeated closure grammar through which a locally valid agreement can become the medium that hides unresolved Ω/Θ/Ψ costs.
+      not_identity: true
+      optional: true
 
-  operator_mapping:
-    canonical_spine:
-      raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ"
-      note: >
-        The full PMS v1.3 spine remains the reference path. The case foregrounds a
-        local drift cluster but does not alter the canonical sequence.
-    closest_reduced_signatures:
-      - id: "MF_4_2"
-        label: "Asymmetry / Sexual Cost Topology"
-        raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ"
-        relevance: >
-          The case becomes legible once repeated framed practice stabilizes into
-          an attractor and generates unequal cost-bearing under time. PMS-SEX_1.2
-          reads this as sexual cost topology rather than as person score.
-      - id: "MF_5_2"
-        label: "Temporality"
-        raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ"
-        relevance: >
-          Repetition turns local permission into trajectory. Accumulation matters
-          even when each local scene remains formally consent-based.
-      - id: "MF_6_2"
-        label: "Exit Realism"
-        raw: "(□ → Λ → Α) → Ω → Θ → (Χ/Σ/Ψ)"
-        relevance: >
-          The declared ability to stop is not identical to practical exit realism
-          after repetition, cost accumulation, and role expectation have stabilized.
-      - id: "MF_10_2"
-        label: "Distance"
-        raw: "Δ → ∇ → □ → (Λ) → Α → Ω → Θ → Φ → Χ"
-        relevance: >
-          The critical drift point is not the absence of formal stop-options, but
-          the rising cost of activating Χ in practice.
-      - id: "MF_19_2"
-        label: "Functional Conditions and Warning Signals"
-        raw: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ; dominant interaction: Ω → Θ"
-        relevance: >
-          Functional governability depends on Ω nameability, explicit sexual cost
-          topology, Θ realism, Χ operation, Λ tolerance, Ψ handling, and no
-          unmarked switch drift.
-      - id: "sexual_cost_topology_signature_ch4_6"
-        label: "Sexual Cost Topology — Ω/Θ cost layout"
-        raw: "Ω/Θ cost topology across bodily, exposure, reputational, binding, exit, publicness, and responsibility channels"
-        relevance: >
-          The case is primarily a mismatch between local procedural validity and
-          distributed costs over time.
-      - id: "eden_pfo_sexual_instantiation_signature"
-        label: "EDEN/PFO Sexual Instantiation — asymmetry switch"
-        raw: "real/invoked Ω/Θ pressure → asymmetry activation → marked/bounded/re-bound OR unmarked switch drift"
-        relevance: >
-          Cross-domain switch logic is relevant only as a warning: if asymmetry is
-          invoked to stabilize the frame, it must be marked, bounded, and re-bound
-          into Σ/Ψ.
-      - id: "adult_sexual_reciprocity_signature"
-        label: "Adult Sexual Reciprocity — non-externalization of unequal burdens"
-        raw: "unequal Ω/Θ burdens + explicit cost topology + Χ restraint + Σ/Ψ re-binding → non-externalization"
-        relevance: >
-          The case tests whether unequal sexual costs are re-internalized by the
-          relevant role-positions or externalized through consent-form, parity, or
-          responsibility language.
-    operator_roles:
-      Δ:
-        function_in_case: >
-          Marks the discrepancy between consent clarity and cost distribution.
-        drift_risk: "difference becomes unnameable because the formal frame appears sufficient"
-      ∇:
-        function_in_case: >
-          Maintains directional pressure toward continuation, intensity, and frame
-          preservation.
-        drift_risk: "urgency becomes self-justifying because no rule violation is visible"
-      □:
-        function_in_case: >
-          Provides explicit consent grammar, rules, declared stop-options, and
-          formal reversibility.
-        drift_risk: "frame becomes static; consent labels replace frame re-analysis and cost-topology mapping"
-      Λ:
-        function_in_case: >
-          Names missed or underused pauses, cancellations, hesitation, slowing,
-          cost review, and renegotiation opportunities.
-        drift_risk: "non-events become costly to activate and may be read as disruption"
-      Α:
-        function_in_case: >
-          Repetition stabilizes the practice as the default coordination route.
-        drift_risk: "continuation becomes easier than interruption"
-      Ω:
-        function_in_case: >
-          Cost gradients emerge across recovery, exposure, emotional processing,
-          refusal burden, exit friction, and definitional power.
-        drift_risk: "asymmetry remains unnamed because procedural consent is intact"
-      Θ:
-        function_in_case: >
-          Converts repeated local consent into cumulative trajectory with residues,
-          after-effects, and reduced exit realism.
-        drift_risk: "later re-description cannot rewind accumulation"
-      Φ:
-        function_in_case: >
-          Recontextualization may appear as narrative minimization: 'nothing bad is
-          happening,' 'the rules are clear,' or 'this is still consensual.'
-        drift_risk: "Φ substitutes for Σ if it covers cost rather than integrating it"
-      Χ:
-        function_in_case: >
-          Stop-capability and meta-position exist formally but become increasingly
-          expensive to enact.
-        drift_risk: "Χ becomes ornamental rather than operative"
-      Σ:
-        function_in_case: >
-          Integration would require holding consent clarity and cost asymmetry
-          together without collapsing one into the other.
-        drift_risk: "contradiction is simplified: either the frame is fine, or the scene must be treated as violation"
-      Ψ:
-        function_in_case: >
-          Continuity begins to matter for self-attribution, loyalty, relational
-          meaning, or identity-relevant stakes despite local/non-binding framing.
-        drift_risk: "Ψ leak or Ψ externalization: binding relevance enters covertly or is displaced onto the other role-position"
+  frame:
+    dominant_frame: mixed
+    frame_description: The dominant frame combines consent, autonomy, parity, non-binding language, and private intimacy. Internally, the agreement remains real; structurally, the frame drifts when that agreement is repeatedly used as a totalizing closure device, so that later hesitation or clarification appears as reopening a settled scene rather than as ordinary cost-topology uptake.
+    frame_status: unstable
+    practice_label_if_any: consensual non-binding encounter
+    frame_guard: Practice labels and formal agreement may clarify internal framing but do not settle outer legibility, symbolic cost, cost topology, practical Χ, or Θ carryover.
 
-  inner_outer_public_layer_distinction:
+  layer_distinction:
     internal_framing:
-      description: >
-        Internally, the scene is framed as consensual, rule-governed, reversible,
-        and procedurally clear.
-      guard: >
-        This internal framing may be real and significant, but it does not settle
-        the full outer structural form once asymmetry, cost topology, and
-        accumulation become active.
+      description: The scene is inhabited as formally agreed and non-binding, with explicit consent functioning as the internal permission and closure marker.
+      status: present
     outer_legibility:
-      description: >
-        Externally or structurally, the scene becomes readable as a repeated frame
-        in which cost-bearing diverges between roles despite formal consent.
-      guard: >
-        Naming this outer legibility does not deny consent, assign blame, diagnose
-        either role, or convert the scene into moral verdict.
+      description: Externally, without judging persons, the action-form is readable as a parity-coded encounter that may obscure asymmetrical exposure, exit, expectation, and after-scene burden.
+      status: mixed
+      possible_outer_forms:
+        - asymmetry_form
+        - access_form
+        - body_boundary_form
+        - exposure_form
     publicness_overlay:
-      status: "possible_but_not_required"
-      description: >
-        Shared narratives, records, reputational exposure, or documentation may
-        harden Θ costs if present. Publicness is not the origin of the case but can
-        amplify after-costs.
-      pms_layer: "□ extension"
-      primarily_intensifies: ["Ω", "Θ"]
-      guard: >
-        Publicness must neither be treated as the whole source of consequence nor
-        ignored where it sediments cost.
-    temporal_carryover:
-      description: >
-        Repetition causes local events to count beyond themselves. Even where each
-        scene is locally consent-based, the trajectory may become harder to exit
-        or revise.
-      guard: "Θ does not rewind through later reassurance."
+      status: private
+      effect: No broad circulation is specified, but the procedural consent record can sediment as a local proof-form that blocks later cost-language.
+      measure_vs_confession_guard: Sexual praxis may be publicly measure-forming without making private preference confession-mandatory.
+    body_boundary_layer:
+      status: boundary
+      note: The body/boundary layer is relevant because consent does not make bodily exposure, boundary residue, or after-scene vulnerability delegable.
+    theta_carryover:
+      status: accumulating
+      note: The after-scene exchange carries unresolved expectation and dignity residue even though the formal agreement remains intact.
+    layer_guard: Layers may diverge and must not collapse into each other.
 
-  cost_layout:
-    cost_layout_formula: "Ω under Θ"
-    summary: >
-      The main structural cost lies in unequal downstream handling under repeated
-      enactment. Consent secures permission at the scene level, but does not by
-      itself distribute recovery, exposure, refusal burden, binding-related cost,
-      exit cost, or cumulative responsibility cost.
-    cost_channels:
-      bodily:
-        description: >
-          Fatigue, recovery latency, saturation effects, and embodied after-costs.
-        operator_interface: ["Θ", "Ω"]
-        body_remainder: true
-      temporal:
-        description: >
-          Continuation becomes normalized; interruption becomes more expensive
-          even though it remains formally allowed.
-        operator_interface: ["Α", "Θ", "Χ"]
-      exposure:
-        description: >
-          Vulnerability to being seen, remembered, narratively positioned, or left
-          with after-effects may accumulate unevenly even without publicness.
-        operator_interface: ["Ω", "Θ", "□"]
-      reputational:
-        description: >
-          Where the scene is socially visible or narratively shareable, one role
-          may carry higher standing, interpretation, or explanation cost.
-        operator_interface: ["□", "Ω", "Θ"]
-      binding_related:
-        description: >
-          Continued participation may begin to imply loyalty, relationship proof,
-          self-worth, or identity relevance despite the frame remaining procedural.
-        operator_interface: ["Ψ", "Θ", "Χ"]
-      exit_related:
-        description: >
-          Stopping remains allowed but becomes harder to activate because
-          interruption now carries interpretive, relational, or accumulated cost.
-        operator_interface: ["Χ", "Ω", "Θ", "Λ"]
-      relational:
-        description: >
-          Refusal, slowing, or pause may become interpretively loaded because the
-          prior frame appears consensual and stable.
-        operator_interface: ["□", "Λ", "Ω", "Ψ"]
-      interpretive:
-        description: >
-          One role may carry the burden of explaining why a formally correct frame
-          is nevertheless becoming costly.
-        operator_interface: ["Ω", "Φ", "Χ"]
-      responsibility_related:
-        description: >
-          Role-specific responsibility may remain implicit: who must name cost,
-          carry accumulated effects, reopen the frame, or restrain continuation.
-        operator_interface: ["Ψ", "Χ", "Ω", "Σ"]
-      public_or_documentary:
-        description: >
-          Where shared memory, records, images, logs, or third-party knowledge
-          exist, publicness may harden cost after the scene.
-        operator_interface: ["□", "Ω", "Θ"]
-        publicness_as_overlay: true
-    asymmetry_pattern:
-      R1:
-        typical_position: "episodic enactment; lower downstream handling; higher externalization capacity possible"
-      R2:
-        typical_position: "cumulative enactment; higher recovery, explanation, exposure, and refusal burden"
-      structural_note: >
-        This is a role-asymmetry description, not a claim about character,
-        intention, guilt, maturity, adultness, or worth.
-    system_effect: >
-      Formal consent begins to mask cost distribution because the frame can appear
-      structurally settled while Ω and Θ continue to accumulate.
+  operator_trace:
+    status: operator_profile_only
+    operator_reference: operator_spine
+    operator_set_fixed:
+      - Δ
+      - ∇
+      - □
+      - Λ
+      - Α
+      - Ω
+      - Θ
+      - Φ
+      - Χ
+      - Σ
+      - Ψ
+    primary_signature:
+      operators:
+        - □
+        - Ω
+        - Θ
+        - Χ
+        - Ψ
+        - Σ
+      shorthand_only: true
+      note: Reduced signatures are analytic shorthand and do not change PMS dependencies.
+    trace:
+      Δ: The decisive distinction is between consent as a valid local permission condition and consent as a total closure proof; the case turns on that difference, not on negating consent.
+      ∇: Attraction and permission-pressure are structurally present, but the falltypical pressure is the later pressure not to disturb the already-agreed frame.
+      □: The scene frame is consent-based, parity-coded, private, and non-binding, yet it protects drift when the formal agreement becomes the grammar that makes cost-language appear late or disruptive.
+      Λ: The relevant non-event is the missing uptake of hesitation, tone, clarification, and after-scene cost; what does not happen is a structurally adequate re-opening of the frame.
+      Α: The attractor is the repeatable move from cost-language back to procedural proof - both agreed, the frame was clear, the scene is already closed.
+      Ω: Asymmetry appears in frame-control, exposure, symbolic cost, body-boundary residue, exit burden, and the uneven cost of speaking after consent has been recorded.
+      Θ: Temporal carryover accumulates because the scene does not reset after agreement; later clarification now carries the added cost of seeming contradictory, accusatory, or frame-breaking.
+      Φ: Recontextualization narrows the event into a merely consensual episode, protecting procedural validity while reducing the legibility of structural after-cost.
+      Χ: Stop-capability and meta-commentability remain formally available, but become socially or practically expensive once later distance is coded as reopening what consent supposedly settled.
+      Σ: Integration is partial because procedural validity, tonal unease, Ω/Θ cost, later Χ, and after-scene dignity are not brought into one governable account.
+      Ψ: Self-binding fails structurally where the lower-aftercost role-position can bind itself only to the fact of consent, not to the costs produced by using consent as closure.
+    dependency_hygiene_note: Any Χ, Σ, or Ψ reading presupposes PMS dependency hygiene and does not create a new operator path.
 
   sexual_cost_topology:
-    definition: >
-      Scene-bound distribution of bodily, temporal, exposure-related,
-      reputational, binding-related, exit-related, publicness-related, and
-      responsibility-related costs across the sexual role-positions in this
-      configuration. Not a score, not a person measure, not a maturity measure, and
-      not a dignity ranking.
-    topology_status: "unequal_and_under_articulated"
-    channels:
+    concept_ref: sexual_cost_topology
+    status: hidden
+    governing_rule: Sexual cost topology is not a score, person measure, dignity rank, maturity rank, sex truth, or genital truth.
+    cost_dimensions:
       bodily_costs:
-        R1: "lower or more episodic downstream bodily overhang in the vignette"
-        R2: "higher cumulative recovery, saturation, or embodied after-cost burden"
-      temporal_costs:
-        R1: "more local reset plausibility after each encounter"
-        R2: "higher accumulation across repeated encounters; lower practical reset"
+        role_A: low
+        role_B: medium
       exposure_costs:
-        R1: "lower exposure to after-cost explanation in the basic vignette"
-        R2: "higher exposure to having to explain reluctance, change, or refusal"
+        role_A: low
+        role_B: medium
       reputational_costs:
-        R1: "context-dependent; may be lower unless publicness/documentation enters"
-        R2: "context-dependent; may rise if hesitation or refusal becomes narratively framed"
+        role_A: low
+        role_B: medium
       binding_costs:
-        R1: "risk of treating continued consent as proof that no binding issue exists"
-        R2: "risk of covertly carrying loyalty, identity, or relationship proof through continued participation"
+        role_A: low
+        role_B: high
       exit_costs:
-        R1: "exit or continuation may remain more episodic and less narratively burdened"
-        R2: "formal exit remains available but practical exit cost rises under repetition"
+        role_A: low
+        role_B: medium
       publicness_costs:
-        R1: "overlay-dependent"
-        R2: "overlay-dependent; intensified if records, shared narratives, or reputational traces accumulate"
+        role_A: none
+        role_B: low
+      body_boundary_costs:
+        role_A: low
+        role_B: medium
+      access_costs:
+        role_A: low
+        role_B: medium
       responsibility_costs:
-        R1: "must not externalize unequal downstream cost by relying on formal parity alone"
-        R2: "must not use cost asymmetry as unmarked standing lever; cost naming must remain marked and bounded"
-    cost_topology_mismatch:
+        role_A: medium
+        role_B: high
+      after_scene_dignity_costs:
+        role_A: low
+        role_B: high
+      symbolic_costs:
+        role_A: low
+        role_B: medium
+      temporal_costs:
+        role_A: low
+        role_B: medium
+      tonal_handling_costs:
+        role_A: low
+        role_B: high
+    asymmetry_specific_responsibility:
+      role_A: Role A carries a self-binding burden not only to preserve the fact of consent, but to avoid turning that fact into a closure proof that makes later Χ, tonal unease, or after-scene cost-language structurally expensive.
+      role_B: Role B carries no duty to convert higher after-cost into proof of invalid consent, guilt, diagnosis, or person-status claim; the structural burden is to keep later cost-language readable without converting it into self-worth loss or forced contradiction of the prior agreement.
+      field_or_medium: The consent record stabilizes procedural validity, but when repeatedly invoked as the decisive proof-form it also becomes the medium through which symbolic, temporal, and tonal costs are displaced.
+    mismatch_check:
+      declared_parity: present
+      real_cost_distribution: mismatched
+      possible_drift_ref: cost_topology_mismatch
+    guard: Do not infer equal burdens, equal responsibility, guilt, rank, person worth, or invalid consent from cost topology.
+
+  direct_otherness:
+    concept_ref: direct_otherness
+    status: weak
+    real_other_correction:
+      available: contested
+      description: Role B can respond, hesitate, and request clarification, but those corrections are weakened when the procedural agreement is treated as a complete answer to later structural cost.
+    substitution_checks:
+      image_category_or_script_substitution: weak
+      permission_image: present
+      simulated_counterdesire: absent
+      access_counterdesire_loop: absent
+    access_guard: Direct otherness is reality-correction without access entitlement. No person owes access, desire, correction, explanation, or availability.
+
+  embodiment_and_genital_meaning:
+    body_remainder_relevance: consequence_interface
+    biological_affordance_guard:
+      status: active
+      note: Biology may structure affordances, risks, asymmetries, thresholds, and likely strategy spaces without establishing destiny, rank, role, or moral evidence.
+    sexed_dependency_guard:
+      status: active
+      note: Sexed dependency does not imply relationship mandate, heterosexual mandate, reproductive command, orientation ranking, or person incompleteness.
+    body_boundary_coding:
+      status: present
+      markers:
+        - body_state
+        - exposure
+        - boundary_form
+        - recognition
+    genital_meaning:
+      status: present
+      integration_status: partially_integrated
+      sovereignty_risk: low
+    adult_sexual_emancipation_check:
+      formula: genital integration without genital sovereignty
+      status: partial
+    guard: The genital belongs to the person; the person does not belong to the genital.
+
+  withdrawal_and_binding:
+    covert_psi_expectation:
+      status: present
+      sources:
+        - care
+        - access
+        - ambiguity
+        - after_scene_conduct
+    ambivalence_withdrawal:
+      status: drift_risk
+      note: Withdrawal can be structurally adult in itself, but here it becomes drift-relevant when the role-position with lower after-cost treats non-binding language as sufficient to disown structured expectation.
+    post_access_withdrawal:
+      status: disowned_cost
+      note: The interaction resolves access-threshold pressure while after-scene Ψ remains insufficiently carried.
+    non_binding_language:
+      status: mismatched
+      cost_relation: The non-binding label does not match the structured Ψ-expectation created by access, ambiguity, bodily-boundary exposure, and after-scene conduct.
+    after_scene_dignity:
+      status: strained
+      markers:
+        - shame_residue
+        - self_worth_leak
+        - responsibility_flight
+    withdrawal_guard: Withdrawal is neither automatic guilt nor automatic exculpation.
+
+  asymmetry_activation_and_reciprocity:
+    sexual_reciprocity_under_real_asymmetry:
+      status: failed
+      rule: Unequal burdens need not be equal; they must not be externalized.
+    asymmetry_activation:
       present: true
-      expression: >
-        Declared formal parity in consent and stop-options does not match the
-        actual distribution of recovery, refusal, exposure, exit, and explanation
-        costs across time.
-      guard: >
-        Mismatch is configuration-language. It does not imply invalid consent,
-        coercion by itself, moral failure, or person-level adultness ranking.
+      marked: contested
+      bounded: contested
+      linked_to_real_omega_theta_burden: false
+      rebound_into_sigma_psi_where_relevant: false
+      possible_drift_refs:
+        - unmarked_omega_activation
+        - asymmetry_switch_drift
+        - parity_to_exit
+        - responsibility_to_authority
+    guard: Asymmetry activation is legitimate only where marked, bounded, linked to real Ω/Θ burden, and re-bound into Σ/Ψ where relevant.
 
-  switch_drift_markers:
-    status: "relevant_as_risk_not_primary_claim"
-    eden_pfo_reference:
-      status: "cross_domain_reference_only"
-      note: >
-        PMS–EDEN names the regime-level asymmetry switch. PMS-SEX reads only the
-        sexual instantiation where real or invoked Ω/Θ pressure may activate
-        asymmetry. This adds no PMS operator and creates no person label.
-    asymmetry_switch_drift:
-      status: "possible"
-      expression: >
-        R2's cumulative bodily, exposure-related, or refusal-related cost may be
-        invoked to interrupt or reshape the frame. This is structurally viable only
-        where the activation is marked, bounded, linked to real Ω/Θ burden, and
-        re-bound into Σ/Ψ. It drifts where cost asymmetry becomes an unmarked,
-        repeatable exception lever.
-      guard: >
-        The drift is not asymmetry activation as such. The drift is unmarked,
-        repeatable activation without re-binding.
-    parity_to_exit:
-      status: "possible"
-      expression: >
-        'We both agreed,' 'the rules are the same,' or 'you can always say no' may
-        become parity rhetoric used to deny additional responsibility under unequal
-        sexual cost topology.
-      guard: >
-        Parity remains valid only when it coordinates reciprocity and cost
-        re-internalization; it becomes drift when it exits them.
-    responsibility_to_authority:
-      status: "possible"
-      expression: >
-        Responsibility for protection, repair, pacing, or cost handling may be
-        converted into control over the frame, unilateral authority to decide what
-        counts as safe, or entitlement to define the other role-position.
-      guard: >
-        Responsibility under asymmetry requires stronger self-binding, not greater
-        command.
-    re_binding_test:
-      required: true
-      test: >
-        Any asymmetry activation must be marked, temporally bounded, connected to
-        real Ω/Θ burden, and re-bound into Σ/Ψ with Χ and D intact. Parity must not
-        become exit; responsibility must not become authority.
+pms_sex_map:
+  scene_packet_summary:
+    field_id: 1
+    bounded_scene: A procedurally valid, consent-framed interaction whose cost topology and after-scene expectation are not structurally carried.
+    main_structural_question: Whether formal consent can remain valid while the configuration fails as a governable PMS-SEX structure because Ω/Θ/Ψ burdens are externalized.
+    strongest_non_capture_possibility: A richer empirical reconstruction could show that cost and expectation were explicitly named and carried after the scene, which would narrow or defeat the failure reading.
 
-  adult_sexual_reciprocity_readout:
-    principle: >
-      Adult sexual reciprocity does not require equal burdens. It requires that
-      unequal burdens are not externalized.
-    case_application: >
-      In this case, reciprocity remains viable only if the role-position with
-      lower downstream handling does not use formal parity to externalize R2's
-      cumulative cost, and the role-position with higher downstream cost does not
-      use asymmetry as an unmarked standing lever. Both role-positions must carry
-      the self-binding specific to their own cost, power, exposure, exit, and
-      externalization profile.
-    failure_modes:
-      - id: "formal_parity_as_cost_exit"
-        description: "Consent parity is used to avoid cost-topology review."
-      - id: "cost_as_unmarked_lever"
-        description: "Accumulated cost is activated without marking, bounding, and re-binding."
-      - id: "protection_as_frame_authority"
-        description: "Care or safety responsibility becomes unilateral control over the frame."
-    guard: >
-      This is not a hierarchy of adultness. It is a scene-bound responsibility
-      reading under Ω/Θ.
+  layer_readout:
+    field_id: 2
+    internal_outer_public_relation: divergent
+    internal_framing_result: Present and procedurally valid as a permission frame.
+    outer_legibility_result: Mixed; no person verdict follows, but the configuration is readable as parity rhetoric masking role-specific costs.
+    publicness_result: Private with local sedimentation through the consent record as proof-form.
+    visible_form_totalization_risk: medium
+    result: The consent frame must be preserved as procedurally meaningful while not allowed to collapse cost topology, Θ carryover, and Ψ handling.
+    guardrail: Internal framing may be real without erasing outer form, cost topology, publicness, or temporal carryover.
 
-  asymmetry_specific_responsibility_readout:
-    definition: >
-      Each role-position must carry the self-binding required by its own cost,
-      power, exposure, exit, and externalization profile.
-    R1:
-      likely_self_binding_tasks:
-        - "not treating procedural consent as sufficient proof that no cost topology exists"
-        - "not using formal parity to exit responsibility for unequal downstream costs"
-        - "maintaining Χ when continuation is easier than interruption"
-        - "supporting Σ by allowing cost re-reading without requiring violation-language"
-      drift_risk: "parity-to-exit"
-    R2:
-      likely_self_binding_tasks:
-        - "naming cumulative cost without converting asymmetry into an unmarked standing lever"
-        - "keeping Χ operative rather than allowing accumulated cost to become only after-the-fact pressure"
-        - "separating valid cost-topology claims from global person claims"
-        - "supporting Σ by making cost specific, bounded, and re-bindable"
-      drift_risk: "asymmetry-switch drift if cost activation becomes unmarked and repeatable"
-    shared:
-      likely_self_binding_tasks:
-        - "cost topology must remain speakable"
-        - "formal consent must remain accountable to outer-form cost layout"
-        - "neither parity nor asymmetry may be used to bypass Σ/Ψ"
-        - "responsibility must not become authority"
+  operator_profile:
+    field_id: 3
+    dominant_ops:
+      - □
+      - Ω
+      - Θ
+      - Χ
+      - Ψ
+      - Σ
+    reduced_signature: □→Ω→Θ with Χ/Ψ strain and partial Σ failure
+    dependency_integrity: preserved
+    profile_summary: The case turns on a frame that remains formally valid while Ω and Θ burdens are hidden or externalized; Χ is procedurally present but practically weakened, and Ψ does not adequately bind to after-scene cost.
+    not_claimed:
+      - diagnosis
+      - motive
+      - maturity_verdict
+      - person_worth
 
-  mip_docking_guard:
-    applies_if: "reader infers maturity, adultness, or role-capacity evaluation"
+  cost_topology_readout:
+    field_id: 4
+    concept_ref: concepts.sexual_cost_topology
+    topology_status: mismatched
+    principal_costs:
+      - binding_costs
+      - exit_costs
+      - body_boundary_costs
+      - responsibility_costs
+      - after_scene_dignity_costs
+    externalization_pattern:
+      status: present
+      description: The role-position with lower after-cost treats the formal consent frame as sufficient closure, shifting residual expectation and dignity costs toward the higher-aftercost role-position.
+    asymmetry_specific_responsibility_result: Asymmetry-specific responsibility is not satisfied by consent alone; it requires carrying the actual Ω/Θ/Ψ profile without converting it into authority, guilt, or person rank.
+    possible_drift_ref: cost_topology_mismatch
+    guardrail: Consent, mutuality, or autonomy may be real frame conditions but do not by themselves settle cost distribution.
+
+  direct_otherness_and_access:
+    field_id: 5
+    direct_otherness_status: weak
+    access_logic_status: threshold
+    image_mediation_status: permission_image
+    possible_drift_refs:
+      - direct_otherness_failure
+      - access_entitlement_drift
+      - outer_form_denial
+    result: The case does not show access entitlement as a primary pattern, but it does show a permission-image risk where prior agreement is used to neutralize later otherness.
+    guardrail: Direct otherness is reality-correction without access entitlement.
+
+  embodiment_boundary_genital_readout:
+    field_id: 6
+    body_boundary_status: present
+    genital_meaning_status: integrated
+    biological_affordance_status: affordance_only
+    possible_drift_refs:
+      - body_boundary_person_truth_drift
+      - genital_sovereignty_drift
+    adult_sexual_emancipation_result: Partial; genital and bodily meaning appear as scene consequences, but no genital sovereignty or genital truth is claimed.
+    guardrail: Body or genital meaning is not person truth, command, rank, destiny, or immunity source.
+
+  withdrawal_binding_readout:
+    field_id: 7
+    covert_psi_expectation_status: present
+    withdrawal_profile: post_access_withdrawal
+    non_binding_status: mismatched_to_structured_expectation
+    after_scene_dignity_status: strained
+    possible_drift_refs:
+      - covert_psi_expectation_drift
+      - withdrawal_expectation_disowned
+      - after_scene_dignity_failure
+    result: Withdrawal and non-binding language are not treated as guilt, but they fail structurally where they disown the Ψ expectation and dignity residue created by the scene.
+    guardrail: Withdrawal is not automatic guilt, betrayal, exploitation, immaturity, or automatic exculpation.
+
+  drift_scan:
+    field_id: 8
+    max_primary_drifts: 3
+    selected_drift_sets:
+      core_dysfunction_markers: true
+      final_overlay_markers: true
+      eden_pfo_drift_triad: true
+      access_and_category_drifts: true
+      embodiment_drifts: true
+      withdrawal_and_binding_drifts: true
+      mip_relevant_profiles: false
+    primary_drift_readout:
+      - drift_ref: cost_topology_mismatch
+        support: strong
+        operator_basis:
+          - □
+          - Ω
+          - Θ
+          - Ψ
+        evidence_basis:
+          - declared parity through consent
+          - repeated use of consent as closure proof
+          - higher symbolic, tonal, exit, and after-scene dignity burden for Role B
+          - cost-language becomes harder to introduce after the formal frame has been closed
+        counter_evidence:
+          - explicit post-scene cost uptake and socially cheap meta-commentability would weaken this drift
+        not_a_person_label: true
+
+      - drift_ref: pseudo_symmetry_drift
+        support: strong
+        operator_basis:
+          - □
+          - Ω
+          - Θ
+        evidence_basis:
+          - formal mutuality makes real asymmetry difficult to name
+          - procedural equality hides the unequal cost of later clarification
+        counter_evidence:
+          - clear asymmetry-specific responsibility acknowledged by both role-positions would narrow this drift
+        not_a_person_label: true
+
+      - drift_ref: withdrawal_expectation_disowned
+        support: mixed
+        operator_basis:
+          - Λ
+          - Θ
+          - Ψ
+        evidence_basis:
+          - non-binding language conflicts with structured expectation and after-scene request for clarification
+          - the lower-aftercost role-position can withdraw into the consent record while residual Ψ-load remains elsewhere
+        counter_evidence:
+          - if no structured expectation or after-scene dignity cost was created after access, this reading weakens
+        not_a_person_label: true
+    drift_chain_readout:
+      candidate_chain: withdrawal_expectation_chain
+      support: mixed
+      sequence_fit: Formal agreement remains intact; repeated consent-as-closure makes later Χ socially or practically costly; symbolic and temporal costs accumulate under Ω/Θ; Ψ-load and after-scene dignity are displaced rather than integrated.
+    drift_guardrail: Drifts name stabilization burdens, not pathology, guilt, identity, maturity, or person value.
+
+  viability_readout:
+    field_id: 9
+    viability_status: unstable
+    viability_is: governability_not_normality
+    checks:
+      frame_explicit: pass
+      omega_nameable: fail
+      theta_realistic: partial
+      chi_operable: partial
+      lambda_tolerable: partial
+      psi_handled: fail
+      sigma_reachable_where_needed: fail
+      cost_topology_explicit: fail
+      category_pressure_proportional: pass
+      access_non_entitled: pass
+      body_boundary_coding_scene_bound: pass
+      direct_otherness_non_entitled: partial
+      genital_meaning_integrated_not_sovereign: partial
+      withdrawal_expectations_honestly_carried: fail
+      after_scene_dignity_intact: partial
+      boundary_aggression_distinguishable: pass
+      asymmetry_activation_marked_bounded_rebound: fail
+      no_parity_to_exit: fail
+      no_responsibility_to_authority: partial
+    minimal_corridor_result: fail
+    failure_or_strain_points:
+      - omega_nameable
+      - psi_handled
+      - sigma_reachable_where_needed
+      - cost_topology_explicit
+      - withdrawal_expectations_honestly_carried
+      - asymmetry_activation_marked_bounded_rebound
+      - no_parity_to_exit
+    guardrail: A viability failure is not a person verdict, moral verdict, diagnosis, or practice ranking.
+
+  dignity_in_practice_readout:
+    field_id: 10
+    module_ref: modules.dignity_in_practice
+    D_status: strained
+    application_condition_profile:
+      explicit_omega: fail
+      operative_chi: partial
+      no_covert_psi_demand_under_theta: fail
+      after_scene_dignity: partial
+      marked_bounded_asymmetry_activation: fail
+      no_parity_to_exit: fail
+      no_responsibility_to_authority: partial
+      boundary_aggression_readability: pass
+      outer_form_readability_without_visible_form_totalization: pass
+    critique_drift_refs:
+      - cost_topology_mismatch
+      - pseudo_symmetry_drift
+      - withdrawal_expectation_disowned
+      - after_scene_dignity_failure
+      - parity_to_exit
+    not_critique_by_itself:
+      - outer_legibility
+      - pre_reflective_readability
+      - publicness_as_overlay
+      - sexual_cost_topology
+      - biological_affordance_without_destiny
+      - body_boundary_coding
+      - genital_meaning
+      - withdrawal
+      - marked_bounded_asymmetry_activation
+    result: Dignity-in-Practice is strained because the asymmetry is not sufficiently named, the formal consent frame is used to exit cost carriage, and after-scene dignity is only partially preserved.
+    guardrail: Dignity in sexual practice is about how asymmetry is carried, not who someone is.
+
+  minimal_psychology_gate:
+    field_id: 11
+    module_ref: modules.minimal_psychology_adapter
+    activate: false
+    activation_conditions:
+      drift_marker_present: true
+      viability_conditions_not_restoring_correction: true
+      configuration_repeats_voluntarily: indeterminate
+    permitted_question: What structural role is this desire playing in this configuration?
+    allowed_alarm_output: none
+    prohibited_outputs:
+      - diagnosis
+      - motive_explanation
+      - clinical_claim
+      - identity_verdict
+      - orientation_claim
+      - maturity_verdict
+      - dignity_status_claim
+      - sex_truth
+      - genital_truth
+      - practice_instruction
+    result: Not activated because the case can be mapped structurally without psychological explanation or motive inference.
+
+  mip_docking_gate:
+    field_id: 12
+    module_ref: modules.mip_docking
+    activate: true
+    trigger_conditions:
+      adultness_language_present: false
+      maturity_language_present: false
+      public_critique_language_present: false
+      responsibility_evaluation_required: true
+      system_or_regime_lens_required: false
     pms_sex_records_only:
-      - "unmarked_omega_activation"
-      - "weak_or_defensive_chi"
-      - "missing_sigma_coordination"
-      - "psi_externalization"
-      - "parity_to_exit"
-      - "responsibility_to_authority"
-      - "cost_topology_mismatch"
-      - "repeated_failure_to_mark_bound_and_rebind_asymmetry_activation"
-    not_allowed_in_pms_sex:
-      - "maturity_verdict"
-      - "adultness_verdict"
-      - "person_label"
-      - "moral_failure_claim"
-      - "dignity_hierarchy"
-      - "essence_claim"
-    proper_mip_question_if_docked: >
-      In this scene, under this cost topology, did the role-position carry the
-      self-binding made necessary by its own power, exposure, exit capacity, and
-      externalization profile?
-    guard: >
-      Any maturity-relevant evaluation belongs to MIP docking and must remain
-      scene-bound, reversible, non-person-ranking, non-diagnostic, and
-      D-preserving. PMS-SEX itself records operator profiles only.
+      operator_profile: □/Ω/Θ/Χ/Ψ/Σ strain profile with cost-topology mismatch and after-scene dignity strain.
+      drift_refs:
+        - cost_topology_mismatch
+        - pseudo_symmetry_drift
+        - withdrawal_expectation_disowned
+        - after_scene_dignity_failure
+    proper_question_if_activated: Which role-position carries the asymmetry-specific self-binding required by its actual cost, power, exposure, exit, frame-control, and externalization profile?
+    improper_questions_blocked:
+      - what_kind_of_person_does_this
+      - what_identity_or_orientation_does_this_reveal
+      - is_this_person_adult
+      - is_this_person_lower_in_dignity
+      - what_clinical_or_moral_defect_explains_this
+    docking_status: activated
+    guardrail: PMS-SEX explains structure; MIP explains when critique is legitimate.
 
-  operator_profile_only_note:
-    text: >
-      This case may record pseudo-symmetry, temporal overload, Χ erosion, Ψ leak,
-      cost-topology mismatch, parity-to-exit risk, responsibility-to-authority
-      risk, or asymmetry-switch drift risk. None of these profiles is a person
-      diagnosis, person-adultness claim, moral verdict, or dignity ranking.
+  non_capture_and_limits:
+    field_id: 13
+    adjacent_lenses_needed:
+      - empirical_reconstruction
+      - law
+      - ethics
+      - MIP
+    stronger_rival_or_counter_reading: The strongest counter-reading is that the scene included explicit post-scene cost uptake, clear non-degrading closure, and mutually understood non-binding conditions not captured in the vignette.
+    counter_scene_or_falsifier:
+      status: available
+      strongest_counter_reading: A procedurally valid and structurally carried consent scene in which both role-positions explicitly named asymmetrical costs, preserved meta-commentability, and carried after-scene dignity.
+      would_weaken_reading_if:
+        - Role A explicitly acknowledged and carried after-scene cost instead of treating consent as total closure.
+        - Role B had equal exit, exposure, and after-scene cost in the bounded scene.
+        - The non-binding frame was repeatedly clarified in a way that did not erase cost topology.
+      would_defeat_reading_if:
+        - No hidden or externalized cost asymmetry existed in the scene.
+        - After-scene dignity was demonstrably intact for both role-positions.
+        - Consent was not used to silence later structural cost-language.
+    non_capture_status: partial
+    prohibited_crossing_checked:
+      diagnosis: true
+      legal_conclusion: true
+      therapy_guidance: true
+      moral_verdict: true
+      policy_recommendation: true
+      practice_instruction: true
+    result: PMS-SEX remains sufficient for a structural mapping of the bounded configuration, but any legal, therapeutic, empirical, or maturity evaluation belongs to adjacent lenses or MIP docking.
+    final_scope_guard: PMS-SEX reads what configurations do over time; it does not decide what persons are.
 
-  drift_trace:
-    compressed_formula: "□ explicit → Α repetition → Ω/Θ cost topology mismatch → Χ erosion → Σ strain → Ψ leak / Ψ externalization → possible parity-to-exit or switch drift"
-    full_formula_reference: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ"
-    dynamic_reading: >
-      The frame starts as explicit and procedurally clear. Repetition stabilizes
-      the practice into an attractor. Asymmetry emerges through unequal after-costs
-      and recovery burdens. Time accumulates residues that cannot be reset by
-      renewed consent language alone. Distance becomes harder to activate because
-      no obvious violation has occurred. Eventually, continued participation may
-      begin to carry identity-relevant or relational meaning despite local
-      non-binding framing. Under PMS-SEX_1.2, the drift risk also includes
-      cost-topology mismatch, parity-to-exit, responsibility-to-authority, and
-      unmarked asymmetry activation if the unequal cost layout is not re-bound into
-      Σ/Ψ.
-    transitions:
-      - from: "□"
-        to: "Α"
-        description: >
-          Explicit consent frame becomes a repeated coordination route.
-        risk: "frame stability turns into default continuation"
-      - from: "Α"
-        to: "Ω"
-        description: >
-          Repetition reveals unequal recovery, exposure, refusal, and repair
-          burdens.
-        risk: "cost gradient remains unnamed because the practice is formally consensual"
-      - from: "Ω"
-        to: "Θ"
-        description: >
-          Unequal burdens accumulate over time.
-        risk: "exit becomes more expensive without becoming forbidden"
-      - from: "Θ"
-        to: "Φ"
-        description: >
-          Narrative reassurance may attempt to reset the scene: 'nothing bad is
-          happening because consent remains explicit.'
-        risk: "recontextualization replaces integration"
-      - from: "Φ"
-        to: "Χ"
-        description: >
-          Distance must become operative to re-read the frame and cost layout.
-        risk: "Χ is formally available but practically discouraged"
-      - from: "Χ"
-        to: "Σ"
-        description: >
-          Integration would hold both truths: consent may be valid, and the
-          configuration may still be structurally costly.
-        risk: "without Σ, the contradiction is displaced"
-      - from: "Σ"
-        to: "Ψ"
-        description: >
-          If not handled, continuity begins to carry identity-relevant or
-          relationship-relevant stakes.
-        risk: "Ψ leak into a frame narrated as local, procedural, or non-binding"
-      - from: "Ψ"
-        to: "switch_drift_risk"
-        description: >
-          If binding and responsibility are not re-internalized, the scene may
-          drift toward parity-to-exit, responsibility-to-authority, or unmarked
-          asymmetry activation.
-        risk: "operator profile appears without authorizing person-level conclusion"
+  final_validity_gate:
+    field_id: 14
+    pipeline_step_ref: analysis_pipeline.steps.final_validity_gate
+    requires:
+      chi_preserved: partial
+      reversibility_preserved: pass
+      D_preserved: partial
+      no_person_verdict: pass
+      no_practice_guidance: pass
+      no_public_punishment: pass
+      no_cost_score: pass
+      operator_profile_only: pass
+      mip_docking_required_if_maturity_language_appears: pass
+    final_profile_guard_set: guard_sets.final_profile
+    result: valid_with_MIP_docking_needed
+    final_invalid_if_any:
+      - person_verdict_present
+      - diagnosis_present
+      - practice_guidance_present
+      - public_punishment_or_humiliation_present
+      - sexual_cost_topology_used_as_score
+      - operator_profile_used_as_adultness_verdict
+      - MIP_docking_bypassed_where_maturity_or_adultness_language_is_used
 
-  typical_drift_markers:
-    max_markers_for_case_use: 3
-    selected:
-      - id: "pseudo_symmetry"
-        source: "drift_catalogue.core_dysfunction_markers_ch18_3"
-        marker: "Pseudo-symmetry"
-        case_expression: >
-          'We both consented' or 'the rules are the same for both' functions as a
-          lid on unequal after-costs.
-        guard: >
-          This does not deny consent. It states that consent-language does not by
-          itself settle cost distribution.
-      - id: "temporal_overload"
-        source: "drift_catalogue.core_dysfunction_markers_ch18_3"
-        marker: "Temporal overload / Θ accumulation"
-        case_expression: >
-          Repetition creates accumulated costs faster than the frame can update
-          itself.
-        guard: >
-          The problem is trajectory-load, not a hidden defect in either role.
-      - id: "chi_loss"
-        source: "drift_catalogue.core_dysfunction_markers_ch18_3"
-        marker: "Loss of distance / Χ erosion"
-        case_expression: >
-          Stopping or pausing remains formally available but becomes practically
-          costly to activate.
-        guard: >
-          This is a structural stop-capability issue, not a claim of coercion by
-          itself.
-    optional_additional_markers:
-      - id: "psi_leak"
-        marker: "Covert self-binding demand"
-        case_expression: >
-          Continued participation begins to imply loyalty, identity relevance,
-          relationship proof, or self-worth despite formal non-binding language.
-      - id: "outer_form_denial"
-        marker: "Outer-form denial"
-        case_expression: >
-          The internal label 'consensual' is used to end structural analysis of
-          enacted cost layout.
-      - id: "cost_topology_mismatch"
-        marker: "Cost-topology mismatch"
-        case_expression: >
-          Declared parity and reversibility fail to match the actual distribution
-          of accumulated bodily, exposure, exit, and responsibility costs.
-      - id: "parity_to_exit"
-        marker: "Parity-to-exit"
-        case_expression: >
-          Consent parity or mutuality language is used to avoid additional
-          responsibility under unequal cost topology.
-      - id: "responsibility_to_authority"
-        marker: "Responsibility-to-authority"
-        case_expression: >
-          Safety, care, or pacing responsibility becomes frame control or
-          protection entitlement.
+construct_selection:
+  primary_construct:
+    key: sexual_cost_topology
+    label: Sexual Cost Topology
+    status: concept
+    yaml_home: concepts.sexual_cost_topology
+    support: strong
+  secondary_constructs:
+    - key: cost_topology_mismatch
+      label: Cost Topology Mismatch
+      status: drift
+      yaml_home: drifts.cost_topology_mismatch
+      support: strong
+    - key: pseudo_symmetry_drift
+      label: Pseudo-Symmetry Drift
+      status: drift
+      yaml_home: drifts.pseudo_symmetry_drift
+      support: strong
+    - key: covert_psi_expectation
+      label: Covert Ψ-Expectation
+      status: concept
+      yaml_home: concepts.covert_psi_expectation
+      support: mixed
+    - key: after_scene_dignity
+      label: After-Scene Dignity
+      status: dignity_condition
+      yaml_home: concepts.after_scene_dignity
+      support: mixed
+    - key: sexual_reciprocity_under_real_asymmetry
+      label: Sexual Reciprocity Under Real Asymmetry
+      status: viability_condition
+      yaml_home: concepts.sexual_reciprocity_under_real_asymmetry
+      support: strong
+    - key: mip_docking
+      label: MIP Docking
+      status: mip_gate
+      yaml_home: modules.mip_docking
+      support: secondary
+  explicitly_not_claimed:
+    - No person diagnosis.
+    - No hidden motive inference.
+    - No practice instruction.
+    - No orientation taxonomy.
+    - No sex truth.
+    - No genital truth.
+    - No biological destiny.
+    - No relationship mandate.
+    - No access entitlement.
+    - No maturity or adultness verdict from PMS-SEX alone.
+    - No dignity hierarchy.
+    - No public punishment or humiliation as critique mode.
+    - No final capture where non-capture is plausible.
 
-  viability_assessment:
-    functional_minimums_source: "PMS-SEX Ch. 19.3"
-    conditions:
-      explicit_omega_recognition:
-        status: "weakened"
-        reason: >
-          Cost, recovery, refusal burden, exposure, and exit gradients are present
-          but remain under-articulated because the formal consent frame appears
-          sufficient.
-        viability_requirement: "Ω must be nameable beyond procedural consent."
-      explicit_sexual_cost_topology:
-        status: "weakened"
-        reason: >
-          Bodily, exposure-related, binding-related, exit-related, and
-          responsibility-related costs are not yet mapped as a scene-bound layout.
-        viability_requirement: >
-          Sexual cost topology must be explicit as topology, not score, dignity
-          ranking, or person measure.
-      theta_awareness:
-        status: "weakened"
-        reason: >
-          Repetition and after-effects accumulate, but the frame treats each event
-          as locally resettable.
-        viability_requirement: "Θ must be treated as real; renewed consent does not rewind accumulated cost."
-      stable_chi_capacity:
-        status: "eroding"
-        reason: >
-          Stop-capability exists formally but becomes socially or emotionally
-          expensive to activate.
-        viability_requirement: "Χ must be practically available, not merely declared."
-      no_psi_substitution:
-        status: "at_risk"
-        reason: >
-          Continuity may begin to carry relational or identity-relevant meaning
-          without explicit frame support.
-        viability_requirement: "No covert Ψ demand should become the default carrier of stakes."
-      lambda_tolerance_without_escalation:
-        status: "weakened"
-        reason: >
-          Pauses, hesitation, or slowing may become interpretively loaded because
-          the frame expects continued participation.
-        viability_requirement: "Λ must remain tolerable without becoming steering, punishment, or devaluation."
-      internal_framing_accountable_to_outer_form:
-        status: "required"
-        reason: >
-          The internal consent frame is real but cannot erase outer cost
-          distribution under asymmetry and temporality.
-        viability_requirement: "Consent-language must not block structural cost-layout analysis."
-      publicness_handled_as_overlay:
-        status: "context_dependent"
-        reason: >
-          Documentation, shared narratives, or reputational traces may intensify
-          cost if present, but are not required for the primary drift.
-        viability_requirement: "Publicness must be tracked as overlay where relevant."
-      marked_bounded_rebound_asymmetry_activation:
-        status: "required_if_activation_occurs"
-        reason: >
-          Cumulative cost may require asymmetry-aware handling. It drifts if
-          asymmetry is activated as an unmarked, repeatable exception lever.
-        viability_requirement: "Any asymmetry activation must be marked, bounded, and re-bound into Σ/Ψ."
-      no_parity_to_exit:
-        status: "at_risk"
-        reason: >
-          Formal consent parity can be used to deny additional responsibility
-          under unequal downstream costs.
-        viability_requirement: "Parity must coordinate reciprocity rather than exit cost re-internalization."
-      no_responsibility_to_authority:
-        status: "at_risk"
-        reason: >
-          Responsibility for protection, pacing, or repair can become authority
-          over the frame if not held as Ψ/Χ self-binding.
-        viability_requirement: "Responsibility remains self-binding; it does not authorize control."
-    minimal_viability_corridor:
-      raw: |
-        □ explicit
-        + Ω nameable
-        + Θ realistic
-        + Χ operative
-        + Λ tolerable
-        + Ψ handled
-        (+ Σ reachable)
-        + cost topology explicit
-        + asymmetry activation marked / bounded / re-bound where present
-        + no parity-to-exit
-        + no responsibility-to-authority
-        = structurally governable configuration
-      case_reading: >
-        The configuration becomes less governable where □ remains explicit but Ω
-        is unnamed, sexual cost topology is under-articulated, Θ is reset
-        rhetorically, Χ is hard to use, Λ becomes costly, Ψ begins to leak, and
-        parity or responsibility language blocks re-binding.
+readable_structural_closure:
+  summary: "This case maps a consent-framed interaction in which procedural validity remains intact while the agreement becomes too heavy a closure proof. The dominant operator profile is □/Ω/Θ with Χ, Σ, and Ψ under pressure: the frame is explicit, but repeated reference to the formal agreement makes later hesitation, tonal unease, and after-scene cost-language socially or practically costly. Consent is therefore not negated; it remains locally real while failing to carry symbolic cost, cost topology, practical meta-commentability, and after-scene dignity. The primary drift is cost_topology_mismatch, supported by pseudo_symmetry_drift and a mixed withdrawal_expectation_disowned reading. The falltypical failure is not absent permission, but the conversion of permission into a proof-form that externalizes Ω/Θ/Ψ burdens. The reading remains partial because a fuller empirical reconstruction could show explicit cost uptake, socially cheap Χ, and intact after-scene dignity."
+  main_formula_used: formal consent remains intact while repeated consent-as-closure produces symbolic and temporal cost under Ω/Θ, making Χ socially costly and straining Σ/Ψ/D
+  support_level: strong
+  final_status: provisional_reading
+  final_guardrail: This example maps a scene. It does not diagnose persons, rank sexes, prescribe practice, or authorize intervention.
+  required_final_phrase: This remains a scene-bound structural reading, not a diagnosis, verdict, instruction, or person-status claim.
 
-  warning_signals:
-    source: "PMS-SEX Ch. 19.4"
-    present_or_relevant:
-      - id: "phi_narrative_inflation"
-        status: "possible"
-        expression: >
-          Repeated reassurance that the frame is consensual replaces cost naming
-          and integration.
-        structural_note: "Φ may substitute for Σ."
-      - id: "mono_frame"
-        status: "possible"
-        expression: >
-          The established consent frame becomes the only acceptable reading of the
-          scene.
-        structural_note: "Α may monopolize □."
-      - id: "theta_cost_externalization"
-        status: "relevant"
-        expression: >
-          Recovery, explanation, refusal, or after-costs concentrate in one role.
-        structural_note: "Θ costs shift asymmetrically through Ω."
-      - id: "outer_form_denial"
-        status: "relevant"
-        expression: >
-          Internal consent naming blocks analysis of enacted asymmetry and
-          temporal accumulation.
-        structural_note: "Χ weakens because the configuration cannot re-read itself."
-      - id: "cost_topology_mismatch"
-        status: "relevant"
-        expression: >
-          Formal parity and declared reversibility fail to match the actual
-          distribution of sexual costs over time.
-        structural_note: "Cost topology becomes unreadable under a formally valid frame."
-      - id: "parity_to_exit"
-        status: "possible"
-        expression: >
-          Consent parity is used to deny additional responsibility for unequal
-          downstream costs.
-        structural_note: "Parity language exits cost re-internalization."
-      - id: "responsibility_to_authority"
-        status: "possible"
-        expression: >
-          Care, safety, pacing, or protection responsibility becomes authority to
-          define the frame.
-        structural_note: "Responsibility stops being Ψ/Χ self-binding."
-
-  dignity_in_practice_stress_test:
-    source: "PMS-SEX Ch. 21"
-    canonical_pms_D_formula: ["Ψ", "Χ", "Ω"]
-    pms_sex_application_formula: >
-      explicit Ω + operative Χ + no covert Ψ demand under Θ + marked/bounded
-      asymmetry activation + no parity-to-exit + no responsibility-to-authority,
-      with outer-form readability preserved
-    risk_point: >
-      Dignity-in-Practice is not necessarily undermined by formal coercion or rule
-      violation. It may be stressed by procedural insulation: 'you agreed' begins
-      to shield the frame from re-reading lived impact and cost topology.
-    possible_failure_mode:
-      label: "D-in-Practice stress without formal-consent failure"
-      description: >
-        Restraint exists formally, but enacted coordination fails to account for
-        accumulating load, unequal recovery, exit friction, exposure, and
-        decreasing practical stop-capacity.
-    structural_indicators:
-      - "formal stop-options exist but are rarely activated"
-      - "cost distribution is harder to name than consent status"
-      - "Χ is treated as unnecessary, hypersensitive, or disruptive"
-      - "the frame protects procedural clarity more than recoverability"
-      - "Ψ relevance begins to leak into continued participation"
-      - "formal parity is used to avoid cost-topology review"
-      - "protection or pacing responsibility risks becoming frame authority"
-    guardrail: >
-      This stress test does not rank persons, deny consent, assign adultness level,
-      or assert bad faith. It asks whether D is preserved in enactment under Ω and
-      Θ.
-
-  rational_response_envelope:
-    status: "structural_reasonableness_not_prescription"
-    description: >
-      The following responses are structurally intelligible within the
-      configuration. They are not endorsed, prescribed, or morally ranked.
-    possible_responses:
-      - response: "continued participation despite rising costs"
-        structural_reason: >
-          Refusal may appear disproportionate because the explicit frame remains
-          formally correct.
-        operators: ["□", "Α", "Ω", "Θ"]
-      - response: "hesitation to activate Χ"
-        structural_reason: >
-          Stop-capability exists, but using it may appear to destabilize a frame in
-          which 'nothing wrong' has happened.
-        operators: ["Χ", "□", "Θ"]
-      - response: "narrative minimization"
-        structural_reason: >
-          Recontextualization reduces tension locally by preserving the
-          explicit-consent equilibrium.
-        operators: ["Φ", "Σ"]
-      - response: "increased interpretive burden"
-        structural_reason: >
-          One role must explain why a valid consent frame has nevertheless become
-          costly.
-        operators: ["Ω", "Θ", "Χ"]
-      - response: "reliance on formal parity"
-        structural_reason: >
-          Equality of declared rules can locally stabilize the frame while hiding
-          unequal downstream cost topology.
-        operators: ["□", "Ω", "Θ", "Ψ"]
-
-  path_cost_guard:
-    applies: true
-    allowed_language:
-      - "path-cost"
-      - "stabilization burden"
-      - "Θ accumulation"
-      - "Χ/Σ/Ψ work required for governability"
-      - "cost-layout drift"
-      - "cost-topology mismatch"
-      - "asymmetry-specific self-binding burden"
-    case_use: >
-      This case may describe rising stabilization burden: more framing, distance,
-      integration, cost-topology naming, and self-binding discipline are required
-      to keep the configuration governable over time.
-    forbidden_conversions:
-      - "path-cost means lower dignity"
-      - "higher stabilization burden means moral disorder"
-      - "repetition means pathology"
-      - "asymmetrical cost means bad person"
-      - "formal consent failure is implied"
-      - "sexual identity or orientation is being classified"
-      - "cost topology means score"
-      - "asymmetry-specific responsibility means maturity hierarchy"
-      - "operator profile means adultness verdict"
-    final_guard: >
-      Path-cost language remains configuration-language only. If converted into
-      person-language, diagnosis, rank, humiliation, maturity ranking, dignity
-      hierarchy, or orientation taxonomy, the analysis leaves PMS-SEX.
-
-  reader_guards:
-    does_not_claim:
-      - "that consent is insufficient or unimportant"
-      - "that explicit rules cause harm"
-      - "that either role acted deceptively"
-      - "that either role acted in bad faith"
-      - "that consent implies obligation"
-      - "that formal consent has failed"
-      - "that structural cost equals coercion"
-      - "that the configuration diagnoses anyone"
-      - "that sexual cost topology ranks persons"
-      - "that asymmetry-specific responsibility creates authority"
-      - "that PMS-SEX can directly evaluate adultness"
-    does_claim:
-      - "that consent does not neutralize Θ accumulation"
-      - "that explicit frames can still drift if Ω remains unnamed"
-      - "that formal reversibility is not identical to operative Χ"
-      - "that structural cost can emerge without rule violation"
-      - "that viability requires cost realism beyond permission"
-      - "that D-in-Practice concerns enacted handling under asymmetry, not person worth"
-      - "that adult sexual reciprocity requires non-externalization of unequal burdens"
-      - "that PMS-SEX records operator profiles only where maturity questions would require MIP docking"
-
-  analysis_checklist_application:
-    S1_scene_boundary:
-      result: >
-        Scene is bounded as repeated explicit consent-based encounters under
-        cumulative cost divergence.
-    S2_canonical_dependency_check:
-      result: >
-        PMS v1.3 spine preserved. Reduced signatures are used as shorthand only.
-        Sexual cost topology and switch drift handles are overlay handles, not new
-        operators.
-    S3_reduced_signature:
-      selected:
-        - "MF_4_2"
-        - "MF_5_2"
-        - "MF_6_2"
-        - "MF_10_2"
-        - "MF_19_2"
-        - "sexual_cost_topology_signature_ch4_6"
-        - "eden_pfo_sexual_instantiation_signature"
-        - "adult_sexual_reciprocity_signature"
-    S4_inner_outer_public_scan:
-      result: >
-        Internal frame: consensual and rule-governed. Outer legibility:
-        asymmetric cost accumulation. Publicness: possible overlay, not required.
-    S5_cost_axis_scan:
-      result: >
-        Ω appears through recovery, exposure, refusal, exit, responsibility, and
-        repair burden. Θ appears through repetition, after-effects, and exit
-        realism. Sexual cost topology is unequal and under-articulated.
-    S6_distance_and_correction_capacity:
-      result: >
-        Χ is formally present but practically eroding. Σ would require integrating
-        consent clarity with cost asymmetry and cost-topology mismatch.
-    S7_drift_marker_scan:
-      result: >
-        Pseudo-symmetry, temporal overload, Χ loss, possible Ψ leak,
-        cost-topology mismatch, parity-to-exit risk, and responsibility-to-authority
-        risk are structurally relevant.
-    S8_switch_drift_scan:
-      result: >
-        Asymmetry activation is not the primary claim but may appear as risk where
-        cumulative cost is invoked without marking, bounding, and re-binding.
-        Parity-to-exit is a clearer risk where consent parity denies additional
-        responsibility under unequal cost topology.
-    S9_viability_minimums:
-      result: >
-        Viability is weakened where Ω is unnamed, cost topology is not explicit, Θ
-        is minimized, Χ is hard to activate, Λ is not tolerated, Ψ is not explicitly
-        handled, parity exits responsibility, or responsibility becomes authority.
-    S10_adult_reciprocity_and_mip_guard:
-      result: >
-        Adult sexual reciprocity is read only as non-externalization of unequal
-        burdens. Any adultness-relevant evaluation must be docked in MIP and remain
-        scene-bound, reversible, non-person-ranking, non-diagnostic, and
-        D-preserving.
-    S11_path_cost_guard:
-      result: >
-        Path-cost is used only as configuration-language.
-    S12_escalation_guard:
-      result: >
-        No motive explanation, diagnosis, humiliation, maturity ranking, or
-        person-label is allowed.
-
-  readable_structural_closure:
-    short_closure: >
-      Consent secures permission. Viability requires cost realism and
-      non-externalization of unequal burdens.
-    full_closure: >
-      In this configuration, the consent frame does not collapse. It remains
-      explicit, procedurally legible, and locally valid as a frame. The structural
-      problem appears elsewhere: repetition stabilizes the practice into an
-      attractor, asymmetry distributes downstream costs unevenly, and temporality
-      turns local participation into cumulative trajectory.
-
-      Once explicit consent becomes the sole stabilizer, Θ and Ω begin to do the
-      coordinating work. What remains formally consensual can still become
-      structurally costly where recovery, refusal, exposure, exit, and interpretive
-      burden accumulate unevenly. The issue is not that consent fails, but that it
-      overperforms: it absorbs pressure that would need to be redistributed into
-      frame re-reading, distance activation, cost-topology naming, or integration.
-
-      PMS-SEX_1.2 adds that the relevant adult reciprocity question is not whether
-      burdens are equal, but whether unequal burdens are externalized. Formal parity
-      becomes drift when it exits responsibility under unequal cost topology;
-      asymmetry becomes drift when it is activated as an unmarked standing lever;
-      responsibility becomes drift when it turns into authority rather than
-      self-binding.
-
-      The drift is therefore not produced by malice, defective agency, hidden
-      pathology, or failed consent by itself. It is the predictable result of
-      treating a valid consent frame as sufficient while Θ continues to accumulate,
-      Ω remains under-articulated, Χ becomes harder to enact in practice, and Σ/Ψ
-      re-binding does not carry the cost topology.
-
-  final_case_guard:
-    text: >
-      This case remains PMS-SEX-valid only as configuration analysis. It may name
-      cost, drift, outer legibility, sexual cost topology, cost-topology mismatch,
-      switch-drift risk, and D-in-Practice stress, but it must not convert those
-      claims into person-ranking, diagnosis, orientation taxonomy, legal judgment,
-      adultness verdict, maturity hierarchy, dignity hierarchy, or humiliating
-      critique.
-    compressed_rules:
-      - "no consent erasure"
-      - "no person diagnosis"
-      - "no moral ranking"
-      - "no legal conclusion"
-      - "no maturity ranking"
-      - "no adultness verdict from PMS-SEX alone"
-      - "no dignity hierarchy"
-      - "no path-cost as person-worth"
-      - "no sexual cost topology as score"
-      - "no outer-form erasure by consent labels"
-      - "no publicness reduction"
-      - "no parity-to-exit as reciprocity"
-      - "no responsibility-to-authority as care"
-      - "no asymmetry switch as authority"
-      - "no operator profile as person verdict"
-      - "no prescription"
+assistant_test_vectors:
+  should_recognize:
+    - internal framing and outer legibility may diverge
+    - sexual cost topology must be mapped separately from consent or mutuality
+    - direct otherness is reality-correction without access entitlement
+    - withdrawal may be adult or drift-relevant depending on structured Ψ-expectation and after-scene dignity
+    - genital meaning is real but must not become genital sovereignty
+    - Dignity-in-Practice concerns how asymmetry is carried
+  should_not_infer:
+    - hidden motive
+    - personality
+    - pathology
+    - orientation essence
+    - sex essence
+    - genital truth
+    - biological destiny
+    - moral guilt
+    - adultness verdict
+    - action recommendation
+  should_push_back_when:
+    - the user asks for a diagnosis or person label
+    - the user asks what someone should do sexually or relationally
+    - the scene is not bounded enough to map operator profiles
+    - consent language is used to erase cost topology
+    - publicness is used to justify shaming or exposure
+    - outer form is totalized as the whole configuration
+    - body or genital meaning is converted into person truth
+    - a drift reading has no counter-scene or falsifier
+  required_final_phrase: This remains a scene-bound structural reading, not a diagnosis, verdict, instruction, or person-status claim.

@@ -621,14 +621,15 @@
 			<h1><strong>PMS–SEX</strong></h1>
 			<h2><em>Example Case 5: Dignity Collapse without Rule Violation</em></h2>
 			<div class="meta">
-				<strong>Case ID:</strong> <code>PMS-SEX_EXAMPLE_05</code> &middot;
-				<strong>Case Schema Version:</strong> <code>PMS-SEX_CASE_1.2</code> &middot;
-				<strong>Profile Version:</strong> <code>PMS-SEX_1.2</code><br />
-				<strong>Short Label:</strong> <em>Dignity Drift under Formal Compliance</em> &middot;
-				<strong>Case Label:</strong> <em>When Nothing Is Forbidden but Degradation Emerges</em><br />
-				<strong>Legacy Schema Version:</strong> <code>PMS-SEX_case_1.1</code> &middot;
-				<strong>Status:</strong> <code>conformant_application_case</code><br />
-				<strong>Depends on:</strong> <code>PMS_1.3</code>, <code>PMS-SEX_1.2</code>
+				<strong>Case ID:</strong> <code>pms_sex_case_dignity_collapse_without_rule_violation</code> &middot;
+				<strong>Case Schema Version:</strong> <code>PMS-SEX_CASE_TEMPLATE</code> &middot;
+				<strong>Profile Version:</strong> <code>PMS-SEX_PROFILE</code><br />
+				<strong>Short Label:</strong> <em>Dignity drift under formal compliance</em> &middot;
+				<strong>Legacy Case ID:</strong> <code>PMS-SEX_EXAMPLE_05</code><br />
+				<strong>Status:</strong> <code>example</code> &middot;
+				<strong>Case Type:</strong> <code>dignity_case</code><br />
+				<strong>Primary Construct:</strong> <code>after_scene_dignity_failure</code> &middot;
+				<strong>Depends on:</strong> <code>PMS_1.3</code>, <code>PMS-SEX</code>
 			</div>
 		</header>
 
@@ -639,1735 +640,1469 @@
 				<strong>Title:</strong> <em>Dignity Collapse without Rule Violation</em>
 			</p>
 			<p>
-				<strong>Short label:</strong> <em>Dignity Drift under Formal Compliance</em><br />
-				<strong>Case label:</strong> <em>When Nothing Is Forbidden but Degradation Emerges</em>
+				<strong>Subtitle:</strong> <em>Rule-compliant arrangement with failed after-scene carrying</em>
 			</p>
 			<p>
-				<strong>Case role:</strong> <code>example_suite_vignette</code><br />
-				<strong>Application status:</strong> <code>scene_bound_structural_mapping_only</code><br />
-				<strong>Function:</strong> <code>scene_bound_operator_reading</code>
-			</p>
-			<p>
-				<strong>Instructionality:</strong> <code>non_instructional</code><br />
-				<strong>Diagnostic status:</strong> <code>non_diagnostic</code><br />
-				<strong>Prescriptive status:</strong> <code>non_prescriptive</code><br />
-				<strong>Moral status:</strong> <code>non_moralizing</code><br />
-				<strong>Person classification:</strong> <code>false</code>
-			</p>
-			<p>
-				<strong>Profile dependency:</strong> <code>PMS-SEX</code> (<code>PMS-SEX_1.2</code>)<br />
-				<strong>Base dependency:</strong> <code>PMS</code> (<code>PMS_1.3</code>)
+				<strong>Primary construct:</strong> <code>after_scene_dignity_failure</code><br />
+				<strong>Construct status:</strong> <code>drift</code><br />
+				<strong>YAML home:</strong> <code>drifts.after_scene_dignity_failure</code>
 			</p>
 
 			<div class="box">
-				<div class="box-title">Primary paper references</div>
+				<div class="box-title">Purpose</div>
 				<p>
-					<code>Ch. 0.7</code> EDEN/PFO asymmetry switch reference &middot;
-					<code>Ch. 0.8</code> Sexual Cost Topology &middot;
-					<code>Ch. 0.9</code> Validity gate &middot;
-					<code>Ch. 18.3</code> Dysfunction markers &middot;
-					<code>Ch. 19.3</code> Functional minimum conditions &middot;
-					<code>Ch. 19.4</code> Warning signals &middot;
-					<code>Ch. 21</code> Dignity-in-Practice module &middot;
-					<code>Ch. 22</code> MIP docking interface &middot;
-					<code>Appendix D.4</code> Highlighted drift corridors &middot;
-					<code>Appendix D.5</code> Minimal viability corridor &middot;
-					<code>Appendix D.8</code> Path-cost / disturbance guard
+					Demonstrate a bounded PMS-SEX structural reading of a rule-compliant scene
+					in which after-scene dignity, distance, and reciprocal carrying of
+					consequences fail without converting the case into a rule-violation claim,
+					person diagnosis, sexual identity taxonomy, practice instruction, or
+					maturity verdict.
 				</p>
 			</div>
 
-			<div class="box">
-				<div class="box-title">Secondary paper references</div>
-				<p>
-					<code>Ch. 4</code> Asymmetry / Sexual Cost Topology &middot;
-					<code>Ch. 5</code> Temporality &middot;
-					<code>Ch. 6</code> Exit realism &middot;
-					<code>Ch. 10</code> Distance &middot;
-					<code>Ch. 12</code> Self-binding &middot;
-					<code>Ch. 14</code> Modulators &middot;
-					<code>Ch. 15</code> Deviance as consequence structure &middot;
-					<code>Ch. 17</code> Alternative explanations and methodological discipline &middot;
-					<code>Ch. 23</code> Limits and scope discipline &middot;
-					<code>Ch. 24.3–24.4</code> Final guard
-				</p>
-			</div>
+			<h3>0.1 Secondary constructs</h3>
+			<ul>
+				<li><code>concepts.sexual_cost_topology</code></li>
+				<li><code>drifts.cost_topology_mismatch</code></li>
+				<li><code>concepts.sexual_reciprocity_under_real_asymmetry</code></li>
+				<li><code>concepts.D_compliance</code></li>
+				<li><code>drifts.parity_to_exit</code></li>
+				<li><code>drifts.covert_psi_expectation_drift</code></li>
+				<li><code>drifts.withdrawal_expectation_disowned</code></li>
+				<li><code>concepts.non_capture</code></li>
+			</ul>
+
+			<h3>0.2 Not a case of</h3>
+			<ul>
+				<li><code>rule_violation_by_itself</code></li>
+				<li><code>consent_substitution_for_cost_topology</code></li>
+				<li><code>person_diagnosis</code></li>
+				<li><code>sexual_identity_taxonomy</code></li>
+				<li><code>practice_instruction</code></li>
+				<li><code>maturity_or_adultness_verdict</code></li>
+				<li><code>public_punishment</code></li>
+			</ul>
 
 			<hr />
 
-			<h2>1) Scope Discipline</h2>
+			<h2>1) Scope Discipline and Guardrails</h2>
 
-			<h3>1.1 Summary</h3>
+			<h3>1.1 Description mode</h3>
 			<p>
-				Structural mapping only. No accusation, no intent attribution, no motive
-				theory, no person diagnosis, no moral ranking, no maturity ranking, no
-				adultness verdict from PMS-SEX, no dignity hierarchy, no prescriptive
-				claims, and no public accusation. PMS application validity remains
-				conditional on Χ + reversibility + D.
+				<strong>Status:</strong> <code>structural_mapping_only</code>
+			</p>
+			<p>
+				This case maps a scene-bound configuration. It does not diagnose persons,
+				prescribe practice, rank sexes, infer hidden motives, authorize action,
+				or convert structural description into advice, accusation, punishment, or
+				person-status claim.
 			</p>
 
-			<h3>1.2 Case claims</h3>
+			<h3>1.2 Required PMS entry conditions</h3>
 			<ul>
-				<li>scene-bound</li>
-				<li>configuration-specific</li>
-				<li>revisable</li>
-				<li>non-diagnostic</li>
-				<li>non-prescriptive</li>
-				<li>non-moralizing</li>
-				<li>non-instructional</li>
-				<li>operator-profile-only where maturity questions would require MIP docking</li>
+				<li><strong>Χ:</strong> maintained distance, stop-capability, and no fusion into verdict.</li>
+				<li><strong>Reversibility:</strong> the reading remains scene-bound, revisable, and non-final.</li>
+				<li><strong>Dignity-in-Practice:</strong> no shaming, ranking, humiliation, diagnosis, or person-worth evaluation.</li>
 			</ul>
 
-			<h3>1.3 Forbidden conversions</h3>
+			<h3>1.3 Required PMS-SEX conditions</h3>
 			<ul>
-				<li>accusation</li>
-				<li>intent attribution</li>
-				<li>motive attribution</li>
-				<li>clinical interpretation</li>
-				<li>person diagnosis</li>
-				<li>person ranking</li>
-				<li>maturity ranking</li>
-				<li>adultness verdict from PMS-SEX</li>
-				<li>dignity hierarchy</li>
-				<li>orientation taxonomy</li>
-				<li>moral verdict</li>
-				<li>public accusation</li>
-				<li>how-to guidance</li>
-				<li>risk optimization</li>
-				<li>asymmetry switch as authority</li>
-				<li>cost topology as score</li>
+				<li><code>scene_bound</code></li>
+				<li><code>operator_profile_only</code></li>
+				<li><code>internal_outer_public_layers_distinguished</code></li>
+				<li><code>sexual_cost_topology_explicit_if_relevant</code></li>
+				<li><code>after_scene_dignity_checked_if_relevant</code></li>
+				<li><code>direct_otherness_not_converted_into_access_entitlement</code></li>
+				<li><code>genital_meaning_not_converted_into_genital_sovereignty</code></li>
+				<li><code>withdrawal_not_moralized_or_exculpated_by_default</code></li>
+				<li><code>viability_read_as_governability_not_normality</code></li>
+				<li><code>mip_docking_only_if_maturity_or_adultness_language_appears</code></li>
 			</ul>
 
-			<h3>1.4 Validity gate</h3>
+			<h3>1.4 Invalid if any</h3>
 			<ul>
-				<li>
-					<strong>Χ (Distance):</strong>
-					maintained meta-position and stop-capability; no fusion into verdict,
-					urgency, enforcement, person-level attribution, role, impulse, or
-					self-justifying rhetoric.
-				</li>
-				<li>
-					<strong>Reversibility:</strong>
-					scene-bound, configuration-specific, revisable reading; no global person
-					labels, irreversible interpretive claims, identity verdicts, maturity
-					verdicts, adultness verdicts, or ontological attributions.
-				</li>
-				<li>
-					<strong>D (Dignity-in-Practice):</strong>
-					no shaming, humiliation, person-ranking, maturity ranking, dignity
-					hierarchy, diagnosis, orientation taxonomy, or person-worth evaluation.
-					Critique targets enacted structures and cost handling only.
-				</li>
+				<li><code>scene_packet_replaced_by_impression</code></li>
+				<li><code>operator_trace_used_as_person_verdict</code></li>
+				<li><code>visible_form_totalized_as_whole_configuration</code></li>
+				<li><code>internal_framing_erases_outer_legibility</code></li>
+				<li><code>public_measure_formation_becomes_confession_demand</code></li>
+				<li><code>consent_or_mutuality_substitutes_for_cost_topology</code></li>
+				<li><code>access_threshold_becomes_entitlement</code></li>
+				<li><code>permission_image_treated_as_consent</code></li>
+				<li><code>body_boundary_coding_treated_as_person_truth</code></li>
+				<li><code>genital_meaning_treated_as_genital_sovereignty</code></li>
+				<li><code>withdrawal_treated_as_automatic_guilt</code></li>
+				<li><code>withdrawal_treated_as_automatic_exculpation</code></li>
+				<li><code>D_suspended_for_clarity_or_punishment</code></li>
+				<li><code>description_converted_directly_into_binding_or_action</code></li>
 			</ul>
 
-			<h3>1.5 Additional PMS-SEX 1.2 guards</h3>
+			<h3>1.5 Prohibited shortcuts</h3>
 			<ul>
-				<li>
-					<strong>Sexual cost topology is not a score:</strong>
-					it is a scene-bound distribution of costs, not a person measure,
-					maturity measure, or dignity ranking.
-				</li>
-				<li>
-					<strong>Operator profile only:</strong>
-					PMS-SEX may record dignity drift, degradation-form readability, weak Χ,
-					missing Σ, Ψ leak, cost-topology mismatch, parity-to-exit,
-					responsibility-to-authority, and asymmetry-switch drift risk as operator
-					profiles only.
-				</li>
-				<li>
-					<strong>MIP boundary:</strong>
-					any adultness-relevant or maturity-relevant evaluation belongs to MIP
-					docking and must remain scene-bound, reversible, non-person-ranking,
-					non-diagnostic, and D-preserving.
-				</li>
-				<li>
-					<strong>No asymmetry switch as authority:</strong>
-					asymmetry activation does not generate authority. It remains viable only
-					where marked, bounded, and re-bound into Σ/Ψ.
-				</li>
+				<li><code>PMS-SEX-by-vibe</code></li>
+				<li><code>deviance-by-label</code></li>
+				<li><code>practice-label-settles-structure</code></li>
+				<li><code>consent-settles-cost</code></li>
+				<li><code>public-reaction-settles-harm</code></li>
+				<li><code>body-state-proves-person-truth</code></li>
+				<li><code>genital-self-description-settles-analysis</code></li>
+				<li><code>orientation-or-identity-used-as-explanation</code></li>
+				<li><code>motive-inference-from-operator-trace</code></li>
+				<li><code>maturity-verdict-without-MIP-docking</code></li>
 			</ul>
+
+			<h3>1.6 Repo use</h3>
+			<p>
+				<strong>Status:</strong> <code>structural_focus_only</code>
+			</p>
+			<ul>
+				<li><code>scene_bound_analysis</code></li>
+				<li><code>operator_mapping</code></li>
+				<li><code>cost_topology_readout</code></li>
+				<li><code>drift_and_viability_scan</code></li>
+				<li><code>dignity_in_practice_check</code></li>
+				<li><code>mip_docking_gate_if_relevant</code></li>
+			</ul>
+			<p>
+				A completed case may name scene-bound structures, operator profiles,
+				cost topology, drift risk, viability status, D-status, and docking
+				conditions; it must not prescribe action or decide person status.
+			</p>
 
 			<hr />
 
 			<h2>2) Minimal Vignette</h2>
 
-			<h3>2.1 Scene-bound and non-identifying vignette</h3>
+			<h3>2.1 Scene</h3>
 			<p>
-				A repeated sexual or intimacy-marked interaction remains formally
-				compliant: rules are named, boundaries are acknowledged, and explicit
-				consent remains intact. Over time, however, tone, joking, ironic distance,
-				teasing, naming, symbolic handling, or playful framing concentrate
-				diminishment on one role. No single scene clearly violates the explicit
-				frame, but repeated enactment makes stopping, naming, or withdrawing
-				socially costly. The configuration therefore becomes structurally
-				degradation-prone without needing a rule breach, bad intent claim, or
-				person-level accusation.
-			</p>
-
-			<h3>2.2 Scene properties</h3>
-			<ul>
-				<li><strong>Scene ID:</strong> <code>EX05_DIGNITY_COLLAPSE_WITHOUT_RULE_VIOLATION</code></li>
-				<li><strong>Scene type:</strong> repeated explicit frame with enactment-mode drift</li>
-				<li><strong>Abstraction level:</strong> <code>generic_abstracted_non_identifying</code></li>
-				<li><strong>Scene-bound:</strong> <code>true</code></li>
-				<li><strong>Non-identifying:</strong> <code>true</code></li>
-				<li><strong>Non-instructional:</strong> <code>true</code></li>
-			</ul>
-
-			<h3>2.3 Core distinction</h3>
-			<p>
-				Formal rule compliance and Dignity-in-Practice are not identical. A scene
-				can remain formally permitted while its repeated enactment mode produces
-				cumulative dignity cost.
-			</p>
-
-			<hr />
-
-			<h2>3) Why This Is Repo-Useful</h2>
-
-			<h3>3.1 Structural focus</h3>
-			<p>
-				This case tests a central PMS-SEX claim: Dignity-in-Practice cannot be
-				reduced to formal rule compliance. It shows how □ (Frame) may remain
-				explicit and consent may remain procedurally intact while Ω (Asymmetry),
-				Θ (Temporality), and Χ (Distance) generate a configuration in which
-				dignity is undercut through enactment mode. The example is useful because
-				it separates rule breach, consent failure, and dignity drift without
-				converting any of them into moral accusation, pathology, maturity ranking,
-				adultness verdict, or person classification.
-			</p>
-
-			<h3>3.2 Profile features exercised</h3>
-			<ul>
-				<li>Dignity-in-Practice as enactment constraint</li>
-				<li>Ω as structural asymmetry, not moral blame</li>
-				<li>Θ accumulation through micro-effects</li>
-				<li>Χ as practical social viability, not merely formal permission</li>
-				<li>outer legibility without person-ranking</li>
-				<li>sexual cost topology as scene-bound cost layout</li>
-				<li>path-cost and disturbance language as configuration-language only</li>
-				<li>internal framing accountability to outer form</li>
-				<li>parity-to-exit risk where formal compliance denies additional responsibility</li>
-				<li>responsibility-to-authority risk where protection, care, or frame control replaces self-binding</li>
-				<li>asymmetry-switch drift risk where dignity cost is activated without marking, bounding, and re-binding</li>
-				<li>MIP docking guard for any maturity-relevant inference</li>
-			</ul>
-
-			<hr />
-
-			<h2>4) Operator Mapping</h2>
-
-			<h3>4.1 Canonical PMS spine</h3>
-			<p>
-				<code>Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ</code>
+				Two adults participate in a sexual arrangement with stated boundaries,
+				roles, and stopping rules. The arrangement remains formally compliant
+				across its local scenes: rules are followed, boundaries are named, and no
+				single episode is clearly available as a rule breach.
 			</p>
 			<p>
-				The case is read against the canonical PMS v1.3 operator spine as used by
-				PMS-SEX. No operator is added, removed, redefined, or reordered. Sexual
-				cost topology, asymmetry switch, parity-to-exit,
-				responsibility-to-authority, adult sexual reciprocity, and
-				asymmetry-specific responsibility are PMS-SEX overlay handles, not PMS
-				operators.
+				Over repeated enactment, however, tone, naming, joking, symbolic handling,
+				or frame-control concentrate diminishment on one role-position. Afterward,
+				that role-position carries shame residue, reduced distance, and a burden
+				to absorb or explain the consequences, while the other role-position treats
+				rule compliance as sufficient closure.
+			</p>
+			<p>
+				The scene therefore tests whether formal rule-observance can coexist with
+				cumulative dignity loss and failed reciprocal carrying of consequences.
 			</p>
 
-			<h3>4.2 Selected profile signature</h3>
+			<h3>2.2 Temporal boundary</h3>
+			<p>
+				The scene begins with the agreement to the stated arrangement, includes
+				repeated rule-compliant enactments, and ends only after the after-scene
+				phase in which accumulated dignity cost, distance loss, and
+				consequence-carrying become structurally visible.
+			</p>
+
+			<h3>2.3 Roles</h3>
 			<table>
 				<thead>
 					<tr>
 						<th>ID</th>
 						<th>Label</th>
-						<th>Raw signature</th>
-						<th>Note</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td><code>D_pms_sex_application_formula_ch21_3</code></td>
-						<td>D-in-Practice — PMS-SEX application formula</td>
-						<td><code>D-in-Practice in PMS-SEX = explicit Ω + operative Χ + no covert Ψ demand under Θ, with outer-form readability preserved</code></td>
-						<td>The case foregrounds D-in-Practice under explicit asymmetry and repeated enactment. Θ appears as trajectory realism, and outer-form readability is a PMS-SEX application guard, not a revision of canonical PMS-D.</td>
+						<td><code>role_A</code></td>
+						<td>rule-compliance and frame-closure holder</td>
+					</tr>
+					<tr>
+						<td><code>role_B</code></td>
+						<td>repeated-enactment and after-scene consequence carrier</td>
+					</tr>
+					<tr>
+						<td><code>field_or_medium</code></td>
+						<td>arrangement frame, stated rule-set, and enactment grammar</td>
 					</tr>
 				</tbody>
 			</table>
 
-			<h3>4.3 Secondary reduced signature</h3>
-			<table>
-				<thead>
-					<tr>
-						<th>ID</th>
-						<th>Label</th>
-						<th>Raw signature</th>
-						<th>Note</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td><code>MF_19_2</code></td>
-						<td>Functional Conditions and Warning Signals</td>
-						<td><code>Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ; dominant interaction: Ω → Θ, with accumulated Θ making Ω layouts more visible and consequential</code></td>
-						<td>This secondary signature is used because the case concerns a functional failure despite explicit framing: Ω is visible, Θ accumulates, and Χ becomes socially expensive.</td>
-					</tr>
-				</tbody>
-			</table>
-
-			<h3>4.4 Additional reduced signatures</h3>
-			<table>
-				<thead>
-					<tr>
-						<th>ID</th>
-						<th>Label</th>
-						<th>Raw signature</th>
-						<th>Case relevance</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td><code>MF_4_2</code></td>
-						<td>Asymmetry / Sexual Cost Topology</td>
-						<td><code>Δ → ∇ → □ → Λ → Α → Ω → Θ</code></td>
-						<td>The case becomes legible once repeated symbolic handling produces uneven dignity, exposure, exit, and responsibility costs across time.</td>
-					</tr>
-					<tr>
-						<td><code>MF_5_2</code></td>
-						<td>Temporality</td>
-						<td><code>Δ → ∇ → □ → Λ → Α → Ω → Θ</code></td>
-						<td>No single rupture is needed. Θ makes micro-effects cumulative and structurally consequential.</td>
-					</tr>
-					<tr>
-						<td><code>MF_6_2</code></td>
-						<td>Exit Realism</td>
-						<td><code>(□ → Λ → Α) → Ω → Θ → (Χ/Σ/Ψ)</code></td>
-						<td>Stopping remains formally allowed but becomes socially costly because no single rule breach is available as justification.</td>
-					</tr>
-					<tr>
-						<td><code>MF_10_2</code></td>
-						<td>Distance</td>
-						<td><code>Δ → ∇ → □ → (Λ) → Α → Ω → Θ → Φ → Χ</code></td>
-						<td>The central drift point is Χ becoming socially penalized while still formally acknowledged.</td>
-					</tr>
-					<tr>
-						<td><code>MF_12_2</code></td>
-						<td>Self-Binding</td>
-						<td><code>Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ</code></td>
-						<td>Tolerance of tone, continued inclusion, or willingness to play along may begin to carry covert loyalty, identity, or proof demands if Ψ is not explicitly handled.</td>
-					</tr>
-					<tr>
-						<td><code>sexual_cost_topology_signature_ch4_6</code></td>
-						<td>Sexual Cost Topology — Ω/Θ cost layout</td>
-						<td><code>Ω/Θ cost topology across bodily, exposure, reputational, binding, exit, publicness, and responsibility channels</code></td>
-						<td>The case turns on mismatch between formal compliance and distributed symbolic, dignity, exposure, exit, and responsibility costs.</td>
-					</tr>
-					<tr>
-						<td><code>eden_pfo_sexual_instantiation_signature</code></td>
-						<td>EDEN/PFO Sexual Instantiation — asymmetry switch</td>
-						<td><code>real/invoked Ω/Θ pressure → asymmetry activation → marked/bounded/re-bound OR unmarked switch drift</code></td>
-						<td>Cross-domain switch logic is relevant as a guard: dignity cost or vulnerability may be named only where marked, bounded, and re-bound into Σ/Ψ.</td>
-					</tr>
-					<tr>
-						<td><code>adult_sexual_reciprocity_signature</code></td>
-						<td>Adult Sexual Reciprocity — non-externalization of unequal burdens</td>
-						<td><code>unequal Ω/Θ burdens + explicit cost topology + Χ restraint + Σ/Ψ re-binding → non-externalization</code></td>
-						<td>The case tests whether formal compliance can remain reciprocal when symbolic and dignity costs are unequal.</td>
-					</tr>
-				</tbody>
-			</table>
-
-			<h3>4.5 Case reduced signature</h3>
-			<pre><code>□ explicit → Ω explicit → Θ accumulation → D-in-Practice undercutting → Χ social-cost increase</code></pre>
+			<h3>2.4 Surface description</h3>
 			<p>
-				This case shorthand foregrounds the local dignity drift. It does not create
-				a new PMS operator sequence. D is a PMS-derived construct with canonical
-				derivation <code>Ψ + Χ + Ω</code>; it is not a twelfth operator. Any use of
-				Χ presupposes Φ, Θ, and □. Any use of Σ presupposes Χ and Φ. Any use of
-				Ψ presupposes Σ, Θ, and Χ.
+				The scene may initially appear valid, mutual, and bounded because the
+				declared rules were followed and no single violation is citable.
+			</p>
+
+			<h3>2.5 PMS-SEX question</h3>
+			<p>
+				Can PMS-SEX distinguish local rule compliance from cumulative
+				enactment-mode drift, after-scene dignity failure, cost topology mismatch,
+				and failed reciprocal consequence-carrying?
 			</p>
 
 			<hr />
 
-			<h2>5) Scene Packet</h2>
+			<h2>3) Scene Packet</h2>
 
-			<h3>5.1 Scene identity</h3>
-			<ul>
-				<li><strong>Scene ID:</strong> <code>EX05_DIGNITY_COLLAPSE_WITHOUT_RULE_VIOLATION</code></li>
-				<li><strong>Scene type:</strong> <code>repeated_explicit_frame_with_enactment_mode_drift</code></li>
-			</ul>
+			<h3>3.1 Specified scene</h3>
+			<p>
+				A rule-compliant sexual arrangement whose repeated enactment mode produces
+				cumulative dignity cost that becomes fully visible only in the after-scene
+				phase, without requiring a stated rule violation.
+			</p>
 
-			<h3>5.2 Temporal structure and frame anchor</h3>
-			<ul>
-				<li>
-					<strong>Θ (Temporality):</strong>
-					ongoing interaction with repeated scenes and cumulative micro-effects.
-					No single rupture event is necessary; repetition makes tonal and
-					symbolic handling consequential across time.
-				</li>
-				<li>
-					<strong>□ (Frame):</strong>
-					rules are named, boundaries are acknowledged, and consent remains
-					intact. The frame is formally stable, but its dignity-preserving
-					function depends on enactment mode, not only on rule text.
-				</li>
-			</ul>
-
-			<h3>5.3 Roles, not persons</h3>
+			<h3>3.2 Role positions</h3>
 			<table>
 				<thead>
 					<tr>
 						<th>Role</th>
-						<th>Structural position</th>
-						<th>Description</th>
+						<th>Scene position</th>
+						<th>Identity guard</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td><code>R1</code></td>
-						<td><code>higher_exposure_to_symbolic_handling</code></td>
-						<td>Carries greater exposure to tone, humor, naming, ironic distance, repeated symbolic diminishment, reputational residue, and the cost of appearing disproportionate if the pattern is named.</td>
+						<td><code>role_A</code></td>
+						<td>
+							Holds the frame as closed by rule compliance and retains greater
+							control over whether tone, naming, joking, symbolic handling, or
+							consequence-residue count as structurally relevant.
+						</td>
+						<td><code>not_identity: true</code></td>
 					</tr>
 					<tr>
-						<td><code>R2</code></td>
-						<td><code>higher_control_over_scene_pacing_framing_and_interpretation</code></td>
-						<td>Carries greater capacity to define whether the tone counts as playful, light, harmless, normal, mutual, or excessive to question.</td>
+						<td><code>role_B</code></td>
+						<td>
+							Carries disproportionate exposure to repeated symbolic or tonal
+							handling, reduced distance, and pressure to absorb or narrate the
+							after-scene consequence burden without a single citable rule breach.
+						</td>
+						<td><code>not_identity: true</code></td>
+					</tr>
+					<tr>
+						<td><code>field_or_medium</code></td>
+						<td>
+							The rule-set, practice label, and enactment grammar that make each
+							local scene legible as permitted while potentially hiding cumulative
+							dignity cost across time.
+						</td>
+						<td><code>not_identity: true</code>; <code>optional: true</code></td>
 					</tr>
 				</tbody>
 			</table>
 
-			<h3>5.4 Trigger</h3>
-			<ul>
-				<li>
-					<strong>Δ (Difference):</strong>
-					asymmetry is explicit and accepted, but a difference opens between
-					formal frame compliance and cumulative dignity effects.
-				</li>
-				<li>
-					<strong>∇ (Impulse):</strong>
-					pressure to maintain lightness, intensity, playfulness, or continuity
-					without making the scene heavy or interrupting its internal tone.
-				</li>
-			</ul>
-
-			<h3>5.5 Λ candidates: expected but missing or underused</h3>
+			<h3>3.3 Frame</h3>
 			<table>
-				<thead>
-					<tr>
-						<th>ID</th>
-						<th>Expected absence / neutral form</th>
-					</tr>
-				</thead>
 				<tbody>
 					<tr>
-						<td><code>neutral_tonal_pause</code></td>
-						<td>Pauses in which tone can reset without penalty or loss of inclusion.</td>
+						<th>Dominant frame</th>
+						<td><code>mixed</code></td>
 					</tr>
 					<tr>
-						<td><code>meta_comment_without_cost</code></td>
-						<td>Meta-comments that can slow, question, or stop a scene without being recoded as overreaction, fragility, humorlessness, accusation, or betrayal of the frame spirit.</td>
+						<th>Frame status</th>
+						<td><code>unstable</code></td>
 					</tr>
 					<tr>
-						<td><code>cost_topology_review</code></td>
-						<td>A neutral review of symbolic, dignity-related, reputational, exit, and responsibility costs once repeated handling begins to concentrate diminishment.</td>
-					</tr>
-					<tr>
-						<td><code>non_occurrence_without_devaluation</code></td>
-						<td>Absence, slowing, or refusal can occur without being interpreted as failure to stay light, playful, strong, compatible, or included.</td>
+						<th>Practice label if any</th>
+						<td>rule-compliant repeated arrangement</td>
 					</tr>
 				</tbody>
 			</table>
+			<p>
+				Internally, the arrangement is framed as bounded by explicit rules;
+				structurally, repeated enactment reveals that rule compliance did not
+				settle cost topology, <code>Θ</code> carryover, socially viable
+				<code>Χ</code>, or reciprocal <code>Ψ</code>.
+			</p>
+			<p>
+				<strong>Frame guard:</strong>
+				Practice labels may clarify internal framing but do not settle outer
+				legibility, enactment mode, cost topology, publicness, or
+				<code>Θ</code> carryover.
+			</p>
 
-			<h3>5.6 Observed realizations</h3>
+			<hr />
+
+			<h2>4) Layer Distinction</h2>
+
+			<h3>4.1 Internal framing</h3>
+			<p>
+				<strong>Status:</strong> <code>present</code>
+			</p>
+			<p>
+				The local scene is inhabited as consensual, bounded, and rule-governed.
+			</p>
+
+			<h3>4.2 Outer legibility</h3>
+			<p>
+				<strong>Status:</strong> <code>mixed</code>
+			</p>
+			<p>
+				Externally readable as a rule-compliant asymmetrical or boundary-marked
+				arrangement whose after-scene costs are unevenly carried.
+			</p>
 			<ul>
-				<li>Irony, teasing, or play increasingly manages tension.</li>
-				<li>Discomfort is recontextualized as humorlessness, fragility, or inability to stay with the frame.</li>
-				<li>Stops remain formally acknowledged but become socially costly.</li>
-				<li>No single rule breach is necessary for cumulative degradation-form readability to emerge.</li>
-				<li>Internal labels such as play, humor, consent, or explicitness begin to block outer-form reading.</li>
-				<li>Symbolic diminishment accumulates faster than the frame can name it.</li>
+				<li><code>asymmetry_form</code></li>
+				<li><code>humiliation_near_form</code></li>
+				<li><code>body_boundary_form</code></li>
+				<li><code>control_form</code></li>
 			</ul>
 
-			<hr />
-
-			<h2>6) Inner / Outer / Public Layer Distinction</h2>
-
-			<h3>6.1 Core rule</h3>
+			<h3>4.3 Publicness overlay</h3>
 			<p>
-				Internal framing, outer legibility, public circulation, and temporal
-				carryover may overlap, but must not be collapsed into one another.
+				<strong>Status:</strong> <code>private</code>
+			</p>
+			<p>
+				No public circulation is required for the structural problem; the relevant
+				effect is after-scene sedimentation rather than public exposure.
+			</p>
+			<p>
+				<strong>Measure/confession guard:</strong>
+				Sexual praxis may be publicly measure-forming without making private
+				preference confession-mandatory.
 			</p>
 
-			<h3>6.2 Internal framing</h3>
+			<h3>4.4 Body-boundary layer</h3>
 			<p>
-				The scene may be internally inhabited as humor, play, lightness, irony,
-				intensity, familiarity, mutual explicitness, or consensual symbolic
-				handling.
+				<strong>Status:</strong> <code>boundary</code>
 			</p>
 			<p>
-				<strong>Guard:</strong>
-				Internal framing may be real without being total. It does not by itself
-				erase the structural form that repeated tone and symbolic handling produce
-				under Ω and Θ.
+				Body and boundary relevance are present as scene-bound consequence
+				interfaces, not as person truth or genital truth.
 			</p>
 
-			<h3>6.3 Outer legibility</h3>
+			<h3>4.5 Θ carryover</h3>
 			<p>
-				The scene becomes externally readable as dignity-fragile where one role
-				repeatedly absorbs diminishment while the other retains interpretive
-				control over whether that diminishment counts.
+				<strong>Status:</strong> <code>high</code>
 			</p>
 			<p>
-				<strong>Guard:</strong>
-				Naming outer legibility does not imply person-ranking, diagnosis, denial of
-				consent, moral verdict, maturity verdict, adultness verdict, or total
-				interpretation of the scene.
+				The central residue appears after the local episode: shame residue,
+				reduced distance, and a one-sided burden to carry consequences.
 			</p>
 
-			<h3>6.4 Publicness overlay</h3>
+			<h3>4.6 Layer guard</h3>
 			<p>
-				<strong>Status:</strong> <code>optional_or_context_dependent</code><br />
-				<strong>Concept:</strong> <code>publicness_as_overlay</code>
-			</p>
-			<p>
-				If documentation, witnesses, circulation, screenshots, social comparison,
-				reputation, or audience uptake enter the field, publicness can amplify and
-				sedimentize the dignity cost. Publicness does not necessarily create the
-				primary action-form.
-			</p>
-			<p>
-				<strong>Guard:</strong>
-				Publicness is neither the whole source of harm nor irrelevant once it
-				documents, repeats, or sedimentizes consequence.
-			</p>
-
-			<h3>6.5 Temporal carryover</h3>
-			<p>
-				Each single incident may remain deniable or ambiguous, while the repeated
-				pattern becomes harder to contest precisely because it is distributed
-				across time.
-			</p>
-			<p>
-				<strong>Guard:</strong>
-				Θ does not rewind. Later explanations may alter narration, but they do not
-				erase accumulated structural effects.
+				Layers may diverge and must not collapse into each other.
 			</p>
 
 			<hr />
 
-			<h2>7) Drift Trace</h2>
+			<h2>5) Operator Trace</h2>
 
-			<h3>7.1 Summary formula</h3>
-			<pre><code>□stable → Ω explicit → Θ accumulation → D-in-Practice undercutting → Χ penalized → Σ blocked → Ψ risk</code></pre>
+			<h3>5.1 Operator profile</h3>
 			<p>
-				<strong>Classification:</strong> <code>dignity_drift_without_rule_breach</code><br />
-				<strong>Descriptive only:</strong> <code>true</code>
+				<strong>Status:</strong> <code>operator_profile_only</code><br />
+				<strong>Operator reference:</strong> <code>operator_spine</code><br />
+				<strong>Fixed set:</strong> <code>Δ ∇ □ Λ Α Ω Θ Φ Χ Σ Ψ</code>
 			</p>
 
-			<h3>7.2 Transitions</h3>
+			<h3>5.2 Primary signature</h3>
+			<p>
+				<strong>Operators:</strong> <code>□ Ω Θ Χ Σ Ψ</code><br />
+				<strong>Shorthand:</strong> <code>true</code>
+			</p>
+			<p>
+				Reduced signatures are analytic shorthand and do not change PMS
+				dependencies.
+			</p>
+
+			<h3>5.3 Trace</h3>
 			<table>
 				<thead>
 					<tr>
-						<th>Operator / construct</th>
-						<th>Name</th>
-						<th>Local state</th>
-						<th>Description</th>
-						<th>Drift risk</th>
+						<th>Operator</th>
+						<th>Case function</th>
 					</tr>
 				</thead>
 				<tbody>
+					<tr>
+						<td><code>Δ</code></td>
+						<td>Difference is active between local rule compliance and dignity-preserving enactment over time.</td>
+					</tr>
+					<tr>
+						<td><code>∇</code></td>
+						<td>
+							Activation pressure is contained inside the arrangement as tone,
+							joking, symbolic handling, lightness, or continuity pressure rather
+							than as a local rule breach.
+						</td>
+					</tr>
 					<tr>
 						<td><code>□</code></td>
-						<td>Frame</td>
-						<td><code>formally_compliant</code></td>
-						<td>The explicit frame remains intact. Rules, boundaries, and consent language are not necessarily violated.</td>
-						<td>Frame correctness can become a shield against reading enactment mode.</td>
+						<td>The stated rule-set frames each local scene as permitted, bounded, and formally stoppable.</td>
+					</tr>
+					<tr>
+						<td><code>Λ</code></td>
+						<td>
+							A non-event matters: no explicit rule breach occurs, and this absence
+							is used as closure pressure against naming cumulative dignity cost.
+						</td>
+					</tr>
+					<tr>
+						<td><code>Α</code></td>
+						<td>
+							The arrangement grammar stabilizes a repeatable pattern in which rule
+							compliance substitutes for review of enactment mode and
+							consequence-carrying.
+						</td>
 					</tr>
 					<tr>
 						<td><code>Ω</code></td>
-						<td>Asymmetry</td>
-						<td><code>visible_and_accepted</code></td>
-						<td>Asymmetry is named or understood, but interpretive control over tone, pacing, and meaning is unevenly distributed.</td>
-						<td>Explicit asymmetry may be treated as already handled, even while symbolic costs accumulate unevenly.</td>
+						<td>
+							Asymmetry appears in symbolic exposure, frame-control capacity,
+							interpretation load, explanation burden, and unequal ability to exit
+							cleanly.
+						</td>
 					</tr>
 					<tr>
 						<td><code>Θ</code></td>
-						<td>Temporality</td>
-						<td><code>micro_effect_accumulation</code></td>
-						<td>Repeated small tonal or symbolic acts accumulate into a trajectory that exceeds any single contestable incident.</td>
-						<td>The absence of a single rupture makes cumulative cost harder to name.</td>
+						<td>
+							Temporal accumulation is central: repeated micro-effects become
+							after-scene residue, distance loss, and consequence burden without
+							needing a single rupture event.
+						</td>
 					</tr>
 					<tr>
-						<td><code>D</code></td>
-						<td>Dignity-in-Practice</td>
-						<td><code>undercut_in_enactment_mode</code></td>
-						<td>D is stressed at the level of enactment style: tone, humor, naming, and symbolic handling repeatedly normalize diminishment.</td>
-						<td>D can fail as enactment constraint while formal rules remain intact.</td>
+						<td><code>Φ</code></td>
+						<td>
+							Later narration can recontextualize the scene as merely playful,
+							mutual, or rule-compliant, thereby narrowing the reading and
+							deflecting accumulated after-cost.
+						</td>
 					</tr>
 					<tr>
 						<td><code>Χ</code></td>
-						<td>Distance</td>
-						<td><code>formally_allowed_but_socially_penalized</code></td>
-						<td>Stop-capability, meta-commentary, hesitation, or re-reading remain formally available but practically costly.</td>
-						<td>Distance becomes readable as overreaction, incompatibility, fragility, humorlessness, moral accusation, or betrayal of the scene’s spirit.</td>
+						<td>
+							Distance remains partial: stopping and meta-commentary are formally
+							allowed but become socially costly where no single rule breach is
+							available as justification.
+						</td>
 					</tr>
 					<tr>
 						<td><code>Σ</code></td>
-						<td>Integration</td>
-						<td><code>blocked_or_delayed</code></td>
-						<td>Integration would require holding formal compliance and cumulative degradation-form readability together without denying either.</td>
-						<td>Σ is blocked where the frame demands either rule-breach proof or silence.</td>
+						<td>
+							Integration is weak where the local rule frame and cumulative
+							degradation-form readability cannot be carried together.
+						</td>
 					</tr>
 					<tr>
 						<td><code>Ψ</code></td>
-						<td>Self-binding</td>
-						<td><code>risk_of_covert_demand</code></td>
-						<td>Continued tolerance may begin to function as proof of compatibility, strength, loyalty, toughness, or willingness to remain inside the frame.</td>
-						<td>Ψ leaks if staying with the tone becomes a covert proof demand.</td>
+						<td>
+							Self-binding is mismatched: the role benefiting from rule-closure
+							externalizes some cumulative and after-scene carrying onto the other
+							role-position.
+						</td>
 					</tr>
 				</tbody>
 			</table>
 
-			<h3>7.3 Structural result</h3>
+			<h3>5.4 Dependency hygiene</h3>
 			<p>
-				Degradation-form readability emerges without requiring a prohibited act,
-				explicit coercion, bad intent, or rule violation. The configuration drifts
-				because dignity protection is not preserved in enactment mode.
+				Any <code>Χ</code>, <code>Σ</code>, or <code>Ψ</code> reading presupposes PMS
+				dependency hygiene and does not create a new operator path.
 			</p>
 
 			<hr />
 
-			<h2>8) Cost Layout</h2>
+			<h2>6) Sexual Cost Topology</h2>
 
-			<h3>8.1 Cost layout summary</h3>
+			<h3>6.1 Status and governing rule</h3>
 			<p>
-				<code>Ω under Θ</code>
+				<strong>Concept reference:</strong> <code>sexual_cost_topology</code><br />
+				<strong>Status:</strong> <code>explicit</code>
+			</p>
+			<p>
+				Sexual cost topology is not a score, person measure, dignity rank, maturity
+				rank, sex truth, or genital truth.
 			</p>
 
-			<h3>8.2 Primary cost channels</h3>
+			<h3>6.2 Cost dimensions</h3>
 			<table>
 				<thead>
 					<tr>
-						<th>Channel</th>
-						<th>Description</th>
-						<th>Operator interface</th>
+						<th>Cost dimension</th>
+						<th><code>role_A</code></th>
+						<th><code>role_B</code></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr><td><code>bodily_costs</code></td><td><code>low</code></td><td><code>medium</code></td></tr>
+					<tr><td><code>symbolic_costs</code></td><td><code>low</code></td><td><code>high</code></td></tr>
+					<tr><td><code>tonal_handling_costs</code></td><td><code>low</code></td><td><code>high</code></td></tr>
+					<tr><td><code>temporal_costs</code></td><td><code>low</code></td><td><code>high</code></td></tr>
+					<tr><td><code>exposure_costs</code></td><td><code>low</code></td><td><code>medium</code></td></tr>
+					<tr><td><code>reputational_costs</code></td><td><code>low</code></td><td><code>medium</code></td></tr>
+					<tr><td><code>binding_costs</code></td><td><code>low</code></td><td><code>high</code></td></tr>
+					<tr><td><code>exit_costs</code></td><td><code>low</code></td><td><code>high</code></td></tr>
+					<tr><td><code>publicness_costs</code></td><td><code>none</code></td><td><code>low</code></td></tr>
+					<tr><td><code>body_boundary_costs</code></td><td><code>low</code></td><td><code>medium</code></td></tr>
+					<tr><td><code>access_costs</code></td><td><code>low</code></td><td><code>mixed</code></td></tr>
+					<tr><td><code>responsibility_costs</code></td><td><code>low</code></td><td><code>high</code></td></tr>
+					<tr><td><code>after_scene_dignity_costs</code></td><td><code>low</code></td><td><code>high</code></td></tr>
+				</tbody>
+			</table>
+
+			<h3>6.3 Asymmetry-specific responsibility</h3>
+			<table>
+				<thead>
+					<tr>
+						<th>Role / medium</th>
+						<th>Responsibility readout</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td>Symbolic costs</td>
-						<td>Repeated diminishment through tone, jokes, naming, irony, teasing, or interpretive framing.</td>
-						<td><code>Ω</code>, <code>Θ</code></td>
+						<td><code>role_A</code></td>
+						<td>
+							Structurally carries the burden of not allowing rule compliance,
+							frame authority, or control over tone and symbolic handling to erase
+							accumulated <code>Ω/Θ</code> costs or make correction appear excessive.
+						</td>
 					</tr>
 					<tr>
-						<td>Temporal costs</td>
-						<td>Accumulation makes single incidents difficult to contest while the pattern becomes more consequential.</td>
-						<td><code>Θ</code>, <code>Α</code></td>
+						<td><code>role_B</code></td>
+						<td>
+							Structurally carries correction signals, after-scene residue, and the
+							cost of making accumulation nameable without converting residue into
+							person truth.
+						</td>
 					</tr>
 					<tr>
-						<td>Exposure costs</td>
-						<td>One role becomes more exposed to being named, teased, symbolically handled, remembered, witnessed, or interpreted through the repeated frame.</td>
-						<td><code>Ω</code>, <code>Θ</code>, <code>□</code></td>
-					</tr>
-					<tr>
-						<td>Reputational costs</td>
-						<td>If the pattern becomes socially visible or narratively shareable, one role may carry higher standing, explanation, or public residue cost.</td>
-						<td><code>□</code>, <code>Ω</code>, <code>Θ</code></td>
-					</tr>
-					<tr>
-						<td>Exit costs</td>
-						<td>Stopping feels disproportionate because no single rule breach is available as justification.</td>
-						<td><code>Χ</code>, <code>Θ</code>, <code>Ω</code></td>
-					</tr>
-					<tr>
-						<td>Coordination costs</td>
-						<td>Naming the harm requires re-reading the whole interaction rather than pointing to a single forbidden act.</td>
-						<td><code>Φ</code>, <code>Χ</code>, <code>Σ</code></td>
-					</tr>
-					<tr>
-						<td>Binding-related costs</td>
-						<td>Continued tolerance may become a covert proof of compatibility, toughness, loyalty, identity, or willingness to stay within the frame.</td>
-						<td><code>Ψ</code>, <code>Θ</code>, <code>Χ</code></td>
-					</tr>
-					<tr>
-						<td>Dignity costs</td>
-						<td>Dignity-in-Practice is undercut because the tolerated enactment mode repeatedly concentrates diminishment on one role.</td>
-						<td><code>Ω</code>, <code>Χ</code>, <code>Ψ</code>; derived construct: <code>D</code></td>
-					</tr>
-					<tr>
-						<td>Publicness costs</td>
-						<td>If documented or witnessed, the pattern may become reputationally or socially sedimented beyond the local scene.</td>
-						<td><code>□</code>, <code>Ω</code>, <code>Θ</code>; overlay: <code>publicness_as_overlay</code></td>
-					</tr>
-					<tr>
-						<td>Responsibility-related costs</td>
-						<td>Responsibility becomes necessary around tone, repetition, joking, naming, interruption, repair, and the refusal to let formal compliance substitute for dignity-preserving enactment.</td>
-						<td><code>Ψ</code>, <code>Χ</code>, <code>Ω</code>, <code>Σ</code></td>
+						<td><code>field_or_medium</code></td>
+						<td>
+							The rule-set clarifies permissions but also risks hiding costs that
+							appear only after repetition and after-scene carryover make them
+							structurally visible.
+						</td>
 					</tr>
 				</tbody>
 			</table>
 
-			<h3>8.3 Asymmetry pattern</h3>
+			<h3>6.4 Mismatch check</h3>
 			<table>
-				<thead>
-					<tr>
-						<th>Role</th>
-						<th>Cost position</th>
-						<th>Description</th>
-					</tr>
-				</thead>
 				<tbody>
 					<tr>
-						<td><code>R1</code></td>
-						<td><code>absorbs_cumulative_dignity_loss</code></td>
-						<td>Carries the burden of repeated symbolic diminishment and the added burden of appearing disproportionate if the pattern is named.</td>
+						<th>Declared parity</th>
+						<td><code>present</code></td>
 					</tr>
 					<tr>
-						<td><code>R2</code></td>
-						<td><code>retains_formal_compliance_and_interpretive_deniability</code></td>
-						<td>Carries more control over whether the enactment mode is framed as harmless, playful, ironic, mutual, or too minor to contest.</td>
+						<th>Real cost distribution</th>
+						<td><code>mismatched</code></td>
+					</tr>
+					<tr>
+						<th>Decisive mismatch</th>
+						<td>
+							Formal rule compliance remains locally intact while symbolic,
+							temporal, exit, responsibility, and after-scene dignity costs are
+							unevenly distributed.
+						</td>
+					</tr>
+					<tr>
+						<th>Possible drift ref</th>
+						<td><code>cost_topology_mismatch</code></td>
 					</tr>
 				</tbody>
 			</table>
-
-			<p>
-				<strong>System effect:</strong>
-				Harm persists because the configuration remains formally compliant while
-				the cumulative dignity effect remains structurally under-addressed.
-			</p>
 			<p>
 				<strong>Guard:</strong>
-				This is not a moral claim.
+				Do not infer equal burdens, equal responsibility, guilt, rank, or person
+				worth from cost topology.
 			</p>
 
 			<hr />
 
-			<h2>9) Sexual Cost Topology</h2>
+			<h2>7) Direct Otherness and Access</h2>
 
-			<h3>9.1 Definition and status</h3>
+			<h3>7.1 Status</h3>
 			<p>
-				Sexual cost topology is the scene-bound distribution of bodily, temporal,
-				exposure-related, reputational, binding-related, exit-related,
-				publicness-related, and responsibility-related costs across sexual or
-				intimacy-marked role-positions. It is not a score, not a person measure,
-				not a maturity measure, and not a dignity ranking.
-			</p>
-			<p>
-				<strong>Topology status:</strong> <code>dignity_cost_concentration_under_formal_compliance</code>
+				<strong>Concept reference:</strong> <code>direct_otherness</code><br />
+				<strong>Status:</strong> <code>present</code>
 			</p>
 
-			<h3>9.2 Channel readout</h3>
+			<h3>7.2 Real other correction</h3>
+			<p>
+				<strong>Available:</strong> <code>contested</code>
+			</p>
+			<p>
+				A real other can report after-scene residue or distance loss, but the
+				rule-compliance closure pressures that correction to appear irrelevant,
+				excessive, or structurally unnecessary.
+			</p>
+
+			<h3>7.3 Substitution checks</h3>
 			<table>
-				<thead>
-					<tr>
-						<th>Cost channel</th>
-						<th>R1</th>
-						<th>R2</th>
-					</tr>
-				</thead>
 				<tbody>
-					<tr>
-						<td>Bodily costs</td>
-						<td>Context-dependent; may include stress, withdrawal, saturation, or embodied residue from repeated diminishment.</td>
-						<td>Context-dependent; not primary in the base vignette.</td>
-					</tr>
-					<tr>
-						<td>Temporal costs</td>
-						<td>Higher accumulation of micro-effects and higher difficulty naming the pattern.</td>
-						<td>Greater ability to treat each instance as local, playful, harmless, or deniable.</td>
-					</tr>
-					<tr>
-						<td>Exposure costs</td>
-						<td>Higher exposure to symbolic handling, naming, joking, witness uptake, or interpretive positioning.</td>
-						<td>Higher interpretive control over whether the tone counts as acceptable.</td>
-					</tr>
-					<tr>
-						<td>Reputational costs</td>
-						<td>Higher if the pattern becomes visible, documented, circulated, or socially narrated.</td>
-						<td>Lower or more controllable where formal compliance and humor framing remain available.</td>
-					</tr>
-					<tr>
-						<td>Binding costs</td>
-						<td>Risk that tolerance becomes proof of compatibility, strength, loyalty, or belonging.</td>
-						<td>Risk of treating continued participation as proof that no dignity cost exists.</td>
-					</tr>
-					<tr>
-						<td>Exit costs</td>
-						<td>High because stopping appears disproportionate without a clear rule breach.</td>
-						<td>Lower if continued framing remains formally compliant and socially deniable.</td>
-					</tr>
-					<tr>
-						<td>Publicness costs</td>
-						<td>Overlay-dependent; intensified by witnesses, records, screenshots, circulation, or reputation.</td>
-						<td>Overlay-dependent; may remain lower if interpretive deniability persists.</td>
-					</tr>
-					<tr>
-						<td>Responsibility costs</td>
-						<td>Must not convert accumulated dignity cost into unmarked standing leverage; must preserve specificity where possible.</td>
-						<td>Must not externalize dignity cost by relying on formal compliance, humor, or parity language alone.</td>
-					</tr>
+					<tr><th>image_category_or_script_substitution</th><td><code>weak</code></td></tr>
+					<tr><th>permission_image</th><td><code>absent</code></td></tr>
+					<tr><th>simulated_counterdesire</th><td><code>absent</code></td></tr>
+					<tr><th>access_counterdesire_loop</th><td><code>absent</code></td></tr>
 				</tbody>
 			</table>
-
-			<h3>9.3 Cost-topology mismatch</h3>
 			<p>
-				<strong>Present:</strong> <code>true</code>
-			</p>
-			<p>
-				The formal frame says rules, boundaries, and consent are intact, but the
-				actual cost layout concentrates symbolic, dignity, exposure, exit, and
-				responsibility costs on one role across time.
-			</p>
-			<p>
-				<strong>Guard:</strong>
-				Mismatch is configuration-language. It does not imply rule failure by
-				itself, defective play, abusive person-type, pathology, lower dignity,
-				maturity ranking, or person-level adultness verdict.
+				<strong>Access guard:</strong>
+				Direct otherness is reality-correction without access entitlement. No
+				person owes access, desire, correction, explanation, or availability.
 			</p>
 
 			<hr />
 
-			<h2>10) Rational Response Envelope</h2>
+			<h2>8) Embodiment and Genital Meaning</h2>
 
+			<h3>8.1 Body remainder relevance</h3>
 			<p>
-				<strong>Status:</strong> <code>structurally_rational_not_morally_preferred</code>
-			</p>
-			<p>
-				These responses are not evaluated as healthy, virtuous, manipulative, or
-				deficient. They are legible responses to Θ accumulation under explicit Ω
-				with socially costly Χ.
+				<strong>Status:</strong> <code>consequence_interface</code>
 			</p>
 
-			<table>
-				<thead>
-					<tr>
-						<th>Response</th>
-						<th>Structural reading</th>
-						<th>Operator basis</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td><code>enduring_discomfort_to_avoid_escalation</code></td>
-						<td>R1 may tolerate discomfort because naming it would require challenging a formally compliant frame.</td>
-						<td><code>Ω</code>, <code>Θ</code>, <code>Χ</code></td>
-					</tr>
-					<tr>
-						<td><code>playing_along_to_preserve_frame_inclusion</code></td>
-						<td>Participation may continue because belonging to the frame requires tolerating its tone.</td>
-						<td><code>□</code>, <code>Α</code>, <code>Ω</code></td>
-					</tr>
-					<tr>
-						<td><code>delaying_critique_because_no_rule_violation_is_citable</code></td>
-						<td>Critique is delayed because the pattern is cumulative, not reducible to a single prohibited act.</td>
-						<td><code>Θ</code>, <code>Φ</code>, <code>Χ</code></td>
-					</tr>
-					<tr>
-						<td><code>using_humor_to_keep_the_scene_light</code></td>
-						<td>Humor may locally stabilize the frame while also preventing cost-topology review.</td>
-						<td><code>Φ</code>, <code>□</code>, <code>Α</code></td>
-					</tr>
-					<tr>
-						<td><code>relying_on_formal_compliance_to_end_discussion</code></td>
-						<td>Formal compliance may become parity-to-exit where it denies additional responsibility for cumulative dignity cost.</td>
-						<td><code>□</code>, <code>Ω</code>, <code>Θ</code>, <code>Ψ</code></td>
-					</tr>
-				</tbody>
-			</table>
-
-			<p>
-				<strong>Guard:</strong>
-				These responses follow Θ under explicit Ω and socially costly Χ. They do
-				not prove weakness, manipulation, intent, pathology, immaturity, or consent
-				failure.
-			</p>
-
-			<hr />
-
-			<h2>11) Enactment Mode Failure</h2>
-
-			<h3>11.1 D without rule breach</h3>
-			<p>
-				<strong>Critical insight:</strong>
-				Dignity-in-Practice does not follow from rules alone. D applies in
-				enactment, not merely in declared frame status.
-			</p>
-
-			<h3>11.2 Observed mechanism</h3>
+			<h3>8.2 Guards</h3>
 			<ul>
-				<li>Protection is outsourced to irony, humor, lightness, or play tone.</li>
-				<li>Degradation-form readability occurs through repeated tone, not necessarily through prohibited acts.</li>
-				<li>Each instance remains deniable while the cumulative pattern becomes structurally legible.</li>
-				<li>Formal compliance becomes a shield against reading enacted cost topology.</li>
+				<li>
+					<strong>Biological affordance guard:</strong>
+					Biology may structure affordances, risks, asymmetries, thresholds, and
+					likely strategy spaces without establishing destiny, rank, role, or
+					moral evidence.
+				</li>
+				<li>
+					<strong>Sexed dependency guard:</strong>
+					Sexed dependency does not imply relationship mandate, heterosexual
+					mandate, reproductive command, orientation ranking, or person
+					incompleteness.
+				</li>
 			</ul>
 
-			<h3>11.3 Result</h3>
+			<h3>8.3 Body-boundary coding</h3>
 			<p>
-				D-in-Practice is undercut while □ remains formally intact.
+				<strong>Status:</strong> <code>present</code>
 			</p>
-
-			<h3>11.4 PMS-SEX alignment</h3>
 			<ul>
-				<li><strong>Dignity module reference:</strong> <code>dignity_in_practice_module</code></li>
-				<li><strong>Canonical PMS-D formula:</strong> <code>Ψ + Χ + Ω</code></li>
-				<li><strong>Application formula:</strong> <code>explicit Ω + operative Χ + no covert Ψ demand under Θ, with outer-form readability preserved</code></li>
-			</ul>
-			<p>
-				<strong>Guard:</strong>
-				Naming a degradation-form, humiliation-form, asymmetry-form, or
-				exposure-form is not itself a violation of the anti-moral stance. The
-				violation would lie in converting scene analysis into person-ranking,
-				humiliation, diagnosis, identity verdict, maturity ranking, adultness
-				verdict, or moral contempt.
-			</p>
-
-			<hr />
-
-			<h2>12) Distance Suppression</h2>
-
-			<h3>12.1 Χ as social cost</h3>
-			<p>
-				Χ is formally allowed but socially punished.
-			</p>
-
-			<h3>12.2 Failure mode</h3>
-			<ul>
-				<li>Stopping is read as overreaction.</li>
-				<li>Meta-position is reframed as incompatibility with the spirit of the scene.</li>
-				<li>Humor or irony becomes unavailable as mutual regulation and instead protects the dominant tone.</li>
-				<li>Outer-form awareness is treated as making the scene heavy.</li>
-				<li>Naming cumulative dignity cost is recoded as accusation or fragility.</li>
-				<li>Cost-topology review is treated as failure to understand play, lightness, or explicitness.</li>
+				<li><code>boundary_form</code></li>
+				<li><code>exposure</code></li>
+				<li><code>shame</code></li>
+				<li><code>recognition</code></li>
 			</ul>
 
-			<h3>12.3 Structural indicator</h3>
+			<h3>8.4 Genital meaning</h3>
+			<table>
+				<tbody>
+					<tr><th>Status</th><td><code>not_relevant</code></td></tr>
+					<tr><th>Integration status</th><td><code>indeterminate</code></td></tr>
+					<tr><th>Sovereignty risk</th><td><code>none</code></td></tr>
+					<tr><th>Adult sexual emancipation check</th><td><code>not_relevant</code></td></tr>
+				</tbody>
+			</table>
 			<p>
-				The only viable way to stay included is to tolerate the repeated
-				diminishment or recode it as acceptable play.
-			</p>
-
-			<h3>12.4 Operator basis</h3>
-			<p>
-				<code>Χ</code>, <code>□</code>, <code>Ω</code>, <code>Θ</code>
+				<strong>Guard:</strong>
+				The genital belongs to the person; the person does not belong to the genital.
 			</p>
 
 			<hr />
 
-			<h2>13) Switch Drift Markers</h2>
+			<h2>9) Withdrawal and Binding</h2>
 
+			<h3>9.1 Covert Ψ expectation</h3>
 			<p>
-				<strong>Status:</strong> <code>relevant_as_scan_not_primary_claim</code>
+				<strong>Status:</strong> <code>present</code>
 			</p>
+			<ul>
+				<li><code>care</code></li>
+				<li><code>repetition</code></li>
+				<li><code>ambiguity</code></li>
+				<li><code>after_scene_conduct</code></li>
+			</ul>
 
-			<h3>13.1 EDEN/PFO cross-domain reference</h3>
-			<p>
-				<strong>Status:</strong> <code>cross_domain_reference_only</code>
-			</p>
-			<p>
-				PMS–EDEN names the regime-level asymmetry switch. PMS-SEX reads only the
-				sexual instantiation where real or invoked Ω/Θ pressure may activate
-				asymmetry. This adds no PMS operator and creates no person label.
-			</p>
+			<h3>9.2 Withdrawal profile</h3>
+			<table>
+				<tbody>
+					<tr>
+						<th>Ambivalence withdrawal</th>
+						<td>
+							<code>drift_risk</code>: withdrawal or distancing may be structurally
+							adult in another scene, but here it becomes drift-relevant if it
+							disowns the expectation and residue the arrangement helped structure.
+						</td>
+					</tr>
+					<tr>
+						<th>Post-access withdrawal</th>
+						<td>
+							<code>drift_risk</code>: the local access threshold resolves inside
+							the rules, while <code>Ψ</code> does not fully bind to the after-scene
+							consequence burden.
+						</td>
+					</tr>
+					<tr>
+						<th>Non-binding language</th>
+						<td>
+							<code>mismatched</code>: non-binding or rule-compliance language does
+							not match the structured after-scene <code>Ψ</code>-expectation.
+						</td>
+					</tr>
+				</tbody>
+			</table>
 
-			<h3>13.2 Asymmetry-switch drift</h3>
+			<h3>9.3 After-scene dignity</h3>
 			<p>
-				<strong>Status:</strong> <code>possible</code>
+				<strong>Status:</strong> <code>failed</code>
 			</p>
+			<ul>
+				<li><code>shame_residue</code></li>
+				<li><code>self_worth_leak</code></li>
+				<li><code>responsibility_flight</code></li>
+				<li><code>immunity</code></li>
+			</ul>
 			<p>
-				Dignity cost, vulnerability, symbolic exposure, or accumulated diminishment
-				may be invoked to interrupt, reshape, or reframe the scene. This is
-				structurally viable only where activation is marked, bounded, connected to
-				real Ω/Θ burden, and re-bound into Σ/Ψ. It drifts where dignity cost
-				becomes an unmarked, repeatable exception lever without re-binding.
-			</p>
-			<p>
-				<strong>Guard:</strong>
-				The drift is not naming dignity cost or asymmetry as such. The drift is
-				unmarked, repeatable activation without re-binding.
-			</p>
-
-			<h3>13.3 Parity-to-exit</h3>
-			<p>
-				<strong>Status:</strong> <code>highly_relevant</code>
-			</p>
-			<p>
-				“Nothing was forbidden,” “the rules were clear,” “it was mutual,” “it was
-				only joking,” or “you consented to the frame” may become parity or
-				compliance rhetoric used to deny additional responsibility under unequal
-				dignity cost topology.
-			</p>
-			<p>
-				<strong>Guard:</strong>
-				Formal compliance remains valid only where it does not erase
-				degradation-form readability, Θ accumulation, socially costly Χ, or uneven
-				symbolic exposure.
-			</p>
-
-			<h3>13.4 Responsibility-to-authority</h3>
-			<p>
-				<strong>Status:</strong> <code>possible</code>
-			</p>
-			<p>
-				Responsibility for protection, care, repair, interpretation, or keeping the
-				scene safe may be converted into authority to define whether the tone
-				counts as degrading, whether critique is legitimate, or what the other
-				role-position must tolerate.
-			</p>
-			<p>
-				<strong>Guard:</strong>
-				Responsibility under asymmetry requires stronger self-binding, not greater
-				command.
-			</p>
-
-			<h3>13.5 Re-binding test</h3>
-			<p>
-				Any asymmetry activation must be marked, temporally bounded, connected to
-				real Ω/Θ burden, and re-bound into Σ/Ψ with Χ and D intact. Parity must not
-				become exit; responsibility must not become authority.
+				<strong>Withdrawal guard:</strong>
+				Withdrawal is neither automatic guilt nor automatic exculpation.
 			</p>
 
 			<hr />
 
-			<h2>14) Adult Sexual Reciprocity and Asymmetry-Specific Responsibility</h2>
+			<h2>10) Asymmetry Activation and Reciprocity</h2>
 
-			<h3>14.1 Adult sexual reciprocity principle</h3>
+			<h3>10.1 Sexual reciprocity under real asymmetry</h3>
+			<p>
+				<strong>Status:</strong> <code>failed</code>
+			</p>
 			<blockquote>
-				<p>Adult sexual reciprocity does not require equal burdens. It requires that unequal burdens are not externalized.</p>
+				<p>Sexual reciprocity does not require equal burdens; it requires that unequal burdens not be externalized.</p>
 			</blockquote>
 
-			<h3>14.2 Case application</h3>
-			<p>
-				In this case, adult sexual reciprocity would not require the absence of
-				humor, asymmetry, intensity, or symbolic play. It would require that
-				symbolic and dignity costs remain nameable, that Χ remains socially viable,
-				that repeated diminishment is not protected by formal compliance, and that
-				each role-position carries the self-binding required by its own exposure,
-				interpretive control, pacing capacity, and externalization profile.
-			</p>
-
-			<h3>14.3 Failure modes</h3>
+			<h3>10.2 Asymmetry activation</h3>
 			<table>
-				<thead>
-					<tr>
-						<th>ID</th>
-						<th>Description</th>
-					</tr>
-				</thead>
 				<tbody>
-					<tr>
-						<td><code>formal_compliance_as_cost_exit</code></td>
-						<td>Rule compliance or mutual consent is used to deny responsibility for accumulated dignity cost.</td>
-					</tr>
-					<tr>
-						<td><code>dignity_cost_as_unmarked_lever</code></td>
-						<td>Accumulated dignity cost is activated without marking, bounding, and re-binding.</td>
-					</tr>
-					<tr>
-						<td><code>protection_as_frame_authority</code></td>
-						<td>Care, repair, protection, or interpretation responsibility becomes authority over the frame.</td>
-					</tr>
-					<tr>
-						<td><code>tolerance_as_binding_proof</code></td>
-						<td>Continued participation becomes proof of compatibility, toughness, loyalty, or acceptance.</td>
-					</tr>
+					<tr><th>Present</th><td><code>true</code></td></tr>
+					<tr><th>Marked</th><td><code>contested</code></td></tr>
+					<tr><th>Bounded</th><td><code>contested</code></td></tr>
+					<tr><th>Linked to real Ω/Θ burden</th><td><code>false</code></td></tr>
+					<tr><th>Rebound into Σ/Ψ where relevant</th><td><code>false</code></td></tr>
 				</tbody>
 			</table>
+
+			<h3>10.3 Possible drift refs</h3>
+			<ul>
+				<li><code>unmarked_omega_activation</code></li>
+				<li><code>asymmetry_switch_drift</code></li>
+				<li><code>parity_to_exit</code></li>
+			</ul>
 			<p>
 				<strong>Guard:</strong>
-				This is not a hierarchy of adultness. It is a scene-bound responsibility
-				reading under Ω/Θ.
+				Asymmetry is not the problem; false coordination or unmarked activation of
+				real asymmetry is the problem.
 			</p>
-
-			<h3>14.4 Asymmetry-specific responsibility</h3>
-			<p>
-				Each role-position must carry the self-binding required by its own cost,
-				power, exposure, exit, and externalization profile.
-			</p>
-
-			<div class="two-column">
-				<div>
-					<h4>R1 — likely self-binding tasks</h4>
-					<ul>
-						<li>naming cumulative dignity cost without converting it into global person claims</li>
-						<li>activating Χ before tolerance becomes proof of compatibility or loyalty</li>
-						<li>keeping degradation-form readability specific, bounded, and re-bindable</li>
-						<li>not converting accumulated dignity cost into unmarked standing leverage</li>
-						<li>distinguishing valid cost-topology claims from person-worth claims</li>
-					</ul>
-					<p>
-						<strong>Drift risk:</strong>
-						asymmetry-switch drift if dignity cost becomes unmarked repeatable
-						pressure without re-binding.
-					</p>
-				</div>
-
-				<div>
-					<h4>R2 — likely self-binding tasks</h4>
-					<ul>
-						<li>not treating formal compliance as proof that no dignity cost topology exists</li>
-						<li>not using humor, play, mutuality, or explicitness to exit responsibility for repeated diminishment</li>
-						<li>maintaining Χ where tone, joking, naming, or symbolic handling concentrate cost</li>
-						<li>supporting Σ by allowing the enacted form to be named without requiring rule-breach proof</li>
-						<li>not converting care, repair, protection, or interpretive responsibility into authority</li>
-					</ul>
-					<p>
-						<strong>Drift risk:</strong>
-						parity-to-exit or responsibility-to-authority.
-					</p>
-				</div>
-			</div>
-
-			<h4>Shared self-binding tasks</h4>
-			<ul>
-				<li>formal compliance must remain accountable to enacted dignity effects</li>
-				<li>Χ must remain socially viable, not merely formally permitted</li>
-				<li>Λ pauses and meta-comments must remain tolerable without devaluation</li>
-				<li>cost topology must remain speakable</li>
-				<li>neither parity nor asymmetry may be used to bypass Σ/Ψ</li>
-				<li>responsibility must not become authority</li>
-			</ul>
 
 			<hr />
 
-			<h2>15) Typical Drift Markers</h2>
+			<h2>11) PMS-SEX Map</h2>
 
-			<p>
-				<strong>Max primary markers:</strong> <code>3</code>
-			</p>
-
-			<h3>15.1 Selected markers</h3>
+			<h3>11.1 Scene packet summary</h3>
 			<table>
-				<thead>
-					<tr>
-						<th>ID</th>
-						<th>Label</th>
-						<th>Configuration statement</th>
-						<th>Indicators</th>
-					</tr>
-				</thead>
 				<tbody>
 					<tr>
-						<td><code>loss_of_distance_chi_loss</code></td>
-						<td>Loss of distance</td>
-						<td>In this configuration, stopping, meta-commentary, or outer-form awareness becomes socially costly even though it remains formally permitted.</td>
-						<td>Stopping becomes practically unavailable; critique or hesitation is read as betrayal, weakness, humorlessness, or disloyalty; outer-form awareness becomes inaccessible or forbidden.</td>
+						<th>Bounded scene</th>
+						<td>
+							A stated-rule sexual arrangement remains locally compliant while
+							repeated enactment and after-scene carryover produce dignity collapse.
+						</td>
 					</tr>
 					<tr>
-						<td><code>temporal_overload_theta_accumulation</code></td>
-						<td>Temporal overload</td>
-						<td>In this configuration, dignity costs accumulate faster than the formal frame can recognize because no single event appears sufficient to name the pattern.</td>
-						<td>Costs are ignored or externalized; delayed collapse; outer legibility remains after internal closure-language claims the scene is fine.</td>
+						<th>Main structural question</th>
+						<td>
+							Whether rule compliance can fail as D-compliance when repeated
+							enactment mode, after-scene dignity, cost topology, and consequence
+							reciprocity are not carried.
+						</td>
 					</tr>
 					<tr>
-						<td><code>outer_form_denial</code></td>
-						<td>Outer-form denial</td>
-						<td>In this configuration, internal labels such as humor, play, lightness, or consent block analysis of the enacted form.</td>
-						<td>Internal naming blocks structural reading; practice labels are treated as sufficient to settle all form; visible action-form remains unread.</td>
+						<th>Strongest non-capture possibility</th>
+						<td>
+							A fuller empirical reconstruction might show that after-scene residue
+							came from an unrelated context rather than from the arrangement's cost
+							topology.
+						</td>
 					</tr>
 				</tbody>
 			</table>
 
-			<h3>15.2 Optional secondary markers</h3>
+			<h3>11.2 Layer readout</h3>
+			<table>
+				<tbody>
+					<tr><th>Internal / outer / public relation</th><td><code>divergent</code></td></tr>
+					<tr><th>Visible form totalization risk</th><td><code>medium</code></td></tr>
+				</tbody>
+			</table>
+			<p>
+				The internal frame is rule-governed and locally coherent.
+			</p>
+			<p>
+				The outer form remains readable as asymmetry- and consequence-bearing even
+				without rule violation; naming this does not totalize the scene or rank
+				persons.
+			</p>
+			<p>
+				Publicness is not required; the main layer problem is private
+				<code>Θ</code> sedimentation.
+			</p>
+			<p>
+				<strong>Result:</strong>
+				The case turns on divergence between internal rule compliance and
+				after-scene structural carrying, not on public scandal or visible form
+				alone.
+			</p>
+
+			<h3>11.3 Operator profile</h3>
+			<p>
+				<strong>Dominant ops:</strong> <code>□ Ω Θ Χ Σ Ψ</code><br />
+				<strong>Reduced signature:</strong> <code>□/Ω/Θ -&gt; strained Χ/Σ/Ψ</code><br />
+				<strong>Dependency integrity:</strong> <code>preserved</code>
+			</p>
+			<p>
+				The rule frame (<code>□</code>) preserves local permission while
+				asymmetrical after-costs (<code>Ω/Θ</code>) strain distance
+				(<code>Χ</code>), integration (<code>Σ</code>), and self-binding
+				(<code>Ψ</code>).
+			</p>
+			<p>
+				<strong>Not claimed:</strong>
+				<code>operator_redefinition</code>,
+				<code>new_pms_axis</code>,
+				<code>adultness_verdict</code>,
+				<code>person_label</code>
+			</p>
+
+			<h3>11.4 Cost topology readout</h3>
+			<p>
+				<strong>Topology status:</strong> <code>mismatched</code>
+			</p>
 			<ul>
-				<li>
-					<strong>Cost-topology mismatch:</strong>
-					formal compliance fails to match symbolic, dignity, exposure,
-					reputational, exit, and responsibility costs across time.
-				</li>
-				<li>
-					<strong>Ψ leak / tolerance as proof:</strong>
-					continued participation begins to function as proof of toughness,
-					compatibility, loyalty, or acceptance.
-				</li>
-				<li>
-					<strong>Parity-to-exit:</strong>
-					rule compliance, mutuality, humor, or consent language is used to deny
-					additional responsibility under unequal dignity cost topology.
-				</li>
-				<li>
-					<strong>Responsibility-to-authority:</strong>
-					protection, care, repair, or interpretation responsibility becomes
-					authority to define the frame or the legitimacy of critique.
-				</li>
-				<li>
-					<strong>Asymmetry-switch drift:</strong>
-					accumulated dignity cost is activated as unmarked standing leverage
-					rather than marked, bounded, and re-bound.
-				</li>
+				<li><code>after_scene_dignity_costs</code></li>
+				<li><code>symbolic_costs</code></li>
+				<li><code>tonal_handling_costs</code></li>
+				<li><code>temporal_costs</code></li>
+				<li><code>binding_costs</code></li>
+				<li><code>responsibility_costs</code></li>
+				<li><code>exit_costs</code></li>
+				<li><code>body_boundary_costs</code></li>
 			</ul>
+			<p>
+				<strong>Externalization pattern:</strong>
+				The burden to absorb shame residue, restore distance, and narrate the scene
+				as harmless is shifted toward <code>role_B</code>, while <code>role_A</code>
+				can cite rule compliance as closure.
+			</p>
+			<p>
+				<strong>Asymmetry-specific responsibility result:</strong>
+				The structurally relevant responsibility is not identical burden-sharing
+				but non-externalization of the unequal after-cost created by the
+				arrangement.
+			</p>
+
+			<h3>11.5 Direct otherness and access readout</h3>
+			<p>
+				<strong>Direct otherness status:</strong> <code>present</code><br />
+				<strong>Access logic status:</strong> <code>not_relevant</code><br />
+				<strong>Image mediation status:</strong> <code>none</code><br />
+				<strong>Possible drift refs:</strong> <code>[]</code>
+			</p>
+			<p>
+				Real correction remains possible if after-scene residue can be named
+				without being dismissed by the rule-compliance frame; the case does not
+				require access entitlement or image mediation.
+			</p>
+
+			<h3>11.6 Embodiment-boundary-genital readout</h3>
+			<p>
+				<strong>Body boundary status:</strong> <code>present</code><br />
+				<strong>Genital meaning status:</strong> <code>not_relevant</code><br />
+				<strong>Biological affordance status:</strong> <code>affordance_only</code><br />
+				<strong>Possible drift refs:</strong> <code>[]</code><br />
+				<strong>Adult sexual emancipation result:</strong> <code>not_relevant</code>
+			</p>
+			<p>
+				Body and genital meaning are real where relevant, but they do not become
+				person truth.
+			</p>
+
+			<h3>11.7 Withdrawal binding readout</h3>
+			<p>
+				<strong>Covert Ψ-expectation status:</strong> <code>present</code><br />
+				<strong>Withdrawal profile:</strong> <code>mixed</code><br />
+				<strong>Non-binding status:</strong> <code>mismatched</code><br />
+				<strong>After-scene dignity status:</strong> <code>failed</code>
+			</p>
+			<ul>
+				<li><code>covert_psi_expectation_drift</code></li>
+				<li><code>withdrawal_expectation_disowned</code></li>
+				<li><code>after_scene_dignity_failure</code></li>
+			</ul>
+			<p>
+				Non-binding or rule-compliance language becomes cost-disowning where it
+				erases the structured <code>Ψ</code>-expectation and after-scene dignity
+				burden.
+			</p>
 
 			<hr />
 
-			<h2>16) Viability Minimums and Warning Signals</h2>
+			<h2>12) Drift Scan</h2>
 
-			<h3>16.1 Functional minimums</h3>
+			<h3>12.1 Selected drift sets</h3>
+			<ul>
+				<li><code>core_dysfunction_markers: true</code></li>
+				<li><code>final_overlay_markers: true</code></li>
+				<li><code>eden_pfo_drift_triad: true</code></li>
+				<li><code>access_and_category_drifts: true</code></li>
+				<li><code>embodiment_drifts: false</code></li>
+				<li><code>withdrawal_and_binding_drifts: true</code></li>
+				<li><code>mip_relevant_profiles: false</code></li>
+			</ul>
+
+			<h3>12.2 Primary drift readout</h3>
+			<p>
+				<strong>Maximum primary drifts:</strong> <code>3</code>
+			</p>
+			<table>
+				<thead>
+					<tr>
+						<th>Drift</th>
+						<th>Support</th>
+						<th>Operator basis</th>
+						<th>Evidence basis</th>
+						<th>Counter-evidence</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><code>after_scene_dignity_failure</code></td>
+						<td><code>strong</code></td>
+						<td><code>Θ Χ Ψ Ω</code></td>
+						<td>
+							Repeated local rule compliance protects an enactment mode whose
+							cumulative tonal, symbolic, and consequence-effects appear after the
+							scene as shame residue, self-worth leakage, distance loss, and
+							responsibility flight.
+						</td>
+						<td>
+							The reading would weaken if the after-scene loss were unrelated to the
+							arrangement or if both role-positions carried the after-cost without
+							disowning it.
+						</td>
+					</tr>
+					<tr>
+						<td><code>cost_topology_mismatch</code></td>
+						<td><code>strong</code></td>
+						<td><code>Ω Θ □ Ψ</code></td>
+						<td>
+							Declared parity or rule compliance mismatches the actual distribution
+							of symbolic, temporal, binding, exit, responsibility, and after-scene
+							dignity costs.
+						</td>
+						<td>
+							The reading would weaken if the rule-set explicitly tracked these
+							after-costs and both role-positions carried them without flattening.
+						</td>
+					</tr>
+					<tr>
+						<td><code>parity_to_exit</code></td>
+						<td><code>mixed</code></td>
+						<td><code>□ Ω Θ Ψ</code></td>
+						<td>
+							The formal equality of rule compliance is used as exit from additional
+							responsibility under unequal cost topology.
+						</td>
+						<td>
+							The reading would weaken if rule compliance were not used as closure
+							against after-scene consequence carrying.
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h3>12.3 Drift chain readout</h3>
+			<p>
+				<strong>Candidate chain:</strong> <code>withdrawal_expectation_chain</code><br />
+				<strong>Support:</strong> <code>mixed</code>
+			</p>
+			<p>
+				Covert <code>Ψ</code>-expectation and after-scene dignity failure fit
+				strongly; withdrawal expectation disowned fits if non-binding language or
+				post-scene distance is used to avoid carrying the structured expectation.
+			</p>
+			<p>
+				<strong>Drift guardrail:</strong>
+				Drift profiles describe configuration trajectories, not persons, identities,
+				pathologies, orientations, or moral rank.
+			</p>
+
+			<hr />
+
+			<h2>13) Viability Readout</h2>
+
+			<h3>13.1 Status</h3>
+			<p>
+				<strong>Viability status:</strong> <code>unstable</code><br />
+				<strong>Viability is:</strong> <code>governability_not_normality</code><br />
+				<strong>Minimal corridor result:</strong> <code>fail</code>
+			</p>
+
+			<h3>13.2 Checks</h3>
+			<table>
+				<thead>
+					<tr>
+						<th>Check</th>
+						<th>Status</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr><td><code>frame_explicit</code></td><td><code>pass</code></td></tr>
+					<tr><td><code>omega_nameable</code></td><td><code>partial</code></td></tr>
+					<tr><td><code>theta_realistic</code></td><td><code>fail</code></td></tr>
+					<tr><td><code>chi_operable</code></td><td><code>partial</code></td></tr>
+					<tr><td><code>lambda_tolerable</code></td><td><code>partial</code></td></tr>
+					<tr><td><code>psi_handled</code></td><td><code>fail</code></td></tr>
+					<tr><td><code>sigma_reachable_where_needed</code></td><td><code>fail</code></td></tr>
+					<tr><td><code>cost_topology_explicit</code></td><td><code>partial</code></td></tr>
+					<tr><td><code>category_pressure_proportional</code></td><td><code>pass</code></td></tr>
+					<tr><td><code>access_non_entitled</code></td><td><code>pass</code></td></tr>
+					<tr><td><code>body_boundary_coding_scene_bound</code></td><td><code>partial</code></td></tr>
+					<tr><td><code>direct_otherness_non_entitled</code></td><td><code>pass</code></td></tr>
+					<tr><td><code>genital_meaning_integrated_not_sovereign</code></td><td><code>pass</code></td></tr>
+					<tr><td><code>withdrawal_expectations_honestly_carried</code></td><td><code>fail</code></td></tr>
+					<tr><td><code>after_scene_dignity_intact</code></td><td><code>fail</code></td></tr>
+					<tr><td><code>boundary_aggression_distinguishable</code></td><td><code>partial</code></td></tr>
+					<tr><td><code>asymmetry_activation_marked_bounded_rebound</code></td><td><code>fail</code></td></tr>
+					<tr><td><code>no_parity_to_exit</code></td><td><code>partial</code></td></tr>
+					<tr><td><code>no_responsibility_to_authority</code></td><td><code>pass</code></td></tr>
+				</tbody>
+			</table>
+
+			<h3>13.3 Failure or strain points</h3>
+			<ul>
+				<li><code>theta_realistic</code></li>
+				<li><code>psi_handled</code></li>
+				<li><code>sigma_reachable_where_needed</code></li>
+				<li><code>withdrawal_expectations_honestly_carried</code></li>
+				<li><code>after_scene_dignity_intact</code></li>
+				<li><code>asymmetry_activation_marked_bounded_rebound</code></li>
+			</ul>
+			<p>
+				<strong>Guardrail:</strong>
+				A viability failure is not a person verdict, moral verdict, diagnosis, or
+				practice ranking.
+			</p>
+
+			<hr />
+
+			<h2>14) Dignity-in-Practice Readout</h2>
+
+			<h3>14.1 Status</h3>
+			<p>
+				<strong>Module reference:</strong> <code>modules.dignity_in_practice</code><br />
+				<strong>D status:</strong> <code>failed</code>
+			</p>
+
+			<h3>14.2 Application condition profile</h3>
 			<table>
 				<thead>
 					<tr>
 						<th>Condition</th>
-						<th>Status in case</th>
-						<th>Reading</th>
-						<th>Check alignment</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Explicit Ω recognition</td>
-						<td><code>partially_present_but_insufficient</code></td>
-						<td>Ω is explicit and accepted, but its tonal and dignity-related cost distribution remains insufficiently governable.</td>
-						<td>Cost, risk, access, and exposure gradients must not be denied; uneven repair burden or interpretive exposure must remain nameable; symbolic and dignity costs must be tracked as cost topology.</td>
-					</tr>
-					<tr>
-						<td>Explicit sexual cost topology</td>
-						<td><code>weak_or_missing</code></td>
-						<td>Dignity, symbolic, exposure, reputational, exit, binding, and responsibility costs are active but not mapped as a scene-bound cost topology.</td>
-						<td>Cost topology must remain explicit and non-ranking; must not be reduced to consent status; must not become person score or dignity hierarchy.</td>
-					</tr>
-					<tr>
-						<td>Θ awareness</td>
-						<td><code>at_risk</code></td>
-						<td>Θ is the central carrier of harm: each instance may appear minor, while the repeated pattern becomes structurally consequential.</td>
-						<td>Frequency, repetition, after-effects, and repair windows must be carried; recontextualization must not claim rewind.</td>
-					</tr>
-					<tr>
-						<td>Stable Χ capacity</td>
-						<td><code>failed_or_weak</code></td>
-						<td>Χ is formally available but socially expensive; stop-capability is not practically protected.</td>
-						<td>Stop-capability must be practically available; meta-commentability must remain available without punishment; outer-form awareness must not be treated as betrayal or moral accusation.</td>
-					</tr>
-					<tr>
-						<td>No Ψ substitution</td>
-						<td><code>at_risk</code></td>
-						<td>Continued tolerance may become covert Ψ demand: proof of compatibility, loyalty, toughness, self-worth, or acceptance.</td>
-						<td>No covert Ψ demand under Θ; continued participation must not become proof of acceptance; tolerance must not become binding evidence.</td>
-					</tr>
-					<tr>
-						<td>Internal framing accountable to outer form</td>
-						<td><code>failed_or_weak</code></td>
-						<td>Internal labels such as humor, play, irony, or explicit consent are used to settle form too quickly.</td>
-						<td>Practice labels clarify internal occupation but do not end structural analysis; internal meaning may be real without erasing enacted form; outer legibility can be named without becoming person-ranking.</td>
-					</tr>
-					<tr>
-						<td>Publicness handled as overlay</td>
-						<td><code>conditional</code></td>
-						<td>Publicness is only active if the pattern is witnessed, documented, circulated, or reputationally sedimented. If present, it intensifies Θ/Ω rather than creating the primary action-form.</td>
-						<td>Publicity is not treated as the sole origin of consequence; publicity is not ignored where it amplifies, documents, repeats, or sedimentizes consequence.</td>
-					</tr>
-					<tr>
-						<td>Marked / bounded / re-bound asymmetry activation</td>
-						<td><code>required_if_activation_occurs</code></td>
-						<td>Dignity cost or vulnerability may need to be named asymmetrically. It drifts if activated as an unmarked, repeatable exception lever.</td>
-						<td>Asymmetry activation must be marked; bounded; re-bound into Σ/Ψ.</td>
-					</tr>
-					<tr>
-						<td>No parity-to-exit</td>
-						<td><code>at_risk</code></td>
-						<td>Formal compliance, humor, mutuality, or consent may be used to deny additional responsibility for accumulated dignity cost.</td>
-						<td>Parity must not exit cost re-internalization; rule compliance must not block dignity-cost review; mutual framing must not erase unequal cost topology.</td>
-					</tr>
-					<tr>
-						<td>No responsibility-to-authority</td>
-						<td><code>at_risk</code></td>
-						<td>Protection, repair, or interpretation responsibility may become authority over the frame.</td>
-						<td>Responsibility remains self-binding; care does not become command; repair does not become definitional authority.</td>
-					</tr>
-				</tbody>
-			</table>
-
-			<h3>16.2 Warning signals</h3>
-			<table>
-				<thead>
-					<tr>
-						<th>ID</th>
-						<th>Status in case</th>
-						<th>Structural note</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td><code>outer_form_denial</code></td>
-						<td><code>present</code></td>
-						<td>Χ is weakened because the configuration cannot re-read itself without disrupting its internal account of play, humor, or explicitness.</td>
-					</tr>
-					<tr>
-						<td><code>theta_cost_externalization</code></td>
-						<td><code>present</code></td>
-						<td>Symbolic and dignity-related after-costs concentrate in the role less able to refuse, redefine, or contest them without appearing excessive.</td>
-					</tr>
-					<tr>
-						<td><code>omega_moralization</code></td>
-						<td><code>risk</code></td>
-						<td>Naming asymmetry or dignity cost may be recoded as accusation, making Ω harder to regulate rather than easier to govern.</td>
-					</tr>
-					<tr>
-						<td><code>cost_topology_mismatch</code></td>
-						<td><code>present</code></td>
-						<td>Formal compliance and internal play-language no longer match the accumulated dignity, symbolic, exposure, exit, and responsibility cost layout.</td>
-					</tr>
-					<tr>
-						<td><code>parity_to_exit</code></td>
-						<td><code>risk</code></td>
-						<td>Rule compliance, mutuality, humor, or consent language may be used to deny additional responsibility under unequal dignity cost topology.</td>
-					</tr>
-					<tr>
-						<td><code>responsibility_to_authority</code></td>
-						<td><code>risk</code></td>
-						<td>Care, repair, protection, or interpretation may become authority over what counts as degrading or excessive to name.</td>
-					</tr>
-				</tbody>
-			</table>
-
-			<h3>16.3 Minimal viability corridor</h3>
-			<pre><code>□ explicit
-		+ Ω nameable
-		+ Θ realistic
-		+ Χ operative
-		+ Λ tolerable
-		+ Ψ handled
-		(+ Σ reachable)
-		+ cost topology explicit
-		+ asymmetry activation marked / bounded / re-bound where present
-		+ no parity-to-exit
-		+ no responsibility-to-authority
-		= structurally governable configuration</code></pre>
-
-			<h4>Case translation</h4>
-			<ul>
-				<li>The explicit frame must remain accountable to enacted dignity effects.</li>
-				<li>Symbolic and dignity costs must be nameable as Ω/Θ topology.</li>
-				<li>Cumulative micro-effects must be treated as real.</li>
-				<li>Stopping, naming, and meta-commentary must remain socially viable.</li>
-				<li>Pauses must remain tolerable without devaluation or exclusion.</li>
-				<li>Tolerance must not become covert proof of loyalty, toughness, or compatibility.</li>
-				<li>The scene must be able to integrate rule compliance and dignity drift without denying either.</li>
-				<li>Formal compliance must not become parity-to-exit.</li>
-				<li>Protection or repair responsibility must not become authority.</li>
-			</ul>
-
-			<hr />
-
-			<h2>17) Path-Cost Guard</h2>
-
-			<h3>17.1 Language used</h3>
-			<ul>
-				<li>dignity drift</li>
-				<li>degradation-form readability</li>
-				<li>symbolic cost</li>
-				<li>temporal accumulation</li>
-				<li>stabilization burden</li>
-				<li>outer-form denial</li>
-				<li>cost-topology mismatch</li>
-				<li>asymmetry-specific self-binding burden</li>
-			</ul>
-
-			<h3>17.2 Guard</h3>
-			<p>
-				These terms apply only to configuration dynamics. They do not describe
-				person status, intent, diagnosis, identity rank, sexual orientation,
-				pathology, moral disorder, lower dignity, degraded worth, maturity level,
-				or adultness.
-			</p>
-
-			<h3>17.3 Forbidden conversions</h3>
-			<ul>
-				<li>R1 is weak</li>
-				<li>R2 is abusive by type</li>
-				<li>humor is degrading by nature</li>
-				<li>asymmetry implies abuse</li>
-				<li>formal consent is irrelevant</li>
-				<li>path-cost proves lower dignity</li>
-				<li>degradation-form readability authorizes humiliation or accusation</li>
-				<li>cost topology ranks persons</li>
-				<li>operator profile proves adultness or inadultness</li>
-			</ul>
-
-			<hr />
-
-			<h2>18) Dignity-in-Practice Stress Test</h2>
-
-			<p>
-				<strong>PMS status:</strong> <code>derived_construct_from_PMS</code><br />
-				<strong>Canonical PMS-D formula:</strong> <code>Ψ + Χ + Ω</code>
-			</p>
-
-			<h3>18.1 PMS-SEX application formula</h3>
-			<pre><code>explicit Ω + operative Χ + no covert Ψ demand under Θ
-		+ marked/bounded asymmetry activation
-		+ no parity-to-exit
-		+ no responsibility-to-authority
-		+ outer-form readability preserved</code></pre>
-
-			<h3>18.2 Risk point</h3>
-			<p>
-				Dignity-in-Practice is stressed where repeated symbolic handling, tolerated
-				under a formally compliant frame, concentrates diminishment on one role
-				while making Χ socially costly.
-			</p>
-
-			<h3>18.3 Failure mode</h3>
-			<ul>
-				<li>Ω gradients remain under-described because play, humor, or explicitness dominates the frame.</li>
-				<li>Χ is present formally but socially punished.</li>
-				<li>Θ costs are treated as too small in each instance while accumulating across the pattern.</li>
-				<li>Outer-form readability is blocked by the internal claim that no rule was broken.</li>
-				<li>Formal compliance exits responsibility for repeated dignity costs.</li>
-				<li>Protection, repair, or interpretation responsibility becomes authority over the frame.</li>
-			</ul>
-
-			<h3>18.4 Structural indicator</h3>
-			<p>
-				The frame protects the narrative of formal compliance more reliably than it
-				protects dignity-preserving enactment, socially viable stopping, and
-				non-degrading coordination under asymmetry.
-			</p>
-
-			<h3>18.5 Guardrail</h3>
-			<p>
-				Naming a D-in-Practice stress point does not rank persons, diagnose
-				motives, deny consent, moralize play, assign maturity level, or produce an
-				adultness verdict. It identifies where enacted restraint under asymmetry is
-				structurally under pressure.
-			</p>
-
-			<hr />
-
-			<h2>19) MIP Docking Guard and Operator Profile Only</h2>
-
-			<h3>19.1 MIP docking applies if</h3>
-			<p>
-				Reader infers maturity, adultness, dignity-capacity, cruelty, weakness,
-				abusiveness-as-person-type, or role-capacity evaluation.
-			</p>
-
-			<h3>19.2 PMS-SEX records only</h3>
-			<ul>
-				<li>dignity_drift</li>
-				<li>degradation_form_readability</li>
-				<li>symbolic_cost_concentration</li>
-				<li>weak_or_socially_penalized_chi</li>
-				<li>missing_sigma_coordination</li>
-				<li>psi_leak_or_tolerance_as_proof</li>
-				<li>omega_interpretive_control_gradient</li>
-				<li>theta_micro_effect_accumulation</li>
-				<li>cost_topology_mismatch</li>
-				<li>parity_to_exit_risk</li>
-				<li>responsibility_to_authority_risk</li>
-				<li>asymmetry_switch_drift_risk</li>
-			</ul>
-
-			<h3>19.3 Not allowed in PMS-SEX</h3>
-			<ul>
-				<li>maturity_verdict</li>
-				<li>adultness_verdict</li>
-				<li>person_label</li>
-				<li>weak_person_claim</li>
-				<li>abusive_person_type_claim</li>
-				<li>moral_failure_claim</li>
-				<li>dignity_hierarchy</li>
-				<li>essence_claim</li>
-				<li>diagnosis</li>
-			</ul>
-
-			<h3>19.4 Proper MIP question if docked</h3>
-			<blockquote>
-				<p>
-					In this scene, under this cost topology, did the role-position carry the
-					self-binding made necessary by its own interpretive control, exposure
-					profile, exit capacity, symbolic leverage, and externalization profile?
-				</p>
-			</blockquote>
-
-			<p>
-				<strong>Guard:</strong>
-				Any maturity-relevant evaluation belongs to MIP docking and must remain
-				scene-bound, reversible, non-person-ranking, non-diagnostic, and
-				D-preserving. PMS-SEX itself records operator profiles only.
-			</p>
-
-			<h3>19.5 Operator-profile-only note</h3>
-			<p>
-				This case may record dignity drift, degradation-form readability, symbolic
-				cost concentration, weak Χ, missing Σ, Ψ leak, cost-topology mismatch,
-				parity-to-exit risk, responsibility-to-authority risk, and
-				asymmetry-switch drift risk. None of these profiles is a person diagnosis,
-				person-adultness claim, moral verdict, dignity ranking, or authority
-				claim.
-			</p>
-
-			<hr />
-
-			<h2>20) Reader Guards</h2>
-
-			<h3>20.1 This example does not claim</h3>
-			<ul>
-				<li>that humor or play is degrading by default</li>
-				<li>that asymmetry implies abuse</li>
-				<li>that rules guarantee safety</li>
-				<li>that intent determines harm</li>
-				<li>that formal consent is unimportant</li>
-				<li>that any role is diagnosable, blameworthy, immature, or morally ranked</li>
-				<li>that outer legibility authorizes public accusation</li>
-				<li>that sexual cost topology ranks persons</li>
-				<li>that PMS-SEX can directly evaluate adultness</li>
-				<li>that dignity drift means lower dignity</li>
-			</ul>
-
-			<h3>20.2 This example does claim</h3>
-			<ul>
-				<li>that dignity is enacted, not merely declared</li>
-				<li>that degradation-form readability can be cumulative and deniable</li>
-				<li>that formal compliance can coexist with structural dignity harm</li>
-				<li>that Χ must be socially viable, not merely formally permitted</li>
-				<li>that Θ can make micro-effects structurally consequential</li>
-				<li>that D-in-Practice may fail through enactment mode without rule breach</li>
-				<li>that adult sexual reciprocity requires non-externalization of unequal burdens</li>
-				<li>that formal compliance can become parity-to-exit if it blocks dignity-cost review</li>
-				<li>that protection or interpretation responsibility can become authority if not held as self-binding</li>
-			</ul>
-
-			<hr />
-
-			<h2>21) PMS Validity Check</h2>
-
-			<h3>21.1 Application gate</h3>
-			<p>
-				Any move from description to critique remains PMS-valid only if the
-				application preserves Χ, reversibility, and D.
-			</p>
-
-			<h3>21.2 Conditions</h3>
-			<table>
-				<thead>
-					<tr>
-						<th>ID</th>
-						<th>Operator / concept</th>
-						<th>Requirement</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td><code>D_enactment_level</code></td>
-						<td><code>D</code></td>
-						<td>Dignity-in-Practice is evaluated at the level of enactment mode, not only rule text or declared consent.</td>
-					</tr>
-					<tr>
-						<td><code>chi_social_viability</code></td>
-						<td><code>Χ</code></td>
-						<td>Distance, stopping, meta-commentary, and re-reading must be protected from social punishment.</td>
-					</tr>
-					<tr>
-						<td><code>theta_cumulative_harm</code></td>
-						<td><code>Θ</code></td>
-						<td>Temporality must be acknowledged as the carrier of cumulative harm, especially where no single rupture event is available.</td>
-					</tr>
-					<tr>
-						<td><code>omega_not_normalized</code></td>
-						<td><code>Ω</code></td>
-						<td>Asymmetry must not be used to normalize tone-based diminishment or make cost distribution unnameable.</td>
-					</tr>
-					<tr>
-						<td><code>sexual_cost_topology_explicit</code></td>
-						<td><code>sexual_cost_topology</code></td>
-						<td>Symbolic, dignity, exposure, reputational, binding, exit, publicness, and responsibility costs must be mapped as topology, not score.</td>
-					</tr>
-					<tr>
-						<td><code>no_covert_psi_demand</code></td>
-						<td><code>Ψ</code></td>
-						<td>No covert Ψ demand may be introduced under Θ. The repeated scene must not silently convert tolerance of tone, symbolic handling, or continued inclusion into proof of identity, obligation, loyalty, or self-worth.</td>
-					</tr>
-					<tr>
-						<td><code>switch_drift_checked</code></td>
-						<td><code>switch_drift</code></td>
-						<td>Asymmetry activation is marked/bounded/re-bound where present; parity does not exit responsibility; responsibility does not become authority.</td>
-					</tr>
-					<tr>
-						<td><code>outer_form_without_person_ranking</code></td>
-						<td><code>outer_legibility</code></td>
-						<td>Degradation-form readability may be named only as scene form, not as person worth, pathology, identity verdict, maturity verdict, adultness verdict, or moral contempt.</td>
-					</tr>
-					<tr>
-						<td><code>publicness_guard</code></td>
-						<td><code>publicness_as_overlay</code></td>
-						<td>Publicness must not be weaponized; if present, it is treated as an overlay that may amplify or sedimentize consequences, not as automatic authorization for accusation.</td>
-					</tr>
-				</tbody>
-			</table>
-
-			<h3>21.3 Invalid use conditions</h3>
-			<ul>
-				<li>using the case to shame or rank persons</li>
-				<li>treating degradation-form readability as diagnosis</li>
-				<li>treating humor, play, or asymmetry as inherently degrading</li>
-				<li>using formal compliance to deny accumulated dignity costs</li>
-				<li>turning structural critique into public pillory</li>
-				<li>using path-cost or disturbance language as person-language</li>
-				<li>using sexual cost topology as score</li>
-				<li>using operator profiles as maturity or adultness verdicts</li>
-				<li>using responsibility as authority</li>
-			</ul>
-
-			<h3>21.4 Conclusion</h3>
-			<p>
-				Absent these conditions, the case remains descriptive mapping only and must
-				not be converted into prescription, accusation, diagnosis, moral verdict,
-				maturity ranking, or adultness verdict.
-			</p>
-
-			<hr />
-
-			<h2>22) Analysis Checklist Application</h2>
-
-			<table>
-				<thead>
-					<tr>
-						<th>Step</th>
 						<th>Status</th>
-						<th>Result</th>
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<td><code>S1</code> Scene boundary</td>
-						<td><code>complete</code></td>
-						<td>Scene is bounded through repeated formally explicit interaction. Roles are structural positions, not persons. Internal framing, outer legibility, publicness, and temporal carryover are separated.</td>
-					</tr>
-					<tr>
-						<td><code>S2</code> Canonical dependency check</td>
-						<td><code>complete</code></td>
-						<td>No PMS operator is redefined. D is treated as derived construct, not operator. Reduced signature is shorthand only. Χ dependencies on Φ, Θ, and □ are preserved; Σ dependencies on Χ and Φ are preserved; Ψ dependencies on Σ, Θ, and Χ are preserved. Sexual cost topology and switch-drift handles are overlay handles only.</td>
-					</tr>
-					<tr>
-						<td><code>S3</code> Reduced operator signature</td>
-						<td><code>complete</code></td>
-						<td><code>D_pms_sex_application_formula_ch21_3</code>, <code>MF_19_2</code>, <code>MF_4_2</code>, <code>MF_5_2</code>, <code>MF_6_2</code>, <code>MF_10_2</code>, <code>MF_12_2</code>. Local shorthand foregrounds □/Ω/Θ/D/Χ without changing base order.</td>
-					</tr>
-					<tr>
-						<td><code>S4</code> Inner / outer / public layer scan</td>
-						<td><code>complete</code></td>
-						<td>Internal framing: humor, play, lightness, irony, explicitness. Outer legibility: degradation-form readability through repeated symbolic handling. Publicness: optional overlay if documentation, witnesses, circulation, or reputation enter. Temporal carryover: cumulative micro-effects.</td>
-					</tr>
-					<tr>
-						<td><code>S5</code> Cost-axis scan</td>
-						<td><code>complete</code></td>
-						<td>Ω gradients: symbolic exposure, interpretive control, pacing, repair burden. Θ trajectory: accumulation without single rupture event. Sexual cost topology: symbolic, dignity, exposure, reputational, exit, binding, publicness, and responsibility costs. Publicness and body remainder remain consequence interfaces where relevant.</td>
-					</tr>
-					<tr>
-						<td><code>S6</code> Distance and correction capacity</td>
-						<td><code>complete</code></td>
-						<td>Χ is formally allowed but socially penalized. Σ is difficult because critique requires re-reading the whole interaction. Outer-form awareness is at risk of being read as overreaction.</td>
-					</tr>
-					<tr>
-						<td><code>S7</code> Drift marker scan</td>
-						<td><code>complete</code></td>
-						<td>Χ loss; Θ accumulation; outer-form denial; cost-topology mismatch.</td>
-					</tr>
-					<tr>
-						<td><code>S8</code> Switch drift scan</td>
-						<td><code>complete</code></td>
-						<td>Parity-to-exit is a major risk where rule compliance, mutuality, humor, or consent denies responsibility for accumulated dignity cost. Responsibility-to-authority is a risk where care, repair, or interpretation becomes authority over the frame. Asymmetry-switch drift is possible where dignity cost becomes unmarked standing leverage.</td>
-					</tr>
-					<tr>
-						<td><code>S9</code> Viability minimums</td>
-						<td><code>complete</code></td>
-						<td>Failed or at risk: stable Χ capacity; Θ awareness; internal framing accountable to outer form; explicit Ω recognition as regulation, not mere naming; explicit sexual cost topology; no parity-to-exit; no responsibility-to-authority.</td>
-					</tr>
-					<tr>
-						<td><code>S10</code> Adult reciprocity and MIP guard</td>
-						<td><code>complete</code></td>
-						<td>Adult sexual reciprocity is read only as non-externalization of unequal burdens. Any adultness-relevant evaluation must be docked in MIP. MIP docking must remain scene-bound, reversible, non-person-ranking, non-diagnostic, and D-preserving.</td>
-					</tr>
-					<tr>
-						<td><code>S11</code> Path-cost guard</td>
-						<td><code>complete</code></td>
-						<td>Disturbance and degradation language remains configuration-language only. No person-ranking, diagnosis, orientation taxonomy, lower dignity claim, maturity ranking, or adultness verdict.</td>
-					</tr>
-					<tr>
-						<td><code>S12</code> Escalation guard</td>
-						<td><code>complete</code></td>
-						<td>No minimal psychology adapter is activated as explanatory layer. No motive explanation is offered. D remains protection-first. No operator profile becomes person verdict.</td>
-					</tr>
+					<tr><td><code>explicit_omega</code></td><td><code>partial</code></td></tr>
+					<tr><td><code>operative_chi</code></td><td><code>partial</code></td></tr>
+					<tr><td><code>no_covert_psi_demand_under_theta</code></td><td><code>fail</code></td></tr>
+					<tr><td><code>after_scene_dignity</code></td><td><code>fail</code></td></tr>
+					<tr><td><code>marked_bounded_asymmetry_activation</code></td><td><code>partial</code></td></tr>
+					<tr><td><code>no_parity_to_exit</code></td><td><code>partial</code></td></tr>
+					<tr><td><code>no_responsibility_to_authority</code></td><td><code>pass</code></td></tr>
+					<tr><td><code>boundary_aggression_readability</code></td><td><code>partial</code></td></tr>
+					<tr><td><code>outer_form_readability_without_visible_form_totalization</code></td><td><code>pass</code></td></tr>
 				</tbody>
 			</table>
 
+			<h3>14.3 Critique drift refs</h3>
+			<ul>
+				<li><code>after_scene_dignity_failure</code></li>
+				<li><code>cost_topology_mismatch</code></li>
+				<li><code>covert_psi_expectation_drift</code></li>
+				<li><code>parity_to_exit</code></li>
+			</ul>
+
+			<h3>14.4 Not critique by itself</h3>
+			<ul>
+				<li><code>outer_legibility</code></li>
+				<li><code>pre_reflective_readability</code></li>
+				<li><code>publicness_as_overlay</code></li>
+				<li><code>sexual_cost_topology</code></li>
+				<li><code>biological_affordance_without_destiny</code></li>
+				<li><code>body_boundary_coding</code></li>
+				<li><code>genital_meaning</code></li>
+				<li><code>withdrawal</code></li>
+				<li><code>marked_bounded_asymmetry_activation</code></li>
+			</ul>
+
+			<p>
+				<strong>Result:</strong>
+				D fails at the configuration level because formal rule compliance does not
+				preserve non-degradation, distance, reciprocal consequence-carrying, or
+				after-scene dignity under asymmetry.
+			</p>
+			<p>
+				<strong>Guardrail:</strong>
+				Dignity in sexual practice is about how asymmetry is carried, not who
+				someone is.
+			</p>
+
 			<hr />
 
-			<h2>23) Structural Closure</h2>
+			<h2>15) Minimal Psychology Gate</h2>
 
-			<h3>23.1 Non-normative closure</h3>
 			<p>
-				Dignity does not collapse only when rules are broken; it can collapse when
-				enactment modes normalize diminishment and repetition makes that
-				diminishment difficult to interrupt. Because nothing is formally forbidden,
-				the cost becomes hard to protest, and because it is hard to protest, it
-				accumulates. In this configuration, what looks like resilience may be
-				forced tolerance under Θ, and what looks like consent may be compliance
-				with tone rather than agreement with treatment. D cannot be guaranteed by
-				frames alone: stopping, naming, and withdrawing must remain socially
-				viable, not merely formally allowed. Where distance is punished and irony
-				carries protection that D should carry, degradation does not announce
-				itself; it stabilizes.
+				<strong>Module reference:</strong> <code>modules.minimal_psychology_adapter</code><br />
+				<strong>Activate:</strong> <code>false</code>
 			</p>
 
-			<h3>23.2 Adult reciprocity closure</h3>
+			<h3>15.1 Activation conditions</h3>
+			<table>
+				<tbody>
+					<tr><th>drift_marker_present</th><td><code>true</code></td></tr>
+					<tr><th>viability_conditions_not_restoring_correction</th><td><code>true</code></td></tr>
+					<tr><th>configuration_repeats_voluntarily</th><td><code>indeterminate</code></td></tr>
+				</tbody>
+			</table>
+
+			<h3>15.2 Permitted question</h3>
 			<p>
-				The relevant reciprocity question is not whether rules were named,
-				boundaries acknowledged, or consent intact. It is whether unequal
-				symbolic, dignity, exposure, exit, and responsibility costs are
-				externalized. Formal compliance becomes drift where it exits responsibility
-				for dignity topology; accumulated dignity cost becomes drift where it
-				becomes an unmarked lever; protection becomes drift where it becomes
-				authority rather than self-binding.
+				What structural role is this desire playing in this configuration?
 			</p>
 
-			<h3>23.3 Citable sentence</h3>
+			<h3>15.3 Allowed alarm output</h3>
+			<p>
+				<code>none</code>
+			</p>
+
+			<h3>15.4 Prohibited outputs</h3>
+			<ul>
+				<li><code>diagnosis</code></li>
+				<li><code>motive_explanation</code></li>
+				<li><code>clinical_claim</code></li>
+				<li><code>identity_verdict</code></li>
+				<li><code>orientation_claim</code></li>
+				<li><code>maturity_verdict</code></li>
+				<li><code>dignity_status_claim</code></li>
+				<li><code>sex_truth</code></li>
+				<li><code>genital_truth</code></li>
+				<li><code>practice_instruction</code></li>
+			</ul>
+
+			<p>
+				<strong>Result:</strong>
+				Not activated because the case can be read structurally without inferring
+				desire, motive, pathology, or repetition beyond the bounded scene.
+			</p>
+
+			<hr />
+
+			<h2>16) MIP Docking Gate</h2>
+
+			<p>
+				<strong>Module reference:</strong> <code>modules.mip_docking</code><br />
+				<strong>Activate:</strong> <code>false</code>
+			</p>
+
+			<h3>16.1 Trigger conditions</h3>
+			<table>
+				<tbody>
+					<tr><th>adultness_language_present</th><td><code>false</code></td></tr>
+					<tr><th>maturity_language_present</th><td><code>false</code></td></tr>
+					<tr><th>public_critique_language_present</th><td><code>false</code></td></tr>
+					<tr><th>responsibility_evaluation_required</th><td><code>false</code></td></tr>
+					<tr><th>system_or_regime_lens_required</th><td><code>false</code></td></tr>
+				</tbody>
+			</table>
+
+			<h3>16.2 PMS-SEX records only</h3>
+			<p>
+				<strong>Operator profile:</strong>
+				<code>□/Ω/Θ rule compliance with failed after-scene Ψ/Σ/D carrying</code>
+			</p>
+			<ul>
+				<li><code>after_scene_dignity_failure</code></li>
+				<li><code>cost_topology_mismatch</code></li>
+				<li><code>parity_to_exit</code></li>
+			</ul>
+
+			<h3>16.3 Improper questions blocked</h3>
+			<ul>
+				<li><code>what_kind_of_person_does_this</code></li>
+				<li><code>what_identity_or_orientation_does_this_reveal</code></li>
+				<li><code>is_this_person_adult</code></li>
+				<li><code>is_this_person_lower_in_dignity</code></li>
+				<li><code>what_clinical_or_moral_defect_explains_this</code></li>
+			</ul>
+
+			<p>
+				<strong>Docking status:</strong> <code>not_needed</code>
+			</p>
+			<p>
+				<strong>Guardrail:</strong>
+				PMS-SEX explains structure; MIP explains when critique is legitimate.
+			</p>
+
+			<hr />
+
+			<h2>17) Non-Capture and Limits</h2>
+
+			<h3>17.1 Adjacent lenses needed</h3>
+			<ul>
+				<li><code>empirical_reconstruction</code></li>
+				<li><code>ethics</code></li>
+				<li><code>phenomenology</code></li>
+			</ul>
+
+			<h3>17.2 Stronger rival or counter-reading</h3>
+			<p>
+				A rival reading could hold that the after-scene dignity loss came from
+				external shame, unrelated biography, or a separate communicative failure
+				rather than from the arrangement's rule-compliant structure.
+			</p>
+
+			<h3>17.3 Counter-scene or falsifier</h3>
+			<p>
+				<strong>Status:</strong> <code>available</code>
+			</p>
+			<p>
+				Both role-positions may have carried the after-scene consequences
+				reciprocally, with <code>role_B</code>'s residue not caused or amplified by
+				the arrangement frame.
+			</p>
+
+			<h3>17.4 Would weaken reading if</h3>
+			<ul>
+				<li>after-scene dignity was restored without externalizing repair burden</li>
+				<li><code>role_A</code> did not use rule compliance as closure</li>
+				<li><code>role_B</code> retained distance and did not carry disproportionate residue</li>
+			</ul>
+
+			<h3>17.5 Would defeat reading if</h3>
+			<ul>
+				<li>no after-scene dignity loss occurred</li>
+				<li>the cost distribution was reciprocal and explicitly carried</li>
+				<li>the reported residue was demonstrably unrelated to the bounded scene</li>
+			</ul>
+
+			<h3>17.6 Prohibited crossing checked</h3>
+			<ul>
+				<li><code>diagnosis: true</code></li>
+				<li><code>legal_conclusion: true</code></li>
+				<li><code>therapy_guidance: true</code></li>
+				<li><code>moral_verdict: true</code></li>
+				<li><code>policy_recommendation: true</code></li>
+				<li><code>practice_instruction: true</code></li>
+			</ul>
+
+			<p>
+				<strong>Result:</strong>
+				PMS-SEX is sufficient for a structural reading of the dignity collapse,
+				but empirical and phenomenological lenses would be needed to settle causal
+				history or lived meaning.
+			</p>
+			<p>
+				<strong>Final scope guard:</strong>
+				PMS-SEX reads what configurations do over time; it does not decide what
+				persons are.
+			</p>
+
+			<hr />
+
+			<h2>18) Final Validity Gate</h2>
+
+			<h3>18.1 Requirements</h3>
+			<table>
+				<thead>
+					<tr>
+						<th>Requirement</th>
+						<th>Status</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr><td><code>chi_preserved</code></td><td><code>pass</code></td></tr>
+					<tr><td><code>reversibility_preserved</code></td><td><code>pass</code></td></tr>
+					<tr><td><code>D_preserved</code></td><td><code>pass</code></td></tr>
+					<tr><td><code>no_person_verdict</code></td><td><code>pass</code></td></tr>
+					<tr><td><code>no_practice_guidance</code></td><td><code>pass</code></td></tr>
+					<tr><td><code>no_public_punishment</code></td><td><code>pass</code></td></tr>
+					<tr><td><code>no_cost_score</code></td><td><code>pass</code></td></tr>
+					<tr><td><code>operator_profile_only</code></td><td><code>pass</code></td></tr>
+					<tr><td><code>mip_docking_required_if_maturity_language_appears</code></td><td><code>pass</code></td></tr>
+				</tbody>
+			</table>
+
+			<p>
+				<strong>Final profile guard set:</strong> <code>guard_sets.final_profile</code><br />
+				<strong>Result:</strong> <code>valid_description</code>
+			</p>
+
+			<h3>18.2 Final invalid if any</h3>
+			<ul>
+				<li><code>person_verdict_present</code></li>
+				<li><code>diagnosis_present</code></li>
+				<li><code>practice_guidance_present</code></li>
+				<li><code>public_punishment_or_humiliation_present</code></li>
+				<li><code>sexual_cost_topology_used_as_score</code></li>
+				<li><code>operator_profile_used_as_adultness_verdict</code></li>
+				<li><code>MIP_docking_bypassed_where_maturity_or_adultness_language_is_used</code></li>
+			</ul>
+
+			<hr />
+
+			<h2>19) Construct Selection</h2>
+
+			<h3>19.1 Primary construct</h3>
+			<table>
+				<tbody>
+					<tr><th>Key</th><td><code>after_scene_dignity_failure</code></td></tr>
+					<tr><th>Label</th><td>After-Scene Dignity Failure</td></tr>
+					<tr><th>Status</th><td><code>drift</code></td></tr>
+					<tr><th>YAML home</th><td><code>drifts.after_scene_dignity_failure</code></td></tr>
+					<tr><th>Support</th><td><code>strong</code></td></tr>
+				</tbody>
+			</table>
+
+			<h3>19.2 Secondary constructs</h3>
+			<table>
+				<thead>
+					<tr>
+						<th>Key</th>
+						<th>Label</th>
+						<th>Status</th>
+						<th>YAML home</th>
+						<th>Support</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr><td><code>sexual_cost_topology</code></td><td>Sexual Cost Topology</td><td><code>concept</code></td><td><code>concepts.sexual_cost_topology</code></td><td><code>strong</code></td></tr>
+					<tr><td><code>cost_topology_mismatch</code></td><td>Cost-Topology Mismatch</td><td><code>drift</code></td><td><code>drifts.cost_topology_mismatch</code></td><td><code>strong</code></td></tr>
+					<tr><td><code>D_compliance</code></td><td>D-Compliance</td><td><code>dignity_condition</code></td><td><code>concepts.D_compliance</code></td><td><code>strong</code></td></tr>
+					<tr><td><code>sexual_reciprocity_under_real_asymmetry</code></td><td>Sexual Reciprocity Under Real Asymmetry</td><td><code>viability_condition</code></td><td><code>concepts.sexual_reciprocity_under_real_asymmetry</code></td><td><code>strong</code></td></tr>
+					<tr><td><code>parity_to_exit</code></td><td>Parity-to-Exit</td><td><code>drift</code></td><td><code>drifts.parity_to_exit</code></td><td><code>mixed</code></td></tr>
+					<tr><td><code>covert_psi_expectation_drift</code></td><td>Covert Ψ-Expectation Drift</td><td><code>drift</code></td><td><code>drifts.covert_psi_expectation_drift</code></td><td><code>mixed</code></td></tr>
+					<tr><td><code>non_capture</code></td><td>Non-Capture</td><td><code>limit_guard</code></td><td><code>concepts.non_capture</code></td><td><code>partial</code></td></tr>
+				</tbody>
+			</table>
+
+			<h3>19.3 Explicitly not claimed</h3>
+			<ul>
+				<li>No person diagnosis.</li>
+				<li>No hidden motive inference.</li>
+				<li>No practice instruction.</li>
+				<li>No orientation taxonomy.</li>
+				<li>No sex truth.</li>
+				<li>No genital truth.</li>
+				<li>No biological destiny.</li>
+				<li>No relationship mandate.</li>
+				<li>No access entitlement.</li>
+				<li>No maturity or adultness verdict from PMS-SEX alone.</li>
+				<li>No dignity hierarchy.</li>
+				<li>No public punishment or humiliation as critique mode.</li>
+				<li>No final capture where non-capture is plausible.</li>
+			</ul>
+
+			<hr />
+
+			<h2>20) Readable Structural Closure</h2>
+
+			<h3>20.1 Summary</h3>
+			<p>
+				This case reads a rule-compliant sexual arrangement whose local frame
+				remains intact while repeated enactment mode produces cumulative dignity
+				cost. The central structure is not a hidden rule violation, but the
+				divergence between stated rule compliance and the later distribution of
+				symbolic residue, shame residue, distance loss, and consequence-carrying.
+			</p>
+			<p>
+				The dominant operator profile is <code>□/Ω/Θ</code> straining
+				<code>Χ/Σ/Ψ</code>: the frame holds locally, but asymmetrical temporal
+				carryover is not integrated or self-bound reciprocally.
+			</p>
+			<p>
+				The primary drift is <code>after_scene_dignity_failure</code>, supported by
+				<code>cost_topology_mismatch</code> and, where rule compliance is used as
+				closure, <code>parity_to_exit</code>. The scene is not read as a person
+				verdict, rule violation, diagnosis, or sexual ranking.
+			</p>
+			<p>
+				PMS-SEX remains adequate for mapping the configuration, while empirical
+				reconstruction would be needed to determine causal history or lived
+				interior meaning.
+			</p>
+
+			<h3>20.2 Main formula used</h3>
+			<pre><code>rule_compliance_plus_repeated_enactment_drift_without_after_scene_D_compliance</code></pre>
+
+			<h3>20.3 Support and final status</h3>
+			<p>
+				<strong>Support level:</strong> <code>strong</code><br />
+				<strong>Final status:</strong> <code>description_only</code>
+			</p>
+
+			<h3>20.4 Final guardrail</h3>
+			<p>
+				This example maps a scene. It does not diagnose persons, rank sexes,
+				prescribe practice, or authorize intervention.
+			</p>
+
+			<h3>20.5 Required final phrase</h3>
 			<div class="box callout-success">
 				<p>
-					A scene can remain formally permitted while becoming structurally
-					degradation-prone when repeated enactment makes dignity cost cumulative
-					and distance socially costly.
+					This remains a scene-bound structural reading, not a diagnosis, verdict,
+					instruction, or person-status claim.
 				</p>
 			</div>
 
-			<h3>23.4 Final structural guard</h3>
-			<p>
-				PMS-SEX remains valid here only by staying within configuration-language:
-				not what persons are, but what this repeated scene does over time. The case
-				permits hard claims about cost, dignity drift, outer legibility, sexual
-				cost topology, switch-drift risk, and consequence, but forbids converting
-				those claims into person-status judgment, diagnosis, public accusation,
-				humiliation, maturity ranking, adultness verdict, or moral ranking.
-			</p>
-
 			<hr />
 
-			<h2>24) Final Case Guard</h2>
+			<h2>21) Assistant Test Vectors</h2>
 
-			<p>
-				PMS-SEX remains valid here only by staying within configuration-language:
-				not what persons are, but what this repeated scene does over time. The case
-				permits hard claims about cost, dignity drift, outer legibility, sexual
-				cost topology, switch-drift risk, and consequence, but forbids converting
-				those claims into person-status judgment, diagnosis, public accusation,
-				humiliation, maturity hierarchy, adultness verdict, dignity hierarchy, or
-				moral ranking.
-			</p>
-
-			<h3>24.1 Compressed rules</h3>
+			<h3>21.1 Should recognize</h3>
 			<ul>
-				<li>no consequence-free sex</li>
-				<li>no outer-form erasure by internal labels</li>
-				<li>no publicness reduction</li>
-				<li>no path-cost as person-worth</li>
-				<li>no critique through humiliation</li>
-				<li>no taxonomy where only configuration-language is warranted</li>
-				<li>no total capture where the scene exceeds the grammar</li>
-				<li>no person diagnosis</li>
-				<li>no intent attribution</li>
-				<li>no moral ranking</li>
-				<li>no maturity ranking</li>
-				<li>no adultness verdict from PMS-SEX alone</li>
-				<li>no dignity hierarchy</li>
-				<li>no sexual cost topology as score</li>
-				<li>no formal compliance as parity-to-exit</li>
-				<li>no responsibility-to-authority as care</li>
-				<li>no asymmetry switch as authority</li>
-				<li>no operator profile as person verdict</li>
-				<li>no prescription</li>
+				<li>internal framing and outer legibility may diverge</li>
+				<li>sexual cost topology must be mapped separately from consent or mutuality</li>
+				<li>direct otherness is reality-correction without access entitlement</li>
+				<li>withdrawal may be adult or drift-relevant depending on structured Ψ-expectation and after-scene dignity</li>
+				<li>genital meaning is real but must not become genital sovereignty</li>
+				<li>Dignity-in-Practice concerns how asymmetry is carried</li>
+				<li>rule compliance does not automatically equal D-compliance</li>
+				<li>repeated enactment mode can produce cumulative dignity cost without a single citable rule breach</li>
 			</ul>
+
+			<h3>21.2 Should not infer</h3>
+			<ul>
+				<li>hidden motive</li>
+				<li>personality</li>
+				<li>pathology</li>
+				<li>orientation essence</li>
+				<li>sex essence</li>
+				<li>genital truth</li>
+				<li>biological destiny</li>
+				<li>moral guilt</li>
+				<li>adultness verdict</li>
+				<li>action recommendation</li>
+				<li>rule violation</li>
+			</ul>
+
+			<h3>21.3 Should push back when</h3>
+			<ul>
+				<li>the user asks for a diagnosis or person label</li>
+				<li>the user asks what someone should do sexually or relationally</li>
+				<li>the scene is not bounded enough to map operator profiles</li>
+				<li>consent language is used to erase cost topology</li>
+				<li>formal rule compliance is treated as full structural closure</li>
+				<li>publicness is used to justify shaming or exposure</li>
+				<li>outer form is totalized as the whole configuration</li>
+				<li>body or genital meaning is converted into person truth</li>
+				<li>a drift reading has no counter-scene or falsifier</li>
+			</ul>
+
+			<h3>21.4 Required final phrase</h3>
+			<p>
+				This remains a scene-bound structural reading, not a diagnosis, verdict,
+				instruction, or person-status claim.
+			</p>
 		</section>
 	</body>
 </html>
