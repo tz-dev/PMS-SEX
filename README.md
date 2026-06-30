@@ -6,6 +6,8 @@
 
 Where many approaches to sexuality default to psychology, morality, diagnosis, taxonomy, confession, or advice, **PMS–SEX stays strictly praxeological**: it reconstructs **what sexual configurations produce over time** — especially **sexual cost topology**, **cost-layout mismatches**, **drift chains**, **outer legibility**, **direct otherness**, **body/boundary coding**, **withdrawal and covert Ψ-expectation**, **after-scene dignity**, **viability corridors**, **Dignity-in-Practice stress**, and **operator profiles for possible MIP docking** — without person-typing, moral ranking, clinical interpretation, maturity ranking, adultness verdicts, sex truth, genital truth, or instructional content.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21068815.svg)](https://doi.org/10.5281/zenodo.21068815)
+
 ---
 
 ## What PMS–SEX Is
