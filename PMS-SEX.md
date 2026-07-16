@@ -116,6 +116,10 @@ PMS-SEX distinguishes biological determinism from biological affordance.
 
 Biology is not destiny, but it is also not nothing. It does not code completed conduct, moral rank, person truth, relationship mandate, hierarchy, or endpoint. It structures bodies, risks, asymmetries, thresholds, costs, affordances, and likely strategy spaces. Culture, frame, learning, law, self-binding, technology, publicness, and historical form modulate these affordances without erasing them.
 
+Biological substrate and biological affordance must remain distinct. Reproductive, endocrine, developmental, and somatic conditions belong to the embodied substrate and are not derived, modeled, or adjudicated by the Δ–Ψ grammar. PMS-SEX does not determine their mechanisms or their relative causal weight. They become PMS-SEX-relevant only through praxeologically effective affordances: where embodied conditions shape scene-bound thresholds, directional weightings, risks, asymmetries, costs, dependencies, temporal consequences, or likely strategy spaces.
+
+This is PMS-SEX’s biological-to-praxeological entry point.
+
 This means PMS-SEX may name embodied cost topology without naturalizing hierarchy. A bodily difference may structure risk without assigning worth. A recurrent affordance may make one strategy space more likely without making it morally superior. A sexed cost profile may be scene-relevant without becoming a truth about men, women, bodies, identities, or orientations.
 
 Biological nearness means tendency, not value.  
@@ -130,7 +134,7 @@ The language discipline follows from this:
 * not “nature justifies hierarchy,” but “where this affordance profile structures the scene …”
 * not “biological default equals moral superiority,” but “lower path-cost or stronger canalization does not imply moral rank.”
 
-Biological affordance therefore belongs to Δ, Ω, Θ, and □ as scene-relevant structure. It is not an operator, not destiny, not proof of role, not moral evidence, and not a hierarchy principle.
+Biological affordance is therefore read at the interfaces of Δ, Ω, Θ, and □ as scene-relevant structure, while the biological substrate itself remains non-operatorial. Biological affordance is not an operator, not destiny, not proof of role, not moral evidence, and not a hierarchy principle.
 
 ### 0.11 Term Discipline
 
