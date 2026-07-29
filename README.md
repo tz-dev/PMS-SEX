@@ -285,6 +285,3 @@ When citing this repository, cite the repository release and DOI corresponding t
 Unless otherwise noted, textual theory, papers, documentation, examples, prompts, diagrams, and non-executable model or specification materials are licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0).
 
 Source code, executable tools, scripts, validators, schemas, and software-adjacent technical files, where present, are licensed under the Apache License 2.0.
-
-See the repository `LICENSE` file and any file-level notices for details.
-
