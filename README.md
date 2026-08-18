@@ -237,6 +237,7 @@ non-validating
 | [PMS-LOGIC](https://github.com/tz-dev/PMS-LOGIC) | Pre-moral foundations, logical limits, responsibility, non-closure, and post-moral effects. |
 | [PMS-SEX](https://github.com/tz-dev/PMS-SEX) | High-asymmetry sexual-praxeological configurations under cost topology, direct otherness, boundary coding, withdrawal, and after-scene dignity. |
 | [PMS-QC](https://github.com/tz-dev/PMS-QC) | Structural bridge mapping between PMS operators and quantum-computational workflows, circuits, algorithms, and agentic QC governance. |
+| [PMS-VECTOR](https://github.com/tz-dev/PMS-VECTOR) | Bounded praxeological orientation under perspectival pressure, rival comparison, reversible inquiry, transformable possibility, and explicit reduction. |
 
 ### PMS Corpus-Form Repositories
 
